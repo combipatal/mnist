@@ -1,0 +1,32 @@
+# Upstream RTL source clone. Record source revision instead of vendoring RTL.
+0_RTL/
+
+# Generated EDA outputs, logs, and reports.
+2_Synthesis/2_Output/
+2_Synthesis/3_Log/
+2_Synthesis/4_Report/
+3_Formality/3_Log/
+3_Formality/4_Report/
+4_Backend_ICC2/2_Output/
+4_Backend_ICC2/3_Log/
+4_Backend_ICC2/4_Report/
+
+# Tool work directories and transient files.
+alib-*/
+WORK/
+FM_WORK/
+*.svf
+*.ddc
+*.vcd
+*.fsdb
+*.sdf
+*.spef
+*.def
+*.gds
+*.log
+*.rpt
+
+# Local agent/runtime state.
+.agents/
+.codex/
+.gitrepo/
