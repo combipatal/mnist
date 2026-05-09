@@ -80,6 +80,34 @@ suspected root cause
 next action
 ```
 
+## Professional Execution Discipline
+
+Run this project like a practical ASIC implementation effort, not as a loose demo.
+
+Before changing the flow, confirm the current baseline, affected stage, expected artifacts, and rollback/next action. Keep each run reproducible from committed scripts and project-local inputs.
+
+For every major stage:
+
+```text
+define objective and pass/fail criteria
+run with explicit script and log path
+inspect first fatal error before changing scripts
+separate tool/setup issues from design issues
+record evidence and unresolved risks
+commit only reviewed scripts/docs/log-record files
+```
+
+Do not silently skip warnings that can affect downstream implementation. Classify them as:
+
+```text
+accepted for first baseline
+must fix before next stage
+needs user/design decision
+tool/library limitation
+```
+
+Prefer incremental milestones over broad speculative edits. A stage is complete only when its handoff artifacts and reports exist and the result is recorded in `RUN_LOG.md` and `RESULT_SUMMARY.md`.
+
 ## Communication Style
 
 Keep communication concise and technical.
