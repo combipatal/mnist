@@ -37,6 +37,7 @@ set SETUP_LOG_DIR $PROJECT_ROOT/4_Backend_ICC2/3_Log/00_setup
 set INIT_LOG_DIR $PROJECT_ROOT/4_Backend_ICC2/3_Log/01_init_design
 set FLOORPLAN_LOG_DIR $PROJECT_ROOT/4_Backend_ICC2/3_Log/02_floorplan
 set POWER_LOG_DIR $PROJECT_ROOT/4_Backend_ICC2/3_Log/03_powerplan
+set PLACE_LOG_DIR $PROJECT_ROOT/4_Backend_ICC2/3_Log/04_place
 set SETUP_REPORT_DIR $PROJECT_ROOT/4_Backend_ICC2/4_Report/00_setup
 set INIT_REPORT_DIR $PROJECT_ROOT/4_Backend_ICC2/4_Report/01_init_design
 set FLOORPLAN_REPORT_DIR $PROJECT_ROOT/4_Backend_ICC2/4_Report/02_floorplan
@@ -56,6 +57,7 @@ file mkdir $SETUP_LOG_DIR
 file mkdir $INIT_LOG_DIR
 file mkdir $FLOORPLAN_LOG_DIR
 file mkdir $POWER_LOG_DIR
+file mkdir $PLACE_LOG_DIR
 file mkdir $SETUP_REPORT_DIR
 file mkdir $INIT_REPORT_DIR
 file mkdir $FLOORPLAN_REPORT_DIR

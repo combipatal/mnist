@@ -51,3 +51,8 @@
 
 - Decision: record the first powerplan as generated but not PG-clean.
 - Rationale: `compile_pg` and PG DRC pass, but `check_pg_connectivity` reports all standard cells floating before placement. PG connectivity must be rechecked after placement before claiming clean power connectivity.
+
+### Placement Baseline Continuation
+
+- Decision: keep the 55% utilization placement as the first baseline despite open PG connectivity and congestion.
+- Rationale: placement and legalization completed with zero legality violations and PG DRC has no errors, but PG connectivity and global-route congestion are not clean. The first milestone is end-to-end flow establishment, so continue to CTS/route with these risks recorded rather than starting a utilization sweep prematurely.

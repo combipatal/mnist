@@ -21,7 +21,7 @@ backend utilization target: 55%
 | ICC2 init_design | PASS_WITH_OPEN_WARNINGS | `4_Backend_ICC2/3_Log/01_init_design/run_init_design_check.log`, `4_Backend_ICC2/4_Report/01_init_design/check_design.rpt`, `4_Backend_ICC2/2_Output/01_init_design/mnist_npu_icc2_lib` |
 | Floorplan | PASS_WITH_OPEN_WARNINGS | `4_Backend_ICC2/3_Log/02_floorplan/run_floorplan_initial.log`, `4_Backend_ICC2/4_Report/02_floorplan/utilization.rpt` |
 | Powerplan | PASS_WITH_OPEN | `4_Backend_ICC2/3_Log/03_powerplan/run_powerplan_initial.log`, `4_Backend_ICC2/4_Report/03_powerplan/pg_connectivity.rpt`, `4_Backend_ICC2/4_Report/03_powerplan/pg_drc.rpt` |
-| Placement | PENDING | TBD |
+| Placement | PASS_WITH_OPEN | `4_Backend_ICC2/3_Log/04_place/run_place_initial.log`, `4_Backend_ICC2/4_Report/04_place/check_legality.rpt`, `4_Backend_ICC2/4_Report/04_place/pg_connectivity.rpt` |
 | CTS | PENDING | TBD |
 | Route | PENDING | TBD |
 
@@ -122,3 +122,28 @@ backend utilization target: 55%
 | --- | --- |
 | PG connectivity reports all standard cells floating | Not PG-clean; expected to remain open before placement because cells are unplaced. Re-check after placement. |
 | 7 floating wires on VDD and VSS | Carry into placement/debug; do not claim PG clean until fixed or classified. |
+
+## ICC2 Placement Summary
+
+| Metric | Value |
+| --- | --- |
+| Saved block | `placement` |
+| Utilization | `0.5506` |
+| Legality | `TOTAL 0 Violations` |
+| Setup QoR | `clk` critical path slack `5.26 ns`, setup violating paths `0` |
+| Hold QoR | worst `-0.01 ns`, total `-1.02`, violations `180` |
+| PG DRC | `No errors found` |
+| VDD connectivity | `7` floating wires, `3985` floating standard cells, `8` floating terminals |
+| VSS connectivity | `7` floating wires, `3405` floating standard cells |
+| Phase1 global-route overflow | `45036`, max `5`, GRCs `36186 (4.20%)` |
+| Routing density over target | horizontal `38.28%`, vertical `6.22%` |
+| Max transition/cap violations | `3394 / 21531` |
+
+## ICC2 Placement Open Warnings
+
+| Warning | Disposition |
+| --- | --- |
+| PG connectivity still has floating std cells | Not PG-clean; keep open for powerplan/placement repair or post-CTS recheck. |
+| High global-route congestion at 55% utilization | Continue first baseline to CTS/route for evidence, but prepare lower-utilization trial if route fails. |
+| Hold remains slightly negative before CTS | Accepted for first baseline; re-check after CTS/route. |
+| Max cap/transition violations increased after placement | Carry into CTS/route optimization; do not claim electrical clean. |

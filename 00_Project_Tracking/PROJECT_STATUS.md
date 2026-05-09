@@ -2,8 +2,8 @@
 
 ## Current Status
 
-- Status: `A4_POWERPLAN_DONE_WITH_OPEN_PG_CONNECTIVITY`
-- Stage: A4 ICC2 init/floorplan/powerplan
+- Status: `A5_PLACEMENT_DONE_WITH_OPEN_PG_AND_CONGESTION`
+- Stage: A5 ICC2 placement
 - Primary RTL cloned: yes
 - Source revision frozen: yes
 - Candidate top identified: `nn_top`
@@ -15,15 +15,16 @@
 - ICC2 init_design/link/save: passed with open warnings
 - ICC2 floorplan: passed with open warnings
 - ICC2 powerplan: generated; PG DRC clean, PG connectivity open before placement
+- ICC2 placement/legalization: passed with open PG connectivity and congestion warnings
 
 ## Next Checkpoint
 
-Proceed to placement and re-check PG connectivity:
+Proceed to CTS setup only after recording placement risks:
 
-1. Create ICC2 placement script from the saved `powerplan` block.
-2. Run initial placement/legalization.
-3. Re-run timing, legality, and PG connectivity checks after cells are placed.
-4. Decide whether the 55% floorplan is route-feasible or needs a lower utilization trial.
+1. Keep the 55% baseline moving to CTS for first route feasibility.
+2. Add clock routing/NDR rules or record that the first CTS uses default clock routing.
+3. Re-run timing, clock QoR, legality, and PG checks after CTS.
+4. If route fails or congestion remains severe, create a lower-utilization trial rather than changing the baseline silently.
 
 ## Accepted First-Baseline Risks
 
@@ -34,4 +35,5 @@ Proceed to placement and re-check PG connectivity:
 - SRAM macro replacement is disabled; memories are implemented as FF arrays for this first handoff.
 - FM RTL interpretation array-bound/signedness warnings are accepted because R2N passed, but retained as an RTL-quality risk.
 - ICC2 init currently carries reset-related timing warnings and 16 mapped-netlist no-driver warnings for classification before floorplan closure.
-- PG connectivity is not clean before placement: both VDD and VSS report `175574` floating standard cells. Re-check after placement before calling PG clean.
+- PG connectivity is still not clean after placement: VDD has `3985` floating standard cells and VSS has `3405` floating standard cells.
+- Placement congestion is high at 55% utilization: phase1 global-route overflow `45036`, max overflow `5`, GRCs `36186 (4.20%)`.

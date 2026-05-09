@@ -196,3 +196,36 @@
 - Open warnings:
   - `check_pg_connectivity` reports 7 floating wires and `175574` floating standard cells for both VDD and VSS.
   - This is not PG-clean. The cells are still unplaced at the pre-placement powerplan stage, so PG connectivity must be rechecked after placement.
+
+### ICC2 placement checkpoint
+
+- Command: `4_Backend_ICC2/0_Script/04_place/run_place_initial.sh`
+- Tool: `icc2_shell`
+- Log: `4_Backend_ICC2/3_Log/04_place/run_place_initial.log`
+- Input block: `4_Backend_ICC2/2_Output/01_init_design/mnist_npu_icc2_lib:powerplan.design`
+- Output block: `4_Backend_ICC2/2_Output/01_init_design/mnist_npu_icc2_lib:placement.design`
+- Reports:
+  - `4_Backend_ICC2/4_Report/04_place/check_legality.rpt`
+  - `4_Backend_ICC2/4_Report/04_place/utilization.rpt`
+  - `4_Backend_ICC2/4_Report/04_place/qor.rpt`
+  - `4_Backend_ICC2/4_Report/04_place/timing.max.rpt`
+  - `4_Backend_ICC2/4_Report/04_place/timing.min.rpt`
+  - `4_Backend_ICC2/4_Report/04_place/design_physical.rpt`
+  - `4_Backend_ICC2/4_Report/04_place/pg_connectivity.rpt`
+  - `4_Backend_ICC2/4_Report/04_place/pg_connectivity_detail.rpt`
+  - `4_Backend_ICC2/4_Report/04_place/pg_drc.rpt`
+- Result: PASS_WITH_OPEN.
+- Evidence:
+  - `create_placement` completed.
+  - `legalize_placement` completed and reported `Legalization succeeded`.
+  - `check_legality.rpt` reports `TOTAL 0 Violations`.
+  - `check_pg_drc` reported `No errors found`.
+  - Setup timing remains met in QoR: `clk` critical path slack `5.26 ns`, no setup violating paths.
+  - Hold remains open: worst hold violation `-0.01 ns`, total hold violation `-1.02`, hold violations `180`.
+  - Placement utilization remains `0.5506`.
+- Open warnings:
+  - PG connectivity improved from all cells floating, but is still not clean: VDD has 7 floating wires, 3985 floating standard cells, and 8 floating terminals; VSS has 7 floating wires and 3405 floating standard cells.
+  - Congestion is high at the 55% first baseline: phase1 global-route overflow `45036`, max overflow `5`, GRCs `36186 (4.20%)`.
+  - Horizontal routing density above target is `38.28%`; vertical above target is `6.22%`.
+  - Max transition/max capacitance violations remain open after placement: `3394` max transition violations and `21531` max capacitance violations.
+  - No tie cell is available for constant fixing in the RVT-only library setup; keep as a library/setup risk before route closure.
