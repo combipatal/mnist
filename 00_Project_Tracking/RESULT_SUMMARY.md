@@ -17,7 +17,7 @@ backend utilization target: 55%
 | RTL intake | RECORDED | `00_Project_Tracking/SOURCE_REVISION.md`, `docs/rtl_intake.md` |
 | DC analyze/elaborate/link | PASS | `2_Synthesis/3_Log/run_dc.log`, `2_Synthesis/4_Report/pre_compile.check_design.rpt` |
 | DC synthesis | PASS_WITH_ACCEPTED_RISKS | `2_Synthesis/3_Log/run_dc_compile_topo.log`, `2_Synthesis/4_Report/topo_10ns/post_compile.qor.rpt`, `2_Synthesis/2_Output/topo_10ns/nn_top.topo_10ns.mapped.ddc` |
-| Formality R2N | PENDING | TBD |
+| Formality R2N | PASS | `3_Formality/3_Log/run_fm_r2n_topo.log`, `3_Formality/4_Report/r2n_topo_10ns/r2n_topo_10ns.failing_points.rpt` |
 | ICC2 init_design | PENDING | TBD |
 | Floorplan | PENDING | TBD |
 | Powerplan | PENDING | TBD |
@@ -50,3 +50,24 @@ backend utilization target: 55%
 | Small hold violations | Accepted for first baseline; re-check after CTS/route. |
 | SAED32 scan FF `check_library` messages | Recorded as DFT/library risk; first baseline has no DFT insertion. |
 | FF-array memories | Accepted because SRAM macro replacement is disabled for the first pass. |
+
+## Formality R2N Summary
+
+| Metric | Value |
+| --- | --- |
+| Reference | RTL filelist `1_Input/filelists/rtl.f` |
+| Implementation | `2_Synthesis/2_Output/topo_10ns/nn_top.topo_10ns.mapped.vg` |
+| SVF | `2_Synthesis/2_Output/svf/nn_top.topo_10ns.mapped.svf` |
+| Result | `Verification SUCCEEDED` |
+| Passing compare points | `39681` |
+| Failing compare points | `0` |
+| Unmatched compare points | `0(0)` |
+| Unverified compare points | `0` |
+
+## Formality Accepted Warnings
+
+| Warning | Disposition |
+| --- | --- |
+| `synopsys_auto_setup` enabled | Accepted; assumptions are recorded in FM log. |
+| RTL signedness/array-bound interpretation warnings | Accepted for first baseline because R2N passed; retain as RTL-quality risk. |
+| 64 rejected SVF `change_names` guidance commands | Accepted because verification succeeded. |

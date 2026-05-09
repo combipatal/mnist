@@ -27,6 +27,11 @@
 - Decision: record DC max capacitance/max transition violations and proceed to Formality/ICC2 for the first baseline.
 - Rationale: setup timing is clean, the user explicitly accepted maxcap carry-forward, and final cap/transition closure belongs in the physical implementation loop.
 
+### Formality R2N Gate
+
+- Decision: treat `3_Formality/0_Script/run_fm_r2n_topo.sh` PASS as the gate to proceed into ICC2 init_design.
+- Rationale: the mapped topographical netlist is equivalent to the RTL reference with 39,681 passing compare points and zero failing/unverified compare points.
+
 ### Professional Project Discipline
 
 - Decision: run project stages like a practical ASIC implementation flow.

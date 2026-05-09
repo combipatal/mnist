@@ -17,6 +17,8 @@ alib-*/
 WORK/
 FM_WORK/
 3_Formality/FM_WORK*/
+FM_INFO/
+formality_svf/
 2_Synthesis/work/
 2_Synthesis/work_*/
 2_Synthesis/mw_lib/

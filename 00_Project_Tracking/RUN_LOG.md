@@ -65,3 +65,30 @@
   - `check_library` reports 4 SAED32 scan FF `test_cell` next_state errors; first baseline is not DFT insertion, so this is recorded as a library/DFT risk.
   - Clock/reset high fanout remains expected before CTS.
   - No SRAM macro replacement yet; FF-array memories dominate area and routing demand.
+
+### Formality R2N for DC topographical handoff
+
+- Command: `3_Formality/0_Script/run_fm_r2n_topo.sh`
+- Log: `3_Formality/3_Log/run_fm_r2n_topo.log`
+- Reference: RTL filelist `1_Input/filelists/rtl.f`
+- Implementation: `2_Synthesis/2_Output/topo_10ns/nn_top.topo_10ns.mapped.vg`
+- SVF: `2_Synthesis/2_Output/svf/nn_top.topo_10ns.mapped.svf`
+- Reports:
+  - `3_Formality/4_Report/r2n_topo_10ns/r2n_topo_10ns.unmatched_points.rpt`
+  - `3_Formality/4_Report/r2n_topo_10ns/r2n_topo_10ns.failing_points.rpt`
+  - `3_Formality/4_Report/r2n_topo_10ns/r2n_topo_10ns.aborted_points.rpt`
+  - `3_Formality/4_Report/r2n_topo_10ns/r2n_topo_10ns.unverified_points.rpt`
+  - `3_Formality/4_Report/r2n_topo_10ns/r2n_topo_10ns.passing_points.post_verify.rpt`
+- Output session: `3_Formality/2_Output/r2n_topo_10ns/r2n_topo_10ns_fm_session.fss`
+- Result: PASS.
+- Evidence:
+  - `Verification SUCCEEDED`.
+  - Passing compare points: `39681`.
+  - Failing compare points: `0`.
+  - Unmatched reference/implementation compare points after match: `0(0)`.
+  - `r2n_topo_10ns.failing_points.rpt`: no failing compare points.
+  - `r2n_topo_10ns.unverified_points.rpt`: no unverified compare points.
+- Recorded warnings:
+  - `synopsys_auto_setup` was enabled; verification is valid under the reported auto setup assumptions.
+  - RTL interpretation warnings remain from array-bound/signedness messages; DC and FM both elaborate the design, but this should be considered an RTL-quality risk if functional simulation disagrees.
+  - SVF guidance had 64 rejected `change_names` commands; Formality states these can be ignored when verification succeeds.
