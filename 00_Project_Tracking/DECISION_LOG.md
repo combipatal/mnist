@@ -36,3 +36,8 @@
 
 - Decision: run project stages like a practical ASIC implementation flow.
 - Rationale: every stage needs objective, pass/fail criteria, explicit script/log path, first-fatal debug, evidence recording, and risk classification before moving forward.
+
+### ICC2 Init Warning Handling
+
+- Decision: record ICC2 init as linked/saved with open warnings rather than call it clean.
+- Rationale: the design imports and links, but DC-written net `set_load` constraints produce noisy ICC2 warnings, async reset endpoints remain intentionally false-pathed, and 16 no-driver mapped-netlist nets need classification before floorplan closure.

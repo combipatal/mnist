@@ -11,6 +11,7 @@
 4_Backend_ICC2/2_Output/
 4_Backend_ICC2/3_Log/
 4_Backend_ICC2/4_Report/
+4_Backend_ICC2/work/
 
 # Tool work directories and transient files.
 alib-*/
@@ -32,6 +33,8 @@ formality_svf/
 *.gds
 *.log
 *.rpt
+*.ems
+*_output.txt
 
 # Local agent/runtime state.
 .agents/

@@ -18,7 +18,7 @@ backend utilization target: 55%
 | DC analyze/elaborate/link | PASS | `2_Synthesis/3_Log/run_dc.log`, `2_Synthesis/4_Report/pre_compile.check_design.rpt` |
 | DC synthesis | PASS_WITH_ACCEPTED_RISKS | `2_Synthesis/3_Log/run_dc_compile_topo.log`, `2_Synthesis/4_Report/topo_10ns/post_compile.qor.rpt`, `2_Synthesis/2_Output/topo_10ns/nn_top.topo_10ns.mapped.ddc` |
 | Formality R2N | PASS | `3_Formality/3_Log/run_fm_r2n_topo.log`, `3_Formality/4_Report/r2n_topo_10ns/r2n_topo_10ns.failing_points.rpt` |
-| ICC2 init_design | PENDING | TBD |
+| ICC2 init_design | PASS_WITH_OPEN_WARNINGS | `4_Backend_ICC2/3_Log/01_init_design/run_init_design_check.log`, `4_Backend_ICC2/4_Report/01_init_design/check_design.rpt`, `4_Backend_ICC2/2_Output/01_init_design/mnist_npu_icc2_lib` |
 | Floorplan | PENDING | TBD |
 | Powerplan | PENDING | TBD |
 | Placement | PENDING | TBD |
@@ -71,3 +71,24 @@ backend utilization target: 55%
 | `synopsys_auto_setup` enabled | Accepted; assumptions are recorded in FM log. |
 | RTL signedness/array-bound interpretation warnings | Accepted for first baseline because R2N passed; retain as RTL-quality risk. |
 | 64 rejected SVF `change_names` guidance commands | Accepted because verification succeeded. |
+
+## ICC2 Init Summary
+
+| Metric | Value |
+| --- | --- |
+| Netlist | `2_Synthesis/2_Output/topo_10ns/nn_top.topo_10ns.mapped.vg` |
+| Reference library | `4_Backend_ICC2/2_Output/00_setup/ndm/saed32rvt_tt.ndm` |
+| Link result | `nn_top` successfully linked |
+| Saved library/block | `4_Backend_ICC2/2_Output/01_init_design/mnist_npu_icc2_lib` |
+| Leaf cells | `175574` |
+| Sequential cells | `39659` |
+| Hard macros | `0` |
+| Floating/no-driver nets | `16` |
+
+## ICC2 Init Open Warnings
+
+| Warning | Disposition |
+| --- | --- |
+| DC-written SDC emits unsupported net `set_load` warnings in ICC2 | Use clean or filtered backend SDC before the next recorded init/floorplan handoff. |
+| Async reset endpoints reported unconstrained | Expected from reset false-path handling; keep explicit and review before timing closure. |
+| 16 no-driver mapped-netlist nets | Classify as optimization leftovers or fix before claiming clean init. |

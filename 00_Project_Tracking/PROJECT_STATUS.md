@@ -2,8 +2,8 @@
 
 ## Current Status
 
-- Status: `FM_R2N_PASS`
-- Stage: A3 Formality R2N
+- Status: `ICC2_INIT_PASS_WITH_OPEN_WARNINGS`
+- Stage: A4 ICC2 init_design
 - Primary RTL cloned: yes
 - Source revision frozen: yes
 - Candidate top identified: `nn_top`
@@ -11,16 +11,18 @@
 - DC analyze/elaborate/link: passed
 - DC topographical synthesis: passed for first baseline handoff
 - Formality R2N: passed
+- ICC2 SAED32 RVT NDM build: passed
+- ICC2 init_design/link/save: passed with open warnings
 
 ## Next Checkpoint
 
-Run ICC2 init_design against the Formality-verified topographical synthesis handoff:
+Clean up ICC2 init constraints and proceed to floorplan:
 
-1. Create ICC2 technology/library setup for SAED32 RVT.
-2. Import `2_Synthesis/2_Output/topo_10ns/nn_top.topo_10ns.mapped.vg`.
-3. Read `2_Synthesis/2_Output/topo_10ns/nn_top.topo_10ns.mapped.sdc`.
-4. Link and run `check_design`/library sanity checks.
-5. Save the initialized design and record report paths.
+1. Replace or filter the DC-written SDC for ICC2 so unsupported net `set_load` constraints do not flood logs.
+2. Classify the 16 no-driver structural nets from `check_design`.
+3. Keep async reset false-path handling explicit and record reset-related timing warnings.
+4. Create floorplan script with 55% utilization and 1:1 aspect ratio.
+5. Save floorplan block and collect utilization/floorplan reports.
 
 ## Accepted First-Baseline Risks
 
@@ -30,3 +32,4 @@ Run ICC2 init_design against the Formality-verified topographical synthesis hand
 - SAED32 `check_library` scan FF `test_cell` messages are recorded as DFT/library risk.
 - SRAM macro replacement is disabled; memories are implemented as FF arrays for this first handoff.
 - FM RTL interpretation array-bound/signedness warnings are accepted because R2N passed, but retained as an RTL-quality risk.
+- ICC2 init currently carries reset-related timing warnings and 16 mapped-netlist no-driver warnings for classification before floorplan closure.

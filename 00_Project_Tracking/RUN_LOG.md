@@ -92,3 +92,49 @@
   - `synopsys_auto_setup` was enabled; verification is valid under the reported auto setup assumptions.
   - RTL interpretation warnings remain from array-bound/signedness messages; DC and FM both elaborate the design, but this should be considered an RTL-quality risk if functional simulation disagrees.
   - SVF guidance had 64 rejected `change_names` commands; Formality states these can be ignored when verification succeeds.
+
+### ICC2 SAED32 RVT NDM setup
+
+- Command: `4_Backend_ICC2/0_Script/00_setup/build_saed32_rvt_ndm.sh`
+- Tool: `lm_shell`
+- Log: `4_Backend_ICC2/3_Log/00_setup/build_saed32_rvt_ndm.log`
+- Output:
+  - `4_Backend_ICC2/2_Output/00_setup/ndm/saed32rvt_tt.ndm`
+- Result: PASS.
+- Evidence:
+  - `check_workspace` completed successfully.
+  - NDM reference library was written under the project ICC2 output directory.
+- Recorded warnings:
+  - LEF bus-bit-character defaulting, duplicate timing arc, PG pin direction correction, and frame blockage messages were reported by Library Manager.
+  - These are treated as SAED32 library import warnings for the first baseline and must be revisited only if ICC2 placement/routing reports show library-view failures.
+
+### ICC2 init_design checkpoint
+
+- Command: `4_Backend_ICC2/0_Script/01_init_design/run_init_design_check.sh`
+- Tool: `icc2_shell`
+- Log: `4_Backend_ICC2/3_Log/01_init_design/run_init_design_check.log`
+- Inputs:
+  - Netlist: `2_Synthesis/2_Output/topo_10ns/nn_top.topo_10ns.mapped.vg`
+  - Constraint handoff: `2_Synthesis/2_Output/topo_10ns/nn_top.topo_10ns.mapped.sdc`
+  - Reference library: `4_Backend_ICC2/2_Output/00_setup/ndm/saed32rvt_tt.ndm`
+- Output:
+  - `4_Backend_ICC2/2_Output/01_init_design/mnist_npu_icc2_lib`
+- Reports:
+  - `4_Backend_ICC2/4_Report/01_init_design/ref_libs.rpt`
+  - `4_Backend_ICC2/4_Report/01_init_design/parasitic_parameters.rpt`
+  - `4_Backend_ICC2/4_Report/01_init_design/design.rpt`
+  - `4_Backend_ICC2/4_Report/01_init_design/design_physical.rpt`
+  - `4_Backend_ICC2/4_Report/01_init_design/check_design.rpt`
+  - `4_Backend_ICC2/4_Report/01_init_design/timing.max.rpt`
+  - `4_Backend_ICC2/4_Report/01_init_design/timing.min.rpt`
+- Result: PASS_WITH_OPEN_WARNINGS.
+- Evidence:
+  - `read_verilog` imported the Formality-verified mapped netlist.
+  - `link_block` reported that design `nn_top` was successfully linked.
+  - Saved ICC2 library/block was created for the next floorplan stage.
+  - Design report shows `175574` leaf cells, `39659` sequential cells, and `0` hard macros.
+- Open warnings to classify before floorplan signoff:
+  - `DCHK-010`: 16 floating/no-driver nets from the mapped structural netlist.
+  - `TCK-001`: async reset endpoints reported unconstrained because reset is false-pathed.
+  - `TCK-012`: reset input has no clock-relative delay.
+  - ICC2 reports many `CSTR-021` warnings when reading DC-written net `set_load` constraints; next script revision should use a clean backend SDC or filtered handoff SDC.
