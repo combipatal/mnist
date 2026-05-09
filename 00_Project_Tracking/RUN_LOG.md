@@ -131,10 +131,68 @@
 - Evidence:
   - `read_verilog` imported the Formality-verified mapped netlist.
   - `link_block` reported that design `nn_top` was successfully linked.
+  - Re-run uses clean project SDC `1_Input/constraints/mnist_npu_10ns.sdc`; previous ICC2 `CSTR-021` noise from DC-written net `set_load` constraints is removed.
   - Saved ICC2 library/block was created for the next floorplan stage.
   - Design report shows `175574` leaf cells, `39659` sequential cells, and `0` hard macros.
 - Open warnings to classify before floorplan signoff:
   - `DCHK-010`: 16 floating/no-driver nets from the mapped structural netlist.
   - `TCK-001`: async reset endpoints reported unconstrained because reset is false-pathed.
   - `TCK-012`: reset input has no clock-relative delay.
-  - ICC2 reports many `CSTR-021` warnings when reading DC-written net `set_load` constraints; next script revision should use a clean backend SDC or filtered handoff SDC.
+  - No-driver nets listed in EMS: `global_w_addr[10:4]`, `in_cnt[3:0]`, `state[3]`, `state_next[3]`, `u_input_fifo/rd_addr_t[9]`, `u_input_fifo/rd_addr_t[6]`, `u_input_fifo/rd_addr_t[4]`.
+
+### ICC2 floorplan checkpoint
+
+- Command: `4_Backend_ICC2/0_Script/02_floorplan/run_floorplan_initial.sh`
+- Tool: `icc2_shell`
+- Log: `4_Backend_ICC2/3_Log/02_floorplan/run_floorplan_initial.log`
+- Input block: `4_Backend_ICC2/2_Output/01_init_design/mnist_npu_icc2_lib:nn_top.design`
+- Output block: `4_Backend_ICC2/2_Output/01_init_design/mnist_npu_icc2_lib:floorplan.design`
+- Reports:
+  - `4_Backend_ICC2/4_Report/02_floorplan/design_physical.rpt`
+  - `4_Backend_ICC2/4_Report/02_floorplan/utilization.rpt`
+  - `4_Backend_ICC2/4_Report/02_floorplan/qor.rpt`
+  - `4_Backend_ICC2/4_Report/02_floorplan/timing.max.rpt`
+  - `4_Backend_ICC2/4_Report/02_floorplan/timing.min.rpt`
+  - `4_Backend_ICC2/4_Report/02_floorplan/check_design.rpt`
+- Result: PASS_WITH_OPEN_WARNINGS.
+- Evidence:
+  - `initialize_floorplan` completed.
+  - Target utilization: `0.55`; reported utilization: `0.5506`.
+  - Core area: `{20 20} {1077.616 1076.704}`.
+  - Total cell area: `615341.5854`.
+  - `place_pins -self` created 41 top-level pins.
+  - Setup timing sample slack after floorplan: `5.97 ns`.
+  - Hold timing sample worst reported slack remains about `-0.01 ns`.
+- Open warnings:
+  - Same 16 mapped-netlist no-driver warnings remain.
+  - Same async-reset timing check warnings remain.
+  - ICC2 auto-derived routing directions for M1 through MRDL because the imported technology did not provide explicit routing direction metadata.
+
+### ICC2 powerplan checkpoint
+
+- Command: `4_Backend_ICC2/0_Script/03_powerplan/run_powerplan_initial.sh`
+- Tool: `icc2_shell`
+- Log: `4_Backend_ICC2/3_Log/03_powerplan/run_powerplan_initial.log`
+- Input block: `4_Backend_ICC2/2_Output/01_init_design/mnist_npu_icc2_lib:floorplan.design`
+- Output block: `4_Backend_ICC2/2_Output/01_init_design/mnist_npu_icc2_lib:powerplan.design`
+- Reports:
+  - `4_Backend_ICC2/4_Report/03_powerplan/pg_patterns.rpt`
+  - `4_Backend_ICC2/4_Report/03_powerplan/pg_strategies.rpt`
+  - `4_Backend_ICC2/4_Report/03_powerplan/pg_strategy_via_rules.rpt`
+  - `4_Backend_ICC2/4_Report/03_powerplan/pg_ports.rpt`
+  - `4_Backend_ICC2/4_Report/03_powerplan/pg_connectivity.rpt`
+  - `4_Backend_ICC2/4_Report/03_powerplan/pg_connectivity_detail.rpt`
+  - `4_Backend_ICC2/4_Report/03_powerplan/pg_drc.rpt`
+  - `4_Backend_ICC2/4_Report/03_powerplan/design_physical.rpt`
+  - `4_Backend_ICC2/4_Report/03_powerplan/utilization.rpt`
+  - `4_Backend_ICC2/4_Report/03_powerplan/qor.rpt`
+- Result: PASS_WITH_OPEN_PG_CONNECTIVITY.
+- Evidence:
+  - `compile_pg` completed successfully.
+  - PG objects committed: `813` wires and `24942` vias.
+  - Boundary PG pins created: `16`.
+  - `check_pg_drc` reported `No errors found`.
+  - Utilization remains `0.5506`.
+- Open warnings:
+  - `check_pg_connectivity` reports 7 floating wires and `175574` floating standard cells for both VDD and VSS.
+  - This is not PG-clean. The cells are still unplaced at the pre-placement powerplan stage, so PG connectivity must be rechecked after placement.

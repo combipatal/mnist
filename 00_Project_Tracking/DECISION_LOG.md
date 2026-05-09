@@ -40,4 +40,14 @@
 ### ICC2 Init Warning Handling
 
 - Decision: record ICC2 init as linked/saved with open warnings rather than call it clean.
-- Rationale: the design imports and links, but DC-written net `set_load` constraints produce noisy ICC2 warnings, async reset endpoints remain intentionally false-pathed, and 16 no-driver mapped-netlist nets need classification before floorplan closure.
+- Rationale: the design imports and links, but async reset endpoints remain intentionally false-pathed and 16 no-driver mapped-netlist nets need classification before later closure.
+
+### ICC2 Backend Constraint Source
+
+- Decision: use the clean project SDC `1_Input/constraints/mnist_npu_10ns.sdc` for ICC2 bring-up instead of the DC-written mapped SDC.
+- Rationale: ICC2 does not support the mapped SDC's many net `set_load` commands, while the clean project SDC preserves the baseline clock, IO delay, uncertainty, and reset false-path intent.
+
+### Pre-Placement PG Connectivity Status
+
+- Decision: record the first powerplan as generated but not PG-clean.
+- Rationale: `compile_pg` and PG DRC pass, but `check_pg_connectivity` reports all standard cells floating before placement. PG connectivity must be rechecked after placement before claiming clean power connectivity.

@@ -32,7 +32,9 @@ read_verilog $DC_TOPO_NETLIST
 current_design $TOP_NAME
 link_block
 
-read_sdc $DC_TOPO_SDC
+# Use the clean project SDC for ICC2 bring-up.  The DC-written SDC contains
+# thousands of net set_load commands that ICC2 does not support.
+read_sdc $ICC2_SDC
 
 set_parasitic_parameters \
   -early_spec saed32_cmin \
@@ -57,4 +59,3 @@ save_block
 save_lib
 
 exit
-

@@ -19,8 +19,8 @@ backend utilization target: 55%
 | DC synthesis | PASS_WITH_ACCEPTED_RISKS | `2_Synthesis/3_Log/run_dc_compile_topo.log`, `2_Synthesis/4_Report/topo_10ns/post_compile.qor.rpt`, `2_Synthesis/2_Output/topo_10ns/nn_top.topo_10ns.mapped.ddc` |
 | Formality R2N | PASS | `3_Formality/3_Log/run_fm_r2n_topo.log`, `3_Formality/4_Report/r2n_topo_10ns/r2n_topo_10ns.failing_points.rpt` |
 | ICC2 init_design | PASS_WITH_OPEN_WARNINGS | `4_Backend_ICC2/3_Log/01_init_design/run_init_design_check.log`, `4_Backend_ICC2/4_Report/01_init_design/check_design.rpt`, `4_Backend_ICC2/2_Output/01_init_design/mnist_npu_icc2_lib` |
-| Floorplan | PENDING | TBD |
-| Powerplan | PENDING | TBD |
+| Floorplan | PASS_WITH_OPEN_WARNINGS | `4_Backend_ICC2/3_Log/02_floorplan/run_floorplan_initial.log`, `4_Backend_ICC2/4_Report/02_floorplan/utilization.rpt` |
+| Powerplan | PASS_WITH_OPEN | `4_Backend_ICC2/3_Log/03_powerplan/run_powerplan_initial.log`, `4_Backend_ICC2/4_Report/03_powerplan/pg_connectivity.rpt`, `4_Backend_ICC2/4_Report/03_powerplan/pg_drc.rpt` |
 | Placement | PENDING | TBD |
 | CTS | PENDING | TBD |
 | Route | PENDING | TBD |
@@ -89,6 +89,36 @@ backend utilization target: 55%
 
 | Warning | Disposition |
 | --- | --- |
-| DC-written SDC emits unsupported net `set_load` warnings in ICC2 | Use clean or filtered backend SDC before the next recorded init/floorplan handoff. |
+| DC-written SDC emits unsupported net `set_load` warnings in ICC2 | Resolved for ICC2 bring-up by reading clean project SDC `1_Input/constraints/mnist_npu_10ns.sdc`. |
 | Async reset endpoints reported unconstrained | Expected from reset false-path handling; keep explicit and review before timing closure. |
 | 16 no-driver mapped-netlist nets | Classify as optimization leftovers or fix before claiming clean init. |
+
+## ICC2 Floorplan Summary
+
+| Metric | Value |
+| --- | --- |
+| Target utilization | `0.55` |
+| Reported utilization | `0.5506` |
+| Core area | `{20 20} {1077.616 1076.704}` |
+| Total cell area | `615341.5854` |
+| Top-level pins placed | `41` |
+| Setup sample slack | `5.97 ns` |
+| Hold sample worst slack | about `-0.01 ns` |
+
+## ICC2 Powerplan Summary
+
+| Metric | Value |
+| --- | --- |
+| Saved block | `powerplan` |
+| PG wires/vias committed | `813 / 24942` |
+| Boundary PG pins | `16` |
+| PG DRC | `No errors found` |
+| VDD connectivity | `7` floating wires, `175574` floating standard cells |
+| VSS connectivity | `7` floating wires, `175574` floating standard cells |
+
+## ICC2 Powerplan Open Warnings
+
+| Warning | Disposition |
+| --- | --- |
+| PG connectivity reports all standard cells floating | Not PG-clean; expected to remain open before placement because cells are unplaced. Re-check after placement. |
+| 7 floating wires on VDD and VSS | Carry into placement/debug; do not claim PG clean until fixed or classified. |

@@ -2,8 +2,8 @@
 
 ## Current Status
 
-- Status: `ICC2_INIT_PASS_WITH_OPEN_WARNINGS`
-- Stage: A4 ICC2 init_design
+- Status: `A4_POWERPLAN_DONE_WITH_OPEN_PG_CONNECTIVITY`
+- Stage: A4 ICC2 init/floorplan/powerplan
 - Primary RTL cloned: yes
 - Source revision frozen: yes
 - Candidate top identified: `nn_top`
@@ -13,16 +13,17 @@
 - Formality R2N: passed
 - ICC2 SAED32 RVT NDM build: passed
 - ICC2 init_design/link/save: passed with open warnings
+- ICC2 floorplan: passed with open warnings
+- ICC2 powerplan: generated; PG DRC clean, PG connectivity open before placement
 
 ## Next Checkpoint
 
-Clean up ICC2 init constraints and proceed to floorplan:
+Proceed to placement and re-check PG connectivity:
 
-1. Replace or filter the DC-written SDC for ICC2 so unsupported net `set_load` constraints do not flood logs.
-2. Classify the 16 no-driver structural nets from `check_design`.
-3. Keep async reset false-path handling explicit and record reset-related timing warnings.
-4. Create floorplan script with 55% utilization and 1:1 aspect ratio.
-5. Save floorplan block and collect utilization/floorplan reports.
+1. Create ICC2 placement script from the saved `powerplan` block.
+2. Run initial placement/legalization.
+3. Re-run timing, legality, and PG connectivity checks after cells are placed.
+4. Decide whether the 55% floorplan is route-feasible or needs a lower utilization trial.
 
 ## Accepted First-Baseline Risks
 
@@ -33,3 +34,4 @@ Clean up ICC2 init constraints and proceed to floorplan:
 - SRAM macro replacement is disabled; memories are implemented as FF arrays for this first handoff.
 - FM RTL interpretation array-bound/signedness warnings are accepted because R2N passed, but retained as an RTL-quality risk.
 - ICC2 init currently carries reset-related timing warnings and 16 mapped-netlist no-driver warnings for classification before floorplan closure.
+- PG connectivity is not clean before placement: both VDD and VSS report `175574` floating standard cells. Re-check after placement before calling PG clean.
