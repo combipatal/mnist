@@ -2,8 +2,8 @@
 
 ## Current Status
 
-- Status: `A7_ROUTE_DONE_WITH_OPEN_DRC_HOLD_PG_AND_ELECTRICAL`
-- Stage: A7 ICC2 route/report extraction
+- Status: `A7_ROUTE_REPAIR_TRIAL_OPEN_RESIDUAL_OFFGRID_PG_HOLD_ELECTRICAL`
+- Stage: A7 ICC2 route debug and backend repair trials
 - Primary RTL cloned: yes
 - Source revision frozen: yes
 - Candidate top identified: `nn_top`
@@ -19,15 +19,18 @@
 - ICC2 libdir/LEF/modify NDM trial: completed but not adopted
 - ICC2 CTS/clock route: passed with open hold, PG connectivity, and electrical violations
 - ICC2 route/report extraction: completed with open route DRC, PG connectivity, hold, and electrical violations
+- ICC2 route DRC debug: completed; lower-metal/VIA1/contact-dominated DRC confirmed
+- ICC2 route ECO DRC repair: completed but not adopted; DRC only improved from 738 to 709
+- ICC2 libdir VIA1 no-track backend-route trial: completed; route DRC improved from 738 to 77 but still not clean
 
 ## Next Checkpoint
 
-Proceed to post-route issue classification before changing the baseline:
+Proceed from the best route-DRC repair candidate, while keeping the fixed baseline evidence intact:
 
-1. Classify the `738` route DRCs by type/location from `4_Backend_ICC2/4_Report/06_route/check_routes.rpt`.
+1. Classify the residual `77` DRCs in `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_route/06_route/check_routes.rpt`, especially the `72` off-grid DRCs.
 2. Investigate why PG connectivity still reports floating standard cells even though PG DRC reports no errors.
-3. Prepare a lower-utilization backend trial if DRC clustering points to congestion or pin access.
-4. Keep route open; do not claim DRC, PG, hold, or electrical clean until reports prove closure.
+3. Decide the next controlled repair trial: route-level off-grid repair, lower-utilization rerun using the VIA1 no-track NDM, or DC cell-use policy rerun informed by ibex.
+4. Keep route open; do not claim DRC, PG, hold, antenna, or electrical clean until reports prove closure.
 
 ## Accepted First-Baseline Risks
 
@@ -50,3 +53,6 @@ Proceed to post-route issue classification before changing the baseline:
 - Route PG DRC reports `No errors found`, but PG connectivity is still not clean: VDD has `4653` floating standard cells and VSS has `3963` floating standard cells.
 - Route hold remains open: worst hold `-0.10 ns`, total hold `-288.96`, violations `25344`.
 - Route electrical violations remain open: max transition/max capacitance violations `287 / 1958`.
+- Route ECO DRC repair was tested and not adopted: DRC only improved from `738` to `709`.
+- libdir VIA1 no-track backend-route trial is the best current route-DRC candidate: DRC improved to `77`, with `0` open signal nets and no needs-fat-contact in the final route report.
+- libdir VIA1 no-track trial is still not clean: residual DRC is dominated by `72` off-grid DRCs; PG connectivity, hold, antenna, and electrical closure remain open.

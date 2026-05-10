@@ -216,6 +216,41 @@ backend utilization target: 55%
 | Max transition/cap remain open | Electrical cleanup still required after route. |
 | Route log beginning was partially overwritten by a duplicate launch | Use completed report files and the intact log tail as route evidence; route script now has a lock guard. |
 
+## ICC2 Route DRC Repair Trial Summary
+
+| Metric | Baseline Route | Route ECO DRC1 | libdir VIA1 no-track route |
+| --- | --- | --- | --- |
+| Command | `4_Backend_ICC2/0_Script/06_route/run_route_initial.sh` | `4_Backend_ICC2/0_Script/06_route/run_route_eco_drc1.sh` | `4_Backend_ICC2/0_Script/99_util/run_libdir_via1_no_track_backend_flow.sh` |
+| Reference physical setup | EDK RVT NDM | EDK RVT NDM | libdir modified LEFs plus VIA1 pitch/no-track techfile |
+| Open signal nets | `0` | `0` | `0` |
+| Route DRC total | `738` | `709` | `77` |
+| Diff-net spacing | `285` | `263` | `3` |
+| Minimum-area | `4` | `7` | `1` |
+| Needs-fat-contact | `183` | `205` | `0` |
+| Off-grid | `240` | `210` | `72` |
+| Same-net spacing | `0` | `0` | `1` |
+| Short | `26` | `24` | `0` |
+| Antenna | no antenna rules defined | no antenna rules defined | no antenna rules defined |
+| Setup QoR | worst setup slack `5.59 ns`, setup violating paths `0` | setup still met | worst setup slack `5.60 ns`, setup violating paths `0` |
+| Hold QoR | worst `-0.10 ns`, total `-288.96`, violations `25344` | about worst `-0.10 ns`; still open | worst `-0.10 ns`, total `-235.75`, violations `22731` |
+| Utilization after route | `0.6925` | `0.6925` | `0.6924` |
+| Legality | `TOTAL 0 Violations` | `TOTAL 0 Violations` | `TOTAL 0 Violations` |
+| PG DRC | `No errors found` | `No errors found` | `No errors found` in route log |
+| VDD connectivity | `7` floating wires, `4653` floating std cells, `8` floating terminals | still open | `7` floating wires, `4697` floating std cells |
+| VSS connectivity | `7` floating wires, `3963` floating std cells | still open | `7` floating wires, `4151` floating std cells |
+| Max transition/cap violations | `287 / 1958` | still open | `296 / 2011` |
+| Disposition | Fixed first route baseline, not clean | Completed but not adopted | Best route-DRC candidate, not clean yet |
+
+## ICC2 Route Debug Conclusions
+
+| Observation | Evidence | Current Interpretation |
+| --- | --- | --- |
+| Baseline DRC is lower-metal/contact dominated | `4_Backend_ICC2/4_Report/06_route/drc_debug/drc.matrix.rpt` | Root cause is likely SAED32 pin access/VIA1/contact legality plus congestion, not a single local route error. |
+| Simple route ECO is weak | DRC `738` to `709` in `06_route_eco_drc1/check_routes.post.rpt` | Do not spend more time on generic ECO reroute before changing the physical setup or placement conditions. |
+| VIA1 no-track physical setup is effective for contact DRC | Needs-fat-contact `183` to `0`, short `26` to `0` | The sibling-project library-policy fix applies partially to MNIST. |
+| Residual trial DRC is mostly off-grid | `72` of `77` final DRCs are off-grid | Next debug should inspect residual off-grid objects/locations before broad reruns. |
+| PG connectivity remains separate from signal DRC | PG DRC has no errors, but thousands of floating std cells remain | Do not claim PG clean; debug stdcell rail/pin connection independently. |
+
 ## ICC2 libdir/LEF/modify NDM Trial Summary
 
 | Metric | Baseline EDK RVT NDM | libdir/LEF/modify RVT NDM |

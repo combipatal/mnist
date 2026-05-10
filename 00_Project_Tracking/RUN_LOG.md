@@ -341,3 +341,116 @@
   - Added a lock-file guard to `run_route_initial.sh` so future route reruns fail before clobbering the log when the ICC2 design library is locked.
 - Next action:
   - Classify route DRC locations/types and determine whether the first repair should be lower utilization, routing option adjustment, or physical abstract/PG connectivity repair.
+
+### ICC2 post-route DRC debug checkpoint
+
+- Command: `4_Backend_ICC2/0_Script/06_route/debug_route_drc.sh`
+- Tool: `icc2_shell`
+- Input block: `4_Backend_ICC2/2_Output/01_init_design/mnist_npu_icc2_lib:route.design`
+- Reports:
+  - `4_Backend_ICC2/4_Report/06_route/drc_debug/drc.matrix.rpt`
+  - `4_Backend_ICC2/4_Report/06_route/drc_debug/drc.error_type.rpt`
+  - `4_Backend_ICC2/4_Report/06_route/drc_debug/drc.error_layer.rpt`
+  - `4_Backend_ICC2/4_Report/06_route/drc_debug/drc.errors.tsv`
+- Result: COMPLETED.
+- Evidence:
+  - Baseline route DRC matrix is concentrated on lower routing/contact layers.
+  - M1 has `378` total DRCs: `263` diff-net spacing, `91` off-grid, `24` short.
+  - M1-M2 has `183` needs-fat-contact DRCs.
+  - M2 has `101` total DRCs: `21` diff-net spacing, `4` min-area, `74` off-grid, `2` short.
+  - VIA1 has `75` off-grid DRCs.
+  - DRCs are distributed across many locations; this is not a single localized hotspot.
+- Diagnosis:
+  - The dominant baseline route problem is lower-metal pin/via/contact legality and routing-resource pressure, consistent with SAED32 M1/M2/VIA1 issues seen in the sibling CV32E40P and ibex projects.
+
+### ICC2 route ECO DRC repair trial
+
+- Command: `4_Backend_ICC2/0_Script/06_route/run_route_eco_drc1.sh`
+- Tool: `icc2_shell`
+- Input block: `4_Backend_ICC2/2_Output/01_init_design/mnist_npu_icc2_lib:route.design`
+- Output block: `4_Backend_ICC2/2_Output/01_init_design/mnist_npu_icc2_lib:route_eco_drc1.design`
+- Reports:
+  - `4_Backend_ICC2/4_Report/06_route_eco_drc1/check_routes.post.rpt`
+  - `4_Backend_ICC2/4_Report/06_route_eco_drc1/qor.rpt`
+  - `4_Backend_ICC2/4_Report/06_route_eco_drc1/check_legality.rpt`
+  - `4_Backend_ICC2/4_Report/06_route_eco_drc1/pg_connectivity.rpt`
+  - `4_Backend_ICC2/4_Report/06_route_eco_drc1/pg_drc.rpt`
+- Result: COMPLETED_NOT_ADOPTED.
+- Evidence:
+  - Open signal nets remained `0`.
+  - Route DRC improved only from `738` to `709`.
+  - Residual DRC classes: `263` diff-net spacing, `7` minimum-area, `205` needs-fat-contact, `210` off-grid, `24` short.
+  - Setup remained met; hold remained open at about worst `-0.10 ns`.
+  - Legality remained clean: `TOTAL 0 Violations`.
+  - PG DRC reported no errors, but PG connectivity remained open.
+- Disposition:
+  - Simple post-route ECO is not enough to close the baseline DRC.
+  - Keep the script as a reproducible negative trial and move to physical-abstract/library-policy experiments.
+
+### Sibling-project backend reference review
+
+- References reviewed:
+  - `/DATA/home/edu135/ibex/docs/backend_library_policy.md`
+  - `/DATA/home/edu135/ibex/docs/ibex_backend_route_closure_case_study.md`
+  - `/DATA/home/edu135/ibex/init/context_bootstrap.md`
+  - `/DATA/home/edu135/CV32E40P/docs/backend/libdir_modify_lef_trial_2026_05_09.md`
+  - `/DATA/home/edu135/CV32E40P/docs/backend/contact_code_diagnosis.md`
+  - `/DATA/home/edu135/CV32E40P/docs/backend/pin_access_track_probe.md`
+  - `/DATA/home/edu135/CV32E40P/docs/backend/scan_def_and_advanced_legalizer_trials.md`
+- Result: COMPLETED.
+- Findings:
+  - ibex achieved route closure with project-local modified LEFs plus a patched technology file where VIA1 pitch was enabled and VIA1 `onWireTrack`/`onGrid` restrictions were removed.
+  - CV32E40P showed that modified LEFs removed needs-fat-contact DRCs but could leave off-grid DRCs.
+  - CV32E40P also showed that simple M1 track regeneration and advanced legalizer-style trials were not effective standalone fixes.
+  - Both projects point to SAED32 lower-metal pin access and VIA1 legality as the first route-DRC root-cause family to test.
+
+### ICC2 libdir VIA1 no-track NDM build
+
+- Command: `4_Backend_ICC2/0_Script/00_setup/build_saed32_rvt_ndm_libdir_via1_no_track.sh`
+- Tool: `lm_shell`
+- Log: `4_Backend_ICC2/3_Log/00_setup/build_saed32_rvt_ndm_libdir_via1_no_track.log`
+- Outputs:
+  - `4_Backend_ICC2/2_Output/00_setup/tech/saed32nm_1p9m_mw.via1_pitch_no_track.tf`
+  - `4_Backend_ICC2/2_Output/00_setup/ndm_libdir_via1_no_track/saed32rvt_tt.ndm`
+- Result: PASS.
+- Evidence:
+  - `check_workspace` completed successfully.
+  - NDM was written under the project ICC2 setup output directory.
+  - The patched techfile uses the sibling-project VIA1 policy: enable `pitch = 0.36`, remove VIA1 `onWireTrack = 1`, and remove VIA1 `onGrid = 1`.
+- Recorded warnings:
+  - SAED32 LEF/NDM import warnings remain in the same family as the previous NDM builds and are treated as library-import warnings unless a downstream report proves a direct failure.
+
+### ICC2 libdir VIA1 no-track backend-route trial
+
+- Command: `4_Backend_ICC2/0_Script/99_util/run_libdir_via1_no_track_backend_flow.sh`
+- Tool: `icc2_shell`
+- Trial reference library: `4_Backend_ICC2/2_Output/00_setup/ndm_libdir_via1_no_track/saed32rvt_tt.ndm`
+- Trial design library: `4_Backend_ICC2/2_Output/trials/libdir_via1_no_track_route/mnist_npu_icc2_lib`
+- Log root: `4_Backend_ICC2/3_Log/trials/libdir_via1_no_track_route`
+- Report root: `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_route`
+- Result: PASS_WITH_OPEN, NOT YET ADOPTED AS BASELINE.
+- Evidence:
+  - Init, floorplan, powerplan, placement, CTS, and route completed using trial-specific log/report/output roots.
+  - Final route block was saved as `mnist_npu_icc2_lib:route.design` inside the trial output library.
+  - `06_route/check_routes.rpt` reports `0` open signal nets and `77` total DRCs.
+  - Residual route DRC classes: `3` diff-net spacing, `1` minimum-area, `72` off-grid, `1` same-net spacing.
+  - `Needs fat contact` is no longer reported in the final route report.
+  - `antenna.rpt` reports no antenna rules defined, so antenna is not proven clean.
+  - Setup timing remains met: worst setup slack `5.60 ns`, setup violating paths `0`.
+  - Hold remains open: worst hold `-0.10 ns`, total hold `-235.75`, hold violations `22731`.
+  - Utilization after route is `0.6924`.
+  - `check_legality.rpt` reports `TOTAL 0 Violations`.
+  - Route log reports `check_pg_drc` completed with `No errors found`.
+  - PG connectivity is still not clean: VDD has 7 floating wires and `4697` floating standard cells; VSS has 7 floating wires and `4151` floating standard cells.
+  - Design max transition/max capacitance violations remain open after route: `296` max transition violations and `2011` max capacitance violations.
+- Comparison against first route baseline:
+  - Total route DRC improved from `738` to `77`.
+  - Diff-net spacing improved from `285` to `3`.
+  - Needs-fat-contact improved from `183` to `0`.
+  - Off-grid improved from `240` to `72`, but remains the dominant residual class.
+  - Short DRCs improved from `26` to `0`.
+  - PG connectivity worsened versus baseline route: VDD floating standard cells increased from `4653` to `4697`; VSS increased from `3963` to `4151`.
+- Disposition:
+  - Treat the VIA1 no-track NDM as the strongest current route-DRC repair candidate.
+  - Do not declare route clean and do not replace the fixed baseline yet because residual DRC, PG connectivity, hold, and electrical violations remain open.
+  - Next action is residual off-grid classification on the trial route, then decide between route-level repair, lower-utilization rerun with the same NDM, or a DC cell-use policy rerun based on ibex.

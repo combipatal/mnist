@@ -74,3 +74,19 @@
 
 - Decision: add a lock-file guard to `4_Backend_ICC2/0_Script/06_route/run_route_initial.sh`.
 - Rationale: a duplicate route launch while ICC2 still held `cts.design` failed with `NDM-029` and partially overwrote the shared route log. Future route reruns should fail before starting ICC2 or clobbering the log when the design library is locked.
+
+### Route DRC Debug Method
+
+- Decision: debug the baseline route DRC as an evidence-driven lower-metal/VIA1 problem before running broad utilization or option sweeps.
+- Rationale: the route DRC matrix is dominated by M1, M2, VIA1, and M1-M2 contact classes, and a simple `route_eco` trial reduced total DRC only from `738` to `709`. This points away from a small local reroute issue and toward physical abstract, pin access, and congestion interactions.
+
+### Sibling-Project Library Policy Reference
+
+- Decision: use the ibex and CV32E40P SAED32 backend records as controlled references, but validate any imported fix in a separate MNIST trial output root before changing the fixed baseline.
+- Rationale: ibex closed route DRC with modified LEFs plus a VIA1 pitch/no-track technology patch, while CV32E40P showed partial improvement and residual off-grid risk. MNIST must preserve its first-baseline evidence and isolate library-policy experiments for reproducibility.
+
+### libdir VIA1 no-track Trial Disposition
+
+- Decision: keep `libdir_via1_no_track` as the strongest current route-DRC repair candidate, not as a clean baseline replacement.
+- Rationale: the trial reduced final route DRC from `738` to `77`, removed needs-fat-contact and short DRCs from the final route report, and kept setup/legality acceptable. However, residual off-grid DRC remains, PG connectivity is still open, hold remains negative, and max transition/cap violations remain open.
+- Next action: classify the residual off-grid DRCs from the trial route and then choose between route-level repair, lower-utilization rerun using the same NDM, or a DC cell-use policy rerun informed by ibex.

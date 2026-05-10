@@ -20,6 +20,9 @@ set TLUPLUS_MAP $SAED32_ROOT/tech/star_rcxt/saed32nm_tf_itf_tluplus.map
 
 set NDM_RVT $PROJECT_ROOT/4_Backend_ICC2/2_Output/00_setup/ndm/saed32rvt_tt.ndm
 
+if {[info exists ::env(TECH_FILE)]} {
+  set TECH_FILE $::env(TECH_FILE)
+}
 if {[info exists ::env(NDM_RVT)]} {
   set NDM_RVT $::env(NDM_RVT)
 }
@@ -57,6 +60,15 @@ set POWER_REPORT_DIR $PROJECT_ROOT/4_Backend_ICC2/4_Report/03_powerplan
 set PLACE_REPORT_DIR $PROJECT_ROOT/4_Backend_ICC2/4_Report/04_place
 set CTS_REPORT_DIR $PROJECT_ROOT/4_Backend_ICC2/4_Report/05_cts
 set ROUTE_REPORT_DIR $PROJECT_ROOT/4_Backend_ICC2/4_Report/06_route
+
+foreach dir_var {
+  SETUP_LOG_DIR INIT_LOG_DIR FLOORPLAN_LOG_DIR POWER_LOG_DIR PLACE_LOG_DIR CTS_LOG_DIR ROUTE_LOG_DIR
+  SETUP_REPORT_DIR INIT_REPORT_DIR FLOORPLAN_REPORT_DIR POWER_REPORT_DIR PLACE_REPORT_DIR CTS_REPORT_DIR ROUTE_REPORT_DIR
+} {
+  if {[info exists ::env($dir_var)]} {
+    set $dir_var $::env($dir_var)
+  }
+}
 
 file mkdir $PROJECT_ROOT/4_Backend_ICC2/2_Output/00_setup
 file mkdir $PROJECT_ROOT/4_Backend_ICC2/2_Output/01_init_design
