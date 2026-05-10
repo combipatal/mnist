@@ -5,6 +5,19 @@
 source 4_Backend_ICC2/0_Script/00_setup/icc2_common_setup.tcl
 
 set ROUTE_ECO_REPORT_DIR 4_Backend_ICC2/4_Report/06_route_eco_drc1
+set ROUTE_ECO_INPUT_BLOCK route
+set ROUTE_ECO_OUTPUT_BLOCK route_eco_drc1
+
+if {[info exists ::env(ROUTE_ECO_REPORT_DIR)]} {
+  set ROUTE_ECO_REPORT_DIR $::env(ROUTE_ECO_REPORT_DIR)
+}
+if {[info exists ::env(ROUTE_ECO_INPUT_BLOCK)]} {
+  set ROUTE_ECO_INPUT_BLOCK $::env(ROUTE_ECO_INPUT_BLOCK)
+}
+if {[info exists ::env(ROUTE_ECO_OUTPUT_BLOCK)]} {
+  set ROUTE_ECO_OUTPUT_BLOCK $::env(ROUTE_ECO_OUTPUT_BLOCK)
+}
+
 file mkdir $ROUTE_ECO_REPORT_DIR
 
 if {![file exists $ICC2_LIB_DIR]} {
@@ -13,7 +26,7 @@ if {![file exists $ICC2_LIB_DIR]} {
 }
 
 open_lib $ICC2_LIB_DIR
-open_block -edit route
+open_block -edit $ROUTE_ECO_INPUT_BLOCK
 
 set_voltage $DEFAULT_VOLTAGE
 
@@ -29,7 +42,7 @@ route_eco \
   -reroute any_nets \
   -reuse_existing_global_route true
 
-save_block -as route_eco_drc1
+save_block -as $ROUTE_ECO_OUTPUT_BLOCK
 save_lib
 
 check_routes > $ROUTE_ECO_REPORT_DIR/check_routes.post.rpt
@@ -48,7 +61,6 @@ check_pg_drc \
   -no_gui \
   -output $ROUTE_ECO_REPORT_DIR/pg_drc.rpt
 
-save_block
 save_lib
 
 exit

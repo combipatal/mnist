@@ -100,9 +100,70 @@ Open issues:
 
 The sibling-project VIA1 no-track policy is materially relevant to MNIST. It removes the needs-fat-contact class and reduces route DRC from `738` to `77`, but it does not complete route closure.
 
+## Residual Off-grid Classification
+
+Debug command:
+
+```text
+4_Backend_ICC2/0_Script/06_route/debug_libdir_via1_no_track_route_residuals.sh
+```
+
+Debug artifacts:
+
+- `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_route/06_route_debug/drc.errors.tsv`
+- `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_route/06_route_debug/drc.offgrid.tsv`
+- `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_route/06_route_debug/drc.matrix.rpt`
+- `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_route/06_route_debug/pg_connectivity_detail.rpt`
+
+Residual route DRC:
+
+| Metric | Value |
+| --- | --- |
+| Total DRC | `77` |
+| Off-grid | `72` |
+| Off-grid by layer | `69` M1, `3` M2 |
+| Off-grid PG-object references | `0` |
+| Off-grid signal-only entries | `72` |
+| Top repeated off-grid object | `n47593`, 3 entries |
+| Largest 100um coordinate bucket | `500,700`, 12 entries |
+
+The residual off-grid violations are signal-route objects, not PG wires. This separates signal route DRC from the PG connectivity issue.
+
+## PG Connectivity Classification
+
+The trial PG report still says VDD has `4697` floating standard cells and VSS has `4151`. The detail report shows the shape more clearly:
+
+| Net | Disjoint networks | Main network std cells | Isolated subnetwork shape |
+| --- | --- | --- | --- |
+| VDD | `8` | `201997` | seven subnetworks, each `1` wire, `0` vias, `0` terminals |
+| VSS | `8` | `202543` | seven subnetworks, each `1` wire, `0` vias, `0` terminals |
+
+This is a PG rail/connectivity issue. It should be debugged independently from signal off-grid DRC.
+
+## Route-only ECO Check
+
+Command:
+
+```text
+4_Backend_ICC2/0_Script/06_route/run_libdir_via1_no_track_route_eco_offgrid1.sh
+```
+
+Result:
+
+| Metric | Value |
+| --- | --- |
+| Pre-check DRC | `77` |
+| Changed nets | `364` |
+| Best intermediate DRC | `38`, then non-monotonic |
+| Final post-check DRC | `55` |
+| Final DRC classes | `2` diff-net spacing, `53` off-grid |
+| Open signal nets | `0` |
+| PG connectivity | unchanged |
+
+Generic route-only ECO is useful but insufficient. It partially reduces residual signal DRC, but it does not converge to clean and does not address PG connectivity.
+
 Next controlled step:
 
-1. Classify the `77` residual DRCs in the trial route, especially off-grid objects and coordinates.
-2. Debug PG connectivity separately from signal route DRC.
-3. If residual off-grid is not a route-only repair, run a lower-utilization backend trial with the VIA1 no-track NDM.
-4. If cell pin access remains the blocker, consider a DC cell-use policy rerun based on the ibex closure notes.
+1. Run a lower-utilization or placement/congestion trial with the VIA1 no-track NDM for signal DRC.
+2. Debug PG rail generation/connection separately, focusing on the seven isolated VDD and VSS one-wire subnetworks.
+3. If residual off-grid remains after congestion relief, consider a DC cell-use policy rerun based on the ibex closure notes.

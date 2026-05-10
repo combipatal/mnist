@@ -454,3 +454,61 @@
   - Treat the VIA1 no-track NDM as the strongest current route-DRC repair candidate.
   - Do not declare route clean and do not replace the fixed baseline yet because residual DRC, PG connectivity, hold, and electrical violations remain open.
   - Next action is residual off-grid classification on the trial route, then decide between route-level repair, lower-utilization rerun with the same NDM, or a DC cell-use policy rerun based on ibex.
+
+### ICC2 libdir VIA1 no-track residual DRC and PG debug
+
+- Command: `4_Backend_ICC2/0_Script/06_route/debug_libdir_via1_no_track_route_residuals.sh`
+- Tool: `icc2_shell`
+- Input block: `4_Backend_ICC2/2_Output/trials/libdir_via1_no_track_route/mnist_npu_icc2_lib:route.design`
+- Reports:
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_route/06_route_debug/check_routes.recheck.rpt`
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_route/06_route_debug/drc.matrix.rpt`
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_route/06_route_debug/drc.errors.tsv`
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_route/06_route_debug/drc.offgrid.tsv`
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_route/06_route_debug/pg_connectivity.rpt`
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_route/06_route_debug/pg_connectivity_detail.rpt`
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_route/06_route_debug/pg_drc.rpt`
+- Result: COMPLETED.
+- Evidence:
+  - Recheck confirmed `0` open signal nets and `77` total route DRCs.
+  - DRC matrix: `69` M1 off-grid, `3` M2 off-grid, `3` diff-net spacing, `1` M2 minimum-area, and `1` M2 same-net spacing.
+  - `drc.offgrid.tsv` contains `72` off-grid entries with bbox center and object name.
+  - Off-grid object classification: `0` entries reference VDD/VSS; `72` are signal-only; `70` are plain signal net names and `2` are named route objects.
+  - Top repeated off-grid objects are small clusters, not one global object: `n47593` appears 3 times; `n68596`, `n62541`, `n57976`, `n53846`, `n45702`, `n43530`, and `n40786` appear 2 times each.
+  - Coarse 100um coordinate buckets show distributed clusters; largest bucket is `500,700` with `12` off-grid entries.
+  - PG connectivity remains separate from signal route DRC: VDD has `8` disjoint networks, with the main network connected to `201997` std cells and seven 1-wire/0-via sub-networks covering `765`, `706`, `667`, `666`, `665`, `642`, and `586` std cells.
+  - VSS has `8` disjoint networks, with the main network connected to `202543` std cells and seven 1-wire/0-via sub-networks covering `681`, `620`, `605`, `596`, `566`, `558`, and `525` std cells.
+  - PG DRC again reported `No errors found`.
+- Diagnosis:
+  - Residual route DRC is a signal routing off-grid problem dominated by M1, not a PG-net DRC.
+  - PG connectivity is a PG network/rail connectivity issue: seven isolated rail subnetworks per supply net, not a signal route DRC side effect.
+
+### ICC2 libdir VIA1 no-track route-only ECO off-grid trial
+
+- Command: `4_Backend_ICC2/0_Script/06_route/run_libdir_via1_no_track_route_eco_offgrid1.sh`
+- Tool: `icc2_shell`
+- Input block: `4_Backend_ICC2/2_Output/trials/libdir_via1_no_track_route/mnist_npu_icc2_lib:route.design`
+- Output block: `4_Backend_ICC2/2_Output/trials/libdir_via1_no_track_route/mnist_npu_icc2_lib:route_eco_offgrid1.design`
+- Reports:
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_route_eco_offgrid1/06_route/check_routes.pre.rpt`
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_route_eco_offgrid1/06_route/check_routes.post.rpt`
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_route_eco_offgrid1/06_route/qor.rpt`
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_route_eco_offgrid1/06_route/check_legality.rpt`
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_route_eco_offgrid1/06_route/pg_connectivity.rpt`
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_route_eco_offgrid1/06_route/pg_drc.rpt`
+- Result: COMPLETED_PARTIAL_REPAIR_NOT_CLEAN.
+- Evidence:
+  - Pre-check confirmed `0` open signal nets and `77` total DRCs.
+  - ECO changed `364` nets and saved `route_eco_offgrid1`.
+  - During detail route iteration, DRC fell as low as `38`, then became non-monotonic and stopped as not converging.
+  - Final `check_routes.post.rpt` reports `0` open signal nets and `55` total DRCs: `2` diff-net spacing and `53` off-grid.
+  - Legality remains clean: `TOTAL 0 Violations`.
+  - Setup remains met: worst setup slack `5.60 ns`, setup violating paths `0`.
+  - Hold remains open: worst hold `-0.10 ns`, total hold `-235.75`, hold violations `22731`.
+  - PG connectivity is unchanged: VDD `4697` floating standard cells, VSS `4151` floating standard cells.
+  - PG DRC reported `No errors found`.
+- Disposition:
+  - Route-only ECO can partially reduce residual signal DRC, but it did not converge to clean.
+  - Do not continue generic route-only ECO as the main closure path without another variable change.
+  - Next controlled trials should target placement/congestion or PG rail connectivity separately.
+  - Note: the first execution of this shared ECO Tcl also issued a final `save_block` after `save_block -as`; the Tcl was updated to avoid saving the input block on future ECO trials.

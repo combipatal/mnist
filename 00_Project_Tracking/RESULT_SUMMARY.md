@@ -241,6 +241,42 @@ backend utilization target: 55%
 | Max transition/cap violations | `287 / 1958` | still open | `296 / 2011` |
 | Disposition | Fixed first route baseline, not clean | Completed but not adopted | Best route-DRC candidate, not clean yet |
 
+## ICC2 libdir VIA1 no-track Residual DRC Summary
+
+| Metric | Value |
+| --- | --- |
+| Debug command | `4_Backend_ICC2/0_Script/06_route/debug_libdir_via1_no_track_route_residuals.sh` |
+| Debug reports | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_route/06_route_debug/` |
+| Rechecked open signal nets | `0` |
+| Rechecked DRC total | `77` |
+| Off-grid total | `72` |
+| Off-grid by layer | `69` M1, `3` M2 |
+| Off-grid PG references | `0` VDD/VSS object references |
+| Off-grid signal references | `72` signal-only entries |
+| Largest repeated off-grid object | `n47593`, `3` entries |
+| Largest 100um coordinate bucket | `500,700`, `12` off-grid entries |
+| PG connectivity shape | VDD and VSS each have `8` disjoint networks: one main network plus seven one-wire/zero-via subnetworks |
+| PG DRC | `No errors found` |
+
+## ICC2 libdir VIA1 no-track Route-only ECO Off-grid Trial
+
+| Metric | Value |
+| --- | --- |
+| Command | `4_Backend_ICC2/0_Script/06_route/run_libdir_via1_no_track_route_eco_offgrid1.sh` |
+| Input block | `mnist_npu_icc2_lib:route.design` in the `libdir_via1_no_track_route` trial library |
+| Output block | `mnist_npu_icc2_lib:route_eco_offgrid1.design` |
+| Pre-check DRC | `77`: `3` diff-net spacing, `1` min-area, `72` off-grid, `1` same-net spacing |
+| ECO changed nets | `364` |
+| Best intermediate DRC | `38`, then non-monotonic |
+| Final post-check DRC | `55`: `2` diff-net spacing, `53` off-grid |
+| Open signal nets | `0` |
+| Legality | `TOTAL 0 Violations` |
+| Setup QoR | worst setup slack `5.60 ns`, setup violating paths `0` |
+| Hold QoR | worst `-0.10 ns`, total `-235.75`, violations `22731` |
+| PG connectivity | unchanged: VDD `4697` floating std cells, VSS `4151` floating std cells |
+| PG DRC | `No errors found` |
+| Disposition | Partial route-only repair; not a clean closure path by itself |
+
 ## ICC2 Route Debug Conclusions
 
 | Observation | Evidence | Current Interpretation |

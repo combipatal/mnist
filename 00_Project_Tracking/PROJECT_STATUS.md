@@ -2,7 +2,7 @@
 
 ## Current Status
 
-- Status: `A7_ROUTE_REPAIR_TRIAL_OPEN_RESIDUAL_OFFGRID_PG_HOLD_ELECTRICAL`
+- Status: `A7_ROUTE_REPAIR_TRIAL_PARTIAL_ECO_OPEN_PG_HOLD_ELECTRICAL`
 - Stage: A7 ICC2 route debug and backend repair trials
 - Primary RTL cloned: yes
 - Source revision frozen: yes
@@ -22,14 +22,16 @@
 - ICC2 route DRC debug: completed; lower-metal/VIA1/contact-dominated DRC confirmed
 - ICC2 route ECO DRC repair: completed but not adopted; DRC only improved from 738 to 709
 - ICC2 libdir VIA1 no-track backend-route trial: completed; route DRC improved from 738 to 77 but still not clean
+- ICC2 libdir VIA1 no-track residual DRC extraction: completed; residual off-grid is signal-only and mostly M1
+- ICC2 libdir VIA1 no-track route-only ECO: completed; DRC improved from 77 to 55 but still not clean
 
 ## Next Checkpoint
 
-Proceed from the best route-DRC repair candidate, while keeping the fixed baseline evidence intact:
+Proceed with two separate closure tracks:
 
-1. Classify the residual `77` DRCs in `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_route/06_route/check_routes.rpt`, especially the `72` off-grid DRCs.
-2. Investigate why PG connectivity still reports floating standard cells even though PG DRC reports no errors.
-3. Decide the next controlled repair trial: route-level off-grid repair, lower-utilization rerun using the VIA1 no-track NDM, or DC cell-use policy rerun informed by ibex.
+1. For signal route DRC, prepare a lower-utilization or placement/congestion trial using the VIA1 no-track NDM. Generic route-only ECO reduced DRC to `55` but did not converge.
+2. For PG connectivity, debug the seven isolated VDD and seven isolated VSS one-wire/zero-via subnetworks independently from signal route DRC.
+3. Decide whether the next full backend trial changes utilization/floorplan, PG rail strategy, or both, but keep those variables separated.
 4. Keep route open; do not claim DRC, PG, hold, antenna, or electrical clean until reports prove closure.
 
 ## Accepted First-Baseline Risks
@@ -56,3 +58,6 @@ Proceed from the best route-DRC repair candidate, while keeping the fixed baseli
 - Route ECO DRC repair was tested and not adopted: DRC only improved from `738` to `709`.
 - libdir VIA1 no-track backend-route trial is the best current route-DRC candidate: DRC improved to `77`, with `0` open signal nets and no needs-fat-contact in the final route report.
 - libdir VIA1 no-track trial is still not clean: residual DRC is dominated by `72` off-grid DRCs; PG connectivity, hold, antenna, and electrical closure remain open.
+- Residual off-grid extraction shows `72` off-grid DRCs are signal-only; `69` are on M1 and `3` are on M2.
+- Route-only ECO on the VIA1 no-track trial improved DRC from `77` to `55`, but did not converge to clean.
+- PG connectivity detail shows seven isolated one-wire/zero-via subnetworks per supply net; this is not explained by the signal off-grid DRCs.

@@ -90,3 +90,14 @@
 - Decision: keep `libdir_via1_no_track` as the strongest current route-DRC repair candidate, not as a clean baseline replacement.
 - Rationale: the trial reduced final route DRC from `738` to `77`, removed needs-fat-contact and short DRCs from the final route report, and kept setup/legality acceptable. However, residual off-grid DRC remains, PG connectivity is still open, hold remains negative, and max transition/cap violations remain open.
 - Next action: classify the residual off-grid DRCs from the trial route and then choose between route-level repair, lower-utilization rerun using the same NDM, or a DC cell-use policy rerun informed by ibex.
+
+### Residual Off-grid and PG Separation
+
+- Decision: treat residual route DRC and PG connectivity as separate closure tracks.
+- Rationale: residual off-grid extraction from the VIA1 no-track trial shows `72` off-grid entries are signal-only, with `69` on M1 and `3` on M2 and no VDD/VSS object references. In contrast, PG connectivity detail reports seven isolated 1-wire/0-via sub-networks per supply net and thousands of std cells attached to those isolated rail fragments.
+
+### Route-only ECO Disposition for Residual Off-grid
+
+- Decision: do not rely on generic route-only ECO as the main closure path for the residual VIA1 no-track DRC.
+- Rationale: route-only ECO on the trial route improved final route DRC from `77` to `55`, but it did not converge to clean and remained dominated by off-grid DRC. This is useful partial repair evidence, not a complete route-closure method.
+- Next action: run a controlled placement/congestion or floorplan/utilization trial with the VIA1 no-track NDM, while debugging PG rail connectivity independently.
