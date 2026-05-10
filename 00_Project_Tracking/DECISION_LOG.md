@@ -63,3 +63,14 @@
 
 - Decision: do not replace the first backend baseline with the `libdir/LEF/modify` RVT NDM trial.
 - Rationale: the modified NDM builds and links, but placement did not improve the open backend risks. PG connectivity was slightly worse than the baseline and phase1 global-route overflow increased from `45036` to `46959`. Keep the trial scripts for reproducibility, but continue baseline CTS from the original EDK RVT NDM unless a later route failure specifically requires another physical-abstract trial.
+
+### First Route Baseline Disposition
+
+- Decision: record the first route run as completed with open issues, not as a clean route.
+- Rationale: `route.design` was saved and post-route reports exist, but `check_routes.rpt` reports `738` DRCs, hold remains negative, PG connectivity still has floating standard cells, max transition/cap violations remain, and antenna rules were not defined.
+- Next action: debug the open route/PG/electrical issues from the completed baseline evidence before changing utilization, routing options, or library abstracts.
+
+### Route Rerun Safety
+
+- Decision: add a lock-file guard to `4_Backend_ICC2/0_Script/06_route/run_route_initial.sh`.
+- Rationale: a duplicate route launch while ICC2 still held `cts.design` failed with `NDM-029` and partially overwrote the shared route log. Future route reruns should fail before starting ICC2 or clobbering the log when the design library is locked.

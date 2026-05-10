@@ -23,7 +23,7 @@ backend utilization target: 55%
 | Powerplan | PASS_WITH_OPEN | `4_Backend_ICC2/3_Log/03_powerplan/run_powerplan_initial.log`, `4_Backend_ICC2/4_Report/03_powerplan/pg_connectivity.rpt`, `4_Backend_ICC2/4_Report/03_powerplan/pg_drc.rpt` |
 | Placement | PASS_WITH_OPEN | `4_Backend_ICC2/3_Log/04_place/run_place_initial.log`, `4_Backend_ICC2/4_Report/04_place/check_legality.rpt`, `4_Backend_ICC2/4_Report/04_place/pg_connectivity.rpt` |
 | CTS | PASS_WITH_OPEN | `4_Backend_ICC2/3_Log/05_cts/run_cts_initial.log`, `4_Backend_ICC2/4_Report/05_cts/clock_qor.summary.rpt`, `4_Backend_ICC2/4_Report/05_cts/check_legality.rpt`, `4_Backend_ICC2/4_Report/05_cts/pg_connectivity.rpt` |
-| Route | PENDING | TBD |
+| Route | PASS_WITH_OPEN | `4_Backend_ICC2/3_Log/06_route/run_route_initial.log`, `4_Backend_ICC2/4_Report/06_route/check_routes.rpt`, `4_Backend_ICC2/4_Report/06_route/qor.rpt`, `4_Backend_ICC2/4_Report/06_route/pg_connectivity.rpt` |
 
 ## DC Topographical Synthesis Summary
 
@@ -181,6 +181,40 @@ backend utilization target: 55%
 | Clock-specific cap DRC count is `7` | Must be rechecked after route optimization. |
 | Design max transition/cap remain open | Improved versus placement but still not electrical clean. |
 | `POW-080` default voltage warnings | Route and future CTS scripts now set default top-level voltage to `1.05 V`; re-check on next run. |
+
+## ICC2 Route Summary
+
+| Metric | Value |
+| --- | --- |
+| Command | `4_Backend_ICC2/0_Script/06_route/run_route_initial.sh` |
+| Input block | `mnist_npu_icc2_lib:cts.design` |
+| Saved block | `mnist_npu_icc2_lib:route.design` |
+| Signal routing layers | `M1` to `M8` |
+| Open signal nets | `0` |
+| Route DRC total | `738` |
+| Route DRC classes | `285` diff-net spacing, `4` minimum-area, `183` needs-fat-contact, `240` off-grid, `26` short |
+| Antenna | no antenna rules defined; not proven clean |
+| Setup QoR | worst setup slack `5.59 ns`, setup violating paths `0` |
+| Hold QoR | worst hold `-0.10 ns`, total hold `-288.96`, violations `25344` |
+| Utilization after route | `0.6925` |
+| Legality | `TOTAL 0 Violations` |
+| PG DRC | `No errors found` |
+| VDD connectivity | `7` floating wires, `4653` floating standard cells, `8` floating terminals |
+| VSS connectivity | `7` floating wires, `3963` floating standard cells |
+| Design max transition/cap violations | `287 / 1958` |
+| Cell area | `773908.63` |
+| Net length | `7026401.73` |
+
+## ICC2 Route Open Warnings
+
+| Warning | Disposition |
+| --- | --- |
+| Route DRC remains open | Must classify by location/type before claiming route clean; likely congestion or pin-access driven at the 55% first baseline. |
+| Antenna report has no rules | Do not claim antenna clean; the SAED32 route setup did not provide antenna rules for this check. |
+| Hold remains significantly negative | Needs post-route optimization or timing-closure loop; route baseline is not hold clean. |
+| PG connectivity still has floating std cells | PG DRC alone is insufficient; debug rail/pin connectivity before claiming PG clean. |
+| Max transition/cap remain open | Electrical cleanup still required after route. |
+| Route log beginning was partially overwritten by a duplicate launch | Use completed report files and the intact log tail as route evidence; route script now has a lock guard. |
 
 ## ICC2 libdir/LEF/modify NDM Trial Summary
 

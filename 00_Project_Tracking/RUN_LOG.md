@@ -300,3 +300,44 @@
   - Added `set_voltage $DEFAULT_VOLTAGE` to the CTS script for future reruns.
   - Added first route script `4_Backend_ICC2/0_Script/06_route/run_route_initial.tcl`.
   - The route script opens saved block `cts`, sets default voltage, limits signal routing to M1-M8, runs `route_auto`, and records `check_routes`, antenna, timing, utilization, legality, PG connectivity, and PG DRC reports.
+
+### ICC2 route/report extraction checkpoint
+
+- Command: `4_Backend_ICC2/0_Script/06_route/run_route_initial.sh`
+- Tool: `icc2_shell`
+- Log: `4_Backend_ICC2/3_Log/06_route/run_route_initial.log`
+- Input block: `4_Backend_ICC2/2_Output/01_init_design/mnist_npu_icc2_lib:cts.design`
+- Output block: `4_Backend_ICC2/2_Output/01_init_design/mnist_npu_icc2_lib:route.design`
+- Reports:
+  - `4_Backend_ICC2/4_Report/06_route/check_routability.rpt`
+  - `4_Backend_ICC2/4_Report/06_route/check_routes.rpt`
+  - `4_Backend_ICC2/4_Report/06_route/antenna.rpt`
+  - `4_Backend_ICC2/4_Report/06_route/qor.rpt`
+  - `4_Backend_ICC2/4_Report/06_route/timing.max.rpt`
+  - `4_Backend_ICC2/4_Report/06_route/timing.min.rpt`
+  - `4_Backend_ICC2/4_Report/06_route/utilization.rpt`
+  - `4_Backend_ICC2/4_Report/06_route/design_physical.rpt`
+  - `4_Backend_ICC2/4_Report/06_route/check_legality.rpt`
+  - `4_Backend_ICC2/4_Report/06_route/pg_connectivity.rpt`
+  - `4_Backend_ICC2/4_Report/06_route/pg_drc.rpt`
+- Result: PASS_WITH_OPEN.
+- Evidence:
+  - `set_voltage 1.05` was accepted and no `POW-080` message appeared before route.
+  - `route_auto` completed and post-route reports completed.
+  - `save_block -as route` completed; log tail reports saving `mnist_npu_icc2_lib:cts.design` to `mnist_npu_icc2_lib:route.design`.
+  - `check_routes.rpt` reports `0` open signal nets and `738` total route DRCs.
+  - Residual DRC classes: `285` diff-net spacing, `4` minimum-area, `183` needs-fat-contact, `240` off-grid, `26` short.
+  - `antenna.rpt` reports no antenna rules defined, so antenna is not proven clean.
+  - Setup timing remains met: worst reported setup slack `5.59 ns`, setup violating paths `0`.
+  - Hold remains open: worst hold `-0.10 ns`, total hold `-288.96`, hold violations `25344`.
+  - `check_legality.rpt` reports `TOTAL 0 Violations`.
+  - `check_pg_drc` reported `No errors found`.
+  - Utilization after route remains `0.6925`.
+  - PG connectivity is still not clean: VDD has 7 floating wires, 4653 floating standard cells, and 8 floating terminals; VSS has 7 floating wires and 3963 floating standard cells.
+  - Design max transition/max capacitance violations remain open after route: `287` max transition violations and `1958` max capacitance violations.
+- Tool-operation note:
+  - A duplicate route launch was attempted while PID `3802491` still held `cts.design`; it failed immediately with `NDM-029` and partially overwrote the beginning of `run_route_initial.log`.
+  - Final stage evidence is therefore taken from the completed report files and the intact log tail showing PG DRC completion, `save_block -as route`, `save_lib`, and normal ICC2 exit.
+  - Added a lock-file guard to `run_route_initial.sh` so future route reruns fail before clobbering the log when the ICC2 design library is locked.
+- Next action:
+  - Classify route DRC locations/types and determine whether the first repair should be lower utilization, routing option adjustment, or physical abstract/PG connectivity repair.

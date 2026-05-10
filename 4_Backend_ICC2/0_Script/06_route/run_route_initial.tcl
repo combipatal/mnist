@@ -26,6 +26,11 @@ check_routability > $ROUTE_REPORT_DIR/check_routability.rpt
 
 route_auto
 
+# Save the routed database before long post-route checks.  This preserves the
+# route_auto result even when a report/check step is interrupted.
+save_block -as route_auto
+save_lib
+
 connect_pg_net -net VDD [get_pins -hierarchical -quiet */VDD]
 connect_pg_net -net VSS [get_pins -hierarchical -quiet */VSS]
 

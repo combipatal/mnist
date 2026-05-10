@@ -2,8 +2,8 @@
 
 ## Current Status
 
-- Status: `A6_CTS_DONE_WITH_OPEN_HOLD_PG_AND_ELECTRICAL`
-- Stage: A6 ICC2 CTS
+- Status: `A7_ROUTE_DONE_WITH_OPEN_DRC_HOLD_PG_AND_ELECTRICAL`
+- Stage: A7 ICC2 route/report extraction
 - Primary RTL cloned: yes
 - Source revision frozen: yes
 - Candidate top identified: `nn_top`
@@ -18,16 +18,16 @@
 - ICC2 placement/legalization: passed with open PG connectivity and congestion warnings
 - ICC2 libdir/LEF/modify NDM trial: completed but not adopted
 - ICC2 CTS/clock route: passed with open hold, PG connectivity, and electrical violations
-- ICC2 first route script: prepared, not yet run
+- ICC2 route/report extraction: completed with open route DRC, PG connectivity, hold, and electrical violations
 
 ## Next Checkpoint
 
-Proceed to first route only after recording CTS risks:
+Proceed to post-route issue classification before changing the baseline:
 
-1. Keep the original EDK RVT NDM baseline moving to route for first end-to-end feasibility.
-2. Run `4_Backend_ICC2/0_Script/06_route/run_route_initial.sh` from the saved `cts` block.
-3. Re-check route DRC, antenna, legality, PG connectivity, and timing.
-4. If route fails or congestion/PG issues remain severe, create a lower-utilization trial rather than changing the baseline silently.
+1. Classify the `738` route DRCs by type/location from `4_Backend_ICC2/4_Report/06_route/check_routes.rpt`.
+2. Investigate why PG connectivity still reports floating standard cells even though PG DRC reports no errors.
+3. Prepare a lower-utilization backend trial if DRC clustering points to congestion or pin access.
+4. Keep route open; do not claim DRC, PG, hold, or electrical clean until reports prove closure.
 
 ## Accepted First-Baseline Risks
 
@@ -45,3 +45,8 @@ Proceed to first route only after recording CTS risks:
 - CTS PG connectivity is still not clean: VDD has `4653` floating standard cells and VSS has `3963` floating standard cells.
 - CTS electrical violations remain open: design max transition/max capacitance violations `187 / 1492`; clock-specific cap DRC count `7`.
 - CTS log includes `POW-080` default-voltage warnings; route and future CTS scripts now set default top-level voltage to `1.05 V`.
+- Route completed and saved `mnist_npu_icc2_lib:route.design`, but route DRC remains open: `738` total DRCs, `0` open signal nets, no antenna rules defined.
+- Route legality is clean: `TOTAL 0 Violations`.
+- Route PG DRC reports `No errors found`, but PG connectivity is still not clean: VDD has `4653` floating standard cells and VSS has `3963` floating standard cells.
+- Route hold remains open: worst hold `-0.10 ns`, total hold `-288.96`, violations `25344`.
+- Route electrical violations remain open: max transition/max capacitance violations `287 / 1958`.
