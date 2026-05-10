@@ -8,6 +8,7 @@ cd $PROJECT_ROOT
 set TOP_NAME nn_top
 
 set SAED32_ROOT /DATA/home/edu135/lib/SAED32_EDK
+set LIBDIR_ROOT /DATA/home/edu135/lib/libdir
 
 set RVT_TT_DB $SAED32_ROOT/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db
 
@@ -17,6 +18,10 @@ set TLUPLUS_MIN $SAED32_ROOT/tech/star_rcxt/saed32nm_1p9m_Cmin.tluplus
 set TLUPLUS_MAP $SAED32_ROOT/tech/star_rcxt/saed32nm_tf_itf_tluplus.map
 
 set NDM_RVT $PROJECT_ROOT/4_Backend_ICC2/2_Output/00_setup/ndm/saed32rvt_tt.ndm
+
+if {[info exists ::env(NDM_RVT)]} {
+  set NDM_RVT $::env(NDM_RVT)
+}
 
 set DC_TOPO_NETLIST $PROJECT_ROOT/2_Synthesis/2_Output/topo_10ns/nn_top.topo_10ns.mapped.vg
 set DC_TOPO_SDC     $PROJECT_ROOT/2_Synthesis/2_Output/topo_10ns/nn_top.topo_10ns.mapped.sdc
@@ -33,11 +38,16 @@ if {[info exists ::env(ICC2_SDC)]} {
 }
 
 set ICC2_LIB_DIR $PROJECT_ROOT/4_Backend_ICC2/2_Output/01_init_design/mnist_npu_icc2_lib
+
+if {[info exists ::env(ICC2_LIB_DIR)]} {
+  set ICC2_LIB_DIR $::env(ICC2_LIB_DIR)
+}
 set SETUP_LOG_DIR $PROJECT_ROOT/4_Backend_ICC2/3_Log/00_setup
 set INIT_LOG_DIR $PROJECT_ROOT/4_Backend_ICC2/3_Log/01_init_design
 set FLOORPLAN_LOG_DIR $PROJECT_ROOT/4_Backend_ICC2/3_Log/02_floorplan
 set POWER_LOG_DIR $PROJECT_ROOT/4_Backend_ICC2/3_Log/03_powerplan
 set PLACE_LOG_DIR $PROJECT_ROOT/4_Backend_ICC2/3_Log/04_place
+set CTS_LOG_DIR $PROJECT_ROOT/4_Backend_ICC2/3_Log/05_cts
 set SETUP_REPORT_DIR $PROJECT_ROOT/4_Backend_ICC2/4_Report/00_setup
 set INIT_REPORT_DIR $PROJECT_ROOT/4_Backend_ICC2/4_Report/01_init_design
 set FLOORPLAN_REPORT_DIR $PROJECT_ROOT/4_Backend_ICC2/4_Report/02_floorplan
@@ -58,6 +68,7 @@ file mkdir $INIT_LOG_DIR
 file mkdir $FLOORPLAN_LOG_DIR
 file mkdir $POWER_LOG_DIR
 file mkdir $PLACE_LOG_DIR
+file mkdir $CTS_LOG_DIR
 file mkdir $SETUP_REPORT_DIR
 file mkdir $INIT_REPORT_DIR
 file mkdir $FLOORPLAN_REPORT_DIR

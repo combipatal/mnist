@@ -16,12 +16,13 @@
 - ICC2 floorplan: passed with open warnings
 - ICC2 powerplan: generated; PG DRC clean, PG connectivity open before placement
 - ICC2 placement/legalization: passed with open PG connectivity and congestion warnings
+- ICC2 libdir/LEF/modify NDM trial: completed but not adopted
 
 ## Next Checkpoint
 
 Proceed to CTS setup only after recording placement risks:
 
-1. Keep the 55% baseline moving to CTS for first route feasibility.
+1. Keep the original EDK RVT NDM 55% baseline moving to CTS for first route feasibility.
 2. Add clock routing/NDR rules or record that the first CTS uses default clock routing.
 3. Re-run timing, clock QoR, legality, and PG checks after CTS.
 4. If route fails or congestion remains severe, create a lower-utilization trial rather than changing the baseline silently.
@@ -37,3 +38,4 @@ Proceed to CTS setup only after recording placement risks:
 - ICC2 init currently carries reset-related timing warnings and 16 mapped-netlist no-driver warnings for classification before floorplan closure.
 - PG connectivity is still not clean after placement: VDD has `3985` floating standard cells and VSS has `3405` floating standard cells.
 - Placement congestion is high at 55% utilization: phase1 global-route overflow `45036`, max overflow `5`, GRCs `36186 (4.20%)`.
+- `libdir/LEF/modify` RVT NDM was tested and not adopted because PG connectivity and congestion did not improve.

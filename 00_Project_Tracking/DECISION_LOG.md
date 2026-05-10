@@ -56,3 +56,10 @@
 
 - Decision: keep the 55% utilization placement as the first baseline despite open PG connectivity and congestion.
 - Rationale: placement and legalization completed with zero legality violations and PG DRC has no errors, but PG connectivity and global-route congestion are not clean. The first milestone is end-to-end flow establishment, so continue to CTS/route with these risks recorded rather than starting a utilization sweep prematurely.
+
+## 2026-05-10
+
+### libdir/LEF/modify NDM Trial
+
+- Decision: do not replace the first backend baseline with the `libdir/LEF/modify` RVT NDM trial.
+- Rationale: the modified NDM builds and links, but placement did not improve the open backend risks. PG connectivity was slightly worse than the baseline and phase1 global-route overflow increased from `45036` to `46959`. Keep the trial scripts for reproducibility, but continue baseline CTS from the original EDK RVT NDM unless a later route failure specifically requires another physical-abstract trial.

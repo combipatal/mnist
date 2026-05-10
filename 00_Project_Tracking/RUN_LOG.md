@@ -229,3 +229,33 @@
   - Horizontal routing density above target is `38.28%`; vertical above target is `6.22%`.
   - Max transition/max capacitance violations remain open after placement: `3394` max transition violations and `21531` max capacitance violations.
   - No tie cell is available for constant fixing in the RVT-only library setup; keep as a library/setup risk before route closure.
+
+### ICC2 libdir/LEF/modify NDM trial
+
+- Command:
+  - `4_Backend_ICC2/0_Script/00_setup/build_saed32_rvt_ndm_libdir_modify.sh`
+  - `4_Backend_ICC2/0_Script/00_setup/run_libdir_modify_backend_env.sh 4_Backend_ICC2/0_Script/01_init_design/run_init_design_check.sh`
+  - `4_Backend_ICC2/0_Script/00_setup/run_libdir_modify_backend_env.sh 4_Backend_ICC2/0_Script/02_floorplan/run_floorplan_initial.sh`
+  - `4_Backend_ICC2/0_Script/00_setup/run_libdir_modify_backend_env.sh 4_Backend_ICC2/0_Script/03_powerplan/run_powerplan_initial.sh`
+  - `4_Backend_ICC2/0_Script/00_setup/run_libdir_modify_backend_env.sh 4_Backend_ICC2/0_Script/04_place/run_place_initial.sh`
+- Trial reference library: `4_Backend_ICC2/2_Output/00_setup/ndm_libdir_modify/saed32rvt_tt.ndm`.
+- Trial design library: `4_Backend_ICC2/2_Output/01_init_design/mnist_npu_icc2_lib_libdir_modify`.
+- Result: COMPLETED_NOT_ADOPTED.
+- Evidence:
+  - `check_workspace` succeeded for the modified RVT NDM.
+  - ICC2 init linked `nn_top` with zero check_design errors; the same 16 no-driver and reset-related warnings remain.
+  - Floorplan, powerplan, placement, and legalization completed.
+  - Placement legality remains clean: `TOTAL 0 Violations`.
+  - PG DRC remains clean: `No errors found`.
+  - Setup remains met: `clk` critical path slack `5.31 ns`, setup violating paths `0`.
+  - Hold remains open: worst hold `-0.01 ns`, total `-0.93`, hold violations `184`.
+- Comparison against first placement baseline:
+  - VDD floating standard cells worsened from `3985` to `4041`.
+  - VSS floating standard cells worsened from `3405` to `3533`.
+  - Phase1 global-route overflow worsened from `45036` to `46959`; GRCs worsened from `36186 (4.20%)` to `38099 (4.42%)`.
+  - Horizontal density over target worsened slightly from `38.28%` to `38.48%`; vertical density stayed `6.22%`.
+  - Max transition improved slightly from `3394` to `3352`, but max cap worsened from `21531` to `21557`.
+- Disposition:
+  - Do not adopt `libdir_modify` as the main baseline.
+  - Keep scripts as a reproducible backend-only physical-abstract trial.
+  - Continue CTS from the original EDK RVT NDM baseline unless route failure calls for another NDM trial.

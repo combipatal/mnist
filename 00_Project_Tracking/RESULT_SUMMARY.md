@@ -147,3 +147,20 @@ backend utilization target: 55%
 | High global-route congestion at 55% utilization | Continue first baseline to CTS/route for evidence, but prepare lower-utilization trial if route fails. |
 | Hold remains slightly negative before CTS | Accepted for first baseline; re-check after CTS/route. |
 | Max cap/transition violations increased after placement | Carry into CTS/route optimization; do not claim electrical clean. |
+
+## ICC2 libdir/LEF/modify NDM Trial Summary
+
+| Metric | Baseline EDK RVT NDM | libdir/LEF/modify RVT NDM |
+| --- | --- | --- |
+| NDM build | PASS | PASS |
+| Init link/check_design errors | `0` | `0` |
+| Placement legality | `TOTAL 0 Violations` | `TOTAL 0 Violations` |
+| PG DRC | `No errors found` | `No errors found` |
+| Setup QoR | `5.26 ns`, setup violating paths `0` | `5.31 ns`, setup violating paths `0` |
+| Hold QoR | worst `-0.01 ns`, total `-1.02`, violations `180` | worst `-0.01 ns`, total `-0.93`, violations `184` |
+| VDD connectivity | `7` floating wires, `3985` floating std cells, `8` floating terminals | `7` floating wires, `4041` floating std cells, `0` floating terminals |
+| VSS connectivity | `7` floating wires, `3405` floating std cells | `7` floating wires, `3533` floating std cells |
+| Phase1 global-route overflow | `45036`, max `5`, GRCs `36186 (4.20%)` | `46959`, max `5`, GRCs `38099 (4.42%)` |
+| Routing density over target | horizontal `38.28%`, vertical `6.22%` | horizontal `38.48%`, vertical `6.22%` |
+| Max transition/cap violations | `3394 / 21531` | `3352 / 21557` |
+| Disposition | First baseline | Completed but not adopted |

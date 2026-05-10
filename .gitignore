@@ -35,6 +35,9 @@ formality_svf/
 *.rpt
 *.ems
 *_output.txt
+.graph_data.txt
+Synopsys_stack_trace_*.txt
+crte_*.txt
 
 # Local agent/runtime state.
 .agents/
