@@ -277,6 +277,53 @@ backend utilization target: 55%
 | PG DRC | `No errors found` |
 | Disposition | Partial route-only repair; not a clean closure path by itself |
 
+## ICC2 libdir VIA1 no-track 45% Utilization Backend Trial
+
+| Metric | Value |
+| --- | --- |
+| Command | `4_Backend_ICC2/0_Script/99_util/run_libdir_via1_no_track_util45_backend_flow.sh` |
+| Physical setup | libdir modified LEF plus VIA1 pitch/no-track techfile |
+| Floorplan utilization target | `0.45` |
+| Final utilization after route | `0.5669` |
+| Open signal nets | `0` |
+| Route DRC total | `59` |
+| Route DRC classes | `1` diff-net spacing, `57` off-grid, `1` short |
+| Antenna | no antenna rules defined |
+| Legality | `TOTAL 0 Violations` |
+| Setup QoR | worst setup slack `5.60 ns`, setup violating paths `0` |
+| Hold QoR | worst about `-0.10 ns`; still open |
+| PG DRC | `No errors found` |
+| VDD connectivity | `7` floating wires, `4447` floating std cells |
+| VSS connectivity | `7` floating wires, `4002` floating std cells |
+| Max transition/cap violations | `307 / 2018` |
+| Disposition | Improved versus the 55% VIA1 no-track trial, but not route clean. Lower utilization alone is insufficient. |
+
+## Sibling SAED32 Backend Reference Matrix
+
+| Reference | Relevant Result | MNIST Impact |
+| --- | --- | --- |
+| ibex RUN_MANIFEST | VIA1 pitch/no-track plus upstream cell-use policy reached `0` open nets and `0` signal DRC | Confirms SAED32 lower-metal physical-library policy can be decisive, but MNIST must validate locally. |
+| CV32E40P route root-cause investigation | M9 did not solve lower-metal DRC and worsened one trial | Do not prioritize upper-layer routing as the next MNIST experiment. |
+| CV32E40P trim_all_pin NDM | `configure_frame_options -mode keep_obs_and_trim_all_pin` reduced a 67-DRC candidate to 1 DRC | Build the same NDM frame policy for MNIST before broader synthesis reruns. |
+
+## ICC2 libdir VIA1 no-track trim_all_pin Trial Status
+
+| Metric | Value |
+| --- | --- |
+| NDM build command | `4_Backend_ICC2/0_Script/00_setup/build_saed32_rvt_ndm_libdir_via1_no_track_trim_all_pin.sh` |
+| NDM build result | PASS; workspace check succeeded and RVT NDM was written |
+| Backend command | `4_Backend_ICC2/0_Script/99_util/run_libdir_via1_no_track_trim_all_pin_util45_backend_flow.sh` |
+| Backend status | Stopped by user during CTS/clock-opt; route not run |
+| Saved blocks available | `nn_top`, `floorplan`, `powerplan`, `placement` |
+| Placement legality | `TOTAL 0 Violations` |
+| Placement utilization | `0.4503` |
+| Placement setup | critical slacks `7.39`, `7.92`, `4.89` |
+| Placement electrical | `3074` max transition, `21434` max capacitance violations |
+| Placement PG connectivity | VDD `3885` floating std cells, VSS `3308` floating std cells |
+| CTS partial status | clock tree compilation reached success, but no final CTS save/report set exists |
+| Route DRC | Not available for this trial |
+| Disposition | Continue later from a clean/recreated trial library; do not claim trim_all_pin route improvement until route reports exist. |
+
 ## ICC2 Route Debug Conclusions
 
 | Observation | Evidence | Current Interpretation |

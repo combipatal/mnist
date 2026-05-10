@@ -53,6 +53,7 @@ The matrix shows the DRCs are concentrated on M1, M2, VIA1, and M1-M2 contact cl
 | `route_eco` on baseline route | DRC `738` to `709` | Not enough; generic ECO reroute is not the main fix. |
 | libdir modified LEF placement-only trial | Placement congestion/PG did not improve | Not adopted as baseline replacement. |
 | libdir modified LEF plus VIA1 pitch/no-track full backend trial | Final route DRC `77` | Best current route-DRC candidate, but still open. |
+| Same VIA1 no-track setup with 45% floorplan target | Final route DRC `59` | Congestion relief helps, but lower utilization alone is not closure. |
 
 ## libdir VIA1 no-track Trial
 
@@ -162,8 +163,80 @@ Result:
 
 Generic route-only ECO is useful but insufficient. It partially reduces residual signal DRC, but it does not converge to clean and does not address PG connectivity.
 
+## 45% Utilization Trial
+
+Command:
+
+```text
+4_Backend_ICC2/0_Script/99_util/run_libdir_via1_no_track_util45_backend_flow.sh
+```
+
+Result:
+
+| Metric | Value |
+| --- | --- |
+| Open signal nets | `0` |
+| Official route DRC | `59` |
+| DRC classes | `1` diff-net spacing, `57` off-grid, `1` short |
+| Final utilization | `0.5669` |
+| Legality | `TOTAL 0 Violations` |
+| PG connectivity | VDD `4447` floating std cells, VSS `4002` floating std cells |
+| Setup | worst setup slack `5.60 ns` |
+| Electrical | `307` max transition, `2018` max capacitance violations |
+
+This is an improvement from `77` to `59`, but it does not close the route. The final utilization also rises well above the 45% floorplan target, so the result should be interpreted as partial congestion relief rather than a root-cause fix.
+
+## Sibling-project Closure Clues
+
+ibex and CV32E40P point to the same SAED32 lower-metal physical-library family:
+
+- ibex reached a debug route-clean candidate with modified LEFs, VIA1 pitch/no-track techfile policy, and upstream cell-use policy.
+- CV32E40P showed that allowing M9 did not address the lower-metal root cause and worsened one trial.
+- CV32E40P reduced a comparable route candidate from `67` DRC to `1` DRC by rebuilding NDMs with `configure_frame_options -mode keep_obs_and_trim_all_pin`.
+
+MNIST currently has no `MUX41X2_RVT` in the mapped netlist. It does have `39` `MUX41X1_RVT`, `74` `NOR2X0_RVT`, and `1` `NOR2X2_RVT`. Therefore, the next narrower experiment is NDM frame trimming before a broader DC cell-use rerun.
+
 Next controlled step:
 
-1. Run a lower-utilization or placement/congestion trial with the VIA1 no-track NDM for signal DRC.
-2. Debug PG rail generation/connection separately, focusing on the seven isolated VDD and VSS one-wire subnetworks.
-3. If residual off-grid remains after congestion relief, consider a DC cell-use policy rerun based on the ibex closure notes.
+1. Build `libdir_via1_no_track_trim_all_pin` RVT NDM.
+2. Run the same 45% backend route trial with that NDM for signal DRC.
+3. Debug PG rail generation/connection separately, focusing on the seven isolated VDD and VSS one-wire subnetworks.
+4. If residual off-grid remains, consider a DC cell-use policy rerun based on the ibex closure notes.
+
+## trim_all_pin Trial Start
+
+NDM build:
+
+```text
+4_Backend_ICC2/0_Script/00_setup/build_saed32_rvt_ndm_libdir_via1_no_track_trim_all_pin.sh
+```
+
+Result:
+
+| Metric | Value |
+| --- | --- |
+| NDM build | PASS |
+| Key option | `configure_frame_options -mode keep_obs_and_trim_all_pin` |
+| Workspace check | `Workspace check succeeded!` |
+| Output NDM | `4_Backend_ICC2/2_Output/00_setup/ndm_libdir_via1_no_track_trim_all_pin/saed32rvt_tt.ndm` |
+
+Backend trial:
+
+```text
+4_Backend_ICC2/0_Script/99_util/run_libdir_via1_no_track_trim_all_pin_util45_backend_flow.sh
+```
+
+Result so far:
+
+| Metric | Value |
+| --- | --- |
+| Status | Stopped by user during CTS/clock-opt |
+| Route result | Not available |
+| Saved blocks | `nn_top`, `floorplan`, `powerplan`, `placement` |
+| Placement legality | `TOTAL 0 Violations` |
+| Placement utilization | `0.4503` |
+| Placement setup | critical slacks `7.39`, `7.92`, `4.89` |
+| Placement PG connectivity | VDD `3885` floating std cells, VSS `3308` floating std cells |
+| CTS partial evidence | clock tree compilation reached success, but final CTS save/report set was not produced |
+
+This trial cannot be judged for route DRC yet. The next session should confirm no ICC2 process is alive, clean or recreate the stopped trial library because `lib.ndm.master_lock` remains, then rerun CTS/route or rerun the full wrapper for reproducibility.

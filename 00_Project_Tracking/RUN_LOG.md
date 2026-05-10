@@ -512,3 +512,94 @@
   - Do not continue generic route-only ECO as the main closure path without another variable change.
   - Next controlled trials should target placement/congestion or PG rail connectivity separately.
   - Note: the first execution of this shared ECO Tcl also issued a final `save_block` after `save_block -as`; the Tcl was updated to avoid saving the input block on future ECO trials.
+
+### ICC2 libdir VIA1 no-track 45% utilization backend-route trial
+
+- Command: `4_Backend_ICC2/0_Script/99_util/run_libdir_via1_no_track_util45_backend_flow.sh`
+- Tool: `icc2_shell`
+- Trial reference library: `4_Backend_ICC2/2_Output/00_setup/ndm_libdir_via1_no_track/saed32rvt_tt.ndm`
+- Trial design library: `4_Backend_ICC2/2_Output/trials/libdir_via1_no_track_util45_route/mnist_npu_icc2_lib`
+- Log root: `4_Backend_ICC2/3_Log/trials/libdir_via1_no_track_util45_route`
+- Report root: `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_util45_route`
+- Result: COMPLETED_PARTIAL_IMPROVEMENT_NOT_CLEAN.
+- Evidence:
+  - Init, floorplan, powerplan, placement, CTS, and route completed using trial-specific log/report/output roots.
+  - `02_floorplan/run_floorplan_initial.tcl` now supports `CORE_UTILIZATION`, `CORE_ASPECT_RATIO`, and `CORE_OFFSET_UM` environment overrides for controlled trials.
+  - Final `06_route/check_routes.rpt` reports `0` open signal nets and `59` total DRCs.
+  - Residual route DRC classes: `1` diff-net spacing, `57` off-grid, and `1` short.
+  - Official route check is used for the result; the route log reached `58` DRC during `route_auto` before final reconnect/reporting.
+  - `check_legality.rpt` reports `TOTAL 0 Violations`.
+  - Setup remains met: worst setup slack `5.60 ns`, setup violating paths `0`.
+  - Hold remains open: worst hold about `-0.10 ns`.
+  - Final utilization is `0.5669`, so a 45% floorplan target still becomes a 56.69% routed design after optimization.
+  - PG DRC reported no errors, but PG connectivity is still not clean: VDD has `4447` floating standard cells and VSS has `4002` floating standard cells.
+  - Electrical cleanup remains open: `307` max transition violations and `2018` max capacitance violations.
+- Diagnosis:
+  - Lowering floorplan utilization from 55% to 45% improves route DRC from `77` to `59`, but it does not close the route.
+  - Residual DRC remains lower-metal/off-grid dominated, matching the sibling-project pin-access/physical-abstract root-cause family.
+  - Lower utilization alone is therefore not the main closure fix.
+- Next action:
+  - Build a new RVT NDM that combines libdir modified LEF, VIA1 pitch/no-track techfile, and `configure_frame_options -mode keep_obs_and_trim_all_pin`.
+  - Run the same 45% backend flow with that NDM before moving to a DC cell-use policy rerun.
+
+### Sibling-project backend closure reference update
+
+- References checked:
+  - `/DATA/home/edu135/ibex/00_Project_Tracking/RUN_MANIFEST.md`
+  - `/DATA/home/edu135/CV32E40P/docs/backend/route_drc_root_cause_investigation.md`
+  - `/DATA/home/edu135/CV32E40P/7_Backend_ICC2/0_Script/00_setup/build_saed32_ndm_trim_all_pin.tcl`
+- Result: COMPLETED.
+- Findings:
+  - ibex closed a comparable SAED32 route DRC case using modified LEFs, VIA1 pitch/no-track techfile policy, and upstream DC `dont_use` policy for weak lower-metal cells; its final debug candidate reported `0` open nets and `0` signal DRC.
+  - CV32E40P found M9 routing did not address the lower-metal DRC root cause and worsened DRC in that trial.
+  - CV32E40P reduced a 67-DRC backend candidate to 1 DRC by rebuilding NDMs with `configure_frame_options -mode keep_obs_and_trim_all_pin`; the last residual was a MUX41X2 pin-access case.
+  - MNIST's current mapped netlist contains `39` `MUX41X1_RVT`, `74` `NOR2X0_RVT`, `1` `NOR2X2_RVT`, and no `MUX41X2_RVT`, so the NDM frame-trimming experiment is the narrower next trial than an immediate DC cell-use rerun.
+
+### ICC2 libdir VIA1 no-track trim_all_pin NDM build
+
+- Command: `4_Backend_ICC2/0_Script/00_setup/build_saed32_rvt_ndm_libdir_via1_no_track_trim_all_pin.sh`
+- Tool: `lm_shell`
+- Log: `4_Backend_ICC2/3_Log/00_setup/build_saed32_rvt_ndm_libdir_via1_no_track_trim_all_pin.log`
+- Outputs:
+  - `4_Backend_ICC2/2_Output/00_setup/tech/saed32nm_1p9m_mw.via1_pitch_no_track_trim_all_pin.tf`
+  - `4_Backend_ICC2/2_Output/00_setup/ndm_libdir_via1_no_track_trim_all_pin/saed32rvt_tt.ndm`
+- Result: PASS.
+- Evidence:
+  - Build log shows `configure_frame_options -mode keep_obs_and_trim_all_pin`.
+  - `check_workspace` reports `Workspace check succeeded!`.
+  - `commit_workspace` wrote the RVT NDM under the project output directory.
+- Recorded warnings:
+  - SAED32 LEF/NDM import direction mismatch warnings remain in the same library-import family as prior NDM builds.
+
+### ICC2 libdir VIA1 no-track trim_all_pin 45% utilization backend trial
+
+- Command: `4_Backend_ICC2/0_Script/99_util/run_libdir_via1_no_track_trim_all_pin_util45_backend_flow.sh`
+- Tool: `icc2_shell`
+- Trial reference library: `4_Backend_ICC2/2_Output/00_setup/ndm_libdir_via1_no_track_trim_all_pin/saed32rvt_tt.ndm`
+- Trial design library: `4_Backend_ICC2/2_Output/trials/libdir_via1_no_track_trim_all_pin_util45_route/mnist_npu_icc2_lib`
+- Log root: `4_Backend_ICC2/3_Log/trials/libdir_via1_no_track_trim_all_pin_util45_route`
+- Report root: `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route`
+- Result: STOPPED_BY_USER_DURING_CTS, ROUTE_NOT_RUN.
+- Stop action:
+  - User requested to stop at CTS and evaluate for the day.
+  - Active process group was interrupted, then terminated after SIGINT did not stop it.
+  - No `route` stage was started, and no route DRC result exists for this trial.
+- Completed evidence before stop:
+  - Init completed and saved `nn_top.design`.
+  - Floorplan completed with `CORE_UTILIZATION=0.45`; floorplan log reports core utilization ratio about `45.03%`.
+  - Powerplan completed; route-stage PG is not available.
+  - Placement completed and saved `placement.design`.
+  - Placement legality report shows `TOTAL 0 Violations`.
+  - Placement utilization report shows utilization ratio `0.4503`.
+  - Placement QoR shows setup positive, with path-group critical slacks `7.39`, `7.92`, and `4.89`.
+  - Placement QoR still has `3074` max transition violations and `21434` max capacitance violations.
+  - Placement PG DRC log reported `No errors found`.
+  - Placement PG connectivity is still not clean: VDD has `3885` floating standard cells and VSS has `3308` floating standard cells.
+  - CTS log reached `Compilation of clock trees finished successfully`, but the script was stopped later during clock-opt optimization before final CTS reports/save.
+- Open issues:
+  - No `cts.design` saved block was found after the stop; saved blocks currently include `nn_top`, `floorplan`, `powerplan`, and `placement`.
+  - The trial design library has a stale-looking `lib.ndm.master_lock` after the forced stop. Do not rerun the wrapper until this is checked and removed or the design library is recreated.
+  - CTS log repeats `POW-080` default-voltage warnings and `OPT-070` default max-transition constraint warnings; these are setup/constraint cleanup items, not route DRC evidence.
+- Disposition:
+  - The new NDM build is valid and can be reused.
+  - The backend trial is not evaluable for route DRC yet. Resume by cleaning/recreating the trial library and rerunning from CTS or rerunning the full wrapper, then continue through route.

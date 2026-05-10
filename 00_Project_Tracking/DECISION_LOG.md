@@ -101,3 +101,15 @@
 - Decision: do not rely on generic route-only ECO as the main closure path for the residual VIA1 no-track DRC.
 - Rationale: route-only ECO on the trial route improved final route DRC from `77` to `55`, but it did not converge to clean and remained dominated by off-grid DRC. This is useful partial repair evidence, not a complete route-closure method.
 - Next action: run a controlled placement/congestion or floorplan/utilization trial with the VIA1 no-track NDM, while debugging PG rail connectivity independently.
+
+### Lower-utilization Trial Disposition
+
+- Decision: do not treat lower utilization alone as the route DRC closure strategy.
+- Rationale: the 45% floorplan target trial with the same libdir VIA1 no-track NDM improved official route DRC from `77` to `59`, but route remained open and final utilization still rose to `0.5669` after optimization. This confirms congestion relief helps but does not remove the lower-metal/off-grid root cause.
+- Next action: test the sibling-project `trim_all_pin` NDM frame-generation policy with the same modified LEF and VIA1 no-track technology patch.
+
+### trim_all_pin NDM Next Trial
+
+- Decision: create a new MNIST RVT NDM trial combining libdir modified LEF, VIA1 pitch/no-track techfile, and `configure_frame_options -mode keep_obs_and_trim_all_pin`.
+- Rationale: CV32E40P used this frame-generation policy to reduce a comparable lower-metal route DRC candidate from `67` to `1`. ibex also supports the broader root-cause model that SAED32 lower-metal pin access and physical-library policy dominate these residual DRCs. MNIST's current netlist has no `MUX41X2_RVT`, so NDM frame trimming is a more direct next probe than an immediate DC cell-use rerun.
+- Guardrail: keep the result isolated in a trial output root and do not promote it to baseline unless route, legality, PG, timing, and evidence records justify promotion.

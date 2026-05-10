@@ -17,6 +17,16 @@ set CORE_UTILIZATION 0.55
 set CORE_ASPECT_RATIO {1 1}
 set CORE_OFFSET_UM 20.0
 
+if {[info exists ::env(CORE_UTILIZATION)]} {
+  set CORE_UTILIZATION $::env(CORE_UTILIZATION)
+}
+if {[info exists ::env(CORE_ASPECT_RATIO)]} {
+  set CORE_ASPECT_RATIO $::env(CORE_ASPECT_RATIO)
+}
+if {[info exists ::env(CORE_OFFSET_UM)]} {
+  set CORE_OFFSET_UM $::env(CORE_OFFSET_UM)
+}
+
 initialize_floorplan \
   -control_type core \
   -shape R \
