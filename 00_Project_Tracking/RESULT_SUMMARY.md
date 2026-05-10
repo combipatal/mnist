@@ -22,7 +22,7 @@ backend utilization target: 55%
 | Floorplan | PASS_WITH_OPEN_WARNINGS | `4_Backend_ICC2/3_Log/02_floorplan/run_floorplan_initial.log`, `4_Backend_ICC2/4_Report/02_floorplan/utilization.rpt` |
 | Powerplan | PASS_WITH_OPEN | `4_Backend_ICC2/3_Log/03_powerplan/run_powerplan_initial.log`, `4_Backend_ICC2/4_Report/03_powerplan/pg_connectivity.rpt`, `4_Backend_ICC2/4_Report/03_powerplan/pg_drc.rpt` |
 | Placement | PASS_WITH_OPEN | `4_Backend_ICC2/3_Log/04_place/run_place_initial.log`, `4_Backend_ICC2/4_Report/04_place/check_legality.rpt`, `4_Backend_ICC2/4_Report/04_place/pg_connectivity.rpt` |
-| CTS | PENDING | TBD |
+| CTS | PASS_WITH_OPEN | `4_Backend_ICC2/3_Log/05_cts/run_cts_initial.log`, `4_Backend_ICC2/4_Report/05_cts/clock_qor.summary.rpt`, `4_Backend_ICC2/4_Report/05_cts/check_legality.rpt`, `4_Backend_ICC2/4_Report/05_cts/pg_connectivity.rpt` |
 | Route | PENDING | TBD |
 
 ## DC Topographical Synthesis Summary
@@ -147,6 +147,40 @@ backend utilization target: 55%
 | High global-route congestion at 55% utilization | Continue first baseline to CTS/route for evidence, but prepare lower-utilization trial if route fails. |
 | Hold remains slightly negative before CTS | Accepted for first baseline; re-check after CTS/route. |
 | Max cap/transition violations increased after placement | Carry into CTS/route optimization; do not claim electrical clean. |
+
+## ICC2 CTS Summary
+
+| Metric | Value |
+| --- | --- |
+| Command | `4_Backend_ICC2/0_Script/05_cts/run_cts_initial.sh` |
+| Input block | `mnist_npu_icc2_lib:placement.design` |
+| Saved block | `mnist_npu_icc2_lib:cts.design` |
+| Clock routing layers | `M4` to `M6` |
+| Clock sinks | `39659` |
+| Clock tree levels | `11` |
+| Clock repeaters | `1066` |
+| Clock repeater area | `3800.98` |
+| Max latency / global skew | `0.38 ns / 0.21 ns` |
+| Clock transition/cap DRC | `0 / 7` |
+| Setup QoR | worst setup slack `5.57 ns`, setup violating paths `0` |
+| Hold QoR | worst hold `-0.10 ns`, total hold `-237.12`, violations `23288` |
+| Utilization after CTS | `0.6925` |
+| Legality | `TOTAL 0 Violations` |
+| Clock route detail DRC | `TOTAL VIOLATIONS = 0`; `0 open nets` |
+| PG DRC | `No errors found` |
+| VDD connectivity | `7` floating wires, `4653` floating standard cells, `8` floating terminals |
+| VSS connectivity | `7` floating wires, `3963` floating standard cells |
+| Design max transition/cap violations | `187 / 1492` |
+
+## ICC2 CTS Open Warnings
+
+| Warning | Disposition |
+| --- | --- |
+| Hold became significantly worse after CTS | Must be addressed in route/post-route optimization; do not claim hold clean. |
+| PG connectivity still has floating std cells | Not PG-clean; keep open for route-stage PG repair/debug. |
+| Clock-specific cap DRC count is `7` | Must be rechecked after route optimization. |
+| Design max transition/cap remain open | Improved versus placement but still not electrical clean. |
+| `POW-080` default voltage warnings | Route and future CTS scripts now set default top-level voltage to `1.05 V`; re-check on next run. |
 
 ## ICC2 libdir/LEF/modify NDM Trial Summary
 

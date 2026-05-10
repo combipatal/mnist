@@ -2,8 +2,8 @@
 
 ## Current Status
 
-- Status: `A5_PLACEMENT_DONE_WITH_OPEN_PG_AND_CONGESTION`
-- Stage: A5 ICC2 placement
+- Status: `A6_CTS_DONE_WITH_OPEN_HOLD_PG_AND_ELECTRICAL`
+- Stage: A6 ICC2 CTS
 - Primary RTL cloned: yes
 - Source revision frozen: yes
 - Candidate top identified: `nn_top`
@@ -17,15 +17,17 @@
 - ICC2 powerplan: generated; PG DRC clean, PG connectivity open before placement
 - ICC2 placement/legalization: passed with open PG connectivity and congestion warnings
 - ICC2 libdir/LEF/modify NDM trial: completed but not adopted
+- ICC2 CTS/clock route: passed with open hold, PG connectivity, and electrical violations
+- ICC2 first route script: prepared, not yet run
 
 ## Next Checkpoint
 
-Proceed to CTS setup only after recording placement risks:
+Proceed to first route only after recording CTS risks:
 
-1. Keep the original EDK RVT NDM 55% baseline moving to CTS for first route feasibility.
-2. Add clock routing/NDR rules or record that the first CTS uses default clock routing.
-3. Re-run timing, clock QoR, legality, and PG checks after CTS.
-4. If route fails or congestion remains severe, create a lower-utilization trial rather than changing the baseline silently.
+1. Keep the original EDK RVT NDM baseline moving to route for first end-to-end feasibility.
+2. Run `4_Backend_ICC2/0_Script/06_route/run_route_initial.sh` from the saved `cts` block.
+3. Re-check route DRC, antenna, legality, PG connectivity, and timing.
+4. If route fails or congestion/PG issues remain severe, create a lower-utilization trial rather than changing the baseline silently.
 
 ## Accepted First-Baseline Risks
 
@@ -39,3 +41,7 @@ Proceed to CTS setup only after recording placement risks:
 - PG connectivity is still not clean after placement: VDD has `3985` floating standard cells and VSS has `3405` floating standard cells.
 - Placement congestion is high at 55% utilization: phase1 global-route overflow `45036`, max overflow `5`, GRCs `36186 (4.20%)`.
 - `libdir/LEF/modify` RVT NDM was tested and not adopted because PG connectivity and congestion did not improve.
+- CTS inserted/routed the clock tree and final clock-route DRC is clean, but hold is still open: worst hold `-0.10 ns`, total hold `-237.12`, violations `23288`.
+- CTS PG connectivity is still not clean: VDD has `4653` floating standard cells and VSS has `3963` floating standard cells.
+- CTS electrical violations remain open: design max transition/max capacitance violations `187 / 1492`; clock-specific cap DRC count `7`.
+- CTS log includes `POW-080` default-voltage warnings; route and future CTS scripts now set default top-level voltage to `1.05 V`.

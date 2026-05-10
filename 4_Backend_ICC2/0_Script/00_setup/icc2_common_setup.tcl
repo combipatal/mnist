@@ -6,6 +6,7 @@ set PROJECT_ROOT /DATA/home/edu135/MNIST
 cd $PROJECT_ROOT
 
 set TOP_NAME nn_top
+set DEFAULT_VOLTAGE 1.05
 
 set SAED32_ROOT /DATA/home/edu135/lib/SAED32_EDK
 set LIBDIR_ROOT /DATA/home/edu135/lib/libdir
@@ -48,6 +49,7 @@ set FLOORPLAN_LOG_DIR $PROJECT_ROOT/4_Backend_ICC2/3_Log/02_floorplan
 set POWER_LOG_DIR $PROJECT_ROOT/4_Backend_ICC2/3_Log/03_powerplan
 set PLACE_LOG_DIR $PROJECT_ROOT/4_Backend_ICC2/3_Log/04_place
 set CTS_LOG_DIR $PROJECT_ROOT/4_Backend_ICC2/3_Log/05_cts
+set ROUTE_LOG_DIR $PROJECT_ROOT/4_Backend_ICC2/3_Log/06_route
 set SETUP_REPORT_DIR $PROJECT_ROOT/4_Backend_ICC2/4_Report/00_setup
 set INIT_REPORT_DIR $PROJECT_ROOT/4_Backend_ICC2/4_Report/01_init_design
 set FLOORPLAN_REPORT_DIR $PROJECT_ROOT/4_Backend_ICC2/4_Report/02_floorplan
@@ -69,6 +71,7 @@ file mkdir $FLOORPLAN_LOG_DIR
 file mkdir $POWER_LOG_DIR
 file mkdir $PLACE_LOG_DIR
 file mkdir $CTS_LOG_DIR
+file mkdir $ROUTE_LOG_DIR
 file mkdir $SETUP_REPORT_DIR
 file mkdir $INIT_REPORT_DIR
 file mkdir $FLOORPLAN_REPORT_DIR

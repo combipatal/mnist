@@ -259,3 +259,44 @@
   - Do not adopt `libdir_modify` as the main baseline.
   - Keep scripts as a reproducible backend-only physical-abstract trial.
   - Continue CTS from the original EDK RVT NDM baseline unless route failure calls for another NDM trial.
+
+### ICC2 CTS checkpoint
+
+- Command: `4_Backend_ICC2/0_Script/05_cts/run_cts_initial.sh`
+- Tool: `icc2_shell`
+- Log: `4_Backend_ICC2/3_Log/05_cts/run_cts_initial.log`
+- Input block: `4_Backend_ICC2/2_Output/01_init_design/mnist_npu_icc2_lib:placement.design`
+- Output block: `4_Backend_ICC2/2_Output/01_init_design/mnist_npu_icc2_lib:cts.design`
+- Reports:
+  - `4_Backend_ICC2/4_Report/05_cts/check_clock_trees.pre.rpt`
+  - `4_Backend_ICC2/4_Report/05_cts/check_clock_trees.post.rpt`
+  - `4_Backend_ICC2/4_Report/05_cts/clock_qor.summary.rpt`
+  - `4_Backend_ICC2/4_Report/05_cts/clock_qor.drc_violators.rpt`
+  - `4_Backend_ICC2/4_Report/05_cts/clock_timing.summary.rpt`
+  - `4_Backend_ICC2/4_Report/05_cts/timing.max.rpt`
+  - `4_Backend_ICC2/4_Report/05_cts/timing.min.rpt`
+  - `4_Backend_ICC2/4_Report/05_cts/qor.rpt`
+  - `4_Backend_ICC2/4_Report/05_cts/utilization.rpt`
+  - `4_Backend_ICC2/4_Report/05_cts/check_legality.rpt`
+  - `4_Backend_ICC2/4_Report/05_cts/pg_connectivity.rpt`
+  - `4_Backend_ICC2/4_Report/05_cts/pg_drc.rpt`
+- Result: PASS_WITH_OPEN.
+- Evidence:
+  - `clock_opt -from build_clock -to route_clock` completed.
+  - Saved block `cts` was created and `save_lib` completed.
+  - CTS summary reports `39659` sinks, `11` levels, `1066` repeaters, repeater area `3800.98`, max latency `0.38 ns`, global skew `0.21 ns`.
+  - Clock route detail route finished with `0 open nets` and `TOTAL VIOLATIONS = 0`.
+  - `check_legality.rpt` reports `TOTAL 0 Violations`.
+  - `check_pg_drc` reported `No errors found`.
+  - Setup remains met: worst setup slack `5.57 ns`, setup violating paths `0`.
+- Open warnings:
+  - Hold is worse after CTS: worst hold `-0.10 ns`, total hold `-237.12`, hold violations `23288`.
+  - PG connectivity is still not clean: VDD has 7 floating wires, 4653 floating standard cells, and 8 floating terminals; VSS has 7 floating wires and 3963 floating standard cells.
+  - Design max transition/max capacitance violations remain open after CTS: `187` max transition violations and `1492` max capacitance violations.
+  - Clock-specific DRC has `0` transition violations and `7` capacitance violations.
+  - CTS log includes `POW-080` default voltage warnings; add explicit 1.05 V voltage context before route.
+- Follow-up script update:
+  - Added `DEFAULT_VOLTAGE 1.05` in `4_Backend_ICC2/0_Script/00_setup/icc2_common_setup.tcl`.
+  - Added `set_voltage $DEFAULT_VOLTAGE` to the CTS script for future reruns.
+  - Added first route script `4_Backend_ICC2/0_Script/06_route/run_route_initial.tcl`.
+  - The route script opens saved block `cts`, sets default voltage, limits signal routing to M1-M8, runs `route_auto`, and records `check_routes`, antenna, timing, utilization, legality, PG connectivity, and PG DRC reports.

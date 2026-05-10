@@ -12,6 +12,8 @@ if {![file exists $ICC2_LIB_DIR]} {
 open_lib $ICC2_LIB_DIR
 open_block -edit placement
 
+set_voltage $DEFAULT_VOLTAGE
+
 set CTS_CLOCK clk
 set CTS_TARGET_SKEW 0.20
 
