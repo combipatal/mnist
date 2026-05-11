@@ -133,4 +133,7 @@ check_pg_drc \
   -no_gui \
   -output $DEBUG_REPORT_DIR/pg_drc.rpt
 
+check_legality > $DEBUG_REPORT_DIR/check_legality.rpt
+report_qor > $DEBUG_REPORT_DIR/qor.rpt
+
 exit

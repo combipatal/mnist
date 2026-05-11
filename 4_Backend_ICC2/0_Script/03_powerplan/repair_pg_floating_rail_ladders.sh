@@ -31,12 +31,22 @@ export PG_LADDER_REPORT_DIR="/DATA/home/edu135/MNIST/$report_dir"
 : "${PG_LADDER_SAVE:=0}"
 : "${PG_LADDER_X:=50.0}"
 : "${PG_LADDER_HALF_BOX:=0.25}"
+: "${PG_LADDER_VDD_X:=}"
+: "${PG_LADDER_VSS_X:=}"
+: "${PG_LADDER_VDD_HALF_BOX:=}"
+: "${PG_LADDER_VSS_HALF_BOX:=}"
+: "${PG_LADDER_SHAPE_OVERRIDES:=}"
 : "${PG_LADDER_DRC_MODE:=}"
 export PG_LADDER_INPUT_BLOCK
 export PG_LADDER_OUTPUT_BLOCK
 export PG_LADDER_SAVE
 export PG_LADDER_X
 export PG_LADDER_HALF_BOX
+export PG_LADDER_VDD_X
+export PG_LADDER_VSS_X
+export PG_LADDER_VDD_HALF_BOX
+export PG_LADDER_VSS_HALF_BOX
+export PG_LADDER_SHAPE_OVERRIDES
 export PG_LADDER_DRC_MODE
 
 icc2_shell -f 4_Backend_ICC2/0_Script/03_powerplan/repair_pg_floating_rail_ladders.tcl \

@@ -389,6 +389,24 @@ backend utilization target: 55%
 | Direct M1-M2 VIA12, `no_check` | clean: zero floating wires/vias/std cells | `580` PG DRC errors | `0` route DRC, `0` open nets | Not adopted; fixes connectivity but violates PG cut spacing |
 | M1-M7 ladders at `x=50.0`, all floating rails, `no_check` | clean: zero floating wires/vias/std cells | clean | `24` route DRCs, VSS-side collisions | Not adopted; good PG topology but signal route not clean |
 | VSS-only M1-M7 ladders at `x=30.0`, `no_check` | VSS clean for probed rails; VDD intentionally still open | clean | `20` route DRCs | Not adopted; continue VSS X-coordinate search |
+| Combined M1-M7 ladders: VDD `x=50.0`, VSS `x=20.0`, `PATH_11_507` override `x=55.0` half-box `0.15` | clean: zero floating wires/vias/std cells/terminals for VDD and VSS | clean | `0` route DRC, `0` open signal nets | Saved as `route_pg_ladder_vdd50_vss20_path507x55_h015`; current best route-plus-PG clean candidate |
+
+## ICC2 Route Plus PG Clean Candidate
+
+| Metric | Value |
+| --- | --- |
+| Input block | `mnist_npu_icc2_lib:route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack.design` |
+| Saved output block | `mnist_npu_icc2_lib:route_pg_ladder_vdd50_vss20_path507x55_h015.design` |
+| Repair command | `env PG_LADDER_NAME=pg_ladder_vdd50_vss20_path507x55_h015_save1 PG_LADDER_SAVE=1 PG_LADDER_OUTPUT_BLOCK=route_pg_ladder_vdd50_vss20_path507x55_h015 PG_LADDER_DRC_MODE=no_check PG_LADDER_VDD_X=50.0 PG_LADDER_VSS_X=20.0 PG_LADDER_VDD_HALF_BOX=0.25 PG_LADDER_VSS_HALF_BOX=0.25 PG_LADDER_SHAPE_OVERRIDES='PATH_11_507=55.0,0.15' 4_Backend_ICC2/0_Script/03_powerplan/repair_pg_floating_rail_ladders.sh` |
+| Repair report root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/03_powerplan_pg_ladder_vdd50_vss20_path507x55_h015_save1` |
+| Saved-block recheck root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_pg_ladder_vdd50_vss20_path507x55_h015_saved_recheck` |
+| Ladder vias created | `84` |
+| Route DRC/open after saved-block recheck | `0` route DRCs, `0` open signal nets |
+| DRC extraction after recheck | `drc.errors.tsv` and `drc.offgrid.tsv` contain only headers |
+| PG connectivity after saved-block recheck | VDD and VSS each report `0` floating wires, `0` floating vias, `0` floating standard cells, and `0` floating terminals |
+| PG DRC after saved-block recheck | `pg_drc.rpt` has no error body; run log reports no PG DRC errors |
+| Legality after saved-block recheck | `TOTAL 0 Violations` |
+| Disposition | Current best saved route-plus-PG clean candidate. Not a complete backend clean baseline because hold, max transition/capacitance, and antenna-rule coverage remain open. |
 
 ## ICC2 PG Connectivity Debug Conclusions
 
@@ -399,7 +417,7 @@ backend utilization target: 55%
 | Missing via count matches powerplan cleanup | Initial `03_powerplan/run.log` removed `406` dangling/floating vias; forced VIA12 repair created `406` vias | Early pre-placement PG cleanup removed vias on rails that later became populated by placed cells |
 | Direct rail-to-M2 via repair is not legal | `03_powerplan_pg_via12_nocheck1/pg_drc.after.rpt` reports `580` PG DRC errors | Existing M2-M3 strap via stacks block direct VIA12 insertion at the strap intersections |
 | M1-M7 ladders can make PG clean | `03_powerplan_pg_ladder_x50_nocheck2/pg_connectivity.after.rpt` and `pg_drc.after.rpt` | Ladder topology is promising, but X location must avoid signal route collisions before saving |
-| No PG repair is saved yet | All repair probes used `PG_*_SAVE=0` | Continue from `route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack` until a combined PG repair rechecks clean |
+| Combined PG repair is saved and rechecked | `06_route_pg_ladder_vdd50_vss20_path507x55_h015_saved_recheck` reports route DRC/open `0/0`, PG floating counts `0`, PG DRC clean, and legality `0` | Continue from `route_pg_ladder_vdd50_vss20_path507x55_h015` for timing/electrical/antenna closure |
 
 ## ICC2 Route Debug Conclusions
 
@@ -412,7 +430,7 @@ backend utilization target: 55%
 | trim_all_pin util45 is the best full-flow route-DRC candidate | rerun3 route reports `0` open signal nets and `6` off-grid DRCs | Continue residual off-grid debug from the preserved rerun3 route DB, but do not claim clean closure. |
 | Route-only ECO gives only partial additional repair | ECO reduced official DRC from `6` to `5` and then stopped as not converging | Do not assume generic ECO will close the remaining off-grid DRCs without another targeted change. |
 | Targeted pin-access repair closes signal route DRC | saved candidate recheck reports `0` open signal nets and `0` route DRCs | Route DRC/open objective is closed for the saved candidate, but PG/timing/electrical/antenna closure remains separate. |
-| PG connectivity remains separate from signal DRC | PG DRC has no errors, but thousands of floating std cells remain | Do not claim PG clean; debug stdcell rail/pin connection independently. |
+| PG connectivity is separate from signal DRC | The earlier signal-route clean block still had thousands of floating std cells, while the later PG ladder block fixes PG connectivity without route DRC regression | Use `route_pg_ladder_vdd50_vss20_path507x55_h015` as the current route-plus-PG candidate; do not use the earlier signal-route-only block as PG-clean evidence. |
 
 ## ICC2 libdir/LEF/modify NDM Trial Summary
 

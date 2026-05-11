@@ -152,3 +152,10 @@
 - Rationale: forced direct VIA12 repair creates `406` vias and clears PG connectivity, but creates `580` PG DRC errors between VIA1 and existing VIA2 cut stacks.
 - Decision: continue with the M1-M7 ladder topology, but only save a repaired block after route DRC/open, PG connectivity, PG DRC, and legality all recheck clean.
 - Rationale: ladder repair at `x=50.0` clears PG connectivity and PG DRC, but currently introduces `24` signal route DRCs on VSS-side locations. VSS-only `x=30.0` still introduces `20` signal route DRCs, so a clean VSS ladder coordinate remains open.
+
+### PG Ladder Clean Candidate Disposition
+
+- Decision: save `route_pg_ladder_vdd50_vss20_path507x55_h015` as the current route-plus-PG clean candidate.
+- Implementation: use M1-M7 ladder vias with VDD rails at `x=50.0`, VSS rails at `x=20.0`, and a per-shape override for `PATH_11_507` at `x=55.0` with half-box `0.15`.
+- Rationale: the saved-block recheck reports `0` open signal nets, `0` route DRCs, zero VDD/VSS floating wires/vias/std cells/terminals, no PG DRC error body, and `TOTAL 0 Violations` legality.
+- Guardrail: do not promote this candidate to a complete backend baseline yet. Hold, max transition/capacitance, and antenna-rule coverage remain open and must be re-extracted or classified from the PG ladder saved block.

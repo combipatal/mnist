@@ -2,8 +2,8 @@
 
 ## Current Status
 
-- Status: `A11_PG_RAIL_CONNECTIVITY_DEBUG_IN_PROGRESS`
-- Stage: A11 ICC2 PG rail connectivity repair trials from saved signal-route candidate
+- Status: `A11_ROUTE_PG_CLEAN_CANDIDATE_SAVED`
+- Stage: A11 ICC2 route-plus-PG clean candidate saved; timing/electrical/antenna remain open
 - Primary RTL cloned: yes
 - Source revision frozen: yes
 - Candidate top identified: `nn_top`
@@ -30,19 +30,19 @@
 - ICC2 libdir VIA1 no-track trim_all_pin 45% utilization rerun3: completed through route; route DRC improved to `6` off-grid violations with `0` open signal nets, but route is not clean
 - ICC2 libdir VIA1 no-track trim_all_pin route-only ECO: completed; route DRC improved from `6` to `5`, but ECO did not converge to clean
 - ICC2 targeted residual route repair: completed; saved block `route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack` rechecks with `0` open signal nets and `0` route DRCs
-- ICC2 PG rail connectivity debug: in progress; root cause narrowed to seven isolated M1 rail subnetworks per supply with missing rail-to-mesh via connection
-- ICC2 PG repair probes: direct VIA12 fixes connectivity but creates PG DRC; M1-M7 ladder topology fixes PG connectivity/PG DRC, but tested VSS X locations still create signal route DRCs
+- ICC2 PG rail connectivity debug: completed; root cause narrowed to seven isolated M1 rail subnetworks per supply with missing rail-to-mesh via connection
+- ICC2 PG repair: completed for current candidate; saved block `route_pg_ladder_vdd50_vss20_path507x55_h015` rechecks with `0` open signal nets, `0` route DRCs, clean PG connectivity, clean PG DRC, and clean legality
 
 ## Next Checkpoint
 
-Proceed from the saved targeted route-DRC clean candidate and close PG connectivity without regressing signal route DRC:
+Proceed from the saved route-plus-PG clean candidate and close or classify the remaining post-route risks:
 
-1. Treat `route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack` as the current best saved signal-route candidate: saved-block recheck reports `0` open signal nets and `0` route DRCs.
-2. Continue VSS ladder X-coordinate search; tested `x=50.0` and `x=30.0` repair PG connectivity/PG DRC but introduce signal route DRCs.
-3. Combine known VDD ladder candidate `x=50.0` with a clean VSS ladder coordinate only after route DRC/open, PG connectivity, PG DRC, and legality all recheck clean.
-4. Keep hold/electrical cleanup open; the saved candidate has hold worst `-0.10 ns`, total `-322.90`, `26153` hold violating paths, and max transition/cap violations `318 / 2009`.
+1. Treat `route_pg_ladder_vdd50_vss20_path507x55_h015` as the current best saved route-plus-PG candidate.
+2. Use saved-block recheck evidence from `06_route_pg_ladder_vdd50_vss20_path507x55_h015_saved_recheck`: route DRC/open `0/0`, PG floating counts `0`, PG DRC clean, and legality `0`.
+3. Keep hold/electrical cleanup open; the preceding saved signal-route candidate had hold worst `-0.10 ns`, total `-322.90`, `26153` hold violating paths, and max transition/cap violations `318 / 2009`.
+4. Re-extract timing/electrical reports from the PG ladder saved block before claiming updated timing numbers.
 5. Do not claim antenna clean because the route check reports no antenna rules defined.
-6. Do not promote the candidate to a complete baseline until PG connectivity, hold/electrical reports, and antenna-rule coverage are resolved or explicitly classified.
+6. Do not promote the candidate to a complete baseline until hold/electrical reports and antenna-rule coverage are resolved or explicitly classified.
 
 ## Accepted First-Baseline Risks
 
@@ -77,7 +77,8 @@ Proceed from the saved targeted route-DRC clean candidate and close PG connectiv
 - trim_all_pin util45 rerun3 is still not clean: PG connectivity remains open, hold remains significantly negative, max transition/cap remain open, and antenna is not proven because no antenna rules are defined.
 - trim_all_pin util45 route-only ECO improved official DRC from `6` to `5`, but stopped as not converging; it is partial repair evidence only.
 - targeted size-swap, `U77942` local move, and sequential signal reroute closed the residual route DRC/open checks in saved block `route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack`.
-- the saved targeted candidate is not a complete clean backend baseline: PG connectivity, hold, max transition/capacitance, and antenna-rule coverage remain open.
+- the saved targeted signal-route candidate is not a complete clean backend baseline by itself: PG connectivity was still open there, and hold, max transition/capacitance, and antenna-rule coverage remained open.
 - PG connectivity detail shows seven isolated one-wire/zero-via subnetworks per supply net; this is not explained by the signal off-grid DRCs.
 - Direct M1-M2 VIA12 PG repair is not acceptable: forced repair fixes connectivity but creates `580` PG DRC errors.
-- M1-M7 PG ladder repair is promising but not saved yet: `x=50.0` all-rail repair makes PG connectivity and PG DRC clean but introduces `24` signal route DRCs, while VSS-only `x=30.0` introduces `20` signal route DRCs.
+- Combined M1-M7 PG ladder repair is saved as `route_pg_ladder_vdd50_vss20_path507x55_h015`: saved-block recheck reports `0` open signal nets, `0` route DRCs, zero PG floating counts, no PG DRC error body, and `TOTAL 0 Violations` legality.
+- the saved route-plus-PG candidate is not a complete backend baseline yet: hold, max transition/capacitance, and antenna-rule coverage remain open.

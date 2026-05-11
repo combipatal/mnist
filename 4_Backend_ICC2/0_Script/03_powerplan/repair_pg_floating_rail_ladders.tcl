@@ -37,6 +37,31 @@ if {[info exists ::env(PG_LADDER_HALF_BOX)] && $::env(PG_LADDER_HALF_BOX) ne ""}
   set PG_LADDER_HALF_BOX $::env(PG_LADDER_HALF_BOX)
 }
 
+set PG_LADDER_VDD_X ""
+if {[info exists ::env(PG_LADDER_VDD_X)] && $::env(PG_LADDER_VDD_X) ne ""} {
+  set PG_LADDER_VDD_X $::env(PG_LADDER_VDD_X)
+}
+
+set PG_LADDER_VSS_X ""
+if {[info exists ::env(PG_LADDER_VSS_X)] && $::env(PG_LADDER_VSS_X) ne ""} {
+  set PG_LADDER_VSS_X $::env(PG_LADDER_VSS_X)
+}
+
+set PG_LADDER_VDD_HALF_BOX ""
+if {[info exists ::env(PG_LADDER_VDD_HALF_BOX)] && $::env(PG_LADDER_VDD_HALF_BOX) ne ""} {
+  set PG_LADDER_VDD_HALF_BOX $::env(PG_LADDER_VDD_HALF_BOX)
+}
+
+set PG_LADDER_VSS_HALF_BOX ""
+if {[info exists ::env(PG_LADDER_VSS_HALF_BOX)] && $::env(PG_LADDER_VSS_HALF_BOX) ne ""} {
+  set PG_LADDER_VSS_HALF_BOX $::env(PG_LADDER_VSS_HALF_BOX)
+}
+
+set PG_LADDER_SHAPE_OVERRIDES ""
+if {[info exists ::env(PG_LADDER_SHAPE_OVERRIDES)] && $::env(PG_LADDER_SHAPE_OVERRIDES) ne ""} {
+  set PG_LADDER_SHAPE_OVERRIDES $::env(PG_LADDER_SHAPE_OVERRIDES)
+}
+
 set PG_LADDER_TAG pg_m1_m7_ladder_repair
 if {[info exists ::env(PG_LADDER_TAG)] && $::env(PG_LADDER_TAG) ne ""} {
   set PG_LADDER_TAG $::env(PG_LADDER_TAG)
@@ -81,6 +106,51 @@ proc point_bbox {x y half_box} {
   return [list [list [expr {$x - $half_box}] [expr {$y - $half_box}]] [list [expr {$x + $half_box}] [expr {$y + $half_box}]]]
 }
 
+proc ladder_location_for_shape {shape_name net_name default_x default_half vdd_x vss_x vdd_half vss_half shape_overrides} {
+  set use_x $default_x
+  set use_half $default_half
+
+  if {$net_name eq "VDD"} {
+    if {$vdd_x ne ""} {
+      set use_x $vdd_x
+    }
+    if {$vdd_half ne ""} {
+      set use_half $vdd_half
+    }
+  } elseif {$net_name eq "VSS"} {
+    if {$vss_x ne ""} {
+      set use_x $vss_x
+    }
+    if {$vss_half ne ""} {
+      set use_half $vss_half
+    }
+  }
+
+  foreach raw_entry [split $shape_overrides ";"] {
+    set entry [string trim $raw_entry]
+    if {$entry eq ""} {
+      continue
+    }
+    set parts [split $entry "="]
+    if {[llength $parts] != 2} {
+      continue
+    }
+    set override_shape [string trim [lindex $parts 0]]
+    if {$override_shape ne $shape_name} {
+      continue
+    }
+    set values [split [string trim [lindex $parts 1]] ","]
+    if {[llength $values] >= 1 && [string trim [lindex $values 0]] ne ""} {
+      set use_x [string trim [lindex $values 0]]
+    }
+    if {[llength $values] >= 2 && [string trim [lindex $values 1]] ne ""} {
+      set use_half [string trim [lindex $values 1]]
+    }
+  }
+
+  return [list $use_x $use_half]
+}
+
 proc collection_names {objects} {
   set names {}
   foreach_in_collection object $objects {
@@ -114,6 +184,8 @@ puts "PG_LADDER output_block=$PG_LADDER_OUTPUT_BLOCK"
 puts "PG_LADDER report_dir=$PG_LADDER_REPORT_DIR"
 puts "PG_LADDER save=$PG_LADDER_SAVE"
 puts "PG_LADDER x=$PG_LADDER_X half_box=$PG_LADDER_HALF_BOX drc_mode=$PG_LADDER_DRC_MODE"
+puts "PG_LADDER vdd_x=$PG_LADDER_VDD_X vss_x=$PG_LADDER_VSS_X vdd_half=$PG_LADDER_VDD_HALF_BOX vss_half=$PG_LADDER_VSS_HALF_BOX"
+puts "PG_LADDER shape_overrides=$PG_LADDER_SHAPE_OVERRIDES"
 
 open_lib $ICC2_LIB_DIR
 open_block $PG_LADDER_INPUT_BLOCK
@@ -133,7 +205,7 @@ redirect -file $PG_LADDER_REPORT_DIR/pg_connectivity.before.rpt {
 }
 
 set summary_fh [open $PG_LADDER_REPORT_DIR/repair_ladders.tsv w]
-puts $summary_fh "shape\tnet\tshape_bbox\tladder_bbox\tstatus"
+puts $summary_fh "shape\tnet\tshape_bbox\tladder_x\thalf_box\tladder_bbox\tstatus"
 
 foreach shape_name $PG_LADDER_SHAPES {
   set shape [get_shapes -quiet $shape_name]
@@ -145,8 +217,18 @@ foreach shape_name $PG_LADDER_SHAPES {
   set net_name [names_or_na [attr_or_na $shape net]]
   set shape_bbox [attr_or_na $shape bbox]
   set y [bbox_center_y $shape_bbox]
-  set ladder_bbox [point_bbox $PG_LADDER_X $y $PG_LADDER_HALF_BOX]
-  puts $summary_fh "$shape_name\t$net_name\t$shape_bbox\t$ladder_bbox\tattempt"
+  lassign [ladder_location_for_shape \
+    $shape_name \
+    $net_name \
+    $PG_LADDER_X \
+    $PG_LADDER_HALF_BOX \
+    $PG_LADDER_VDD_X \
+    $PG_LADDER_VSS_X \
+    $PG_LADDER_VDD_HALF_BOX \
+    $PG_LADDER_VSS_HALF_BOX \
+    $PG_LADDER_SHAPE_OVERRIDES] ladder_x ladder_half_box
+  set ladder_bbox [point_bbox $ladder_x $y $ladder_half_box]
+  puts $summary_fh "$shape_name\t$net_name\t$shape_bbox\t$ladder_x\t$ladder_half_box\t$ladder_bbox\tattempt"
 
   set ladder_cmd [list create_pg_vias \
     -nets [list $net_name] \
