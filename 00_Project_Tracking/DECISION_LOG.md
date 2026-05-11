@@ -219,3 +219,11 @@
 - Decision: use reopened saved-block QoR as the evidence source for timing/electrical disposition after ECO.
 - Rationale: both hold2 and hold3 immediate post-ECO reports showed much lower electrical counts than reopened saved-block QoR. Hold2 immediate electrical was `10 / 80` while saved-block recheck returned `328 / 2116`; hold3 immediate electrical was `0 / 3` while saved-block recheck again returned `328 / 2116`.
 - Guardrail: do not claim electrical clean from immediate post-ECO reports unless a saved-block recheck confirms the same state.
+
+### Occupied-Site Hold ECO Disposition
+
+- Decision: keep `route_pg_ladder_hold_eco_repair1_hold2_clean_occ1` as the latest route/PG/legal clean hold-improved candidate.
+- Rationale: `PHYSICAL_MODE=occupied_site` preserved route DRC/open `0/0`, PG floating counts `0`, PG DRC clean, legality `TOTAL 0 Violations`, and setup slack `5.61 ns` after saved-block recheck. It modestly improved saved-block hold to WNS/TNS/violations `-0.05 ns / -15.13 ns / 4370`.
+- Guardrail: do not call this a complete backend baseline.
+- Rationale: saved-block hold remains open, saved-block electrical remains `328 / 2116`, and antenna-rule coverage is still absent because route reports state no antenna rules are defined.
+- Next action: stop for today after recording and pushing. The next technical step should not be another identical open-site run; evaluate high-density residual hold paths and electrical DRC strategy before further ECO.

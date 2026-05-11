@@ -575,3 +575,30 @@ backend utilization target: 55%
 | Third hold ECO saved-block electrical | `328` max transition violations, `2116` max capacitance violations |
 | Antenna | Not proven for all candidates; route reports state `no antenna rules defined` |
 | Disposition | Current route/PG/legal best candidate remains hold-improved but not timing/electrical clean. Further hold cleanup needs a different strategy from repeated `PHYSICAL_MODE=open_site` ECO. |
+
+## ICC2 Occupied-Site Hold ECO Continuation
+
+| Metric | Value |
+| --- | --- |
+| Input block | `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_open_site_m0_route_repair1_hold2_move_u2pteco95_r1_route_repair1.design` |
+| Saved output block | `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_repair1_hold2_clean_occ1.design` |
+| Command | `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 HOLD_ECO_NAME=07_extract_sta_hold_eco_repair1_hold2_clean_occ1_m0 HOLD_ECO_INPUT_BLOCK=route_pg_ladder_hold_eco_open_site_m0_route_repair1_hold2_move_u2pteco95_r1_route_repair1 HOLD_ECO_OUTPUT_BLOCK=route_pg_ladder_hold_eco_repair1_hold2_clean_occ1 HOLD_MARGIN=0.00 PHYSICAL_MODE=occupied_site 4_Backend_ICC2/0_Script/07_extract_sta/run_post_route_hold_eco_trial.sh` |
+| Log path | `4_Backend_ICC2/3_Log/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_eco_repair1_hold2_clean_occ1_m0/run.log` |
+| Report root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_eco_repair1_hold2_clean_occ1_m0` |
+| ECO command | `eco_opt -types hold -hold_margin 0.00 -physical_mode occupied_site` |
+| PrimeTime ECO edits | `2` hold buffer insertions, `63` size-cell commands |
+| PT remaining endpoints | `545` before ECO, `543` after buffer insertion, `482` after sizing, then no more fixes available |
+| ECO area increase | `4.07` from buffer insertion, `157.82` from cell sizing |
+| Dominant remaining fix limits | high-density and limited-cell-use reasons: `D`, `S`, `L`; one top path marked `W` |
+| Immediate route DRC/open | `0` route DRCs, `0` open signal nets |
+| Immediate PG/legality | PG floating counts `0`, PG DRC clean, legality `TOTAL 0 Violations` |
+| Immediate hold timing | WNS `-0.05 ns`, TNS `-15.13 ns`, hold violations `4370` |
+| Immediate electrical DRC | `6` max transition violations, `62` max capacitance violations, `62` nets with violations |
+| Saved-block recheck root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_eco_repair1_hold2_clean_occ1_m0_saved_recheck` |
+| Saved-block route DRC/open | `0` route DRCs, `0` open signal nets |
+| Saved-block PG/legality | PG floating counts `0`, PG DRC clean, legality `TOTAL 0 Violations` |
+| Saved-block setup | setup slack `5.61 ns`, TNS `0.00`, setup violating paths `0` |
+| Saved-block hold timing | WNS `-0.05 ns`, TNS `-15.13 ns`, hold violations `4370` |
+| Saved-block electrical DRC | `328` max transition violations, `2116` max capacitance violations, `2142` nets with violations |
+| Antenna | Not proven; route reports state `no antenna rules defined` |
+| Disposition | Latest route/PG/legal clean hold-improved candidate, but still not timing/electrical clean. Immediate electrical improvement is not trusted because saved-block QoR returns `328 / 2116`. |
