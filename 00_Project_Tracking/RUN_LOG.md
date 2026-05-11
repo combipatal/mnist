@@ -986,3 +986,110 @@
   - Promote `route_pg_ladder_hold_eco_open_site_m0_route_repair1` to the current best route-plus-PG and hold-improved candidate.
   - Keep `route_pg_ladder_vdd50_vss20_path507x55_h015` as the rollback clean route-plus-PG source.
   - Do not call the backend baseline complete yet: hold, electrical DRC, and antenna-rule coverage remain open.
+
+## 2026-05-12
+
+### ICC2 second open-site hold ECO from repaired hold ECO candidate
+
+- Objective: attempt another hold-only ECO from the route-clean repaired hold ECO block while preserving route/PG/legality.
+- Command:
+  - `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 HOLD_ECO_NAME=07_extract_sta_hold_eco_repair1_hold2_m0 HOLD_ECO_INPUT_BLOCK=route_pg_ladder_hold_eco_open_site_m0_route_repair1 HOLD_ECO_OUTPUT_BLOCK=route_pg_ladder_hold_eco_open_site_m0_route_repair1_hold2 HOLD_MARGIN=0.00 PHYSICAL_MODE=open_site 4_Backend_ICC2/0_Script/07_extract_sta/run_post_route_hold_eco_trial.sh`
+- Tool: `icc2_shell`, with PrimeTime executable `/tools/synopsys/prime/W-2024.09-SP5-3/bin/pt_shell`.
+- Input block: `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_open_site_m0_route_repair1.design`.
+- Output block: `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_open_site_m0_route_repair1_hold2.design`.
+- Log path: `4_Backend_ICC2/3_Log/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_eco_repair1_hold2_m0/run.log`
+- Report root: `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_eco_repair1_hold2_m0`
+- Result: COMPLETED_NOT_ADOPTED_UNTIL_ROUTE_REPAIR.
+- Evidence:
+  - `report_status.tsv` reports all scripted steps `PASS`.
+  - PrimeTime ECO started from hold WNS/TNS/violating endpoints `-0.05 ns / -5.74 ns / 647`.
+  - ECO inserted `102` hold buffers, increased area by `207.38`, and stopped with `546` endpoints remaining because no more fixes were available.
+  - Unfixable reasons are dominated by `O` no open free site, with additional `S`, `L`, and one `W` case.
+  - Immediate post-ECO route check reported `1` route DRC, `0` open signal nets: one `Off-grid`.
+  - Immediate PG connectivity reports VDD and VSS each with `0` floating wires, vias, standard cells, and terminals; PG DRC reports no errors; legality reports `TOTAL 0 Violations`.
+  - Immediate `qor.after_hold_eco.rpt` reports setup slack `5.61 ns`, hold WNS/TNS/violations `-0.05 ns / -15.18 ns / 4390`, and electrical `10 / 80`.
+- Reopen discrepancy:
+  - The saved-block residual debug below reopened the same block and reported electrical back at `328 / 2116`.
+  - Do not use the immediate `10 / 80` electrical result as final evidence without saved-block recheck.
+
+### ICC2 hold2 residual route debug and failed probes
+
+- Objective: localize and repair the single route DRC introduced by the second hold ECO.
+- Residual debug command:
+  - `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 ROUTE_DEBUG_SUBDIR=07_extract_sta_hold_eco_repair1_hold2_m0_residual_route_debug ROUTE_DEBUG_INPUT_BLOCK=route_pg_ladder_hold_eco_open_site_m0_route_repair1_hold2 4_Backend_ICC2/0_Script/06_route/debug_libdir_via1_no_track_route_residuals.sh`
+- Residual debug report root:
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_eco_repair1_hold2_m0_residual_route_debug`
+- Residual evidence:
+  - `check_routes.recheck.rpt` reports `1` route DRC, `0` open signal nets, and no antenna rules defined.
+  - `drc.errors.tsv` localizes the residual to one M1 `Off-grid` on net `ZBUF_899_1724` near `u_input_fifo/fifo_buf_reg[947][10]/RSTB`.
+  - Reopened `qor.rpt` reports setup slack `5.61 ns`, hold WNS/TNS/violations `-0.05 ns / -15.18 ns / 4390`, and electrical `328 / 2116`.
+- Failed local route probe:
+  - Command: `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 SEQ_ROUTE_PROBE_NAME=hold_eco_repair1_hold2_m0_residual_route_repair1 SEQ_ROUTE_INPUT_BLOCK=route_pg_ladder_hold_eco_open_site_m0_route_repair1_hold2 SEQ_ROUTE_OUTPUT_BLOCK=route_pg_ladder_hold_eco_open_site_m0_route_repair1_hold2_route_repair1 SEQ_ROUTE_STEPS=ZBUF_899_1724 SEQ_ROUTE_ITERATIONS=160 SEQ_ROUTE_SAVE=1 SEQ_ROUTE_SAVE_ON_CLEAN_ONLY=1 4_Backend_ICC2/0_Script/06_route/probe_sequential_local_offgrid_route.sh`
+  - Report root: `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_hold_eco_repair1_hold2_m0_residual_route_repair1`
+  - Result: NOT_SAVED. `summary.tsv` reports final route DRC/open `1/0`.
+- Off-grid context command:
+  - `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 DRC_CONTEXT_SUBDIR=07_extract_sta_hold_eco_repair1_hold2_m0_offgrid_context DRC_CONTEXT_INPUT_BLOCK=route_pg_ladder_hold_eco_open_site_m0_route_repair1_hold2 DRC_CONTEXT_TYPE=Off-grid DRC_CONTEXT_MARGIN=0.80 4_Backend_ICC2/0_Script/06_route/inspect_offgrid_context.sh`
+  - Report root: `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_eco_repair1_hold2_m0_offgrid_context`
+  - `context.tsv` identifies the affected pin as `u_input_fifo/fifo_buf_reg[947][10]/RSTB` on `ZBUF_899_1724`; nearby cell `U_2_PTECO_HOLD_BUF95` is adjacent to the pin-access region.
+- Failed DFF size-swap probe:
+  - Command: `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 SEQ_ROUTE_PROBE_NAME=hold_eco_repair1_hold2_m0_size_dff94710_repair1 SEQ_ROUTE_INPUT_BLOCK=route_pg_ladder_hold_eco_open_site_m0_route_repair1_hold2 SEQ_ROUTE_OUTPUT_BLOCK=route_pg_ladder_hold_eco_open_site_m0_route_repair1_hold2_size_dff94710_repair1 SEQ_SIZE_SWAPS='u_input_fifo/fifo_buf_reg[947][10]=DFFARX2_RVT' SEQ_ROUTE_STEPS='@swap_pin_nets;ZBUF_899_1724' SEQ_ROUTE_ITERATIONS=160 SEQ_ROUTE_SAVE=1 SEQ_ROUTE_SAVE_ON_CLEAN_ONLY=1 4_Backend_ICC2/0_Script/06_route/probe_sequential_local_offgrid_route.sh`
+  - Report root: `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_hold_eco_repair1_hold2_m0_size_dff94710_repair1`
+  - Result: NOT_SAVED. It removed route DRC but left `6` open nets, so it was not adopted.
+- Failed connect-within-pins probes:
+  - `LOCAL_ROUTE_CONNECT_WITHIN_PINS='M1 M2'` failed app-option validation with `Invalid value '{M1 M2}'`.
+  - `LOCAL_ROUTE_CONNECT_WITHIN_PINS=via_standard_cell_pins` also failed app-option validation.
+  - `LOCAL_ROUTE_CONNECT_WITHIN_PINS='M1 via_standard_cell_pins'` was accepted but changed the DRC interpretation, reporting tens of thousands of `Connection not within pin` violations. This option is not compatible with the current clean-route criteria.
+
+### ICC2 hold2 targeted cell-move route repair
+
+- Objective: repair the hold2 M1 off-grid by freeing local pin access near the affected DFF reset pin without changing the broader ECO result.
+- Repair command:
+  - `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 SEQ_ROUTE_PROBE_NAME=hold2_move_u2pteco95_r1_route_repair1 SEQ_ROUTE_INPUT_BLOCK=route_pg_ladder_hold_eco_open_site_m0_route_repair1_hold2 SEQ_ROUTE_OUTPUT_BLOCK=route_pg_ladder_hold_eco_open_site_m0_route_repair1_hold2_move_u2pteco95_r1_route_repair1 SEQ_CELL_MOVES='U_2_PTECO_HOLD_BUF95=0.152,0' SEQ_ROUTE_STEPS='@move_pin_nets;ZBUF_899_1724' SEQ_ROUTE_ITERATIONS=160 SEQ_ROUTE_SAVE=1 SEQ_ROUTE_SAVE_ON_CLEAN_ONLY=1 4_Backend_ICC2/0_Script/06_route/probe_sequential_local_offgrid_route.sh`
+- Tool: `icc2_shell`.
+- Output block: `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_open_site_m0_route_repair1_hold2_move_u2pteco95_r1_route_repair1.design`.
+- Log path: `4_Backend_ICC2/3_Log/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_hold2_move_u2pteco95_r1_route_repair1/run.log`
+- Report root: `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_hold2_move_u2pteco95_r1_route_repair1`
+- Result: ROUTE_PG_LEGAL_CLEAN_HOLD2_CANDIDATE_WITH_OPEN_HOLD_ELECTRICAL_ANTENNA.
+- Evidence:
+  - `cell_move.rpt` shows `U_2_PTECO_HOLD_BUF95` moved by one routing track and legalization succeeded.
+  - `summary.tsv` reports initial `1/0`, after `@move_pin_nets` `0/0`, after `ZBUF_899_1724` `0/0`, and final save status `saved`.
+  - Post-save reports in the repair root show route DRC/open `0/0`, PG connectivity clean, PG DRC clean, legality clean, and setup met.
+- Saved-block recheck:
+  - Command: `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 ROUTE_DEBUG_SUBDIR=07_extract_sta_hold_eco_repair1_hold2_m0_move_u2pteco95_r1_route_repair1_saved_recheck ROUTE_DEBUG_INPUT_BLOCK=route_pg_ladder_hold_eco_open_site_m0_route_repair1_hold2_move_u2pteco95_r1_route_repair1 4_Backend_ICC2/0_Script/06_route/debug_libdir_via1_no_track_route_residuals.sh`
+  - Report root: `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_eco_repair1_hold2_m0_move_u2pteco95_r1_route_repair1_saved_recheck`
+  - `check_routes.recheck.rpt` confirms `0` route DRCs, `0` open signal nets, and no antenna rules defined.
+  - `pg_connectivity.rpt` reports VDD and VSS each with `0` floating wires, vias, standard cells, and terminals.
+  - `pg_drc.rpt` was generated by `check_pg_drc`; the ICC2 run log reports `No errors found`.
+  - `check_legality.rpt` reports `TOTAL 0 Violations`.
+  - `qor.rpt` reports setup slack `5.61 ns`, hold WNS/TNS/violations `-0.05 ns / -15.18 ns / 4390`, and electrical `328 / 2116`.
+- Disposition:
+  - This supersedes the unrepaired hold2 block as the current best route-clean hold2 candidate.
+  - It is not a complete backend baseline because hold, electrical DRC, and antenna-rule coverage remain open.
+
+### ICC2 third open-site hold ECO from route-clean hold2 candidate
+
+- Objective: test whether another hold-only ECO can reduce the remaining hold violations from the repaired hold2 candidate without route/PG regression.
+- Command:
+  - `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 HOLD_ECO_NAME=07_extract_sta_hold_eco_repair1_hold2_clean_hold3_m0 HOLD_ECO_INPUT_BLOCK=route_pg_ladder_hold_eco_open_site_m0_route_repair1_hold2_move_u2pteco95_r1_route_repair1 HOLD_ECO_OUTPUT_BLOCK=route_pg_ladder_hold_eco_repair1_hold2_clean_hold3 HOLD_MARGIN=0.00 PHYSICAL_MODE=open_site 4_Backend_ICC2/0_Script/07_extract_sta/run_post_route_hold_eco_trial.sh`
+- Tool: `icc2_shell`, with PrimeTime executable `/tools/synopsys/prime/W-2024.09-SP5-3/bin/pt_shell`.
+- Output block: `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_repair1_hold2_clean_hold3.design`.
+- Log path: `4_Backend_ICC2/3_Log/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_eco_repair1_hold2_clean_hold3_m0/run.log`
+- Report root: `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_eco_repair1_hold2_clean_hold3_m0`
+- Result: COMPLETED_ROUTE_PG_LEGAL_CLEAN_BUT_NOT_TIMING_ELECTRICAL_CLEAN.
+- Evidence:
+  - `report_status.tsv` reports all scripted steps `PASS`.
+  - PrimeTime ECO started from WNS/TNS/endpoint count `-0.05 ns / -5.48 ns / 545`, inserted only `2` `NBUFFX2_RVT` buffers, and stopped with `543` endpoints remaining.
+  - Dominant unfixable reason remains `O` no open free site, with `S` and `L` also present.
+  - Immediate `check_routes.after_hold_eco.rpt` reports `0` open signal nets and `0` route DRCs; no antenna rules are defined.
+  - Immediate PG connectivity, PG DRC, and legality reports remain clean.
+  - Immediate `qor.after_hold_eco.rpt` reports hold still open at WNS/TNS/violations `-0.05 ns / -15.18 ns / 4390`.
+  - Immediate `qor.after_hold_eco.rpt` reports electrical `0 / 3`, but this was not trusted because the saved-block recheck below returns the previous electrical counts.
+- Saved-block recheck:
+  - Command: `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 ROUTE_DEBUG_SUBDIR=07_extract_sta_hold_eco_repair1_hold2_clean_hold3_m0_saved_recheck ROUTE_DEBUG_INPUT_BLOCK=route_pg_ladder_hold_eco_repair1_hold2_clean_hold3 4_Backend_ICC2/0_Script/06_route/debug_libdir_via1_no_track_route_residuals.sh`
+  - Report root: `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_eco_repair1_hold2_clean_hold3_m0_saved_recheck`
+  - `check_routes.recheck.rpt` confirms route DRC/open `0/0` and no antenna rules defined.
+  - PG connectivity, PG DRC, and legality remain clean after reopening.
+  - Reopened `qor.rpt` reports setup slack `5.61 ns`, hold WNS/TNS/violations `-0.05 ns / -15.18 ns / 4390`, and electrical `328 / 2116`.
+- Disposition:
+  - Hold3 does not materially improve the saved-block hold/electrical state over the repaired hold2 candidate.
+  - The open-site hold ECO strategy is now limited by available placement sites; further hold cleanup likely needs a whitespace/placement strategy or a different ECO mode, not another identical open-site run.

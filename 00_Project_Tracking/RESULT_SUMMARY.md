@@ -525,6 +525,8 @@ backend utilization target: 55%
 | PG connectivity is separate from signal DRC | The earlier signal-route clean block still had thousands of floating std cells, while the later PG ladder block fixes PG connectivity without route DRC regression | Use `route_pg_ladder_vdd50_vss20_path507x55_h015` as the current route-plus-PG candidate; do not use the earlier signal-route-only block as PG-clean evidence. |
 | Broad post-route `route_opt` over-repairs hold | `07_extract_sta_route_opt1` reduces hold violations from `26153` to `293`, but leaves `43` open signal nets, `26` route DRCs, and worsened electrical counts | Do not adopt broad `route_opt`; next timing cleanup should be narrower hold ECO with route/PG/electrical rechecks after each candidate. |
 | Open-site hold ECO is closer to route-clean | `07_extract_sta_hold_eco_open_site_m0` reduces hold TNS from `-322.90 ns` to `-15.61 ns` and leaves only `3` route DRCs with `0` open nets | Keep it as a partial candidate; debug the three residual route DRCs before using it as the next timing/electrical base. |
+| Repaired hold2 closes its residual route DRC | `07_extract_sta_hold_eco_repair1_hold2_m0_move_u2pteco95_r1_route_repair1_saved_recheck` reports route DRC/open `0/0`, PG floating counts `0`, PG DRC clean, and legality `0` | Route/PG/legal are preserved, but saved-block hold and electrical remain open. |
+| Repeated open-site hold ECO has saturated | Hold3 inserted only `2` additional hold buffers and saved-block recheck still reports hold `-0.05 ns / -15.18 ns / 4390` | Another identical open-site hold ECO is unlikely to close hold without adding usable placement whitespace or changing ECO strategy. |
 
 ## ICC2 libdir/LEF/modify NDM Trial Summary
 
@@ -542,3 +544,34 @@ backend utilization target: 55%
 | Routing density over target | horizontal `38.28%`, vertical `6.22%` | horizontal `38.48%`, vertical `6.22%` |
 | Max transition/cap violations | `3394 / 21531` | `3352 / 21557` |
 | Disposition | First baseline | Completed but not adopted |
+
+## ICC2 Second/Third Hold ECO Continuation
+
+| Metric | Value |
+| --- | --- |
+| Second hold ECO output block | `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_open_site_m0_route_repair1_hold2.design` |
+| Second hold ECO report root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_eco_repair1_hold2_m0` |
+| Second hold ECO result | Inserted `102` hold buffers; route DRC/open became `1/0`; saved-block hold/electrical remained open |
+| Second hold ECO saved-block hold | WNS `-0.05 ns`, TNS `-15.18 ns`, hold violations `4390` |
+| Second hold ECO saved-block electrical | `328` max transition violations, `2116` max capacitance violations |
+| Hold2 residual debug root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_eco_repair1_hold2_m0_residual_route_debug` |
+| Hold2 residual DRC | one M1 `Off-grid` on `ZBUF_899_1724` near `u_input_fifo/fifo_buf_reg[947][10]/RSTB` |
+| Successful hold2 route repair block | `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_open_site_m0_route_repair1_hold2_move_u2pteco95_r1_route_repair1.design` |
+| Successful hold2 route repair action | Move `U_2_PTECO_HOLD_BUF95` by `+0.152um` in X and reroute its pin nets plus `ZBUF_899_1724` |
+| Successful hold2 repair report root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_hold2_move_u2pteco95_r1_route_repair1` |
+| Successful hold2 saved-block recheck root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_eco_repair1_hold2_m0_move_u2pteco95_r1_route_repair1_saved_recheck` |
+| Hold2 repaired route DRC/open | `0` route DRCs, `0` open signal nets |
+| Hold2 repaired PG/legality | PG floating counts `0`, PG DRC clean, legality `TOTAL 0 Violations` |
+| Hold2 repaired setup | setup slack `5.61 ns`, TNS `0.00`, setup violating paths `0` |
+| Hold2 repaired hold | WNS `-0.05 ns`, TNS `-15.18 ns`, hold violations `4390` |
+| Hold2 repaired electrical | `328` max transition violations, `2116` max capacitance violations, `2142` nets with violations |
+| Third hold ECO output block | `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_repair1_hold2_clean_hold3.design` |
+| Third hold ECO report root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_eco_repair1_hold2_clean_hold3_m0` |
+| Third hold ECO action | Inserted only `2` `NBUFFX2_RVT` hold buffers; PT remaining endpoints `543` |
+| Third hold ECO saved-block recheck root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_eco_repair1_hold2_clean_hold3_m0_saved_recheck` |
+| Third hold ECO saved-block route DRC/open | `0` route DRCs, `0` open signal nets |
+| Third hold ECO saved-block PG/legality | PG floating counts `0`, PG DRC clean, legality `TOTAL 0 Violations` |
+| Third hold ECO saved-block hold | WNS `-0.05 ns`, TNS `-15.18 ns`, hold violations `4390` |
+| Third hold ECO saved-block electrical | `328` max transition violations, `2116` max capacitance violations |
+| Antenna | Not proven for all candidates; route reports state `no antenna rules defined` |
+| Disposition | Current route/PG/legal best candidate remains hold-improved but not timing/electrical clean. Further hold cleanup needs a different strategy from repeated `PHYSICAL_MODE=open_site` ECO. |

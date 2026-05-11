@@ -36,19 +36,23 @@
 - ICC2 broad post-route `route_opt` trial: completed and saved `route_pg_ladder_route_opt1`, but not adopted because it introduced `43` open signal nets and `26` route DRCs
 - ICC2 open-site hold ECO trial: completed and saved `route_pg_ladder_hold_eco_open_site_m0`; route DRC/open was `3/0`, so it was not adopted directly
 - ICC2 open-site hold ECO residual route repair: completed and saved `route_pg_ladder_hold_eco_open_site_m0_route_repair1`; saved-block recheck reports route DRC/open `0/0`, clean PG connectivity/DRC, clean legality, and setup met, but hold/electrical/antenna-rule coverage remain open
+- ICC2 second open-site hold ECO from the repaired candidate: completed and saved `route_pg_ladder_hold_eco_open_site_m0_route_repair1_hold2`; it inserted `102` hold buffers but left one M1 off-grid route DRC and saved-block hold/electrical still open
+- ICC2 hold2 targeted cell-move route repair: completed and saved `route_pg_ladder_hold_eco_open_site_m0_route_repair1_hold2_move_u2pteco95_r1_route_repair1`; saved-block recheck reports route DRC/open `0/0`, clean PG connectivity/DRC, clean legality, and setup met, but hold/electrical remain open
+- ICC2 third open-site hold ECO from the repaired hold2 candidate: completed and saved `route_pg_ladder_hold_eco_repair1_hold2_clean_hold3`; it inserted only `2` additional hold buffers and saved-block recheck shows no material hold/electrical improvement
 
 ## Next Checkpoint
 
-Proceed from the repaired open-site hold ECO candidate and close or classify the remaining post-route risks:
+Proceed from the route-clean repaired hold2/hold3 evidence and change strategy for hold/electrical closure:
 
-1. Treat `route_pg_ladder_hold_eco_open_site_m0_route_repair1` as the current best saved route-plus-PG and hold-improved candidate.
-2. Use saved-block recheck evidence from `07_extract_sta_hold_eco_open_site_m0_route_repair1_saved_recheck`: route DRC/open `0/0`, PG floating counts `0`, PG DRC clean, legality `0`, and setup slack `5.61 ns`.
+1. Treat `route_pg_ladder_hold_eco_open_site_m0_route_repair1_hold2_move_u2pteco95_r1_route_repair1` and `route_pg_ladder_hold_eco_repair1_hold2_clean_hold3` as the latest route/PG/legal clean hold-improved candidates.
+2. Use saved-block recheck evidence from `07_extract_sta_hold_eco_repair1_hold2_m0_move_u2pteco95_r1_route_repair1_saved_recheck` and `07_extract_sta_hold_eco_repair1_hold2_clean_hold3_m0_saved_recheck`: route DRC/open `0/0`, PG floating counts `0`, PG DRC clean, legality `0`, and setup slack `5.61 ns`.
 3. Keep `route_pg_ladder_vdd50_vss20_path507x55_h015` as the rollback route-plus-PG clean source if further hold/electrical ECO degrades route or PG.
 4. Keep `route_pg_ladder_route_opt1` as failed trial evidence only: hold improved to WNS `-0.02 ns`, TNS `-0.38 ns`, `293` violations, but route DRC/open became `26/43`.
-5. Current repaired hold ECO candidate still has open hold: WNS `-0.05 ns`, TNS `-15.61 ns`, `4472` violations.
-6. Current electrical DRC remains open: `328` max transition violations and `2116` max capacitance violations across `2142` nets with violations.
-7. Do not claim antenna clean because the route checks report no antenna rules defined.
-8. Do not promote the candidate to a complete baseline until hold, electrical reports, and antenna-rule coverage are resolved or explicitly classified.
+5. Repeated `PHYSICAL_MODE=open_site` hold ECO is now saturated by available placement sites: hold3 inserted only `2` buffers and saved-block hold remains WNS/TNS/violations `-0.05 ns / -15.18 ns / 4390`.
+6. Current saved-block electrical DRC remains open: `328` max transition violations and `2116` max capacitance violations across `2142` nets with violations.
+7. Do not trust immediate post-ECO electrical reports when they disagree with saved-block rechecks; use reopened block QoR as the evidence source.
+8. Do not claim antenna clean because the route checks report no antenna rules defined.
+9. Do not promote the candidate to a complete baseline until hold, electrical reports, and antenna-rule coverage are resolved or explicitly classified.
 
 ## Accepted First-Baseline Risks
 
@@ -92,3 +96,5 @@ Proceed from the repaired open-site hold ECO candidate and close or classify the
 - broad post-route `route_opt` is not adopted: it reduced hold violations to WNS/TNS/violations `-0.02 ns / -0.38 ns / 293`, but introduced `43` open signal nets, `26` route DRCs, and worsened electrical violations to `673 / 2181`.
 - open-site hold ECO direct output was not adopted: it reduced hold to WNS/TNS/violations `-0.05 ns / -15.61 ns / 4472` and kept PG/legality clean, but route DRC/open was `3/0`.
 - targeted residual route repair from the open-site hold ECO output is now the current best candidate: saved-block recheck reports route DRC/open `0/0`, PG floating counts `0`, PG DRC clean, legality `0`, and setup slack `5.61 ns`; hold remains `-0.05 ns / -15.61 ns / 4472`, electrical remains `328 / 2116`, and antenna-rule coverage is absent.
+- repaired hold2/hold3 candidates preserve route DRC/open `0/0`, PG floating counts `0`, PG DRC clean, legality `0`, and setup slack `5.61 ns`, but hold remains `-0.05 ns / -15.18 ns / 4390` and electrical remains `328 / 2116`.
+- repeated open-site hold ECO is limited by no-open-site failures; hold3 inserted only `2` additional buffers and did not materially improve the saved-block timing/electrical state.

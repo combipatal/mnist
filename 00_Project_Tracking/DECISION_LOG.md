@@ -192,3 +192,30 @@
 - Rationale: it is the last pre-hold-ECO clean route-plus-PG checkpoint and is useful if further timing or electrical ECO degrades the repaired hold ECO candidate.
 - Guardrail: do not call `route_pg_ladder_hold_eco_open_site_m0_route_repair1` a complete backend baseline yet.
 - Rationale: hold remains open at WNS/TNS/violations `-0.05 ns / -15.61 ns / 4472`, electrical DRC remains open at max transition/capacitance `328 / 2116`, and antenna-rule coverage is still absent.
+
+## 2026-05-12
+
+### Repaired Hold2 Candidate Disposition
+
+- Decision: keep `route_pg_ladder_hold_eco_open_site_m0_route_repair1_hold2_move_u2pteco95_r1_route_repair1` as the latest route-clean repaired hold2 candidate.
+- Rationale: the second open-site hold ECO inserted `102` hold buffers but introduced one M1 off-grid route DRC on `ZBUF_899_1724`; moving adjacent hold buffer `U_2_PTECO_HOLD_BUF95` by `+0.152um` in X and rerouting local nets closed that route DRC. Saved-block recheck reports route DRC/open `0/0`, PG floating counts `0`, PG DRC clean, legality `TOTAL 0 Violations`, and setup slack `5.61 ns`.
+- Guardrail: do not call this a complete backend baseline.
+- Rationale: saved-block timing/electrical remain open with hold WNS/TNS/violations `-0.05 ns / -15.18 ns / 4390` and max transition/capacitance `328 / 2116`; antenna-rule coverage is still absent.
+
+### Connect-within-pins Probe Disposition
+
+- Decision: do not use `route.common.connect_within_pins_by_layer_name` as a repair option for this candidate.
+- Rationale: mode-only values were invalid, and the accepted layer/mode form `M1 via_standard_cell_pins` changed the route DRC criteria, creating more than fifty thousand `Connection not within pin` violations. This is not compatible with preserving the existing route-clean baseline evidence.
+- Next action: prefer local physical edits plus narrow reroute for isolated pin-access DRCs.
+
+### Repeated Open-Site Hold ECO Disposition
+
+- Decision: stop repeating identical `eco_opt -types hold -hold_margin 0.00 -physical_mode open_site` from the hold-improved candidates.
+- Rationale: hold3 inserted only `2` additional hold buffers, PrimeTime still reported `543` remaining endpoints, and saved-block recheck remained unchanged at hold WNS/TNS/violations `-0.05 ns / -15.18 ns / 4390`. The dominant unfixable reason is `O` no open free site.
+- Next action: change the hold/electrical strategy instead of rerunning the same open-site ECO. Candidate directions are whitespace/placement relief, a controlled non-open-site ECO mode, or a targeted electrical/hold repair with immediate route/PG/legal saved-block rechecks.
+
+### Saved-Block Evidence Policy Reinforcement
+
+- Decision: use reopened saved-block QoR as the evidence source for timing/electrical disposition after ECO.
+- Rationale: both hold2 and hold3 immediate post-ECO reports showed much lower electrical counts than reopened saved-block QoR. Hold2 immediate electrical was `10 / 80` while saved-block recheck returned `328 / 2116`; hold3 immediate electrical was `0 / 3` while saved-block recheck again returned `328 / 2116`.
+- Guardrail: do not claim electrical clean from immediate post-ECO reports unless a saved-block recheck confirms the same state.
