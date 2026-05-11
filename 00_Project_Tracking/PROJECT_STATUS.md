@@ -2,8 +2,8 @@
 
 ## Current Status
 
-- Status: `A11_ROUTE_PG_CLEAN_CANDIDATE_SAVED`
-- Stage: A11 ICC2 route-plus-PG clean candidate saved; timing/electrical/antenna remain open
+- Status: `A12_POST_ROUTE_EXTRACT_COMPLETED_OPEN_HOLD_ELECTRICAL_ANTENNA`
+- Stage: A12 post-route extraction from route-plus-PG clean candidate completed; hold/electrical/antenna remain open
 - Primary RTL cloned: yes
 - Source revision frozen: yes
 - Candidate top identified: `nn_top`
@@ -32,15 +32,16 @@
 - ICC2 targeted residual route repair: completed; saved block `route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack` rechecks with `0` open signal nets and `0` route DRCs
 - ICC2 PG rail connectivity debug: completed; root cause narrowed to seven isolated M1 rail subnetworks per supply with missing rail-to-mesh via connection
 - ICC2 PG repair: completed for current candidate; saved block `route_pg_ladder_vdd50_vss20_path507x55_h015` rechecks with `0` open signal nets, `0` route DRCs, clean PG connectivity, clean PG DRC, and clean legality
+- ICC2 post-route extraction from route-plus-PG candidate: completed; route DRC/open, PG, legality, and setup remain clean, but hold/electrical/antenna-rule coverage remain open
 
 ## Next Checkpoint
 
-Proceed from the saved route-plus-PG clean candidate and close or classify the remaining post-route risks:
+Proceed from the extracted route-plus-PG candidate and close or classify the remaining post-route risks:
 
 1. Treat `route_pg_ladder_vdd50_vss20_path507x55_h015` as the current best saved route-plus-PG candidate.
-2. Use saved-block recheck evidence from `06_route_pg_ladder_vdd50_vss20_path507x55_h015_saved_recheck`: route DRC/open `0/0`, PG floating counts `0`, PG DRC clean, and legality `0`.
-3. Keep hold/electrical cleanup open; the preceding saved signal-route candidate had hold worst `-0.10 ns`, total `-322.90`, `26153` hold violating paths, and max transition/cap violations `318 / 2009`.
-4. Re-extract timing/electrical reports from the PG ladder saved block before claiming updated timing numbers.
+2. Use post-route extraction evidence from `07_extract_sta_pg_ladder_vdd50_vss20_path507x55_h015`: route DRC/open `0/0`, PG floating counts `0`, PG DRC clean, legality `0`, and setup slack `5.61 ns`.
+3. Start hold/electrical cleanup from this block; current hold is WNS `-0.10 ns`, TNS `-322.90 ns`, `26153` violations.
+4. Current electrical DRC is `318` max transition violations and `2009` max capacitance violations across `2039` nets with violations.
 5. Do not claim antenna clean because the route check reports no antenna rules defined.
 6. Do not promote the candidate to a complete baseline until hold/electrical reports and antenna-rule coverage are resolved or explicitly classified.
 
@@ -81,4 +82,5 @@ Proceed from the saved route-plus-PG clean candidate and close or classify the r
 - PG connectivity detail shows seven isolated one-wire/zero-via subnetworks per supply net; this is not explained by the signal off-grid DRCs.
 - Direct M1-M2 VIA12 PG repair is not acceptable: forced repair fixes connectivity but creates `580` PG DRC errors.
 - Combined M1-M7 PG ladder repair is saved as `route_pg_ladder_vdd50_vss20_path507x55_h015`: saved-block recheck reports `0` open signal nets, `0` route DRCs, zero PG floating counts, no PG DRC error body, and `TOTAL 0 Violations` legality.
-- the saved route-plus-PG candidate is not a complete backend baseline yet: hold, max transition/capacitance, and antenna-rule coverage remain open.
+- post-route extraction from the saved route-plus-PG candidate confirms route DRC/open `0/0`, PG floating counts `0`, PG DRC clean, legality `0`, and setup met.
+- the saved route-plus-PG candidate is not a complete backend baseline yet: hold WNS/TNS/violations are `-0.10 ns / -322.90 ns / 26153`, max transition/capacitance violations are `318 / 2009`, and antenna-rule coverage remains missing.

@@ -24,6 +24,7 @@ backend utilization target: 55%
 | Placement | PASS_WITH_OPEN | `4_Backend_ICC2/3_Log/04_place/run_place_initial.log`, `4_Backend_ICC2/4_Report/04_place/check_legality.rpt`, `4_Backend_ICC2/4_Report/04_place/pg_connectivity.rpt` |
 | CTS | PASS_WITH_OPEN | `4_Backend_ICC2/3_Log/05_cts/run_cts_initial.log`, `4_Backend_ICC2/4_Report/05_cts/clock_qor.summary.rpt`, `4_Backend_ICC2/4_Report/05_cts/check_legality.rpt`, `4_Backend_ICC2/4_Report/05_cts/pg_connectivity.rpt` |
 | Route | PASS_WITH_OPEN | `4_Backend_ICC2/3_Log/06_route/run_route_initial.log`, `4_Backend_ICC2/4_Report/06_route/check_routes.rpt`, `4_Backend_ICC2/4_Report/06_route/qor.rpt`, `4_Backend_ICC2/4_Report/06_route/pg_connectivity.rpt` |
+| Route-plus-PG candidate extraction | PASS_WITH_OPEN | `4_Backend_ICC2/3_Log/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_pg_ladder_vdd50_vss20_path507x55_h015/run.log`, `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_pg_ladder_vdd50_vss20_path507x55_h015/report_status.tsv` |
 
 ## DC Topographical Synthesis Summary
 
@@ -407,6 +408,25 @@ backend utilization target: 55%
 | PG DRC after saved-block recheck | `pg_drc.rpt` has no error body; run log reports no PG DRC errors |
 | Legality after saved-block recheck | `TOTAL 0 Violations` |
 | Disposition | Current best saved route-plus-PG clean candidate. Not a complete backend clean baseline because hold, max transition/capacitance, and antenna-rule coverage remain open. |
+
+## ICC2 Post-Route Extraction From Route Plus PG Candidate
+
+| Metric | Value |
+| --- | --- |
+| Input block | `mnist_npu_icc2_lib:route_pg_ladder_vdd50_vss20_path507x55_h015.design` |
+| Command | `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 EXTRACT_NAME=07_extract_sta_pg_ladder_vdd50_vss20_path507x55_h015 EXTRACT_INPUT_BLOCK=route_pg_ladder_vdd50_vss20_path507x55_h015 4_Backend_ICC2/0_Script/07_extract_sta/run_post_route_extract_sta.sh` |
+| Log path | `4_Backend_ICC2/3_Log/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_pg_ladder_vdd50_vss20_path507x55_h015/run.log` |
+| Report root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_pg_ladder_vdd50_vss20_path507x55_h015` |
+| Report command status | Required reports pass; optional `report_analysis_coverage` is `OPTIONAL_FAIL` and not used as a checkpoint criterion |
+| Route DRC/open | `0` route DRCs, `0` open signal nets |
+| PG connectivity | VDD and VSS each report `0` floating wires, `0` floating vias, `0` floating standard cells, and `0` floating terminals |
+| PG DRC | `No errors found` in ICC2 run log |
+| Legality | `TOTAL 0 Violations` |
+| Setup timing | setup slack `5.61 ns`, TNS `0.00`, setup violating paths `0` |
+| Hold timing | WNS `-0.10 ns`, TNS `-322.90 ns`, hold violations `26153` |
+| Electrical DRC | `318` max transition violations, `2009` max capacitance violations, `2039` nets with violations |
+| Antenna | not proven; reports state `no antenna rules defined` |
+| Disposition | Post-route extraction checkpoint complete, but backend baseline remains open on hold, electrical, and antenna-rule coverage. |
 
 ## ICC2 PG Connectivity Debug Conclusions
 

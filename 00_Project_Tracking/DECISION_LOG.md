@@ -159,3 +159,11 @@
 - Implementation: use M1-M7 ladder vias with VDD rails at `x=50.0`, VSS rails at `x=20.0`, and a per-shape override for `PATH_11_507` at `x=55.0` with half-box `0.15`.
 - Rationale: the saved-block recheck reports `0` open signal nets, `0` route DRCs, zero VDD/VSS floating wires/vias/std cells/terminals, no PG DRC error body, and `TOTAL 0 Violations` legality.
 - Guardrail: do not promote this candidate to a complete backend baseline yet. Hold, max transition/capacitance, and antenna-rule coverage remain open and must be re-extracted or classified from the PG ladder saved block.
+
+### Post-Route Extraction Disposition
+
+- Decision: treat the `07_extract_sta_pg_ladder_vdd50_vss20_path507x55_h015` report set as the current evidence source for the route-plus-PG candidate.
+- Rationale: extraction from `route_pg_ladder_vdd50_vss20_path507x55_h015` confirms route DRC/open `0/0`, PG connectivity clean, PG DRC clean, legality `0`, and setup met with slack `5.61 ns`.
+- Decision: keep hold, electrical DRC, and antenna-rule coverage as open closure tracks.
+- Rationale: post-route extraction reports hold WNS/TNS/violations `-0.10 ns / -322.90 ns / 26153`, max transition/capacitance violations `318 / 2009`, and no antenna rules defined.
+- Classification: optional `report_analysis_coverage` failed and is not used as a pass/fail criterion for this ICC2 extraction checkpoint.
