@@ -183,3 +183,12 @@
 - Decision: keep `route_pg_ladder_hold_eco_open_site_m0` as the best hold-improved near-route-clean candidate.
 - Rationale: unlike the broad `route_opt` trial, this hold ECO keeps open signal nets at `0` and leaves only three route DRCs, so it is a better starting point for targeted residual route repair.
 - Next action: localize and repair the three residual route DRCs in `route_pg_ladder_hold_eco_open_site_m0`; only promote this path after saved-block recheck returns route DRC/open `0/0`.
+
+### Open-Site Hold ECO Residual Route Repair Disposition
+
+- Decision: promote `route_pg_ladder_hold_eco_open_site_m0_route_repair1` to the current best route-plus-PG and hold-improved candidate.
+- Rationale: targeted sequential local reroute repaired the three residual route DRCs from the open-site hold ECO block, saved a new block, and saved-block recheck reports route DRC/open `0/0`, PG floating counts `0`, PG DRC clean, `TOTAL 0 Violations` legality, and setup slack `5.61 ns`.
+- Decision: keep `route_pg_ladder_vdd50_vss20_path507x55_h015` as the rollback clean route-plus-PG source.
+- Rationale: it is the last pre-hold-ECO clean route-plus-PG checkpoint and is useful if further timing or electrical ECO degrades the repaired hold ECO candidate.
+- Guardrail: do not call `route_pg_ladder_hold_eco_open_site_m0_route_repair1` a complete backend baseline yet.
+- Rationale: hold remains open at WNS/TNS/violations `-0.05 ns / -15.61 ns / 4472`, electrical DRC remains open at max transition/capacitance `328 / 2116`, and antenna-rule coverage is still absent.

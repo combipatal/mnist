@@ -475,6 +475,31 @@ backend utilization target: 55%
 | Antenna | not proven; reports state `no antenna rules defined` |
 | Disposition | Completed but not adopted. This is the best hold-improved near-route-clean candidate, but route DRC, hold, electrical, and antenna-rule coverage remain open. |
 
+## ICC2 Open-Site Hold ECO Residual Route Repair
+
+| Metric | Value |
+| --- | --- |
+| Input block | `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_open_site_m0.design` |
+| Saved output block | `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_open_site_m0_route_repair1.design` |
+| Residual debug root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_eco_open_site_m0_residual_route_debug` |
+| Repair command | `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 SEQ_ROUTE_PROBE_NAME=hold_eco_open_site_m0_residual_route_repair1 SEQ_ROUTE_INPUT_BLOCK=route_pg_ladder_hold_eco_open_site_m0 SEQ_ROUTE_OUTPUT_BLOCK=route_pg_ladder_hold_eco_open_site_m0_route_repair1 SEQ_ROUTE_STEPS='u_input_fifo/fifo_buf[1015][7] u_input_fifo/n3339;eco_net_682_u_input_fifo/n2310 eco_net_1102_u_input_fifo/n3334' SEQ_ROUTE_ITERATIONS=160 SEQ_ROUTE_SAVE=1 SEQ_ROUTE_SAVE_ON_CLEAN_ONLY=1 4_Backend_ICC2/0_Script/06_route/probe_sequential_local_offgrid_route.sh` |
+| Repair log path | `4_Backend_ICC2/3_Log/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_hold_eco_open_site_m0_residual_route_repair1/run.log` |
+| Repair report root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_hold_eco_open_site_m0_residual_route_repair1` |
+| Saved-block recheck command | `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 ROUTE_DEBUG_SUBDIR=07_extract_sta_hold_eco_open_site_m0_route_repair1_saved_recheck ROUTE_DEBUG_INPUT_BLOCK=route_pg_ladder_hold_eco_open_site_m0_route_repair1 4_Backend_ICC2/0_Script/06_route/debug_libdir_via1_no_track_route_residuals.sh` |
+| Saved-block recheck root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_eco_open_site_m0_route_repair1_saved_recheck` |
+| Residual DRC before repair | `3` route DRCs, `0` open signal nets: `1` M1 off-grid and `2` M2 shorts |
+| Repair sequence result | `summary.tsv` reports initial `3/0`, after step1 `0/0`, after step2 `0/0`, final save status `saved` |
+| Route DRC/open after saved-block recheck | `0` route DRCs, `0` open signal nets |
+| DRC extraction after recheck | `drc.errors.tsv` and `drc.offgrid.tsv` contain only headers |
+| PG connectivity after recheck | VDD and VSS each report `0` floating wires, `0` floating vias, `0` floating standard cells, and `0` floating terminals |
+| PG DRC after recheck | `No errors found` in ICC2 run log |
+| Legality after recheck | `TOTAL 0 Violations` |
+| Setup timing | setup slack `5.61 ns`, TNS `0.00`, setup violating paths `0` |
+| Hold timing | WNS `-0.05 ns`, TNS `-15.61 ns`, hold violations `4472` |
+| Electrical DRC | `328` max transition violations, `2116` max capacitance violations, `2142` nets with violations |
+| Antenna | not proven; reports state `no antenna rules defined` |
+| Disposition | Current best route-plus-PG and hold-improved candidate. Not a complete backend clean baseline because hold, electrical, and antenna-rule coverage remain open. |
+
 ## ICC2 PG Connectivity Debug Conclusions
 
 | Observation | Evidence | Current Interpretation |
