@@ -113,3 +113,33 @@
 - Decision: create a new MNIST RVT NDM trial combining libdir modified LEF, VIA1 pitch/no-track techfile, and `configure_frame_options -mode keep_obs_and_trim_all_pin`.
 - Rationale: CV32E40P used this frame-generation policy to reduce a comparable lower-metal route DRC candidate from `67` to `1`. ibex also supports the broader root-cause model that SAED32 lower-metal pin access and physical-library policy dominate these residual DRCs. MNIST's current netlist has no `MUX41X2_RVT`, so NDM frame trimming is a more direct next probe than an immediate DC cell-use rerun.
 - Guardrail: keep the result isolated in a trial output root and do not promote it to baseline unless route, legality, PG, timing, and evidence records justify promotion.
+
+## 2026-05-11
+
+### trim_all_pin util45 Route Evidence Source
+
+- Decision: use `libdir_via1_no_track_trim_all_pin_util45_route_rerun3` as the preserved route database and primary evidence source for the trim_all_pin util45 route result.
+- Rationale: `rerun2` completed and reported the same `6` route DRC level, but a later no-CCD diagnostic route was run in that same design library and overwrote the saved `route.design`/`route_auto.design`. `rerun3` recreated the full flow in a clean trial root, saved `route_auto` and `route`, and produced matching final reports.
+- Guardrail: use `rerun2` and no-CCD results only as diagnostic/history. Database-based residual debug should start from `4_Backend_ICC2/2_Output/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/mnist_npu_icc2_lib:route.design`.
+
+### trim_all_pin util45 Trial Disposition
+
+- Decision: treat the trim_all_pin util45 rerun3 route as the best current full-flow route-DRC candidate, not as a clean baseline replacement.
+- Rationale: official route DRC improved from the 55% first-route baseline's `738` DRCs and the previous VIA1 no-track util45 trial's `59` DRCs down to `6`, with `0` open signal nets and clean legality. However, all six route DRCs remain open as off-grid violations, PG connectivity still has thousands of floating standard cells, hold remains negative, max transition/cap violations remain open, and antenna is not proven because no antenna rules are defined.
+- Next action: debug the six residual off-grid DRCs from rerun3 while keeping PG rail connectivity as a separate closure track.
+
+### trim_all_pin util45 Route-only ECO Disposition
+
+- Decision: keep `route_eco_offgrid1` as partial route-only repair evidence, not as a clean baseline replacement.
+- Rationale: ECO reduced official route DRC from `6` to `5` and kept open signal nets at `0`, setup met, legality clean, and PG DRC without reported errors. But the router stopped as not converging, all five residual DRCs remain M1 off-grid errors, PG connectivity is unchanged, hold/electrical closure remains open, and antenna rules are still absent.
+- Next action: analyze the five residual ECO off-grid objects before running another broad ECO loop; if another change is needed, prefer a targeted pin-access/cell-use or local-route experiment over repeating generic ECO blindly.
+
+### Targeted Residual Route Repair Disposition
+
+- Decision: use targeted pin-access/local-route repair rather than another generic ECO loop for the five `route_eco_offgrid1` residual M1 off-grid DRCs.
+- Rationale: local probes showed the residuals were pin-access specific: `ZBUF_714_1050` and `ZBUF_851_152` could be fixed by narrow reroute, while the final `n143522` marker localized to `U77942/A1`/`A3`. Broad ECO had already stopped as not converging.
+- Implementation decision: exclude `VDD` and `VSS` from `@swap_pin_nets` with `SEQ_SWAP_NET_EXCLUDE_REGEX=^(VDD|VSS)$`.
+- Rationale: the target is signal route DRC. PG connectivity is a separate rail-connectivity problem, and touching PG nets during signal reroute would mix closure tracks.
+- Decision: keep saved block `route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack` as the current best signal-route candidate.
+- Rationale: it applies two controlled cell size changes, moves `U77942` by `+0.152um` in X, and saved-block recheck reports `0` open signal nets and `0` route DRCs.
+- Guardrail: do not promote this candidate to a complete clean backend baseline yet. PG connectivity remains open, hold remains negative, max transition/capacitance violations remain open, and antenna rules are still absent.

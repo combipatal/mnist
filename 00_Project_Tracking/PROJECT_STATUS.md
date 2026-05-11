@@ -2,8 +2,8 @@
 
 ## Current Status
 
-- Status: `A7_TRIM_ALL_PIN_TRIAL_STOPPED_DURING_CTS`
-- Stage: A7 ICC2 route debug and backend repair trials
+- Status: `A10_TRIM_ALL_PIN_UTIL45_TARGETED_ROUTE_DRC_CLEAN_CANDIDATE`
+- Stage: A10 ICC2 route debug and backend repair trials
 - Primary RTL cloned: yes
 - Source revision frozen: yes
 - Candidate top identified: `nn_top`
@@ -27,17 +27,19 @@
 - ICC2 libdir VIA1 no-track 45% utilization trial: completed; DRC improved to 59 but still not clean
 - Sibling SAED32 backend closure references: reviewed; next controlled trial is VIA1 no-track plus trim_all_pin NDM
 - ICC2 libdir VIA1 no-track trim_all_pin RVT NDM build: passed
-- ICC2 libdir VIA1 no-track trim_all_pin backend trial: stopped by user during CTS/clock-opt; route not run
+- ICC2 libdir VIA1 no-track trim_all_pin 45% utilization rerun3: completed through route; route DRC improved to `6` off-grid violations with `0` open signal nets, but route is not clean
+- ICC2 libdir VIA1 no-track trim_all_pin route-only ECO: completed; route DRC improved from `6` to `5`, but ECO did not converge to clean
+- ICC2 targeted residual route repair: completed; saved block `route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack` rechecks with `0` open signal nets and `0` route DRCs
 
 ## Next Checkpoint
 
-Proceed with two separate closure tracks:
+Proceed from the saved targeted route-DRC clean candidate while keeping non-route issues separate:
 
-1. Before rerun, clear or recreate the stopped trim_all_pin trial library after confirming no ICC2 process is running; a `lib.ndm.master_lock` remains from the forced stop.
-2. Resume the VIA1 no-track plus `trim_all_pin` backend trial through CTS and route, or rerun the full wrapper for clean reproducibility.
-3. For PG connectivity, debug the seven isolated VDD and seven isolated VSS one-wire/zero-via subnetworks independently from signal route DRC.
-4. If trim_all_pin still leaves residual lower-metal DRC after route, decide whether to rerun DC with targeted cell-use policy or add a sharper placement/pin-access probe.
-5. Keep route open; do not claim DRC, PG, hold, antenna, or electrical clean until reports prove closure.
+1. Treat `route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack` as the current best saved signal-route candidate: saved-block recheck reports `0` open signal nets and `0` route DRCs.
+2. Keep PG connectivity debug independent from signal route DRC; the saved candidate still has 7 floating VDD wires, 7 floating VSS wires, `4447` VDD floating standard cells, and `4002` VSS floating standard cells.
+3. Keep hold/electrical cleanup open; the saved candidate has hold worst `-0.10 ns`, total `-322.90`, `26153` hold violating paths, and max transition/cap violations `318 / 2009`.
+4. Do not claim antenna clean because the route check reports no antenna rules defined.
+5. Do not promote the candidate to a complete baseline until PG connectivity, hold/electrical reports, and antenna-rule coverage are resolved or explicitly classified.
 
 ## Accepted First-Baseline Risks
 
@@ -61,11 +63,16 @@ Proceed with two separate closure tracks:
 - Route hold remains open: worst hold `-0.10 ns`, total hold `-288.96`, violations `25344`.
 - Route electrical violations remain open: max transition/max capacitance violations `287 / 1958`.
 - Route ECO DRC repair was tested and not adopted: DRC only improved from `738` to `709`.
-- libdir VIA1 no-track backend-route trial is the best current route-DRC candidate: DRC improved to `77`, with `0` open signal nets and no needs-fat-contact in the final route report.
+- libdir VIA1 no-track backend-route trial reduced DRC to `77`, with `0` open signal nets and no needs-fat-contact in the final route report.
 - libdir VIA1 no-track trial is still not clean: residual DRC is dominated by `72` off-grid DRCs; PG connectivity, hold, antenna, and electrical closure remain open.
 - Residual off-grid extraction shows `72` off-grid DRCs are signal-only; `69` are on M1 and `3` are on M2.
 - Route-only ECO on the VIA1 no-track trial improved DRC from `77` to `55`, but did not converge to clean.
 - VIA1 no-track 45% utilization trial improved official route DRC to `59`, but did not converge to clean; final routed utilization was `0.5669`.
 - Sibling CV32E40P evidence shows `trim_all_pin` NDM frame generation can strongly reduce comparable lower-metal residual DRC; sibling ibex evidence shows VIA1 no-track plus upstream cell-use policy can reach route DRC 0.
-- trim_all_pin NDM build passed, but the backend trial has no route evidence yet because it was stopped during CTS.
+- trim_all_pin util45 rerun2 reached route and reported `6` route DRCs, but its saved route DB was later overwritten by a no-CCD diagnostic route; use rerun2 reports only as historical evidence.
+- trim_all_pin util45 rerun3 completed through route and is the preserved best full-flow route-DRC candidate: `0` open signal nets, `6` route DRCs, all off-grid, and `TOTAL 0 Violations` legality.
+- trim_all_pin util45 rerun3 is still not clean: PG connectivity remains open, hold remains significantly negative, max transition/cap remain open, and antenna is not proven because no antenna rules are defined.
+- trim_all_pin util45 route-only ECO improved official DRC from `6` to `5`, but stopped as not converging; it is partial repair evidence only.
+- targeted size-swap, `U77942` local move, and sequential signal reroute closed the residual route DRC/open checks in saved block `route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack`.
+- the saved targeted candidate is not a complete clean backend baseline: PG connectivity, hold, max transition/capacitance, and antenna-rule coverage remain open.
 - PG connectivity detail shows seven isolated one-wire/zero-via subnetworks per supply net; this is not explained by the signal off-grid DRCs.

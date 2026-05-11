@@ -3,7 +3,7 @@ set -euo pipefail
 
 cd /DATA/home/edu135/MNIST
 
-trial_name="libdir_via1_no_track_trim_all_pin_util45_route"
+trial_name="${TRIAL_NAME:-libdir_via1_no_track_trim_all_pin_util45_route}"
 trial_output_root="4_Backend_ICC2/2_Output/trials/$trial_name"
 trial_report_root="4_Backend_ICC2/4_Report/trials/$trial_name"
 trial_log_root="4_Backend_ICC2/3_Log/trials/$trial_name"

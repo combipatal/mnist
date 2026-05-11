@@ -306,23 +306,78 @@ backend utilization target: 55%
 | CV32E40P route root-cause investigation | M9 did not solve lower-metal DRC and worsened one trial | Do not prioritize upper-layer routing as the next MNIST experiment. |
 | CV32E40P trim_all_pin NDM | `configure_frame_options -mode keep_obs_and_trim_all_pin` reduced a 67-DRC candidate to 1 DRC | Build the same NDM frame policy for MNIST before broader synthesis reruns. |
 
-## ICC2 libdir VIA1 no-track trim_all_pin Trial Status
+## ICC2 libdir VIA1 no-track trim_all_pin 45% Utilization Route Trial
 
 | Metric | Value |
 | --- | --- |
 | NDM build command | `4_Backend_ICC2/0_Script/00_setup/build_saed32_rvt_ndm_libdir_via1_no_track_trim_all_pin.sh` |
 | NDM build result | PASS; workspace check succeeded and RVT NDM was written |
-| Backend command | `4_Backend_ICC2/0_Script/99_util/run_libdir_via1_no_track_trim_all_pin_util45_backend_flow.sh` |
-| Backend status | Stopped by user during CTS/clock-opt; route not run |
-| Saved blocks available | `nn_top`, `floorplan`, `powerplan`, `placement` |
-| Placement legality | `TOTAL 0 Violations` |
-| Placement utilization | `0.4503` |
-| Placement setup | critical slacks `7.39`, `7.92`, `4.89` |
-| Placement electrical | `3074` max transition, `21434` max capacitance violations |
-| Placement PG connectivity | VDD `3885` floating std cells, VSS `3308` floating std cells |
-| CTS partial status | clock tree compilation reached success, but no final CTS save/report set exists |
-| Route DRC | Not available for this trial |
-| Disposition | Continue later from a clean/recreated trial library; do not claim trim_all_pin route improvement until route reports exist. |
+| Backend command | `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 4_Backend_ICC2/0_Script/99_util/run_libdir_via1_no_track_trim_all_pin_util45_backend_flow.sh` |
+| Backend status | COMPLETED_ROUTE_NOT_CLEAN |
+| Trial reference library | `4_Backend_ICC2/2_Output/00_setup/ndm_libdir_via1_no_track_trim_all_pin/saed32rvt_tt.ndm` |
+| Preserved trial design library | `4_Backend_ICC2/2_Output/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/mnist_npu_icc2_lib` |
+| Report root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3` |
+| Saved blocks available | `nn_top`, `floorplan`, `powerplan`, `placement`, `cts`, `route_auto`, `route` |
+| Open signal nets | `0` |
+| Route DRC total | `6` |
+| Route DRC classes | `6` off-grid |
+| Antenna | no antenna rules defined; not proven clean |
+| Legality | `TOTAL 0 Violations` |
+| Setup QoR | worst setup slack `5.61 ns`, setup violating paths `0` |
+| Hold QoR | worst `-0.10 ns`, total `-322.94`, violations `26158` |
+| Final utilization after route | `0.5669` |
+| PG DRC | `No errors found` in route log |
+| VDD connectivity | `7` floating wires, `4447` floating std cells |
+| VSS connectivity | `7` floating wires, `4002` floating std cells |
+| Max transition/cap violations | `317 / 2006` |
+| Cell area | `774796.61` |
+| Net length | `7028986.22` |
+| Disposition | Best preserved full-flow route database, but not clean. Route DRC, PG connectivity, hold, antenna-rule coverage, and electrical closure remain open. |
+| Rerun note | `rerun2` reports also showed `6` route DRC, but its saved route DB was later overwritten by a no-CCD diagnostic route. Use `rerun3` for database-based debug. |
+
+## ICC2 trim_all_pin util45 Route ECO Off-grid Trial
+
+| Metric | Value |
+| --- | --- |
+| Command | `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 ROUTE_ECO_TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3_eco_offgrid1 ROUTE_ECO_OUTPUT_BLOCK=route_eco_offgrid1 4_Backend_ICC2/0_Script/06_route/run_libdir_via1_no_track_route_eco_offgrid1.sh` |
+| Input block | `mnist_npu_icc2_lib:route.design` in the rerun3 trial library |
+| Output block | `mnist_npu_icc2_lib:route_eco_offgrid1.design` |
+| Pre-check DRC | `6` M1 off-grid, `0` open signal nets |
+| Final post-check DRC | `5` M1 off-grid, `0` open signal nets |
+| ECO changed nets | `81` |
+| ECO convergence | best intermediate DRC `4`; stopped as not converging; final official post-check `5` |
+| Residual objects after ECO | `ZBUF_832_2538`, `ZBUF_714_1050` twice, `ZBUF_851_152`, `n143522` |
+| Cleared original objects | `n130475`, `ZBUF_766_3067` no longer appear in the ECO residual list |
+| Legality | `TOTAL 0 Violations` |
+| Setup QoR | worst setup slack `5.61 ns`, setup violating paths `0` |
+| Hold QoR | worst `-0.10 ns`, total `-322.94`, violations `26158` |
+| PG DRC | `No errors found` |
+| PG connectivity | unchanged: VDD `4447` floating std cells, VSS `4002` floating std cells |
+| Max transition/cap violations | `317 / 2006` |
+| Disposition | Partial route-only repair and current lowest DRC count, but not clean and not a full-flow replacement. |
+
+## ICC2 trim_all_pin util45 Targeted Route-DRC Clean Candidate
+
+| Metric | Value |
+| --- | --- |
+| Command | `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 SEQ_ROUTE_PROBE_NAME=seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack_clean_save1 SEQ_ROUTE_INPUT_BLOCK=route_eco_offgrid1 SEQ_ROUTE_OUTPUT_BLOCK=route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack SEQ_SIZE_SWAPS='act_ram_reg[861][0]=DFFARX2_RVT;U77942=OA221X1_RVT' SEQ_CELL_MOVES='U77942=0.152,0' SEQ_ROUTE_STEPS='ZBUF_714_1050;ZBUF_851_152;@swap_pin_nets;ZBUF_832_2538;n143522' SEQ_ROUTE_ITERATIONS=120 SEQ_ROUTE_SAVE=1 SEQ_ROUTE_SAVE_ON_CLEAN_ONLY=1 4_Backend_ICC2/0_Script/06_route/probe_sequential_local_offgrid_route.sh` |
+| Input block | `mnist_npu_icc2_lib:route_eco_offgrid1.design` in the rerun3 trial library |
+| Saved output block | `mnist_npu_icc2_lib:route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack.design` |
+| Report root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack_clean_save1` |
+| Saved-block recheck root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_seq_size_swap_dff2_oa1_move_u77942_xp152_saved_recheck` |
+| Targeted size swaps | `act_ram_reg[861][0]: DFFARX1_RVT -> DFFARX2_RVT`; `U77942: OA221X2_RVT -> OA221X1_RVT` |
+| Targeted move | `U77942` moved `+0.152um` in X; origin `249.6720 854.3280 -> 249.8240 854.3280` |
+| Final route DRC/open | `0` route DRCs, `0` open signal nets |
+| Saved-block recheck | `check_routes.recheck.rpt` confirms `0` route DRCs and `0` open signal nets |
+| DRC extraction after recheck | `drc.errors.tsv` and `drc.offgrid.tsv` contain only headers |
+| Legality | `TOTAL 0 Violations` |
+| Setup QoR | `clk` critical path slack `5.61 ns`, setup violating paths `0` |
+| Hold QoR | worst `-0.10 ns`, total `-322.90`, violations `26153` |
+| PG DRC | `No errors found` in run log |
+| PG connectivity | still open: VDD has `7` floating wires and `4447` floating std cells; VSS has `7` floating wires and `4002` floating std cells |
+| Max transition/cap violations | `318 / 2009` |
+| Antenna | no antenna rules defined; not proven clean |
+| Disposition | Current best saved signal-route candidate. Not a complete backend clean baseline because PG connectivity, hold, antenna-rule coverage, and electrical closure remain open. |
 
 ## ICC2 Route Debug Conclusions
 
@@ -332,6 +387,9 @@ backend utilization target: 55%
 | Simple route ECO is weak | DRC `738` to `709` in `06_route_eco_drc1/check_routes.post.rpt` | Do not spend more time on generic ECO reroute before changing the physical setup or placement conditions. |
 | VIA1 no-track physical setup is effective for contact DRC | Needs-fat-contact `183` to `0`, short `26` to `0` | The sibling-project library-policy fix applies partially to MNIST. |
 | Residual trial DRC is mostly off-grid | `72` of `77` final DRCs are off-grid | Next debug should inspect residual off-grid objects/locations before broad reruns. |
+| trim_all_pin util45 is the best full-flow route-DRC candidate | rerun3 route reports `0` open signal nets and `6` off-grid DRCs | Continue residual off-grid debug from the preserved rerun3 route DB, but do not claim clean closure. |
+| Route-only ECO gives only partial additional repair | ECO reduced official DRC from `6` to `5` and then stopped as not converging | Do not assume generic ECO will close the remaining off-grid DRCs without another targeted change. |
+| Targeted pin-access repair closes signal route DRC | saved candidate recheck reports `0` open signal nets and `0` route DRCs | Route DRC/open objective is closed for the saved candidate, but PG/timing/electrical/antenna closure remains separate. |
 | PG connectivity remains separate from signal DRC | PG DRC has no errors, but thousands of floating std cells remain | Do not claim PG clean; debug stdcell rail/pin connection independently. |
 
 ## ICC2 libdir/LEF/modify NDM Trial Summary

@@ -603,3 +603,179 @@
 - Disposition:
   - The new NDM build is valid and can be reused.
   - The backend trial is not evaluable for route DRC yet. Resume by cleaning/recreating the trial library and rerunning from CTS or rerunning the full wrapper, then continue through route.
+
+## 2026-05-11
+
+### ICC2 trim_all_pin util45 previous-day final-result recovery
+
+- Objective: resume from the final available evidence for the `libdir_via1_no_track_trim_all_pin_util45` trial and continue without losing reproducibility.
+- Result: COMPLETED.
+- Findings:
+  - The normal `libdir_via1_no_track_trim_all_pin_util45_route_rerun2` full wrapper completed through route after the previous stop point.
+  - Its `05_cts/run.log` and `06_route/run.log` both reached normal ICC2 exit.
+  - Its route reports showed `0` open signal nets and `6` total route DRCs, all `Off-grid`.
+  - After that completion, a no-CCD diagnostic route was run in the same rerun2 design library and overwrote the saved `route.design`/`route_auto.design`.
+- Disposition:
+  - Use rerun2 reports only as historical evidence.
+  - Do not use the rerun2 saved route database as the preserved final database because it was later overwritten by diagnostic work.
+
+### ICC2 trim_all_pin util45 no-CCD diagnostic route
+
+- Command:
+  - `4_Backend_ICC2/0_Script/99_util/run_libdir_via1_no_track_trim_all_pin_util45_recover_cts_no_ccd_route.sh`
+- Tool: `icc2_shell`
+- Trial root: `libdir_via1_no_track_trim_all_pin_util45_route_rerun2`
+- Result: COMPLETED_DIAGNOSTIC_NOT_ADOPTED.
+- Evidence:
+  - Diagnostic route reports were written under `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun2/06_route_from_cts_no_ccd/`.
+  - Diagnostic route reported `0` open signal nets and `7` total route DRCs, all `Off-grid`.
+  - Diagnostic hold improved versus the normal rerun2 route, but route DRC and PG connectivity remained open.
+- Disposition:
+  - Keep this as a diagnostic data point only.
+  - Do not adopt the no-CCD diagnostic database or reports as the main trim_all_pin util45 route result.
+
+### ICC2 trim_all_pin util45 clean full rerun3 route
+
+- Command: `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 4_Backend_ICC2/0_Script/99_util/run_libdir_via1_no_track_trim_all_pin_util45_backend_flow.sh`
+- Tool: `icc2_shell`
+- Trial reference library: `4_Backend_ICC2/2_Output/00_setup/ndm_libdir_via1_no_track_trim_all_pin/saed32rvt_tt.ndm`
+- Trial design library: `4_Backend_ICC2/2_Output/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/mnist_npu_icc2_lib`
+- Log root: `4_Backend_ICC2/3_Log/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3`
+- Report root: `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3`
+- Result: COMPLETED_ROUTE_NOT_CLEAN.
+- Evidence:
+  - Init, floorplan, powerplan, placement, CTS, and route completed using trial-specific roots.
+  - Final route log reached normal ICC2 exit and saved both `route_auto.design` and `route.design`.
+  - Saved blocks include `nn_top`, `floorplan`, `powerplan`, `placement`, `cts`, `route_auto`, and `route`.
+  - `06_route/check_routes.rpt` reports `213233` total nets, `0` open signal nets, and `6` total route DRCs.
+  - Residual route DRC class is `6` `Off-grid` violations.
+  - `antenna.rpt` reports no antenna rules defined, so antenna is not proven clean.
+  - `06_route/check_legality.rpt` reports `TOTAL 0 Violations`.
+  - `06_route/qor.rpt` reports setup met: worst setup slack `5.61 ns`, total negative setup slack `0.00`, setup violating paths `0`.
+  - Hold remains open: worst hold `-0.10 ns`, total negative hold slack `-322.94`, hold violating paths `26158`.
+  - Routed utilization is `0.5669`.
+  - Cell area is `774796.61`; net length is `7028986.22`.
+  - Design max transition/max capacitance violations remain open: `317 / 2006`.
+  - Route log reports `check_pg_drc` completed with `No errors found`.
+  - PG connectivity is still not clean: VDD has `7` floating wires and `4447` floating standard cells; VSS has `7` floating wires and `4002` floating standard cells.
+- Comparison:
+  - Versus the previous VIA1 no-track 45% route trial, official route DRC improved from `59` to `6`.
+  - Versus the original 55% first route baseline, official route DRC improved from `738` to `6`.
+- Disposition:
+  - Treat rerun3 as the preserved route database and current best full-flow route-DRC candidate.
+  - Do not declare route clean because route DRC, PG connectivity, hold, antenna-rule coverage, and electrical violations remain open.
+  - Next action is to debug the six residual off-grid DRCs from the rerun3 route database while keeping PG connectivity as a separate closure track.
+
+### ICC2 trim_all_pin util45 rerun3 residual DRC debug extraction
+
+- Command: `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 ROUTE_DEBUG_SUBDIR=06_route_debug 4_Backend_ICC2/0_Script/06_route/debug_libdir_via1_no_track_route_residuals.sh`
+- Tool: `icc2_shell`
+- Input block: `4_Backend_ICC2/2_Output/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/mnist_npu_icc2_lib:route.design`
+- Reports:
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_debug/check_routes.recheck.rpt`
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_debug/drc.matrix.rpt`
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_debug/drc.offgrid.tsv`
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_debug/pg_connectivity.rpt`
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_debug/pg_drc.rpt`
+- Result: COMPLETED.
+- Evidence:
+  - Recheck confirmed `0` open signal nets and `6` total route DRCs.
+  - DRC matrix shows all six DRCs are `M1` `Off-grid`.
+  - Residual objects and centers:
+    - `ZBUF_832_2538` at `201.6400,255.6000`
+    - `n130475` at `805.5360,332.8160`
+    - `ZBUF_714_1050` at `906.9200,399.3920`
+    - `ZBUF_766_3067` at `359.4160,456.2400`
+    - `ZBUF_851_152` at `899.1680,650.4960`
+    - `n143522` at `250.1025,855.1040`
+  - PG connectivity and PG DRC recheck match route-stage evidence: VDD has `7` floating wires and `4447` floating standard cells; VSS has `7` floating wires and `4002` floating standard cells; PG DRC reports `No errors found`.
+- Diagnosis:
+  - The residual trim_all_pin DRCs are signal M1 off-grid errors, not PG DRCs.
+
+### ICC2 trim_all_pin util45 rerun3 route-only ECO off-grid trial
+
+- Command: `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 ROUTE_ECO_TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3_eco_offgrid1 ROUTE_ECO_OUTPUT_BLOCK=route_eco_offgrid1 4_Backend_ICC2/0_Script/06_route/run_libdir_via1_no_track_route_eco_offgrid1.sh`
+- Tool: `icc2_shell`
+- Input block: `mnist_npu_icc2_lib:route.design` in the rerun3 trial library.
+- Output block: `mnist_npu_icc2_lib:route_eco_offgrid1.design` in the rerun3 trial library.
+- Reports:
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3_eco_offgrid1/06_route/check_routes.pre.rpt`
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3_eco_offgrid1/06_route/check_routes.post.rpt`
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3_eco_offgrid1/06_route/qor.rpt`
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3_eco_offgrid1/06_route/check_legality.rpt`
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3_eco_offgrid1/06_route/pg_connectivity.rpt`
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3_eco_offgrid1/06_route/pg_drc.rpt`
+- Result: COMPLETED_PARTIAL_REPAIR_NOT_CLEAN.
+- Evidence:
+  - Pre-check confirmed `0` open signal nets and `6` M1 off-grid DRCs.
+  - ECO changed `81` nets.
+  - Detail-route iterations reached `4` DRCs at best, became non-monotonic, and stopped as not converging.
+  - Final post-check reports `0` open signal nets and `5` route DRCs, all `Off-grid`.
+  - Legality remains clean: `TOTAL 0 Violations`.
+  - Setup remains met: worst setup slack `5.61 ns`, setup violating paths `0`.
+  - Hold remains open: worst hold `-0.10 ns`, total hold `-322.94`, hold violations `26158`.
+  - PG DRC reports `No errors found`, but PG connectivity is unchanged: VDD `4447` floating standard cells, VSS `4002` floating standard cells.
+  - Max transition/max capacitance violations remain `317 / 2006`.
+- Residual ECO DRC extraction:
+  - Command: `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 ROUTE_DEBUG_SUBDIR=06_route_eco_offgrid1_debug ROUTE_DEBUG_INPUT_BLOCK=route_eco_offgrid1 4_Backend_ICC2/0_Script/06_route/debug_libdir_via1_no_track_route_residuals.sh`
+  - Residual objects and centers:
+    - `ZBUF_832_2538` at `201.1840,255.6330`
+    - `ZBUF_714_1050` at `906.7680,393.0080`
+    - `ZBUF_714_1050` at `906.7680,399.3920`
+    - `ZBUF_851_152` at `899.1680,650.4960`
+    - `n143522` at `250.1025,855.1040`
+- Disposition:
+  - Route-only ECO is a partial repair: official DRC improved from `6` to `5`, but it did not converge to clean.
+  - Keep the preserved full-flow rerun3 `route.design` as the main reproducible route database and treat `route_eco_offgrid1` as a route-only candidate for further residual analysis.
+
+### ICC2 trim_all_pin util45 targeted pin-access route repair
+
+- Objective: close the five residual M1 off-grid DRCs in `route_eco_offgrid1` using targeted pin-access/local-route changes, not another broad generic ECO loop.
+- Script updates:
+  - Added sequential local-route probe support in `4_Backend_ICC2/0_Script/06_route/probe_sequential_local_offgrid_route.tcl`.
+  - Added `SEQ_SWAP_NET_EXCLUDE_REGEX`, default `^(VDD|VSS)$`, so `@swap_pin_nets` excludes PG nets.
+  - Added `SEQ_CELL_MOVES='cell=dx,dy;...'` support and `cell_move.rpt` recording for controlled placement nudges.
+  - Updated `debug_libdir_via1_no_track_route_residuals.tcl` so a clean route recheck is handled without failing.
+- Context extraction:
+  - `06_route_eco_offgrid1_context/context.tsv` localized the five residual DRCs to reset-pin/buffer pin-access sites plus `n143522`.
+  - `06_route_target_u77942_route_eco_offgrid1/target_context.tsv` showed the final `n143522` residual overlaps the `U77942/A1` pin-access region; `U77942/A1` and `U77942/A3` are both on `n143522`.
+- Negative/partial probes:
+  - Single local pin-track reroute fixed `ZBUF_851_152` only.
+  - Single-net `ZBUF_714_1050` reroute fixed both `ZBUF_714_1050` off-grid markers.
+  - Sequential local pin-track reroute reduced the ECO residual from `5` to `2`, leaving `ZBUF_832_2538` and `n143522`.
+  - Size-swap plus sequential reroute reduced the residual to `1`, leaving only `n143522`; rerun with PG-net exclusion produced the same `1` residual and confirmed `VDD/VSS` were not part of the targeted signal reroute set.
+- Successful command:
+  - `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 SEQ_ROUTE_PROBE_NAME=seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack_clean_save1 SEQ_ROUTE_INPUT_BLOCK=route_eco_offgrid1 SEQ_ROUTE_OUTPUT_BLOCK=route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack SEQ_SIZE_SWAPS='act_ram_reg[861][0]=DFFARX2_RVT;U77942=OA221X1_RVT' SEQ_CELL_MOVES='U77942=0.152,0' SEQ_ROUTE_STEPS='ZBUF_714_1050;ZBUF_851_152;@swap_pin_nets;ZBUF_832_2538;n143522' SEQ_ROUTE_ITERATIONS=120 SEQ_ROUTE_SAVE=1 SEQ_ROUTE_SAVE_ON_CLEAN_ONLY=1 4_Backend_ICC2/0_Script/06_route/probe_sequential_local_offgrid_route.sh`
+- Tool: `icc2_shell`
+- Input block: `mnist_npu_icc2_lib:route_eco_offgrid1.design` in the rerun3 trial library.
+- Output block: `mnist_npu_icc2_lib:route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack.design` in the rerun3 trial library.
+- Reports:
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack_clean_save1/summary.tsv`
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack_clean_save1/check_routes.after_step5.rpt`
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack_clean_save1/size_swap.rpt`
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack_clean_save1/cell_move.rpt`
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack_clean_save1/qor.rpt`
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack_clean_save1/check_legality.rpt`
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack_clean_save1/pg_connectivity.rpt`
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack_clean_save1/pg_drc.rpt`
+- Result: ROUTE_DRC_CLEAN_CANDIDATE_WITH_OPEN_PG_TIMING_ELECTRICAL.
+- Evidence:
+  - `size_swap.rpt` records `act_ram_reg[861][0]` resized from `DFFARX1_RVT` to `DFFARX2_RVT`, and `U77942` resized from `OA221X2_RVT` to `OA221X1_RVT`.
+  - `cell_move.rpt` records `U77942` moved by `+0.152,0`; origin changed from `249.6720 854.3280` to `249.8240 854.3280`, and legalize kept it placed.
+  - `summary.tsv` shows the moved design initially worsened to `22` DRCs and `7` open nets, then `@swap_pin_nets` reroute reached `0` DRC and `0` open nets; step4 and step5 also preserved `0/0`.
+  - `check_routes.after_step5.rpt` reports `0` open signal nets and `0` total route DRCs.
+  - ICC2 saved `route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack.design`.
+  - `check_legality.rpt` reports `TOTAL 0 Violations`.
+  - `qor.rpt` reports setup still met with `clk` critical path slack `5.61 ns`, setup violating paths `0`.
+  - Hold remains open: worst hold `-0.10 ns`, total hold `-322.90`, hold violations `26153`.
+  - Design max transition/max capacitance remain open: `318 / 2009`.
+  - `pg_drc.rpt` was generated after `check_pg_drc`; run log reports `No errors found`.
+  - PG connectivity is still not clean: VDD has `7` floating wires and `4447` floating standard cells; VSS has `7` floating wires and `4002` floating standard cells.
+- Saved-block recheck:
+  - Command: `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 ROUTE_DEBUG_SUBDIR=06_route_seq_size_swap_dff2_oa1_move_u77942_xp152_saved_recheck ROUTE_DEBUG_INPUT_BLOCK=route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack 4_Backend_ICC2/0_Script/06_route/debug_libdir_via1_no_track_route_residuals.sh`
+  - `check_routes.recheck.rpt` confirms `0` open signal nets and `0` total route DRCs after reopening the saved block.
+  - `drc.errors.tsv` and `drc.offgrid.tsv` contain only headers, confirming no extracted DRC error rows.
+  - PG connectivity remains open with the same floating standard-cell counts; `check_pg_drc` again reports `No errors found`.
+- Disposition:
+  - This is the current best saved signal-route candidate and closes the targeted residual M1 off-grid objective.
+  - Do not promote it to a complete baseline yet: PG connectivity, hold, max transition/capacitance, and antenna-rule coverage remain open.
