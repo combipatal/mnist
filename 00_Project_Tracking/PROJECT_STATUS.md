@@ -2,8 +2,8 @@
 
 ## Current Status
 
-- Status: `A13_ROUTE_OPT_TRIAL_NOT_ADOPTED_OPEN_HOLD_ROUTE_ELECTRICAL_ANTENNA`
-- Stage: A13 broad post-route `route_opt` trial completed but not adopted; current clean handoff remains the route-plus-PG candidate
+- Status: `A14_HOLD_ECO_OPEN_SITE_TRIAL_NOT_ADOPTED_OPEN_ROUTE_HOLD_ELECTRICAL_ANTENNA`
+- Stage: A14 open-site hold ECO trial completed but not adopted; current clean handoff remains the route-plus-PG candidate
 - Primary RTL cloned: yes
 - Source revision frozen: yes
 - Candidate top identified: `nn_top`
@@ -34,18 +34,20 @@
 - ICC2 PG repair: completed for current candidate; saved block `route_pg_ladder_vdd50_vss20_path507x55_h015` rechecks with `0` open signal nets, `0` route DRCs, clean PG connectivity, clean PG DRC, and clean legality
 - ICC2 post-route extraction from route-plus-PG candidate: completed; route DRC/open, PG, legality, and setup remain clean, but hold/electrical/antenna-rule coverage remain open
 - ICC2 broad post-route `route_opt` trial: completed and saved `route_pg_ladder_route_opt1`, but not adopted because it introduced `43` open signal nets and `26` route DRCs
+- ICC2 open-site hold ECO trial: completed and saved `route_pg_ladder_hold_eco_open_site_m0`, but not adopted because it leaves `3` route DRCs and hold/electrical remain open
 
 ## Next Checkpoint
 
-Proceed from the extracted route-plus-PG candidate and close or classify the remaining post-route risks without adopting the broad `route_opt` trial:
+Proceed from the extracted route-plus-PG candidate and close or classify the remaining post-route risks without promoting either automatic timing trial yet:
 
 1. Treat `route_pg_ladder_vdd50_vss20_path507x55_h015` as the current best saved route-plus-PG candidate.
 2. Use post-route extraction evidence from `07_extract_sta_pg_ladder_vdd50_vss20_path507x55_h015`: route DRC/open `0/0`, PG floating counts `0`, PG DRC clean, legality `0`, and setup slack `5.61 ns`.
 3. Keep `route_pg_ladder_route_opt1` as failed trial evidence only: hold improved to WNS `-0.02 ns`, TNS `-0.38 ns`, `293` violations, but route DRC/open became `26/43`.
-4. Start the next cleanup with narrower hold ECO from the clean PG-ladder block, using small margins and immediate route/PG/legality/electrical rechecks after each saved candidate.
-5. Current electrical DRC on the clean PG-ladder block is `318` max transition violations and `2009` max capacitance violations across `2039` nets with violations; the broad `route_opt` trial worsened this to `673` max transition and `2181` max capacitance violations across `2271` nets.
-6. Do not claim antenna clean because the route checks report no antenna rules defined.
-7. Do not promote the candidate to a complete baseline until hold/electrical reports and antenna-rule coverage are resolved or explicitly classified.
+4. Keep `route_pg_ladder_hold_eco_open_site_m0` as a partial hold-improved candidate only: route DRC/open is `3/0`, PG and legality remain clean, and hold improves to WNS `-0.05 ns`, TNS `-15.61 ns`, `4472` violations.
+5. Next controlled step should debug the three residual route DRCs in `route_pg_ladder_hold_eco_open_site_m0`; only after route DRC/open returns to `0/0` should this candidate replace the clean PG-ladder block as the timing-closure starting point.
+6. Current electrical DRC on the clean PG-ladder block is `318` max transition violations and `2009` max capacitance violations across `2039` nets with violations; the hold ECO trial reports `328` max transition and `2116` max capacitance violations across `2142` nets.
+7. Do not claim antenna clean because the route checks report no antenna rules defined.
+8. Do not promote the candidate to a complete baseline until route, hold, electrical reports, and antenna-rule coverage are resolved or explicitly classified.
 
 ## Accepted First-Baseline Risks
 
@@ -87,3 +89,4 @@ Proceed from the extracted route-plus-PG candidate and close or classify the rem
 - post-route extraction from the saved route-plus-PG candidate confirms route DRC/open `0/0`, PG floating counts `0`, PG DRC clean, legality `0`, and setup met.
 - the saved route-plus-PG candidate is not a complete backend baseline yet: hold WNS/TNS/violations are `-0.10 ns / -322.90 ns / 26153`, max transition/capacitance violations are `318 / 2009`, and antenna-rule coverage remains missing.
 - broad post-route `route_opt` is not adopted: it reduced hold violations to WNS/TNS/violations `-0.02 ns / -0.38 ns / 293`, but introduced `43` open signal nets, `26` route DRCs, and worsened electrical violations to `673 / 2181`.
+- open-site hold ECO is not adopted yet: it reduced hold to WNS/TNS/violations `-0.05 ns / -15.61 ns / 4472` and kept PG/legality clean, but route DRC/open is `3/0` and electrical violations are `328 / 2116`.

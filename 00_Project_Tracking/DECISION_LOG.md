@@ -175,3 +175,11 @@
 - Decision: keep `route_pg_ladder_vdd50_vss20_path507x55_h015` as the active route-plus-PG clean candidate.
 - Rationale: that block remains the last evidence-backed saved block with route DRC/open `0/0`, PG connectivity clean, PG DRC clean, legality clean, and setup met.
 - Next action: use a narrower hold ECO strategy from the clean PG-ladder block with small margins and immediate route/PG/legality/electrical checks after each candidate.
+
+### Open-Site Hold ECO Trial Disposition
+
+- Decision: do not adopt `route_pg_ladder_hold_eco_open_site_m0` as the active backend baseline yet.
+- Rationale: open-site hold ECO reduced hold WNS/TNS/violations from `-0.10 ns / -322.90 ns / 26153` to `-0.05 ns / -15.61 ns / 4472`, while preserving PG connectivity, PG DRC, legality, and setup, but it leaves `3` route DRCs and worsens electrical violations to `328` max transition and `2116` max capacitance.
+- Decision: keep `route_pg_ladder_hold_eco_open_site_m0` as the best hold-improved near-route-clean candidate.
+- Rationale: unlike the broad `route_opt` trial, this hold ECO keeps open signal nets at `0` and leaves only three route DRCs, so it is a better starting point for targeted residual route repair.
+- Next action: localize and repair the three residual route DRCs in `route_pg_ladder_hold_eco_open_site_m0`; only promote this path after saved-block recheck returns route DRC/open `0/0`.

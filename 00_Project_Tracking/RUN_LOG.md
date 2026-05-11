@@ -909,3 +909,36 @@
   - Do not adopt `route_pg_ladder_route_opt1` as the current baseline because route DRC/open and electrical checks fail the handoff criteria.
   - Keep `route_pg_ladder_vdd50_vss20_path507x55_h015` as the current best route-plus-PG clean candidate.
   - Next action should be a narrower hold ECO from the clean PG-ladder block with immediate route/PG/legality/electrical rechecks, not another broad `route_opt` pass.
+
+### ICC2 open-site hold ECO trial from route-plus-PG candidate
+
+- Objective: reduce post-route hold violations with a hold-only ECO while preserving the clean route-plus-PG handoff.
+- Added scripts:
+  - `4_Backend_ICC2/0_Script/07_extract_sta/run_post_route_hold_eco_trial.sh`
+  - `4_Backend_ICC2/0_Script/07_extract_sta/run_post_route_hold_eco_trial.tcl`
+- Command:
+  - `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 HOLD_ECO_NAME=07_extract_sta_hold_eco_open_site_m0 HOLD_ECO_INPUT_BLOCK=route_pg_ladder_vdd50_vss20_path507x55_h015 HOLD_ECO_OUTPUT_BLOCK=route_pg_ladder_hold_eco_open_site_m0 HOLD_MARGIN=0.00 PHYSICAL_MODE=open_site 4_Backend_ICC2/0_Script/07_extract_sta/run_post_route_hold_eco_trial.sh`
+- Tool: `icc2_shell`, with PrimeTime executable `/tools/synopsys/prime/W-2024.09-SP5-3/bin/pt_shell`.
+- Input block: `mnist_npu_icc2_lib:route_pg_ladder_vdd50_vss20_path507x55_h015.design`
+- Output block: `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_open_site_m0.design`
+- Log path: `4_Backend_ICC2/3_Log/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_eco_open_site_m0/run.log`
+- Report root: `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_eco_open_site_m0`
+- Output root: `4_Backend_ICC2/2_Output/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_eco_open_site_m0`
+- Result: COMPLETED_NOT_ADOPTED_NEAR_ROUTE_CLEAN.
+- Evidence:
+  - `report_status.tsv` shows copy, PT setup, hold ECO, route/legality/PG/timing/electrical reports, and save steps passed.
+  - PrimeTime ECO inserted `23584` hold buffers and made `84` size-cell changes; run log reports `21652` of `22574` violating endpoints fixed in the PT ECO optimization view.
+  - Inserted hold buffers were `19793` `NBUFFX2_RVT`, `2841` `DELLN1X2_RVT`, and `950` `NBUFFX4_RVT`.
+  - `check_routes.before_hold_eco.rpt` reports `0` open signal nets and `0` total route DRCs before the ECO.
+  - `check_routes.after_hold_eco.rpt` reports `0` open signal nets and `3` total route DRCs after the ECO: `1` off-grid and `2` shorts.
+  - `check_routes.after_hold_eco.rpt` reports no antenna analysis because no antenna rules are defined.
+  - `check_legality.after_hold_eco.rpt` reports `TOTAL 0 Violations`.
+  - `pg_connectivity.after_hold_eco.rpt` reports VDD and VSS each with `0` floating wires, vias, standard cells, and terminals.
+  - `pg_drc.after_hold_eco.rpt` has no error body; the ICC2 run log reports `No errors found`.
+  - `qor.after_hold_eco.rpt` reports setup still met with setup slack `5.61 ns` and setup violating paths `0`.
+  - ICC2 final hold remains open but is much improved: WNS `-0.05 ns`, TNS `-15.61 ns`, hold violations `4472`.
+  - Electrical DRC is still open and slightly worse than the clean PG-ladder source: `328` max transition violations and `2116` max capacitance violations across `2142` nets with violations.
+- Disposition:
+  - Do not adopt `route_pg_ladder_hold_eco_open_site_m0` as the active backend baseline yet because route DRC, hold, electrical, and antenna-rule coverage remain open.
+  - Keep it as the best hold-improved near-route-clean candidate.
+  - Next action should debug the three residual route DRCs in this block, then re-run extraction if route DRC/open returns to `0/0`.
