@@ -379,6 +379,28 @@ backend utilization target: 55%
 | Antenna | no antenna rules defined; not proven clean |
 | Disposition | Current best saved signal-route candidate. Not a complete backend clean baseline because PG connectivity, hold, antenna-rule coverage, and electrical closure remain open. |
 
+## ICC2 PG Rail Connectivity Repair Probe Summary
+
+| Probe | PG Connectivity | PG DRC | Signal Route DRC/Open | Disposition |
+| --- | --- | --- | --- | --- |
+| Reapply existing PG strategies from routed block | Worse: `14` floating wires per supply, VDD `4447` floating std cells, VSS `4002` floating std cells | clean | route DRC stayed clean in check | Not adopted; created wires but no missing rail-to-mesh vias |
+| Floating rail inspection | Identified 7 isolated M1 rails per supply | not a repair | not a repair | Confirms isolated one-wire/zero-via rail subnetworks are the PG issue |
+| Direct M1-M2 VIA12, normal DRC mode | unchanged because candidates were removed | clean | unchanged | Not adopted; tool DRC mode rejected candidates |
+| Direct M1-M2 VIA12, `no_check` | clean: zero floating wires/vias/std cells | `580` PG DRC errors | `0` route DRC, `0` open nets | Not adopted; fixes connectivity but violates PG cut spacing |
+| M1-M7 ladders at `x=50.0`, all floating rails, `no_check` | clean: zero floating wires/vias/std cells | clean | `24` route DRCs, VSS-side collisions | Not adopted; good PG topology but signal route not clean |
+| VSS-only M1-M7 ladders at `x=30.0`, `no_check` | VSS clean for probed rails; VDD intentionally still open | clean | `20` route DRCs | Not adopted; continue VSS X-coordinate search |
+
+## ICC2 PG Connectivity Debug Conclusions
+
+| Observation | Evidence | Current Interpretation |
+| --- | --- | --- |
+| Floating PG rails are specific M1 standard-cell rails | `03_powerplan_pg_islands1/m1_pg_rails.tsv`, `pg_connectivity_detail` reports | Seven VDD rails and seven VSS rails are isolated one-wire/zero-via subnetworks |
+| Cell pins physically overlap the floating rails | `06_route_pg_unconn_cells1` target-cell reports | The issue is not that cells miss the rail geometry; the rails lack connection to the upper PG mesh |
+| Missing via count matches powerplan cleanup | Initial `03_powerplan/run.log` removed `406` dangling/floating vias; forced VIA12 repair created `406` vias | Early pre-placement PG cleanup removed vias on rails that later became populated by placed cells |
+| Direct rail-to-M2 via repair is not legal | `03_powerplan_pg_via12_nocheck1/pg_drc.after.rpt` reports `580` PG DRC errors | Existing M2-M3 strap via stacks block direct VIA12 insertion at the strap intersections |
+| M1-M7 ladders can make PG clean | `03_powerplan_pg_ladder_x50_nocheck2/pg_connectivity.after.rpt` and `pg_drc.after.rpt` | Ladder topology is promising, but X location must avoid signal route collisions before saving |
+| No PG repair is saved yet | All repair probes used `PG_*_SAVE=0` | Continue from `route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack` until a combined PG repair rechecks clean |
+
 ## ICC2 Route Debug Conclusions
 
 | Observation | Evidence | Current Interpretation |

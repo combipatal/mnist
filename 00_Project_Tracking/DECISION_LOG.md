@@ -143,3 +143,12 @@
 - Decision: keep saved block `route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack` as the current best signal-route candidate.
 - Rationale: it applies two controlled cell size changes, moves `U77942` by `+0.152um` in X, and saved-block recheck reports `0` open signal nets and `0` route DRCs.
 - Guardrail: do not promote this candidate to a complete clean backend baseline yet. PG connectivity remains open, hold remains negative, max transition/capacitance violations remain open, and antenna rules are still absent.
+
+### PG Rail Connectivity Repair Disposition
+
+- Decision: treat PG connectivity repair as a separate closure track from the already-clean signal route DRC candidate.
+- Rationale: `pg_connectivity_detail` shows seven isolated one-wire/zero-via M1 rail subnetworks per supply, while the saved signal-route candidate rechecks with `0` open signal nets and `0` route DRCs.
+- Decision: do not adopt direct M1-M2 VIA12 insertion as the PG repair method.
+- Rationale: forced direct VIA12 repair creates `406` vias and clears PG connectivity, but creates `580` PG DRC errors between VIA1 and existing VIA2 cut stacks.
+- Decision: continue with the M1-M7 ladder topology, but only save a repaired block after route DRC/open, PG connectivity, PG DRC, and legality all recheck clean.
+- Rationale: ladder repair at `x=50.0` clears PG connectivity and PG DRC, but currently introduces `24` signal route DRCs on VSS-side locations. VSS-only `x=30.0` still introduces `20` signal route DRCs, so a clean VSS ladder coordinate remains open.

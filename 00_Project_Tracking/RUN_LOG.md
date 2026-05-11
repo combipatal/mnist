@@ -779,3 +779,49 @@
 - Disposition:
   - This is the current best saved signal-route candidate and closes the targeted residual M1 off-grid objective.
   - Do not promote it to a complete baseline yet: PG connectivity, hold, max transition/capacitance, and antenna-rule coverage remain open.
+
+### ICC2 PG rail connectivity debug and repair probes
+
+- Objective: debug the seven floating one-wire PG rail subnetworks per supply net from the saved signal-route candidate without mixing them with signal-route DRC closure.
+- New helper scripts:
+  - `4_Backend_ICC2/0_Script/03_powerplan/repair_pg_connectivity_from_block.sh`
+  - `4_Backend_ICC2/0_Script/03_powerplan/repair_pg_connectivity_from_block.tcl`
+  - `4_Backend_ICC2/0_Script/03_powerplan/inspect_pg_rail_islands.sh`
+  - `4_Backend_ICC2/0_Script/03_powerplan/inspect_pg_rail_islands.tcl`
+  - `4_Backend_ICC2/0_Script/03_powerplan/repair_pg_floating_rail_vias.sh`
+  - `4_Backend_ICC2/0_Script/03_powerplan/repair_pg_floating_rail_vias.tcl`
+  - `4_Backend_ICC2/0_Script/03_powerplan/repair_pg_floating_rail_ladders.sh`
+  - `4_Backend_ICC2/0_Script/03_powerplan/repair_pg_floating_rail_ladders.tcl`
+- Input block: `mnist_npu_icc2_lib:route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack.design` in trial `libdir_via1_no_track_trim_all_pin_util45_route_rerun3`.
+- Reapply existing PG strategies:
+  - Command: `env PG_REPAIR_NAME=pg_reapply1 PG_REPAIR_SAVE=0 4_Backend_ICC2/0_Script/03_powerplan/repair_pg_connectivity_from_block.sh`
+  - Report root: `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/03_powerplan_pg_reapply1`
+  - Result: COMPLETED_NOT_ADOPTED.
+  - Evidence: `compile_pg` committed additional wires but no vias; PG connectivity worsened to 14 floating wires per supply, while floating standard-cell counts stayed VDD `4447` and VSS `4002`.
+- Floating rail inspection:
+  - Command: `env PG_ISLAND_NAME=pg_islands1 4_Backend_ICC2/0_Script/03_powerplan/inspect_pg_rail_islands.sh`
+  - Report root: `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/03_powerplan_pg_islands1`
+  - Result: COMPLETED.
+  - Evidence: the floating shapes are M1 standard-cell rails `PATH_11_184`, `PATH_11_208`, `PATH_11_232`, `PATH_11_256`, `PATH_11_280`, `PATH_11_304`, `PATH_11_328` for VDD and `PATH_11_483`, `PATH_11_507`, `PATH_11_531`, `PATH_11_555`, `PATH_11_579`, `PATH_11_603`, `PATH_11_627` for VSS.
+  - Diagnosis: representative floating cells physically overlap the affected M1 rails, but the rails lack restored PG via connection into the upper mesh.
+- Direct M1-M2 VIA12 repair:
+  - Command: `env PG_VIA_REPAIR_NAME=pg_via12_repair1 PG_VIA_REPAIR_SAVE=0 4_Backend_ICC2/0_Script/03_powerplan/repair_pg_floating_rail_vias.sh`
+  - Result: COMPLETED_NOT_ADOPTED because normal DRC checking removed all candidates.
+  - Forced command: `env PG_VIA_REPAIR_NAME=pg_via12_nocheck1 PG_VIA_REPAIR_SAVE=0 PG_VIA_REPAIR_DRC_MODE=no_check 4_Backend_ICC2/0_Script/03_powerplan/repair_pg_floating_rail_vias.sh`
+  - Forced report root: `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/03_powerplan_pg_via12_nocheck1`
+  - Forced result: COMPLETED_NOT_ADOPTED.
+  - Evidence: forced direct VIA12 created `406` vias and fixed PG connectivity to zero floating wires/vias/std cells, with `0` open signal nets and `0` route DRCs, but `pg_drc.after.rpt` reported `580` PG DRC errors between VIA1 and existing VIA2 cuts.
+- M1-M7 ladder repair at `x=50.0`:
+  - Command: `env PG_LADDER_NAME=pg_ladder_x50_nocheck2 PG_LADDER_SAVE=0 PG_LADDER_X=50.0 PG_LADDER_DRC_MODE=no_check 4_Backend_ICC2/0_Script/03_powerplan/repair_pg_floating_rail_ladders.sh`
+  - Report root: `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/03_powerplan_pg_ladder_x50_nocheck2`
+  - Result: COMPLETED_NOT_ADOPTED.
+  - Evidence: created `84` vias, fixed PG connectivity to zero floating wires/vias/std cells, kept PG DRC clean and legality clean, but signal `check_routes.after.rpt` reported `24` route DRCs. Extracted DRCs are on VSS-side ladder locations.
+- VSS-only ladder probe at `x=30.0`:
+  - Command: `env PG_LADDER_NAME=pg_ladder_vss_x30_nocheck1 PG_LADDER_SAVE=0 PG_LADDER_X=30.0 PG_LADDER_DRC_MODE=no_check PG_LADDER_SHAPES='PATH_11_483 PATH_11_507 PATH_11_531 PATH_11_555 PATH_11_579 PATH_11_603 PATH_11_627' 4_Backend_ICC2/0_Script/03_powerplan/repair_pg_floating_rail_ladders.sh`
+  - Report root: `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/03_powerplan_pg_ladder_vss_x30_nocheck1`
+  - Result: COMPLETED_NOT_ADOPTED.
+  - Evidence: VSS connectivity is clean for the probed rails and PG DRC is clean, but signal `check_routes.after.rpt` reports `20` route DRCs.
+- Current disposition:
+  - PG root cause is an isolated-rail via-restoration problem, not the signal off-grid route DRC already closed in the saved candidate.
+  - No PG-repaired block has been saved yet.
+  - Next action is to search a VSS ladder X coordinate that preserves signal route DRC `0`, then combine it with the known VDD-clean `x=50.0` ladder strategy and save only if PG connectivity, PG DRC, signal route DRC, and legality all recheck clean.
