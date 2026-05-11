@@ -2,8 +2,8 @@
 
 ## Current Status
 
-- Status: `A12_POST_ROUTE_EXTRACT_COMPLETED_OPEN_HOLD_ELECTRICAL_ANTENNA`
-- Stage: A12 post-route extraction from route-plus-PG clean candidate completed; hold/electrical/antenna remain open
+- Status: `A13_ROUTE_OPT_TRIAL_NOT_ADOPTED_OPEN_HOLD_ROUTE_ELECTRICAL_ANTENNA`
+- Stage: A13 broad post-route `route_opt` trial completed but not adopted; current clean handoff remains the route-plus-PG candidate
 - Primary RTL cloned: yes
 - Source revision frozen: yes
 - Candidate top identified: `nn_top`
@@ -33,17 +33,19 @@
 - ICC2 PG rail connectivity debug: completed; root cause narrowed to seven isolated M1 rail subnetworks per supply with missing rail-to-mesh via connection
 - ICC2 PG repair: completed for current candidate; saved block `route_pg_ladder_vdd50_vss20_path507x55_h015` rechecks with `0` open signal nets, `0` route DRCs, clean PG connectivity, clean PG DRC, and clean legality
 - ICC2 post-route extraction from route-plus-PG candidate: completed; route DRC/open, PG, legality, and setup remain clean, but hold/electrical/antenna-rule coverage remain open
+- ICC2 broad post-route `route_opt` trial: completed and saved `route_pg_ladder_route_opt1`, but not adopted because it introduced `43` open signal nets and `26` route DRCs
 
 ## Next Checkpoint
 
-Proceed from the extracted route-plus-PG candidate and close or classify the remaining post-route risks:
+Proceed from the extracted route-plus-PG candidate and close or classify the remaining post-route risks without adopting the broad `route_opt` trial:
 
 1. Treat `route_pg_ladder_vdd50_vss20_path507x55_h015` as the current best saved route-plus-PG candidate.
 2. Use post-route extraction evidence from `07_extract_sta_pg_ladder_vdd50_vss20_path507x55_h015`: route DRC/open `0/0`, PG floating counts `0`, PG DRC clean, legality `0`, and setup slack `5.61 ns`.
-3. Start hold/electrical cleanup from this block; current hold is WNS `-0.10 ns`, TNS `-322.90 ns`, `26153` violations.
-4. Current electrical DRC is `318` max transition violations and `2009` max capacitance violations across `2039` nets with violations.
-5. Do not claim antenna clean because the route check reports no antenna rules defined.
-6. Do not promote the candidate to a complete baseline until hold/electrical reports and antenna-rule coverage are resolved or explicitly classified.
+3. Keep `route_pg_ladder_route_opt1` as failed trial evidence only: hold improved to WNS `-0.02 ns`, TNS `-0.38 ns`, `293` violations, but route DRC/open became `26/43`.
+4. Start the next cleanup with narrower hold ECO from the clean PG-ladder block, using small margins and immediate route/PG/legality/electrical rechecks after each saved candidate.
+5. Current electrical DRC on the clean PG-ladder block is `318` max transition violations and `2009` max capacitance violations across `2039` nets with violations; the broad `route_opt` trial worsened this to `673` max transition and `2181` max capacitance violations across `2271` nets.
+6. Do not claim antenna clean because the route checks report no antenna rules defined.
+7. Do not promote the candidate to a complete baseline until hold/electrical reports and antenna-rule coverage are resolved or explicitly classified.
 
 ## Accepted First-Baseline Risks
 
@@ -84,3 +86,4 @@ Proceed from the extracted route-plus-PG candidate and close or classify the rem
 - Combined M1-M7 PG ladder repair is saved as `route_pg_ladder_vdd50_vss20_path507x55_h015`: saved-block recheck reports `0` open signal nets, `0` route DRCs, zero PG floating counts, no PG DRC error body, and `TOTAL 0 Violations` legality.
 - post-route extraction from the saved route-plus-PG candidate confirms route DRC/open `0/0`, PG floating counts `0`, PG DRC clean, legality `0`, and setup met.
 - the saved route-plus-PG candidate is not a complete backend baseline yet: hold WNS/TNS/violations are `-0.10 ns / -322.90 ns / 26153`, max transition/capacitance violations are `318 / 2009`, and antenna-rule coverage remains missing.
+- broad post-route `route_opt` is not adopted: it reduced hold violations to WNS/TNS/violations `-0.02 ns / -0.38 ns / 293`, but introduced `43` open signal nets, `26` route DRCs, and worsened electrical violations to `673 / 2181`.

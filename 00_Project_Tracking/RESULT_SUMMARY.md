@@ -25,6 +25,7 @@ backend utilization target: 55%
 | CTS | PASS_WITH_OPEN | `4_Backend_ICC2/3_Log/05_cts/run_cts_initial.log`, `4_Backend_ICC2/4_Report/05_cts/clock_qor.summary.rpt`, `4_Backend_ICC2/4_Report/05_cts/check_legality.rpt`, `4_Backend_ICC2/4_Report/05_cts/pg_connectivity.rpt` |
 | Route | PASS_WITH_OPEN | `4_Backend_ICC2/3_Log/06_route/run_route_initial.log`, `4_Backend_ICC2/4_Report/06_route/check_routes.rpt`, `4_Backend_ICC2/4_Report/06_route/qor.rpt`, `4_Backend_ICC2/4_Report/06_route/pg_connectivity.rpt` |
 | Route-plus-PG candidate extraction | PASS_WITH_OPEN | `4_Backend_ICC2/3_Log/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_pg_ladder_vdd50_vss20_path507x55_h015/run.log`, `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_pg_ladder_vdd50_vss20_path507x55_h015/report_status.tsv` |
+| Broad post-route route_opt trial | COMPLETED_NOT_ADOPTED | `4_Backend_ICC2/3_Log/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_route_opt1/run.log`, `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_route_opt1/report_status.tsv` |
 
 ## DC Topographical Synthesis Summary
 
@@ -428,6 +429,26 @@ backend utilization target: 55%
 | Antenna | not proven; reports state `no antenna rules defined` |
 | Disposition | Post-route extraction checkpoint complete, but backend baseline remains open on hold, electrical, and antenna-rule coverage. |
 
+## ICC2 Broad Post-Route route_opt Trial
+
+| Metric | Value |
+| --- | --- |
+| Input block | `mnist_npu_icc2_lib:route_pg_ladder_vdd50_vss20_path507x55_h015.design` |
+| Saved output block | `mnist_npu_icc2_lib:route_pg_ladder_route_opt1.design` |
+| Command | `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 ROUTE_OPT_NAME=07_extract_sta_route_opt1 ROUTE_OPT_INPUT_BLOCK=route_pg_ladder_vdd50_vss20_path507x55_h015 ROUTE_OPT_OUTPUT_BLOCK=route_pg_ladder_route_opt1 4_Backend_ICC2/0_Script/07_extract_sta/run_post_route_route_opt_trial.sh` |
+| Log path | `4_Backend_ICC2/3_Log/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_route_opt1/run.log` |
+| Report root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_route_opt1` |
+| Report command status | `report_status.tsv` shows required route, legality, PG, timing, electrical, and save steps completed |
+| Route DRC/open | `26` route DRCs, `43` open signal nets |
+| PG connectivity | VDD and VSS each report `0` floating wires, `0` floating vias, `0` floating standard cells, and `0` floating terminals |
+| PG DRC | `No errors found` in ICC2 run log |
+| Legality | `TOTAL 0 Violations` |
+| Setup timing | setup violating paths `0` |
+| Hold timing | WNS `-0.02 ns`, TNS `-0.38 ns`, hold violations `293` |
+| Electrical DRC | `673` max transition violations, `2181` max capacitance violations, `2271` nets with violations |
+| Antenna | not proven; reports state `no antenna rules defined` |
+| Disposition | Completed but not adopted. Hold improved substantially, but route DRC/open and electrical results fail the handoff criteria. Continue from `route_pg_ladder_vdd50_vss20_path507x55_h015`. |
+
 ## ICC2 PG Connectivity Debug Conclusions
 
 | Observation | Evidence | Current Interpretation |
@@ -451,6 +472,7 @@ backend utilization target: 55%
 | Route-only ECO gives only partial additional repair | ECO reduced official DRC from `6` to `5` and then stopped as not converging | Do not assume generic ECO will close the remaining off-grid DRCs without another targeted change. |
 | Targeted pin-access repair closes signal route DRC | saved candidate recheck reports `0` open signal nets and `0` route DRCs | Route DRC/open objective is closed for the saved candidate, but PG/timing/electrical/antenna closure remains separate. |
 | PG connectivity is separate from signal DRC | The earlier signal-route clean block still had thousands of floating std cells, while the later PG ladder block fixes PG connectivity without route DRC regression | Use `route_pg_ladder_vdd50_vss20_path507x55_h015` as the current route-plus-PG candidate; do not use the earlier signal-route-only block as PG-clean evidence. |
+| Broad post-route `route_opt` over-repairs hold | `07_extract_sta_route_opt1` reduces hold violations from `26153` to `293`, but leaves `43` open signal nets, `26` route DRCs, and worsened electrical counts | Do not adopt broad `route_opt`; next timing cleanup should be narrower hold ECO with route/PG/electrical rechecks after each candidate. |
 
 ## ICC2 libdir/LEF/modify NDM Trial Summary
 

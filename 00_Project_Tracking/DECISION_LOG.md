@@ -167,3 +167,11 @@
 - Decision: keep hold, electrical DRC, and antenna-rule coverage as open closure tracks.
 - Rationale: post-route extraction reports hold WNS/TNS/violations `-0.10 ns / -322.90 ns / 26153`, max transition/capacitance violations `318 / 2009`, and no antenna rules defined.
 - Classification: optional `report_analysis_coverage` failed and is not used as a pass/fail criterion for this ICC2 extraction checkpoint.
+
+### Broad Post-Route route_opt Trial Disposition
+
+- Decision: do not adopt `route_pg_ladder_route_opt1` as the backend baseline.
+- Rationale: the broad `route_opt` trial reduced hold violations from WNS/TNS/violations `-0.10 ns / -322.90 ns / 26153` to `-0.02 ns / -0.38 ns / 293`, but it introduced `43` open signal nets, `26` route DRCs, and worsened electrical violations to `673` max transition and `2181` max capacitance.
+- Decision: keep `route_pg_ladder_vdd50_vss20_path507x55_h015` as the active route-plus-PG clean candidate.
+- Rationale: that block remains the last evidence-backed saved block with route DRC/open `0/0`, PG connectivity clean, PG DRC clean, legality clean, and setup met.
+- Next action: use a narrower hold ECO strategy from the clean PG-ladder block with small margins and immediate route/PG/legality/electrical checks after each candidate.
