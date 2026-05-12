@@ -1,0 +1,9 @@
+****************************************
+Report : Source Cell Report
+Design : route_a20_eopen4_fill2
+Version: W-2024.09-SP2
+Date   : Tue May 12 23:17:55 2026
+****************************************
+Command Name : write_gds /DATA/home/edu135/MNIST/4_Backend_ICC2/2_Output/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/08_fill_gds_route_a20_eopen4_fill2/nn_top.route_a20_eopen4_fill2.learning.gds -long_names  -design route_a20_eopen4_fill2 -layer_map /DATA/home/edu135/lib/SAED32_EDK/tech/milkyway/saed32nm_1p9m_gdsout_mw.map -layer_map_format icc_default -hierarchy design_lib -report_cell_source /DATA/home/edu135/MNIST/4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/08_fill_gds_route_a20_eopen4_fill2/gds_cell_source.rpt -verbose_report_cell_source /DATA/home/edu135/MNIST/4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/08_fill_gds_route_a20_eopen4_fill2/gds_cell_source.verbose.rpt -merge_files { /DATA/home/edu135/lib/SAED32_EDK/lib/stdcell_rvt/gds/saed32nm_rvt_oa.gds } -output_pin all
+Path                                                                                                                     Type              Reference Name              Instance Name                                             Physical Hierarchy
+/DATA/home/edu135/MNIST/4_Backend_ICC2/2_Output/00_setup/ndm_libdir_via1_no_track_trim_all_pin/saed32rvt_tt.ndm          lib_cell          DFFARX1_RVT                 act_rdata_reg[7]                                          nn_top

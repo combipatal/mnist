@@ -62,6 +62,7 @@
 - Adopted first-baseline SDC policy: `set_clock_uncertainty -setup 0.100` and `set_clock_uncertainty -hold 0.040`
 - ICC2 A20 adopted-policy recheck completed at `07_extract_sta_route_a20_eopen4_adopted_uncertainty_004_recheck`; route DRC/open `0/0`, PG floating counts `0`, legality `0`, setup clean, hold clean, and electrical `0 / 0`
 - ICC2 learning GDS stream-out completed from `route_a20_eopen4`; local GDS file is `4_Backend_ICC2/2_Output/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/08_gds_learning_route_a20_eopen4/nn_top.route_a20_eopen4.learning.gds` with size `263520256` bytes. The generated GDS remains ignored by git because it is a large generated binary containing merged SAED32 standard-cell layout data.
+- ICC2 stdcell-filler learning GDS completed from copied working library `mnist_npu_icc2_lib_fill1`; saved block `route_a20_eopen4_fill2` has `354505` inserted `SHFILL*` filler cells, legality `0`, route DRC/open `0/0`, PG floating counts `0`, PG DRC no reported errors, and local GDS size `277364736` bytes.
 
 ## Next Checkpoint
 
@@ -79,6 +80,7 @@ The learning baseline is archived locally and the repository records the reprodu
 10. Do not claim antenna clean because the route checks report no antenna rules defined.
 11. Do not call the run signoff clean or antenna clean until antenna-rule coverage is supplied or explicitly waived.
 12. Do not force-add the generated GDS to git/GitHub; keep the local artifact path recorded and regenerate it from the committed `08_gds` script when needed.
+13. For GUI screenshots that should show stdcell filler, open `mnist_npu_icc2_lib_fill1:route_a20_eopen4_fill2.design`, not the original `route_a20_eopen4` block.
 
 ## Accepted First-Baseline Risks
 

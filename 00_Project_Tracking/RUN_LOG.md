@@ -1680,3 +1680,47 @@
 - Disposition:
   - Treat the GDS as a local learning handoff artifact, not a signoff or tapeout-ready deliverable.
   - Do not force-add the generated GDS to git/GitHub because it is a large generated binary and contains merged SAED32 standard-cell layout data.
+
+### ICC2 stdcell filler insertion plus learning GDS stream-out
+
+- Objective: add standard-cell filler cells for a more complete learning layout view and export a new local GDS.
+- Initial issue:
+  - The original trial ICC2 library was locked while GUI was open.
+  - To avoid editing the locked source DB, created a fill working copy:
+    - `4_Backend_ICC2/2_Output/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/mnist_npu_icc2_lib_fill1`
+  - First `fill1` attempt stopped before filler insertion because `report_lib_cells` was not available in this ICC2 command context.
+  - Script was fixed to write filler lib-cell names directly.
+- Scripts added:
+  - `4_Backend_ICC2/0_Script/08_gds/run_insert_fillers_and_gds.sh`
+  - `4_Backend_ICC2/0_Script/08_gds/run_insert_fillers_and_gds.tcl`
+- Command:
+  - `4_Backend_ICC2/0_Script/08_gds/run_insert_fillers_and_gds.sh`
+- Input block:
+  - `mnist_npu_icc2_lib_fill1:route_a20_eopen4.design`
+- Output block:
+  - `mnist_npu_icc2_lib_fill1:route_a20_eopen4_fill2.design`
+- Filler cells:
+  - Library cells: `SHFILL128_RVT`, `SHFILL64_RVT`, `SHFILL3_RVT`, `SHFILL2_RVT`, `SHFILL1_RVT`
+  - Inserted counts: `SHFILL128_RVT=8469`, `SHFILL64_RVT=1343`, `SHFILL3_RVT=265094`, `SHFILL2_RVT=34704`, `SHFILL1_RVT=44895`
+  - Total inserted fillers: `354505`
+- Output GDS:
+  - `4_Backend_ICC2/2_Output/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/08_fill_gds_route_a20_eopen4_fill2/nn_top.route_a20_eopen4_fill2.learning.gds`
+- Log path:
+  - `4_Backend_ICC2/3_Log/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/08_fill_gds_route_a20_eopen4_fill2/run.log`
+- Report root:
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/08_fill_gds_route_a20_eopen4_fill2`
+- Result: COMPLETED_LEARNING_ARTIFACT_WITH_STDCELL_FILLERS.
+- Evidence:
+  - `fill_gds_manifest.txt` records `filler_count_before: 0`, `filler_count_after: 354505`, and GDS size `277364736` bytes.
+  - `run.log` ends with `FILL_GDS DONE`.
+  - `check_legality.rpt` reports `TOTAL 0 Violations`.
+  - `check_routes.rpt` reports `Total number of open nets = 0` and DRC summary `TOTAL VIOLATIONS = 0`.
+  - `pg_connectivity.rpt` reports VDD/VSS floating wires, vias, standard cells, macros, pads, terminals, and hierarchical blocks all `0`.
+  - `pg_drc.rpt` was generated; run transcript reports `No errors found` for `check_pg_drc`.
+  - `utilization.rpt` reports utilization ratio `0.6133`.
+  - `design_physical.rpt` reports total physical cell area equal to the core area after filler insertion.
+  - `check_routes.rpt` still reports antenna analysis skipped because no antenna rules are defined.
+- Disposition:
+  - Use `route_a20_eopen4_fill2` and its GDS for filler-visible learning screenshots/handoff practice.
+  - This is still not signoff/tapeout ready: metal fill, LVS, signoff DRC, and antenna rule coverage are not complete.
+  - The generated GDS and copied ICC2 library remain local generated artifacts and are not tracked in git.

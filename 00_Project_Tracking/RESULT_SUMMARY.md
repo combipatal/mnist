@@ -833,6 +833,30 @@ backend utilization target: 55%
 | Git handling | Generated GDS is intentionally ignored by git; scripts and result summaries are tracked |
 | Disposition | Local learning artifact only. Not signoff clean, not antenna clean, and not tapeout ready. |
 
+## Stdcell Filler Learning GDS Summary
+
+| Metric | Value |
+| --- | --- |
+| Source library handling | Original trial library was locked by GUI, so a working copy was made at `mnist_npu_icc2_lib_fill1` |
+| Input block | `mnist_npu_icc2_lib_fill1:route_a20_eopen4.design` |
+| Output block | `mnist_npu_icc2_lib_fill1:route_a20_eopen4_fill2.design` |
+| Script | `4_Backend_ICC2/0_Script/08_gds/run_insert_fillers_and_gds.sh` |
+| Log | `4_Backend_ICC2/3_Log/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/08_fill_gds_route_a20_eopen4_fill2/run.log` |
+| Report root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/08_fill_gds_route_a20_eopen4_fill2` |
+| Filler masters | `SHFILL128_RVT`, `SHFILL64_RVT`, `SHFILL3_RVT`, `SHFILL2_RVT`, `SHFILL1_RVT` |
+| Inserted filler count | `354505` |
+| Utilization report | `0.6133` |
+| Physical cell area | `1366635.725`, equal to reported core/site area after filler insertion |
+| Legality | `TOTAL 0 Violations` |
+| Route DRC/open | `0 / 0` |
+| PG connectivity | VDD/VSS floating wires, vias, standard cells, macros, pads, terminals, and hierarchical blocks all `0` |
+| PG DRC | `check_pg_drc` report generated; run transcript reports no PG DRC errors |
+| Output GDS | `4_Backend_ICC2/2_Output/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/08_fill_gds_route_a20_eopen4_fill2/nn_top.route_a20_eopen4_fill2.learning.gds` |
+| Output GDS size | `277364736` bytes |
+| Antenna | Not proven; no antenna rules defined |
+| Git handling | Generated GDS, copied ICC2 library, and oversized verbose reports remain local generated artifacts |
+| Disposition | Preferred local learning GDS for filler-visible GUI screenshots. Not signoff clean, not LVS clean, not antenna clean, and not tapeout ready. |
+
 ## Current Closure Status
 
 | Item | Status | Evidence |
@@ -844,6 +868,7 @@ backend utilization target: 55%
 | Hold | POLICY_CLEAN | `07_extract_sta_route_a20_eopen4_adopted_uncertainty_004_recheck/global_timing.rpt`, `qor.rpt` |
 | Max transition/max capacitance | CLEAN | `07_extract_sta_route_a20_eopen4_adopted_uncertainty_004_recheck/qor.rpt`, `constraint.max_transition.rpt`, `constraint.max_capacitance.rpt` |
 | Learning GDS | EXPORTED_LOCAL | `08_gds_learning_route_a20_eopen4/stream_out_manifest.txt`, `08_gds_learning_route_a20_eopen4/run.log` |
+| Filler learning GDS | EXPORTED_LOCAL | `08_fill_gds_route_a20_eopen4_fill2/fill_gds_manifest.txt`, `08_fill_gds_route_a20_eopen4_fill2/run.log` |
 | Antenna | NOT_PROVEN | `07_extract_sta_route_a20_eopen4_adopted_uncertainty_004_recheck/antenna.rpt` |
 
 ## Current Root-Cause Classification

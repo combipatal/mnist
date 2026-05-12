@@ -55,3 +55,10 @@ crte_*.txt
 !3_Formality/4_Report/**
 !4_Backend_ICC2/4_Report/
 !4_Backend_ICC2/4_Report/**
+
+# Keep oversized generated report details local; manifests summarize these.
+4_Backend_ICC2/4_Report/**/gds_cell_source.verbose.rpt
+4_Backend_ICC2/4_Report/**/filler_cells.rpt
+
+# Failed scratch report from the first filler-script probe.
+4_Backend_ICC2/4_Report/**/08_fill_gds_route_a20_eopen4_fill1/
