@@ -2,8 +2,8 @@
 
 ## Current Status
 
-- Status: `A20_BASELINE_POLICY_TIMING_CLEAN_ANTENNA_NOT_PROVEN`
-- Stage: A20 electrical cleanup completed and saved as `route_a20_eopen4`; adopted first-baseline propagated-clock timing policy is setup uncertainty `0.100 ns` and hold uncertainty `0.040 ns`. Under this learning baseline policy, route/PG/legal/setup/hold/electrical are clean; antenna-rule coverage remains open.
+- Status: `LEARNING_GDS_EXPORTED_ANTENNA_NOT_PROVEN`
+- Stage: A20 electrical cleanup completed and saved as `route_a20_eopen4`; adopted first-baseline propagated-clock timing policy is setup uncertainty `0.100 ns` and hold uncertainty `0.040 ns`. Under this learning baseline policy, route/PG/legal/setup/hold/electrical are clean, and a local learning GDS was exported. Antenna-rule coverage remains open.
 - Primary RTL cloned: yes
 - Source revision frozen: yes
 - Candidate top identified: `nn_top`
@@ -61,10 +61,11 @@
 - ICC2 A20 report-only hold-uncertainty sensitivity recheck completed; with setup uncertainty `0.100 ns` and hold uncertainty `0.050 ns`, route/PG/legal/setup/electrical remain clean and hold nearly closes to `-0.00 ns / -0.00 ns / 1`
 - Adopted first-baseline SDC policy: `set_clock_uncertainty -setup 0.100` and `set_clock_uncertainty -hold 0.040`
 - ICC2 A20 adopted-policy recheck completed at `07_extract_sta_route_a20_eopen4_adopted_uncertainty_004_recheck`; route DRC/open `0/0`, PG floating counts `0`, legality `0`, setup clean, hold clean, and electrical `0 / 0`
+- ICC2 learning GDS stream-out completed from `route_a20_eopen4`; local GDS file is `4_Backend_ICC2/2_Output/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/08_gds_learning_route_a20_eopen4/nn_top.route_a20_eopen4.learning.gds` with size `263520256` bytes. The generated GDS remains ignored by git because it is a large generated binary containing merged SAED32 standard-cell layout data.
 
 ## Next Checkpoint
 
-Proceed from the A20 adopted-policy clean candidate and close/report the remaining non-timing coverage gaps:
+The learning baseline is archived locally and the repository records the reproducible scripts and summary evidence:
 
 1. Treat `route_a20_eopen4` as the latest active candidate.
 2. Use adopted-policy recheck evidence from `07_extract_sta_route_a20_eopen4_adopted_uncertainty_004_recheck`: route DRC/open `0/0`, PG floating counts `0`, PG DRC clean, legality `0`, setup slack `5.61 ns`, hold `0 / 0 / 0`, and electrical `0 / 0`.
@@ -77,6 +78,7 @@ Proceed from the A20 adopted-policy clean candidate and close/report the remaini
 9. The existing saved block was rechecked with adopted uncertainty overrides; future fresh ICC2 init/full-flow runs will read the updated project SDC.
 10. Do not claim antenna clean because the route checks report no antenna rules defined.
 11. Do not call the run signoff clean or antenna clean until antenna-rule coverage is supplied or explicitly waived.
+12. Do not force-add the generated GDS to git/GitHub; keep the local artifact path recorded and regenerate it from the committed `08_gds` script when needed.
 
 ## Accepted First-Baseline Risks
 

@@ -32,6 +32,7 @@ backend utilization target: 55%
 | Second electrical ECO plus hold ECO previous candidate | PASS_WITH_OPEN | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_after_electrical_eco_open2_route_repair1_m0_saved_recheck/report_status.tsv` |
 | A20 electrical-clean active candidate | PASS_WITH_OPEN_HOLD | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_route_a20_eopen4_saved_recheck/report_status.tsv` |
 | A20 hold ECO diagnosis | COMPLETED_NOT_ADOPTED | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_m05_from_a20_eopen4/report_status.tsv`, `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_occ_m05_from_a20_eopen4/report_status.tsv` |
+| Learning GDS stream-out | PASS_LEARNING_ARTIFACT | `4_Backend_ICC2/3_Log/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/08_gds_learning_route_a20_eopen4/run.log`, `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/08_gds_learning_route_a20_eopen4/stream_out_manifest.txt` |
 
 ## DC Topographical Synthesis Summary
 
@@ -814,6 +815,24 @@ backend utilization target: 55%
 | Antenna | Not proven; `antenna.rpt` states no antenna rules are defined |
 | Disposition | Adopted as the learning-oriented first-baseline propagated-clock timing policy. This is not signoff margin closure. |
 
+## Learning GDS Stream-Out Summary
+
+| Metric | Value |
+| --- | --- |
+| Input block | `mnist_npu_icc2_lib:route_a20_eopen4.design` |
+| Script | `4_Backend_ICC2/0_Script/08_gds/run_learning_gds_stream_out.sh` |
+| Log | `4_Backend_ICC2/3_Log/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/08_gds_learning_route_a20_eopen4/run.log` |
+| Report root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/08_gds_learning_route_a20_eopen4` |
+| Output GDS | `4_Backend_ICC2/2_Output/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/08_gds_learning_route_a20_eopen4/nn_top.route_a20_eopen4.learning.gds` |
+| Output GDS size | `263520256` bytes |
+| Layer map | `/DATA/home/edu135/lib/SAED32_EDK/tech/milkyway/saed32nm_1p9m_gdsout_mw.map` |
+| Standard-cell GDS merge file | `/DATA/home/edu135/lib/SAED32_EDK/lib/stdcell_rvt/gds/saed32nm_rvt_oa.gds` |
+| Stream-out hierarchy | `design_lib` |
+| Pre-stream route check | open nets `0`; route DRCs `0` |
+| Antenna | Not proven; no antenna rules defined |
+| Git handling | Generated GDS is intentionally ignored by git; scripts and result summaries are tracked |
+| Disposition | Local learning artifact only. Not signoff clean, not antenna clean, and not tapeout ready. |
+
 ## Current Closure Status
 
 | Item | Status | Evidence |
@@ -824,6 +843,7 @@ backend utilization target: 55%
 | Setup | CLEAN | `07_extract_sta_route_a20_eopen4_adopted_uncertainty_004_recheck/global_timing.rpt`, `qor.rpt` |
 | Hold | POLICY_CLEAN | `07_extract_sta_route_a20_eopen4_adopted_uncertainty_004_recheck/global_timing.rpt`, `qor.rpt` |
 | Max transition/max capacitance | CLEAN | `07_extract_sta_route_a20_eopen4_adopted_uncertainty_004_recheck/qor.rpt`, `constraint.max_transition.rpt`, `constraint.max_capacitance.rpt` |
+| Learning GDS | EXPORTED_LOCAL | `08_gds_learning_route_a20_eopen4/stream_out_manifest.txt`, `08_gds_learning_route_a20_eopen4/run.log` |
 | Antenna | NOT_PROVEN | `07_extract_sta_route_a20_eopen4_adopted_uncertainty_004_recheck/antenna.rpt` |
 
 ## Current Root-Cause Classification

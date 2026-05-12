@@ -1653,3 +1653,30 @@
 - Reproducibility note:
   - The existing saved block `route_a20_eopen4` was not physically changed. It was rechecked with the adopted uncertainty override because the saved block still contains the earlier timing constraint state.
   - Future fresh ICC2 init/full-flow runs will read the updated project SDC from `1_Input/constraints/mnist_npu_10ns.sdc`.
+
+### ICC2 learning GDS stream-out
+
+- Objective: export a local learning GDS from the active first-baseline candidate without changing the saved ICC2 block.
+- Script added:
+  - `4_Backend_ICC2/0_Script/08_gds/run_learning_gds_stream_out.sh`
+  - `4_Backend_ICC2/0_Script/08_gds/run_learning_gds_stream_out.tcl`
+- Command:
+  - `4_Backend_ICC2/0_Script/08_gds/run_learning_gds_stream_out.sh`
+- Input block:
+  - `4_Backend_ICC2/2_Output/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/mnist_npu_icc2_lib:route_a20_eopen4.design`
+- Output GDS:
+  - `4_Backend_ICC2/2_Output/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/08_gds_learning_route_a20_eopen4/nn_top.route_a20_eopen4.learning.gds`
+- Log path:
+  - `4_Backend_ICC2/3_Log/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/08_gds_learning_route_a20_eopen4/run.log`
+- Report root:
+  - `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/08_gds_learning_route_a20_eopen4`
+- Result: COMPLETED_LEARNING_ARTIFACT.
+- Evidence:
+  - Stream-out manifest records GDS size `263520256` bytes.
+  - `run.log` ends with `GDS DONE`.
+  - `check_routes.rpt` from the stream-out session reports `Total number of open nets = 0` and `Total number of DRCs = 0`.
+  - `check_routes.rpt` still reports `Total number of antenna violations = no antenna rules defined`.
+  - `gds_cell_source.rpt` records the final `write_gds` command using `-hierarchy design_lib`, `-layer_map_format icc_default`, and the SAED32 RVT GDS merge file.
+- Disposition:
+  - Treat the GDS as a local learning handoff artifact, not a signoff or tapeout-ready deliverable.
+  - Do not force-add the generated GDS to git/GitHub because it is a large generated binary and contains merged SAED32 standard-cell layout data.

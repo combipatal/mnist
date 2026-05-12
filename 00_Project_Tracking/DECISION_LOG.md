@@ -323,3 +323,14 @@
 - Rationale: adopted-policy recheck `07_extract_sta_route_a20_eopen4_adopted_uncertainty_004_recheck` reports route DRC/open `0/0`, PG floating counts `0`, legality `0`, no setup violations, no hold violations, and electrical max-transition/max-capacitance `0 / 0`.
 - Guardrail: do not call this signoff clean.
 - Rationale: the hold closure is a first-baseline timing-policy decision, antenna rules are still absent, and no signoff OCV/SI/IR/LVS/antenna-rule closure has been performed.
+
+### Learning GDS Stream-Out Disposition
+
+- Decision: export a local GDS from `mnist_npu_icc2_lib:route_a20_eopen4.design` for learning and flow-completion practice.
+- Rationale: the active candidate is policy-timing clean for the first baseline, and the user explicitly chose the learning-oriented GDS handoff despite antenna-rule coverage remaining unavailable.
+- Decision: use `write_gds -hierarchy design_lib` with the SAED32 Milkyway GDS layer map and merge the RVT standard-cell GDS.
+- Rationale: the implementation block should be streamed at the design-library boundary while standard-cell layout data comes from the provided SAED32 GDS merge file.
+- Guardrail: do not force-add the generated GDS to git/GitHub.
+- Rationale: it is a large generated binary and contains merged SAED32 standard-cell layout data; the repository should track reproducible scripts, decisions, and result summaries instead.
+- Guardrail: do not call the GDS signoff/tapeout-ready.
+- Rationale: antenna rules remain unavailable and no LVS/DRC signoff deck, IR/EM, OCV/SI, or tapeout package validation has been performed.
