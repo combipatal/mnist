@@ -34,7 +34,7 @@ fi
 export TECH_FILE="/DATA/home/edu135/MNIST/$tech_file"
 export NDM_RVT="/DATA/home/edu135/MNIST/$ndm_rvt"
 export ICC2_LIB_DIR="/DATA/home/edu135/MNIST/$icc2_lib_dir"
-export CORE_UTILIZATION="0.45"
+export CORE_UTILIZATION="${CORE_UTILIZATION:-0.45}"
 
 mkdir -p "$trial_output_root" "$trial_report_root" "$trial_log_root"
 
@@ -68,4 +68,4 @@ run_stage 04_place 4_Backend_ICC2/0_Script/04_place/run_place_initial.tcl
 run_stage 05_cts 4_Backend_ICC2/0_Script/05_cts/run_cts_initial.tcl
 run_stage 06_route 4_Backend_ICC2/0_Script/06_route/run_route_initial.tcl
 
-echo "MNIST_LIBDIR_VIA1_NO_TRACK_TRIM_ALL_PIN_UTIL45_BACKEND_DONE report_root=$trial_report_root"
+echo "MNIST_LIBDIR_VIA1_NO_TRACK_TRIM_ALL_PIN_BACKEND_DONE core_utilization=$CORE_UTILIZATION report_root=$trial_report_root"

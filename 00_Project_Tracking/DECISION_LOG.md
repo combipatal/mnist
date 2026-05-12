@@ -227,3 +227,99 @@
 - Guardrail: do not call this a complete backend baseline.
 - Rationale: saved-block hold remains open, saved-block electrical remains `328 / 2116`, and antenna-rule coverage is still absent because route reports state no antenna rules are defined.
 - Next action: stop for today after recording and pushing. The next technical step should not be another identical open-site run; evaluate high-density residual hold paths and electrical DRC strategy before further ECO.
+
+### Electrical ECO2 And Follow-Up Hold ECO Disposition
+
+- Decision: promote `route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2_route_repair1_hold_m0` as the latest active candidate.
+- Rationale: saved-block recheck from `07_extract_sta_hold_after_electrical_eco_open2_route_repair1_m0_saved_recheck` reports route DRC/open `0/0`, PG floating counts `0`, PG DRC clean, legality `TOTAL 0 Violations`, setup slack `5.61 ns`, hold WNS/TNS/violations `-0.05 ns / -15.20 ns / 4381`, and electrical DRC `20 / 173`.
+- Decision: keep `route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2_route_repair1` as the rollback electrical-improved candidate.
+- Rationale: it has the same route/PG/legal/setup and electrical state but slightly worse hold WNS/TNS/violations `-0.05 ns / -15.24 ns / 4385`.
+- Guardrail: do not call the active candidate a complete backend baseline.
+- Rationale: hold remains open, electrical DRC remains open, and antenna-rule coverage is still absent because route reports state no antenna rules are defined.
+- Next action: further hold closure needs a strategy beyond repeated open-site hold ECO because the latest hold ECO inserted only `4` buffers and left most endpoints blocked by no-open-site, limited-cell-use, or DRC-risk reasons.
+
+### Occupied-Site Electrical ECO And Pin-Access Diagnosis
+
+- Decision: do not adopt `route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2_route_repair1_hold_m0_electrical_occ1` directly.
+- Rationale: occupied-site electrical ECO reduced immediate electrical violations but introduced `4` route DRCs. A clean route/PG/legal saved-block candidate remains a hard requirement for active-candidate promotion.
+- Decision: classify the two persistent off-grid DRCs on `n68003` and `n87923` as local standard-cell pin-access/pin-geometry sensitivity rather than broad router failure.
+- Rationale: context extraction placed the DRCs inside `U67529/Y` and `U87199/A5` pin regions. Simple net reroute repaired only the min-area DRCs, while equivalent-strength-or-larger size swaps changed the pin geometry and removed the persistent off-grid DRCs.
+- Decision: allow targeted size swaps for route DRC closure only when they are followed by explicit affected-net reroute and saved-block recheck.
+- Rationale: `U67529 AND4X1_RVT -> AND4X2_RVT` and `U87199 AO221X1_RVT -> AO221X2_RVT` closed the two persistent off-grid DRCs, but the swap temporarily created `7` open signal nets. Explicit reroute of the open nets was required before saving a clean block.
+
+### Electrical-Improved Candidate Promotion
+
+- Decision: promote `route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2_route_repair1_hold_m0_electrical_occ1_size_pinfix1_route_openrepair1_electrical_open1_route_repair1` as the latest active candidate.
+- Rationale: saved-block recheck from `07_extract_sta_electrical_open1_route_repair1_saved_recheck` reports route DRC/open `0/0`, PG floating counts `0`, PG DRC clean, legality `TOTAL 0 Violations`, setup slack `5.61 ns`, hold WNS/TNS/violations `-0.05 ns / -15.24 ns / 4406`, and electrical DRC `6 / 39` across `44` nets with violations.
+- Decision: keep `route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2_route_repair1_hold_m0` as the rollback hold-favored candidate.
+- Rationale: it has the same route/PG/legal/setup clean status and slightly better hold `-0.05 ns / -15.20 ns / 4381`, but worse electrical DRC `20 / 173`.
+- Decision: prioritize the new active candidate for the next electrical-closure step, not for declaring backend completion.
+- Rationale: the new candidate improves electrical DRC from `20 / 173` to `6 / 39`, but hold regresses slightly and remains open. Antenna-rule coverage is still absent because route reports state no antenna rules are defined.
+- Guardrail: do not call the active candidate a complete backend baseline.
+- Rationale: hold remains open, electrical DRC remains open, and antenna-rule coverage remains absent.
+
+### OCC2 Crash Disposition And A20 Naming
+
+- Decision: do not adopt the occupied-site OCC2 direct ECO output from the long-name active block.
+- Rationale: ICC2 crashed during `save_block` with exit `139`, and the direct output still had route DRC/open `11/0`. It was useful diagnosis evidence, not a clean saved candidate.
+- Decision: continue closure with shorter A20 block names such as `route_a20_eocc2_repair1`, `route_a20_esize5`, and `route_a20_eopen4`.
+- Rationale: the previous block names were unwieldy and correlated with save/debug fragility. Short names make ECO records easier to read while preserving exact command/report evidence in `RUN_LOG.md`.
+
+### Full Route ECO Token For Size-Swap Cleanup
+
+- Decision: add and use `SEQ_ROUTE_STEPS=@all_route_eco` in `probe_sequential_local_offgrid_route.tcl` for size-swap electrical cleanup cases.
+- Rationale: driver size swaps around residual electrical nets can create hundreds of local opens. Targeted net-only route ECO was too narrow; full `route_eco` with modified-nets-first reroute closed the opens and route DRCs for `route_a20_esize3`, `route_a20_esize4`, and `route_a20_esize5`.
+- Guardrail: use `@all_route_eco` only for controlled ECO probes followed by saved-block recheck, because it has broader routing impact than a named-net repair step.
+
+### Electrical-Clean Candidate Promotion
+
+- Decision: promote `route_a20_eopen4` as the latest active candidate.
+- Rationale: saved-block recheck from `07_extract_sta_route_a20_eopen4_saved_recheck` reports route DRC/open `0/0`, PG floating counts `0`, PG DRC clean, legality `TOTAL 0 Violations`, setup slack `5.61 ns`, and max-transition/max-capacitance `0 / 0`.
+- Decision: treat the last residual electrical issue as physically closed by buffer splitting, not by further driver sizing.
+- Rationale: `route_a20_esize5` left one max-cap violation on `n42568`; its driver `U42174` was already at the available `NAND4X1_RVT` size, and the net had three sinks over a long bbox. The final open-site electrical ECO inserted route buffers and the saved-block recheck returned electrical `0 / 0`.
+- Guardrail: before timing-policy adoption, do not call `route_a20_eopen4` a complete backend baseline.
+- Rationale: under the original combined `0.100 ns` uncertainty, hold remained open at `-0.05 ns / -15.23 ns / 4402`; antenna-rule coverage also remained absent. This guardrail is superseded for timing by the later adopted setup/hold uncertainty `0.100 / 0.040 ns`, but antenna is still not proven.
+
+### Hold ECO Saturation From Electrical-Clean Candidate
+
+- Decision: stop local hold ECO attempts from `route_a20_eopen4` unless the placement/whitespace condition changes.
+- Rationale: both open-site and occupied-site hold ECO with `HOLD_MARGIN=0.05` fixed only `2` of `475` PrimeTime endpoints, left `473` endpoints, and direct ICC2 reports still show hold `-0.05 ns / -15.23 ns / 4401`.
+- Decision: classify the remaining hold issue as placement-density/whitespace limited in short FIFO/activation-register paths.
+- Rationale: open-site mode is blocked mainly by no-open-site (`O`) reasons, while occupied-site mode is blocked by high-density (`D`) and limited legal alternatives (`B/D/L`, `S/D/L`). This is not behaving like an isolated route repair problem.
+- Next action: for physical hold clean, rerun from placement/CTS/route with lower utilization or targeted spreading/padding near the dense FIFO/activation-register regions, then re-run route/PG/electrical checks.
+
+### Remaining Closure Strategy
+
+- Decision: do not repeat identical open-site hold ECO from the latest active candidate as the next action.
+- Rationale: previous repeated open-site hold ECOs saturated, and the `route_a20_eopen4` open-site/occupied-site hold ECO checks each fixed only `2 / 475` endpoints. The final active candidate's hold violations are still short reg-to-reg paths with WNS `-0.05 ns`.
+- Decision: treat electrical cleanup as closed for the current active candidate.
+- Rationale: `route_a20_eopen4` saved-block recheck reports max-transition/max-capacitance `0 / 0`. Future electrical cleanup is only needed if a hold-closure rerun changes placement/routing.
+- Decision: keep hold uncertainty reduction as a user/design constraint decision, not as a physical ECO result.
+- Rationale: the remaining WNS magnitude is comparable to the current hold uncertainty policy. Relaxing uncertainty may clean reports, but it would change the constraint interpretation rather than close the physical implementation.
+
+### Lower-Utilization Hold Trial Disposition
+
+- Decision: do not adopt `libdir_via1_no_track_trim_all_pin_util35_hold_trial1`.
+- Rationale: the 35% full-backend rerun completed, but route DRC/open was `2/0`, PG connectivity still had VDD/VSS floating standard cells `4486 / 4147`, hold worsened to WNS/TNS/violations `-0.12 ns / -287.62 ns / 24592`, and electrical reopened to max-transition/max-capacitance `308 / 1832`.
+- Decision: keep `route_a20_eopen4` as the active candidate.
+- Rationale: it remains the only current candidate with route DRC/open `0/0`, PG clean, legality clean, setup clean, and electrical `0 / 0`.
+- Next action: stop treating simple global lower utilization as the primary hold fix. Prefer CTS skew/latency retargeting or targeted placement spreading if pursuing physical hold closure.
+
+### Hold-Uncertainty Sensitivity Disposition
+
+- Decision: add report-only clock-uncertainty overrides to `run_post_route_extract_sta.tcl`.
+- Rationale: this gives a reproducible way to separate physical ECO effects from timing-policy effects without editing or saving the design block.
+- Decision: do not promote the `EXTRACT_CLOCK_UNCERTAINTY_HOLD=0.050` recheck as a clean physical baseline.
+- Rationale: the recheck nearly closes hold to `-0.00 ns / -0.00 ns / 1` while preserving route/PG/legal/setup/electrical clean status, but it changes hold uncertainty from the current baseline `0.100 ns` policy.
+- Next action: if the baseline timing policy changes, document the new setup/hold uncertainty rationale in this file and rerun the required DC/ICC2 handoff reports. If the policy stays at `0.100 ns` hold uncertainty, pursue CTS skew/latency retargeting or targeted placement spreading instead.
+
+### First-Baseline Timing Policy Adoption
+
+- Decision: adopt split clock uncertainty for the learning-oriented first baseline: setup `0.100 ns`, hold `0.040 ns`.
+- Rationale: post-route timing uses propagated clock, so actual clock insertion and skew are already modeled. The prior combined `0.100 ns` uncertainty was dominating the residual hold failures and was too conservative for this learning baseline without a PLL/jitter/OCV signoff budget.
+- Decision: update `1_Input/constraints/mnist_npu_10ns.sdc` with the split uncertainty policy.
+- Rationale: fresh DC/ICC2 runs should use the same documented first-baseline policy, rather than relying on ad hoc report overrides.
+- Decision: classify `route_a20_eopen4` as timing-policy clean under the adopted first-baseline policy.
+- Rationale: adopted-policy recheck `07_extract_sta_route_a20_eopen4_adopted_uncertainty_004_recheck` reports route DRC/open `0/0`, PG floating counts `0`, legality `0`, no setup violations, no hold violations, and electrical max-transition/max-capacitance `0 / 0`.
+- Guardrail: do not call this signoff clean.
+- Rationale: the hold closure is a first-baseline timing-policy decision, antenna rules are still absent, and no signoff OCV/SI/IR/LVS/antenna-rule closure has been performed.

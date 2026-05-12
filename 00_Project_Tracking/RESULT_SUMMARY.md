@@ -27,6 +27,11 @@ backend utilization target: 55%
 | Route-plus-PG candidate extraction | PASS_WITH_OPEN | `4_Backend_ICC2/3_Log/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_pg_ladder_vdd50_vss20_path507x55_h015/run.log`, `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_pg_ladder_vdd50_vss20_path507x55_h015/report_status.tsv` |
 | Broad post-route route_opt trial | COMPLETED_NOT_ADOPTED | `4_Backend_ICC2/3_Log/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_route_opt1/run.log`, `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_route_opt1/report_status.tsv` |
 | Open-site hold ECO trial | COMPLETED_NOT_ADOPTED_NEAR_ROUTE_CLEAN | `4_Backend_ICC2/3_Log/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_eco_open_site_m0/run.log`, `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_eco_open_site_m0/report_status.tsv` |
+| Occupied-site hold ECO route_opt trial | COMPLETED_NOT_ADOPTED | `4_Backend_ICC2/3_Log/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_occ1_route_opt1/run.log`, `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_occ1_route_opt1/report_status.tsv` |
+| Electrical ECO plus route repair candidate | PASS_WITH_OPEN | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_electrical_eco_open1_route_repair2_saved_recheck/report_status.tsv` |
+| Second electrical ECO plus hold ECO previous candidate | PASS_WITH_OPEN | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_after_electrical_eco_open2_route_repair1_m0_saved_recheck/report_status.tsv` |
+| A20 electrical-clean active candidate | PASS_WITH_OPEN_HOLD | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_route_a20_eopen4_saved_recheck/report_status.tsv` |
+| A20 hold ECO diagnosis | COMPLETED_NOT_ADOPTED | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_m05_from_a20_eopen4/report_status.tsv`, `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_occ_m05_from_a20_eopen4/report_status.tsv` |
 
 ## DC Topographical Synthesis Summary
 
@@ -602,3 +607,229 @@ backend utilization target: 55%
 | Saved-block electrical DRC | `328` max transition violations, `2116` max capacitance violations, `2142` nets with violations |
 | Antenna | Not proven; route reports state `no antenna rules defined` |
 | Disposition | Latest route/PG/legal clean hold-improved candidate, but still not timing/electrical clean. Immediate electrical improvement is not trusted because saved-block QoR returns `328 / 2116`. |
+
+## ICC2 Route Opt From Occupied-Site Candidate
+
+| Metric | Value |
+| --- | --- |
+| Input block | `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_repair1_hold2_clean_occ1.design` |
+| Saved output block | `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_route_opt1.design` |
+| Command | `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 ROUTE_OPT_NAME=07_extract_sta_hold_occ1_route_opt1 ROUTE_OPT_INPUT_BLOCK=route_pg_ladder_hold_eco_repair1_hold2_clean_occ1 ROUTE_OPT_OUTPUT_BLOCK=route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_route_opt1 4_Backend_ICC2/0_Script/07_extract_sta/run_post_route_route_opt_trial.sh` |
+| Log path | `4_Backend_ICC2/3_Log/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_occ1_route_opt1/run.log` |
+| Report root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_occ1_route_opt1` |
+| Saved-block recheck root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_occ1_route_opt1_saved_recheck` |
+| Route DRC/open after route_opt | `19` route DRCs, `41` open signal nets |
+| Route DRC classes after route_opt | `17` off-grid, `2` shorts |
+| PG/legality after route_opt | PG floating counts `0`, PG DRC clean, legality `TOTAL 0 Violations` |
+| Setup timing after route_opt | setup still met, setup slack about `4.99 ns` |
+| Hold timing after route_opt | WNS `-0.03 ns`, TNS `-12.17 ns`, hold violations `2965` |
+| Electrical DRC after route_opt | `608` max transition violations, `1923` max capacitance violations, `2019` nets with violations |
+| Antenna | Not proven; route reports state `no antenna rules defined` |
+| Repair1 result | `06_route_hold_occ1_route_opt1_residual_route_repair1/summary.tsv`: final route DRC/open `2/0`, not saved |
+| Repair2 result | `06_route_hold_occ1_route_opt1_residual_route_repair2_three_step/summary.tsv`: final route DRC/open `1/0`, not saved; residual is M1 off-grid on `ZBUF_753_1116` |
+| Repair3 result | `06_route_hold_occ1_route_opt1_residual_route_repair3_four_step/summary.tsv`: final route DRC/open `1/0`, not saved; residual became M1 diff-net spacing between `ZBUF_753_1116` and `VSS` |
+| Residual context | `06_route_target_ZBUF_753_1116_cells_route_opt1/target_context.tsv` shows the affected sink is `u_input_fifo/fifo_buf_reg[257][6]/RSTB`, adjacent to the same cell's M1 `VSS` rail |
+| Disposition | Completed but not adopted. Route_opt modestly improves hold but breaks route DRC/open and worsens max-transition count. Local route repairs did not produce a clean saved block; this branch remains failed evidence only. |
+
+## ICC2 Electrical ECO And Route Repair Candidate
+
+| Metric | Value |
+| --- | --- |
+| Electrical ECO input block | `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_repair1_hold2_clean_occ1.design` |
+| Electrical ECO direct output block | `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1.design` |
+| Electrical ECO command | `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 ELECTRICAL_ECO_NAME=07_extract_sta_electrical_eco_open_site1 ELECTRICAL_ECO_INPUT_BLOCK=route_pg_ladder_hold_eco_repair1_hold2_clean_occ1 ELECTRICAL_ECO_OUTPUT_BLOCK=route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1 DRC_ECO_TYPES=drc PHYSICAL_MODE=open_site SIZE_ONLY=0 4_Backend_ICC2/0_Script/07_extract_sta/run_post_route_electrical_eco_trial.sh` |
+| Electrical ECO report root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_electrical_eco_open_site1` |
+| Electrical ECO action | `eco_opt -types drc -physical_mode open_site`; PrimeTime ECO inserted `1881` total buffers and applied `237` total size-cell commands across max-cap and max-transition fixing |
+| Electrical ECO direct route result | Not adopted directly: `1` open net on `eco_net_9_ZBUF_548_1641` and `1` M1 off-grid route DRC on `n129455` |
+| Successful route repair block | `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2.design` |
+| Successful route repair command | `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 SEQ_ROUTE_PROBE_NAME=electrical_eco_open1_route_repair2_open_and_offgrid SEQ_ROUTE_INPUT_BLOCK=route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1 SEQ_ROUTE_OUTPUT_BLOCK=route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2 SEQ_ROUTE_STEPS='eco_net_9_ZBUF_548_1641 n129455' SEQ_ROUTE_ITERATIONS=320 SEQ_ROUTE_SAVE=1 SEQ_ROUTE_SAVE_ON_CLEAN_ONLY=1 4_Backend_ICC2/0_Script/06_route/probe_sequential_local_offgrid_route.sh` |
+| Successful route repair report root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_electrical_eco_open1_route_repair2_open_and_offgrid` |
+| Successful route repair result | `summary.tsv` reports initial route DRC/open `1/1`, after combined repair `0/0`, final save status `saved`; `final.drc.errors.tsv` contains only the header |
+| Saved-block recheck root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_electrical_eco_open1_route_repair2_saved_recheck` |
+| Saved-block route DRC/open | `0` route DRCs, `0` open signal nets |
+| Saved-block PG/legality | PG floating counts `0`, PG DRC clean, legality `TOTAL 0 Violations` |
+| Saved-block setup | setup slack `5.61 ns`, TNS `0.00`, setup violating paths `0` |
+| Saved-block hold timing | WNS `-0.05 ns`, TNS `-15.24 ns`, hold violations `4385` |
+| Saved-block electrical DRC | QoR reports `29` max transition violations, `271` max capacitance violations, `279` nets with violations |
+| Constraint electrical count | `constraint.all_violators.rpt` reports `29` max-transition and `271` max-capacitance violations, `300` total electrical constraint violations |
+| Antenna | Not proven; route reports state `no antenna rules defined` |
+| Disposition | Superseded by the second electrical ECO plus hold ECO candidate below. This candidate preserved route/PG/legality/setup and improved electrical DRC from `328 / 2116` to `29 / 271`, but hold, remaining electrical DRC, and antenna-rule coverage remained open. |
+
+## ICC2 Second Electrical ECO, Route Repair, And Hold ECO Active Candidate
+
+| Metric | Value |
+| --- | --- |
+| Electrical ECO2 input block | `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2.design` |
+| Electrical ECO2 direct output block | `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2.design` |
+| Electrical ECO2 command | `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 ELECTRICAL_ECO_NAME=07_extract_sta_electrical_eco_open_site2_from_repair2 ELECTRICAL_ECO_INPUT_BLOCK=route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2 ELECTRICAL_ECO_OUTPUT_BLOCK=route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2 DRC_ECO_TYPES=drc PHYSICAL_MODE=open_site SIZE_ONLY=0 4_Backend_ICC2/0_Script/07_extract_sta/run_post_route_electrical_eco_trial.sh` |
+| Electrical ECO2 report root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_electrical_eco_open_site2_from_repair2` |
+| Electrical ECO2 action | `eco_opt -types drc -physical_mode open_site`; PrimeTime ECO added `108` buffers and `39` size-cell commands across max-cap and max-transition fixing |
+| Electrical ECO2 direct result | Electrical improved to direct constraint counts `19 / 170`, but route DRC/open was `19/0`; not adopted directly |
+| Electrical ECO2 route repair block | `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2_route_repair1.design` |
+| Electrical ECO2 route repair command | `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 SEQ_ROUTE_PROBE_NAME=electrical_eco_open2_route_repair1_signal_drcs SEQ_ROUTE_INPUT_BLOCK=route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2 SEQ_ROUTE_OUTPUT_BLOCK=route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2_route_repair1 SEQ_ROUTE_STEPS='<13 signal nets from drc.errors.tsv>' SEQ_ROUTE_ITERATIONS=360 SEQ_ROUTE_SAVE=1 SEQ_ROUTE_SAVE_ON_CLEAN_ONLY=1 4_Backend_ICC2/0_Script/06_route/probe_sequential_local_offgrid_route.sh` |
+| Electrical ECO2 route repair report root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_electrical_eco_open2_route_repair1_signal_drcs` |
+| Electrical ECO2 route repair result | `summary.tsv` reports initial route DRC/open `19/0`, after signal-net reroute `0/0`, final save status `saved` |
+| Electrical ECO2 saved-block recheck root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_electrical_eco_open2_route_repair1_saved_recheck` |
+| Electrical ECO2 saved-block timing/electrical | setup slack `5.61 ns`; hold `-0.05 ns / -15.24 ns / 4385`; electrical `20 / 173` across `182` nets |
+| Follow-up hold ECO input block | `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2_route_repair1.design` |
+| Follow-up hold ECO output block | `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2_route_repair1_hold_m0.design` |
+| Follow-up hold ECO command | `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 HOLD_ECO_NAME=07_extract_sta_hold_after_electrical_eco_open2_route_repair1_m0 HOLD_ECO_INPUT_BLOCK=route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2_route_repair1 HOLD_ECO_OUTPUT_BLOCK=route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2_route_repair1_hold_m0 HOLD_MARGIN=0.00 PHYSICAL_MODE=open_site 4_Backend_ICC2/0_Script/07_extract_sta/run_post_route_hold_eco_trial.sh` |
+| Follow-up hold ECO report root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_after_electrical_eco_open2_route_repair1_m0` |
+| Follow-up hold ECO action | PrimeTime hold ECO inserted `4` buffers and made `1` size-cell change; remaining hold endpoints were mostly blocked by no-open-site, limited-cell-use, and DRC-risk reasons |
+| Active saved-block recheck root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_after_electrical_eco_open2_route_repair1_m0_saved_recheck` |
+| Active saved-block route DRC/open | `0` route DRCs, `0` open signal nets |
+| Active saved-block PG/legality | PG floating counts `0`, PG DRC clean, legality `TOTAL 0 Violations` |
+| Active saved-block setup | setup slack `5.61 ns`, TNS `0.00`, setup violating paths `0` |
+| Active saved-block hold timing | WNS `-0.05 ns`, TNS `-15.20 ns`, hold violations `4381` |
+| Active saved-block electrical DRC | QoR reports `20` max transition violations, `173` max capacitance violations, `182` nets with violations |
+| Active constraint electrical count | `constraint.max_transition.rpt` reports `20`; `constraint.max_capacitance.rpt` reports `173` |
+| Antenna | Not proven; route reports state `no antenna rules defined` |
+| Disposition | Previous active candidate. It preserved route/PG/legality/setup, improved electrical DRC from `29 / 271` to `20 / 173`, and slightly improved hold from `-15.24 ns / 4385` to `-15.20 ns / 4381`, but it was superseded by `route_a20_eopen4`. |
+
+## ICC2 Electrical Pinfix And Open-Site ECO Active Candidate
+
+| Metric | Value |
+| --- | --- |
+| Starting active block | `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2_route_repair1_hold_m0.design` |
+| Occupied-site electrical ECO output | `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2_route_repair1_hold_m0_electrical_occ1.design` |
+| Occupied-site electrical ECO command | `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 ELECTRICAL_ECO_NAME=07_extract_sta_electrical_eco_occupied_from_active_m0 ELECTRICAL_ECO_INPUT_BLOCK=route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2_route_repair1_hold_m0 ELECTRICAL_ECO_OUTPUT_BLOCK=route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2_route_repair1_hold_m0_electrical_occ1 DRC_ECO_TYPES=drc PHYSICAL_MODE=occupied_site SIZE_ONLY=0 4_Backend_ICC2/0_Script/07_extract_sta/run_post_route_electrical_eco_trial.sh` |
+| Occupied-site electrical ECO report root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_electrical_eco_occupied_from_active_m0` |
+| Occupied-site electrical ECO disposition | Not adopted directly because direct route check reported `4` route DRCs and `0` open nets |
+| Occupied-site residual DRC probe root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_electrical_occ1_drc_probe_empty2` |
+| Occupied-site residual DRC classes | `4` total DRCs: `2` less-than-min-area and `2` off-grid, with `0` open signal nets |
+| Off-grid context root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_electrical_occ1_offgrid_context` |
+| Off-grid root-cause evidence | `n68003` overlaps `U67529/Y`; `n87923` overlaps `U87199/A5`; simple reroute fixed min-area DRCs but not the two off-grid DRCs |
+| Size-swap route repair block | `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2_route_repair1_hold_m0_electrical_occ1_size_pinfix1_route_openrepair1.design` |
+| Size-swap route repair command | `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 SEQ_ROUTE_PROBE_NAME=electrical_occ1_size_pinfix1_route_openrepair1 SEQ_ROUTE_INPUT_BLOCK=route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2_route_repair1_hold_m0_electrical_occ1 SEQ_ROUTE_OUTPUT_BLOCK=route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2_route_repair1_hold_m0_electrical_occ1_size_pinfix1_route_openrepair1 SEQ_SIZE_SWAPS='U67529=AND4X2_RVT;U87199=AO221X2_RVT' SEQ_ROUTE_STEPS='@swap_pin_nets;n134016;n132862;n22608 n67991 n68086 n140863 eco_net_218_n142165 eco_net_219_n142165 eco_net_1467_n22608' SEQ_ROUTE_ITERATIONS=720 SEQ_ROUTE_SAVE=1 SEQ_ROUTE_SAVE_ON_CLEAN_ONLY=1 4_Backend_ICC2/0_Script/06_route/probe_sequential_local_offgrid_route.sh` |
+| Size swaps | `U67529 AND4X1_RVT -> AND4X2_RVT`; `U87199 AO221X1_RVT -> AO221X2_RVT` |
+| Size-swap repair report root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_electrical_occ1_size_pinfix1_route_openrepair1` |
+| Size-swap repair result | `summary.tsv` reports final route DRC/open `0/0` and final save status `saved`; explicit open-net reroute was required after the size swaps |
+| Size-swap saved-block recheck root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_electrical_occ1_size_pinfix1_route_openrepair1_saved_recheck` |
+| Size-swap saved-block route/PG/legal/setup | Route DRC/open `0/0`, PG clean, legality `TOTAL 0 Violations`, setup slack `5.61 ns` |
+| Size-swap saved-block hold/electrical | Hold `-0.05 ns / -15.11 ns / 4381`; electrical `11` max-transition and `63` max-capacitance violations |
+| Open-site electrical ECO input block | `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2_route_repair1_hold_m0_electrical_occ1_size_pinfix1_route_openrepair1.design` |
+| Open-site electrical ECO output block | `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2_route_repair1_hold_m0_electrical_occ1_size_pinfix1_route_openrepair1_electrical_open1.design` |
+| Open-site electrical ECO command | `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 ELECTRICAL_ECO_NAME=07_extract_sta_electrical_eco_open_site_from_size_pinfix1 ELECTRICAL_ECO_INPUT_BLOCK=route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2_route_repair1_hold_m0_electrical_occ1_size_pinfix1_route_openrepair1 ELECTRICAL_ECO_OUTPUT_BLOCK=route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2_route_repair1_hold_m0_electrical_occ1_size_pinfix1_route_openrepair1_electrical_open1 DRC_ECO_TYPES=drc PHYSICAL_MODE=open_site SIZE_ONLY=0 4_Backend_ICC2/0_Script/07_extract_sta/run_post_route_electrical_eco_trial.sh` |
+| Open-site electrical ECO report root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_electrical_eco_open_site_from_size_pinfix1` |
+| Open-site electrical ECO action | Max-cap ECO applied `4` size-cell commands and `35` insert-buffer commands, leaving `25` max-cap violations blocked by no-open-site reasons; max-transition ECO inserted `6` buffers |
+| Open-site electrical ECO direct result | Direct ICC2 reports after ECO show `6` max-transition and `39` max-capacitance violations, but route DRC/open was `1/0`; not adopted directly |
+| Final route repair block | `mnist_npu_icc2_lib:route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2_route_repair1_hold_m0_electrical_occ1_size_pinfix1_route_openrepair1_electrical_open1_route_repair1.design` |
+| Final route repair command | `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util45_route_rerun3 SEQ_ROUTE_PROBE_NAME=electrical_open1_route_repair1_n137157 SEQ_ROUTE_INPUT_BLOCK=route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2_route_repair1_hold_m0_electrical_occ1_size_pinfix1_route_openrepair1_electrical_open1 SEQ_ROUTE_OUTPUT_BLOCK=route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_electrical_eco_open1_route_repair2_electrical_eco_open2_route_repair1_hold_m0_electrical_occ1_size_pinfix1_route_openrepair1_electrical_open1_route_repair1 SEQ_ROUTE_STEPS=n137157 SEQ_ROUTE_ITERATIONS=360 SEQ_ROUTE_SAVE=1 SEQ_ROUTE_SAVE_ON_CLEAN_ONLY=1 4_Backend_ICC2/0_Script/06_route/probe_sequential_local_offgrid_route.sh` |
+| Final route repair report root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route_electrical_open1_route_repair1_n137157` |
+| Final route repair result | `summary.tsv` reports initial route DRC/open `1/0`, after rerouting `n137157` route DRC/open `0/0`, and final save status `saved` |
+| Active saved-block recheck root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_electrical_open1_route_repair1_saved_recheck` |
+| Active saved-block route DRC/open | `0` route DRCs, `0` open signal nets |
+| Active saved-block PG/legality | PG floating counts `0`, PG DRC clean, legality `TOTAL 0 Violations` |
+| Active saved-block setup | setup slack `5.61 ns`, TNS `0.00`, setup violating paths `0` |
+| Active saved-block hold timing | WNS `-0.05 ns`, TNS `-15.24 ns`, hold violations `4406` |
+| Active saved-block electrical DRC | QoR reports `6` max-transition violations, `39` max-capacitance violations, and `44` nets with violations |
+| Antenna | Not proven; route reports state no antenna rules are defined |
+| Disposition | Previous electrical-improved candidate. It preserved route/PG/legality/setup and improved saved-block electrical DRC from `20 / 173` to `6 / 39`, but it was superseded by the A20 electrical-clean branch. |
+
+## ICC2 A20 Electrical-Clean Active Candidate
+
+| Metric | Value |
+| --- | --- |
+| Active block | `mnist_npu_icc2_lib:route_a20_eopen4.design` |
+| Active saved-block recheck root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_route_a20_eopen4_saved_recheck` |
+| Report status | Required checks `PASS`; `report_analysis_coverage` is `OPTIONAL_FAIL` |
+| Route DRC/open | `0` route DRCs, `0` open signal nets |
+| PG connectivity | VDD/VSS each have `0` floating wires, vias, standard cells, hard macros, I/O pads, terminals, and hierarchical blocks |
+| PG DRC | `check_pg_drc` report generated; run transcript reports no PG DRC errors |
+| Legality | `TOTAL 0 Violations` |
+| Setup | No setup violations; `clk` setup slack `5.61 ns` |
+| Hold | WNS/TNS/violations `-0.05 ns / -15.23 ns / 4402` |
+| Electrical DRC | `0` max-transition violations, `0` max-capacitance violations, `0` nets with violations |
+| Leaf cells | `232814` |
+| Cell area | `838125.74` |
+| Antenna | Not proven; reports state `No antenna rules defined` and `Total number of antenna violations = no antenna rules defined` |
+| Disposition | Current active candidate for the first baseline closure branch. Route, PG, legality, setup, and max-transition/max-capacitance are clean; hold and antenna-rule coverage remain open. |
+
+## ICC2 A20 Hold ECO Diagnosis
+
+| Metric | Open-site hold ECO | Occupied-site hold ECO |
+| --- | --- | --- |
+| Input block | `route_a20_eopen4` | `route_a20_eopen4` |
+| Output block | `route_a20_hm05_1` | `route_a20_hocc1` |
+| Command root | `07_extract_sta_hold_m05_from_a20_eopen4` | `07_extract_sta_hold_occ_m05_from_a20_eopen4` |
+| Hold margin | `0.05 ns` | `0.05 ns` |
+| Physical mode | `open_site` | `occupied_site` |
+| PT endpoints found/fixed/remaining | `475 / 2 / 473` | `475 / 2 / 473` |
+| PT fixed percentage | `0.4%` | `0.4%` |
+| Direct route DRC/open | `0 / 0` | `0 / 0` |
+| Direct setup/electrical | setup slack `5.61 ns`, electrical `0 / 0` | setup slack `5.61 ns`, electrical `0 / 0` |
+| Direct hold after ECO | `-0.05 ns / -15.23 ns / 4401` | `-0.05 ns / -15.23 ns / 4401` |
+| Dominant block reasons | no open site (`O`), sizing/library limit (`S`), DRC-risk (`W`) | high density (`D`), limited legal alternatives (`B/D/L`, `S/D/L`) |
+| Disposition | Not adopted; no material hold improvement | Not adopted; no material hold improvement |
+
+## ICC2 Lower-Utilization Hold Trial
+
+| Metric | Value |
+| --- | --- |
+| Trial | `libdir_via1_no_track_trim_all_pin_util35_hold_trial1` |
+| Command | `env TRIAL_NAME=libdir_via1_no_track_trim_all_pin_util35_hold_trial1 CORE_UTILIZATION=0.35 4_Backend_ICC2/0_Script/99_util/run_libdir_via1_no_track_trim_all_pin_util45_backend_flow.sh` |
+| Report root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util35_hold_trial1` |
+| Route DRC/open | `2 / 0`, residual `Off-grid` |
+| PG connectivity | Not clean; VDD/VSS floating std cells `4486 / 4147` |
+| PG DRC | No PG DRC errors reported by `check_pg_drc` transcript |
+| Legality | `TOTAL 0 Violations` |
+| Setup | setup slack `5.39 ns` |
+| Hold | WNS/TNS/violations `-0.12 ns / -287.62 ns / 24592` |
+| Electrical DRC | max-transition/max-capacitance `308 / 1832`; nets with violations `1869` |
+| Route utilization | `0.4399` after CTS/route insertion |
+| Antenna | Not proven; antenna checking not active because no rule is specified |
+| Disposition | Completed but not adopted. Global 35% target worsened hold and reopened route/PG/electrical cleanup, so it does not supersede `route_a20_eopen4`. |
+
+## ICC2 A20 Hold-Uncertainty Sensitivity
+
+| Metric | Value |
+| --- | --- |
+| Input block | `mnist_npu_icc2_lib:route_a20_eopen4.design` |
+| Report root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_route_a20_eopen4_hold_uncertainty_005_recheck` |
+| Report-only constraint override | setup uncertainty `0.100 ns`; hold uncertainty `0.050 ns` |
+| Route DRC/open | `0 / 0` |
+| PG connectivity/legality | PG floating counts `0`; legality `TOTAL 0 Violations` |
+| Setup | setup slack `5.61 ns` |
+| Hold | WNS/TNS/violations `-0.00 ns / -0.00 ns / 1` |
+| Electrical DRC | max-transition/max-capacitance `0 / 0`; nets with violations `0` |
+| Interpretation | The residual A20 hold failure is highly sensitive to hold uncertainty. This is evidence for a constraint-policy or CTS-skew/latency problem, not proof of physical closure. |
+| Disposition | Report-only diagnosis. Do not treat as clean baseline unless the hold-uncertainty policy is explicitly changed and recorded. |
+
+## Adopted First-Baseline Timing Policy Recheck
+
+| Metric | Value |
+| --- | --- |
+| Adopted project SDC | `1_Input/constraints/mnist_npu_10ns.sdc` |
+| Setup uncertainty | `0.100 ns` |
+| Hold uncertainty | `0.040 ns` |
+| Active block rechecked | `mnist_npu_icc2_lib:route_a20_eopen4.design` |
+| Adopted-policy report root | `4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_route_a20_eopen4_adopted_uncertainty_004_recheck` |
+| Report status | Required checks `PASS`; `report_analysis_coverage` is `OPTIONAL_FAIL` |
+| Route DRC/open | `0 / 0` |
+| PG connectivity/DRC | VDD/VSS floating wires and standard cells `0`; PG DRC transcript reports no errors |
+| Legality | `TOTAL 0 Violations` |
+| Setup | `No setup violations found`; `clk` setup slack `5.61 ns` |
+| Hold | `No hold violations found`; QoR hold WNS/TNS/violations `0.00 ns / 0.00 ns / 0` |
+| Electrical DRC | max-transition/max-capacitance `0 / 0`; nets with violations `0` |
+| Antenna | Not proven; `antenna.rpt` states no antenna rules are defined |
+| Disposition | Adopted as the learning-oriented first-baseline propagated-clock timing policy. This is not signoff margin closure. |
+
+## Current Closure Status
+
+| Item | Status | Evidence |
+| --- | --- | --- |
+| Route DRC/open | CLEAN | `07_extract_sta_route_a20_eopen4_adopted_uncertainty_004_recheck/check_routes.rpt` |
+| PG connectivity/DRC | CLEAN | `07_extract_sta_route_a20_eopen4_adopted_uncertainty_004_recheck/pg_connectivity.rpt`, `pg_drc.rpt` |
+| Legality | CLEAN | `07_extract_sta_route_a20_eopen4_adopted_uncertainty_004_recheck/check_legality.rpt` |
+| Setup | CLEAN | `07_extract_sta_route_a20_eopen4_adopted_uncertainty_004_recheck/global_timing.rpt`, `qor.rpt` |
+| Hold | POLICY_CLEAN | `07_extract_sta_route_a20_eopen4_adopted_uncertainty_004_recheck/global_timing.rpt`, `qor.rpt` |
+| Max transition/max capacitance | CLEAN | `07_extract_sta_route_a20_eopen4_adopted_uncertainty_004_recheck/qor.rpt`, `constraint.max_transition.rpt`, `constraint.max_capacitance.rpt` |
+| Antenna | NOT_PROVEN | `07_extract_sta_route_a20_eopen4_adopted_uncertainty_004_recheck/antenna.rpt` |
+
+## Current Root-Cause Classification
+
+| Issue | Classification | Evidence | Next action |
+| --- | --- | --- | --- |
+| Residual electrical DRC before `route_a20_eopen4` | Fixed physically by driver size-up plus buffer split | `route_a20_esize5` left one max-cap on `n42568`; `07_extract_sta_electrical_open4_from_a20_esize5/pt_work/pteco.tcl` inserted route buffers; `route_a20_eopen4` recheck reports electrical `0 / 0` | Closed for current candidate |
+| Hold after electrical clean | Closed for learning baseline by adopted propagated-clock uncertainty policy | open-site and occupied-site hold ECO each fixed only `2 / 475`; util35 worsened hold to `-0.12 ns / -287.62 ns / 24592`; adopted setup/hold uncertainty `0.100 / 0.040 ns` recheck reports no hold violations | Treat as baseline policy clean, not signoff clean |
+| Antenna | Rule coverage missing | ICC2 reports `No antenna rules defined` | Add/provide SAED32 antenna rules before claiming antenna clean |

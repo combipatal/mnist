@@ -25,7 +25,7 @@ if {[info exists ::env(SEQ_ROUTE_OUTPUT_BLOCK)] && $::env(SEQ_ROUTE_OUTPUT_BLOCK
 }
 
 set SEQ_ROUTE_STEPS {ZBUF_714_1050;ZBUF_851_152;ZBUF_832_2538;n143522}
-if {[info exists ::env(SEQ_ROUTE_STEPS)] && $::env(SEQ_ROUTE_STEPS) ne ""} {
+if {[info exists ::env(SEQ_ROUTE_STEPS)]} {
   set SEQ_ROUTE_STEPS $::env(SEQ_ROUTE_STEPS)
 }
 
@@ -395,15 +395,24 @@ foreach raw_step [split $SEQ_ROUTE_STEPS ";"] {
   incr step_idx
   puts "SEQ_PINTRACK step=$step_idx target_nets=$target_names"
 
-  set target_nets [get_nets -quiet $target_names]
-  remove_routes -nets $target_nets -detail_route
+  if {$target_names eq "@all_route_eco"} {
+    route_eco \
+      -max_detail_route_iterations $SEQ_ROUTE_ITERATIONS \
+      -reroute modified_nets_first_then_others \
+      -reuse_existing_global_route false \
+      -utilize_dangling_wires true \
+      -open_net_driven true
+  } else {
+    set target_nets [get_nets -quiet $target_names]
+    remove_routes -nets $target_nets -detail_route
 
-  route_eco \
-    -nets $target_nets \
-    -max_detail_route_iterations $SEQ_ROUTE_ITERATIONS \
-    -reroute modified_nets_first_then_others \
-    -reuse_existing_global_route false \
-    -utilize_dangling_wires true
+    route_eco \
+      -nets $target_nets \
+      -max_detail_route_iterations $SEQ_ROUTE_ITERATIONS \
+      -reroute modified_nets_first_then_others \
+      -reuse_existing_global_route false \
+      -utilize_dangling_wires true
+  }
 
   set final_result [run_check_routes $DEBUG_REPORT_DIR after_step${step_idx}]
   write_summary_row $summary_fh after_step${step_idx} $target_names $final_result $save_status

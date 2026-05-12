@@ -62,6 +62,16 @@ open_block $EXTRACT_INPUT_BLOCK
 
 set_voltage $DEFAULT_VOLTAGE
 
+if {[info exists ::env(EXTRACT_CLOCK_UNCERTAINTY_SETUP)] && $::env(EXTRACT_CLOCK_UNCERTAINTY_SETUP) ne ""} {
+  set_clock_uncertainty -setup $::env(EXTRACT_CLOCK_UNCERTAINTY_SETUP) [get_clocks clk]
+  puts "EXTRACT override setup_clock_uncertainty=$::env(EXTRACT_CLOCK_UNCERTAINTY_SETUP)"
+}
+
+if {[info exists ::env(EXTRACT_CLOCK_UNCERTAINTY_HOLD)] && $::env(EXTRACT_CLOCK_UNCERTAINTY_HOLD) ne ""} {
+  set_clock_uncertainty -hold $::env(EXTRACT_CLOCK_UNCERTAINTY_HOLD) [get_clocks clk]
+  puts "EXTRACT override hold_clock_uncertainty=$::env(EXTRACT_CLOCK_UNCERTAINTY_HOLD)"
+}
+
 set_ignored_layers \
   -min_routing_layer M1 \
   -max_routing_layer M8
