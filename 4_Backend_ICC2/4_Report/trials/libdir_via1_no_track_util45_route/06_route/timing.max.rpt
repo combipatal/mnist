@@ -1,0 +1,2084 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 20
+        -report_by design
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Sun May 10 23:24:00 2026
+****************************************
+
+  Startpoint: gen_mac_lanes[21].u_lane/u_mac/start_r2_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[21].u_lane/u_mac/acc_reg[63] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.28      0.28
+
+  gen_mac_lanes[21].u_lane/u_mac/start_r2_reg/CLK (DFFARX1_RVT)
+                                                   0.00      0.28 r
+  gen_mac_lanes[21].u_lane/u_mac/start_r2_reg/Q (DFFARX1_RVT)
+                                                   0.13      0.41 f
+  U43461/Y (NBUFFX2_RVT)                           0.06      0.47 f
+  U43462/Y (INVX4_RVT)                             0.05      0.52 r
+  U42644/Y (AND2X1_RVT)                            0.04      0.56 r
+  U43189/C1 (HADDX1_RVT)                           0.04      0.60 r
+  U43191/CO (FADDX1_RVT)                           0.06      0.65 r
+  U43193/CO (FADDX1_RVT)                           0.06      0.71 r
+  U43195/CO (FADDX1_RVT)                           0.06      0.77 r
+  U43197/CO (FADDX1_RVT)                           0.06      0.83 r
+  U43199/CO (FADDX1_RVT)                           0.06      0.89 r
+  U43201/CO (FADDX1_RVT)                           0.06      0.94 r
+  U43203/CO (FADDX1_RVT)                           0.06      1.01 r
+  U43208/CO (FADDX1_RVT)                           0.06      1.07 r
+  U43210/CO (FADDX1_RVT)                           0.06      1.12 r
+  U43212/CO (FADDX1_RVT)                           0.06      1.18 r
+  U43214/CO (FADDX1_RVT)                           0.06      1.24 r
+  U43216/CO (FADDX1_RVT)                           0.06      1.31 r
+  U43218/CO (FADDX1_RVT)                           0.07      1.37 r
+  U43222/CO (FADDX1_RVT)                           0.06      1.43 r
+  U43224/CO (FADDX1_RVT)                           0.06      1.50 r
+  U43227/CO (FADDX1_RVT)                           0.07      1.57 r
+  U43230/CO (FADDX1_RVT)                           0.07      1.63 r
+  U43233/CO (FADDX1_RVT)                           0.06      1.69 r
+  U43236/CO (FADDX1_RVT)                           0.06      1.75 r
+  U43238/CO (FADDX1_RVT)                           0.06      1.81 r
+  U43241/CO (FADDX1_RVT)                           0.06      1.88 r
+  U43245/CO (FADDX1_RVT)                           0.06      1.93 r
+  U43247/CO (FADDX1_RVT)                           0.06      1.99 r
+  U43249/CO (FADDX1_RVT)                           0.06      2.05 r
+  U43251/CO (FADDX1_RVT)                           0.06      2.11 r
+  U43253/CO (FADDX1_RVT)                           0.08      2.19 r
+  U43255/CO (FADDX1_RVT)                           0.06      2.26 r
+  U43257/CO (FADDX1_RVT)                           0.06      2.32 r
+  U43260/CO (FADDX1_RVT)                           0.06      2.38 r
+  U43264/CO (FADDX1_RVT)                           0.06      2.44 r
+  U43267/CO (FADDX1_RVT)                           0.06      2.50 r
+  U43270/CO (FADDX1_RVT)                           0.06      2.56 r
+  U43274/CO (FADDX1_RVT)                           0.06      2.61 r
+  U43277/CO (FADDX1_RVT)                           0.06      2.67 r
+  U43280/CO (FADDX1_RVT)                           0.06      2.73 r
+  U43286/CO (FADDX1_RVT)                           0.06      2.79 r
+  U43289/CO (FADDX1_RVT)                           0.06      2.85 r
+  U43292/CO (FADDX1_RVT)                           0.06      2.91 r
+  U43295/CO (FADDX1_RVT)                           0.06      2.96 r
+  U43298/CO (FADDX1_RVT)                           0.06      3.02 r
+  U43301/CO (FADDX1_RVT)                           0.06      3.08 r
+  U43304/CO (FADDX1_RVT)                           0.06      3.14 r
+  U43308/CO (FADDX1_RVT)                           0.06      3.19 r
+  U43311/CO (FADDX1_RVT)                           0.06      3.25 r
+  U43314/CO (FADDX1_RVT)                           0.06      3.31 r
+  U43317/CO (FADDX1_RVT)                           0.06      3.37 r
+  U43321/CO (FADDX1_RVT)                           0.06      3.43 r
+  U43324/CO (FADDX1_RVT)                           0.06      3.49 r
+  U43327/CO (FADDX1_RVT)                           0.06      3.55 r
+  U43332/CO (FADDX1_RVT)                           0.06      3.61 r
+  U43335/CO (FADDX1_RVT)                           0.06      3.66 r
+  U43338/CO (FADDX1_RVT)                           0.06      3.72 r
+  U43341/CO (FADDX1_RVT)                           0.06      3.78 r
+  U43344/CO (FADDX1_RVT)                           0.06      3.85 r
+  U43347/CO (FADDX1_RVT)                           0.06      3.91 r
+  U43351/CO (FADDX1_RVT)                           0.06      3.97 r
+  U43354/CO (FADDX1_RVT)                           0.06      4.02 r
+  U43357/CO (FADDX1_RVT)                           0.06      4.08 r
+  U43360/CO (FADDX1_RVT)                           0.06      4.14 r
+  U43363/CO (FADDX1_RVT)                           0.06      4.20 r
+  U43366/CO (FADDX1_RVT)                           0.06      4.26 r
+  U43368/CO (FADDX1_RVT)                           0.06      4.32 r
+  U43371/Y (XOR2X1_RVT)                            0.07      4.39 f
+  U43372/Y (MUX21X1_RVT)                           0.05      4.43 f
+  gen_mac_lanes[21].u_lane/u_mac/acc_reg[63]/D (DFFARX2_RVT)
+                                                   0.00      4.43 f
+  data arrival time                                          4.43
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.16     10.16
+  gen_mac_lanes[21].u_lane/u_mac/acc_reg[63]/CLK (DFFARX2_RVT)
+                                                   0.00     10.16 r
+  clock uncertainty                               -0.10     10.06
+  library setup time                              -0.02     10.04
+  data required time                                        10.04
+  ------------------------------------------------------------------------
+  data required time                                        10.04
+  data arrival time                                         -4.43
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.60
+
+
+
+  Startpoint: gen_mac_lanes[20].u_lane/u_mac/start_r2_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[20].u_lane/u_mac/acc_reg[63] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.29      0.29
+
+  gen_mac_lanes[20].u_lane/u_mac/start_r2_reg/CLK (DFFARX1_RVT)
+                                                   0.00      0.29 r
+  gen_mac_lanes[20].u_lane/u_mac/start_r2_reg/Q (DFFARX1_RVT)
+                                                   0.13      0.42 f
+  U43473/Y (NBUFFX2_RVT)                           0.06      0.48 f
+  U43474/Y (INVX4_RVT)                             0.05      0.53 r
+  U44777/Y (AND2X1_RVT)                            0.04      0.57 r
+  U45322/C1 (HADDX1_RVT)                           0.04      0.61 r
+  U45324/CO (FADDX1_RVT)                           0.05      0.67 r
+  U45326/CO (FADDX1_RVT)                           0.06      0.72 r
+  U45328/CO (FADDX1_RVT)                           0.06      0.78 r
+  U45330/CO (FADDX1_RVT)                           0.06      0.84 r
+  U45332/CO (FADDX1_RVT)                           0.06      0.90 r
+  U45334/CO (FADDX1_RVT)                           0.06      0.96 r
+  U45336/CO (FADDX1_RVT)                           0.06      1.02 r
+  U45341/CO (FADDX1_RVT)                           0.06      1.08 r
+  U45343/CO (FADDX1_RVT)                           0.07      1.14 r
+  U45345/CO (FADDX1_RVT)                           0.06      1.20 r
+  U45347/CO (FADDX1_RVT)                           0.07      1.27 r
+  U45351/CO (FADDX1_RVT)                           0.06      1.33 r
+  U45354/CO (FADDX1_RVT)                           0.06      1.39 r
+  U45356/CO (FADDX1_RVT)                           0.06      1.45 r
+  U45359/CO (FADDX1_RVT)                           0.06      1.51 r
+  U45361/CO (FADDX1_RVT)                           0.06      1.57 r
+  U45364/CO (FADDX1_RVT)                           0.06      1.63 r
+  U45366/CO (FADDX1_RVT)                           0.06      1.69 r
+  U45369/CO (FADDX1_RVT)                           0.06      1.74 r
+  U45372/CO (FADDX1_RVT)                           0.06      1.80 r
+  U45375/CO (FADDX1_RVT)                           0.06      1.86 r
+  U45379/CO (FADDX1_RVT)                           0.06      1.92 r
+  U45381/CO (FADDX1_RVT)                           0.06      1.98 r
+  U45383/CO (FADDX1_RVT)                           0.06      2.04 r
+  U45385/CO (FADDX1_RVT)                           0.06      2.10 r
+  U45387/CO (FADDX1_RVT)                           0.07      2.17 r
+  U45389/CO (FADDX1_RVT)                           0.06      2.23 r
+  U45391/CO (FADDX1_RVT)                           0.07      2.31 r
+  U45394/CO (FADDX1_RVT)                           0.08      2.38 r
+  U45398/CO (FADDX1_RVT)                           0.06      2.45 r
+  U45401/CO (FADDX1_RVT)                           0.06      2.51 r
+  U45404/CO (FADDX1_RVT)                           0.06      2.57 r
+  U45408/CO (FADDX1_RVT)                           0.06      2.63 r
+  U45411/CO (FADDX1_RVT)                           0.06      2.69 r
+  U45414/CO (FADDX1_RVT)                           0.06      2.75 r
+  U45420/CO (FADDX1_RVT)                           0.06      2.80 r
+  U45423/CO (FADDX1_RVT)                           0.06      2.86 r
+  U45426/CO (FADDX1_RVT)                           0.06      2.92 r
+  U45429/CO (FADDX1_RVT)                           0.06      2.98 r
+  U45432/CO (FADDX1_RVT)                           0.06      3.04 r
+  U45435/CO (FADDX1_RVT)                           0.06      3.09 r
+  U45438/CO (FADDX1_RVT)                           0.06      3.15 r
+  U45442/CO (FADDX1_RVT)                           0.06      3.21 r
+  U45445/CO (FADDX1_RVT)                           0.06      3.27 r
+  U45448/CO (FADDX1_RVT)                           0.06      3.32 r
+  U45451/CO (FADDX1_RVT)                           0.06      3.38 r
+  U45454/CO (FADDX1_RVT)                           0.06      3.44 r
+  U45457/CO (FADDX1_RVT)                           0.06      3.50 r
+  U45461/CO (FADDX1_RVT)                           0.06      3.56 r
+  U45466/CO (FADDX1_RVT)                           0.06      3.61 r
+  U45469/CO (FADDX1_RVT)                           0.06      3.67 r
+  U45472/CO (FADDX1_RVT)                           0.06      3.73 r
+  U45475/CO (FADDX1_RVT)                           0.06      3.79 r
+  U45478/CO (FADDX1_RVT)                           0.06      3.84 r
+  U45481/CO (FADDX1_RVT)                           0.06      3.90 r
+  U45485/CO (FADDX1_RVT)                           0.06      3.96 r
+  U45488/CO (FADDX1_RVT)                           0.06      4.02 r
+  U45491/CO (FADDX1_RVT)                           0.07      4.09 r
+  U45494/CO (FADDX1_RVT)                           0.06      4.15 r
+  U45497/CO (FADDX1_RVT)                           0.06      4.21 r
+  U45500/CO (FADDX1_RVT)                           0.06      4.27 r
+  U45502/CO (FADDX1_RVT)                           0.06      4.33 r
+  U45505/Y (XOR2X1_RVT)                            0.07      4.40 f
+  U45506/Y (MUX21X1_RVT)                           0.05      4.45 f
+  gen_mac_lanes[20].u_lane/u_mac/acc_reg[63]/D (DFFARX2_RVT)
+                                                   0.00      4.45 f
+  data arrival time                                          4.45
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.21     10.21
+  gen_mac_lanes[20].u_lane/u_mac/acc_reg[63]/CLK (DFFARX2_RVT)
+                                                   0.00     10.21 r
+  clock uncertainty                               -0.10     10.11
+  library setup time                              -0.02     10.09
+  data required time                                        10.09
+  ------------------------------------------------------------------------
+  data required time                                        10.09
+  data arrival time                                         -4.45
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.64
+
+
+
+  Startpoint: gen_mac_lanes[4].u_lane/u_mac/start_r2_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[4].u_lane/u_mac/acc_reg[63] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.29      0.29
+
+  gen_mac_lanes[4].u_lane/u_mac/start_r2_reg/CLK (DFFARX2_RVT)
+                                                   0.00      0.29 r
+  gen_mac_lanes[4].u_lane/u_mac/start_r2_reg/Q (DFFARX2_RVT)
+                                                   0.13      0.42 f
+  U45654/Y (NBUFFX4_RVT)                           0.06      0.48 f
+  U45655/Y (INVX4_RVT)                             0.04      0.52 r
+  U78376/Y (AND2X1_RVT)                            0.04      0.56 r
+  U78921/C1 (HADDX1_RVT)                           0.04      0.60 r
+  U78923/CO (FADDX1_RVT)                           0.05      0.65 r
+  U78925/CO (FADDX1_RVT)                           0.06      0.71 r
+  U78927/CO (FADDX1_RVT)                           0.06      0.77 r
+  U78929/CO (FADDX1_RVT)                           0.06      0.83 r
+  U78931/CO (FADDX1_RVT)                           0.06      0.88 r
+  U78933/CO (FADDX1_RVT)                           0.06      0.94 r
+  U78935/CO (FADDX1_RVT)                           0.06      1.00 r
+  U78940/CO (FADDX1_RVT)                           0.06      1.06 r
+  U78942/CO (FADDX1_RVT)                           0.06      1.11 r
+  U78944/CO (FADDX1_RVT)                           0.07      1.19 r
+  U78946/CO (FADDX1_RVT)                           0.07      1.25 r
+  U78950/CO (FADDX1_RVT)                           0.06      1.31 r
+  U78953/CO (FADDX1_RVT)                           0.06      1.37 r
+  U78956/CO (FADDX1_RVT)                           0.06      1.43 r
+  U78959/CO (FADDX1_RVT)                           0.06      1.48 r
+  U78962/CO (FADDX1_RVT)                           0.06      1.54 r
+  U78965/CO (FADDX1_RVT)                           0.06      1.60 r
+  U78968/CO (FADDX1_RVT)                           0.06      1.66 r
+  U78971/CO (FADDX1_RVT)                           0.06      1.72 r
+  U78974/CO (FADDX1_RVT)                           0.06      1.78 r
+  U78977/CO (FADDX1_RVT)                           0.06      1.84 r
+  U78983/CO (FADDX1_RVT)                           0.06      1.90 r
+  U78986/CO (FADDX1_RVT)                           0.06      1.95 r
+  U78989/CO (FADDX1_RVT)                           0.06      2.01 r
+  U78992/CO (FADDX1_RVT)                           0.06      2.08 r
+  U78995/CO (FADDX1_RVT)                           0.06      2.13 r
+  U78997/CO (FADDX1_RVT)                           0.06      2.19 r
+  U78999/CO (FADDX1_RVT)                           0.06      2.25 r
+  U79003/CO (FADDX2_RVT)                           0.09      2.34 r
+  U79007/CO (FADDX1_RVT)                           0.07      2.41 r
+  U79010/CO (FADDX1_RVT)                           0.06      2.47 r
+  U79013/CO (FADDX1_RVT)                           0.06      2.53 r
+  U79017/CO (FADDX1_RVT)                           0.06      2.59 r
+  U79020/CO (FADDX1_RVT)                           0.06      2.65 r
+  U79023/CO (FADDX1_RVT)                           0.06      2.71 r
+  U79029/CO (FADDX1_RVT)                           0.06      2.77 r
+  U79032/CO (FADDX1_RVT)                           0.06      2.83 r
+  U79035/CO (FADDX1_RVT)                           0.06      2.89 r
+  U79038/CO (FADDX1_RVT)                           0.06      2.95 r
+  U79041/CO (FADDX1_RVT)                           0.06      3.01 r
+  U79044/CO (FADDX1_RVT)                           0.06      3.07 r
+  U79047/CO (FADDX1_RVT)                           0.06      3.13 r
+  U79051/CO (FADDX1_RVT)                           0.06      3.19 r
+  U79054/CO (FADDX1_RVT)                           0.06      3.25 r
+  U79058/CO (FADDX1_RVT)                           0.06      3.30 r
+  U79061/CO (FADDX1_RVT)                           0.06      3.36 r
+  U79064/CO (FADDX1_RVT)                           0.06      3.42 r
+  U79068/CO (FADDX1_RVT)                           0.06      3.48 r
+  U79071/CO (FADDX1_RVT)                           0.06      3.54 r
+  U79076/CO (FADDX1_RVT)                           0.06      3.59 r
+  U79079/CO (FADDX1_RVT)                           0.06      3.65 r
+  U79082/CO (FADDX1_RVT)                           0.06      3.71 r
+  U79085/CO (FADDX1_RVT)                           0.06      3.76 r
+  U79088/CO (FADDX1_RVT)                           0.06      3.82 r
+  U79091/CO (FADDX1_RVT)                           0.06      3.88 r
+  U79095/CO (FADDX1_RVT)                           0.06      3.94 r
+  U79098/CO (FADDX1_RVT)                           0.06      4.00 r
+  U79101/CO (FADDX1_RVT)                           0.08      4.08 r
+  U79104/CO (FADDX1_RVT)                           0.06      4.14 r
+  U79107/CO (FADDX1_RVT)                           0.06      4.21 r
+  U79111/CO (FADDX1_RVT)                           0.06      4.27 r
+  U79113/CO (FADDX1_RVT)                           0.07      4.34 r
+  U79116/Y (XOR2X1_RVT)                            0.07      4.40 f
+  U79117/Y (MUX21X1_RVT)                           0.05      4.45 f
+  gen_mac_lanes[4].u_lane/u_mac/acc_reg[63]/D (DFFARX2_RVT)
+                                                   0.00      4.45 f
+  data arrival time                                          4.45
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.21     10.21
+  gen_mac_lanes[4].u_lane/u_mac/acc_reg[63]/CLK (DFFARX2_RVT)
+                                                   0.00     10.21 r
+  clock uncertainty                               -0.10     10.11
+  library setup time                              -0.02     10.09
+  data required time                                        10.09
+  ------------------------------------------------------------------------
+  data required time                                        10.09
+  data arrival time                                         -4.45
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.64
+
+
+
+  Startpoint: gen_mac_lanes[15].u_lane/u_mac/start_r2_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[15].u_lane/u_mac/acc_reg[63] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.28      0.28
+
+  gen_mac_lanes[15].u_lane/u_mac/start_r2_reg/CLK (DFFARX1_RVT)
+                                                   0.00      0.28 r
+  gen_mac_lanes[15].u_lane/u_mac/start_r2_reg/Q (DFFARX1_RVT)
+                                                   0.13      0.41 f
+  U43815/Y (NBUFFX4_RVT)                           0.06      0.48 f
+  U43816/Y (IBUFFX4_RVT)                           0.07      0.55 r
+  U55164/Y (AND2X1_RVT)                            0.04      0.59 r
+  U55709/C1 (HADDX1_RVT)                           0.04      0.63 r
+  U55711/CO (FADDX1_RVT)                           0.06      0.68 r
+  U55713/CO (FADDX1_RVT)                           0.06      0.75 r
+  U55715/CO (FADDX1_RVT)                           0.06      0.81 r
+  U55717/CO (FADDX1_RVT)                           0.06      0.87 r
+  U55719/CO (FADDX1_RVT)                           0.06      0.93 r
+  U55721/CO (FADDX1_RVT)                           0.06      0.99 r
+  U55723/CO (FADDX1_RVT)                           0.06      1.04 r
+  U55728/CO (FADDX1_RVT)                           0.06      1.10 r
+  U55730/CO (FADDX1_RVT)                           0.08      1.18 r
+  U55732/CO (FADDX1_RVT)                           0.07      1.25 r
+  U55734/CO (FADDX1_RVT)                           0.08      1.33 r
+  U55738/CO (FADDX1_RVT)                           0.06      1.39 r
+  U55740/CO (FADDX1_RVT)                           0.06      1.45 r
+  U55743/CO (FADDX1_RVT)                           0.06      1.51 r
+  U55745/CO (FADDX1_RVT)                           0.06      1.57 r
+  U55748/CO (FADDX1_RVT)                           0.06      1.63 r
+  U55751/CO (FADDX1_RVT)                           0.06      1.69 r
+  U55754/CO (FADDX1_RVT)                           0.06      1.74 r
+  U55757/CO (FADDX1_RVT)                           0.06      1.80 r
+  U55760/CO (FADDX1_RVT)                           0.06      1.86 r
+  U55763/CO (FADDX1_RVT)                           0.06      1.92 r
+  U55768/CO (FADDX1_RVT)                           0.06      1.98 r
+  U55771/CO (FADDX1_RVT)                           0.06      2.04 r
+  U55774/CO (FADDX1_RVT)                           0.06      2.10 r
+  U55777/CO (FADDX1_RVT)                           0.06      2.15 r
+  U55780/CO (FADDX1_RVT)                           0.08      2.23 r
+  U55782/CO (FADDX1_RVT)                           0.06      2.29 r
+  U55784/CO (FADDX1_RVT)                           0.06      2.36 r
+  U55787/CO (FADDX1_RVT)                           0.06      2.42 r
+  U55791/CO (FADDX1_RVT)                           0.06      2.48 r
+  U55794/CO (FADDX1_RVT)                           0.06      2.54 r
+  U55797/CO (FADDX1_RVT)                           0.06      2.60 r
+  U55801/CO (FADDX1_RVT)                           0.06      2.66 r
+  U55804/CO (FADDX1_RVT)                           0.06      2.72 r
+  U55807/CO (FADDX1_RVT)                           0.06      2.78 r
+  U55813/CO (FADDX1_RVT)                           0.06      2.84 r
+  U55816/CO (FADDX1_RVT)                           0.06      2.90 r
+  U55819/CO (FADDX1_RVT)                           0.06      2.96 r
+  U55822/CO (FADDX1_RVT)                           0.06      3.02 r
+  U55825/CO (FADDX1_RVT)                           0.06      3.07 r
+  U55828/CO (FADDX1_RVT)                           0.06      3.13 r
+  U55831/CO (FADDX1_RVT)                           0.06      3.19 r
+  U55836/CO (FADDX1_RVT)                           0.06      3.25 r
+  U55839/CO (FADDX1_RVT)                           0.06      3.30 r
+  U55842/CO (FADDX1_RVT)                           0.06      3.36 r
+  U55845/CO (FADDX1_RVT)                           0.06      3.42 r
+  U55848/CO (FADDX1_RVT)                           0.06      3.48 r
+  U55852/CO (FADDX1_RVT)                           0.06      3.54 r
+  U55855/CO (FADDX1_RVT)                           0.06      3.60 r
+  U55860/CO (FADDX1_RVT)                           0.06      3.66 r
+  U55863/CO (FADDX1_RVT)                           0.06      3.72 r
+  U55866/CO (FADDX1_RVT)                           0.06      3.77 r
+  U55869/CO (FADDX1_RVT)                           0.06      3.83 r
+  U55872/CO (FADDX1_RVT)                           0.06      3.89 r
+  U55875/CO (FADDX1_RVT)                           0.06      3.95 r
+  U55879/CO (FADDX1_RVT)                           0.06      4.01 r
+  U55882/CO (FADDX1_RVT)                           0.06      4.07 r
+  U55885/CO (FADDX1_RVT)                           0.06      4.13 r
+  U55889/CO (FADDX1_RVT)                           0.06      4.19 r
+  U55892/CO (FADDX1_RVT)                           0.06      4.24 r
+  U55895/CO (FADDX1_RVT)                           0.06      4.30 r
+  U55897/CO (FADDX1_RVT)                           0.06      4.36 r
+  U55900/Y (XOR2X1_RVT)                            0.07      4.43 f
+  U55901/Y (MUX21X1_RVT)                           0.05      4.48 f
+  gen_mac_lanes[15].u_lane/u_mac/acc_reg[63]/D (DFFARX2_RVT)
+                                                   0.00      4.48 f
+  data arrival time                                          4.48
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.24     10.24
+  gen_mac_lanes[15].u_lane/u_mac/acc_reg[63]/CLK (DFFARX2_RVT)
+                                                   0.00     10.24 r
+  clock uncertainty                               -0.10     10.14
+  library setup time                              -0.02     10.11
+  data required time                                        10.11
+  ------------------------------------------------------------------------
+  data required time                                        10.11
+  data arrival time                                         -4.48
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.64
+
+
+
+  Startpoint: gen_mac_lanes[2].u_lane/u_mac/start_r2_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[2].u_lane/u_mac/acc_reg[63] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.29      0.29
+
+  gen_mac_lanes[2].u_lane/u_mac/start_r2_reg/CLK (DFFARX1_RVT)
+                                                   0.00      0.29 r
+  gen_mac_lanes[2].u_lane/u_mac/start_r2_reg/Q (DFFARX1_RVT)
+                                                   0.13      0.42 f
+  U46064/Y (NBUFFX4_RVT)                           0.07      0.49 f
+  U46076/Y (INVX4_RVT)                             0.04      0.53 r
+  U82899/Y (AND2X1_RVT)                            0.04      0.57 r
+  U83444/C1 (HADDX1_RVT)                           0.04      0.61 r
+  U83446/CO (FADDX1_RVT)                           0.06      0.67 r
+  U83448/CO (FADDX1_RVT)                           0.06      0.73 r
+  U83450/CO (FADDX1_RVT)                           0.06      0.79 r
+  U83452/CO (FADDX1_RVT)                           0.06      0.85 r
+  U83454/CO (FADDX1_RVT)                           0.06      0.91 r
+  U83456/CO (FADDX1_RVT)                           0.06      0.97 r
+  U83458/CO (FADDX1_RVT)                           0.06      1.03 r
+  U83463/CO (FADDX1_RVT)                           0.06      1.09 r
+  U83465/CO (FADDX1_RVT)                           0.06      1.14 r
+  U83467/CO (FADDX1_RVT)                           0.06      1.20 r
+  U83469/CO (FADDX2_RVT)                           0.08      1.29 r
+  U83473/CO (FADDX1_RVT)                           0.07      1.35 r
+  U83476/CO (FADDX1_RVT)                           0.06      1.41 r
+  U83479/CO (FADDX1_RVT)                           0.06      1.47 r
+  U83482/CO (FADDX1_RVT)                           0.06      1.53 r
+  U83486/CO (FADDX1_RVT)                           0.06      1.59 r
+  U83489/CO (FADDX1_RVT)                           0.06      1.65 r
+  U83492/CO (FADDX1_RVT)                           0.06      1.71 r
+  U83495/CO (FADDX1_RVT)                           0.06      1.77 r
+  U83498/CO (FADDX1_RVT)                           0.06      1.83 r
+  U83501/CO (FADDX1_RVT)                           0.06      1.89 r
+  U83506/CO (FADDX1_RVT)                           0.06      1.95 r
+  U83509/CO (FADDX1_RVT)                           0.06      2.01 r
+  U83512/CO (FADDX1_RVT)                           0.06      2.07 r
+  U83515/CO (FADDX1_RVT)                           0.06      2.13 r
+  U83518/CO (FADDX1_RVT)                           0.07      2.20 r
+  U83520/CO (FADDX1_RVT)                           0.06      2.26 r
+  U83522/CO (FADDX1_RVT)                           0.06      2.32 r
+  U83526/CO (FADDX1_RVT)                           0.08      2.40 r
+  U83530/CO (FADDX1_RVT)                           0.06      2.46 r
+  U83533/CO (FADDX1_RVT)                           0.06      2.52 r
+  U83536/CO (FADDX1_RVT)                           0.06      2.58 r
+  U83540/CO (FADDX1_RVT)                           0.06      2.64 r
+  U83543/CO (FADDX1_RVT)                           0.06      2.70 r
+  U83546/CO (FADDX1_RVT)                           0.06      2.76 r
+  U83552/CO (FADDX1_RVT)                           0.06      2.82 r
+  U83555/CO (FADDX1_RVT)                           0.06      2.88 r
+  U83558/CO (FADDX1_RVT)                           0.06      2.93 r
+  U83561/CO (FADDX1_RVT)                           0.06      2.99 r
+  U83564/CO (FADDX1_RVT)                           0.06      3.05 r
+  U83567/CO (FADDX1_RVT)                           0.06      3.11 r
+  U83570/CO (FADDX1_RVT)                           0.06      3.17 r
+  U83574/CO (FADDX1_RVT)                           0.06      3.22 r
+  U83577/CO (FADDX1_RVT)                           0.06      3.28 r
+  U83581/CO (FADDX1_RVT)                           0.06      3.34 r
+  U83584/CO (FADDX1_RVT)                           0.06      3.40 r
+  U83587/CO (FADDX1_RVT)                           0.06      3.46 r
+  U83591/CO (FADDX1_RVT)                           0.06      3.51 r
+  U83594/CO (FADDX1_RVT)                           0.06      3.57 r
+  U83599/CO (FADDX1_RVT)                           0.06      3.63 r
+  U83602/CO (FADDX1_RVT)                           0.06      3.69 r
+  U83605/CO (FADDX1_RVT)                           0.06      3.75 r
+  U83608/CO (FADDX1_RVT)                           0.06      3.81 r
+  U83611/CO (FADDX1_RVT)                           0.06      3.87 r
+  U83614/CO (FADDX1_RVT)                           0.06      3.93 r
+  U83618/CO (FADDX1_RVT)                           0.06      3.99 r
+  U83621/CO (FADDX1_RVT)                           0.06      4.05 r
+  U83624/CO (FADDX1_RVT)                           0.06      4.11 r
+  U83627/CO (FADDX1_RVT)                           0.06      4.17 r
+  U83630/CO (FADDX1_RVT)                           0.06      4.23 r
+  U83634/CO (FADDX1_RVT)                           0.06      4.29 r
+  U83636/CO (FADDX1_RVT)                           0.06      4.35 r
+  U83639/Y (XOR2X1_RVT)                            0.07      4.41 f
+  U83640/Y (MUX21X1_RVT)                           0.05      4.46 f
+  gen_mac_lanes[2].u_lane/u_mac/acc_reg[63]/D (DFFARX2_RVT)
+                                                   0.00      4.46 f
+  data arrival time                                          4.46
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.24     10.24
+  gen_mac_lanes[2].u_lane/u_mac/acc_reg[63]/CLK (DFFARX2_RVT)
+                                                   0.00     10.24 r
+  clock uncertainty                               -0.10     10.14
+  library setup time                              -0.02     10.11
+  data required time                                        10.11
+  ------------------------------------------------------------------------
+  data required time                                        10.11
+  data arrival time                                         -4.46
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.65
+
+
+
+  Startpoint: gen_mac_lanes[13].u_lane/u_mac/start_r2_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[13].u_lane/u_mac/acc_reg[63] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.29      0.29
+
+  gen_mac_lanes[13].u_lane/u_mac/start_r2_reg/CLK (DFFARX1_RVT)
+                                                   0.00      0.29 r
+  gen_mac_lanes[13].u_lane/u_mac/start_r2_reg/Q (DFFARX1_RVT)
+                                                   0.11      0.41 f
+  U44416/Y (NBUFFX4_RVT)                           0.06      0.46 f
+  U44429/Y (INVX4_RVT)                             0.04      0.51 r
+  U59325/Y (AND2X1_RVT)                            0.04      0.55 r
+  U59870/C1 (HADDX1_RVT)                           0.04      0.59 r
+  U59872/CO (FADDX1_RVT)                           0.06      0.65 r
+  U59874/CO (FADDX1_RVT)                           0.06      0.71 r
+  U59876/CO (FADDX1_RVT)                           0.06      0.77 r
+  U59878/CO (FADDX1_RVT)                           0.06      0.83 r
+  U59880/CO (FADDX1_RVT)                           0.06      0.88 r
+  U59882/CO (FADDX1_RVT)                           0.06      0.94 r
+  U59884/CO (FADDX1_RVT)                           0.06      1.00 r
+  U59889/CO (FADDX1_RVT)                           0.06      1.06 r
+  U59891/CO (FADDX1_RVT)                           0.06      1.12 r
+  U59893/CO (FADDX1_RVT)                           0.08      1.20 r
+  U59895/CO (FADDX1_RVT)                           0.08      1.27 r
+  U59899/CO (FADDX1_RVT)                           0.06      1.34 r
+  U59901/CO (FADDX1_RVT)                           0.06      1.39 r
+  U59904/CO (FADDX1_RVT)                           0.06      1.45 r
+  U59907/CO (FADDX1_RVT)                           0.06      1.51 r
+  U59910/CO (FADDX1_RVT)                           0.06      1.57 r
+  U59913/CO (FADDX1_RVT)                           0.06      1.62 r
+  U59916/CO (FADDX1_RVT)                           0.06      1.68 r
+  U59919/CO (FADDX1_RVT)                           0.06      1.74 r
+  U59922/CO (FADDX1_RVT)                           0.06      1.80 r
+  U59925/CO (FADDX1_RVT)                           0.06      1.86 r
+  U59929/CO (FADDX1_RVT)                           0.06      1.92 r
+  U59932/CO (FADDX1_RVT)                           0.06      1.98 r
+  U59935/CO (FADDX1_RVT)                           0.06      2.03 r
+  U59938/CO (FADDX1_RVT)                           0.06      2.09 r
+  U59941/CO (FADDX1_RVT)                           0.07      2.16 r
+  U59943/CO (FADDX1_RVT)                           0.08      2.24 r
+  U59945/CO (FADDX1_RVT)                           0.06      2.30 r
+  U59948/CO (FADDX1_RVT)                           0.07      2.37 r
+  U59952/CO (FADDX1_RVT)                           0.07      2.44 r
+  U59955/CO (FADDX1_RVT)                           0.06      2.50 r
+  U59958/CO (FADDX1_RVT)                           0.06      2.56 r
+  U59962/CO (FADDX1_RVT)                           0.06      2.62 r
+  U59965/CO (FADDX1_RVT)                           0.06      2.68 r
+  U59968/CO (FADDX1_RVT)                           0.06      2.74 r
+  U59974/CO (FADDX1_RVT)                           0.06      2.81 r
+  U59977/CO (FADDX1_RVT)                           0.06      2.87 r
+  U59980/CO (FADDX1_RVT)                           0.06      2.92 r
+  U59983/CO (FADDX1_RVT)                           0.06      2.98 r
+  U59986/CO (FADDX1_RVT)                           0.06      3.04 r
+  U59989/CO (FADDX1_RVT)                           0.06      3.10 r
+  U59992/CO (FADDX1_RVT)                           0.06      3.16 r
+  U59997/CO (FADDX1_RVT)                           0.06      3.22 r
+  U60000/CO (FADDX1_RVT)                           0.06      3.28 r
+  U60003/CO (FADDX1_RVT)                           0.06      3.34 r
+  U60006/CO (FADDX1_RVT)                           0.06      3.39 r
+  U60009/CO (FADDX1_RVT)                           0.06      3.46 r
+  U60013/CO (FADDX1_RVT)                           0.06      3.51 r
+  U60016/CO (FADDX1_RVT)                           0.06      3.57 r
+  U60021/CO (FADDX1_RVT)                           0.06      3.63 r
+  U60024/CO (FADDX1_RVT)                           0.06      3.68 r
+  U60027/CO (FADDX1_RVT)                           0.06      3.74 r
+  U60030/CO (FADDX1_RVT)                           0.06      3.80 r
+  U60033/CO (FADDX1_RVT)                           0.06      3.85 r
+  U60036/CO (FADDX1_RVT)                           0.06      3.91 r
+  U60040/CO (FADDX1_RVT)                           0.06      3.97 r
+  U60043/CO (FADDX1_RVT)                           0.06      4.03 r
+  U60046/CO (FADDX1_RVT)                           0.07      4.10 r
+  U60050/CO (FADDX1_RVT)                           0.06      4.16 r
+  U60053/CO (FADDX1_RVT)                           0.06      4.22 r
+  U60056/CO (FADDX1_RVT)                           0.06      4.28 r
+  U60058/CO (FADDX1_RVT)                           0.06      4.34 r
+  U60061/Y (XOR2X1_RVT)                            0.07      4.41 f
+  U60062/Y (MUX21X1_RVT)                           0.05      4.46 f
+  gen_mac_lanes[13].u_lane/u_mac/acc_reg[63]/D (DFFARX2_RVT)
+                                                   0.00      4.46 f
+  data arrival time                                          4.46
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.24     10.24
+  gen_mac_lanes[13].u_lane/u_mac/acc_reg[63]/CLK (DFFARX2_RVT)
+                                                   0.00     10.24 r
+  clock uncertainty                               -0.10     10.14
+  library setup time                              -0.02     10.11
+  data required time                                        10.11
+  ------------------------------------------------------------------------
+  data required time                                        10.11
+  data arrival time                                         -4.46
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.65
+
+
+
+  Startpoint: gen_mac_lanes[14].u_lane/u_mac/start_r2_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[14].u_lane/u_mac/acc_reg[63] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.29      0.29
+
+  gen_mac_lanes[14].u_lane/u_mac/start_r2_reg/CLK (DFFARX1_RVT)
+                                                   0.00      0.29 r
+  gen_mac_lanes[14].u_lane/u_mac/start_r2_reg/Q (DFFARX1_RVT)
+                                                   0.13      0.42 f
+  U44001/Y (NBUFFX4_RVT)                           0.06      0.48 f
+  U44002/Y (IBUFFX4_RVT)                           0.07      0.55 r
+  U57351/Y (AND2X1_RVT)                            0.04      0.59 r
+  U57896/C1 (HADDX1_RVT)                           0.04      0.63 r
+  U57898/CO (FADDX1_RVT)                           0.06      0.68 r
+  U57900/CO (FADDX1_RVT)                           0.06      0.75 r
+  U57902/CO (FADDX1_RVT)                           0.06      0.81 r
+  U57904/CO (FADDX1_RVT)                           0.06      0.87 r
+  U57906/CO (FADDX1_RVT)                           0.06      0.92 r
+  U57908/CO (FADDX1_RVT)                           0.06      0.98 r
+  U57910/CO (FADDX1_RVT)                           0.06      1.04 r
+  U57915/CO (FADDX1_RVT)                           0.06      1.10 r
+  U57917/CO (FADDX1_RVT)                           0.06      1.16 r
+  U57919/CO (FADDX1_RVT)                           0.06      1.22 r
+  U57921/CO (FADDX1_RVT)                           0.08      1.30 r
+  U57925/CO (FADDX1_RVT)                           0.06      1.36 r
+  U57927/CO (FADDX1_RVT)                           0.06      1.42 r
+  U57930/CO (FADDX1_RVT)                           0.06      1.48 r
+  U57933/CO (FADDX1_RVT)                           0.06      1.54 r
+  U57936/CO (FADDX1_RVT)                           0.06      1.60 r
+  U57938/CO (FADDX1_RVT)                           0.06      1.66 r
+  U57941/CO (FADDX1_RVT)                           0.06      1.72 r
+  U57944/CO (FADDX1_RVT)                           0.06      1.78 r
+  U57947/CO (FADDX1_RVT)                           0.06      1.84 r
+  U57950/CO (FADDX1_RVT)                           0.06      1.90 r
+  U57955/CO (FADDX1_RVT)                           0.06      1.96 r
+  U57957/CO (FADDX1_RVT)                           0.06      2.02 r
+  U57959/CO (FADDX1_RVT)                           0.06      2.07 r
+  U57961/CO (FADDX1_RVT)                           0.06      2.13 r
+  U57963/CO (FADDX1_RVT)                           0.07      2.20 r
+  U57965/CO (FADDX1_RVT)                           0.06      2.26 r
+  U57967/CO (FADDX1_RVT)                           0.06      2.32 r
+  U57970/CO (FADDX1_RVT)                           0.06      2.38 r
+  U57974/CO (FADDX1_RVT)                           0.06      2.44 r
+  U57977/CO (FADDX1_RVT)                           0.06      2.50 r
+  U57980/CO (FADDX1_RVT)                           0.06      2.56 r
+  U57983/CO (FADDX1_RVT)                           0.06      2.62 r
+  U57986/CO (FADDX1_RVT)                           0.06      2.68 r
+  U57990/CO (FADDX1_RVT)                           0.06      2.74 r
+  U57996/CO (FADDX1_RVT)                           0.06      2.80 r
+  U57999/CO (FADDX1_RVT)                           0.06      2.86 r
+  U58002/CO (FADDX1_RVT)                           0.06      2.91 r
+  U58005/CO (FADDX1_RVT)                           0.06      2.97 r
+  U58008/CO (FADDX1_RVT)                           0.06      3.03 r
+  U58011/CO (FADDX1_RVT)                           0.06      3.09 r
+  U58014/CO (FADDX1_RVT)                           0.06      3.15 r
+  U58018/CO (FADDX1_RVT)                           0.06      3.21 r
+  U58021/CO (FADDX1_RVT)                           0.06      3.27 r
+  U58024/CO (FADDX1_RVT)                           0.06      3.33 r
+  U58027/CO (FADDX1_RVT)                           0.06      3.38 r
+  U58030/CO (FADDX1_RVT)                           0.06      3.44 r
+  U58033/CO (FADDX1_RVT)                           0.06      3.50 r
+  U58036/CO (FADDX1_RVT)                           0.06      3.56 r
+  U58041/CO (FADDX1_RVT)                           0.06      3.62 r
+  U58045/CO (FADDX1_RVT)                           0.06      3.68 r
+  U58048/CO (FADDX1_RVT)                           0.06      3.74 r
+  U58051/CO (FADDX1_RVT)                           0.06      3.80 r
+  U58054/CO (FADDX1_RVT)                           0.06      3.86 r
+  U58057/CO (FADDX1_RVT)                           0.06      3.92 r
+  U58061/CO (FADDX1_RVT)                           0.06      3.98 r
+  U58064/CO (FADDX1_RVT)                           0.06      4.04 r
+  U58067/CO (FADDX1_RVT)                           0.06      4.10 r
+  U58070/CO (FADDX1_RVT)                           0.06      4.16 r
+  U58073/CO (FADDX1_RVT)                           0.06      4.22 r
+  U58076/CO (FADDX1_RVT)                           0.06      4.28 r
+  U58078/CO (FADDX1_RVT)                           0.06      4.34 r
+  U58081/Y (XOR2X1_RVT)                            0.06      4.40 f
+  U58082/Y (MUX21X1_RVT)                           0.05      4.45 f
+  gen_mac_lanes[14].u_lane/u_mac/acc_reg[63]/D (DFFARX2_RVT)
+                                                   0.00      4.45 f
+  data arrival time                                          4.45
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.23     10.23
+  gen_mac_lanes[14].u_lane/u_mac/acc_reg[63]/CLK (DFFARX2_RVT)
+                                                   0.00     10.23 r
+  clock uncertainty                               -0.10     10.13
+  library setup time                              -0.02     10.10
+  data required time                                        10.10
+  ------------------------------------------------------------------------
+  data required time                                        10.10
+  data arrival time                                         -4.45
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.66
+
+
+
+  Startpoint: gen_mac_lanes[9].u_lane/u_mac/start_r2_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[9].u_lane/u_mac/acc_reg[62] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.29      0.29
+
+  gen_mac_lanes[9].u_lane/u_mac/start_r2_reg/CLK (DFFARX1_RVT)
+                                                   0.00      0.29 r
+  gen_mac_lanes[9].u_lane/u_mac/start_r2_reg/Q (DFFARX1_RVT)
+                                                   0.12      0.41 f
+  U45415/Y (NBUFFX4_RVT)                           0.06      0.46 f
+  U45416/Y (INVX4_RVT)                             0.04      0.51 r
+  U67790/Y (AND2X1_RVT)                            0.04      0.55 r
+  U68335/C1 (HADDX1_RVT)                           0.04      0.59 r
+  U68337/CO (FADDX1_RVT)                           0.06      0.65 r
+  U68339/CO (FADDX1_RVT)                           0.06      0.71 r
+  U68341/CO (FADDX1_RVT)                           0.06      0.77 r
+  U68343/CO (FADDX1_RVT)                           0.06      0.83 r
+  U68345/CO (FADDX1_RVT)                           0.06      0.89 r
+  U68347/CO (FADDX1_RVT)                           0.06      0.95 r
+  U68349/CO (FADDX1_RVT)                           0.06      1.01 r
+  U68354/CO (FADDX1_RVT)                           0.06      1.07 r
+  U68356/CO (FADDX1_RVT)                           0.07      1.14 r
+  U68358/CO (FADDX1_RVT)                           0.06      1.20 r
+  U68360/CO (FADDX2_RVT)                           0.08      1.28 r
+  U68364/CO (FADDX1_RVT)                           0.07      1.34 r
+  U68367/CO (FADDX1_RVT)                           0.06      1.40 r
+  U68370/CO (FADDX1_RVT)                           0.06      1.46 r
+  U68373/CO (FADDX1_RVT)                           0.06      1.51 r
+  U68376/CO (FADDX1_RVT)                           0.06      1.57 r
+  U68379/CO (FADDX1_RVT)                           0.06      1.63 r
+  U68382/CO (FADDX1_RVT)                           0.06      1.69 r
+  U68385/CO (FADDX1_RVT)                           0.06      1.75 r
+  U68388/CO (FADDX1_RVT)                           0.06      1.80 r
+  U68391/CO (FADDX1_RVT)                           0.06      1.86 r
+  U68396/CO (FADDX1_RVT)                           0.06      1.92 r
+  U68398/CO (FADDX1_RVT)                           0.06      1.98 r
+  U68401/CO (FADDX1_RVT)                           0.06      2.04 r
+  U68404/CO (FADDX1_RVT)                           0.06      2.10 r
+  U68407/CO (FADDX1_RVT)                           0.09      2.18 r
+  U68409/CO (FADDX1_RVT)                           0.06      2.25 r
+  U68411/CO (FADDX1_RVT)                           0.06      2.30 r
+  U68414/CO (FADDX1_RVT)                           0.06      2.37 r
+  U68418/CO (FADDX1_RVT)                           0.06      2.43 r
+  U68421/CO (FADDX1_RVT)                           0.06      2.49 r
+  U68424/CO (FADDX1_RVT)                           0.06      2.55 r
+  U68428/CO (FADDX1_RVT)                           0.06      2.61 r
+  U68431/CO (FADDX1_RVT)                           0.06      2.67 r
+  U68434/CO (FADDX1_RVT)                           0.06      2.72 r
+  U68440/CO (FADDX1_RVT)                           0.06      2.78 r
+  U68443/CO (FADDX1_RVT)                           0.06      2.84 r
+  U68446/CO (FADDX1_RVT)                           0.06      2.90 r
+  U68449/CO (FADDX1_RVT)                           0.06      2.96 r
+  U68452/CO (FADDX1_RVT)                           0.06      3.02 r
+  U68455/CO (FADDX1_RVT)                           0.06      3.08 r
+  U68458/CO (FADDX1_RVT)                           0.06      3.14 r
+  U68462/CO (FADDX1_RVT)                           0.06      3.19 r
+  U68466/CO (FADDX1_RVT)                           0.06      3.25 r
+  U68469/CO (FADDX1_RVT)                           0.06      3.31 r
+  U68472/CO (FADDX1_RVT)                           0.06      3.37 r
+  U68475/CO (FADDX1_RVT)                           0.06      3.43 r
+  U68479/CO (FADDX1_RVT)                           0.06      3.48 r
+  U68482/CO (FADDX1_RVT)                           0.06      3.54 r
+  U68487/CO (FADDX1_RVT)                           0.06      3.60 r
+  U68490/CO (FADDX1_RVT)                           0.06      3.66 r
+  U68493/CO (FADDX1_RVT)                           0.06      3.72 r
+  U68496/CO (FADDX1_RVT)                           0.06      3.78 r
+  U68499/CO (FADDX1_RVT)                           0.06      3.84 r
+  U68502/CO (FADDX1_RVT)                           0.06      3.90 r
+  U68506/CO (FADDX1_RVT)                           0.06      3.96 r
+  U68509/CO (FADDX1_RVT)                           0.06      4.02 r
+  U68512/CO (FADDX1_RVT)                           0.07      4.09 r
+  U68515/CO (FADDX1_RVT)                           0.06      4.15 r
+  U68519/CO (FADDX1_RVT)                           0.06      4.21 r
+  U68522/CO (FADDX1_RVT)                           0.06      4.27 r
+  U68524/S (FADDX1_RVT)                            0.08      4.35 f
+  U68523/Y (MUX21X1_RVT)                           0.05      4.40 f
+  gen_mac_lanes[9].u_lane/u_mac/acc_reg[62]/D (DFFARX1_RVT)
+                                                   0.00      4.40 f
+  data arrival time                                          4.40
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.20     10.20
+  gen_mac_lanes[9].u_lane/u_mac/acc_reg[62]/CLK (DFFARX1_RVT)
+                                                   0.00     10.20 r
+  clock uncertainty                               -0.10     10.10
+  library setup time                              -0.02     10.07
+  data required time                                        10.07
+  ------------------------------------------------------------------------
+  data required time                                        10.07
+  data arrival time                                         -4.40
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.67
+
+
+
+  Startpoint: gen_mac_lanes[15].u_lane/u_mac/start_r2_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[15].u_lane/u_mac/acc_reg[62] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.28      0.28
+
+  gen_mac_lanes[15].u_lane/u_mac/start_r2_reg/CLK (DFFARX1_RVT)
+                                                   0.00      0.28 r
+  gen_mac_lanes[15].u_lane/u_mac/start_r2_reg/Q (DFFARX1_RVT)
+                                                   0.13      0.41 f
+  U43815/Y (NBUFFX4_RVT)                           0.06      0.48 f
+  U43816/Y (IBUFFX4_RVT)                           0.07      0.55 r
+  U55164/Y (AND2X1_RVT)                            0.04      0.59 r
+  U55709/C1 (HADDX1_RVT)                           0.04      0.63 r
+  U55711/CO (FADDX1_RVT)                           0.06      0.68 r
+  U55713/CO (FADDX1_RVT)                           0.06      0.75 r
+  U55715/CO (FADDX1_RVT)                           0.06      0.81 r
+  U55717/CO (FADDX1_RVT)                           0.06      0.87 r
+  U55719/CO (FADDX1_RVT)                           0.06      0.93 r
+  U55721/CO (FADDX1_RVT)                           0.06      0.99 r
+  U55723/CO (FADDX1_RVT)                           0.06      1.04 r
+  U55728/CO (FADDX1_RVT)                           0.06      1.10 r
+  U55730/CO (FADDX1_RVT)                           0.08      1.18 r
+  U55732/CO (FADDX1_RVT)                           0.07      1.25 r
+  U55734/CO (FADDX1_RVT)                           0.08      1.33 r
+  U55738/CO (FADDX1_RVT)                           0.06      1.39 r
+  U55740/CO (FADDX1_RVT)                           0.06      1.45 r
+  U55743/CO (FADDX1_RVT)                           0.06      1.51 r
+  U55745/CO (FADDX1_RVT)                           0.06      1.57 r
+  U55748/CO (FADDX1_RVT)                           0.06      1.63 r
+  U55751/CO (FADDX1_RVT)                           0.06      1.69 r
+  U55754/CO (FADDX1_RVT)                           0.06      1.74 r
+  U55757/CO (FADDX1_RVT)                           0.06      1.80 r
+  U55760/CO (FADDX1_RVT)                           0.06      1.86 r
+  U55763/CO (FADDX1_RVT)                           0.06      1.92 r
+  U55768/CO (FADDX1_RVT)                           0.06      1.98 r
+  U55771/CO (FADDX1_RVT)                           0.06      2.04 r
+  U55774/CO (FADDX1_RVT)                           0.06      2.10 r
+  U55777/CO (FADDX1_RVT)                           0.06      2.15 r
+  U55780/CO (FADDX1_RVT)                           0.08      2.23 r
+  U55782/CO (FADDX1_RVT)                           0.06      2.29 r
+  U55784/CO (FADDX1_RVT)                           0.06      2.36 r
+  U55787/CO (FADDX1_RVT)                           0.06      2.42 r
+  U55791/CO (FADDX1_RVT)                           0.06      2.48 r
+  U55794/CO (FADDX1_RVT)                           0.06      2.54 r
+  U55797/CO (FADDX1_RVT)                           0.06      2.60 r
+  U55801/CO (FADDX1_RVT)                           0.06      2.66 r
+  U55804/CO (FADDX1_RVT)                           0.06      2.72 r
+  U55807/CO (FADDX1_RVT)                           0.06      2.78 r
+  U55813/CO (FADDX1_RVT)                           0.06      2.84 r
+  U55816/CO (FADDX1_RVT)                           0.06      2.90 r
+  U55819/CO (FADDX1_RVT)                           0.06      2.96 r
+  U55822/CO (FADDX1_RVT)                           0.06      3.02 r
+  U55825/CO (FADDX1_RVT)                           0.06      3.07 r
+  U55828/CO (FADDX1_RVT)                           0.06      3.13 r
+  U55831/CO (FADDX1_RVT)                           0.06      3.19 r
+  U55836/CO (FADDX1_RVT)                           0.06      3.25 r
+  U55839/CO (FADDX1_RVT)                           0.06      3.30 r
+  U55842/CO (FADDX1_RVT)                           0.06      3.36 r
+  U55845/CO (FADDX1_RVT)                           0.06      3.42 r
+  U55848/CO (FADDX1_RVT)                           0.06      3.48 r
+  U55852/CO (FADDX1_RVT)                           0.06      3.54 r
+  U55855/CO (FADDX1_RVT)                           0.06      3.60 r
+  U55860/CO (FADDX1_RVT)                           0.06      3.66 r
+  U55863/CO (FADDX1_RVT)                           0.06      3.72 r
+  U55866/CO (FADDX1_RVT)                           0.06      3.77 r
+  U55869/CO (FADDX1_RVT)                           0.06      3.83 r
+  U55872/CO (FADDX1_RVT)                           0.06      3.89 r
+  U55875/CO (FADDX1_RVT)                           0.06      3.95 r
+  U55879/CO (FADDX1_RVT)                           0.06      4.01 r
+  U55882/CO (FADDX1_RVT)                           0.06      4.07 r
+  U55885/CO (FADDX1_RVT)                           0.06      4.13 r
+  U55889/CO (FADDX1_RVT)                           0.06      4.19 r
+  U55892/CO (FADDX1_RVT)                           0.06      4.24 r
+  U55895/CO (FADDX1_RVT)                           0.06      4.30 r
+  U55897/S (FADDX1_RVT)                            0.08      4.39 f
+  U55896/Y (MUX21X1_RVT)                           0.05      4.44 f
+  gen_mac_lanes[15].u_lane/u_mac/acc_reg[62]/D (DFFARX1_RVT)
+                                                   0.00      4.44 f
+  data arrival time                                          4.44
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.24     10.24
+  gen_mac_lanes[15].u_lane/u_mac/acc_reg[62]/CLK (DFFARX1_RVT)
+                                                   0.00     10.24 r
+  clock uncertainty                               -0.10     10.14
+  library setup time                              -0.02     10.11
+  data required time                                        10.11
+  ------------------------------------------------------------------------
+  data required time                                        10.11
+  data arrival time                                         -4.44
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.68
+
+
+
+  Startpoint: gen_mac_lanes[9].u_lane/u_mac/start_r2_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[9].u_lane/u_mac/acc_reg[63] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.29      0.29
+
+  gen_mac_lanes[9].u_lane/u_mac/start_r2_reg/CLK (DFFARX1_RVT)
+                                                   0.00      0.29 r
+  gen_mac_lanes[9].u_lane/u_mac/start_r2_reg/Q (DFFARX1_RVT)
+                                                   0.12      0.41 f
+  U45415/Y (NBUFFX4_RVT)                           0.06      0.46 f
+  U45416/Y (INVX4_RVT)                             0.04      0.51 r
+  U67790/Y (AND2X1_RVT)                            0.04      0.55 r
+  U68335/C1 (HADDX1_RVT)                           0.04      0.59 r
+  U68337/CO (FADDX1_RVT)                           0.06      0.65 r
+  U68339/CO (FADDX1_RVT)                           0.06      0.71 r
+  U68341/CO (FADDX1_RVT)                           0.06      0.77 r
+  U68343/CO (FADDX1_RVT)                           0.06      0.83 r
+  U68345/CO (FADDX1_RVT)                           0.06      0.89 r
+  U68347/CO (FADDX1_RVT)                           0.06      0.95 r
+  U68349/CO (FADDX1_RVT)                           0.06      1.01 r
+  U68354/CO (FADDX1_RVT)                           0.06      1.07 r
+  U68356/CO (FADDX1_RVT)                           0.07      1.14 r
+  U68358/CO (FADDX1_RVT)                           0.06      1.20 r
+  U68360/CO (FADDX2_RVT)                           0.08      1.28 r
+  U68364/CO (FADDX1_RVT)                           0.07      1.34 r
+  U68367/CO (FADDX1_RVT)                           0.06      1.40 r
+  U68370/CO (FADDX1_RVT)                           0.06      1.46 r
+  U68373/CO (FADDX1_RVT)                           0.06      1.51 r
+  U68376/CO (FADDX1_RVT)                           0.06      1.57 r
+  U68379/CO (FADDX1_RVT)                           0.06      1.63 r
+  U68382/CO (FADDX1_RVT)                           0.06      1.69 r
+  U68385/CO (FADDX1_RVT)                           0.06      1.75 r
+  U68388/CO (FADDX1_RVT)                           0.06      1.80 r
+  U68391/CO (FADDX1_RVT)                           0.06      1.86 r
+  U68396/CO (FADDX1_RVT)                           0.06      1.92 r
+  U68398/CO (FADDX1_RVT)                           0.06      1.98 r
+  U68401/CO (FADDX1_RVT)                           0.06      2.04 r
+  U68404/CO (FADDX1_RVT)                           0.06      2.10 r
+  U68407/CO (FADDX1_RVT)                           0.09      2.18 r
+  U68409/CO (FADDX1_RVT)                           0.06      2.25 r
+  U68411/CO (FADDX1_RVT)                           0.06      2.30 r
+  U68414/CO (FADDX1_RVT)                           0.06      2.37 r
+  U68418/CO (FADDX1_RVT)                           0.06      2.43 r
+  U68421/CO (FADDX1_RVT)                           0.06      2.49 r
+  U68424/CO (FADDX1_RVT)                           0.06      2.55 r
+  U68428/CO (FADDX1_RVT)                           0.06      2.61 r
+  U68431/CO (FADDX1_RVT)                           0.06      2.67 r
+  U68434/CO (FADDX1_RVT)                           0.06      2.72 r
+  U68440/CO (FADDX1_RVT)                           0.06      2.78 r
+  U68443/CO (FADDX1_RVT)                           0.06      2.84 r
+  U68446/CO (FADDX1_RVT)                           0.06      2.90 r
+  U68449/CO (FADDX1_RVT)                           0.06      2.96 r
+  U68452/CO (FADDX1_RVT)                           0.06      3.02 r
+  U68455/CO (FADDX1_RVT)                           0.06      3.08 r
+  U68458/CO (FADDX1_RVT)                           0.06      3.14 r
+  U68462/CO (FADDX1_RVT)                           0.06      3.19 r
+  U68466/CO (FADDX1_RVT)                           0.06      3.25 r
+  U68469/CO (FADDX1_RVT)                           0.06      3.31 r
+  U68472/CO (FADDX1_RVT)                           0.06      3.37 r
+  U68475/CO (FADDX1_RVT)                           0.06      3.43 r
+  U68479/CO (FADDX1_RVT)                           0.06      3.48 r
+  U68482/CO (FADDX1_RVT)                           0.06      3.54 r
+  U68487/CO (FADDX1_RVT)                           0.06      3.60 r
+  U68490/CO (FADDX1_RVT)                           0.06      3.66 r
+  U68493/CO (FADDX1_RVT)                           0.06      3.72 r
+  U68496/CO (FADDX1_RVT)                           0.06      3.78 r
+  U68499/CO (FADDX1_RVT)                           0.06      3.84 r
+  U68502/CO (FADDX1_RVT)                           0.06      3.90 r
+  U68506/CO (FADDX1_RVT)                           0.06      3.96 r
+  U68509/CO (FADDX1_RVT)                           0.06      4.02 r
+  U68512/CO (FADDX1_RVT)                           0.07      4.09 r
+  U68515/CO (FADDX1_RVT)                           0.06      4.15 r
+  U68519/CO (FADDX1_RVT)                           0.06      4.21 r
+  U68522/CO (FADDX1_RVT)                           0.06      4.27 r
+  U68524/CO (FADDX1_RVT)                           0.06      4.33 r
+  U68527/Y (XOR2X1_RVT)                            0.07      4.39 f
+  U68528/Y (MUX21X1_RVT)                           0.05      4.44 f
+  gen_mac_lanes[9].u_lane/u_mac/acc_reg[63]/D (DFFARX2_RVT)
+                                                   0.00      4.44 f
+  data arrival time                                          4.44
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.24     10.24
+  gen_mac_lanes[9].u_lane/u_mac/acc_reg[63]/CLK (DFFARX2_RVT)
+                                                   0.00     10.24 r
+  clock uncertainty                               -0.10     10.14
+  library setup time                              -0.02     10.12
+  data required time                                        10.12
+  ------------------------------------------------------------------------
+  data required time                                        10.12
+  data arrival time                                         -4.44
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.68
+
+
+
+  Startpoint: gen_mac_lanes[20].u_lane/u_mac/start_r2_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[20].u_lane/u_mac/acc_reg[62] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.29      0.29
+
+  gen_mac_lanes[20].u_lane/u_mac/start_r2_reg/CLK (DFFARX1_RVT)
+                                                   0.00      0.29 r
+  gen_mac_lanes[20].u_lane/u_mac/start_r2_reg/Q (DFFARX1_RVT)
+                                                   0.13      0.42 f
+  U43473/Y (NBUFFX2_RVT)                           0.06      0.48 f
+  U43474/Y (INVX4_RVT)                             0.05      0.53 r
+  U44777/Y (AND2X1_RVT)                            0.04      0.57 r
+  U45322/C1 (HADDX1_RVT)                           0.04      0.61 r
+  U45324/CO (FADDX1_RVT)                           0.05      0.67 r
+  U45326/CO (FADDX1_RVT)                           0.06      0.72 r
+  U45328/CO (FADDX1_RVT)                           0.06      0.78 r
+  U45330/CO (FADDX1_RVT)                           0.06      0.84 r
+  U45332/CO (FADDX1_RVT)                           0.06      0.90 r
+  U45334/CO (FADDX1_RVT)                           0.06      0.96 r
+  U45336/CO (FADDX1_RVT)                           0.06      1.02 r
+  U45341/CO (FADDX1_RVT)                           0.06      1.08 r
+  U45343/CO (FADDX1_RVT)                           0.07      1.14 r
+  U45345/CO (FADDX1_RVT)                           0.06      1.20 r
+  U45347/CO (FADDX1_RVT)                           0.07      1.27 r
+  U45351/CO (FADDX1_RVT)                           0.06      1.33 r
+  U45354/CO (FADDX1_RVT)                           0.06      1.39 r
+  U45356/CO (FADDX1_RVT)                           0.06      1.45 r
+  U45359/CO (FADDX1_RVT)                           0.06      1.51 r
+  U45361/CO (FADDX1_RVT)                           0.06      1.57 r
+  U45364/CO (FADDX1_RVT)                           0.06      1.63 r
+  U45366/CO (FADDX1_RVT)                           0.06      1.69 r
+  U45369/CO (FADDX1_RVT)                           0.06      1.74 r
+  U45372/CO (FADDX1_RVT)                           0.06      1.80 r
+  U45375/CO (FADDX1_RVT)                           0.06      1.86 r
+  U45379/CO (FADDX1_RVT)                           0.06      1.92 r
+  U45381/CO (FADDX1_RVT)                           0.06      1.98 r
+  U45383/CO (FADDX1_RVT)                           0.06      2.04 r
+  U45385/CO (FADDX1_RVT)                           0.06      2.10 r
+  U45387/CO (FADDX1_RVT)                           0.07      2.17 r
+  U45389/CO (FADDX1_RVT)                           0.06      2.23 r
+  U45391/CO (FADDX1_RVT)                           0.07      2.31 r
+  U45394/CO (FADDX1_RVT)                           0.08      2.38 r
+  U45398/CO (FADDX1_RVT)                           0.06      2.45 r
+  U45401/CO (FADDX1_RVT)                           0.06      2.51 r
+  U45404/CO (FADDX1_RVT)                           0.06      2.57 r
+  U45408/CO (FADDX1_RVT)                           0.06      2.63 r
+  U45411/CO (FADDX1_RVT)                           0.06      2.69 r
+  U45414/CO (FADDX1_RVT)                           0.06      2.75 r
+  U45420/CO (FADDX1_RVT)                           0.06      2.80 r
+  U45423/CO (FADDX1_RVT)                           0.06      2.86 r
+  U45426/CO (FADDX1_RVT)                           0.06      2.92 r
+  U45429/CO (FADDX1_RVT)                           0.06      2.98 r
+  U45432/CO (FADDX1_RVT)                           0.06      3.04 r
+  U45435/CO (FADDX1_RVT)                           0.06      3.09 r
+  U45438/CO (FADDX1_RVT)                           0.06      3.15 r
+  U45442/CO (FADDX1_RVT)                           0.06      3.21 r
+  U45445/CO (FADDX1_RVT)                           0.06      3.27 r
+  U45448/CO (FADDX1_RVT)                           0.06      3.32 r
+  U45451/CO (FADDX1_RVT)                           0.06      3.38 r
+  U45454/CO (FADDX1_RVT)                           0.06      3.44 r
+  U45457/CO (FADDX1_RVT)                           0.06      3.50 r
+  U45461/CO (FADDX1_RVT)                           0.06      3.56 r
+  U45466/CO (FADDX1_RVT)                           0.06      3.61 r
+  U45469/CO (FADDX1_RVT)                           0.06      3.67 r
+  U45472/CO (FADDX1_RVT)                           0.06      3.73 r
+  U45475/CO (FADDX1_RVT)                           0.06      3.79 r
+  U45478/CO (FADDX1_RVT)                           0.06      3.84 r
+  U45481/CO (FADDX1_RVT)                           0.06      3.90 r
+  U45485/CO (FADDX1_RVT)                           0.06      3.96 r
+  U45488/CO (FADDX1_RVT)                           0.06      4.02 r
+  U45491/CO (FADDX1_RVT)                           0.07      4.09 r
+  U45494/CO (FADDX1_RVT)                           0.06      4.15 r
+  U45497/CO (FADDX1_RVT)                           0.06      4.21 r
+  U45500/CO (FADDX1_RVT)                           0.06      4.27 r
+  U45502/S (FADDX1_RVT)                            0.08      4.35 f
+  U45501/Y (MUX21X1_RVT)                           0.05      4.40 f
+  gen_mac_lanes[20].u_lane/u_mac/acc_reg[62]/D (DFFARX1_RVT)
+                                                   0.00      4.40 f
+  data arrival time                                          4.40
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.21     10.21
+  gen_mac_lanes[20].u_lane/u_mac/acc_reg[62]/CLK (DFFARX1_RVT)
+                                                   0.00     10.21 r
+  clock uncertainty                               -0.10     10.11
+  library setup time                              -0.02     10.09
+  data required time                                        10.09
+  ------------------------------------------------------------------------
+  data required time                                        10.09
+  data arrival time                                         -4.40
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.69
+
+
+
+  Startpoint: gen_mac_lanes[22].u_lane/u_mac/start_r2_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[22].u_lane/u_mac/acc_reg[63] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.24      0.24
+
+  gen_mac_lanes[22].u_lane/u_mac/start_r2_reg/CLK (DFFARX1_RVT)
+                                                   0.00      0.24 r
+  gen_mac_lanes[22].u_lane/u_mac/start_r2_reg/Q (DFFARX1_RVT)
+                                                   0.13      0.36 f
+  U43384/Y (NBUFFX2_RVT)                           0.06      0.42 f
+  U43385/Y (INVX0_RVT)                             0.03      0.45 r
+  ZBUF_1189_inst_1519/Y (NBUFFX4_RVT)              0.04      0.50 r
+  U40441/Y (AND2X1_RVT)                            0.04      0.53 r
+  U40986/C1 (HADDX1_RVT)                           0.04      0.57 r
+  U40988/CO (FADDX1_RVT)                           0.06      0.63 r
+  U40990/CO (FADDX1_RVT)                           0.06      0.68 r
+  U40992/CO (FADDX1_RVT)                           0.06      0.74 r
+  U40994/CO (FADDX1_RVT)                           0.06      0.80 r
+  U40996/CO (FADDX1_RVT)                           0.06      0.86 r
+  U40998/CO (FADDX1_RVT)                           0.06      0.92 r
+  U41000/CO (FADDX1_RVT)                           0.06      0.98 r
+  U41005/CO (FADDX1_RVT)                           0.06      1.04 r
+  U41007/CO (FADDX1_RVT)                           0.07      1.12 r
+  U41009/CO (FADDX1_RVT)                           0.06      1.18 r
+  U41011/CO (FADDX1_RVT)                           0.06      1.24 r
+  U41015/CO (FADDX1_RVT)                           0.06      1.30 r
+  U41017/CO (FADDX1_RVT)                           0.06      1.36 r
+  U41020/CO (FADDX1_RVT)                           0.07      1.43 r
+  U41022/CO (FADDX1_RVT)                           0.06      1.49 r
+  U41025/CO (FADDX1_RVT)                           0.06      1.55 r
+  U41028/CO (FADDX1_RVT)                           0.06      1.61 r
+  U41030/CO (FADDX1_RVT)                           0.06      1.67 r
+  U41032/CO (FADDX1_RVT)                           0.06      1.73 r
+  U41034/CO (FADDX1_RVT)                           0.06      1.79 r
+  U41036/CO (FADDX1_RVT)                           0.06      1.85 r
+  U41040/CO (FADDX1_RVT)                           0.06      1.91 r
+  U41042/CO (FADDX1_RVT)                           0.06      1.97 r
+  U41044/CO (FADDX1_RVT)                           0.06      2.03 r
+  U41046/CO (FADDX1_RVT)                           0.06      2.09 r
+  U41048/CO (FADDX1_RVT)                           0.08      2.17 r
+  U41050/CO (FADDX1_RVT)                           0.07      2.24 r
+  U41052/CO (FADDX1_RVT)                           0.06      2.29 r
+  U41055/CO (FADDX1_RVT)                           0.06      2.35 r
+  U41059/CO (FADDX1_RVT)                           0.06      2.41 r
+  U41063/CO (FADDX1_RVT)                           0.06      2.47 r
+  U41066/CO (FADDX1_RVT)                           0.06      2.53 r
+  U41069/CO (FADDX1_RVT)                           0.06      2.59 r
+  U41072/CO (FADDX1_RVT)                           0.06      2.64 r
+  U41075/CO (FADDX1_RVT)                           0.06      2.70 r
+  U41081/CO (FADDX1_RVT)                           0.06      2.76 r
+  U41084/CO (FADDX1_RVT)                           0.06      2.82 r
+  U41087/CO (FADDX1_RVT)                           0.06      2.88 r
+  U41090/CO (FADDX1_RVT)                           0.06      2.93 r
+  U41093/CO (FADDX1_RVT)                           0.06      2.99 r
+  U41096/CO (FADDX1_RVT)                           0.06      3.05 r
+  U41099/CO (FADDX1_RVT)                           0.06      3.10 r
+  U41103/CO (FADDX1_RVT)                           0.06      3.16 r
+  U41106/CO (FADDX1_RVT)                           0.06      3.22 r
+  U41110/CO (FADDX1_RVT)                           0.06      3.28 r
+  U41113/CO (FADDX1_RVT)                           0.06      3.34 r
+  U41116/CO (FADDX1_RVT)                           0.06      3.39 r
+  U41119/CO (FADDX1_RVT)                           0.06      3.46 r
+  U41122/CO (FADDX1_RVT)                           0.06      3.51 r
+  U41127/CO (FADDX1_RVT)                           0.06      3.57 r
+  U41130/CO (FADDX1_RVT)                           0.06      3.63 r
+  U41133/CO (FADDX1_RVT)                           0.06      3.69 r
+  U41136/CO (FADDX1_RVT)                           0.06      3.75 r
+  U41139/CO (FADDX1_RVT)                           0.06      3.81 r
+  U41142/CO (FADDX1_RVT)                           0.06      3.87 r
+  U41146/CO (FADDX1_RVT)                           0.06      3.93 r
+  U41149/CO (FADDX1_RVT)                           0.06      3.99 r
+  U41152/CO (FADDX1_RVT)                           0.06      4.05 r
+  U41155/CO (FADDX1_RVT)                           0.06      4.11 r
+  U41158/CO (FADDX1_RVT)                           0.06      4.16 r
+  U41161/CO (FADDX1_RVT)                           0.06      4.22 r
+  U41163/CO (FADDX1_RVT)                           0.06      4.28 r
+  U41166/Y (XOR2X1_RVT)                            0.07      4.35 f
+  U41167/Y (MUX21X1_RVT)                           0.05      4.40 f
+  gen_mac_lanes[22].u_lane/u_mac/acc_reg[63]/D (DFFARX2_RVT)
+                                                   0.00      4.40 f
+  data arrival time                                          4.40
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.21     10.21
+  gen_mac_lanes[22].u_lane/u_mac/acc_reg[63]/CLK (DFFARX2_RVT)
+                                                   0.00     10.21 r
+  clock uncertainty                               -0.10     10.11
+  library setup time                              -0.02     10.08
+  data required time                                        10.08
+  ------------------------------------------------------------------------
+  data required time                                        10.08
+  data arrival time                                         -4.40
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.69
+
+
+
+  Startpoint: gen_mac_lanes[31].u_lane/u_mac/start_r2_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[31].u_lane/u_mac/acc_reg[63] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.29      0.29
+
+  gen_mac_lanes[31].u_lane/u_mac/start_r2_reg/CLK (DFFARX1_RVT)
+                                                   0.00      0.29 r
+  gen_mac_lanes[31].u_lane/u_mac/start_r2_reg/Q (DFFARX1_RVT)
+                                                   0.13      0.42 f
+  U41521/Y (NBUFFX2_RVT)                           0.06      0.49 f
+  U41598/Y (IBUFFX4_RVT)                           0.07      0.56 r
+  U21157/Y (AND2X1_RVT)                            0.04      0.60 r
+  U21702/C1 (HADDX1_RVT)                           0.04      0.64 r
+  U21704/CO (FADDX1_RVT)                           0.06      0.69 r
+  U21706/CO (FADDX1_RVT)                           0.06      0.75 r
+  U21708/CO (FADDX1_RVT)                           0.06      0.81 r
+  U21710/CO (FADDX1_RVT)                           0.06      0.87 r
+  U21712/CO (FADDX1_RVT)                           0.06      0.93 r
+  U21714/CO (FADDX1_RVT)                           0.06      0.98 r
+  U21716/CO (FADDX1_RVT)                           0.06      1.04 r
+  U21721/CO (FADDX1_RVT)                           0.06      1.11 r
+  U21723/CO (FADDX1_RVT)                           0.07      1.17 r
+  U21725/CO (FADDX1_RVT)                           0.06      1.24 r
+  U21727/CO (FADDX1_RVT)                           0.08      1.31 r
+  U21731/CO (FADDX1_RVT)                           0.06      1.38 r
+  U21734/CO (FADDX1_RVT)                           0.06      1.44 r
+  U21737/CO (FADDX1_RVT)                           0.06      1.50 r
+  U21740/CO (FADDX1_RVT)                           0.06      1.56 r
+  U21743/CO (FADDX1_RVT)                           0.06      1.62 r
+  U21746/CO (FADDX1_RVT)                           0.06      1.68 r
+  U21748/CO (FADDX1_RVT)                           0.06      1.74 r
+  U21750/CO (FADDX1_RVT)                           0.06      1.80 r
+  U21753/CO (FADDX1_RVT)                           0.06      1.86 r
+  U21756/CO (FADDX1_RVT)                           0.06      1.92 r
+  U21760/CO (FADDX1_RVT)                           0.06      1.98 r
+  U21762/CO (FADDX1_RVT)                           0.06      2.04 r
+  U21764/CO (FADDX1_RVT)                           0.06      2.10 r
+  U21766/CO (FADDX1_RVT)                           0.06      2.16 r
+  U21768/CO (FADDX1_RVT)                           0.06      2.22 r
+  U21770/CO (FADDX1_RVT)                           0.06      2.28 r
+  U21772/CO (FADDX1_RVT)                           0.06      2.34 r
+  U21775/CO (FADDX2_RVT)                           0.06      2.40 r
+  U21779/CO (FADDX1_RVT)                           0.06      2.46 r
+  U21782/CO (FADDX1_RVT)                           0.06      2.51 r
+  U21785/CO (FADDX1_RVT)                           0.06      2.57 r
+  U21788/CO (FADDX1_RVT)                           0.06      2.63 r
+  U21792/CO (FADDX1_RVT)                           0.06      2.69 r
+  U21795/CO (FADDX1_RVT)                           0.06      2.74 r
+  U21801/CO (FADDX1_RVT)                           0.06      2.80 r
+  U21804/CO (FADDX1_RVT)                           0.06      2.86 r
+  U21807/CO (FADDX1_RVT)                           0.06      2.92 r
+  U21810/CO (FADDX1_RVT)                           0.06      2.98 r
+  U21813/CO (FADDX1_RVT)                           0.06      3.04 r
+  U21816/CO (FADDX1_RVT)                           0.06      3.09 r
+  U21819/CO (FADDX1_RVT)                           0.06      3.15 r
+  U21823/CO (FADDX1_RVT)                           0.06      3.20 r
+  U21826/CO (FADDX1_RVT)                           0.06      3.26 r
+  U21829/CO (FADDX1_RVT)                           0.06      3.32 r
+  U21832/CO (FADDX1_RVT)                           0.06      3.38 r
+  U21835/CO (FADDX1_RVT)                           0.06      3.43 r
+  U21838/CO (FADDX1_RVT)                           0.06      3.49 r
+  U21841/CO (FADDX1_RVT)                           0.06      3.55 r
+  U21847/CO (FADDX1_RVT)                           0.06      3.61 r
+  U21850/CO (FADDX1_RVT)                           0.06      3.67 r
+  U21853/CO (FADDX1_RVT)                           0.06      3.72 r
+  U21856/CO (FADDX1_RVT)                           0.06      3.78 r
+  U21859/CO (FADDX1_RVT)                           0.06      3.84 r
+  U21862/CO (FADDX1_RVT)                           0.06      3.90 r
+  U21866/CO (FADDX1_RVT)                           0.06      3.96 r
+  U21869/CO (FADDX1_RVT)                           0.06      4.02 r
+  U21872/CO (FADDX1_RVT)                           0.07      4.09 r
+  U21875/CO (FADDX1_RVT)                           0.06      4.15 r
+  U21878/CO (FADDX1_RVT)                           0.06      4.21 r
+  U21881/CO (FADDX1_RVT)                           0.06      4.27 r
+  U21883/CO (FADDX1_RVT)                           0.06      4.33 r
+  U21886/Y (XOR2X1_RVT)                            0.07      4.39 f
+  U21887/Y (MUX21X1_RVT)                           0.05      4.44 f
+  gen_mac_lanes[31].u_lane/u_mac/acc_reg[63]/D (DFFARX2_RVT)
+                                                   0.00      4.44 f
+  data arrival time                                          4.44
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.25     10.25
+  gen_mac_lanes[31].u_lane/u_mac/acc_reg[63]/CLK (DFFARX2_RVT)
+                                                   0.00     10.25 r
+  clock uncertainty                               -0.10     10.15
+  library setup time                              -0.02     10.13
+  data required time                                        10.13
+  ------------------------------------------------------------------------
+  data required time                                        10.13
+  data arrival time                                         -4.44
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.69
+
+
+
+  Startpoint: gen_mac_lanes[4].u_lane/u_mac/start_r2_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[4].u_lane/u_mac/acc_reg[62] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.29      0.29
+
+  gen_mac_lanes[4].u_lane/u_mac/start_r2_reg/CLK (DFFARX2_RVT)
+                                                   0.00      0.29 r
+  gen_mac_lanes[4].u_lane/u_mac/start_r2_reg/Q (DFFARX2_RVT)
+                                                   0.13      0.42 f
+  U45654/Y (NBUFFX4_RVT)                           0.06      0.48 f
+  U45655/Y (INVX4_RVT)                             0.04      0.52 r
+  U78376/Y (AND2X1_RVT)                            0.04      0.56 r
+  U78921/C1 (HADDX1_RVT)                           0.04      0.60 r
+  U78923/CO (FADDX1_RVT)                           0.05      0.65 r
+  U78925/CO (FADDX1_RVT)                           0.06      0.71 r
+  U78927/CO (FADDX1_RVT)                           0.06      0.77 r
+  U78929/CO (FADDX1_RVT)                           0.06      0.83 r
+  U78931/CO (FADDX1_RVT)                           0.06      0.88 r
+  U78933/CO (FADDX1_RVT)                           0.06      0.94 r
+  U78935/CO (FADDX1_RVT)                           0.06      1.00 r
+  U78940/CO (FADDX1_RVT)                           0.06      1.06 r
+  U78942/CO (FADDX1_RVT)                           0.06      1.11 r
+  U78944/CO (FADDX1_RVT)                           0.07      1.19 r
+  U78946/CO (FADDX1_RVT)                           0.07      1.25 r
+  U78950/CO (FADDX1_RVT)                           0.06      1.31 r
+  U78953/CO (FADDX1_RVT)                           0.06      1.37 r
+  U78956/CO (FADDX1_RVT)                           0.06      1.43 r
+  U78959/CO (FADDX1_RVT)                           0.06      1.48 r
+  U78962/CO (FADDX1_RVT)                           0.06      1.54 r
+  U78965/CO (FADDX1_RVT)                           0.06      1.60 r
+  U78968/CO (FADDX1_RVT)                           0.06      1.66 r
+  U78971/CO (FADDX1_RVT)                           0.06      1.72 r
+  U78974/CO (FADDX1_RVT)                           0.06      1.78 r
+  U78977/CO (FADDX1_RVT)                           0.06      1.84 r
+  U78983/CO (FADDX1_RVT)                           0.06      1.90 r
+  U78986/CO (FADDX1_RVT)                           0.06      1.95 r
+  U78989/CO (FADDX1_RVT)                           0.06      2.01 r
+  U78992/CO (FADDX1_RVT)                           0.06      2.08 r
+  U78995/CO (FADDX1_RVT)                           0.06      2.13 r
+  U78997/CO (FADDX1_RVT)                           0.06      2.19 r
+  U78999/CO (FADDX1_RVT)                           0.06      2.25 r
+  U79003/CO (FADDX2_RVT)                           0.09      2.34 r
+  U79007/CO (FADDX1_RVT)                           0.07      2.41 r
+  U79010/CO (FADDX1_RVT)                           0.06      2.47 r
+  U79013/CO (FADDX1_RVT)                           0.06      2.53 r
+  U79017/CO (FADDX1_RVT)                           0.06      2.59 r
+  U79020/CO (FADDX1_RVT)                           0.06      2.65 r
+  U79023/CO (FADDX1_RVT)                           0.06      2.71 r
+  U79029/CO (FADDX1_RVT)                           0.06      2.77 r
+  U79032/CO (FADDX1_RVT)                           0.06      2.83 r
+  U79035/CO (FADDX1_RVT)                           0.06      2.89 r
+  U79038/CO (FADDX1_RVT)                           0.06      2.95 r
+  U79041/CO (FADDX1_RVT)                           0.06      3.01 r
+  U79044/CO (FADDX1_RVT)                           0.06      3.07 r
+  U79047/CO (FADDX1_RVT)                           0.06      3.13 r
+  U79051/CO (FADDX1_RVT)                           0.06      3.19 r
+  U79054/CO (FADDX1_RVT)                           0.06      3.25 r
+  U79058/CO (FADDX1_RVT)                           0.06      3.30 r
+  U79061/CO (FADDX1_RVT)                           0.06      3.36 r
+  U79064/CO (FADDX1_RVT)                           0.06      3.42 r
+  U79068/CO (FADDX1_RVT)                           0.06      3.48 r
+  U79071/CO (FADDX1_RVT)                           0.06      3.54 r
+  U79076/CO (FADDX1_RVT)                           0.06      3.59 r
+  U79079/CO (FADDX1_RVT)                           0.06      3.65 r
+  U79082/CO (FADDX1_RVT)                           0.06      3.71 r
+  U79085/CO (FADDX1_RVT)                           0.06      3.76 r
+  U79088/CO (FADDX1_RVT)                           0.06      3.82 r
+  U79091/CO (FADDX1_RVT)                           0.06      3.88 r
+  U79095/CO (FADDX1_RVT)                           0.06      3.94 r
+  U79098/CO (FADDX1_RVT)                           0.06      4.00 r
+  U79101/CO (FADDX1_RVT)                           0.08      4.08 r
+  U79104/CO (FADDX1_RVT)                           0.06      4.14 r
+  U79107/CO (FADDX1_RVT)                           0.06      4.21 r
+  U79111/CO (FADDX1_RVT)                           0.06      4.27 r
+  U79113/S (FADDX1_RVT)                            0.08      4.35 f
+  U79112/Y (MUX21X1_RVT)                           0.05      4.40 f
+  gen_mac_lanes[4].u_lane/u_mac/acc_reg[62]/D (DFFARX1_RVT)
+                                                   0.00      4.40 f
+  data arrival time                                          4.40
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.21     10.21
+  gen_mac_lanes[4].u_lane/u_mac/acc_reg[62]/CLK (DFFARX1_RVT)
+                                                   0.00     10.21 r
+  clock uncertainty                               -0.10     10.11
+  library setup time                              -0.02     10.09
+  data required time                                        10.09
+  ------------------------------------------------------------------------
+  data required time                                        10.09
+  data arrival time                                         -4.40
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.69
+
+
+
+  Startpoint: gen_mac_lanes[2].u_lane/u_mac/start_r2_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[2].u_lane/u_mac/acc_reg[62] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.29      0.29
+
+  gen_mac_lanes[2].u_lane/u_mac/start_r2_reg/CLK (DFFARX1_RVT)
+                                                   0.00      0.29 r
+  gen_mac_lanes[2].u_lane/u_mac/start_r2_reg/Q (DFFARX1_RVT)
+                                                   0.13      0.42 f
+  U46064/Y (NBUFFX4_RVT)                           0.07      0.49 f
+  U46076/Y (INVX4_RVT)                             0.04      0.53 r
+  U82899/Y (AND2X1_RVT)                            0.04      0.57 r
+  U83444/C1 (HADDX1_RVT)                           0.04      0.61 r
+  U83446/CO (FADDX1_RVT)                           0.06      0.67 r
+  U83448/CO (FADDX1_RVT)                           0.06      0.73 r
+  U83450/CO (FADDX1_RVT)                           0.06      0.79 r
+  U83452/CO (FADDX1_RVT)                           0.06      0.85 r
+  U83454/CO (FADDX1_RVT)                           0.06      0.91 r
+  U83456/CO (FADDX1_RVT)                           0.06      0.97 r
+  U83458/CO (FADDX1_RVT)                           0.06      1.03 r
+  U83463/CO (FADDX1_RVT)                           0.06      1.09 r
+  U83465/CO (FADDX1_RVT)                           0.06      1.14 r
+  U83467/CO (FADDX1_RVT)                           0.06      1.20 r
+  U83469/CO (FADDX2_RVT)                           0.08      1.29 r
+  U83473/CO (FADDX1_RVT)                           0.07      1.35 r
+  U83476/CO (FADDX1_RVT)                           0.06      1.41 r
+  U83479/CO (FADDX1_RVT)                           0.06      1.47 r
+  U83482/CO (FADDX1_RVT)                           0.06      1.53 r
+  U83486/CO (FADDX1_RVT)                           0.06      1.59 r
+  U83489/CO (FADDX1_RVT)                           0.06      1.65 r
+  U83492/CO (FADDX1_RVT)                           0.06      1.71 r
+  U83495/CO (FADDX1_RVT)                           0.06      1.77 r
+  U83498/CO (FADDX1_RVT)                           0.06      1.83 r
+  U83501/CO (FADDX1_RVT)                           0.06      1.89 r
+  U83506/CO (FADDX1_RVT)                           0.06      1.95 r
+  U83509/CO (FADDX1_RVT)                           0.06      2.01 r
+  U83512/CO (FADDX1_RVT)                           0.06      2.07 r
+  U83515/CO (FADDX1_RVT)                           0.06      2.13 r
+  U83518/CO (FADDX1_RVT)                           0.07      2.20 r
+  U83520/CO (FADDX1_RVT)                           0.06      2.26 r
+  U83522/CO (FADDX1_RVT)                           0.06      2.32 r
+  U83526/CO (FADDX1_RVT)                           0.08      2.40 r
+  U83530/CO (FADDX1_RVT)                           0.06      2.46 r
+  U83533/CO (FADDX1_RVT)                           0.06      2.52 r
+  U83536/CO (FADDX1_RVT)                           0.06      2.58 r
+  U83540/CO (FADDX1_RVT)                           0.06      2.64 r
+  U83543/CO (FADDX1_RVT)                           0.06      2.70 r
+  U83546/CO (FADDX1_RVT)                           0.06      2.76 r
+  U83552/CO (FADDX1_RVT)                           0.06      2.82 r
+  U83555/CO (FADDX1_RVT)                           0.06      2.88 r
+  U83558/CO (FADDX1_RVT)                           0.06      2.93 r
+  U83561/CO (FADDX1_RVT)                           0.06      2.99 r
+  U83564/CO (FADDX1_RVT)                           0.06      3.05 r
+  U83567/CO (FADDX1_RVT)                           0.06      3.11 r
+  U83570/CO (FADDX1_RVT)                           0.06      3.17 r
+  U83574/CO (FADDX1_RVT)                           0.06      3.22 r
+  U83577/CO (FADDX1_RVT)                           0.06      3.28 r
+  U83581/CO (FADDX1_RVT)                           0.06      3.34 r
+  U83584/CO (FADDX1_RVT)                           0.06      3.40 r
+  U83587/CO (FADDX1_RVT)                           0.06      3.46 r
+  U83591/CO (FADDX1_RVT)                           0.06      3.51 r
+  U83594/CO (FADDX1_RVT)                           0.06      3.57 r
+  U83599/CO (FADDX1_RVT)                           0.06      3.63 r
+  U83602/CO (FADDX1_RVT)                           0.06      3.69 r
+  U83605/CO (FADDX1_RVT)                           0.06      3.75 r
+  U83608/CO (FADDX1_RVT)                           0.06      3.81 r
+  U83611/CO (FADDX1_RVT)                           0.06      3.87 r
+  U83614/CO (FADDX1_RVT)                           0.06      3.93 r
+  U83618/CO (FADDX1_RVT)                           0.06      3.99 r
+  U83621/CO (FADDX1_RVT)                           0.06      4.05 r
+  U83624/CO (FADDX1_RVT)                           0.06      4.11 r
+  U83627/CO (FADDX1_RVT)                           0.06      4.17 r
+  U83630/CO (FADDX1_RVT)                           0.06      4.23 r
+  U83634/CO (FADDX1_RVT)                           0.06      4.29 r
+  U83636/S (FADDX1_RVT)                            0.08      4.37 f
+  U83635/Y (MUX21X1_RVT)                           0.05      4.42 f
+  gen_mac_lanes[2].u_lane/u_mac/acc_reg[62]/D (DFFARX1_RVT)
+                                                   0.00      4.42 f
+  data arrival time                                          4.42
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.24     10.24
+  gen_mac_lanes[2].u_lane/u_mac/acc_reg[62]/CLK (DFFARX1_RVT)
+                                                   0.00     10.24 r
+  clock uncertainty                               -0.10     10.14
+  library setup time                              -0.02     10.11
+  data required time                                        10.11
+  ------------------------------------------------------------------------
+  data required time                                        10.11
+  data arrival time                                         -4.42
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.69
+
+
+
+  Startpoint: gen_mac_lanes[11].u_lane/u_mac/start_r2_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[11].u_lane/u_mac/acc_reg[63] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.29      0.29
+
+  gen_mac_lanes[11].u_lane/u_mac/start_r2_reg/CLK (DFFARX2_RVT)
+                                                   0.00      0.29 r
+  gen_mac_lanes[11].u_lane/u_mac/start_r2_reg/Q (DFFARX2_RVT)
+                                                   0.14      0.43 f
+  U44790/Y (INVX4_RVT)                             0.04      0.47 r
+  U63607/Y (AND2X1_RVT)                            0.04      0.51 r
+  U64152/C1 (HADDX1_RVT)                           0.04      0.55 r
+  U64154/CO (FADDX1_RVT)                           0.06      0.60 r
+  U64156/CO (FADDX1_RVT)                           0.06      0.66 r
+  U64158/CO (FADDX1_RVT)                           0.06      0.72 r
+  U64160/CO (FADDX1_RVT)                           0.06      0.78 r
+  U64162/CO (FADDX1_RVT)                           0.06      0.84 r
+  U64164/CO (FADDX1_RVT)                           0.06      0.90 r
+  U64166/CO (FADDX1_RVT)                           0.06      0.96 r
+  U64171/CO (FADDX1_RVT)                           0.06      1.02 r
+  U64173/CO (FADDX1_RVT)                           0.06      1.08 r
+  U64175/CO (FADDX1_RVT)                           0.08      1.16 r
+  U64177/CO (FADDX1_RVT)                           0.09      1.25 r
+  U64181/CO (FADDX1_RVT)                           0.07      1.32 r
+  U64184/CO (FADDX1_RVT)                           0.06      1.38 r
+  U64187/CO (FADDX1_RVT)                           0.06      1.43 r
+  U64190/CO (FADDX1_RVT)                           0.06      1.49 r
+  U64193/CO (FADDX1_RVT)                           0.06      1.55 r
+  U64196/CO (FADDX1_RVT)                           0.06      1.61 r
+  U64198/CO (FADDX1_RVT)                           0.06      1.67 r
+  U64201/CO (FADDX1_RVT)                           0.06      1.73 r
+  U64204/CO (FADDX1_RVT)                           0.06      1.79 r
+  U64207/CO (FADDX1_RVT)                           0.06      1.84 r
+  U64212/CO (FADDX1_RVT)                           0.06      1.90 r
+  U64215/CO (FADDX1_RVT)                           0.06      1.96 r
+  U64218/CO (FADDX1_RVT)                           0.06      2.02 r
+  U64221/CO (FADDX1_RVT)                           0.06      2.08 r
+  U64224/CO (FADDX1_RVT)                           0.06      2.14 r
+  U64226/CO (FADDX1_RVT)                           0.06      2.20 r
+  U64228/CO (FADDX1_RVT)                           0.06      2.26 r
+  U64231/CO (FADDX1_RVT)                           0.08      2.34 r
+  U64235/CO (FADDX1_RVT)                           0.07      2.41 r
+  U64238/CO (FADDX1_RVT)                           0.06      2.47 r
+  U64241/CO (FADDX1_RVT)                           0.06      2.53 r
+  U64245/CO (FADDX1_RVT)                           0.06      2.58 r
+  U64248/CO (FADDX1_RVT)                           0.06      2.64 r
+  U64251/CO (FADDX1_RVT)                           0.06      2.69 r
+  U64257/CO (FADDX1_RVT)                           0.06      2.75 r
+  U64260/CO (FADDX1_RVT)                           0.06      2.81 r
+  U64263/CO (FADDX1_RVT)                           0.06      2.87 r
+  U64266/CO (FADDX1_RVT)                           0.06      2.93 r
+  U64269/CO (FADDX1_RVT)                           0.06      2.99 r
+  U64272/CO (FADDX1_RVT)                           0.06      3.05 r
+  U64275/CO (FADDX1_RVT)                           0.06      3.11 r
+  U64279/CO (FADDX1_RVT)                           0.06      3.16 r
+  U64283/CO (FADDX1_RVT)                           0.06      3.22 r
+  U64286/CO (FADDX1_RVT)                           0.06      3.28 r
+  U64289/CO (FADDX1_RVT)                           0.06      3.34 r
+  U64292/CO (FADDX1_RVT)                           0.06      3.39 r
+  U64296/CO (FADDX1_RVT)                           0.06      3.45 r
+  U64299/CO (FADDX1_RVT)                           0.06      3.51 r
+  U64304/CO (FADDX1_RVT)                           0.06      3.57 r
+  U64307/CO (FADDX1_RVT)                           0.06      3.63 r
+  U64310/CO (FADDX1_RVT)                           0.06      3.69 r
+  U64313/CO (FADDX1_RVT)                           0.06      3.75 r
+  U64316/CO (FADDX1_RVT)                           0.06      3.80 r
+  U64319/CO (FADDX1_RVT)                           0.06      3.86 r
+  U64323/CO (FADDX1_RVT)                           0.06      3.92 r
+  U64326/CO (FADDX1_RVT)                           0.06      3.98 r
+  U64329/CO (FADDX1_RVT)                           0.06      4.04 r
+  U64332/CO (FADDX1_RVT)                           0.06      4.10 r
+  U64336/CO (FADDX1_RVT)                           0.06      4.16 r
+  U64339/CO (FADDX1_RVT)                           0.06      4.22 r
+  U64341/CO (FADDX1_RVT)                           0.06      4.28 r
+  U64344/Y (XOR2X1_RVT)                            0.07      4.34 f
+  U64345/Y (MUX21X1_RVT)                           0.05      4.39 f
+  gen_mac_lanes[11].u_lane/u_mac/acc_reg[63]/D (DFFARX2_RVT)
+                                                   0.00      4.39 f
+  data arrival time                                          4.39
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.21     10.21
+  gen_mac_lanes[11].u_lane/u_mac/acc_reg[63]/CLK (DFFARX2_RVT)
+                                                   0.00     10.21 r
+  clock uncertainty                               -0.10     10.11
+  library setup time                              -0.02     10.08
+  data required time                                        10.08
+  ------------------------------------------------------------------------
+  data required time                                        10.08
+  data arrival time                                         -4.39
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.70
+
+
+
+  Startpoint: gen_mac_lanes[14].u_lane/u_mac/start_r2_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[14].u_lane/u_mac/acc_reg[62] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.29      0.29
+
+  gen_mac_lanes[14].u_lane/u_mac/start_r2_reg/CLK (DFFARX1_RVT)
+                                                   0.00      0.29 r
+  gen_mac_lanes[14].u_lane/u_mac/start_r2_reg/Q (DFFARX1_RVT)
+                                                   0.13      0.42 f
+  U44001/Y (NBUFFX4_RVT)                           0.06      0.48 f
+  U44002/Y (IBUFFX4_RVT)                           0.07      0.55 r
+  U57351/Y (AND2X1_RVT)                            0.04      0.59 r
+  U57896/C1 (HADDX1_RVT)                           0.04      0.63 r
+  U57898/CO (FADDX1_RVT)                           0.06      0.68 r
+  U57900/CO (FADDX1_RVT)                           0.06      0.75 r
+  U57902/CO (FADDX1_RVT)                           0.06      0.81 r
+  U57904/CO (FADDX1_RVT)                           0.06      0.87 r
+  U57906/CO (FADDX1_RVT)                           0.06      0.92 r
+  U57908/CO (FADDX1_RVT)                           0.06      0.98 r
+  U57910/CO (FADDX1_RVT)                           0.06      1.04 r
+  U57915/CO (FADDX1_RVT)                           0.06      1.10 r
+  U57917/CO (FADDX1_RVT)                           0.06      1.16 r
+  U57919/CO (FADDX1_RVT)                           0.06      1.22 r
+  U57921/CO (FADDX1_RVT)                           0.08      1.30 r
+  U57925/CO (FADDX1_RVT)                           0.06      1.36 r
+  U57927/CO (FADDX1_RVT)                           0.06      1.42 r
+  U57930/CO (FADDX1_RVT)                           0.06      1.48 r
+  U57933/CO (FADDX1_RVT)                           0.06      1.54 r
+  U57936/CO (FADDX1_RVT)                           0.06      1.60 r
+  U57938/CO (FADDX1_RVT)                           0.06      1.66 r
+  U57941/CO (FADDX1_RVT)                           0.06      1.72 r
+  U57944/CO (FADDX1_RVT)                           0.06      1.78 r
+  U57947/CO (FADDX1_RVT)                           0.06      1.84 r
+  U57950/CO (FADDX1_RVT)                           0.06      1.90 r
+  U57955/CO (FADDX1_RVT)                           0.06      1.96 r
+  U57957/CO (FADDX1_RVT)                           0.06      2.02 r
+  U57959/CO (FADDX1_RVT)                           0.06      2.07 r
+  U57961/CO (FADDX1_RVT)                           0.06      2.13 r
+  U57963/CO (FADDX1_RVT)                           0.07      2.20 r
+  U57965/CO (FADDX1_RVT)                           0.06      2.26 r
+  U57967/CO (FADDX1_RVT)                           0.06      2.32 r
+  U57970/CO (FADDX1_RVT)                           0.06      2.38 r
+  U57974/CO (FADDX1_RVT)                           0.06      2.44 r
+  U57977/CO (FADDX1_RVT)                           0.06      2.50 r
+  U57980/CO (FADDX1_RVT)                           0.06      2.56 r
+  U57983/CO (FADDX1_RVT)                           0.06      2.62 r
+  U57986/CO (FADDX1_RVT)                           0.06      2.68 r
+  U57990/CO (FADDX1_RVT)                           0.06      2.74 r
+  U57996/CO (FADDX1_RVT)                           0.06      2.80 r
+  U57999/CO (FADDX1_RVT)                           0.06      2.86 r
+  U58002/CO (FADDX1_RVT)                           0.06      2.91 r
+  U58005/CO (FADDX1_RVT)                           0.06      2.97 r
+  U58008/CO (FADDX1_RVT)                           0.06      3.03 r
+  U58011/CO (FADDX1_RVT)                           0.06      3.09 r
+  U58014/CO (FADDX1_RVT)                           0.06      3.15 r
+  U58018/CO (FADDX1_RVT)                           0.06      3.21 r
+  U58021/CO (FADDX1_RVT)                           0.06      3.27 r
+  U58024/CO (FADDX1_RVT)                           0.06      3.33 r
+  U58027/CO (FADDX1_RVT)                           0.06      3.38 r
+  U58030/CO (FADDX1_RVT)                           0.06      3.44 r
+  U58033/CO (FADDX1_RVT)                           0.06      3.50 r
+  U58036/CO (FADDX1_RVT)                           0.06      3.56 r
+  U58041/CO (FADDX1_RVT)                           0.06      3.62 r
+  U58045/CO (FADDX1_RVT)                           0.06      3.68 r
+  U58048/CO (FADDX1_RVT)                           0.06      3.74 r
+  U58051/CO (FADDX1_RVT)                           0.06      3.80 r
+  U58054/CO (FADDX1_RVT)                           0.06      3.86 r
+  U58057/CO (FADDX1_RVT)                           0.06      3.92 r
+  U58061/CO (FADDX1_RVT)                           0.06      3.98 r
+  U58064/CO (FADDX1_RVT)                           0.06      4.04 r
+  U58067/CO (FADDX1_RVT)                           0.06      4.10 r
+  U58070/CO (FADDX1_RVT)                           0.06      4.16 r
+  U58073/CO (FADDX1_RVT)                           0.06      4.22 r
+  U58076/CO (FADDX1_RVT)                           0.06      4.28 r
+  U58078/S (FADDX1_RVT)                            0.08      4.36 f
+  U58077/Y (MUX21X1_RVT)                           0.05      4.41 f
+  gen_mac_lanes[14].u_lane/u_mac/acc_reg[62]/D (DFFARX1_RVT)
+                                                   0.00      4.41 f
+  data arrival time                                          4.41
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.23     10.23
+  gen_mac_lanes[14].u_lane/u_mac/acc_reg[62]/CLK (DFFARX1_RVT)
+                                                   0.00     10.23 r
+  clock uncertainty                               -0.10     10.13
+  library setup time                              -0.02     10.11
+  data required time                                        10.11
+  ------------------------------------------------------------------------
+  data required time                                        10.11
+  data arrival time                                         -4.41
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.70
+
+
+
+  Startpoint: gen_mac_lanes[18].u_lane/u_mac/start_r2_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[18].u_lane/u_mac/acc_reg[63] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.29      0.29
+
+  gen_mac_lanes[18].u_lane/u_mac/start_r2_reg/CLK (DFFARX1_RVT)
+                                                   0.00      0.29 r
+  gen_mac_lanes[18].u_lane/u_mac/start_r2_reg/Q (DFFARX1_RVT)
+                                                   0.13      0.42 f
+  U43500/Y (NBUFFX2_RVT)                           0.05      0.47 f
+  U43503/Y (INVX4_RVT)                             0.04      0.51 r
+  U48985/Y (AND2X1_RVT)                            0.04      0.55 r
+  U49530/C1 (HADDX1_RVT)                           0.04      0.60 r
+  U49532/CO (FADDX1_RVT)                           0.06      0.65 r
+  U49534/CO (FADDX1_RVT)                           0.06      0.72 r
+  U49536/CO (FADDX1_RVT)                           0.06      0.77 r
+  U49538/CO (FADDX1_RVT)                           0.06      0.83 r
+  U49540/CO (FADDX1_RVT)                           0.06      0.89 r
+  U49542/CO (FADDX1_RVT)                           0.06      0.95 r
+  U49544/CO (FADDX1_RVT)                           0.06      1.01 r
+  U49549/CO (FADDX1_RVT)                           0.06      1.07 r
+  U49551/CO (FADDX1_RVT)                           0.06      1.12 r
+  U49553/CO (FADDX1_RVT)                           0.06      1.18 r
+  U49555/CO (FADDX1_RVT)                           0.06      1.24 r
+  U49557/CO (FADDX1_RVT)                           0.06      1.30 r
+  U49559/CO (FADDX1_RVT)                           0.06      1.36 r
+  U49561/CO (FADDX1_RVT)                           0.06      1.42 r
+  U49565/CO (FADDX1_RVT)                           0.06      1.48 r
+  U49568/CO (FADDX1_RVT)                           0.06      1.54 r
+  U49570/CO (FADDX1_RVT)                           0.06      1.60 r
+  U49572/CO (FADDX1_RVT)                           0.06      1.66 r
+  U49574/CO (FADDX1_RVT)                           0.06      1.72 r
+  U49577/CO (FADDX1_RVT)                           0.06      1.78 r
+  U49580/CO (FADDX1_RVT)                           0.06      1.84 r
+  U49584/CO (FADDX1_RVT)                           0.06      1.90 r
+  U49586/CO (FADDX1_RVT)                           0.06      1.96 r
+  U49588/CO (FADDX1_RVT)                           0.06      2.02 r
+  U49590/CO (FADDX1_RVT)                           0.06      2.08 r
+  U49592/CO (FADDX1_RVT)                           0.06      2.14 r
+  U49594/CO (FADDX1_RVT)                           0.06      2.20 r
+  U49596/CO (FADDX1_RVT)                           0.06      2.26 r
+  U49599/CO (FADDX1_RVT)                           0.08      2.34 r
+  U49603/CO (FADDX1_RVT)                           0.07      2.41 r
+  U49607/CO (FADDX1_RVT)                           0.06      2.47 r
+  U49610/CO (FADDX1_RVT)                           0.06      2.53 r
+  U49613/CO (FADDX1_RVT)                           0.06      2.59 r
+  U49616/CO (FADDX1_RVT)                           0.06      2.64 r
+  U49619/CO (FADDX1_RVT)                           0.06      2.70 r
+  U49625/CO (FADDX1_RVT)                           0.06      2.76 r
+  U49628/CO (FADDX1_RVT)                           0.06      2.82 r
+  U49631/CO (FADDX1_RVT)                           0.06      2.88 r
+  U49634/CO (FADDX1_RVT)                           0.06      2.94 r
+  U49637/CO (FADDX1_RVT)                           0.06      2.99 r
+  U49640/CO (FADDX1_RVT)                           0.06      3.05 r
+  U49643/CO (FADDX1_RVT)                           0.06      3.11 r
+  U49647/CO (FADDX1_RVT)                           0.06      3.17 r
+  U49650/CO (FADDX1_RVT)                           0.06      3.24 r
+  U49654/CO (FADDX1_RVT)                           0.06      3.30 r
+  U49657/CO (FADDX1_RVT)                           0.06      3.35 r
+  U49660/CO (FADDX1_RVT)                           0.06      3.41 r
+  U49663/CO (FADDX1_RVT)                           0.06      3.47 r
+  U49666/CO (FADDX1_RVT)                           0.06      3.53 r
+  U49671/CO (FADDX1_RVT)                           0.06      3.58 r
+  U49674/CO (FADDX1_RVT)                           0.06      3.64 r
+  U49677/CO (FADDX1_RVT)                           0.06      3.70 r
+  U49680/CO (FADDX1_RVT)                           0.06      3.75 r
+  U49683/CO (FADDX1_RVT)                           0.06      3.81 r
+  U49686/CO (FADDX1_RVT)                           0.06      3.87 r
+  U49690/CO (FADDX1_RVT)                           0.06      3.93 r
+  U49693/CO (FADDX1_RVT)                           0.06      3.99 r
+  U49696/CO (FADDX1_RVT)                           0.06      4.05 r
+  U49699/CO (FADDX1_RVT)                           0.06      4.12 r
+  U49702/CO (FADDX1_RVT)                           0.06      4.18 r
+  U49705/CO (FADDX1_RVT)                           0.06      4.24 r
+  U49707/CO (FADDX1_RVT)                           0.06      4.30 r
+  U49710/Y (XOR2X1_RVT)                            0.06      4.36 f
+  U49711/Y (MUX21X1_RVT)                           0.05      4.41 f
+  gen_mac_lanes[18].u_lane/u_mac/acc_reg[63]/D (DFFARX2_RVT)
+                                                   0.00      4.41 f
+  data arrival time                                          4.41
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.23     10.23
+  gen_mac_lanes[18].u_lane/u_mac/acc_reg[63]/CLK (DFFARX2_RVT)
+                                                   0.00     10.23 r
+  clock uncertainty                               -0.10     10.13
+  library setup time                              -0.02     10.11
+  data required time                                        10.11
+  ------------------------------------------------------------------------
+  data required time                                        10.11
+  data arrival time                                         -4.41
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.70
+
+
+
+  Startpoint: gen_mac_lanes[13].u_lane/u_mac/start_r2_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[13].u_lane/u_mac/acc_reg[62] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.29      0.29
+
+  gen_mac_lanes[13].u_lane/u_mac/start_r2_reg/CLK (DFFARX1_RVT)
+                                                   0.00      0.29 r
+  gen_mac_lanes[13].u_lane/u_mac/start_r2_reg/Q (DFFARX1_RVT)
+                                                   0.11      0.41 f
+  U44416/Y (NBUFFX4_RVT)                           0.06      0.46 f
+  U44429/Y (INVX4_RVT)                             0.04      0.51 r
+  U59325/Y (AND2X1_RVT)                            0.04      0.55 r
+  U59870/C1 (HADDX1_RVT)                           0.04      0.59 r
+  U59872/CO (FADDX1_RVT)                           0.06      0.65 r
+  U59874/CO (FADDX1_RVT)                           0.06      0.71 r
+  U59876/CO (FADDX1_RVT)                           0.06      0.77 r
+  U59878/CO (FADDX1_RVT)                           0.06      0.83 r
+  U59880/CO (FADDX1_RVT)                           0.06      0.88 r
+  U59882/CO (FADDX1_RVT)                           0.06      0.94 r
+  U59884/CO (FADDX1_RVT)                           0.06      1.00 r
+  U59889/CO (FADDX1_RVT)                           0.06      1.06 r
+  U59891/CO (FADDX1_RVT)                           0.06      1.12 r
+  U59893/CO (FADDX1_RVT)                           0.08      1.20 r
+  U59895/CO (FADDX1_RVT)                           0.08      1.27 r
+  U59899/CO (FADDX1_RVT)                           0.06      1.34 r
+  U59901/CO (FADDX1_RVT)                           0.06      1.39 r
+  U59904/CO (FADDX1_RVT)                           0.06      1.45 r
+  U59907/CO (FADDX1_RVT)                           0.06      1.51 r
+  U59910/CO (FADDX1_RVT)                           0.06      1.57 r
+  U59913/CO (FADDX1_RVT)                           0.06      1.62 r
+  U59916/CO (FADDX1_RVT)                           0.06      1.68 r
+  U59919/CO (FADDX1_RVT)                           0.06      1.74 r
+  U59922/CO (FADDX1_RVT)                           0.06      1.80 r
+  U59925/CO (FADDX1_RVT)                           0.06      1.86 r
+  U59929/CO (FADDX1_RVT)                           0.06      1.92 r
+  U59932/CO (FADDX1_RVT)                           0.06      1.98 r
+  U59935/CO (FADDX1_RVT)                           0.06      2.03 r
+  U59938/CO (FADDX1_RVT)                           0.06      2.09 r
+  U59941/CO (FADDX1_RVT)                           0.07      2.16 r
+  U59943/CO (FADDX1_RVT)                           0.08      2.24 r
+  U59945/CO (FADDX1_RVT)                           0.06      2.30 r
+  U59948/CO (FADDX1_RVT)                           0.07      2.37 r
+  U59952/CO (FADDX1_RVT)                           0.07      2.44 r
+  U59955/CO (FADDX1_RVT)                           0.06      2.50 r
+  U59958/CO (FADDX1_RVT)                           0.06      2.56 r
+  U59962/CO (FADDX1_RVT)                           0.06      2.62 r
+  U59965/CO (FADDX1_RVT)                           0.06      2.68 r
+  U59968/CO (FADDX1_RVT)                           0.06      2.74 r
+  U59974/CO (FADDX1_RVT)                           0.06      2.81 r
+  U59977/CO (FADDX1_RVT)                           0.06      2.87 r
+  U59980/CO (FADDX1_RVT)                           0.06      2.92 r
+  U59983/CO (FADDX1_RVT)                           0.06      2.98 r
+  U59986/CO (FADDX1_RVT)                           0.06      3.04 r
+  U59989/CO (FADDX1_RVT)                           0.06      3.10 r
+  U59992/CO (FADDX1_RVT)                           0.06      3.16 r
+  U59997/CO (FADDX1_RVT)                           0.06      3.22 r
+  U60000/CO (FADDX1_RVT)                           0.06      3.28 r
+  U60003/CO (FADDX1_RVT)                           0.06      3.34 r
+  U60006/CO (FADDX1_RVT)                           0.06      3.39 r
+  U60009/CO (FADDX1_RVT)                           0.06      3.46 r
+  U60013/CO (FADDX1_RVT)                           0.06      3.51 r
+  U60016/CO (FADDX1_RVT)                           0.06      3.57 r
+  U60021/CO (FADDX1_RVT)                           0.06      3.63 r
+  U60024/CO (FADDX1_RVT)                           0.06      3.68 r
+  U60027/CO (FADDX1_RVT)                           0.06      3.74 r
+  U60030/CO (FADDX1_RVT)                           0.06      3.80 r
+  U60033/CO (FADDX1_RVT)                           0.06      3.85 r
+  U60036/CO (FADDX1_RVT)                           0.06      3.91 r
+  U60040/CO (FADDX1_RVT)                           0.06      3.97 r
+  U60043/CO (FADDX1_RVT)                           0.06      4.03 r
+  U60046/CO (FADDX1_RVT)                           0.07      4.10 r
+  U60050/CO (FADDX1_RVT)                           0.06      4.16 r
+  U60053/CO (FADDX1_RVT)                           0.06      4.22 r
+  U60056/CO (FADDX1_RVT)                           0.06      4.28 r
+  U60058/S (FADDX1_RVT)                            0.08      4.36 f
+  U60057/Y (MUX21X1_RVT)                           0.05      4.41 f
+  gen_mac_lanes[13].u_lane/u_mac/acc_reg[62]/D (DFFARX1_RVT)
+                                                   0.00      4.41 f
+  data arrival time                                          4.41
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.24     10.24
+  gen_mac_lanes[13].u_lane/u_mac/acc_reg[62]/CLK (DFFARX1_RVT)
+                                                   0.00     10.24 r
+  clock uncertainty                               -0.10     10.14
+  library setup time                              -0.02     10.12
+  data required time                                        10.12
+  ------------------------------------------------------------------------
+  data required time                                        10.12
+  data arrival time                                         -4.41
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.71
+
+
+
+  Startpoint: gen_mac_lanes[30].u_lane/u_mac/start_r2_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[30].u_lane/u_mac/acc_reg[63] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.27      0.27
+
+  gen_mac_lanes[30].u_lane/u_mac/start_r2_reg/CLK (DFFARX1_RVT)
+                                                   0.00      0.27 r
+  gen_mac_lanes[30].u_lane/u_mac/start_r2_reg/Q (DFFARX1_RVT)
+                                                   0.12      0.39 f
+  U41655/Y (NBUFFX2_RVT)                           0.06      0.46 f
+  U41663/Y (INVX8_RVT)                             0.04      0.49 r
+  U23314/Y (AND2X1_RVT)                            0.04      0.53 r
+  U23859/C1 (HADDX1_RVT)                           0.04      0.57 r
+  U23861/CO (FADDX1_RVT)                           0.06      0.63 r
+  U23863/CO (FADDX1_RVT)                           0.06      0.69 r
+  U23865/CO (FADDX1_RVT)                           0.06      0.75 r
+  U23867/CO (FADDX1_RVT)                           0.06      0.81 r
+  U23869/CO (FADDX1_RVT)                           0.06      0.87 r
+  U23871/CO (FADDX1_RVT)                           0.06      0.93 r
+  U23873/CO (FADDX1_RVT)                           0.06      0.99 r
+  U23878/CO (FADDX1_RVT)                           0.06      1.05 r
+  U23880/CO (FADDX1_RVT)                           0.06      1.11 r
+  U23882/CO (FADDX1_RVT)                           0.06      1.16 r
+  U23884/CO (FADDX1_RVT)                           0.06      1.23 r
+  U23886/CO (FADDX1_RVT)                           0.06      1.29 r
+  U23888/CO (FADDX1_RVT)                           0.07      1.36 r
+  U23892/CO (FADDX1_RVT)                           0.06      1.42 r
+  U23895/CO (FADDX1_RVT)                           0.06      1.48 r
+  U23897/CO (FADDX1_RVT)                           0.06      1.54 r
+  U23899/CO (FADDX1_RVT)                           0.06      1.60 r
+  U23902/CO (FADDX1_RVT)                           0.06      1.66 r
+  U23904/CO (FADDX1_RVT)                           0.06      1.71 r
+  U23906/CO (FADDX1_RVT)                           0.06      1.77 r
+  U23908/CO (FADDX1_RVT)                           0.06      1.83 r
+  U23913/CO (FADDX1_RVT)                           0.06      1.89 r
+  U23915/CO (FADDX1_RVT)                           0.06      1.95 r
+  U23917/CO (FADDX1_RVT)                           0.06      2.01 r
+  U23919/CO (FADDX1_RVT)                           0.06      2.07 r
+  U23921/CO (FADDX1_RVT)                           0.07      2.13 r
+  U23923/CO (FADDX1_RVT)                           0.06      2.19 r
+  U23925/CO (FADDX1_RVT)                           0.06      2.25 r
+  U23928/CO (FADDX2_RVT)                           0.08      2.34 r
+  U23932/CO (FADDX1_RVT)                           0.07      2.40 r
+  U23936/CO (FADDX1_RVT)                           0.06      2.46 r
+  U23939/CO (FADDX1_RVT)                           0.06      2.52 r
+  U23942/CO (FADDX1_RVT)                           0.06      2.58 r
+  U23945/CO (FADDX1_RVT)                           0.06      2.63 r
+  U23948/CO (FADDX1_RVT)                           0.06      2.69 r
+  U23954/CO (FADDX1_RVT)                           0.06      2.75 r
+  U23957/CO (FADDX1_RVT)                           0.06      2.81 r
+  U23960/CO (FADDX1_RVT)                           0.06      2.86 r
+  U23963/CO (FADDX1_RVT)                           0.06      2.92 r
+  U23966/CO (FADDX1_RVT)                           0.06      2.98 r
+  U23969/CO (FADDX1_RVT)                           0.06      3.03 r
+  U23972/CO (FADDX1_RVT)                           0.06      3.09 r
+  U23976/CO (FADDX1_RVT)                           0.06      3.15 r
+  U23979/CO (FADDX1_RVT)                           0.06      3.21 r
+  U23983/CO (FADDX1_RVT)                           0.06      3.26 r
+  U23986/CO (FADDX1_RVT)                           0.06      3.32 r
+  U23989/CO (FADDX1_RVT)                           0.06      3.38 r
+  U23992/CO (FADDX1_RVT)                           0.06      3.43 r
+  U23995/CO (FADDX1_RVT)                           0.06      3.49 r
+  U24000/CO (FADDX1_RVT)                           0.06      3.55 r
+  U24003/CO (FADDX1_RVT)                           0.06      3.61 r
+  U24006/CO (FADDX1_RVT)                           0.06      3.67 r
+  U24009/CO (FADDX1_RVT)                           0.06      3.73 r
+  U24012/CO (FADDX1_RVT)                           0.06      3.79 r
+  U24015/CO (FADDX1_RVT)                           0.06      3.85 r
+  U24019/CO (FADDX1_RVT)                           0.06      3.91 r
+  U24022/CO (FADDX1_RVT)                           0.06      3.97 r
+  U24025/CO (FADDX1_RVT)                           0.06      4.03 r
+  U24028/CO (FADDX1_RVT)                           0.06      4.09 r
+  U24031/CO (FADDX1_RVT)                           0.06      4.15 r
+  U24034/CO (FADDX1_RVT)                           0.06      4.21 r
+  U24036/CO (FADDX1_RVT)                           0.06      4.26 r
+  U24039/Y (XOR2X1_RVT)                            0.06      4.33 f
+  U24040/Y (MUX21X1_RVT)                           0.05      4.37 f
+  gen_mac_lanes[30].u_lane/u_mac/acc_reg[63]/D (DFFARX2_RVT)
+                                                   0.00      4.37 f
+  data arrival time                                          4.37
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (propagated)                 0.21     10.21
+  gen_mac_lanes[30].u_lane/u_mac/acc_reg[63]/CLK (DFFARX2_RVT)
+                                                   0.00     10.21 r
+  clock uncertainty                               -0.10     10.11
+  library setup time                              -0.02     10.08
+  data required time                                        10.08
+  ------------------------------------------------------------------------
+  data required time                                        10.08
+  data arrival time                                         -4.37
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.71
+
+
+1

@@ -1,0 +1,10 @@
+cell	dx	dy	old_origin	new_origin_pre_legalize	new_origin_post_legalize	status	message
+U_2_PTECO_HOLD_BUF95	0.152	0	1079.8960 429.6400	1080.0480 429.6400	PENDING	PASS	1
+
+move_net_exclude_regex	^(VDD|VSS)$
+excluded_move_pin_nets	VDD VSS
+move_pin_nets	net_PTECO_HOLD_NET95 u_input_fifo/n3861
+legalize_placement	NA	NA	NA	NA	NA	PASS	1
+
+post_legalize_cell	origin	bbox	physical_status
+U_2_PTECO_HOLD_BUF95	1079.8960 429.6400	{1078.5650 427.8670} {1080.0110 429.6700}	placed

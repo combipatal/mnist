@@ -1,0 +1,48 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 100
+        -slack_lesser_than 0.00
+        -report_by design
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Tue May 12 21:15:37 2026
+****************************************
+
+  Startpoint: gen_mac_lanes[5].u_lane/weight_out_reg[15] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[5].u_lane/u_mac/weight_r_reg[15] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.24      0.24
+
+  gen_mac_lanes[5].u_lane/weight_out_reg[15]/CLK (DFFX1_RVT)
+                                                   0.00      0.24 r
+  gen_mac_lanes[5].u_lane/weight_out_reg[15]/Q (DFFX1_RVT)
+                                                   0.09      0.33 f
+  gen_mac_lanes[5].u_lane/u_mac/weight_r_reg[15]/D (DFFARX2_RVT)
+                                                   0.00      0.33 f
+  data arrival time                                          0.33
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.28      0.28
+  gen_mac_lanes[5].u_lane/u_mac/weight_r_reg[15]/CLK (DFFARX2_RVT)
+                                                   0.00      0.28 r
+  clock uncertainty                                0.05      0.33
+  library hold time                                0.00      0.33
+  data required time                                         0.33
+  ------------------------------------------------------------------------
+  data required time                                         0.33
+  data arrival time                                         -0.33
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+1

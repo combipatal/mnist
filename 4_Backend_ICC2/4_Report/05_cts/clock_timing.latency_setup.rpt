@@ -1,0 +1,59 @@
+****************************************
+Report : clock timing
+        -type latency
+        -launch
+        -nworst 20
+        -setup
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Sun May 10 19:38:25 2026
+****************************************
+
+  Mode: default
+  Clock: clk
+
+                                                 --- Latency ---
+  Clock Pin                             Trans   Source   Offset  Network    Total            Corner
+---------------------------------------------------------------------------------------------------
+  u_input_fifo/fifo_buf_reg[33][15]/CLK
+                                         0.05     0.00       --     0.38     0.38 rp-+      default
+  u_input_fifo/fifo_buf_reg[97][8]/CLK
+                                         0.05     0.00       --     0.38     0.38 rp-+      default
+  u_input_fifo/fifo_buf_reg[97][11]/CLK
+                                         0.05     0.00       --     0.38     0.38 rp-+      default
+  u_input_fifo/fifo_buf_reg[33][2]/CLK
+                                         0.05     0.00       --     0.38     0.38 rp-+      default
+  u_input_fifo/fifo_buf_reg[97][15]/CLK
+                                         0.05     0.00       --     0.38     0.38 rp-+      default
+  u_input_fifo/fifo_buf_reg[33][9]/CLK
+                                         0.05     0.00       --     0.38     0.38 rp-+      default
+  u_input_fifo/fifo_buf_reg[33][11]/CLK
+                                         0.05     0.00       --     0.38     0.38 rp-+      default
+  u_input_fifo/fifo_buf_reg[33][14]/CLK
+                                         0.05     0.00       --     0.38     0.38 rp-+      default
+  u_input_fifo/fifo_buf_reg[81][8]/CLK
+                                         0.05     0.00       --     0.38     0.38 rp-+      default
+  u_input_fifo/fifo_buf_reg[33][4]/CLK
+                                         0.05     0.00       --     0.38     0.38 rp-+      default
+  u_input_fifo/fifo_buf_reg[81][14]/CLK
+                                         0.05     0.00       --     0.38     0.38 rp-+      default
+  u_input_fifo/fifo_buf_reg[33][1]/CLK
+                                         0.05     0.00       --     0.38     0.38 rp-+      default
+  u_input_fifo/fifo_buf_reg[33][3]/CLK
+                                         0.05     0.00       --     0.38     0.38 rp-+      default
+  u_input_fifo/fifo_buf_reg[97][12]/CLK
+                                         0.05     0.00       --     0.38     0.38 rp-+      default
+  u_input_fifo/fifo_buf_reg[97][3]/CLK
+                                         0.05     0.00       --     0.38     0.38 rp-+      default
+  u_input_fifo/fifo_buf_reg[97][1]/CLK
+                                         0.05     0.00       --     0.38     0.38 rp-+      default
+  u_input_fifo/fifo_buf_reg[97][6]/CLK
+                                         0.05     0.00       --     0.38     0.38 rp-+      default
+  u_input_fifo/fifo_buf_reg[33][6]/CLK
+                                         0.05     0.00       --     0.38     0.38 rp-+      default
+  u_input_fifo/fifo_buf_reg[93][5]/CLK
+                                         0.05     0.00       --     0.38     0.38 rp-+      default
+  u_input_fifo/fifo_buf_reg[33][12]/CLK
+                                         0.05     0.00       --     0.38     0.38 rp-+      default
+---------------------------------------------------------------------------------------------------
+1

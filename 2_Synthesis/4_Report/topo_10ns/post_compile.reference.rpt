@@ -1,0 +1,166 @@
+ 
+****************************************
+Report : reference
+Design : nn_top
+Version: W-2024.09-SP5-5
+Date   : Sat May  9 20:36:37 2026
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt1p05v25c
+                                  2.033152    5108  10385.340944  
+AND2X2_RVT         saed32rvt_tt1p05v25c
+                                  2.287296     288    658.741264  
+AND2X4_RVT         saed32rvt_tt1p05v25c
+                                  2.795584      28     78.276351  
+AND3X1_RVT         saed32rvt_tt1p05v25c
+                                  2.287296     938   2145.483701  
+AND3X2_RVT         saed32rvt_tt1p05v25c
+                                  2.541440      58    147.403521  
+AND3X4_RVT         saed32rvt_tt1p05v25c
+                                  3.049728       2      6.099456  
+AND4X1_RVT         saed32rvt_tt1p05v25c
+                                  2.541440    5439  13822.892215  
+AND4X2_RVT         saed32rvt_tt1p05v25c
+                                  3.812160      10     38.121600  
+AND4X4_RVT         saed32rvt_tt1p05v25c
+                                  4.320448      16     69.127167  
+AO21X1_RVT         saed32rvt_tt1p05v25c
+                                  2.541440    1083   2752.379531  
+AO21X2_RVT         saed32rvt_tt1p05v25c
+                                  2.795584      51    142.574782  
+AO22X1_RVT         saed32rvt_tt1p05v25c
+                                  2.541440   53462  135870.465818 
+AO22X2_RVT         saed32rvt_tt1p05v25c
+                                  2.795584    1706   4769.266242  
+AO221X1_RVT        saed32rvt_tt1p05v25c
+                                  3.049728    1936   5904.273247  
+AO221X2_RVT        saed32rvt_tt1p05v25c
+                                  3.303872      93    307.260106  
+AO222X1_RVT        saed32rvt_tt1p05v25c
+                                  3.303872     689   2276.367883  
+AO222X2_RVT        saed32rvt_tt1p05v25c
+                                  3.558016      23     81.834369  
+AOI21X1_RVT        saed32rvt_tt1p05v25c
+                                  3.049728      23     70.143742  
+AOI21X2_RVT        saed32rvt_tt1p05v25c
+                                  3.303872       3      9.911616  
+AOI22X1_RVT        saed32rvt_tt1p05v25c
+                                  3.049728     549   1674.300626  
+AOI221X1_RVT       saed32rvt_tt1p05v25c
+                                  3.558016       2      7.116032  
+AOI222X1_RVT       saed32rvt_tt1p05v25c
+                                  3.812160      38    144.862081  
+DFFARX1_RVT        saed32rvt_tt1p05v25c
+                                  7.116032   32859  233825.699548 n
+DFFARX2_RVT        saed32rvt_tt1p05v25c
+                                  7.624320    5439  41468.676644  n
+DFFASX2_RVT        saed32rvt_tt1p05v25c
+                                  7.624320       1      7.624320  n
+DFFX1_RVT          saed32rvt_tt1p05v25c
+                                  6.607744     867   5728.914236  n
+DFFX2_RVT          saed32rvt_tt1p05v25c
+                                  7.116032     493   3508.203837  n
+FADDX1_RVT         saed32rvt_tt1p05v25c
+                                  4.828736    5719  27615.540203  r
+FADDX2_RVT         saed32rvt_tt1p05v25c
+                                  5.337024      42    224.155017  r
+HADDX1_RVT         saed32rvt_tt1p05v25c
+                                  3.303872      36    118.939396  r
+INVX1_RVT          saed32rvt_tt1p05v25c
+                                  1.270720   10476  13312.062773  
+INVX2_RVT          saed32rvt_tt1p05v25c
+                                  1.524864    1672   2549.572538  
+INVX4_RVT          saed32rvt_tt1p05v25c
+                                  2.033152      18     36.596738  
+INVX8_RVT          saed32rvt_tt1p05v25c
+                                  3.049728       2      6.099456  
+MUX21X1_RVT        saed32rvt_tt1p05v25c
+                                  3.303872    2707   8943.581798  
+MUX41X1_RVT        saed32rvt_tt1p05v25c
+                                  5.591168      39    218.055549  
+NAND2X0_RVT        saed32rvt_tt1p05v25c
+                                  1.524864    8751  13344.084500  
+NAND2X2_RVT        saed32rvt_tt1p05v25c
+                                  2.795584       3      8.386752  
+NAND2X4_RVT        saed32rvt_tt1p05v25c
+                                  3.303872      13     42.950337  
+NAND3X0_RVT        saed32rvt_tt1p05v25c
+                                  1.779008    3094   5504.250848  
+NAND3X2_RVT        saed32rvt_tt1p05v25c
+                                  3.049728       2      6.099456  
+NAND4X0_RVT        saed32rvt_tt1p05v25c
+                                  2.033152   10974  22311.811183  
+NBUFFX2_RVT        saed32rvt_tt1p05v25c
+                                  2.033152    6769  13762.406588  
+NBUFFX4_RVT        saed32rvt_tt1p05v25c
+                                  2.541440     383    973.371524  
+NBUFFX8_RVT        saed32rvt_tt1p05v25c
+                                  3.812160      15     57.182400  
+NBUFFX16_RVT       saed32rvt_tt1p05v25c
+                                  6.099456       1      6.099456  
+NOR2X0_RVT         saed32rvt_tt1p05v25c
+                                  2.541440      74    188.066561  
+NOR2X2_RVT         saed32rvt_tt1p05v25c
+                                  2.795584       1      2.795584  
+NOR3X0_RVT         saed32rvt_tt1p05v25c
+                                  2.795584     246    687.713655  
+NOR4X1_RVT         saed32rvt_tt1p05v25c
+                                  3.049728    6455  19685.993702  
+OA21X1_RVT         saed32rvt_tt1p05v25c
+                                  2.541440     531   1349.504645  
+OA21X2_RVT         saed32rvt_tt1p05v25c
+                                  2.795584      64    178.917374  
+OA22X1_RVT         saed32rvt_tt1p05v25c
+                                  2.541440     757   1923.870088  
+OA22X2_RVT         saed32rvt_tt1p05v25c
+                                  2.795584     129    360.630331  
+OA221X1_RVT        saed32rvt_tt1p05v25c
+                                  3.049728    3723  11354.137034  
+OA221X2_RVT        saed32rvt_tt1p05v25c
+                                  3.303872      55    181.712966  
+OA222X1_RVT        saed32rvt_tt1p05v25c
+                                  3.303872     257    849.095132  
+OA222X2_RVT        saed32rvt_tt1p05v25c
+                                  3.558016       3     10.674048  
+OAI21X1_RVT        saed32rvt_tt1p05v25c
+                                  3.049728     230    701.437421  
+OAI22X1_RVT        saed32rvt_tt1p05v25c
+                                  3.049728      18     54.895103  
+OAI221X1_RVT       saed32rvt_tt1p05v25c
+                                  3.558016      65    231.271044  
+OAI222X1_RVT       saed32rvt_tt1p05v25c
+                                  3.812160       1      3.812160  
+OR2X1_RVT          saed32rvt_tt1p05v25c
+                                  2.033152     463    941.349424  
+OR2X2_RVT          saed32rvt_tt1p05v25c
+                                  2.287296      33     75.480770  
+OR2X4_RVT          saed32rvt_tt1p05v25c
+                                  2.795584       4     11.182336  
+OR3X1_RVT          saed32rvt_tt1p05v25c
+                                  2.541440     398   1011.493124  
+OR3X2_RVT          saed32rvt_tt1p05v25c
+                                  2.541440       4     10.165760  
+OR4X1_RVT          saed32rvt_tt1p05v25c
+                                  3.558016      43    152.994691  
+OR4X2_RVT          saed32rvt_tt1p05v25c
+                                  3.812160       1      3.812160  
+XOR2X1_RVT         saed32rvt_tt1p05v25c
+                                  4.320448      98    423.403896  
+XOR2X2_RVT         saed32rvt_tt1p05v25c
+                                  4.574592       1      4.574592  
+-----------------------------------------------------------------------------
+Total 71 references                                 615341.590990
+1

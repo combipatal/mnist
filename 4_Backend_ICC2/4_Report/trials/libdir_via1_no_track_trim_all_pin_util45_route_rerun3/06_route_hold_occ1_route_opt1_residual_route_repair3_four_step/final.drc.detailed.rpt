@@ -1,0 +1,18 @@
+****************************************
+Report : Report drc errors
+Design : route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_route_opt1
+Data   : zroute.err
+Type   : detailed
+Version: W-2024.09-SP2
+Date   : Tue May 12 11:00:23 2026
+****************************************
+
+Error ID          : 0
+Error Type        : Diff net spacing
+Error Layer       : M1 (11)
+Number of errors  : 1
+Description       :  -- 
+Status            : error
+Bbox              : {824.7350 272.2400} {824.8090 272.4000}
+
+1

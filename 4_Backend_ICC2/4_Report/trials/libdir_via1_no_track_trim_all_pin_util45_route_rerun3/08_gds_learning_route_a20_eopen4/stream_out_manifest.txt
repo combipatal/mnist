@@ -1,0 +1,14 @@
+stage: ICC2 learning GDS stream-out
+top: nn_top
+input_block: /DATA/home/edu135/MNIST/4_Backend_ICC2/2_Output/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/mnist_npu_icc2_lib:route_a20_eopen4.design
+output_gds: /DATA/home/edu135/MNIST/4_Backend_ICC2/2_Output/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/08_gds_learning_route_a20_eopen4/nn_top.route_a20_eopen4.learning.gds
+output_gds_size_bytes: 263520256
+layer_map: /DATA/home/edu135/lib/SAED32_EDK/tech/milkyway/saed32nm_1p9m_gdsout_mw.map
+layer_map_format: icc_default
+hierarchy: design_lib
+merge_file: /DATA/home/edu135/lib/SAED32_EDK/lib/stdcell_rvt/gds/saed32nm_rvt_oa.gds
+report_cell_source: /DATA/home/edu135/MNIST/4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/08_gds_learning_route_a20_eopen4/gds_cell_source.rpt
+verbose_report_cell_source: /DATA/home/edu135/MNIST/4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/08_gds_learning_route_a20_eopen4/gds_cell_source.verbose.rpt
+design_physical_report: /DATA/home/edu135/MNIST/4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/08_gds_learning_route_a20_eopen4/design_physical.rpt
+check_routes_report: /DATA/home/edu135/MNIST/4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/08_gds_learning_route_a20_eopen4/check_routes.rpt
+note: Learning artifact only. Not a signoff/tapeout declaration; antenna rules remain unavailable.

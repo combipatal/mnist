@@ -1,0 +1,736 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 20
+        -report_by design
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Sun May 10 21:12:19 2026
+****************************************
+
+  Startpoint: gen_mac_lanes[0].u_lane/weight_out_reg[8] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[0].u_lane/u_mac/weight_r_reg[8] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  gen_mac_lanes[0].u_lane/weight_out_reg[8]/CLK (DFFX2_RVT)
+                                                   0.00      0.00 r
+  gen_mac_lanes[0].u_lane/weight_out_reg[8]/QN (DFFX2_RVT)
+                                                   0.06      0.06 f
+  U130797/Y (INVX1_RVT)                            0.01      0.07 r
+  gen_mac_lanes[0].u_lane/u_mac/weight_r_reg[8]/D (DFFARX2_RVT)
+                                                   0.00      0.07 r
+  data arrival time                                          0.07
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  gen_mac_lanes[0].u_lane/u_mac/weight_r_reg[8]/CLK (DFFARX2_RVT)
+                                                   0.00      0.00 r
+  clock uncertainty                                0.10      0.10
+  library hold time                               -0.02      0.08
+  data required time                                         0.08
+  ------------------------------------------------------------------------
+  data required time                                         0.08
+  data arrival time                                         -0.07
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.01
+
+
+
+  Startpoint: gen_mac_lanes[1].u_lane/weight_out_reg[7] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[1].u_lane/u_mac/weight_r_reg[7] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  gen_mac_lanes[1].u_lane/weight_out_reg[7]/CLK (DFFX2_RVT)
+                                                   0.00      0.00 r
+  gen_mac_lanes[1].u_lane/weight_out_reg[7]/QN (DFFX2_RVT)
+                                                   0.07      0.07 r
+  U130813/Y (INVX2_RVT)                            0.01      0.08 f
+  gen_mac_lanes[1].u_lane/u_mac/weight_r_reg[7]/D (DFFARX2_RVT)
+                                                   0.00      0.08 f
+  data arrival time                                          0.08
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  gen_mac_lanes[1].u_lane/u_mac/weight_r_reg[7]/CLK (DFFARX2_RVT)
+                                                   0.00      0.00 r
+  clock uncertainty                                0.10      0.10
+  library hold time                               -0.01      0.09
+  data required time                                         0.09
+  ------------------------------------------------------------------------
+  data required time                                         0.09
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.01
+
+
+
+  Startpoint: gen_mac_lanes[1].u_lane/weight_out_reg[10] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[1].u_lane/u_mac/weight_r_reg[10] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  gen_mac_lanes[1].u_lane/weight_out_reg[10]/CLK (DFFX2_RVT)
+                                                   0.00      0.00 r
+  gen_mac_lanes[1].u_lane/weight_out_reg[10]/QN (DFFX2_RVT)
+                                                   0.07      0.07 r
+  U130812/Y (INVX2_RVT)                            0.01      0.08 f
+  gen_mac_lanes[1].u_lane/u_mac/weight_r_reg[10]/D (DFFARX2_RVT)
+                                                   0.00      0.08 f
+  data arrival time                                          0.08
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  gen_mac_lanes[1].u_lane/u_mac/weight_r_reg[10]/CLK (DFFARX2_RVT)
+                                                   0.00      0.00 r
+  clock uncertainty                                0.10      0.10
+  library hold time                               -0.01      0.09
+  data required time                                         0.09
+  ------------------------------------------------------------------------
+  data required time                                         0.09
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.01
+
+
+
+  Startpoint: gen_mac_lanes[0].u_lane/weight_out_reg[9] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[0].u_lane/u_mac/weight_r_reg[9] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  gen_mac_lanes[0].u_lane/weight_out_reg[9]/CLK (DFFX2_RVT)
+                                                   0.00      0.00 r
+  gen_mac_lanes[0].u_lane/weight_out_reg[9]/QN (DFFX2_RVT)
+                                                   0.07      0.07 r
+  U130799/Y (INVX1_RVT)                            0.01      0.08 f
+  gen_mac_lanes[0].u_lane/u_mac/weight_r_reg[9]/D (DFFARX2_RVT)
+                                                   0.00      0.08 f
+  data arrival time                                          0.08
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  gen_mac_lanes[0].u_lane/u_mac/weight_r_reg[9]/CLK (DFFARX2_RVT)
+                                                   0.00      0.00 r
+  clock uncertainty                                0.10      0.10
+  library hold time                               -0.01      0.09
+  data required time                                         0.09
+  ------------------------------------------------------------------------
+  data required time                                         0.09
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.01
+
+
+
+  Startpoint: gen_mac_lanes[10].u_lane/weight_out_reg[15] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[10].u_lane/u_mac/weight_r_reg[15] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  gen_mac_lanes[10].u_lane/weight_out_reg[15]/CLK (DFFX1_RVT)
+                                                   0.00      0.00 r
+  gen_mac_lanes[10].u_lane/weight_out_reg[15]/Q (DFFX1_RVT)
+                                                   0.08      0.08 f
+  gen_mac_lanes[10].u_lane/u_mac/weight_r_reg[15]/D (DFFARX2_RVT)
+                                                   0.00      0.08 f
+  data arrival time                                          0.08
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  gen_mac_lanes[10].u_lane/u_mac/weight_r_reg[15]/CLK (DFFARX2_RVT)
+                                                   0.00      0.00 r
+  clock uncertainty                                0.10      0.10
+  library hold time                               -0.01      0.09
+  data required time                                         0.09
+  ------------------------------------------------------------------------
+  data required time                                         0.09
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.01
+
+
+
+  Startpoint: gen_mac_lanes[26].u_lane/weight_out_reg[14] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[26].u_lane/u_mac/weight_r_reg[14] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  gen_mac_lanes[26].u_lane/weight_out_reg[14]/CLK (DFFX1_RVT)
+                                                   0.00      0.00 r
+  gen_mac_lanes[26].u_lane/weight_out_reg[14]/Q (DFFX1_RVT)
+                                                   0.08      0.08 f
+  gen_mac_lanes[26].u_lane/u_mac/weight_r_reg[14]/D (DFFARX2_RVT)
+                                                   0.00      0.08 f
+  data arrival time                                          0.08
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  gen_mac_lanes[26].u_lane/u_mac/weight_r_reg[14]/CLK (DFFARX2_RVT)
+                                                   0.00      0.00 r
+  clock uncertainty                                0.10      0.10
+  library hold time                               -0.01      0.09
+  data required time                                         0.09
+  ------------------------------------------------------------------------
+  data required time                                         0.09
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.01
+
+
+
+  Startpoint: gen_mac_lanes[10].u_lane/weight_out_reg[13] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[10].u_lane/u_mac/weight_r_reg[13] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  gen_mac_lanes[10].u_lane/weight_out_reg[13]/CLK (DFFX1_RVT)
+                                                   0.00      0.00 r
+  gen_mac_lanes[10].u_lane/weight_out_reg[13]/Q (DFFX1_RVT)
+                                                   0.08      0.08 f
+  gen_mac_lanes[10].u_lane/u_mac/weight_r_reg[13]/D (DFFARX2_RVT)
+                                                   0.00      0.08 f
+  data arrival time                                          0.08
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  gen_mac_lanes[10].u_lane/u_mac/weight_r_reg[13]/CLK (DFFARX2_RVT)
+                                                   0.00      0.00 r
+  clock uncertainty                                0.10      0.10
+  library hold time                               -0.01      0.09
+  data required time                                         0.09
+  ------------------------------------------------------------------------
+  data required time                                         0.09
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.01
+
+
+
+  Startpoint: gen_mac_lanes[3].u_lane/weight_out_reg[13] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[3].u_lane/u_mac/weight_r_reg[13] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  gen_mac_lanes[3].u_lane/weight_out_reg[13]/CLK (DFFX1_RVT)
+                                                   0.00      0.00 r
+  gen_mac_lanes[3].u_lane/weight_out_reg[13]/Q (DFFX1_RVT)
+                                                   0.08      0.08 f
+  gen_mac_lanes[3].u_lane/u_mac/weight_r_reg[13]/D (DFFARX2_RVT)
+                                                   0.00      0.08 f
+  data arrival time                                          0.08
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  gen_mac_lanes[3].u_lane/u_mac/weight_r_reg[13]/CLK (DFFARX2_RVT)
+                                                   0.00      0.00 r
+  clock uncertainty                                0.10      0.10
+  library hold time                               -0.01      0.09
+  data required time                                         0.09
+  ------------------------------------------------------------------------
+  data required time                                         0.09
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.01
+
+
+
+  Startpoint: gen_mac_lanes[3].u_lane/weight_out_reg[12] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[3].u_lane/u_mac/weight_r_reg[12] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  gen_mac_lanes[3].u_lane/weight_out_reg[12]/CLK (DFFX1_RVT)
+                                                   0.00      0.00 r
+  gen_mac_lanes[3].u_lane/weight_out_reg[12]/Q (DFFX1_RVT)
+                                                   0.08      0.08 f
+  gen_mac_lanes[3].u_lane/u_mac/weight_r_reg[12]/D (DFFARX2_RVT)
+                                                   0.00      0.08 f
+  data arrival time                                          0.08
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  gen_mac_lanes[3].u_lane/u_mac/weight_r_reg[12]/CLK (DFFARX2_RVT)
+                                                   0.00      0.00 r
+  clock uncertainty                                0.10      0.10
+  library hold time                               -0.01      0.09
+  data required time                                         0.09
+  ------------------------------------------------------------------------
+  data required time                                         0.09
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.01
+
+
+
+  Startpoint: gen_mac_lanes[2].u_lane/weight_out_reg[14] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[2].u_lane/u_mac/weight_r_reg[14] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  gen_mac_lanes[2].u_lane/weight_out_reg[14]/CLK (DFFX1_RVT)
+                                                   0.00      0.00 r
+  gen_mac_lanes[2].u_lane/weight_out_reg[14]/Q (DFFX1_RVT)
+                                                   0.08      0.08 f
+  gen_mac_lanes[2].u_lane/u_mac/weight_r_reg[14]/D (DFFARX2_RVT)
+                                                   0.00      0.08 f
+  data arrival time                                          0.08
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  gen_mac_lanes[2].u_lane/u_mac/weight_r_reg[14]/CLK (DFFARX2_RVT)
+                                                   0.00      0.00 r
+  clock uncertainty                                0.10      0.10
+  library hold time                               -0.01      0.09
+  data required time                                         0.09
+  ------------------------------------------------------------------------
+  data required time                                         0.09
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.01
+
+
+
+  Startpoint: gen_mac_lanes[30].u_lane/weight_out_reg[12] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[30].u_lane/u_mac/weight_r_reg[12] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  gen_mac_lanes[30].u_lane/weight_out_reg[12]/CLK (DFFX1_RVT)
+                                                   0.00      0.00 r
+  gen_mac_lanes[30].u_lane/weight_out_reg[12]/Q (DFFX1_RVT)
+                                                   0.08      0.08 f
+  gen_mac_lanes[30].u_lane/u_mac/weight_r_reg[12]/D (DFFARX2_RVT)
+                                                   0.00      0.08 f
+  data arrival time                                          0.08
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  gen_mac_lanes[30].u_lane/u_mac/weight_r_reg[12]/CLK (DFFARX2_RVT)
+                                                   0.00      0.00 r
+  clock uncertainty                                0.10      0.10
+  library hold time                               -0.01      0.09
+  data required time                                         0.09
+  ------------------------------------------------------------------------
+  data required time                                         0.09
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.01
+
+
+
+  Startpoint: gen_mac_lanes[5].u_lane/weight_out_reg[12] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[5].u_lane/u_mac/weight_r_reg[12] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  gen_mac_lanes[5].u_lane/weight_out_reg[12]/CLK (DFFX1_RVT)
+                                                   0.00      0.00 r
+  gen_mac_lanes[5].u_lane/weight_out_reg[12]/Q (DFFX1_RVT)
+                                                   0.08      0.08 f
+  gen_mac_lanes[5].u_lane/u_mac/weight_r_reg[12]/D (DFFARX2_RVT)
+                                                   0.00      0.08 f
+  data arrival time                                          0.08
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  gen_mac_lanes[5].u_lane/u_mac/weight_r_reg[12]/CLK (DFFARX2_RVT)
+                                                   0.00      0.00 r
+  clock uncertainty                                0.10      0.10
+  library hold time                               -0.01      0.09
+  data required time                                         0.09
+  ------------------------------------------------------------------------
+  data required time                                         0.09
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.01
+
+
+
+  Startpoint: gen_mac_lanes[24].u_lane/weight_out_reg[12] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[24].u_lane/u_mac/weight_r_reg[12] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  gen_mac_lanes[24].u_lane/weight_out_reg[12]/CLK (DFFX1_RVT)
+                                                   0.00      0.00 r
+  gen_mac_lanes[24].u_lane/weight_out_reg[12]/Q (DFFX1_RVT)
+                                                   0.08      0.08 f
+  gen_mac_lanes[24].u_lane/u_mac/weight_r_reg[12]/D (DFFARX2_RVT)
+                                                   0.00      0.08 f
+  data arrival time                                          0.08
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  gen_mac_lanes[24].u_lane/u_mac/weight_r_reg[12]/CLK (DFFARX2_RVT)
+                                                   0.00      0.00 r
+  clock uncertainty                                0.10      0.10
+  library hold time                               -0.01      0.09
+  data required time                                         0.09
+  ------------------------------------------------------------------------
+  data required time                                         0.09
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.01
+
+
+
+  Startpoint: gen_mac_lanes[4].u_lane/weight_out_reg[15] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[4].u_lane/u_mac/weight_r_reg[15] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  gen_mac_lanes[4].u_lane/weight_out_reg[15]/CLK (DFFX1_RVT)
+                                                   0.00      0.00 r
+  gen_mac_lanes[4].u_lane/weight_out_reg[15]/Q (DFFX1_RVT)
+                                                   0.08      0.08 f
+  gen_mac_lanes[4].u_lane/u_mac/weight_r_reg[15]/D (DFFARX2_RVT)
+                                                   0.00      0.08 f
+  data arrival time                                          0.08
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  gen_mac_lanes[4].u_lane/u_mac/weight_r_reg[15]/CLK (DFFARX2_RVT)
+                                                   0.00      0.00 r
+  clock uncertainty                                0.10      0.10
+  library hold time                               -0.01      0.09
+  data required time                                         0.09
+  ------------------------------------------------------------------------
+  data required time                                         0.09
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.01
+
+
+
+  Startpoint: gen_mac_lanes[0].u_lane/weight_out_reg[10] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[0].u_lane/u_mac/weight_r_reg[10] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  gen_mac_lanes[0].u_lane/weight_out_reg[10]/CLK (DFFX2_RVT)
+                                                   0.00      0.00 r
+  gen_mac_lanes[0].u_lane/weight_out_reg[10]/QN (DFFX2_RVT)
+                                                   0.07      0.07 r
+  U130794/Y (INVX1_RVT)                            0.01      0.08 f
+  gen_mac_lanes[0].u_lane/u_mac/weight_r_reg[10]/D (DFFARX2_RVT)
+                                                   0.00      0.08 f
+  data arrival time                                          0.08
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  gen_mac_lanes[0].u_lane/u_mac/weight_r_reg[10]/CLK (DFFARX2_RVT)
+                                                   0.00      0.00 r
+  clock uncertainty                                0.10      0.10
+  library hold time                               -0.01      0.09
+  data required time                                         0.09
+  ------------------------------------------------------------------------
+  data required time                                         0.09
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.01
+
+
+
+  Startpoint: gen_mac_lanes[29].u_lane/weight_out_reg[12] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[29].u_lane/u_mac/weight_r_reg[12] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  gen_mac_lanes[29].u_lane/weight_out_reg[12]/CLK (DFFX1_RVT)
+                                                   0.00      0.00 r
+  gen_mac_lanes[29].u_lane/weight_out_reg[12]/Q (DFFX1_RVT)
+                                                   0.08      0.08 f
+  gen_mac_lanes[29].u_lane/u_mac/weight_r_reg[12]/D (DFFARX2_RVT)
+                                                   0.00      0.08 f
+  data arrival time                                          0.08
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  gen_mac_lanes[29].u_lane/u_mac/weight_r_reg[12]/CLK (DFFARX2_RVT)
+                                                   0.00      0.00 r
+  clock uncertainty                                0.10      0.10
+  library hold time                               -0.01      0.09
+  data required time                                         0.09
+  ------------------------------------------------------------------------
+  data required time                                         0.09
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.01
+
+
+
+  Startpoint: gen_mac_lanes[15].u_lane/weight_out_reg[13] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[15].u_lane/u_mac/weight_r_reg[13] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  gen_mac_lanes[15].u_lane/weight_out_reg[13]/CLK (DFFX1_RVT)
+                                                   0.00      0.00 r
+  gen_mac_lanes[15].u_lane/weight_out_reg[13]/Q (DFFX1_RVT)
+                                                   0.08      0.08 f
+  gen_mac_lanes[15].u_lane/u_mac/weight_r_reg[13]/D (DFFARX2_RVT)
+                                                   0.00      0.08 f
+  data arrival time                                          0.08
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  gen_mac_lanes[15].u_lane/u_mac/weight_r_reg[13]/CLK (DFFARX2_RVT)
+                                                   0.00      0.00 r
+  clock uncertainty                                0.10      0.10
+  library hold time                               -0.01      0.09
+  data required time                                         0.09
+  ------------------------------------------------------------------------
+  data required time                                         0.09
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.01
+
+
+
+  Startpoint: gen_mac_lanes[1].u_lane/weight_out_reg[15] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[1].u_lane/u_mac/weight_r_reg[15] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  gen_mac_lanes[1].u_lane/weight_out_reg[15]/CLK (DFFX1_RVT)
+                                                   0.00      0.00 r
+  gen_mac_lanes[1].u_lane/weight_out_reg[15]/Q (DFFX1_RVT)
+                                                   0.08      0.08 f
+  gen_mac_lanes[1].u_lane/u_mac/weight_r_reg[15]/D (DFFARX2_RVT)
+                                                   0.00      0.08 f
+  data arrival time                                          0.08
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  gen_mac_lanes[1].u_lane/u_mac/weight_r_reg[15]/CLK (DFFARX2_RVT)
+                                                   0.00      0.00 r
+  clock uncertainty                                0.10      0.10
+  library hold time                               -0.01      0.09
+  data required time                                         0.09
+  ------------------------------------------------------------------------
+  data required time                                         0.09
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.01
+
+
+
+  Startpoint: gen_mac_lanes[21].u_lane/weight_out_reg[13] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[21].u_lane/u_mac/weight_r_reg[13] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  gen_mac_lanes[21].u_lane/weight_out_reg[13]/CLK (DFFX1_RVT)
+                                                   0.00      0.00 r
+  gen_mac_lanes[21].u_lane/weight_out_reg[13]/Q (DFFX1_RVT)
+                                                   0.08      0.08 f
+  gen_mac_lanes[21].u_lane/u_mac/weight_r_reg[13]/D (DFFARX2_RVT)
+                                                   0.00      0.08 f
+  data arrival time                                          0.08
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  gen_mac_lanes[21].u_lane/u_mac/weight_r_reg[13]/CLK (DFFARX2_RVT)
+                                                   0.00      0.00 r
+  clock uncertainty                                0.10      0.10
+  library hold time                               -0.01      0.09
+  data required time                                         0.09
+  ------------------------------------------------------------------------
+  data required time                                         0.09
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.01
+
+
+
+  Startpoint: gen_mac_lanes[10].u_lane/weight_out_reg[12] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[10].u_lane/u_mac/weight_r_reg[12] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  gen_mac_lanes[10].u_lane/weight_out_reg[12]/CLK (DFFX1_RVT)
+                                                   0.00      0.00 r
+  gen_mac_lanes[10].u_lane/weight_out_reg[12]/Q (DFFX1_RVT)
+                                                   0.08      0.08 f
+  gen_mac_lanes[10].u_lane/u_mac/weight_r_reg[12]/D (DFFARX2_RVT)
+                                                   0.00      0.08 f
+  data arrival time                                          0.08
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  gen_mac_lanes[10].u_lane/u_mac/weight_r_reg[12]/CLK (DFFARX2_RVT)
+                                                   0.00      0.00 r
+  clock uncertainty                                0.10      0.10
+  library hold time                               -0.01      0.09
+  data required time                                         0.09
+  ------------------------------------------------------------------------
+  data required time                                         0.09
+  data arrival time                                         -0.08
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.01
+
+
+1

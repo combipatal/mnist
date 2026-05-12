@@ -1,0 +1,16 @@
+****************************************
+Report : Report drc errors
+Design : route_eco_offgrid1
+Data   : zroute.err
+Type   : error_layer
+Version: W-2024.09-SP2
+Date   : Mon May 11 14:46:30 2026
+****************************************
+
+ErrorSet                                    Total   Visible     Fixed   Ignored
+--------------------------------------------------------------------------------
+Design : route_eco_offgrid1                 1       1           0       0
+      Data : zroute.err                     1       1           0       0
+            M1 (11)                         1       1           0       0
+                Off-grid                    1       1           0       0
+1

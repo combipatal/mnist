@@ -1,0 +1,1771 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 50
+        -report_by design
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Mon May 11 21:25:56 2026
+****************************************
+
+  Startpoint: u_input_fifo/fifo_buf_reg[953][6] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_input_fifo/fifo_buf_reg[953][6] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+
+  u_input_fifo/fifo_buf_reg[953][6]/CLK (DFFARX1_RVT)
+                                                   0.00      0.25 r
+  u_input_fifo/fifo_buf_reg[953][6]/Q (DFFARX1_RVT)
+                                                   0.11      0.36 f
+  U89745/Y (AO22X1_RVT)                            0.03      0.39 f
+  u_input_fifo/fifo_buf_reg[953][6]/D (DFFARX1_RVT)
+                                                   0.00      0.39 f
+  data arrival time                                          0.39
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.32      0.32
+  u_input_fifo/fifo_buf_reg[953][6]/CLK (DFFARX1_RVT)
+                                                   0.00      0.32 r
+  clock uncertainty                                0.10      0.42
+  library hold time                                0.00      0.42
+  data required time                                         0.42
+  ------------------------------------------------------------------------
+  data required time                                         0.42
+  data arrival time                                         -0.39
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.02
+
+
+
+  Startpoint: u_input_fifo/fifo_buf_reg[933][12] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_input_fifo/fifo_buf_reg[933][12] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.24      0.24
+
+  u_input_fifo/fifo_buf_reg[933][12]/CLK (DFFARX1_RVT)
+                                                   0.00      0.24 r
+  u_input_fifo/fifo_buf_reg[933][12]/Q (DFFARX1_RVT)
+                                                   0.11      0.35 f
+  U90160/Y (AO22X2_RVT)                            0.04      0.38 f
+  u_input_fifo/fifo_buf_reg[933][12]/D (DFFARX1_RVT)
+                                                   0.00      0.38 f
+  data arrival time                                          0.38
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.30      0.30
+  u_input_fifo/fifo_buf_reg[933][12]/CLK (DFFARX1_RVT)
+                                                   0.00      0.30 r
+  clock uncertainty                                0.10      0.40
+  library hold time                                0.00      0.40
+  data required time                                         0.40
+  ------------------------------------------------------------------------
+  data required time                                         0.40
+  data arrival time                                         -0.38
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.02
+
+
+
+  Startpoint: u_input_fifo/fifo_buf_reg[966][14] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_input_fifo/fifo_buf_reg[966][14] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.24      0.24
+
+  u_input_fifo/fifo_buf_reg[966][14]/CLK (DFFARX1_RVT)
+                                                   0.00      0.24 r
+  u_input_fifo/fifo_buf_reg[966][14]/Q (DFFARX1_RVT)
+                                                   0.11      0.35 f
+  U89498/Y (AO22X1_RVT)                            0.04      0.38 f
+  u_input_fifo/fifo_buf_reg[966][14]/D (DFFARX1_RVT)
+                                                   0.00      0.38 f
+  data arrival time                                          0.38
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.31      0.31
+  u_input_fifo/fifo_buf_reg[966][14]/CLK (DFFARX1_RVT)
+                                                   0.00      0.31 r
+  clock uncertainty                                0.10      0.41
+  library hold time                                0.00      0.41
+  data required time                                         0.41
+  ------------------------------------------------------------------------
+  data required time                                         0.41
+  data arrival time                                         -0.38
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.02
+
+
+
+  Startpoint: u_input_fifo/fifo_buf_reg[1016][13] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_input_fifo/fifo_buf_reg[1016][13] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+
+  u_input_fifo/fifo_buf_reg[1016][13]/CLK (DFFARX1_RVT)
+                                                   0.00      0.25 r
+  u_input_fifo/fifo_buf_reg[1016][13]/Q (DFFARX1_RVT)
+                                                   0.11      0.36 f
+  U88473/Y (AO22X1_RVT)                            0.03      0.39 f
+  u_input_fifo/fifo_buf_reg[1016][13]/D (DFFARX1_RVT)
+                                                   0.00      0.39 f
+  data arrival time                                          0.39
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.31      0.31
+  u_input_fifo/fifo_buf_reg[1016][13]/CLK (DFFARX1_RVT)
+                                                   0.00      0.31 r
+  clock uncertainty                                0.10      0.41
+  library hold time                                0.00      0.42
+  data required time                                         0.42
+  ------------------------------------------------------------------------
+  data required time                                         0.42
+  data arrival time                                         -0.39
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.02
+
+
+
+  Startpoint: act_ram_reg[348][6] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[348][6] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.22      0.22
+
+  act_ram_reg[348][6]/CLK (DFFARX1_RVT)            0.00      0.22 r
+  act_ram_reg[348][6]/Q (DFFARX1_RVT)              0.11      0.33 f
+  U152434/Y (AO22X1_RVT)                           0.03      0.36 f
+  act_ram_reg[348][6]/D (DFFARX1_RVT)              0.00      0.36 f
+  data arrival time                                          0.36
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.28      0.28
+  act_ram_reg[348][6]/CLK (DFFARX1_RVT)            0.00      0.28 r
+  clock uncertainty                                0.10      0.38
+  library hold time                                0.00      0.38
+  data required time                                         0.38
+  ------------------------------------------------------------------------
+  data required time                                         0.38
+  data arrival time                                         -0.36
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.02
+
+
+
+  Startpoint: u_input_fifo/fifo_buf_reg[958][3] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_input_fifo/fifo_buf_reg[958][3] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.23      0.23
+
+  u_input_fifo/fifo_buf_reg[958][3]/CLK (DFFARX1_RVT)
+                                                   0.00      0.23 r
+  u_input_fifo/fifo_buf_reg[958][3]/Q (DFFARX1_RVT)
+                                                   0.11      0.34 f
+  U89651/Y (AO22X1_RVT)                            0.04      0.37 f
+  u_input_fifo/fifo_buf_reg[958][3]/D (DFFARX1_RVT)
+                                                   0.00      0.37 f
+  data arrival time                                          0.37
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.29      0.29
+  u_input_fifo/fifo_buf_reg[958][3]/CLK (DFFARX1_RVT)
+                                                   0.00      0.29 r
+  clock uncertainty                                0.10      0.39
+  library hold time                                0.00      0.39
+  data required time                                         0.39
+  ------------------------------------------------------------------------
+  data required time                                         0.39
+  data arrival time                                         -0.37
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.02
+
+
+
+  Startpoint: act_ram_reg[123][7] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[123][7] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.23      0.23
+
+  act_ram_reg[123][7]/CLK (DFFARX1_RVT)            0.00      0.23 r
+  act_ram_reg[123][7]/Q (DFFARX1_RVT)              0.11      0.34 f
+  U156970/Y (AO22X1_RVT)                           0.04      0.38 f
+  act_ram_reg[123][7]/D (DFFARX1_RVT)              0.00      0.38 f
+  data arrival time                                          0.38
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.29      0.29
+  act_ram_reg[123][7]/CLK (DFFARX1_RVT)            0.00      0.29 r
+  clock uncertainty                                0.10      0.39
+  library hold time                                0.00      0.39
+  data required time                                         0.39
+  ------------------------------------------------------------------------
+  data required time                                         0.39
+  data arrival time                                         -0.38
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.02
+
+
+
+  Startpoint: u_input_fifo/fifo_buf_reg[953][13] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_input_fifo/fifo_buf_reg[953][13] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+
+  u_input_fifo/fifo_buf_reg[953][13]/CLK (DFFARX1_RVT)
+                                                   0.00      0.25 r
+  u_input_fifo/fifo_buf_reg[953][13]/Q (DFFARX1_RVT)
+                                                   0.11      0.36 f
+  U89752/Y (AO22X1_RVT)                            0.03      0.40 f
+  u_input_fifo/fifo_buf_reg[953][13]/D (DFFARX1_RVT)
+                                                   0.00      0.40 f
+  data arrival time                                          0.40
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.32      0.32
+  u_input_fifo/fifo_buf_reg[953][13]/CLK (DFFARX1_RVT)
+                                                   0.00      0.32 r
+  clock uncertainty                                0.10      0.42
+  library hold time                                0.00      0.42
+  data required time                                         0.42
+  ------------------------------------------------------------------------
+  data required time                                         0.42
+  data arrival time                                         -0.40
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.02
+
+
+
+  Startpoint: act_ram_reg[123][0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[123][0] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.23      0.23
+
+  act_ram_reg[123][0]/CLK (DFFARX1_RVT)            0.00      0.23 r
+  act_ram_reg[123][0]/Q (DFFARX1_RVT)              0.11      0.34 f
+  U156952/Y (AO22X1_RVT)                           0.04      0.38 f
+  act_ram_reg[123][0]/D (DFFARX1_RVT)              0.00      0.38 f
+  data arrival time                                          0.38
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.29      0.29
+  act_ram_reg[123][0]/CLK (DFFARX1_RVT)            0.00      0.29 r
+  clock uncertainty                                0.10      0.39
+  library hold time                                0.00      0.40
+  data required time                                         0.40
+  ------------------------------------------------------------------------
+  data required time                                         0.40
+  data arrival time                                         -0.38
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.02
+
+
+
+  Startpoint: u_input_fifo/fifo_buf_reg[905][5] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_input_fifo/fifo_buf_reg[905][5] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+
+  u_input_fifo/fifo_buf_reg[905][5]/CLK (DFFARX1_RVT)
+                                                   0.00      0.25 r
+  u_input_fifo/fifo_buf_reg[905][5]/Q (DFFARX1_RVT)
+                                                   0.11      0.36 f
+  U90694/Y (AO22X1_RVT)                            0.04      0.40 f
+  u_input_fifo/fifo_buf_reg[905][5]/D (DFFARX1_RVT)
+                                                   0.00      0.40 f
+  data arrival time                                          0.40
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.31      0.31
+  u_input_fifo/fifo_buf_reg[905][5]/CLK (DFFARX1_RVT)
+                                                   0.00      0.31 r
+  clock uncertainty                                0.10      0.41
+  library hold time                                0.00      0.42
+  data required time                                         0.42
+  ------------------------------------------------------------------------
+  data required time                                         0.42
+  data arrival time                                         -0.40
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.02
+
+
+
+  Startpoint: u_input_fifo/fifo_buf_reg[1016][5] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_input_fifo/fifo_buf_reg[1016][5] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+
+  u_input_fifo/fifo_buf_reg[1016][5]/CLK (DFFARX1_RVT)
+                                                   0.00      0.25 r
+  u_input_fifo/fifo_buf_reg[1016][5]/Q (DFFARX1_RVT)
+                                                   0.11      0.36 f
+  U88465/Y (AO22X1_RVT)                            0.04      0.40 f
+  u_input_fifo/fifo_buf_reg[1016][5]/D (DFFARX1_RVT)
+                                                   0.00      0.40 f
+  data arrival time                                          0.40
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.31      0.31
+  u_input_fifo/fifo_buf_reg[1016][5]/CLK (DFFARX1_RVT)
+                                                   0.00      0.31 r
+  clock uncertainty                                0.10      0.41
+  library hold time                                0.00      0.42
+  data required time                                         0.42
+  ------------------------------------------------------------------------
+  data required time                                         0.42
+  data arrival time                                         -0.40
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.02
+
+
+
+  Startpoint: u_input_fifo/fifo_buf_reg[1016][1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_input_fifo/fifo_buf_reg[1016][1] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+
+  u_input_fifo/fifo_buf_reg[1016][1]/CLK (DFFARX1_RVT)
+                                                   0.00      0.25 r
+  u_input_fifo/fifo_buf_reg[1016][1]/Q (DFFARX1_RVT)
+                                                   0.12      0.36 f
+  U88461/Y (AO22X1_RVT)                            0.04      0.40 f
+  u_input_fifo/fifo_buf_reg[1016][1]/D (DFFARX1_RVT)
+                                                   0.00      0.40 f
+  data arrival time                                          0.40
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.31      0.31
+  u_input_fifo/fifo_buf_reg[1016][1]/CLK (DFFARX1_RVT)
+                                                   0.00      0.31 r
+  clock uncertainty                                0.10      0.41
+  library hold time                                0.00      0.42
+  data required time                                         0.42
+  ------------------------------------------------------------------------
+  data required time                                         0.42
+  data arrival time                                         -0.40
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.01
+
+
+
+  Startpoint: gen_mac_lanes[31].u_lane/weight_out_reg[5] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[31].u_lane/u_mac/weight_r_reg[5] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.23      0.23
+
+  gen_mac_lanes[31].u_lane/weight_out_reg[5]/CLK (DFFX2_RVT)
+                                                   0.00      0.23 r
+  gen_mac_lanes[31].u_lane/weight_out_reg[5]/QN (DFFX2_RVT)
+                                                   0.09      0.32 r
+  U126751/Y (INVX0_RVT)                            0.01      0.33 f
+  ropt_h_inst_44456/Y (NBUFFX2_RVT)                0.03      0.36 f
+  gen_mac_lanes[31].u_lane/u_mac/weight_r_reg[5]/D (DFFARX2_RVT)
+                                                   0.00      0.36 f
+  data arrival time                                          0.36
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.27      0.27
+  gen_mac_lanes[31].u_lane/u_mac/weight_r_reg[5]/CLK (DFFARX2_RVT)
+                                                   0.00      0.27 r
+  clock uncertainty                                0.10      0.37
+  library hold time                                0.00      0.37
+  data required time                                         0.37
+  ------------------------------------------------------------------------
+  data required time                                         0.37
+  data arrival time                                         -0.36
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.01
+
+
+
+  Startpoint: act_ram_reg[747][7] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[747][7] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.19      0.19
+
+  act_ram_reg[747][7]/CLK (DFFARX1_RVT)            0.00      0.19 r
+  act_ram_reg[747][7]/Q (DFFARX1_RVT)              0.11      0.30 f
+  U144370/Y (AO22X1_RVT)                           0.04      0.34 f
+  act_ram_reg[747][7]/D (DFFARX1_RVT)              0.00      0.34 f
+  data arrival time                                          0.34
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.24      0.24
+  act_ram_reg[747][7]/CLK (DFFARX1_RVT)            0.00      0.24 r
+  clock uncertainty                                0.10      0.34
+  library hold time                                0.00      0.34
+  data required time                                         0.34
+  ------------------------------------------------------------------------
+  data required time                                         0.34
+  data arrival time                                         -0.34
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: u_input_fifo/fifo_buf_reg[231][3] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_input_fifo/fifo_buf_reg[231][3] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.23      0.23
+
+  u_input_fifo/fifo_buf_reg[231][3]/CLK (DFFARX1_RVT)
+                                                   0.00      0.23 r
+  u_input_fifo/fifo_buf_reg[231][3]/Q (DFFARX1_RVT)
+                                                   0.11      0.33 f
+  U104016/Y (AO22X1_RVT)                           0.03      0.37 f
+  u_input_fifo/fifo_buf_reg[231][3]/D (DFFARX1_RVT)
+                                                   0.00      0.37 f
+  data arrival time                                          0.37
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.27      0.27
+  u_input_fifo/fifo_buf_reg[231][3]/CLK (DFFARX1_RVT)
+                                                   0.00      0.27 r
+  clock uncertainty                                0.10      0.37
+  library hold time                                0.00      0.37
+  data required time                                         0.37
+  ------------------------------------------------------------------------
+  data required time                                         0.37
+  data arrival time                                         -0.37
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: act_ram_reg[538][11] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[538][11] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.26      0.26
+
+  act_ram_reg[538][11]/CLK (DFFARX1_RVT)           0.00      0.26 r
+  act_ram_reg[538][11]/Q (DFFARX1_RVT)             0.11      0.37 f
+  U148568/Y (AO22X1_RVT)                           0.03      0.40 f
+  act_ram_reg[538][11]/D (DFFARX1_RVT)             0.00      0.40 f
+  data arrival time                                          0.40
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.31      0.31
+  act_ram_reg[538][11]/CLK (DFFARX1_RVT)           0.00      0.31 r
+  clock uncertainty                                0.10      0.41
+  library hold time                                0.00      0.41
+  data required time                                         0.41
+  ------------------------------------------------------------------------
+  data required time                                         0.41
+  data arrival time                                         -0.40
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: gen_mac_lanes[31].u_lane/weight_out_reg[11] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[31].u_lane/u_mac/weight_r_reg[11] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.23      0.23
+
+  gen_mac_lanes[31].u_lane/weight_out_reg[11]/CLK (DFFX2_RVT)
+                                                   0.00      0.23 r
+  gen_mac_lanes[31].u_lane/weight_out_reg[11]/QN (DFFX2_RVT)
+                                                   0.09      0.32 r
+  U128561/Y (INVX0_RVT)                            0.01      0.33 f
+  ropt_h_inst_50893/Y (NBUFFX2_RVT)                0.03      0.36 f
+  gen_mac_lanes[31].u_lane/u_mac/weight_r_reg[11]/D (DFFARX2_RVT)
+                                                   0.00      0.36 f
+  data arrival time                                          0.36
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.26      0.26
+  gen_mac_lanes[31].u_lane/u_mac/weight_r_reg[11]/CLK (DFFARX2_RVT)
+                                                   0.00      0.26 r
+  clock uncertainty                                0.10      0.36
+  library hold time                               -0.00      0.36
+  data required time                                         0.36
+  ------------------------------------------------------------------------
+  data required time                                         0.36
+  data arrival time                                         -0.36
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: act_ram_reg[998][12] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[998][12] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.24      0.24
+
+  act_ram_reg[998][12]/CLK (DFFARX2_RVT)           0.00      0.24 r
+  act_ram_reg[998][12]/Q (DFFARX2_RVT)             0.11      0.35 f
+  U139282/Y (AO22X1_RVT)                           0.03      0.38 f
+  act_ram_reg[998][12]/D (DFFARX2_RVT)             0.00      0.38 f
+  data arrival time                                          0.38
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.28      0.28
+  act_ram_reg[998][12]/CLK (DFFARX2_RVT)           0.00      0.28 r
+  clock uncertainty                                0.10      0.38
+  library hold time                                0.00      0.38
+  data required time                                         0.38
+  ------------------------------------------------------------------------
+  data required time                                         0.38
+  data arrival time                                         -0.38
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: u_input_fifo/fifo_buf_reg[600][5] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_input_fifo/fifo_buf_reg[600][5] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  u_input_fifo/fifo_buf_reg[600][5]/CLK (DFFARX1_RVT)
+                                                   0.00      0.20 r
+  u_input_fifo/fifo_buf_reg[600][5]/Q (DFFARX1_RVT)
+                                                   0.11      0.30 f
+  U96707/Y (AO22X1_RVT)                            0.03      0.34 f
+  u_input_fifo/fifo_buf_reg[600][5]/D (DFFARX1_RVT)
+                                                   0.00      0.34 f
+  data arrival time                                          0.34
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.24      0.24
+  u_input_fifo/fifo_buf_reg[600][5]/CLK (DFFARX1_RVT)
+                                                   0.00      0.24 r
+  clock uncertainty                                0.10      0.34
+  library hold time                                0.00      0.34
+  data required time                                         0.34
+  ------------------------------------------------------------------------
+  data required time                                         0.34
+  data arrival time                                         -0.34
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: act_ram_reg[222][12] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[222][12] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.22      0.22
+
+  act_ram_reg[222][12]/CLK (DFFARX1_RVT)           0.00      0.22 r
+  act_ram_reg[222][12]/Q (DFFARX1_RVT)             0.11      0.33 f
+  U154969/Y (AO22X1_RVT)                           0.03      0.37 f
+  act_ram_reg[222][12]/D (DFFARX1_RVT)             0.00      0.37 f
+  data arrival time                                          0.37
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.27      0.27
+  act_ram_reg[222][12]/CLK (DFFARX1_RVT)           0.00      0.27 r
+  clock uncertainty                                0.10      0.37
+  library hold time                                0.00      0.37
+  data required time                                         0.37
+  ------------------------------------------------------------------------
+  data required time                                         0.37
+  data arrival time                                         -0.37
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: gen_mac_lanes[31].u_lane/weight_out_reg[6] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[31].u_lane/u_mac/weight_r_reg[6] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.23      0.23
+
+  gen_mac_lanes[31].u_lane/weight_out_reg[6]/CLK (DFFX2_RVT)
+                                                   0.00      0.23 r
+  gen_mac_lanes[31].u_lane/weight_out_reg[6]/QN (DFFX2_RVT)
+                                                   0.09      0.32 r
+  U128565/Y (INVX0_RVT)                            0.02      0.34 f
+  ropt_h_inst_41840/Y (NBUFFX2_RVT)                0.03      0.37 f
+  gen_mac_lanes[31].u_lane/u_mac/weight_r_reg[6]/D (DFFARX2_RVT)
+                                                   0.00      0.37 f
+  data arrival time                                          0.37
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.27      0.27
+  gen_mac_lanes[31].u_lane/u_mac/weight_r_reg[6]/CLK (DFFARX2_RVT)
+                                                   0.00      0.27 r
+  clock uncertainty                                0.10      0.37
+  library hold time                                0.00      0.37
+  data required time                                         0.37
+  ------------------------------------------------------------------------
+  data required time                                         0.37
+  data arrival time                                         -0.37
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: act_ram_reg[491][2] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[491][2] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.21      0.21
+
+  act_ram_reg[491][2]/CLK (DFFARX1_RVT)            0.00      0.21 r
+  act_ram_reg[491][2]/Q (DFFARX1_RVT)              0.11      0.32 f
+  U149542/Y (AO22X1_RVT)                           0.03      0.35 f
+  act_ram_reg[491][2]/D (DFFARX1_RVT)              0.00      0.35 f
+  data arrival time                                          0.35
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+  act_ram_reg[491][2]/CLK (DFFARX1_RVT)            0.00      0.25 r
+  clock uncertainty                                0.10      0.35
+  library hold time                                0.00      0.35
+  data required time                                         0.35
+  ------------------------------------------------------------------------
+  data required time                                         0.35
+  data arrival time                                         -0.35
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: u_input_fifo/fifo_buf_reg[407][14] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_input_fifo/fifo_buf_reg[407][14] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.24      0.24
+
+  u_input_fifo/fifo_buf_reg[407][14]/CLK (DFFARX1_RVT)
+                                                   0.00      0.24 r
+  u_input_fifo/fifo_buf_reg[407][14]/Q (DFFARX1_RVT)
+                                                   0.11      0.35 f
+  U100534/Y (AO22X1_RVT)                           0.03      0.38 f
+  u_input_fifo/fifo_buf_reg[407][14]/D (DFFARX1_RVT)
+                                                   0.00      0.38 f
+  data arrival time                                          0.38
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.28      0.28
+  u_input_fifo/fifo_buf_reg[407][14]/CLK (DFFARX1_RVT)
+                                                   0.00      0.28 r
+  clock uncertainty                                0.10      0.38
+  library hold time                                0.00      0.39
+  data required time                                         0.39
+  ------------------------------------------------------------------------
+  data required time                                         0.39
+  data arrival time                                         -0.38
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: act_ram_reg[998][6] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[998][6] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.24      0.24
+
+  act_ram_reg[998][6]/CLK (DFFARX2_RVT)            0.00      0.24 r
+  act_ram_reg[998][6]/Q (DFFARX2_RVT)              0.11      0.35 f
+  U139288/Y (AO22X1_RVT)                           0.03      0.38 f
+  act_ram_reg[998][6]/D (DFFARX2_RVT)              0.00      0.38 f
+  data arrival time                                          0.38
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.28      0.28
+  act_ram_reg[998][6]/CLK (DFFARX2_RVT)            0.00      0.28 r
+  clock uncertainty                                0.10      0.38
+  library hold time                                0.00      0.38
+  data required time                                         0.38
+  ------------------------------------------------------------------------
+  data required time                                         0.38
+  data arrival time                                         -0.38
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: gen_mac_lanes[3].u_lane/bias_out_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[3].u_lane/u_mac/bias_r_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.24      0.24
+
+  gen_mac_lanes[3].u_lane/bias_out_reg[0]/CLK (DFFX1_RVT)
+                                                   0.00      0.24 r
+  gen_mac_lanes[3].u_lane/bias_out_reg[0]/Q (DFFX1_RVT)
+                                                   0.09      0.34 f
+  U81086/Y (MUX21X1_RVT)                           0.04      0.38 f
+  gen_mac_lanes[3].u_lane/u_mac/bias_r_reg[0]/D (DFFARX1_RVT)
+                                                   0.00      0.38 f
+  data arrival time                                          0.38
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.29      0.29
+  gen_mac_lanes[3].u_lane/u_mac/bias_r_reg[0]/CLK (DFFARX1_RVT)
+                                                   0.00      0.29 r
+  clock uncertainty                                0.10      0.39
+  library hold time                               -0.00      0.38
+  data required time                                         0.38
+  ------------------------------------------------------------------------
+  data required time                                         0.38
+  data arrival time                                         -0.38
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: act_ram_reg[961][8] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[961][8] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.22      0.22
+
+  act_ram_reg[961][8]/CLK (DFFARX1_RVT)            0.00      0.22 r
+  act_ram_reg[961][8]/Q (DFFARX1_RVT)              0.11      0.33 f
+  U140033/Y (AO22X1_RVT)                           0.03      0.36 f
+  act_ram_reg[961][8]/D (DFFARX1_RVT)              0.00      0.36 f
+  data arrival time                                          0.36
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.26      0.26
+  act_ram_reg[961][8]/CLK (DFFARX1_RVT)            0.00      0.26 r
+  clock uncertainty                                0.10      0.36
+  library hold time                                0.00      0.36
+  data required time                                         0.36
+  ------------------------------------------------------------------------
+  data required time                                         0.36
+  data arrival time                                         -0.36
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: act_ram_reg[867][6] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[867][6] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  act_ram_reg[867][6]/CLK (DFFARX1_RVT)            0.00      0.20 r
+  act_ram_reg[867][6]/Q (DFFARX1_RVT)              0.11      0.31 f
+  U141960/Y (AO22X1_RVT)                           0.03      0.34 f
+  act_ram_reg[867][6]/D (DFFARX1_RVT)              0.00      0.34 f
+  data arrival time                                          0.34
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.24      0.24
+  act_ram_reg[867][6]/CLK (DFFARX1_RVT)            0.00      0.24 r
+  clock uncertainty                                0.10      0.34
+  library hold time                                0.00      0.34
+  data required time                                         0.34
+  ------------------------------------------------------------------------
+  data required time                                         0.34
+  data arrival time                                         -0.34
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: act_ram_reg[4][8] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[4][8] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.19      0.19
+
+  act_ram_reg[4][8]/CLK (DFFARX1_RVT)              0.00      0.19 r
+  act_ram_reg[4][8]/Q (DFFARX1_RVT)                0.11      0.29 f
+  U159340/Y (AO22X1_RVT)                           0.03      0.33 f
+  act_ram_reg[4][8]/D (DFFARX1_RVT)                0.00      0.33 f
+  data arrival time                                          0.33
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.23      0.23
+  act_ram_reg[4][8]/CLK (DFFARX1_RVT)              0.00      0.23 r
+  clock uncertainty                                0.10      0.33
+  library hold time                                0.00      0.33
+  data required time                                         0.33
+  ------------------------------------------------------------------------
+  data required time                                         0.33
+  data arrival time                                         -0.33
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: act_ram_reg[50][0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[50][0] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.22      0.22
+
+  act_ram_reg[50][0]/CLK (DFFARX1_RVT)             0.00      0.22 r
+  act_ram_reg[50][0]/Q (DFFARX1_RVT)               0.11      0.33 f
+  U158434/Y (AO22X1_RVT)                           0.04      0.37 f
+  act_ram_reg[50][0]/D (DFFARX1_RVT)               0.00      0.37 f
+  data arrival time                                          0.37
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.27      0.27
+  act_ram_reg[50][0]/CLK (DFFARX1_RVT)             0.00      0.27 r
+  clock uncertainty                                0.10      0.37
+  library hold time                                0.00      0.37
+  data required time                                         0.37
+  ------------------------------------------------------------------------
+  data required time                                         0.37
+  data arrival time                                         -0.37
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: u_input_fifo/fifo_buf_reg[858][12] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_input_fifo/fifo_buf_reg[858][12] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+
+  u_input_fifo/fifo_buf_reg[858][12]/CLK (DFFARX1_RVT)
+                                                   0.00      0.25 r
+  u_input_fifo/fifo_buf_reg[858][12]/Q (DFFARX1_RVT)
+                                                   0.11      0.35 f
+  U91620/Y (AO22X1_RVT)                            0.03      0.39 f
+  u_input_fifo/fifo_buf_reg[858][12]/D (DFFARX1_RVT)
+                                                   0.00      0.39 f
+  data arrival time                                          0.39
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.29      0.29
+  u_input_fifo/fifo_buf_reg[858][12]/CLK (DFFARX1_RVT)
+                                                   0.00      0.29 r
+  clock uncertainty                                0.10      0.39
+  library hold time                                0.00      0.39
+  data required time                                         0.39
+  ------------------------------------------------------------------------
+  data required time                                         0.39
+  data arrival time                                         -0.39
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: act_ram_reg[88][8] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[88][8] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.21      0.21
+
+  act_ram_reg[88][8]/CLK (DFFARX2_RVT)             0.00      0.21 r
+  act_ram_reg[88][8]/Q (DFFARX2_RVT)               0.11      0.32 f
+  U157657/Y (AO22X1_RVT)                           0.03      0.36 f
+  act_ram_reg[88][8]/D (DFFARX2_RVT)               0.00      0.36 f
+  data arrival time                                          0.36
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.26      0.26
+  act_ram_reg[88][8]/CLK (DFFARX2_RVT)             0.00      0.26 r
+  clock uncertainty                                0.10      0.36
+  library hold time                                0.00      0.36
+  data required time                                         0.36
+  ------------------------------------------------------------------------
+  data required time                                         0.36
+  data arrival time                                         -0.36
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: u_input_fifo/fifo_buf_reg[359][1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_input_fifo/fifo_buf_reg[359][1] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.22      0.22
+
+  u_input_fifo/fifo_buf_reg[359][1]/CLK (DFFARX1_RVT)
+                                                   0.00      0.22 r
+  u_input_fifo/fifo_buf_reg[359][1]/Q (DFFARX1_RVT)
+                                                   0.10      0.33 f
+  ropt_h_inst_37671/Y (NBUFFX2_RVT)                0.03      0.36 f
+  U101472/Y (AO22X1_RVT)                           0.03      0.39 f
+  u_input_fifo/fifo_buf_reg[359][1]/D (DFFARX1_RVT)
+                                                   0.00      0.39 f
+  data arrival time                                          0.39
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.29      0.29
+  u_input_fifo/fifo_buf_reg[359][1]/CLK (DFFARX1_RVT)
+                                                   0.00      0.29 r
+  clock uncertainty                                0.10      0.39
+  library hold time                                0.00      0.39
+  data required time                                         0.39
+  ------------------------------------------------------------------------
+  data required time                                         0.39
+  data arrival time                                         -0.39
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: act_ram_reg[331][3] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[331][3] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.23      0.23
+
+  act_ram_reg[331][3]/CLK (DFFARX1_RVT)            0.00      0.23 r
+  act_ram_reg[331][3]/Q (DFFARX1_RVT)              0.11      0.33 f
+  ropt_h_inst_37787/Y (NBUFFX2_RVT)                0.03      0.36 f
+  U152760/Y (AO22X1_RVT)                           0.03      0.39 f
+  act_ram_reg[331][3]/D (DFFARX1_RVT)              0.00      0.39 f
+  data arrival time                                          0.39
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.29      0.29
+  act_ram_reg[331][3]/CLK (DFFARX1_RVT)            0.00      0.29 r
+  clock uncertainty                                0.10      0.39
+  library hold time                                0.00      0.39
+  data required time                                         0.39
+  ------------------------------------------------------------------------
+  data required time                                         0.39
+  data arrival time                                         -0.39
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: u_input_fifo/fifo_buf_reg[951][8] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_input_fifo/fifo_buf_reg[951][8] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.23      0.23
+
+  u_input_fifo/fifo_buf_reg[951][8]/CLK (DFFARX1_RVT)
+                                                   0.00      0.23 r
+  u_input_fifo/fifo_buf_reg[951][8]/Q (DFFARX1_RVT)
+                                                   0.11      0.33 f
+  ropt_h_inst_38194/Y (NBUFFX2_RVT)                0.03      0.36 f
+  U89783/Y (AO22X1_RVT)                            0.03      0.39 f
+  u_input_fifo/fifo_buf_reg[951][8]/D (DFFARX1_RVT)
+                                                   0.00      0.39 f
+  data arrival time                                          0.39
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.29      0.29
+  u_input_fifo/fifo_buf_reg[951][8]/CLK (DFFARX1_RVT)
+                                                   0.00      0.29 r
+  clock uncertainty                                0.10      0.39
+  library hold time                                0.00      0.39
+  data required time                                         0.39
+  ------------------------------------------------------------------------
+  data required time                                         0.39
+  data arrival time                                         -0.39
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: u_input_fifo/fifo_buf_reg[808][10] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_input_fifo/fifo_buf_reg[808][10] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+
+  u_input_fifo/fifo_buf_reg[808][10]/CLK (DFFARX1_RVT)
+                                                   0.00      0.25 r
+  u_input_fifo/fifo_buf_reg[808][10]/Q (DFFARX1_RVT)
+                                                   0.11      0.36 f
+  U92636/Y (AO22X1_RVT)                            0.03      0.39 f
+  u_input_fifo/fifo_buf_reg[808][10]/D (DFFARX1_RVT)
+                                                   0.00      0.39 f
+  data arrival time                                          0.39
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.29      0.29
+  u_input_fifo/fifo_buf_reg[808][10]/CLK (DFFARX1_RVT)
+                                                   0.00      0.29 r
+  clock uncertainty                                0.10      0.39
+  library hold time                                0.00      0.39
+  data required time                                         0.39
+  ------------------------------------------------------------------------
+  data required time                                         0.39
+  data arrival time                                         -0.39
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: act_ram_reg[893][6] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[893][6] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.20      0.20
+
+  act_ram_reg[893][6]/CLK (DFFARX1_RVT)            0.00      0.20 r
+  act_ram_reg[893][6]/Q (DFFARX1_RVT)              0.12      0.32 f
+  U141432/Y (AO22X1_RVT)                           0.04      0.36 f
+  act_ram_reg[893][6]/D (DFFARX1_RVT)              0.00      0.36 f
+  data arrival time                                          0.36
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.26      0.26
+  act_ram_reg[893][6]/CLK (DFFARX1_RVT)            0.00      0.26 r
+  clock uncertainty                                0.10      0.36
+  library hold time                                0.00      0.36
+  data required time                                         0.36
+  ------------------------------------------------------------------------
+  data required time                                         0.36
+  data arrival time                                         -0.36
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: u_input_fifo/fifo_buf_reg[209][10] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_input_fifo/fifo_buf_reg[209][10] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.23      0.23
+
+  u_input_fifo/fifo_buf_reg[209][10]/CLK (DFFARX1_RVT)
+                                                   0.00      0.23 r
+  u_input_fifo/fifo_buf_reg[209][10]/Q (DFFARX1_RVT)
+                                                   0.11      0.34 f
+  U104465/Y (AO22X1_RVT)                           0.03      0.37 f
+  u_input_fifo/fifo_buf_reg[209][10]/D (DFFARX1_RVT)
+                                                   0.00      0.37 f
+  data arrival time                                          0.37
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.27      0.27
+  u_input_fifo/fifo_buf_reg[209][10]/CLK (DFFARX1_RVT)
+                                                   0.00      0.27 r
+  clock uncertainty                                0.10      0.37
+  library hold time                                0.00      0.37
+  data required time                                         0.37
+  ------------------------------------------------------------------------
+  data required time                                         0.37
+  data arrival time                                         -0.37
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: act_ram_reg[137][9] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[137][9] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.19      0.19
+
+  act_ram_reg[137][9]/CLK (DFFARX2_RVT)            0.00      0.19 r
+  act_ram_reg[137][9]/Q (DFFARX2_RVT)              0.12      0.31 f
+  U156671/Y (AO22X1_RVT)                           0.04      0.35 f
+  act_ram_reg[137][9]/D (DFFARX2_RVT)              0.00      0.35 f
+  data arrival time                                          0.35
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.25      0.25
+  act_ram_reg[137][9]/CLK (DFFARX2_RVT)            0.00      0.25 r
+  clock uncertainty                                0.10      0.35
+  library hold time                                0.00      0.35
+  data required time                                         0.35
+  ------------------------------------------------------------------------
+  data required time                                         0.35
+  data arrival time                                         -0.35
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: act_ram_reg[763][13] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[763][13] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.19      0.19
+
+  act_ram_reg[763][13]/CLK (DFFARX1_RVT)           0.00      0.19 r
+  act_ram_reg[763][13]/Q (DFFARX1_RVT)             0.11      0.30 f
+  U144039/Y (AO22X1_RVT)                           0.04      0.34 f
+  act_ram_reg[763][13]/D (DFFARX1_RVT)             0.00      0.34 f
+  data arrival time                                          0.34
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.24      0.24
+  act_ram_reg[763][13]/CLK (DFFARX1_RVT)           0.00      0.24 r
+  clock uncertainty                                0.10      0.34
+  library hold time                                0.00      0.34
+  data required time                                         0.34
+  ------------------------------------------------------------------------
+  data required time                                         0.34
+  data arrival time                                         -0.34
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: act_ram_reg[514][2] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[514][2] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.23      0.23
+
+  act_ram_reg[514][2]/CLK (DFFARX1_RVT)            0.00      0.23 r
+  act_ram_reg[514][2]/Q (DFFARX1_RVT)              0.11      0.34 f
+  U149058/Y (AO22X1_RVT)                           0.04      0.38 f
+  act_ram_reg[514][2]/D (DFFARX1_RVT)              0.00      0.38 f
+  data arrival time                                          0.38
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.28      0.28
+  act_ram_reg[514][2]/CLK (DFFARX1_RVT)            0.00      0.28 r
+  clock uncertainty                                0.10      0.38
+  library hold time                                0.00      0.38
+  data required time                                         0.38
+  ------------------------------------------------------------------------
+  data required time                                         0.38
+  data arrival time                                         -0.38
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: act_ram_reg[785][14] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[785][14] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.23      0.23
+
+  act_ram_reg[785][14]/CLK (DFFARX1_RVT)           0.00      0.23 r
+  act_ram_reg[785][14]/Q (DFFARX1_RVT)             0.10      0.34 f
+  U143588/Y (AO22X1_RVT)                           0.03      0.37 f
+  act_ram_reg[785][14]/D (DFFARX1_RVT)             0.00      0.37 f
+  data arrival time                                          0.37
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.27      0.27
+  act_ram_reg[785][14]/CLK (DFFARX1_RVT)           0.00      0.27 r
+  clock uncertainty                                0.10      0.37
+  library hold time                                0.00      0.37
+  data required time                                         0.37
+  ------------------------------------------------------------------------
+  data required time                                         0.37
+  data arrival time                                         -0.37
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: act_ram_reg[674][15] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[674][15] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.27      0.27
+
+  act_ram_reg[674][15]/CLK (DFFARX2_RVT)           0.00      0.27 r
+  act_ram_reg[674][15]/Q (DFFARX2_RVT)             0.12      0.39 f
+  U145840/Y (AO22X1_RVT)                           0.04      0.43 f
+  act_ram_reg[674][15]/D (DFFARX2_RVT)             0.00      0.43 f
+  data arrival time                                          0.43
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.33      0.33
+  act_ram_reg[674][15]/CLK (DFFARX2_RVT)           0.00      0.33 r
+  clock uncertainty                                0.10      0.43
+  library hold time                               -0.00      0.43
+  data required time                                         0.43
+  ------------------------------------------------------------------------
+  data required time                                         0.43
+  data arrival time                                         -0.43
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: u_input_fifo/fifo_buf_reg[231][6] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_input_fifo/fifo_buf_reg[231][6] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.23      0.23
+
+  u_input_fifo/fifo_buf_reg[231][6]/CLK (DFFARX1_RVT)
+                                                   0.00      0.23 r
+  u_input_fifo/fifo_buf_reg[231][6]/Q (DFFARX1_RVT)
+                                                   0.11      0.34 f
+  U104019/Y (AO22X1_RVT)                           0.03      0.37 f
+  u_input_fifo/fifo_buf_reg[231][6]/D (DFFARX1_RVT)
+                                                   0.00      0.37 f
+  data arrival time                                          0.37
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.27      0.27
+  u_input_fifo/fifo_buf_reg[231][6]/CLK (DFFARX1_RVT)
+                                                   0.00      0.27 r
+  clock uncertainty                                0.10      0.37
+  library hold time                                0.00      0.37
+  data required time                                         0.37
+  ------------------------------------------------------------------------
+  data required time                                         0.37
+  data arrival time                                         -0.37
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: u_input_fifo/fifo_buf_reg[297][4] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_input_fifo/fifo_buf_reg[297][4] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.29      0.29
+
+  u_input_fifo/fifo_buf_reg[297][4]/CLK (DFFARX1_RVT)
+                                                   0.00      0.29 r
+  u_input_fifo/fifo_buf_reg[297][4]/Q (DFFARX1_RVT)
+                                                   0.10      0.40 f
+  ropt_h_inst_37396/Y (NBUFFX2_RVT)                0.03      0.42 f
+  U102709/Y (AO22X1_RVT)                           0.03      0.45 f
+  u_input_fifo/fifo_buf_reg[297][4]/D (DFFARX1_RVT)
+                                                   0.00      0.45 f
+  data arrival time                                          0.45
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.35      0.35
+  u_input_fifo/fifo_buf_reg[297][4]/CLK (DFFARX1_RVT)
+                                                   0.00      0.35 r
+  clock uncertainty                                0.10      0.45
+  library hold time                                0.00      0.45
+  data required time                                         0.45
+  ------------------------------------------------------------------------
+  data required time                                         0.45
+  data arrival time                                         -0.45
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: act_ram_reg[443][8] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[443][8] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.18      0.18
+
+  act_ram_reg[443][8]/CLK (DFFARX1_RVT)            0.00      0.18 r
+  act_ram_reg[443][8]/Q (DFFARX1_RVT)              0.11      0.29 f
+  U150518/Y (AO22X1_RVT)                           0.03      0.32 f
+  act_ram_reg[443][8]/D (DFFARX1_RVT)              0.00      0.32 f
+  data arrival time                                          0.32
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.22      0.22
+  act_ram_reg[443][8]/CLK (DFFARX1_RVT)            0.00      0.22 r
+  clock uncertainty                                0.10      0.32
+  library hold time                                0.00      0.32
+  data required time                                         0.32
+  ------------------------------------------------------------------------
+  data required time                                         0.32
+  data arrival time                                         -0.32
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: u_input_fifo/fifo_buf_reg[162][5] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_input_fifo/fifo_buf_reg[162][5] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.23      0.23
+
+  u_input_fifo/fifo_buf_reg[162][5]/CLK (DFFARX1_RVT)
+                                                   0.00      0.23 r
+  u_input_fifo/fifo_buf_reg[162][5]/Q (DFFARX1_RVT)
+                                                   0.11      0.34 f
+  U105382/Y (AO22X1_RVT)                           0.03      0.38 f
+  u_input_fifo/fifo_buf_reg[162][5]/D (DFFARX1_RVT)
+                                                   0.00      0.38 f
+  data arrival time                                          0.38
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.27      0.27
+  u_input_fifo/fifo_buf_reg[162][5]/CLK (DFFARX1_RVT)
+                                                   0.00      0.27 r
+  clock uncertainty                                0.10      0.37
+  library hold time                                0.00      0.38
+  data required time                                         0.38
+  ------------------------------------------------------------------------
+  data required time                                         0.38
+  data arrival time                                         -0.38
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: act_ram_reg[585][8] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[585][8] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.23      0.23
+
+  act_ram_reg[585][8]/CLK (DFFARX1_RVT)            0.00      0.23 r
+  act_ram_reg[585][8]/Q (DFFARX1_RVT)              0.10      0.33 f
+  ropt_h_inst_37707/Y (NBUFFX2_RVT)                0.03      0.36 f
+  U147637/Y (AO22X1_RVT)                           0.03      0.39 f
+  act_ram_reg[585][8]/D (DFFARX1_RVT)              0.00      0.39 f
+  data arrival time                                          0.39
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.28      0.28
+  act_ram_reg[585][8]/CLK (DFFARX1_RVT)            0.00      0.28 r
+  clock uncertainty                                0.10      0.38
+  library hold time                                0.00      0.39
+  data required time                                         0.39
+  ------------------------------------------------------------------------
+  data required time                                         0.39
+  data arrival time                                         -0.39
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: act_ram_reg[651][2] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[651][2] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.28      0.28
+
+  act_ram_reg[651][2]/CLK (DFFARX1_RVT)            0.00      0.28 r
+  act_ram_reg[651][2]/Q (DFFARX1_RVT)              0.10      0.38 f
+  ropt_h_inst_38058/Y (NBUFFX2_RVT)                0.03      0.41 f
+  U146302/Y (AO22X1_RVT)                           0.03      0.44 f
+  act_ram_reg[651][2]/D (DFFARX1_RVT)              0.00      0.44 f
+  data arrival time                                          0.44
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.34      0.34
+  act_ram_reg[651][2]/CLK (DFFARX1_RVT)            0.00      0.34 r
+  clock uncertainty                                0.10      0.44
+  library hold time                                0.00      0.44
+  data required time                                         0.44
+  ------------------------------------------------------------------------
+  data required time                                         0.44
+  data arrival time                                         -0.44
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: act_ram_reg[295][10] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[295][10] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.22      0.22
+
+  act_ram_reg[295][10]/CLK (DFFARX1_RVT)           0.00      0.22 r
+  act_ram_reg[295][10]/Q (DFFARX1_RVT)             0.10      0.33 f
+  ropt_h_inst_37528/Y (NBUFFX2_RVT)                0.03      0.35 f
+  U153469/Y (AO22X1_RVT)                           0.03      0.38 f
+  act_ram_reg[295][10]/D (DFFARX1_RVT)             0.00      0.38 f
+  data arrival time                                          0.38
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.28      0.28
+  act_ram_reg[295][10]/CLK (DFFARX1_RVT)           0.00      0.28 r
+  clock uncertainty                                0.10      0.38
+  library hold time                                0.00      0.38
+  data required time                                         0.38
+  ------------------------------------------------------------------------
+  data required time                                         0.38
+  data arrival time                                         -0.38
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+
+  Startpoint: u_input_fifo/fifo_buf_reg[699][10] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_input_fifo/fifo_buf_reg[699][10] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.24      0.24
+
+  u_input_fifo/fifo_buf_reg[699][10]/CLK (DFFARX1_RVT)
+                                                   0.00      0.24 r
+  u_input_fifo/fifo_buf_reg[699][10]/Q (DFFARX1_RVT)
+                                                   0.11      0.35 f
+  U94758/Y (AO22X1_RVT)                            0.03      0.38 f
+  u_input_fifo/fifo_buf_reg[699][10]/D (DFFARX1_RVT)
+                                                   0.00      0.38 f
+  data arrival time                                          0.38
+
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.28      0.28
+  u_input_fifo/fifo_buf_reg[699][10]/CLK (DFFARX1_RVT)
+                                                   0.00      0.28 r
+  clock uncertainty                                0.10      0.38
+  library hold time                                0.00      0.38
+  data required time                                         0.38
+  ------------------------------------------------------------------------
+  data required time                                         0.38
+  data arrival time                                         -0.38
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.00
+
+
+1

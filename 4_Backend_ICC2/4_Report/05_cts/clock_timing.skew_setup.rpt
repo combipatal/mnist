@@ -1,0 +1,77 @@
+****************************************
+Report : clock timing
+        -type skew
+        -nworst 20
+        -setup
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Sun May 10 19:38:23 2026
+****************************************
+
+  Mode: default
+  Clock: clk
+
+  Clock Pin                                          Latency      Skew             Corner
+---------------------------------------------------------------------------------------------------
+  u_input_fifo/fifo_buf_reg[17][0]/CLK                  0.38              rp-+    default
+  u_input_fifo/dout_reg[0]/CLK                          0.15      0.23    rp-+    default
+
+  u_input_fifo/fifo_buf_reg[97][0]/CLK                  0.38              rp-+    default
+  u_input_fifo/dout_reg[0]/CLK                          0.15      0.23    rp-+    default
+
+  u_input_fifo/fifo_buf_reg[65][0]/CLK                  0.38              rp-+    default
+  u_input_fifo/dout_reg[0]/CLK                          0.15      0.23    rp-+    default
+
+  u_input_fifo/fifo_buf_reg[50][0]/CLK                  0.38              rp-+    default
+  u_input_fifo/dout_reg[0]/CLK                          0.15      0.23    rp-+    default
+
+  u_input_fifo/fifo_buf_reg[33][0]/CLK                  0.38              rp-+    default
+  u_input_fifo/dout_reg[0]/CLK                          0.15      0.23    rp-+    default
+
+  u_input_fifo/fifo_buf_reg[66][0]/CLK                  0.38              rp-+    default
+  u_input_fifo/dout_reg[0]/CLK                          0.15      0.23    rp-+    default
+
+  u_input_fifo/fifo_buf_reg[113][0]/CLK                 0.38              rp-+    default
+  u_input_fifo/dout_reg[0]/CLK                          0.15      0.23    rp-+    default
+
+  u_input_fifo/fifo_buf_reg[27][0]/CLK                  0.38              rp-+    default
+  u_input_fifo/dout_reg[0]/CLK                          0.15      0.22    rp-+    default
+
+  u_input_fifo/fifo_buf_reg[49][0]/CLK                  0.38              rp-+    default
+  u_input_fifo/dout_reg[0]/CLK                          0.15      0.22    rp-+    default
+
+  u_input_fifo/fifo_buf_reg[76][0]/CLK                  0.38              rp-+    default
+  u_input_fifo/dout_reg[0]/CLK                          0.15      0.22    rp-+    default
+
+  u_input_fifo/fifo_buf_reg[28][0]/CLK                  0.38              rp-+    default
+  u_input_fifo/dout_reg[0]/CLK                          0.15      0.22    rp-+    default
+
+  u_input_fifo/fifo_buf_reg[109][0]/CLK                 0.38              rp-+    default
+  u_input_fifo/dout_reg[0]/CLK                          0.15      0.22    rp-+    default
+
+  u_input_fifo/fifo_buf_reg[45][0]/CLK                  0.38              rp-+    default
+  u_input_fifo/dout_reg[0]/CLK                          0.15      0.22    rp-+    default
+
+  u_input_fifo/fifo_buf_reg[114][0]/CLK                 0.38              rp-+    default
+  u_input_fifo/dout_reg[0]/CLK                          0.15      0.22    rp-+    default
+
+  u_input_fifo/fifo_buf_reg[112][0]/CLK                 0.38              rp-+    default
+  u_input_fifo/dout_reg[0]/CLK                          0.15      0.22    rp-+    default
+
+  u_input_fifo/fifo_buf_reg[81][0]/CLK                  0.38              rp-+    default
+  u_input_fifo/dout_reg[0]/CLK                          0.15      0.22    rp-+    default
+
+  u_input_fifo/fifo_buf_reg[92][0]/CLK                  0.38              rp-+    default
+  u_input_fifo/dout_reg[0]/CLK                          0.15      0.22    rp-+    default
+
+  u_input_fifo/fifo_buf_reg[48][0]/CLK                  0.38              rp-+    default
+  u_input_fifo/dout_reg[0]/CLK                          0.15      0.22    rp-+    default
+
+  u_input_fifo/fifo_buf_reg[75][0]/CLK                  0.37              rp-+    default
+  u_input_fifo/dout_reg[0]/CLK                          0.15      0.22    rp-+    default
+
+  u_input_fifo/fifo_buf_reg[16][0]/CLK                  0.37              rp-+    default
+  u_input_fifo/dout_reg[0]/CLK                          0.15      0.22    rp-+    default
+
+---------------------------------------------------------------------------------------------------
+1

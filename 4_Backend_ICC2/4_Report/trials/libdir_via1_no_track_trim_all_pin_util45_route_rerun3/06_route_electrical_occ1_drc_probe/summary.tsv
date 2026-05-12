@@ -1,0 +1,7 @@
+step	target_nets	save_status	total	open_nets	diff_net_spacing	less_than_min_area	needs_fat_contact	off_grid	same_net_spacing	short	connection_not_within_pin
+initial	none	no_save	4	0	0	2	0	2	0	0	0
+after_step1	ZBUF_714_1050	no_save	4	0	0	2	0	2	0	0	0
+after_step2	ZBUF_851_152	no_save	4	0	0	2	0	2	0	0	0
+after_step3	ZBUF_832_2538	no_save	4	0	0	2	0	2	0	0	0
+after_step4	n143522	no_save	4	0	0	2	0	2	0	0	0
+final	all	no_save	4	0	0	2	0	2	0	0	0

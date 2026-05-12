@@ -1,0 +1,202 @@
+****************************************
+Report : Report drc errors
+Design : route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack
+Data   : zroute.err
+Type   : detailed
+Version: W-2024.09-SP2
+Date   : Mon May 11 16:38:07 2026
+****************************************
+
+Error ID          : 0
+Error Type        : Short
+Error Layer       : M4 (17)
+Number of errors  : 23
+Description       :  -- 
+Status            : error
+Bbox              : {49.7340 827.4650} {49.8760 827.6870}
+
+Error ID          : 1
+Error Type        : Short
+Error Layer       : M4 (17)
+Number of errors  : 23
+Description       :  -- 
+Status            : error
+Bbox              : {49.7090 827.4900} {49.8760 827.6620}
+
+Error ID          : 2
+Error Type        : Short
+Error Layer       : M4 (17)
+Number of errors  : 23
+Description       :  -- 
+Status            : error
+Bbox              : {50.0120 827.4650} {50.1800 827.6870}
+
+Error ID          : 3
+Error Type        : Short
+Error Layer       : M4 (17)
+Number of errors  : 23
+Description       :  -- 
+Status            : error
+Bbox              : {50.0120 867.5930} {50.1800 867.8150}
+
+Error ID          : 4
+Error Type        : Short
+Error Layer       : M2 (13)
+Number of errors  : 23
+Description       :  -- 
+Status            : error
+Bbox              : {49.8600 867.5930} {50.0280 867.8150}
+
+Error ID          : 5
+Error Type        : Short
+Error Layer       : M2 (13)
+Number of errors  : 23
+Description       :  -- 
+Status            : error
+Bbox              : {49.7340 867.5930} {49.8760 867.8150}
+
+Error ID          : 6
+Error Type        : Short
+Error Layer       : M2 (13)
+Number of errors  : 23
+Description       :  -- 
+Status            : error
+Bbox              : {49.7090 867.6180} {49.8760 867.7900}
+
+Error ID          : 7
+Error Type        : Short
+Error Layer       : M4 (17)
+Number of errors  : 23
+Description       :  -- 
+Status            : error
+Bbox              : {49.7340 867.5930} {49.8760 867.8150}
+
+Error ID          : 8
+Error Type        : Short
+Error Layer       : M4 (17)
+Number of errors  : 23
+Description       :  -- 
+Status            : error
+Bbox              : {49.7090 867.6180} {49.8760 867.7900}
+
+Error ID          : 9
+Error Type        : Short
+Error Layer       : M4 (17)
+Number of errors  : 23
+Description       :  -- 
+Status            : error
+Bbox              : {50.0120 907.7210} {50.1800 907.9430}
+
+Error ID          : 10
+Error Type        : Short
+Error Layer       : M2 (13)
+Number of errors  : 23
+Description       :  -- 
+Status            : error
+Bbox              : {49.8600 907.7210} {50.0280 907.9430}
+
+Error ID          : 11
+Error Type        : Short
+Error Layer       : M2 (13)
+Number of errors  : 23
+Description       :  -- 
+Status            : error
+Bbox              : {49.7090 907.7460} {49.8760 907.9180}
+
+Error ID          : 12
+Error Type        : Short
+Error Layer       : M2 (13)
+Number of errors  : 23
+Description       :  -- 
+Status            : error
+Bbox              : {49.7340 907.7210} {49.8760 907.9430}
+
+Error ID          : 14
+Error Type        : Short
+Error Layer       : M6 (21)
+Number of errors  : 23
+Description       :  -- 
+Status            : error
+Bbox              : {49.7340 907.7210} {49.8760 907.9430}
+
+Error ID          : 15
+Error Type        : Short
+Error Layer       : M6 (21)
+Number of errors  : 23
+Description       :  -- 
+Status            : error
+Bbox              : {49.7090 907.7460} {49.8760 907.9180}
+
+Error ID          : 16
+Error Type        : Short
+Error Layer       : M4 (17)
+Number of errors  : 23
+Description       :  -- 
+Status            : error
+Bbox              : {49.7340 947.8490} {49.8760 948.0710}
+
+Error ID          : 17
+Error Type        : Short
+Error Layer       : M4 (17)
+Number of errors  : 23
+Description       :  -- 
+Status            : error
+Bbox              : {49.7090 947.8740} {49.8760 948.0460}
+
+Error ID          : 18
+Error Type        : Short
+Error Layer       : M6 (21)
+Number of errors  : 23
+Description       :  -- 
+Status            : error
+Bbox              : {49.7340 947.8490} {49.8760 948.0710}
+
+Error ID          : 19
+Error Type        : Short
+Error Layer       : M6 (21)
+Number of errors  : 23
+Description       :  -- 
+Status            : error
+Bbox              : {49.7090 947.8740} {49.8760 948.0460}
+
+Error ID          : 20
+Error Type        : Short
+Error Layer       : M4 (17)
+Number of errors  : 23
+Description       :  -- 
+Status            : error
+Bbox              : {50.0120 947.8490} {50.1800 948.0710}
+
+Error ID          : 21
+Error Type        : Short
+Error Layer       : M2 (13)
+Number of errors  : 23
+Description       :  -- 
+Status            : error
+Bbox              : {50.0120 947.8490} {50.1800 948.0710}
+
+Error ID          : 22
+Error Type        : Short
+Error Layer       : M2 (13)
+Number of errors  : 23
+Description       :  -- 
+Status            : error
+Bbox              : {49.7090 947.8740} {49.8760 948.0460}
+
+Error ID          : 23
+Error Type        : Short
+Error Layer       : M2 (13)
+Number of errors  : 23
+Description       :  -- 
+Status            : error
+Bbox              : {49.7340 947.8490} {49.8760 948.0710}
+
+Error ID          : 13
+Error Type        : Diff net spacing
+Error Layer       : M4 (17)
+Number of errors  : 1
+Description       :  -- 
+Status            : error
+Bbox              : {50.0100 907.7210} {50.1820 907.7910}
+
+1

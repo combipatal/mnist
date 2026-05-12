@@ -1,0 +1,40 @@
+****************************************
+Report : clock timing
+        -type summary
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Mon May 11 11:48:52 2026
+****************************************
+
+  Mode: default
+  Clock: clk
+                                                                                 Corner
+---------------------------------------------------------------------------------------------------
+  Maximum setup launch latency:
+      act_ram_reg[858][14]/CLK                                 0.24       rp-+    default
+
+  Minimum setup capture latency:
+      gen_mac_lanes[5].u_lane/u_mac/bias_r_reg[9]/CLK          0.12       rp-+    default
+
+  Minimum hold launch latency:
+      gen_mac_lanes[5].u_lane/u_mac/bias_r_reg[9]/CLK          0.12       rp-+    default
+
+  Maximum hold capture latency:
+      act_ram_reg[858][14]/CLK                                 0.24       rp-+    default
+
+  Maximum active transition:
+      gen_mac_lanes[17].u_lane/u_mac/weight_r_reg[13]/CLK      0.08       rp-+    default
+
+  Minimum active transition:
+      u_input_fifo/fifo_buf_reg[745][14]/CLK                   0.02       rp-+    default
+
+  Maximum setup skew:
+      gen_mac_lanes[5].u_lane/u_mac/product_r_reg[9]/CLK                  rp-+    default
+      gen_mac_lanes[5].u_lane/u_mac/acc_reg[21]/CLK            0.12       rp-+    default
+
+  Maximum hold skew:
+      gen_mac_lanes[13].u_lane/u_mac/bias_r_reg[8]/CLK                    rp-+    default
+      gen_mac_lanes[13].u_lane/u_mac/acc_reg[35]/CLK           0.12       rp-+    default
+
+
+1

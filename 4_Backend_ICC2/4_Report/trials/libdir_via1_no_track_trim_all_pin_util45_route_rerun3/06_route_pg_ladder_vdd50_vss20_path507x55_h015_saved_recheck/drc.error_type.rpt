@@ -1,0 +1,14 @@
+****************************************
+Report : Report drc errors
+Design : route_pg_ladder_vdd50_vss20_path507x55_h015
+Data   : zroute.err
+Type   : error_type
+Version: W-2024.09-SP2
+Date   : Mon May 11 17:49:38 2026
+****************************************
+
+ErrorSet                                    Total   Visible     Fixed   Ignored
+--------------------------------------------------------------------------------
+Design : route_pg_ladder_vdd50_vss20_path507x55_h015 0 0        0       0
+      Data : zroute.err                     0       0           0       0
+1

@@ -1,0 +1,18 @@
+****************************************
+Report : Report drc errors
+Design : route_eco_offgrid1
+Data   : zroute.err
+Type   : detailed
+Version: W-2024.09-SP2
+Date   : Mon May 11 14:46:30 2026
+****************************************
+
+Error ID          : 0
+Error Type        : Off-grid
+Error Layer       : M1 (11)
+Number of errors  : 1
+Description       :  -- 
+Status            : error
+Bbox              : {250.0520 855.0630} {250.1530 855.1450}
+
+1

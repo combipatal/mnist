@@ -1,0 +1,127 @@
+Information: Deserialized np data
+INFO: timer data loaded from /tmp/route_pg_ladder_hold_eco_repair1_hold2_clean_hold3_594331_919541906.timdat
+****************************************
+Report : qor
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Tue May 12 00:18:53 2026
+****************************************
+Information: The RC mode used is DR for design 'nn_top'. (NEX-022)
+---extraction options---
+Corner: default
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+Global options:
+ reference_direction       : use_from_tluplus
+ real_metalfill_extraction : none
+ virtual_shield_extraction : true
+---app options---
+ host.max_cores                   : 1
+ extract.connect_open           : true
+ extract.enable_coupling_cap    : false
+Extracting design: route_pg_ladder_hold_eco_repair1_hold2_clean_hold3 
+Information: coupling capacitance is lumped to ground. (NEX-030)
+Information: 236919 nets are successfully extracted. (NEX-028)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+
+
+Scenario           'default'
+Timing Path Group  '**in2reg_default**'
+----------------------------------------
+Levels of Logic:                     15
+Critical Path Length:              2.29
+Critical Path Slack:               7.55
+Critical Path Clk Period:         10.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'default'
+Timing Path Group  '**reg2out_default**'
+----------------------------------------
+Levels of Logic:                     10
+Critical Path Length:              0.67
+Critical Path Slack:               8.10
+Critical Path Clk Period:         10.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'default'
+Timing Path Group  'clk'
+----------------------------------------
+Levels of Logic:                     68
+Critical Path Length:              4.15
+Critical Path Slack:               5.61
+Critical Path Clk Period:         10.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:             -0.05
+Total Hold Violation:            -15.18
+No. of Hold Violations:            4390
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:              0
+Hierarchical Port Count:              0
+Leaf Cell Count:                 230595
+Buf/Inv Cell Count:               74357
+Buf Cell Count:                   61221
+Inv Cell Count:                   13136
+Combinational Cell Count:        190936
+   Single-bit Isolation Cell Count:                        0
+   Multi-bit Isolation Cell Count:                         0
+   Isolation Cell Banking Ratio:                           0.00%
+   Single-bit Level Shifter Cell Count:                    0
+   Multi-bit Level Shifter Cell Count:                     0
+   Level Shifter Cell Banking Ratio:                       0.00%
+   Single-bit ELS Cell Count:                              0
+   Multi-bit ELS Cell Count:                               0
+   ELS Cell Banking Ratio:                                 0.00%
+Sequential Cell Count:            39659
+   Integrated Clock-Gating Cell Count:                     0
+   Sequential Macro Cell Count:                            0
+   Single-bit Sequential Cell Count:                       39659
+   Multi-bit Sequential Cell Count:                        0
+   Sequential Cell Banking Ratio:                          0.00%
+   BitsPerflop:                                            1.00
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:           547593.40
+Noncombinational Area:        284539.62
+Buf/Inv Area:                 246664.29
+Total Buffer Area:            223756.51
+Total Inverter Area:           22907.78
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                 3480926.97
+Net YLength:                 3818492.19
+----------------------------------------
+Cell Area (netlist):                         832133.03
+Cell Area (netlist and physical only):       832133.03
+Net Length:                  7299419.15
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:            236937
+Nets with Violations:                 3
+Max Trans Violations:                 0
+Max Cap Violations:                   3
+----------------------------------------
+
+1

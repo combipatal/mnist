@@ -1,0 +1,4 @@
+step	target_nets	save_status	total	open_nets	diff_net_spacing	less_than_min_area	needs_fat_contact	off_grid	same_net_spacing	short	connection_not_within_pin
+initial	none	no_save	19	0	0	0	0	3	0	13	0
+after_step1	eco_net_1838_ZBUF_584_1645 eco_net_1878_ZBUF_2_1315 eco_net_408_ZBUF_2_3107 eco_net_388_n62459 n29543 ZBUF_1061_3123 eco_net_1843_ZBUF_497_2036 ZBUF_462_2754 n61720 eco_net_1850_ZBUF_468_2753 eco_net_283_ZBUF_28_3076 ZBUF_808_1193 eco_net_247_ZBUF_5_2057	no_save	0	0	0	0	0	0	0	0	0
+final	all	saved	0	0	0	0	0	0	0	0	0

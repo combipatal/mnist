@@ -1,0 +1,24 @@
+****************************************
+Report : constraint
+        -all_violators
+        -max_transition
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Tue May 12 18:39:29 2026
+****************************************
+
+
+
+   Mode: default Corner: default
+   Scenario: default
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   ZBUF_2230_3376               0.05           0.05           0.00  (MET)      
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 0
+
+   Total number of violation(s): 0
+1

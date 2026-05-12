@@ -1,0 +1,2 @@
+id	type_name	error_class	layers	bbox	center	objects	shape	brief_info	verbose_info	status
+0	Off-grid	basic	M1	{1076.6490 429.4580} {1076.7590 429.5180}	1076.7040,429.4880	ZBUF_899_1724	{ polygons {{1076.6490 429.4580} {1076.6490 429.5180} {1076.7590 429.5180} {1076.7590 429.4580}} } 			error

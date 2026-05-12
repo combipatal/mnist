@@ -1,0 +1,19 @@
+****************************************
+Report : constraint
+        -all_violators
+        -min_delay
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Tue May 12 21:15:40 2026
+****************************************
+
+
+   early_timing
+   -----------
+
+Endpoint                         Path Delay     Path Required       CRP    Slack Group    Scenario
+----------------------------------------------------------------------------------------------------------
+gen_mac_lanes[5].u_lane/u_mac/weight_r_reg[15]/D (DFFARX2_RVT)
+                                   0.33 f         0.33           0.00    -0.00   clk      default
+
+1

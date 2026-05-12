@@ -1,0 +1,39 @@
+****************************************
+Report : clock timing
+        -type latency
+        -launch
+        -nworst 20
+        -setup
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Sun May 10 21:32:58 2026
+****************************************
+
+  Mode: default
+  Clock: clk
+
+                                                 --- Latency ---
+  Clock Pin                             Trans   Source   Offset  Network    Total            Corner
+---------------------------------------------------------------------------------------------------
+  act_ram_reg[158][2]/CLK                0.06     0.00       --     0.38     0.38 rp-+      default
+  act_ram_reg[237][3]/CLK                0.06     0.00       --     0.38     0.38 rp-+      default
+  act_ram_reg[173][12]/CLK               0.06     0.00       --     0.38     0.38 rp-+      default
+  act_ram_reg[237][6]/CLK                0.06     0.00       --     0.38     0.38 rp-+      default
+  act_ram_reg[237][15]/CLK               0.06     0.00       --     0.38     0.38 rp-+      default
+  act_ram_reg[222][5]/CLK                0.06     0.00       --     0.38     0.38 rp-+      default
+  act_ram_reg[173][6]/CLK                0.06     0.00       --     0.38     0.38 rp-+      default
+  act_ram_reg[211][6]/CLK                0.06     0.00       --     0.38     0.38 rp-+      default
+  act_ram_reg[158][1]/CLK                0.06     0.00       --     0.38     0.38 rp-+      default
+  act_ram_reg[158][5]/CLK                0.06     0.00       --     0.38     0.38 rp-+      default
+  act_ram_reg[222][8]/CLK                0.06     0.00       --     0.38     0.38 rp-+      default
+  act_ram_reg[211][9]/CLK                0.06     0.00       --     0.38     0.38 rp-+      default
+  act_ram_reg[158][4]/CLK                0.06     0.00       --     0.38     0.38 rp-+      default
+  act_ram_reg[173][14]/CLK               0.06     0.00       --     0.38     0.38 rp-+      default
+  act_ram_reg[211][3]/CLK                0.06     0.00       --     0.38     0.38 rp-+      default
+  act_ram_reg[173][3]/CLK                0.06     0.00       --     0.38     0.38 rp-+      default
+  act_ram_reg[172][13]/CLK               0.06     0.00       --     0.38     0.38 rp-+      default
+  act_ram_reg[222][7]/CLK                0.06     0.00       --     0.38     0.38 rp-+      default
+  act_ram_reg[222][2]/CLK                0.06     0.00       --     0.38     0.38 rp-+      default
+  act_ram_reg[172][3]/CLK                0.06     0.00       --     0.38     0.38 rp-+      default
+---------------------------------------------------------------------------------------------------
+1

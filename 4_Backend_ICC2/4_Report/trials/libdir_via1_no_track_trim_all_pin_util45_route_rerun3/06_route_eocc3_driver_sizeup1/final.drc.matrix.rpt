@@ -1,0 +1,17 @@
+****************************************
+Report : Report drc errors
+Design : route_a20_eocc3
+Data   : zroute.err
+Type   : matrix
+Version: W-2024.09-SP2
+Date   : Tue May 12 17:28:34 2026
+****************************************
+
+                       | M1   M2  M3  | TOTALS BY TYPE
+---------------------------------------------------------
+Less than minimum area | 9    1   1   | 11
+Off-grid               | 1    -   -   | 1
+---------------------------------------------------------
+                       | M1   M2  M3  | 12
+TOTALS BY LAYER        | 10   1   1   |
+1

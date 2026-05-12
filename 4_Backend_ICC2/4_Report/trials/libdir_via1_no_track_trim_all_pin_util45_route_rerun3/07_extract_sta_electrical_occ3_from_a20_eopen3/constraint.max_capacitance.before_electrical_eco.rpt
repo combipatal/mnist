@@ -1,0 +1,51 @@
+****************************************
+Report : constraint
+        -all_violators
+        -max_capacitance
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Tue May 12 17:00:38 2026
+****************************************
+
+
+
+   Mode: default Corner: default
+   Scenario: default
+   max_capacitance                                                             
+                             Required        Actual                            
+   Net                      Capacitance    Capacitance       Slack  Violation  
+  ---------------------------------------------------------------------------
+   n138441                     64.00          88.55         -24.55  (VIOLATED) 
+     PIN : U109080/Y           64.00          88.55         -24.55  (VIOLATED) 
+
+   ZBUF_9_3259                 16.00          21.40          -5.40  (VIOLATED) 
+     PIN : ZBUF_9_inst_26029/Y
+                               16.00          21.40          -5.40  (VIOLATED) 
+
+   ZBUF_1915_3010              16.00          21.20          -5.20  (VIOLATED) 
+     PIN : ZBUF_1915_inst_21190/Y
+                               16.00          21.20          -5.20  (VIOLATED) 
+
+   n20741                       8.00          10.21          -2.21  (VIOLATED) 
+     PIN : U19911/Y             8.00          10.21          -2.21  (VIOLATED) 
+
+   n68360                       8.00           9.56          -1.56  (VIOLATED) 
+     PIN : U67009/Y             8.00           9.56          -1.56  (VIOLATED) 
+
+   n142205                      8.00           8.91          -0.91  (VIOLATED) 
+     PIN : U123366/Y            8.00           8.91          -0.91  (VIOLATED) 
+
+   n42232                       8.00           8.32          -0.32  (VIOLATED) 
+     PIN : U41697/Y             8.00           8.32          -0.32  (VIOLATED) 
+
+   n42695                       8.00           8.32          -0.32  (VIOLATED) 
+     PIN : U42518/Y             8.00           8.32          -0.32  (VIOLATED) 
+
+   n103004                      8.00           8.14          -0.14  (VIOLATED) 
+     PIN : U108803/Y            8.00           8.14          -0.14  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 9
+
+   Total number of violation(s): 9
+1

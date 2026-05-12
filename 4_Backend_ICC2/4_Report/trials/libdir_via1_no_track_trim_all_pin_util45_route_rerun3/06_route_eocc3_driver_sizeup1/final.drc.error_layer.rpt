@@ -1,0 +1,21 @@
+****************************************
+Report : Report drc errors
+Design : route_a20_eocc3
+Data   : zroute.err
+Type   : error_layer
+Version: W-2024.09-SP2
+Date   : Tue May 12 17:28:34 2026
+****************************************
+
+ErrorSet                                    Total   Visible     Fixed   Ignored
+--------------------------------------------------------------------------------
+Design : route_a20_eocc3                    12      12          0       0
+      Data : zroute.err                     12      12          0       0
+            M1 (11)                         10      10          0       0
+                Less than minimum area      9       9           0       0
+                Off-grid                    1       1           0       0
+            M2 (13)                         1       1           0       0
+                Less than minimum area      1       1           0       0
+            M3 (15)                         1       1           0       0
+                Less than minimum area      1       1           0       0
+1

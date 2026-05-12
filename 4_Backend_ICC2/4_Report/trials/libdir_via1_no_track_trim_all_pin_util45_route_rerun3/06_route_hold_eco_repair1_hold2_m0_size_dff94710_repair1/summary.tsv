@@ -1,0 +1,5 @@
+step	target_nets	save_status	total	open_nets	diff_net_spacing	less_than_min_area	needs_fat_contact	off_grid	same_net_spacing	short	connection_not_within_pin
+initial	none	no_save	15	8	2	4	0	1	0	8	0
+after_step1	ZBUF_899_1724 ZCTSNET_433 eco_net_504_u_input_fifo/n3406 u_input_fifo/fifo_buf[947][10]	no_save	0	6	0	0	0	0	0	0	0
+after_step2	ZBUF_899_1724	no_save	0	6	0	0	0	0	0	0	0
+final	all	no_save_not_clean	0	6	0	0	0	0	0	0	0

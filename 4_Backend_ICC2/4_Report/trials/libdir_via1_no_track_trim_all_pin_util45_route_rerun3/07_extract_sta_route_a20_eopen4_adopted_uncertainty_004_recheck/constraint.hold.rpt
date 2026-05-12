@@ -1,0 +1,18 @@
+****************************************
+Report : constraint
+        -all_violators
+        -min_delay
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Tue May 12 21:47:49 2026
+****************************************
+
+
+   early_timing
+   -----------
+
+Endpoint                         Path Delay     Path Required       CRP    Slack Group    Scenario
+----------------------------------------------------------------------------------------------------------
+No paths.
+
+1

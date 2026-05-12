@@ -1,0 +1,2 @@
+id	type_name	error_class	layers	bbox	center	objects	shape	brief_info	verbose_info	status
+0	Diff net spacing	basic	M1	{824.7350 272.2400} {824.8090 272.4000}	824.7720,272.3200	ZBUF_753_1116,VSS	{ polygons {{824.7350 272.2400} {824.7350 272.4000} {824.8090 272.4000} {824.8090 272.2400}} } 			error

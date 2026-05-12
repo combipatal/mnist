@@ -1,0 +1,282 @@
+This files generated automatically by the ICC2 command check_pg_drc
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 827.521} {20.105 827.631}
+Layer:              M6
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 867.649} {20.105 867.759}
+Layer:              M6
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 907.777} {20.105 907.887}
+Layer:              M6
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 947.905} {20.105 948.015}
+Layer:              M6
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 988.033} {20.105 988.143}
+Layer:              M6
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 1028.161} {20.105 1028.271}
+Layer:              M6
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 1068.289} {20.105 1068.399}
+Layer:              M6
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 827.521} {20.105 827.631}
+Layer:              M5
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 867.649} {20.105 867.759}
+Layer:              M5
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 907.777} {20.105 907.887}
+Layer:              M5
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 947.905} {20.105 948.015}
+Layer:              M5
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 988.033} {20.105 988.143}
+Layer:              M5
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 1028.161} {20.105 1028.271}
+Layer:              M5
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 1068.289} {20.105 1068.399}
+Layer:              M5
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 827.521} {20.105 827.631}
+Layer:              M4
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 867.649} {20.105 867.759}
+Layer:              M4
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 907.777} {20.105 907.887}
+Layer:              M4
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 947.905} {20.105 948.015}
+Layer:              M4
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 988.033} {20.105 988.143}
+Layer:              M4
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 1028.161} {20.105 1028.271}
+Layer:              M4
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 1068.289} {20.105 1068.399}
+Layer:              M4
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 827.521} {20.105 827.631}
+Layer:              M3
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 867.649} {20.105 867.759}
+Layer:              M3
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 907.777} {20.105 907.887}
+Layer:              M3
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 947.905} {20.105 948.015}
+Layer:              M3
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 988.033} {20.105 988.143}
+Layer:              M3
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 1028.161} {20.105 1028.271}
+Layer:              M3
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 1068.289} {20.105 1068.399}
+Layer:              M3
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 827.521} {20.105 827.631}
+Layer:              M2
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 867.649} {20.105 867.759}
+Layer:              M2
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 907.777} {20.105 907.887}
+Layer:              M2
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 947.905} {20.105 948.015}
+Layer:              M2
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 988.033} {20.105 988.143}
+Layer:              M2
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 1028.161} {20.105 1028.271}
+Layer:              M2
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+=================
+Error type:         Minimal metal area
+Violated rule:      General Minimum Area Rule
+Metal island b-box: {19.995 1068.289} {20.105 1068.399}
+Layer:              M2
+Net:                VSS
+Actual area:        0.0096
+Minimal area:       0.016
+==============================================================

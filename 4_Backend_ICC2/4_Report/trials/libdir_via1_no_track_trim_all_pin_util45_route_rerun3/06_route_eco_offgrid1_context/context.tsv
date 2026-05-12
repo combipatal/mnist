@@ -1,0 +1,103 @@
+label	error_idx	idx	name	class	layer	bbox	net	ref_name	lib_cell	shape_use	via_def	owner
+drc_error	1	0	0	drc_error		{201.1290 255.6030} {201.2390 255.6630}	NA	NA	NA	NA	NA	NA
+drc_object	1	1	ZBUF_832_2538	net		{48.3230 195.6540} {212.3970 255.9750}						
+near_cell	1	1	act_ram_reg[861][0]	cell		{198.9410 253.9790} {203.4270 255.7820}		DFFARX1_RVT	_sel13			
+near_cell	1	2	act_ram_reg[861][5]	cell		{201.6770 255.7220} {206.1630 257.5250}		DFFARX1_RVT	_sel14			
+near_cell	1	3	U136888	cell		{202.4370 252.3780} {204.4910 254.1810}		NOR4X1_RVT	_sel15			
+near_cell	1	4	U137571	cell		{200.9170 252.3780} {202.6670 254.1810}		AO22X1_RVT	_sel16			
+near_cell	1	5	U142077	cell		{197.8770 252.3780} {199.6270 254.1810}		AO22X1_RVT	_sel17			
+near_cell	1	6	ZBUF_517_inst_10321	cell		{199.3970 252.3780} {201.1440 254.1810}		NBUFFX4_RVT	_sel18			
+near_cell	1	7	ZBUF_2_inst_13879	cell		{198.6370 255.7220} {201.9070 257.5250}		DELLN1X2_RVT	_sel19			
+near_pin	1	1	act_ram_reg[861][0]/RSTB	pin	M1 CO	{200.7790 255.5290} {201.9090 255.6580}	ZBUF_832_2538					
+near_pin	1	2	act_ram_reg[861][0]/VSS	pin	M1 CO	{199.0560 255.2910} {203.3120 255.7820}	VSS					
+near_pin	1	3	ZBUF_2_inst_13879/Y	pin	M1 CO	{201.1590 255.8830} {201.6950 257.3010}	ZBUF_2_2311					
+near_pin	1	4	ZBUF_2_inst_13879/VSS	pin	M1 CO	{198.7520 255.7220} {201.7920 256.9420}	VSS					
+near_shape	1	1	PATH_11_141	shape	M1	{20.0000 255.7220} {1189.3360 255.7820}	VSS			lib_cell_pin_connect		VSS
+near_shape	1	2	PATH_19_14611	shape	M5	{182.0040 255.2680} {231.9160 255.3240}	n118628			detail_route		n118628
+near_shape	1	3	PATH_19_57835	shape	M5	{199.3320 255.8760} {202.4280 255.9320}	ZCTSNET_995			detail_route		ZCTSNET_995
+near_shape	1	4	PATH_15_251304	shape	M3	{177.7480 255.5720} {216.2600 255.6280}	n116876			detail_route		n116876
+near_shape	1	5	PATH_13_551258	shape	M2	{201.0040 240.3720} {201.0600 258.0600}	n112986			detail_route		n112986
+near_shape	1	6	PATH_15_566857	shape	M3	{198.7240 255.2680} {201.2120 255.3240}	ZBUF_832_2538			detail_route		ZBUF_832_2538
+near_shape	1	7	PATH_15_566858	shape	M3	{201.1560 255.2680} {203.6440 255.3240}	ZBUF_832_2538			detail_route		ZBUF_832_2538
+near_shape	1	8	PATH_13_747942	shape	M2	{200.7000 253.1400} {200.7560 257.4520}	n139704			detail_route		n139704
+near_shape	1	9	PATH_13_913651	shape	M2	{200.8520 249.1880} {200.9080 256.2360}	ZBUF_253_892			detail_route		ZBUF_253_892
+near_shape	1	10	PATH_13_982294	shape	M2	{201.3080 253.1400} {201.3640 256.2360}	ZBUF_365_1644			detail_route		ZBUF_365_1644
+drc_error	2	0	1	drc_error		{906.7130 392.9780} {906.8230 393.0380}	NA	NA	NA	NA	NA	NA
+drc_object	2	1	ZBUF_714_1050	net		{905.9070 392.9500} {1008.1170 471.3330}						
+near_cell	2	1	u_input_fifo/rd_addr_reg[5]	cell		{904.0690 392.8260} {908.5550 394.6290}		DFFARX1_RVT	_sel52			
+near_cell	2	2	U90272	cell		{908.3250 394.4270} {909.7610 396.2300}		AND2X1_RVT	_sel53			
+near_cell	2	3	U21897	cell		{905.2850 394.4270} {908.5550 396.2300}		DELLN1X2_RVT	_sel54			
+near_cell	2	4	U23853	cell		{905.5890 391.0830} {908.0990 392.8860}		NBUFFX8_RVT	_sel55			
+near_cell	2	5	U88979	cell		{903.7650 394.4270} {905.5150 396.2300}		AND4X1_RVT	_sel56			
+near_cell	2	6	U99890	cell		{907.8690 391.0830} {909.3050 392.8860}		AND2X1_RVT	_sel57			
+near_cell	2	7	U125965	cell		{908.3250 392.8260} {909.7610 394.6290}		AND2X1_RVT	_sel58			
+near_pin	2	1	u_input_fifo/rd_addr_reg[5]/RSTB	pin	M1 CO	{905.9070 392.9500} {907.0370 393.0790}	ZBUF_714_1050					
+near_pin	2	2	u_input_fifo/rd_addr_reg[5]/VSS	pin	M1 CO	{904.1840 392.8260} {908.4400 393.3170}	VSS					
+near_pin	2	3	U23853/Y	pin	M1 CO	{906.4390 391.2910} {907.8870 392.7400}	n129130					
+near_pin	2	4	U23853/VSS	pin	M1 CO	{905.7040 392.4460} {907.9840 392.8860}	VSS					
+near_shape	2	1	PATH_11_223	shape	M1	{20.0000 392.8260} {1189.3360 392.8860}	VSS			lib_cell_pin_connect		VSS
+near_shape	2	2	PATH_23_10468	shape	M7	{896.1000 393.2840} {924.7320 393.3400}	ZBUF_625_3443			detail_route		ZBUF_625_3443
+near_shape	2	3	PATH_19_42846	shape	M5	{905.2200 392.6760} {910.1400 392.7320}	ZCTSNET_450			detail_route		ZCTSNET_450
+near_shape	2	4	PATH_17_43052	shape	M4	{906.4360 383.2520} {906.4920 403.3720}	n132124			detail_route		n132124
+near_shape	2	5	PATH_19_86105	shape	M5	{899.1400 393.2840} {916.2200 393.3400}	ZBUF_35_2933			detail_route		ZBUF_35_2933
+near_shape	2	6	PATH_13_520556	shape	M2	{907.1960 391.3080} {907.2520 411.2760}	n103100			detail_route		n103100
+near_shape	2	7	PATH_13_925853	shape	M2	{906.7400 392.9800} {906.7960 399.4200}	ZBUF_714_1050			detail_route		ZBUF_714_1050
+near_shape	2	8	PATH_13_1006588	shape	M2	{906.2840 391.7640} {906.3400 392.8840}	ZBUF_795_2015			detail_route		ZBUF_795_2015
+near_shape	2	9	PATH_13_1006590	shape	M2	{907.0440 392.8280} {907.1000 422.8280}	ZBUF_795_2015			detail_route		ZBUF_795_2015
+drc_error	3	0	2	drc_error		{906.7130 399.3620} {906.8230 399.4220}	NA	NA	NA	NA	NA	NA
+drc_object	3	1	ZBUF_714_1050	net		{905.9070 392.9500} {1008.1170 471.3330}						
+near_cell	3	1	U88980	cell		{907.4130 399.5140} {908.8490 401.3170}		AND2X1_RVT	_sel89			
+near_cell	3	2	u_input_fifo/wr_addr_reg[9]	cell		{904.0690 397.7710} {908.8590 399.5740}		DFFARX2_RVT	_sel90			
+near_cell	3	3	U21907	cell		{904.3730 399.5140} {907.6430 401.3170}		DELLN1X2_RVT	_sel91			
+near_cell	3	4	U88231	cell		{903.9170 396.1700} {905.6670 397.9730}		AND4X1_RVT	_sel92			
+near_cell	3	5	U89611	cell		{905.4370 396.1700} {907.1870 397.9730}		AND4X1_RVT	_sel93			
+near_cell	3	6	ZBUF_921_inst_18914	cell		{906.9570 396.1700} {909.4670 397.9730}		NBUFFX8_RVT	_sel94			
+near_pin	3	1	u_input_fifo/wr_addr_reg[9]/RSTB	pin	M1 CO	{905.9070 399.3370} {907.0370 399.4560}	ZBUF_714_1050					
+near_pin	3	2	u_input_fifo/wr_addr_reg[9]/VSS	pin	M1 CO	{904.1840 399.0830} {908.7440 399.5740}	VSS					
+near_pin	3	3	U21907/Y	pin	M1 CO	{906.8950 399.6750} {907.4310 401.0930}	n128948					
+near_pin	3	4	U21907/VSS	pin	M1 CO	{904.4880 399.5140} {907.5280 400.7340}	VSS					
+near_shape	3	1	PATH_11_227	shape	M1	{20.0000 399.5140} {1189.3360 399.5740}	VSS			lib_cell_pin_connect		VSS
+near_shape	3	2	PATH_23_7993	shape	M7	{894.8840 399.3640} {969.7240 399.4200}	ZBUF_528_2460			detail_route		ZBUF_528_2460
+near_shape	3	3	PATH_19_16096	shape	M5	{894.5800 399.3640} {908.9240 399.4200}	n129055			detail_route		n129055
+near_shape	3	4	PATH_17_43052	shape	M4	{906.4360 383.2520} {906.4920 403.3720}	n132124			detail_route		n132124
+near_shape	3	5	PATH_13_520556	shape	M2	{907.1960 391.3080} {907.2520 411.2760}	n103100			detail_route		n103100
+near_shape	3	6	PATH_13_925850	shape	M2	{906.5880 399.3640} {906.6440 403.3720}	ZBUF_714_1050			detail_route		ZBUF_714_1050
+near_shape	3	7	PATH_13_925853	shape	M2	{906.7400 392.9800} {906.7960 399.4200}	ZBUF_714_1050			detail_route		ZBUF_714_1050
+near_shape	3	8	PATH_13_1006590	shape	M2	{907.0440 392.8280} {907.1000 422.8280}	ZBUF_795_2015			detail_route		ZBUF_795_2015
+drc_error	4	0	3	drc_error		{899.1130 650.4660} {899.2230 650.5260}	NA	NA	NA	NA	NA	NA
+drc_object	4	1	ZBUF_851_152	net		{894.8110 449.6440} {1010.7010 661.1910}						
+near_cell	4	1	u_input_fifo/fifo_buf_reg[895][14]	cell		{897.3810 651.9150} {901.8670 653.7180}		DFFARX1_RVT	_sel123			
+near_cell	4	2	u_input_fifo/fifo_buf_reg[894][5]	cell		{896.6210 650.3140} {901.1070 652.1170}		DFFARX1_RVT	_sel124			
+near_cell	4	3	ZBUF_851_inst_3581	cell		{899.3570 648.5710} {903.2350 650.3740}		NBUFFX16_RVT	_sel125			
+near_pin	4	1	u_input_fifo/fifo_buf_reg[894][5]/RSTB	pin	M1 CO	{898.4590 650.4380} {899.5890 650.5670}	ZBUF_851_152					
+near_pin	4	2	u_input_fifo/fifo_buf_reg[894][5]/VSS	pin	M1 CO	{896.7360 650.3140} {900.9920 650.8050}	VSS					
+near_pin	4	3	ZBUF_851_inst_3581/VSS	pin	M1 CO	{899.4720 649.9340} {903.1200 650.3740}	VSS					
+near_shape	4	1	PATH_25_55	shape	M8	{899.5000 10.0000} {900.5000 1198.7280}	VSS			stripe		VSS
+near_shape	4	2	PATH_11_377	shape	M1	{20.0000 650.3140} {1189.3360 650.3740}	VSS			lib_cell_pin_connect		VSS
+near_shape	4	3	PATH_17_191153	shape	M4	{898.8360 644.6920} {898.8920 669.3720}	ZBUF_713_3450			detail_route		ZBUF_713_3450
+near_shape	4	4	PATH_13_898380	shape	M2	{899.2920 649.7080} {899.3480 650.5240}	ZBUF_851_152			detail_route		ZBUF_851_152
+near_shape	4	5	PATH_13_898382	shape	M2	{899.2920 650.4680} {899.3480 653.2600}	ZBUF_851_152			detail_route		ZBUF_851_152
+near_via	4	1	VIA_SA_26332	via		{899.5250 650.2890} {900.4750 650.3990}	VSS			lib_cell_pin_connect	VIA12SQ_C	VSS
+drc_error	5	0	4	drc_error		{250.0520 855.0630} {250.1530 855.1450}	NA	NA	NA	NA	NA	NA
+drc_object	5	1	n143522	net		{145.8010 737.6890} {250.6400 955.4650}						
+near_cell	5	1	U82224	cell		{248.6450 855.8990} {249.7870 857.7020}		NAND2X0_RVT	_sel151			
+near_cell	5	2	U82256	cell		{251.0770 855.8990} {252.2190 857.7020}		NAND2X0_RVT	_sel152			
+near_cell	5	3	U48215	cell		{247.2770 854.2980} {249.7870 856.1010}		NBUFFX8_RVT	_sel153			
+near_cell	5	4	ZBUF_5_inst_9312	cell		{245.6050 855.8990} {248.8750 857.7020}		DELLN1X2_RVT	_sel154			
+near_cell	5	5	ZBUF_5_inst_23234	cell		{247.7330 852.5550} {251.0030 854.3580}		DELLN1X2_RVT	_sel155			
+near_cell	5	6	ZBUF_164_inst_29498	cell		{250.7760 852.5550} {252.5230 854.3580}		NBUFFX4_RVT	_sel156			
+near_pin	5	1	U77942/A3	pin	M1 CO	{250.4830 855.1700} {250.6400 855.4670}	n143522					
+near_pin	5	2	U77942/VDD	pin	M1 CO	{249.6720 855.2860} {251.6480 856.0300}	VDD					
+near_pin	5	3	U77942/VSS	pin	M1 CO	{249.6720 854.2980} {251.6480 854.8400}	VSS					
+near_shape	5	1	PATH_23_8829	shape	M7	{245.5400 855.3640} {286.3320 855.4200}	ZBUF_64_2773			detail_route		ZBUF_64_2773
+near_shape	5	2	PATH_11_82038	shape	M1	{249.4950 855.3670} {249.6970 855.4170}	n143522			detail_route		n143522
+near_shape	5	3	PATH_19_85403	shape	M5	{249.4920 854.7560} {250.1560 854.8120}	ZBUF_72_2920			detail_route		ZBUF_72_2920
+near_shape	5	4	PATH_17_130178	shape	M4	{249.7960 847.4600} {249.8520 856.3320}	ZBUF_588_92			detail_route		ZBUF_588_92
+near_shape	5	5	PATH_17_170611	shape	M4	{250.1000 854.7560} {250.1560 876.3960}	ZBUF_72_2920			detail_route		ZBUF_72_2920
+near_shape	5	6	PATH_15_180825	shape	M3	{247.3640 854.7560} {253.6520 854.8120}	n61370			detail_route		n61370
+near_shape	5	7	PATH_15_302189	shape	M3	{249.4920 855.3640} {250.3080 855.4200}	n134012			detail_route		n134012
+near_shape	5	8	PATH_13_471839	shape	M2	{249.6440 849.2840} {249.7000 857.8520}	n82889			detail_route		n82889
+near_shape	5	9	PATH_13_653815	shape	M2	{250.4040 852.0200} {250.4600 858.1560}	n134013			detail_route		n134013
+near_shape	5	10	PATH_13_886377	shape	M2	{250.5560 844.7240} {250.6120 872.7480}	ZBUF_89_102			detail_route		ZBUF_89_102
+near_shape	5	11	PATH_13_943756	shape	M2	{250.1000 852.9320} {250.1560 855.8760}	ZBUF_228_1096			detail_route		ZBUF_228_1096
+near_shape	5	12	PATH_13_1172071	shape	M2	{249.9480 851.5640} {250.0040 856.0280}	ZBUF_51_3163			detail_route		ZBUF_51_3163

@@ -1,0 +1,162 @@
+****************************************
+Report : Report drc errors
+Design : route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_route_opt1
+Data   : zroute.err
+Type   : detailed
+Version: W-2024.09-SP2
+Date   : Tue May 12 10:19:45 2026
+****************************************
+
+Error ID          : 0
+Error Type        : Off-grid
+Error Layer       : M2 (13)
+Number of errors  : 17
+Description       :  -- 
+Status            : error
+Bbox              : {215.7470 208.0930} {215.8040 208.2040}
+
+Error ID          : 1
+Error Type        : Off-grid
+Error Layer       : M1 (11)
+Number of errors  : 17
+Description       :  -- 
+Status            : error
+Bbox              : {320.4490 235.5060} {320.5590 235.5660}
+
+Error ID          : 2
+Error Type        : Off-grid
+Error Layer       : M1 (11)
+Number of errors  : 17
+Description       :  -- 
+Status            : error
+Bbox              : {821.1370 275.9050} {821.2470 275.9650}
+
+Error ID          : 3
+Error Type        : Off-grid
+Error Layer       : M1 (11)
+Number of errors  : 17
+Description       :  -- 
+Status            : error
+Bbox              : {825.3930 272.2900} {825.5030 272.3500}
+
+Error ID          : 4
+Error Type        : Off-grid
+Error Layer       : M1 (11)
+Number of errors  : 17
+Description       :  -- 
+Status            : error
+Bbox              : {920.2410 279.2820} {920.3510 279.3420}
+
+Error ID          : 5
+Error Type        : Off-grid
+Error Layer       : M1 (11)
+Number of errors  : 17
+Description       :  -- 
+Status            : error
+Bbox              : {920.2410 312.4180} {920.3510 312.4780}
+
+Error ID          : 6
+Error Type        : Off-grid
+Error Layer       : M1 (11)
+Number of errors  : 17
+Description       :  -- 
+Status            : error
+Bbox              : {593.4710 345.1030} {593.5610 345.2170}
+
+Error ID          : 7
+Error Type        : Off-grid
+Error Layer       : M1 (11)
+Number of errors  : 17
+Description       :  -- 
+Status            : error
+Bbox              : {799.5830 380.2150} {799.6730 380.3450}
+
+Error ID          : 8
+Error Type        : Off-grid
+Error Layer       : M1 (11)
+Number of errors  : 17
+Description       :  -- 
+Status            : error
+Bbox              : {398.7290 610.9460} {398.8390 611.0060}
+
+Error ID          : 9
+Error Type        : Off-grid
+Error Layer       : M1 (11)
+Number of errors  : 17
+Description       :  -- 
+Status            : error
+Bbox              : {741.0330 687.2500} {741.1430 687.3100}
+
+Error ID          : 10
+Error Type        : Off-grid
+Error Layer       : M1 (11)
+Number of errors  : 17
+Description       :  -- 
+Status            : error
+Bbox              : {678.2570 848.3700} {678.3670 848.4300}
+
+Error ID          : 11
+Error Type        : Off-grid
+Error Layer       : M1 (11)
+Number of errors  : 17
+Description       :  -- 
+Status            : error
+Bbox              : {65.4230 891.6630} {65.5470 891.7450}
+
+Error ID          : 12
+Error Type        : Off-grid
+Error Layer       : M1 (11)
+Number of errors  : 17
+Description       :  -- 
+Status            : error
+Bbox              : {304.9240 987.2710} {305.0250 987.3530}
+
+Error ID          : 14
+Error Type        : Off-grid
+Error Layer       : M1 (11)
+Number of errors  : 17
+Description       :  -- 
+Status            : error
+Bbox              : {692.8490 1008.8820} {692.9590 1008.9420}
+
+Error ID          : 15
+Error Type        : Off-grid
+Error Layer       : M1 (11)
+Number of errors  : 17
+Description       :  -- 
+Status            : error
+Bbox              : {357.2630 1030.9270} {357.3870 1031.0090}
+
+Error ID          : 16
+Error Type        : Off-grid
+Error Layer       : M1 (11)
+Number of errors  : 17
+Description       :  -- 
+Status            : error
+Bbox              : {210.4310 1048.8310} {210.5550 1048.9130}
+
+Error ID          : 17
+Error Type        : Off-grid
+Error Layer       : M1 (11)
+Number of errors  : 17
+Description       :  -- 
+Status            : error
+Bbox              : {625.8170 1082.4500} {625.9270 1082.5100}
+
+Error ID          : 13
+Error Type        : Short
+Error Layer       : M2 (13)
+Number of errors  : 2
+Description       :  -- 
+Status            : error
+Bbox              : {312.0600 1005.9400} {312.2280 1006.1080}
+
+Error ID          : 18
+Error Type        : Short
+Error Layer       : M1 (11)
+Number of errors  : 2
+Description       :  -- 
+Status            : error
+Bbox              : {410.5650 1134.3890} {410.7150 1134.5390}
+
+1

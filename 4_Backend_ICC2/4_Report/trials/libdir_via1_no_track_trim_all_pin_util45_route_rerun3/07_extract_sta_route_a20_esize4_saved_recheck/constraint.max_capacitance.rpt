@@ -1,0 +1,35 @@
+****************************************
+Report : constraint
+        -all_violators
+        -max_capacitance
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Tue May 12 18:13:07 2026
+****************************************
+
+
+
+   Mode: default Corner: default
+   Scenario: default
+   max_capacitance                                                             
+                             Required        Actual                            
+   Net                      Capacitance    Capacitance       Slack  Violation  
+  ---------------------------------------------------------------------------
+   n142093                      8.00           8.34          -0.34  (VIOLATED) 
+     PIN : U122369/Y            8.00           8.34          -0.34  (VIOLATED) 
+
+   ZBUF_338_2924               16.00          16.27          -0.27  (VIOLATED) 
+     PIN : ZBUF_338_inst_19343/Y
+                               16.00          16.27          -0.27  (VIOLATED) 
+
+   n33957                       8.00           8.26          -0.26  (VIOLATED) 
+     PIN : U32879/Y             8.00           8.26          -0.26  (VIOLATED) 
+
+   n42568                       8.00           8.01          -0.01  (VIOLATED) 
+     PIN : U42174/Y             8.00           8.01          -0.01  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 4
+
+   Total number of violation(s): 4
+1

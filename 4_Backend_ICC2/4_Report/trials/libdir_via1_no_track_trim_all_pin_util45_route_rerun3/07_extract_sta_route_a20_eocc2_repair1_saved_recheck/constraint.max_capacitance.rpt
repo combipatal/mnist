@@ -1,0 +1,88 @@
+****************************************
+Report : constraint
+        -all_violators
+        -max_capacitance
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Tue May 12 16:30:47 2026
+****************************************
+
+
+
+   Mode: default Corner: default
+   Scenario: default
+   max_capacitance                                                             
+                             Required        Actual                            
+   Net                      Capacitance    Capacitance       Slack  Violation  
+  ---------------------------------------------------------------------------
+   n138441                     64.00          88.55         -24.55  (VIOLATED) 
+     PIN : U109080/Y           64.00          88.55         -24.55  (VIOLATED) 
+
+   ZBUF_9_3259                 16.00          21.39          -5.39  (VIOLATED) 
+     PIN : ZBUF_9_inst_26029/Y
+                               16.00          21.39          -5.39  (VIOLATED) 
+
+   n20741                       8.00          10.21          -2.21  (VIOLATED) 
+     PIN : U19911/Y             8.00          10.21          -2.21  (VIOLATED) 
+
+   eco_net_24_eco_net_685_n23051
+                               32.00          34.04          -2.04  (VIOLATED) 
+     PIN : U_8_PTECO_DRC_BUF35/Y
+                               32.00          34.04          -2.04  (VIOLATED) 
+
+   n68360                       8.00           9.56          -1.56  (VIOLATED) 
+     PIN : U67009/Y             8.00           9.56          -1.56  (VIOLATED) 
+
+   eco_net_3_eco_net_185_n139006
+                               16.00          17.06          -1.06  (VIOLATED) 
+     PIN : U_9_PTECO_DRC_BUF6/Y
+                               16.00          17.06          -1.06  (VIOLATED) 
+
+   ZBUF_1915_3010              16.00          16.91          -0.91  (VIOLATED) 
+     PIN : ZBUF_1915_inst_21190/Y
+                               16.00          16.91          -0.91  (VIOLATED) 
+
+   n142250                      8.00           8.87          -0.87  (VIOLATED) 
+     PIN : U123411/Y            8.00           8.87          -0.87  (VIOLATED) 
+
+   ZBUF_4847_2487              82.00          82.66          -0.66  (VIOLATED) 
+     PIN : ZBUF_4847_inst_14617/Y
+                               82.00          82.66          -0.66  (VIOLATED) 
+
+   n22881                       8.00           8.58          -0.58  (VIOLATED) 
+     PIN : U23052/Y             8.00           8.58          -0.58  (VIOLATED) 
+
+   n142205                      8.00           8.39          -0.39  (VIOLATED) 
+     PIN : U123366/Y            8.00           8.39          -0.39  (VIOLATED) 
+
+   n42232                       8.00           8.32          -0.32  (VIOLATED) 
+     PIN : U41697/Y             8.00           8.32          -0.32  (VIOLATED) 
+
+   n42695                       8.00           8.32          -0.32  (VIOLATED) 
+     PIN : U42518/Y             8.00           8.32          -0.32  (VIOLATED) 
+
+   ZBUF_1327_102               16.00          16.22          -0.22  (VIOLATED) 
+     PIN : ZBUF_1327_inst_2744/Y
+                               16.00          16.22          -0.22  (VIOLATED) 
+
+   n46053                       8.00           8.18          -0.18  (VIOLATED) 
+     PIN : U45756/Y             8.00           8.18          -0.18  (VIOLATED) 
+
+   n138038                     16.00          16.15          -0.15  (VIOLATED) 
+     PIN : U107619/Y           16.00          16.15          -0.15  (VIOLATED) 
+
+   n103004                      8.00           8.14          -0.14  (VIOLATED) 
+     PIN : U108803/Y            8.00           8.14          -0.14  (VIOLATED) 
+
+   n46069                       8.00           8.08          -0.08  (VIOLATED) 
+     PIN : U45679/Y             8.00           8.08          -0.08  (VIOLATED) 
+
+   ZBUF_473_2930               64.00          64.00          -0.00  (VIOLATED) 
+     PIN : ZBUF_473_inst_19541/Y
+                               64.00          64.00          -0.00  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 19
+
+   Total number of violation(s): 19
+1

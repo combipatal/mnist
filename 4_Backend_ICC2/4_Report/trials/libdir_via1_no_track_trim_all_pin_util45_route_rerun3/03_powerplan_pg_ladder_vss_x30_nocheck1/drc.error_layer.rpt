@@ -1,0 +1,19 @@
+****************************************
+Report : Report drc errors
+Design : route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack
+Data   : zroute.err
+Type   : error_layer
+Version: W-2024.09-SP2
+Date   : Mon May 11 16:43:23 2026
+****************************************
+
+ErrorSet                                    Total   Visible     Fixed   Ignored
+--------------------------------------------------------------------------------
+Design : route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack 20 20 0 0
+      Data : zroute.err                     20      20          0       0
+            M2 (13)                         14      14          0       0
+                Diff net spacing            6       6           0       0
+                Short                       8       8           0       0
+            M6 (21)                         6       6           0       0
+                Diff net spacing            6       6           0       0
+1

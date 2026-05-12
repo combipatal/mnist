@@ -1,0 +1,3 @@
+id	type_name	error_class	layers	bbox	center	objects	brief_info	verbose_info	status
+0	Diff net spacing	basic	M6	{55.1800 867.5930} {55.2660 867.8150}	55.2230,867.7040	n139966,VSS			error
+1	Diff net spacing	basic	M6	{55.1800 867.6180} {55.2910 867.7900}	55.2355,867.7040	n139966,VSS			error

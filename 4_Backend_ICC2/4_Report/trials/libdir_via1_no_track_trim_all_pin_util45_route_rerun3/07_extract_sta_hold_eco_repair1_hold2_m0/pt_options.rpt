@@ -1,0 +1,11 @@
+
+PrimeTime options
+------------------------------------------------------------
+PrimeTime executable  : /tools/synopsys/prime/W-2024.09-SP5-3/bin/pt_shell
+Host option           : 
+Pre-link script       : 
+Post-link script      : 
+Hold fix buffers      : 
+Work directory        : /DATA/home/edu135/MNIST/4_Backend_ICC2/2_Output/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/07_extract_sta_hold_eco_repair1_hold2_m0/pt_work
+write_def options     :  -include_tech_via_definitions
+

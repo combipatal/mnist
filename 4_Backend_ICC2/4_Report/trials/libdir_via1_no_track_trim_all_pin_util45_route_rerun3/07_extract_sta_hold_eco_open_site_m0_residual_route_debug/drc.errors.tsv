@@ -1,0 +1,4 @@
+id	type_name	error_class	layers	bbox	center	objects	shape	brief_info	verbose_info	status
+0	Short	short	M2	{1060.5080 408.4280} {1060.6760 408.5960}	1060.5920,408.5120	u_input_fifo/n3339,u_input_fifo/fifo_buf[1015][7]	{ polygons {{1060.5080 408.4280} {1060.5080 408.5960} {1060.6760 408.5960} {1060.6760 408.4280}} } 			error
+1	Off-grid	basic	M1	{1060.2330 409.8500} {1060.3430 409.9100}	1060.2880,409.8800	u_input_fifo/fifo_buf[1015][7]	{ polygons {{1060.2330 409.8500} {1060.2330 409.9100} {1060.3430 409.9100} {1060.3430 409.8500}} } 			error
+2	Short	short	M2	{1059.4440 405.2360} {1059.6120 405.4040}	1059.5280,405.3200	eco_net_682_u_input_fifo/n2310,eco_net_1102_u_input_fifo/n3334	{ polygons {{1059.4440 405.2360} {1059.4440 405.4040} {1059.6120 405.4040} {1059.6120 405.2360}} } 			error

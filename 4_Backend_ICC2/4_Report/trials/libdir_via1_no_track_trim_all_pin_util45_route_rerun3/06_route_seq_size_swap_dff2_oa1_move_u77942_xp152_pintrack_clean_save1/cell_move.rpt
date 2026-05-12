@@ -1,0 +1,10 @@
+cell	dx	dy	old_origin	new_origin_pre_legalize	new_origin_post_legalize	status	message
+U77942	0.152	0	249.6720 854.3280	249.8240 854.3280	PENDING	PASS	1
+
+move_net_exclude_regex	^(VDD|VSS)$
+excluded_move_pin_nets	VDD VSS
+move_pin_nets	ZBUF_197_3009 ZBUF_228_1096 n134012 n143522 n78423
+legalize_placement	NA	NA	NA	NA	NA	PASS	1
+
+post_legalize_cell	origin	bbox	physical_status
+U77942	249.8240 854.3280	{249.6890 854.2980} {251.7640 856.1150}	placed

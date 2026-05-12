@@ -43,3 +43,15 @@ crte_*.txt
 .agents/
 .codex/
 .gitrepo/
+
+# Local-only planning/instruction files.
+/2026-05-09_103000-mnist-npu-implementation-flow.md
+/AGENTS.md
+
+# Track generated report evidence for the learning baseline.
+!2_Synthesis/4_Report/
+!2_Synthesis/4_Report/**
+!3_Formality/4_Report/
+!3_Formality/4_Report/**
+!4_Backend_ICC2/4_Report/
+!4_Backend_ICC2/4_Report/**

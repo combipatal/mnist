@@ -1,0 +1,170 @@
+****************************************
+Report : Report drc errors
+Design : route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack
+Data   : zroute.err
+Type   : detailed
+Version: W-2024.09-SP2
+Date   : Mon May 11 16:43:23 2026
+****************************************
+
+Error ID          : 0
+Error Type        : Diff net spacing
+Error Layer       : M2 (13)
+Number of errors  : 12
+Description       :  -- 
+Status            : error
+Bbox              : {29.7340 827.4650} {29.8120 827.6870}
+
+Error ID          : 1
+Error Type        : Diff net spacing
+Error Layer       : M2 (13)
+Number of errors  : 12
+Description       :  -- 
+Status            : error
+Bbox              : {29.7090 827.4900} {29.8120 827.6620}
+
+Error ID          : 4
+Error Type        : Diff net spacing
+Error Layer       : M6 (21)
+Number of errors  : 12
+Description       :  -- 
+Status            : error
+Bbox              : {29.7340 827.4650} {29.8120 827.6870}
+
+Error ID          : 5
+Error Type        : Diff net spacing
+Error Layer       : M6 (21)
+Number of errors  : 12
+Description       :  -- 
+Status            : error
+Bbox              : {29.7090 827.4900} {29.8120 827.6620}
+
+Error ID          : 6
+Error Type        : Diff net spacing
+Error Layer       : M2 (13)
+Number of errors  : 12
+Description       :  -- 
+Status            : error
+Bbox              : {29.7340 867.5930} {29.8120 867.8150}
+
+Error ID          : 7
+Error Type        : Diff net spacing
+Error Layer       : M2 (13)
+Number of errors  : 12
+Description       :  -- 
+Status            : error
+Bbox              : {29.7090 867.6180} {29.8120 867.7900}
+
+Error ID          : 8
+Error Type        : Diff net spacing
+Error Layer       : M6 (21)
+Number of errors  : 12
+Description       :  -- 
+Status            : error
+Bbox              : {29.7340 867.5930} {29.8120 867.8150}
+
+Error ID          : 9
+Error Type        : Diff net spacing
+Error Layer       : M6 (21)
+Number of errors  : 12
+Description       :  -- 
+Status            : error
+Bbox              : {29.7090 867.6180} {29.8120 867.7900}
+
+Error ID          : 12
+Error Type        : Diff net spacing
+Error Layer       : M6 (21)
+Number of errors  : 12
+Description       :  -- 
+Status            : error
+Bbox              : {29.7340 907.7210} {29.8120 907.9430}
+
+Error ID          : 13
+Error Type        : Diff net spacing
+Error Layer       : M6 (21)
+Number of errors  : 12
+Description       :  -- 
+Status            : error
+Bbox              : {29.7090 907.7460} {29.8120 907.9180}
+
+Error ID          : 16
+Error Type        : Diff net spacing
+Error Layer       : M2 (13)
+Number of errors  : 12
+Description       :  -- 
+Status            : error
+Bbox              : {29.7340 947.8490} {29.8120 948.0710}
+
+Error ID          : 17
+Error Type        : Diff net spacing
+Error Layer       : M2 (13)
+Number of errors  : 12
+Description       :  -- 
+Status            : error
+Bbox              : {29.7090 947.8740} {29.8120 948.0460}
+
+Error ID          : 2
+Error Type        : Short
+Error Layer       : M2 (13)
+Number of errors  : 8
+Description       :  -- 
+Status            : error
+Bbox              : {29.9480 827.4650} {30.1160 827.6870}
+
+Error ID          : 3
+Error Type        : Short
+Error Layer       : M2 (13)
+Number of errors  : 8
+Description       :  -- 
+Status            : error
+Bbox              : {29.7960 827.4650} {29.9640 827.6870}
+
+Error ID          : 10
+Error Type        : Short
+Error Layer       : M2 (13)
+Number of errors  : 8
+Description       :  -- 
+Status            : error
+Bbox              : {30.1000 907.7210} {30.2660 907.9430}
+
+Error ID          : 11
+Error Type        : Short
+Error Layer       : M2 (13)
+Number of errors  : 8
+Description       :  -- 
+Status            : error
+Bbox              : {30.1000 907.7460} {30.2680 907.9180}
+
+Error ID          : 14
+Error Type        : Short
+Error Layer       : M2 (13)
+Number of errors  : 8
+Description       :  -- 
+Status            : error
+Bbox              : {29.9480 947.8490} {30.1160 948.0710}
+
+Error ID          : 15
+Error Type        : Short
+Error Layer       : M2 (13)
+Number of errors  : 8
+Description       :  -- 
+Status            : error
+Bbox              : {29.7960 947.8490} {29.9640 948.0710}
+
+Error ID          : 18
+Error Type        : Short
+Error Layer       : M2 (13)
+Number of errors  : 8
+Description       :  -- 
+Status            : error
+Bbox              : {30.1000 947.8740} {30.2680 948.0460}
+
+Error ID          : 19
+Error Type        : Short
+Error Layer       : M2 (13)
+Number of errors  : 8
+Description       :  -- 
+Status            : error
+Bbox              : {30.1000 947.8490} {30.2660 948.0710}
+
+1

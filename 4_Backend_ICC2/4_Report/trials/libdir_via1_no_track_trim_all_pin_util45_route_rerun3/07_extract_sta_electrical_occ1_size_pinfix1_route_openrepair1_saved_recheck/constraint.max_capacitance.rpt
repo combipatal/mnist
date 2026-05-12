@@ -1,0 +1,219 @@
+****************************************
+Report : constraint
+        -all_violators
+        -max_capacitance
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Tue May 12 14:47:00 2026
+****************************************
+
+
+
+   Mode: default Corner: default
+   Scenario: default
+   max_capacitance                                                             
+                             Required        Actual                            
+   Net                      Capacitance    Capacitance       Slack  Violation  
+  ---------------------------------------------------------------------------
+   n138441                     64.00          88.55         -24.55  (VIOLATED) 
+     PIN : U109080/Y           64.00          88.55         -24.55  (VIOLATED) 
+
+   n142339                      8.00          21.01         -13.01  (VIOLATED) 
+     PIN : U123500/Y            8.00          21.01         -13.01  (VIOLATED) 
+
+   n68086                       8.00          15.31          -7.31  (VIOLATED) 
+     PIN : U67211/Y             8.00          15.31          -7.31  (VIOLATED) 
+
+   n142011                      8.00          15.26          -7.26  (VIOLATED) 
+     PIN : U111422/Y            8.00          15.26          -7.26  (VIOLATED) 
+
+   n140863                     16.00          23.04          -7.04  (VIOLATED) 
+     PIN : U122466/Y           16.00          23.04          -7.04  (VIOLATED) 
+
+   n142251                      8.00          14.00          -6.00  (VIOLATED) 
+     PIN : U123412/Y            8.00          14.00          -6.00  (VIOLATED) 
+
+   ZBUF_9_3259                 16.00          21.39          -5.39  (VIOLATED) 
+     PIN : ZBUF_9_inst_26029/Y
+                               16.00          21.39          -5.39  (VIOLATED) 
+
+   n142016                      8.00          12.83          -4.83  (VIOLATED) 
+     PIN : U111479/Y            8.00          12.83          -4.83  (VIOLATED) 
+
+   n142326                      8.00          12.09          -4.09  (VIOLATED) 
+     PIN : U123487/Y            8.00          12.09          -4.09  (VIOLATED) 
+
+   eco_net_1467_n22608         16.00          19.65          -3.65  (VIOLATED) 
+     PIN : U_4_PTECO_DRC_BUF1432/Y
+                               16.00          19.65          -3.65  (VIOLATED) 
+
+   n20741                       8.00          10.21          -2.21  (VIOLATED) 
+     PIN : U19911/Y             8.00          10.21          -2.21  (VIOLATED) 
+
+   n133748                     32.00          34.20          -2.20  (VIOLATED) 
+     PIN : U71045/Y            32.00          34.20          -2.20  (VIOLATED) 
+
+   n88222                       8.00          10.11          -2.11  (VIOLATED) 
+     PIN : U86316/Y             8.00          10.11          -2.11  (VIOLATED) 
+
+   n141995                      8.00          10.06          -2.06  (VIOLATED) 
+     PIN : U110350/Y            8.00          10.06          -2.06  (VIOLATED) 
+
+   n142071                      8.00           9.72          -1.72  (VIOLATED) 
+     PIN : U122160/Y            8.00           9.72          -1.72  (VIOLATED) 
+
+   n142164                      8.00           9.72          -1.72  (VIOLATED) 
+     PIN : U123325/Y            8.00           9.72          -1.72  (VIOLATED) 
+
+   n142242                      8.00           9.19          -1.19  (VIOLATED) 
+     PIN : U123403/Y            8.00           9.19          -1.19  (VIOLATED) 
+
+   n142227                      8.00           9.16          -1.16  (VIOLATED) 
+     PIN : U123388/Y            8.00           9.16          -1.16  (VIOLATED) 
+
+   n68360                       8.00           9.14          -1.14  (VIOLATED) 
+     PIN : U67009/Y             8.00           9.14          -1.14  (VIOLATED) 
+
+   n142233                      8.00           9.13          -1.13  (VIOLATED) 
+     PIN : U123394/Y            8.00           9.13          -1.13  (VIOLATED) 
+
+   n143584                     16.00          17.10          -1.10  (VIOLATED) 
+     PIN : U124850/Y           16.00          17.10          -1.10  (VIOLATED) 
+
+   n68031                      16.00          17.03          -1.03  (VIOLATED) 
+     PIN : U66947/Y            16.00          17.03          -1.03  (VIOLATED) 
+
+   n137541                     16.00          17.02          -1.02  (VIOLATED) 
+     PIN : U103883/Y           16.00          17.02          -1.02  (VIOLATED) 
+
+   n132856                     32.00          33.02          -1.02  (VIOLATED) 
+     PIN : U62370/Y            32.00          33.02          -1.02  (VIOLATED) 
+
+   n142249                      8.00           8.92          -0.92  (VIOLATED) 
+     PIN : U123410/Y            8.00           8.92          -0.92  (VIOLATED) 
+
+   n55354                       8.00           8.88          -0.88  (VIOLATED) 
+     PIN : U54691/Y             8.00           8.88          -0.88  (VIOLATED) 
+
+   n132063                     32.00          32.65          -0.65  (VIOLATED) 
+     PIN : U54320/Y            32.00          32.65          -0.65  (VIOLATED) 
+
+   n141348                     16.00          16.55          -0.55  (VIOLATED) 
+     PIN : U122951/Y           16.00          16.55          -0.55  (VIOLATED) 
+
+   ZBUF_717_3066               32.00          32.54          -0.54  (VIOLATED) 
+     PIN : ZBUF_717_inst_22117/Y
+                               32.00          32.54          -0.54  (VIOLATED) 
+
+   n129291                     64.00          64.53          -0.53  (VIOLATED) 
+     PIN : U25157/Y            64.00          64.53          -0.53  (VIOLATED) 
+
+   n143591                     16.00          16.52          -0.52  (VIOLATED) 
+     PIN : U124861/Y           16.00          16.52          -0.52  (VIOLATED) 
+
+   eco_net_184_n139006         16.00          16.50          -0.50  (VIOLATED) 
+     PIN : U_4_PTECO_DRC_BUF174/Y
+                               16.00          16.50          -0.50  (VIOLATED) 
+
+   n128680                     16.00          16.38          -0.38  (VIOLATED) 
+     PIN : U19742/Y            16.00          16.38          -0.38  (VIOLATED) 
+
+   eco_net_516_n142334         16.00          16.34          -0.34  (VIOLATED) 
+     PIN : U_4_PTECO_DRC_BUF488/Y
+                               16.00          16.34          -0.34  (VIOLATED) 
+
+   n42232                       8.00           8.32          -0.32  (VIOLATED) 
+     PIN : U41697/Y             8.00           8.32          -0.32  (VIOLATED) 
+
+   n42695                       8.00           8.32          -0.32  (VIOLATED) 
+     PIN : U42518/Y             8.00           8.32          -0.32  (VIOLATED) 
+
+   n23084                       8.00           8.32          -0.32  (VIOLATED) 
+     PIN : U22791/Y             8.00           8.32          -0.32  (VIOLATED) 
+
+   n132621                     16.00          16.30          -0.30  (VIOLATED) 
+     PIN : U60194/Y            16.00          16.30          -0.30  (VIOLATED) 
+
+   n137157                     16.00          16.30          -0.30  (VIOLATED) 
+     PIN : U101187/Y           16.00          16.30          -0.30  (VIOLATED) 
+
+   n38279                       8.00           8.25          -0.25  (VIOLATED) 
+     PIN : U38174/Y             8.00           8.25          -0.25  (VIOLATED) 
+
+   n142359                      8.00           8.24          -0.24  (VIOLATED) 
+     PIN : U123520/Y            8.00           8.24          -0.24  (VIOLATED) 
+
+   n140620                     16.00          16.23          -0.23  (VIOLATED) 
+     PIN : U122223/Y           16.00          16.23          -0.23  (VIOLATED) 
+
+   n132714                     16.00          16.22          -0.22  (VIOLATED) 
+     PIN : U61197/Y            16.00          16.22          -0.22  (VIOLATED) 
+
+   n140840                     32.00          32.18          -0.18  (VIOLATED) 
+     PIN : U122443/Y           32.00          32.18          -0.18  (VIOLATED) 
+
+   n128775                     64.00          64.18          -0.18  (VIOLATED) 
+     PIN : U19938/Y            64.00          64.18          -0.18  (VIOLATED) 
+
+   n142250                      8.00           8.17          -0.17  (VIOLATED) 
+     PIN : U123411/Y            8.00           8.17          -0.17  (VIOLATED) 
+
+   n57018                       8.00           8.13          -0.13  (VIOLATED) 
+     PIN : U56827/Y             8.00           8.13          -0.13  (VIOLATED) 
+
+   eco_net_685_n23051          16.00          16.11          -0.11  (VIOLATED) 
+     PIN : U_4_PTECO_DRC_BUF652/Y
+                               16.00          16.11          -0.11  (VIOLATED) 
+
+   n22831                       8.00           8.10          -0.10  (VIOLATED) 
+     PIN : U23081/Y             8.00           8.10          -0.10  (VIOLATED) 
+
+   n24489                       8.00           8.10          -0.10  (VIOLATED) 
+     PIN : U24697/Y             8.00           8.10          -0.10  (VIOLATED) 
+
+   n110143                      8.00           8.09          -0.09  (VIOLATED) 
+     PIN : U124727/Y            8.00           8.09          -0.09  (VIOLATED) 
+
+   n142069                      8.00           8.08          -0.08  (VIOLATED) 
+     PIN : U122148/Y            8.00           8.08          -0.08  (VIOLATED) 
+
+   ZBUF_187_3062               16.00          16.05          -0.05  (VIOLATED) 
+     PIN : ZBUF_187_inst_22075/Y
+                               16.00          16.05          -0.05  (VIOLATED) 
+
+   n92827                       8.00           8.04          -0.04  (VIOLATED) 
+     PIN : U88598/Y             8.00           8.04          -0.04  (VIOLATED) 
+
+   n87916                       8.00           8.04          -0.04  (VIOLATED) 
+     PIN : U86936/Y             8.00           8.04          -0.04  (VIOLATED) 
+
+   n142718                      8.00           8.04          -0.04  (VIOLATED) 
+     PIN : U123879/Y            8.00           8.04          -0.04  (VIOLATED) 
+
+   n46157                       8.00           8.04          -0.04  (VIOLATED) 
+     PIN : U45933/Y             8.00           8.04          -0.04  (VIOLATED) 
+
+   n23109                      16.00          16.03          -0.03  (VIOLATED) 
+     PIN : U22786/Y            16.00          16.03          -0.03  (VIOLATED) 
+
+   n112885                      8.00           8.03          -0.03  (VIOLATED) 
+     PIN : U131094/Y            8.00           8.03          -0.03  (VIOLATED) 
+
+   ZBUF_50_1295                16.00          16.01          -0.01  (VIOLATED) 
+     PIN : ZBUF_50_inst_7930/Y
+                               16.00          16.01          -0.01  (VIOLATED) 
+
+   n26737                       8.00           8.01          -0.01  (VIOLATED) 
+     PIN : U26856/Y             8.00           8.01          -0.01  (VIOLATED) 
+
+   n41989                       8.00           8.00          -0.00  (VIOLATED) 
+     PIN : U41712/Y             8.00           8.00          -0.00  (VIOLATED) 
+
+   n142683                     16.00          16.00          -0.00  (VIOLATED) 
+     PIN : U123844/Y           16.00          16.00          -0.00  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 63
+
+   Total number of violation(s): 63
+1

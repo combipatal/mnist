@@ -1,0 +1,64 @@
+****************************************
+Report : constraint
+        -all_violators
+        -max_transition
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Tue May 12 14:54:18 2026
+****************************************
+
+
+
+   Mode: default Corner: default
+   Scenario: default
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   ZBUF_9_3259                  0.05           0.07          -0.02  (VIOLATED) 
+     PIN : ZBUF_9_inst_26029/Y
+                                0.05           0.07          -0.02  (VIOLATED) 
+
+   n137541                      0.05           0.06          -0.00  (VIOLATED) 
+     PIN : U103883/Y            0.05           0.06          -0.00  (VIOLATED) 
+
+   n132714                      0.05           0.06          -0.00  (VIOLATED) 
+     PIN : U61197/Y             0.05           0.06          -0.00  (VIOLATED) 
+
+   ZBUF_141_2545                0.05           0.06          -0.00  (VIOLATED) 
+     PIN : ZBUF_141_inst_15695/Y
+                                0.05           0.06          -0.00  (VIOLATED) 
+
+   ZBUF_187_3062                0.05           0.05          -0.00  (VIOLATED) 
+     PIN : ZBUF_187_inst_22075/Y
+                                0.05           0.05          -0.00  (VIOLATED) 
+
+   ZBUF_135_2067                0.05           0.05          -0.00  (VIOLATED) 
+     PIN : ZBUF_135_inst_13481/Y
+                                0.05           0.05          -0.00  (VIOLATED) 
+
+   ZBUF_50_1295                 0.05           0.05          -0.00  (VIOLATED) 
+     PIN : ZBUF_50_inst_7930/Y
+                                0.05           0.05          -0.00  (VIOLATED) 
+
+   ZBUF_32_3257                 0.05           0.05          -0.00  (VIOLATED) 
+     PIN : ZBUF_32_inst_26006/Y
+                                0.05           0.05          -0.00  (VIOLATED) 
+
+   ZBUF_202_3123                0.05           0.05          -0.00  (VIOLATED) 
+     PIN : ZBUF_202_inst_23352/Y
+                                0.05           0.05          -0.00  (VIOLATED) 
+
+   ZBUF_1012_1077               0.05           0.05          -0.00  (VIOLATED) 
+     PIN : ZBUF_1012_inst_6439/Y
+                                0.05           0.05          -0.00  (VIOLATED) 
+
+   ZBUF_59_2520                 0.05           0.05          -0.00  (VIOLATED) 
+     PIN : ZBUF_59_inst_14938/Y
+                                0.05           0.05          -0.00  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 11
+
+   Total number of violation(s): 11
+1

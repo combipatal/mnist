@@ -1,0 +1,5 @@
+step	target_nets	save_status	total	open_nets	diff_net_spacing	less_than_min_area	needs_fat_contact	off_grid	same_net_spacing	short	connection_not_within_pin
+initial	none	no_save	19	41	0	0	0	17	0	2	0
+after_step1	reset din[12] n131472 n132907 n136748 ZBUF_520_77 ZBUF_2_939 ZBUF_239_2065 ZBUF_1407_2766 ZBUF_606_3045 ZBUF_97_3295 ropt_net_262 ropt_net_385 ropt_net_408 ropt_net_417 ropt_net_466 ropt_net_498 ropt_net_650 ropt_net_748 ropt_net_791 ropt_net_792 ropt_net_879 ropt_net_907 ropt_net_920 ropt_net_946 ropt_net_978 ropt_net_1008 ropt_net_1034 ropt_net_1049 ropt_net_1111 ropt_net_1132 ropt_net_1298 ropt_net_1498 ropt_net_1523 ropt_net_1564 ropt_net_1576 ropt_net_1610 ropt_net_1886 ropt_net_2161 ropt_net_2191 ropt_net_2292	no_save	8	0	0	0	0	8	0	0	0
+after_step2	act_ram[471][6] ZBUF_816_2040 ZBUF_624_2793 ZBUF_753_1116 ZBUF_749_2171 ZBUF_831_2059 n129964 u_input_fifo/n10206 n68835 ZBUF_496_3009 n66990 n25241 ZBUF_738_1078 n44443 ZBUF_958_1613 n43585 n35366 n53235 n21538 n65898 ZBUF_470_158	no_save	2	0	0	0	0	2	0	0	0
+final	all	no_save_not_clean	2	0	0	0	0	2	0	0	0

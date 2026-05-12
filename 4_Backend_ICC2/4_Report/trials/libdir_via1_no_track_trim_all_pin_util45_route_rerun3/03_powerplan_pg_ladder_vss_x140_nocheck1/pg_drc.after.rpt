@@ -1,0 +1,4272 @@
+This files generated automatically by the ICC2 command check_pg_drc
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.764 827.578} {139.864 827.678}
+                 Net:   VSS
+                 Layer: VIA7
+Lower cut:       Box:   {139.915 827.551} {139.965 827.601}
+                 Net:   VSS
+                 Layer: VIA6
+Spacing box:     {139.864 827.578} {139.915 827.601}on layer M7
+Minimal spacing: 0.08
+Actual  spacing: 0.051(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.136 827.578} {140.236 827.678}
+                 Net:   VSS
+                 Layer: VIA7
+Lower cut:       Box:   {140.035 827.551} {140.085 827.601}
+                 Net:   VSS
+                 Layer: VIA6
+Spacing box:     {140.085 827.578} {140.136 827.601}on layer M7
+Minimal spacing: 0.08
+Actual  spacing: 0.051(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.764 907.764} {139.864 907.864}
+                 Net:   VSS
+                 Layer: VIA7
+Lower cut:       Box:   {139.915 907.807} {139.965 907.857}
+                 Net:   VSS
+                 Layer: VIA6
+Spacing box:     {139.864 907.807} {139.915 907.857}on layer M7
+Minimal spacing: 0.08
+Actual  spacing: 0.051(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.136 907.764} {140.236 907.864}
+                 Net:   VSS
+                 Layer: VIA7
+Lower cut:       Box:   {140.035 907.807} {140.085 907.857}
+                 Net:   VSS
+                 Layer: VIA6
+Spacing box:     {140.085 907.807} {140.136 907.857}on layer M7
+Minimal spacing: 0.08
+Actual  spacing: 0.051(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.764 947.95} {139.864 948.05}
+                 Net:   VSS
+                 Layer: VIA7
+Lower cut:       Box:   {139.915 947.935} {139.965 947.985}
+                 Net:   VSS
+                 Layer: VIA6
+Spacing box:     {139.864 947.95} {139.915 947.985}on layer M7
+Minimal spacing: 0.08
+Actual  spacing: 0.051(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.136 947.95} {140.236 948.05}
+                 Net:   VSS
+                 Layer: VIA7
+Lower cut:       Box:   {140.035 947.935} {140.085 947.985}
+                 Net:   VSS
+                 Layer: VIA6
+Spacing box:     {140.085 947.95} {140.136 947.985}on layer M7
+Minimal spacing: 0.08
+Actual  spacing: 0.051(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.764 1028.136} {139.864 1028.236}
+                 Net:   VSS
+                 Layer: VIA7
+Lower cut:       Box:   {139.915 1028.191} {139.965 1028.241}
+                 Net:   VSS
+                 Layer: VIA6
+Spacing box:     {139.864 1028.191} {139.915 1028.236}on layer M7
+Minimal spacing: 0.08
+Actual  spacing: 0.051(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.136 1028.136} {140.236 1028.236}
+                 Net:   VSS
+                 Layer: VIA7
+Lower cut:       Box:   {140.035 1028.191} {140.085 1028.241}
+                 Net:   VSS
+                 Layer: VIA6
+Spacing box:     {140.085 1028.191} {140.136 1028.236}on layer M7
+Minimal spacing: 0.08
+Actual  spacing: 0.051(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.764 1068.322} {139.864 1068.422}
+                 Net:   VSS
+                 Layer: VIA7
+Lower cut:       Box:   {139.915 1068.319} {139.965 1068.369}
+                 Net:   VSS
+                 Layer: VIA6
+Spacing box:     {139.864 1068.322} {139.915 1068.369}on layer M7
+Minimal spacing: 0.08
+Actual  spacing: 0.051(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.136 1068.322} {140.236 1068.422}
+                 Net:   VSS
+                 Layer: VIA7
+Lower cut:       Box:   {140.035 1068.319} {140.085 1068.369}
+                 Net:   VSS
+                 Layer: VIA6
+Spacing box:     {140.085 1068.322} {140.136 1068.369}on layer M7
+Minimal spacing: 0.08
+Actual  spacing: 0.051(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.795 827.551} {139.845 827.601}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {139.857 827.578} {139.957 827.678}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.845 827.578} {139.857 827.601}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.795 907.807} {139.845 907.857}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {139.857 907.764} {139.957 907.864}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.845 907.807} {139.857 907.857}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.795 947.935} {139.845 947.985}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {139.857 947.95} {139.957 948.05}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.845 947.95} {139.857 947.985}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.795 1028.191} {139.845 1028.241}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {139.857 1028.136} {139.957 1028.236}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.845 1028.191} {139.857 1028.236}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.795 1068.319} {139.845 1068.369}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {139.857 1068.322} {139.957 1068.422}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.845 1068.322} {139.857 1068.369}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 827.578} {139.957 827.678}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {139.795 827.551} {139.845 827.601}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.845 827.578} {139.857 827.601}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 907.764} {139.957 907.864}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {139.795 907.807} {139.845 907.857}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.845 907.807} {139.857 907.857}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 947.95} {139.957 948.05}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {139.795 947.935} {139.845 947.985}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.845 947.95} {139.857 947.985}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 1028.136} {139.957 1028.236}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {139.795 1028.191} {139.845 1028.241}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.845 1028.191} {139.857 1028.236}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 1068.322} {139.957 1068.422}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {139.795 1068.319} {139.845 1068.369}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.845 1068.322} {139.857 1068.369}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 827.578} {139.957 827.678}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {140.035 827.551} {140.085 827.601}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.957 827.578} {140.035 827.601}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 907.764} {139.957 907.864}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {140.035 907.807} {140.085 907.857}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.957 907.807} {140.035 907.857}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 947.95} {139.957 948.05}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {140.035 947.935} {140.085 947.985}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.957 947.95} {140.035 947.985}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 1028.136} {139.957 1028.236}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {140.035 1028.191} {140.085 1028.241}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.957 1028.191} {140.035 1028.236}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 1068.322} {139.957 1068.422}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {140.035 1068.319} {140.085 1068.369}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.957 1068.322} {140.035 1068.369}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.035 827.551} {140.085 827.601}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {139.857 827.578} {139.957 827.678}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.957 827.578} {140.035 827.601}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.035 907.807} {140.085 907.857}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {139.857 907.764} {139.957 907.864}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.957 907.807} {140.035 907.857}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.035 947.935} {140.085 947.985}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {139.857 947.95} {139.957 948.05}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.957 947.95} {140.035 947.985}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.035 1028.191} {140.085 1028.241}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {139.857 1028.136} {139.957 1028.236}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.957 1028.191} {140.035 1028.236}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.035 1068.319} {140.085 1068.369}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {139.857 1068.322} {139.957 1068.422}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.957 1068.322} {140.035 1068.369}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.915 827.551} {139.965 827.601}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {140.043 827.578} {140.143 827.678}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.965 827.578} {140.043 827.601}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.915 907.807} {139.965 907.857}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {140.043 907.764} {140.143 907.864}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.965 907.807} {140.043 907.857}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.915 947.935} {139.965 947.985}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {140.043 947.95} {140.143 948.05}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.965 947.95} {140.043 947.985}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.915 1028.191} {139.965 1028.241}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {140.043 1028.136} {140.143 1028.236}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.965 1028.191} {140.043 1028.236}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.915 1068.319} {139.965 1068.369}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {140.043 1068.322} {140.143 1068.422}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.965 1068.322} {140.043 1068.369}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 827.578} {140.143 827.678}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {139.915 827.551} {139.965 827.601}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.965 827.578} {140.043 827.601}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 907.764} {140.143 907.864}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {139.915 907.807} {139.965 907.857}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.965 907.807} {140.043 907.857}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 947.95} {140.143 948.05}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {139.915 947.935} {139.965 947.985}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.965 947.95} {140.043 947.985}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 1028.136} {140.143 1028.236}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {139.915 1028.191} {139.965 1028.241}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.965 1028.191} {140.043 1028.236}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 1068.322} {140.143 1068.422}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {139.915 1068.319} {139.965 1068.369}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {139.965 1068.322} {140.043 1068.369}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 827.578} {140.143 827.678}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {140.155 827.551} {140.205 827.601}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {140.143 827.578} {140.155 827.601}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 907.764} {140.143 907.864}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {140.155 907.807} {140.205 907.857}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {140.143 907.807} {140.155 907.857}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 947.95} {140.143 948.05}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {140.155 947.935} {140.205 947.985}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {140.143 947.95} {140.155 947.985}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 1028.136} {140.143 1028.236}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {140.155 1028.191} {140.205 1028.241}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {140.143 1028.191} {140.155 1028.236}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 1068.322} {140.143 1068.422}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {140.155 1068.319} {140.205 1068.369}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {140.143 1068.322} {140.155 1068.369}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.155 827.551} {140.205 827.601}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {140.043 827.578} {140.143 827.678}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {140.143 827.578} {140.155 827.601}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.155 907.807} {140.205 907.857}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {140.043 907.764} {140.143 907.864}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {140.143 907.807} {140.155 907.857}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.155 947.935} {140.205 947.985}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {140.043 947.95} {140.143 948.05}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {140.143 947.95} {140.155 947.985}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.155 1028.191} {140.205 1028.241}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {140.043 1028.136} {140.143 1028.236}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {140.143 1028.191} {140.155 1028.236}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.155 1068.319} {140.205 1068.369}
+                 Net:   VSS
+                 Layer: VIA6
+Lower cut:       Box:   {140.043 1068.322} {140.143 1068.422}
+                 Net:   VSS
+                 Layer: VIA5
+Spacing box:     {140.143 1068.322} {140.155 1068.369}on layer M6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {139.845 827.578} {139.857 827.601}
+Via #1:          box = {139.795 827.551} {139.845 827.601}
+                 net = VSS
+Via #2:          box = {139.857 827.578} {139.957 827.678}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {139.845 907.807} {139.857 907.857}
+Via #1:          box = {139.795 907.807} {139.845 907.857}
+                 net = VSS
+Via #2:          box = {139.857 907.764} {139.957 907.864}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {139.845 947.95} {139.857 947.985}
+Via #1:          box = {139.795 947.935} {139.845 947.985}
+                 net = VSS
+Via #2:          box = {139.857 947.95} {139.957 948.05}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {139.845 1028.191} {139.857 1028.236}
+Via #1:          box = {139.795 1028.191} {139.845 1028.241}
+                 net = VSS
+Via #2:          box = {139.857 1028.136} {139.957 1028.236}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {139.845 1068.322} {139.857 1068.369}
+Via #1:          box = {139.795 1068.319} {139.845 1068.369}
+                 net = VSS
+Via #2:          box = {139.857 1068.322} {139.957 1068.422}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA6
+Overlap box:     {139.915 827.578} {139.957 827.601}
+Net-shape:       box = {139.857 827.578} {139.957 827.678}
+                 net = VSS
+Net-shape #2:    box = {139.915 827.551} {139.965 827.601}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA6
+Minimal spacing: 0.07
+Actual  spacing: 0.001(south - north)
+Spacing box:     {139.915 867.678} {139.957 867.679}
+Via #1:          box = {139.857 867.578} {139.957 867.678}
+                 net = VSS
+Via #2:          box = {139.915 867.679} {139.965 867.729}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA6
+Minimal spacing: 0.07
+Actual  spacing: 0.035(north - south)
+Spacing box:     {139.915 867.729} {139.957 867.764}
+Via #1:          box = {139.857 867.764} {139.957 867.864}
+                 net = VSS
+Via #2:          box = {139.915 867.679} {139.965 867.729}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA6
+Overlap box:     {139.915 907.807} {139.957 907.857}
+Net-shape:       box = {139.857 907.764} {139.957 907.864}
+                 net = VSS
+Net-shape #2:    box = {139.915 907.807} {139.965 907.857}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA6
+Overlap box:     {139.915 947.95} {139.957 947.985}
+Net-shape:       box = {139.857 947.95} {139.957 948.05}
+                 net = VSS
+Net-shape #2:    box = {139.915 947.935} {139.965 947.985}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA6
+Minimal spacing: 0.07
+Actual  spacing: 0.023(north - south)
+Spacing box:     {139.915 988.113} {139.957 988.136}
+Via #1:          box = {139.857 988.136} {139.957 988.236}
+                 net = VSS
+Via #2:          box = {139.915 988.063} {139.965 988.113}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA6
+Minimal spacing: 0.07
+Actual  spacing: 0.013(south - north)
+Spacing box:     {139.915 988.05} {139.957 988.063}
+Via #1:          box = {139.857 987.95} {139.957 988.05}
+                 net = VSS
+Via #2:          box = {139.915 988.063} {139.965 988.113}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA6
+Overlap box:     {139.915 1028.191} {139.957 1028.236}
+Net-shape:       box = {139.857 1028.136} {139.957 1028.236}
+                 net = VSS
+Net-shape #2:    box = {139.915 1028.191} {139.965 1028.241}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA6
+Overlap box:     {139.915 1068.322} {139.957 1068.369}
+Net-shape:       box = {139.857 1068.322} {139.957 1068.422}
+                 net = VSS
+Net-shape #2:    box = {139.915 1068.319} {139.965 1068.369}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.957 827.578} {140.035 827.601}
+Via #1:          box = {139.857 827.578} {139.957 827.678}
+                 net = VSS
+Via #2:          box = {140.035 827.551} {140.085 827.601}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.957 907.807} {140.035 907.857}
+Via #1:          box = {139.857 907.764} {139.957 907.864}
+                 net = VSS
+Via #2:          box = {140.035 907.807} {140.085 907.857}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.957 947.95} {140.035 947.985}
+Via #1:          box = {139.857 947.95} {139.957 948.05}
+                 net = VSS
+Via #2:          box = {140.035 947.935} {140.085 947.985}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.957 1028.191} {140.035 1028.236}
+Via #1:          box = {139.857 1028.136} {139.957 1028.236}
+                 net = VSS
+Via #2:          box = {140.035 1028.191} {140.085 1028.241}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.957 1068.322} {140.035 1068.369}
+Via #1:          box = {139.857 1068.322} {139.957 1068.422}
+                 net = VSS
+Via #2:          box = {140.035 1068.319} {140.085 1068.369}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.965 827.578} {140.043 827.601}
+Via #1:          box = {139.915 827.551} {139.965 827.601}
+                 net = VSS
+Via #2:          box = {140.043 827.578} {140.143 827.678}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA6
+Overlap box:     {140.043 827.578} {140.085 827.601}
+Net-shape:       box = {140.035 827.551} {140.085 827.601}
+                 net = VSS
+Net-shape #2:    box = {140.043 827.578} {140.143 827.678}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA6
+Minimal spacing: 0.07
+Actual  spacing: 0.001(north - south)
+Spacing box:     {140.043 867.678} {140.085 867.679}
+Via #1:          box = {140.035 867.679} {140.085 867.729}
+                 net = VSS
+Via #2:          box = {140.043 867.578} {140.143 867.678}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA6
+Minimal spacing: 0.07
+Actual  spacing: 0.035(south - north)
+Spacing box:     {140.043 867.729} {140.085 867.764}
+Via #1:          box = {140.035 867.679} {140.085 867.729}
+                 net = VSS
+Via #2:          box = {140.043 867.764} {140.143 867.864}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.965 907.807} {140.043 907.857}
+Via #1:          box = {139.915 907.807} {139.965 907.857}
+                 net = VSS
+Via #2:          box = {140.043 907.764} {140.143 907.864}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA6
+Overlap box:     {140.043 907.807} {140.085 907.857}
+Net-shape:       box = {140.035 907.807} {140.085 907.857}
+                 net = VSS
+Net-shape #2:    box = {140.043 907.764} {140.143 907.864}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.965 947.95} {140.043 947.985}
+Via #1:          box = {139.915 947.935} {139.965 947.985}
+                 net = VSS
+Via #2:          box = {140.043 947.95} {140.143 948.05}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA6
+Overlap box:     {140.043 947.95} {140.085 947.985}
+Net-shape:       box = {140.035 947.935} {140.085 947.985}
+                 net = VSS
+Net-shape #2:    box = {140.043 947.95} {140.143 948.05}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA6
+Minimal spacing: 0.07
+Actual  spacing: 0.013(north - south)
+Spacing box:     {140.043 988.05} {140.085 988.063}
+Via #1:          box = {140.035 988.063} {140.085 988.113}
+                 net = VSS
+Via #2:          box = {140.043 987.95} {140.143 988.05}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA6
+Minimal spacing: 0.07
+Actual  spacing: 0.023(south - north)
+Spacing box:     {140.043 988.113} {140.085 988.136}
+Via #1:          box = {140.035 988.063} {140.085 988.113}
+                 net = VSS
+Via #2:          box = {140.043 988.136} {140.143 988.236}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.965 1028.191} {140.043 1028.236}
+Via #1:          box = {139.915 1028.191} {139.965 1028.241}
+                 net = VSS
+Via #2:          box = {140.043 1028.136} {140.143 1028.236}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA6
+Overlap box:     {140.043 1028.191} {140.085 1028.236}
+Net-shape:       box = {140.035 1028.191} {140.085 1028.241}
+                 net = VSS
+Net-shape #2:    box = {140.043 1028.136} {140.143 1028.236}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA6
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.965 1068.322} {140.043 1068.369}
+Via #1:          box = {139.915 1068.319} {139.965 1068.369}
+                 net = VSS
+Via #2:          box = {140.043 1068.322} {140.143 1068.422}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA6
+Overlap box:     {140.043 1068.322} {140.085 1068.369}
+Net-shape:       box = {140.035 1068.319} {140.085 1068.369}
+                 net = VSS
+Net-shape #2:    box = {140.043 1068.322} {140.143 1068.422}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {140.143 827.578} {140.155 827.601}
+Via #1:          box = {140.043 827.578} {140.143 827.678}
+                 net = VSS
+Via #2:          box = {140.155 827.551} {140.205 827.601}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {140.143 907.807} {140.155 907.857}
+Via #1:          box = {140.043 907.764} {140.143 907.864}
+                 net = VSS
+Via #2:          box = {140.155 907.807} {140.205 907.857}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {140.143 947.95} {140.155 947.985}
+Via #1:          box = {140.043 947.95} {140.143 948.05}
+                 net = VSS
+Via #2:          box = {140.155 947.935} {140.205 947.985}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {140.143 1028.191} {140.155 1028.236}
+Via #1:          box = {140.043 1028.136} {140.143 1028.236}
+                 net = VSS
+Via #2:          box = {140.155 1028.191} {140.205 1028.241}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA6
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {140.143 1068.322} {140.155 1068.369}
+Via #1:          box = {140.043 1068.322} {140.143 1068.422}
+                 net = VSS
+Via #2:          box = {140.155 1068.319} {140.205 1068.369}
+                 net = VSS
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.795 827.551} {139.845 827.601}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {139.857 827.578} {139.957 827.678}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.845 827.578} {139.857 827.601}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.035 827.551} {140.085 827.601}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {139.857 827.578} {139.957 827.678}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.957 827.578} {140.035 827.601}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.915 827.551} {139.965 827.601}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {140.043 827.578} {140.143 827.678}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.965 827.578} {140.043 827.601}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.155 827.551} {140.205 827.601}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {140.043 827.578} {140.143 827.678}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {140.143 827.578} {140.155 827.601}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 827.578} {139.957 827.678}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {139.795 827.551} {139.845 827.601}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.845 827.578} {139.857 827.601}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 827.578} {139.957 827.678}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {140.035 827.551} {140.085 827.601}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.957 827.578} {140.035 827.601}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 827.578} {140.143 827.678}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {139.915 827.551} {139.965 827.601}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.965 827.578} {140.043 827.601}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 827.578} {140.143 827.678}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {140.155 827.551} {140.205 827.601}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {140.143 827.578} {140.155 827.601}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 907.764} {139.957 907.864}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {139.795 907.807} {139.845 907.857}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.845 907.807} {139.857 907.857}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 907.764} {140.143 907.864}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {139.915 907.807} {139.965 907.857}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.965 907.807} {140.043 907.857}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 907.764} {139.957 907.864}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {140.035 907.807} {140.085 907.857}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.957 907.807} {140.035 907.857}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 907.764} {140.143 907.864}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {140.155 907.807} {140.205 907.857}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {140.143 907.807} {140.155 907.857}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.795 907.807} {139.845 907.857}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {139.857 907.764} {139.957 907.864}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.845 907.807} {139.857 907.857}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.915 907.807} {139.965 907.857}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {140.043 907.764} {140.143 907.864}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.965 907.807} {140.043 907.857}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.035 907.807} {140.085 907.857}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {139.857 907.764} {139.957 907.864}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.957 907.807} {140.035 907.857}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.155 907.807} {140.205 907.857}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {140.043 907.764} {140.143 907.864}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {140.143 907.807} {140.155 907.857}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.795 947.935} {139.845 947.985}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {139.857 947.95} {139.957 948.05}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.845 947.95} {139.857 947.985}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.035 947.935} {140.085 947.985}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {139.857 947.95} {139.957 948.05}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.957 947.95} {140.035 947.985}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.915 947.935} {139.965 947.985}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {140.043 947.95} {140.143 948.05}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.965 947.95} {140.043 947.985}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.155 947.935} {140.205 947.985}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {140.043 947.95} {140.143 948.05}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {140.143 947.95} {140.155 947.985}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 947.95} {139.957 948.05}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {139.795 947.935} {139.845 947.985}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.845 947.95} {139.857 947.985}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 947.95} {139.957 948.05}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {140.035 947.935} {140.085 947.985}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.957 947.95} {140.035 947.985}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 947.95} {140.143 948.05}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {139.915 947.935} {139.965 947.985}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.965 947.95} {140.043 947.985}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 947.95} {140.143 948.05}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {140.155 947.935} {140.205 947.985}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {140.143 947.95} {140.155 947.985}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 1028.136} {139.957 1028.236}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {139.795 1028.191} {139.845 1028.241}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.845 1028.191} {139.857 1028.236}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 1028.136} {140.143 1028.236}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {139.915 1028.191} {139.965 1028.241}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.965 1028.191} {140.043 1028.236}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 1028.136} {139.957 1028.236}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {140.035 1028.191} {140.085 1028.241}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.957 1028.191} {140.035 1028.236}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 1028.136} {140.143 1028.236}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {140.155 1028.191} {140.205 1028.241}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {140.143 1028.191} {140.155 1028.236}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.795 1028.191} {139.845 1028.241}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {139.857 1028.136} {139.957 1028.236}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.845 1028.191} {139.857 1028.236}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.915 1028.191} {139.965 1028.241}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {140.043 1028.136} {140.143 1028.236}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.965 1028.191} {140.043 1028.236}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.035 1028.191} {140.085 1028.241}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {139.857 1028.136} {139.957 1028.236}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.957 1028.191} {140.035 1028.236}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.155 1028.191} {140.205 1028.241}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {140.043 1028.136} {140.143 1028.236}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {140.143 1028.191} {140.155 1028.236}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.795 1068.319} {139.845 1068.369}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {139.857 1068.322} {139.957 1068.422}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.845 1068.322} {139.857 1068.369}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.035 1068.319} {140.085 1068.369}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {139.857 1068.322} {139.957 1068.422}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.957 1068.322} {140.035 1068.369}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.915 1068.319} {139.965 1068.369}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {140.043 1068.322} {140.143 1068.422}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.965 1068.322} {140.043 1068.369}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.155 1068.319} {140.205 1068.369}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {140.043 1068.322} {140.143 1068.422}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {140.143 1068.322} {140.155 1068.369}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 1068.322} {139.957 1068.422}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {139.795 1068.319} {139.845 1068.369}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.845 1068.322} {139.857 1068.369}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 1068.322} {139.957 1068.422}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {140.035 1068.319} {140.085 1068.369}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.957 1068.322} {140.035 1068.369}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 1068.322} {140.143 1068.422}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {139.915 1068.319} {139.965 1068.369}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {139.965 1068.322} {140.043 1068.369}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 1068.322} {140.143 1068.422}
+                 Net:   VSS
+                 Layer: VIA5
+Lower cut:       Box:   {140.155 1068.319} {140.205 1068.369}
+                 Net:   VSS
+                 Layer: VIA4
+Spacing box:     {140.143 1068.322} {140.155 1068.369}on layer M5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {139.845 827.578} {139.857 827.601}
+Via #1:          box = {139.795 827.551} {139.845 827.601}
+                 net = VSS
+Via #2:          box = {139.857 827.578} {139.957 827.678}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA5
+Overlap box:     {139.915 827.578} {139.957 827.601}
+Net-shape:       box = {139.915 827.551} {139.965 827.601}
+                 net = VSS
+Net-shape #2:    box = {139.857 827.578} {139.957 827.678}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+Spacing box:     {139.957 827.578} {140.035 827.601}
+Via #1:          box = {140.035 827.551} {140.085 827.601}
+                 net = VSS
+Via #2:          box = {139.857 827.578} {139.957 827.678}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.965 827.578} {140.043 827.601}
+Via #1:          box = {139.915 827.551} {139.965 827.601}
+                 net = VSS
+Via #2:          box = {140.043 827.578} {140.143 827.678}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA5
+Overlap box:     {140.043 827.578} {140.085 827.601}
+Net-shape:       box = {140.035 827.551} {140.085 827.601}
+                 net = VSS
+Net-shape #2:    box = {140.043 827.578} {140.143 827.678}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+Spacing box:     {140.143 827.578} {140.155 827.601}
+Via #1:          box = {140.155 827.551} {140.205 827.601}
+                 net = VSS
+Via #2:          box = {140.043 827.578} {140.143 827.678}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA5
+Minimal spacing: 0.07
+Actual  spacing: 0.001(south - north)
+Spacing box:     {139.915 867.678} {139.957 867.679}
+Via #1:          box = {139.857 867.578} {139.957 867.678}
+                 net = VSS
+Via #2:          box = {139.915 867.679} {139.965 867.729}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA5
+Minimal spacing: 0.07
+Actual  spacing: 0.001(south - north)
+Spacing box:     {140.043 867.678} {140.085 867.679}
+Via #1:          box = {140.043 867.578} {140.143 867.678}
+                 net = VSS
+Via #2:          box = {140.035 867.679} {140.085 867.729}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA5
+Minimal spacing: 0.07
+Actual  spacing: 0.035(south - north)
+Spacing box:     {139.915 867.729} {139.957 867.764}
+Via #1:          box = {139.915 867.679} {139.965 867.729}
+                 net = VSS
+Via #2:          box = {139.857 867.764} {139.957 867.864}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA5
+Minimal spacing: 0.07
+Actual  spacing: 0.035(south - north)
+Spacing box:     {140.043 867.729} {140.085 867.764}
+Via #1:          box = {140.035 867.679} {140.085 867.729}
+                 net = VSS
+Via #2:          box = {140.043 867.764} {140.143 867.864}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+Spacing box:     {139.845 907.807} {139.857 907.857}
+Via #1:          box = {139.857 907.764} {139.957 907.864}
+                 net = VSS
+Via #2:          box = {139.795 907.807} {139.845 907.857}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA5
+Overlap box:     {139.915 907.807} {139.957 907.857}
+Net-shape:       box = {139.857 907.764} {139.957 907.864}
+                 net = VSS
+Net-shape #2:    box = {139.915 907.807} {139.965 907.857}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+Spacing box:     {139.965 907.807} {140.043 907.857}
+Via #1:          box = {140.043 907.764} {140.143 907.864}
+                 net = VSS
+Via #2:          box = {139.915 907.807} {139.965 907.857}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.957 907.807} {140.035 907.857}
+Via #1:          box = {139.857 907.764} {139.957 907.864}
+                 net = VSS
+Via #2:          box = {140.035 907.807} {140.085 907.857}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA5
+Overlap box:     {140.043 907.807} {140.085 907.857}
+Net-shape:       box = {140.043 907.764} {140.143 907.864}
+                 net = VSS
+Net-shape #2:    box = {140.035 907.807} {140.085 907.857}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {140.143 907.807} {140.155 907.857}
+Via #1:          box = {140.043 907.764} {140.143 907.864}
+                 net = VSS
+Via #2:          box = {140.155 907.807} {140.205 907.857}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA5
+Overlap box:     {139.915 947.95} {139.957 947.985}
+Net-shape:       box = {139.915 947.935} {139.965 947.985}
+                 net = VSS
+Net-shape #2:    box = {139.857 947.95} {139.957 948.05}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {139.845 947.95} {139.857 947.985}
+Via #1:          box = {139.795 947.935} {139.845 947.985}
+                 net = VSS
+Via #2:          box = {139.857 947.95} {139.957 948.05}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+Spacing box:     {139.957 947.95} {140.035 947.985}
+Via #1:          box = {140.035 947.935} {140.085 947.985}
+                 net = VSS
+Via #2:          box = {139.857 947.95} {139.957 948.05}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.965 947.95} {140.043 947.985}
+Via #1:          box = {139.915 947.935} {139.965 947.985}
+                 net = VSS
+Via #2:          box = {140.043 947.95} {140.143 948.05}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA5
+Overlap box:     {140.043 947.95} {140.085 947.985}
+Net-shape:       box = {140.035 947.935} {140.085 947.985}
+                 net = VSS
+Net-shape #2:    box = {140.043 947.95} {140.143 948.05}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+Spacing box:     {140.143 947.95} {140.155 947.985}
+Via #1:          box = {140.155 947.935} {140.205 947.985}
+                 net = VSS
+Via #2:          box = {140.043 947.95} {140.143 948.05}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA5
+Minimal spacing: 0.07
+Actual  spacing: 0.013(south - north)
+Spacing box:     {139.915 988.05} {139.957 988.063}
+Via #1:          box = {139.857 987.95} {139.957 988.05}
+                 net = VSS
+Via #2:          box = {139.915 988.063} {139.965 988.113}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA5
+Minimal spacing: 0.07
+Actual  spacing: 0.013(south - north)
+Spacing box:     {140.043 988.05} {140.085 988.063}
+Via #1:          box = {140.043 987.95} {140.143 988.05}
+                 net = VSS
+Via #2:          box = {140.035 988.063} {140.085 988.113}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA5
+Minimal spacing: 0.07
+Actual  spacing: 0.023(south - north)
+Spacing box:     {139.915 988.113} {139.957 988.136}
+Via #1:          box = {139.915 988.063} {139.965 988.113}
+                 net = VSS
+Via #2:          box = {139.857 988.136} {139.957 988.236}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA5
+Minimal spacing: 0.07
+Actual  spacing: 0.023(south - north)
+Spacing box:     {140.043 988.113} {140.085 988.136}
+Via #1:          box = {140.035 988.063} {140.085 988.113}
+                 net = VSS
+Via #2:          box = {140.043 988.136} {140.143 988.236}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+Spacing box:     {139.845 1028.191} {139.857 1028.236}
+Via #1:          box = {139.857 1028.136} {139.957 1028.236}
+                 net = VSS
+Via #2:          box = {139.795 1028.191} {139.845 1028.241}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA5
+Overlap box:     {139.915 1028.191} {139.957 1028.236}
+Net-shape:       box = {139.857 1028.136} {139.957 1028.236}
+                 net = VSS
+Net-shape #2:    box = {139.915 1028.191} {139.965 1028.241}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+Spacing box:     {139.965 1028.191} {140.043 1028.236}
+Via #1:          box = {140.043 1028.136} {140.143 1028.236}
+                 net = VSS
+Via #2:          box = {139.915 1028.191} {139.965 1028.241}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.957 1028.191} {140.035 1028.236}
+Via #1:          box = {139.857 1028.136} {139.957 1028.236}
+                 net = VSS
+Via #2:          box = {140.035 1028.191} {140.085 1028.241}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA5
+Overlap box:     {140.043 1028.191} {140.085 1028.236}
+Net-shape:       box = {140.043 1028.136} {140.143 1028.236}
+                 net = VSS
+Net-shape #2:    box = {140.035 1028.191} {140.085 1028.241}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {140.143 1028.191} {140.155 1028.236}
+Via #1:          box = {140.043 1028.136} {140.143 1028.236}
+                 net = VSS
+Via #2:          box = {140.155 1028.191} {140.205 1028.241}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA5
+Overlap box:     {139.915 1068.322} {139.957 1068.369}
+Net-shape:       box = {139.915 1068.319} {139.965 1068.369}
+                 net = VSS
+Net-shape #2:    box = {139.857 1068.322} {139.957 1068.422}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {139.845 1068.322} {139.857 1068.369}
+Via #1:          box = {139.795 1068.319} {139.845 1068.369}
+                 net = VSS
+Via #2:          box = {139.857 1068.322} {139.957 1068.422}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+Spacing box:     {139.957 1068.322} {140.035 1068.369}
+Via #1:          box = {140.035 1068.319} {140.085 1068.369}
+                 net = VSS
+Via #2:          box = {139.857 1068.322} {139.957 1068.422}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA5
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.965 1068.322} {140.043 1068.369}
+Via #1:          box = {139.915 1068.319} {139.965 1068.369}
+                 net = VSS
+Via #2:          box = {140.043 1068.322} {140.143 1068.422}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA5
+Overlap box:     {140.043 1068.322} {140.085 1068.369}
+Net-shape:       box = {140.035 1068.319} {140.085 1068.369}
+                 net = VSS
+Net-shape #2:    box = {140.043 1068.322} {140.143 1068.422}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA5
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+Spacing box:     {140.143 1068.322} {140.155 1068.369}
+Via #1:          box = {140.155 1068.319} {140.205 1068.369}
+                 net = VSS
+Via #2:          box = {140.043 1068.322} {140.143 1068.422}
+                 net = VSS
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.795 827.551} {139.845 827.601}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {139.857 827.578} {139.957 827.678}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.845 827.578} {139.857 827.601}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.795 907.807} {139.845 907.857}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {139.857 907.764} {139.957 907.864}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.845 907.807} {139.857 907.857}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.795 947.935} {139.845 947.985}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {139.857 947.95} {139.957 948.05}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.845 947.95} {139.857 947.985}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.795 1028.191} {139.845 1028.241}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {139.857 1028.136} {139.957 1028.236}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.845 1028.191} {139.857 1028.236}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.795 1068.319} {139.845 1068.369}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {139.857 1068.322} {139.957 1068.422}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.845 1068.322} {139.857 1068.369}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 827.578} {139.957 827.678}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {139.795 827.551} {139.845 827.601}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.845 827.578} {139.857 827.601}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 907.764} {139.957 907.864}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {139.795 907.807} {139.845 907.857}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.845 907.807} {139.857 907.857}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 947.95} {139.957 948.05}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {139.795 947.935} {139.845 947.985}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.845 947.95} {139.857 947.985}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 1028.136} {139.957 1028.236}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {139.795 1028.191} {139.845 1028.241}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.845 1028.191} {139.857 1028.236}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 1068.322} {139.957 1068.422}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {139.795 1068.319} {139.845 1068.369}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.845 1068.322} {139.857 1068.369}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 827.578} {139.957 827.678}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {140.035 827.551} {140.085 827.601}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.957 827.578} {140.035 827.601}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 907.764} {139.957 907.864}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {140.035 907.807} {140.085 907.857}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.957 907.807} {140.035 907.857}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 947.95} {139.957 948.05}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {140.035 947.935} {140.085 947.985}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.957 947.95} {140.035 947.985}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 1028.136} {139.957 1028.236}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {140.035 1028.191} {140.085 1028.241}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.957 1028.191} {140.035 1028.236}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 1068.322} {139.957 1068.422}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {140.035 1068.319} {140.085 1068.369}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.957 1068.322} {140.035 1068.369}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.035 827.551} {140.085 827.601}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {139.857 827.578} {139.957 827.678}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.957 827.578} {140.035 827.601}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.035 907.807} {140.085 907.857}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {139.857 907.764} {139.957 907.864}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.957 907.807} {140.035 907.857}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.035 947.935} {140.085 947.985}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {139.857 947.95} {139.957 948.05}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.957 947.95} {140.035 947.985}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.035 1028.191} {140.085 1028.241}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {139.857 1028.136} {139.957 1028.236}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.957 1028.191} {140.035 1028.236}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.035 1068.319} {140.085 1068.369}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {139.857 1068.322} {139.957 1068.422}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.957 1068.322} {140.035 1068.369}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.915 827.551} {139.965 827.601}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {140.043 827.578} {140.143 827.678}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.965 827.578} {140.043 827.601}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.915 907.807} {139.965 907.857}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {140.043 907.764} {140.143 907.864}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.965 907.807} {140.043 907.857}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.915 947.935} {139.965 947.985}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {140.043 947.95} {140.143 948.05}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.965 947.95} {140.043 947.985}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.915 1028.191} {139.965 1028.241}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {140.043 1028.136} {140.143 1028.236}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.965 1028.191} {140.043 1028.236}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.915 1068.319} {139.965 1068.369}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {140.043 1068.322} {140.143 1068.422}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.965 1068.322} {140.043 1068.369}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 827.578} {140.143 827.678}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {139.915 827.551} {139.965 827.601}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.965 827.578} {140.043 827.601}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 907.764} {140.143 907.864}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {139.915 907.807} {139.965 907.857}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.965 907.807} {140.043 907.857}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 947.95} {140.143 948.05}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {139.915 947.935} {139.965 947.985}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.965 947.95} {140.043 947.985}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 1028.136} {140.143 1028.236}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {139.915 1028.191} {139.965 1028.241}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.965 1028.191} {140.043 1028.236}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 1068.322} {140.143 1068.422}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {139.915 1068.319} {139.965 1068.369}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {139.965 1068.322} {140.043 1068.369}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 827.578} {140.143 827.678}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {140.155 827.551} {140.205 827.601}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {140.143 827.578} {140.155 827.601}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 907.764} {140.143 907.864}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {140.155 907.807} {140.205 907.857}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {140.143 907.807} {140.155 907.857}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 947.95} {140.143 948.05}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {140.155 947.935} {140.205 947.985}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {140.143 947.95} {140.155 947.985}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 1028.136} {140.143 1028.236}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {140.155 1028.191} {140.205 1028.241}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {140.143 1028.191} {140.155 1028.236}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 1068.322} {140.143 1068.422}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {140.155 1068.319} {140.205 1068.369}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {140.143 1068.322} {140.155 1068.369}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.155 827.551} {140.205 827.601}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {140.043 827.578} {140.143 827.678}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {140.143 827.578} {140.155 827.601}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.155 907.807} {140.205 907.857}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {140.043 907.764} {140.143 907.864}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {140.143 907.807} {140.155 907.857}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.155 947.935} {140.205 947.985}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {140.043 947.95} {140.143 948.05}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {140.143 947.95} {140.155 947.985}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.155 1028.191} {140.205 1028.241}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {140.043 1028.136} {140.143 1028.236}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {140.143 1028.191} {140.155 1028.236}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.155 1068.319} {140.205 1068.369}
+                 Net:   VSS
+                 Layer: VIA4
+Lower cut:       Box:   {140.043 1068.322} {140.143 1068.422}
+                 Net:   VSS
+                 Layer: VIA3
+Spacing box:     {140.143 1068.322} {140.155 1068.369}on layer M4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {139.845 827.578} {139.857 827.601}
+Via #1:          box = {139.795 827.551} {139.845 827.601}
+                 net = VSS
+Via #2:          box = {139.857 827.578} {139.957 827.678}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {139.845 907.807} {139.857 907.857}
+Via #1:          box = {139.795 907.807} {139.845 907.857}
+                 net = VSS
+Via #2:          box = {139.857 907.764} {139.957 907.864}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {139.845 947.95} {139.857 947.985}
+Via #1:          box = {139.795 947.935} {139.845 947.985}
+                 net = VSS
+Via #2:          box = {139.857 947.95} {139.957 948.05}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {139.845 1028.191} {139.857 1028.236}
+Via #1:          box = {139.795 1028.191} {139.845 1028.241}
+                 net = VSS
+Via #2:          box = {139.857 1028.136} {139.957 1028.236}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {139.845 1068.322} {139.857 1068.369}
+Via #1:          box = {139.795 1068.319} {139.845 1068.369}
+                 net = VSS
+Via #2:          box = {139.857 1068.322} {139.957 1068.422}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA4
+Overlap box:     {139.915 827.578} {139.957 827.601}
+Net-shape:       box = {139.857 827.578} {139.957 827.678}
+                 net = VSS
+Net-shape #2:    box = {139.915 827.551} {139.965 827.601}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA4
+Minimal spacing: 0.07
+Actual  spacing: 0.001(south - north)
+Spacing box:     {139.915 867.678} {139.957 867.679}
+Via #1:          box = {139.857 867.578} {139.957 867.678}
+                 net = VSS
+Via #2:          box = {139.915 867.679} {139.965 867.729}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA4
+Minimal spacing: 0.07
+Actual  spacing: 0.035(north - south)
+Spacing box:     {139.915 867.729} {139.957 867.764}
+Via #1:          box = {139.857 867.764} {139.957 867.864}
+                 net = VSS
+Via #2:          box = {139.915 867.679} {139.965 867.729}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA4
+Overlap box:     {139.915 907.807} {139.957 907.857}
+Net-shape:       box = {139.857 907.764} {139.957 907.864}
+                 net = VSS
+Net-shape #2:    box = {139.915 907.807} {139.965 907.857}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA4
+Overlap box:     {139.915 947.95} {139.957 947.985}
+Net-shape:       box = {139.857 947.95} {139.957 948.05}
+                 net = VSS
+Net-shape #2:    box = {139.915 947.935} {139.965 947.985}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA4
+Minimal spacing: 0.07
+Actual  spacing: 0.023(north - south)
+Spacing box:     {139.915 988.113} {139.957 988.136}
+Via #1:          box = {139.857 988.136} {139.957 988.236}
+                 net = VSS
+Via #2:          box = {139.915 988.063} {139.965 988.113}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA4
+Minimal spacing: 0.07
+Actual  spacing: 0.013(south - north)
+Spacing box:     {139.915 988.05} {139.957 988.063}
+Via #1:          box = {139.857 987.95} {139.957 988.05}
+                 net = VSS
+Via #2:          box = {139.915 988.063} {139.965 988.113}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA4
+Overlap box:     {139.915 1028.191} {139.957 1028.236}
+Net-shape:       box = {139.857 1028.136} {139.957 1028.236}
+                 net = VSS
+Net-shape #2:    box = {139.915 1028.191} {139.965 1028.241}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA4
+Overlap box:     {139.915 1068.322} {139.957 1068.369}
+Net-shape:       box = {139.857 1068.322} {139.957 1068.422}
+                 net = VSS
+Net-shape #2:    box = {139.915 1068.319} {139.965 1068.369}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.957 827.578} {140.035 827.601}
+Via #1:          box = {139.857 827.578} {139.957 827.678}
+                 net = VSS
+Via #2:          box = {140.035 827.551} {140.085 827.601}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.957 907.807} {140.035 907.857}
+Via #1:          box = {139.857 907.764} {139.957 907.864}
+                 net = VSS
+Via #2:          box = {140.035 907.807} {140.085 907.857}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.957 947.95} {140.035 947.985}
+Via #1:          box = {139.857 947.95} {139.957 948.05}
+                 net = VSS
+Via #2:          box = {140.035 947.935} {140.085 947.985}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.957 1028.191} {140.035 1028.236}
+Via #1:          box = {139.857 1028.136} {139.957 1028.236}
+                 net = VSS
+Via #2:          box = {140.035 1028.191} {140.085 1028.241}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.957 1068.322} {140.035 1068.369}
+Via #1:          box = {139.857 1068.322} {139.957 1068.422}
+                 net = VSS
+Via #2:          box = {140.035 1068.319} {140.085 1068.369}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.965 827.578} {140.043 827.601}
+Via #1:          box = {139.915 827.551} {139.965 827.601}
+                 net = VSS
+Via #2:          box = {140.043 827.578} {140.143 827.678}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA4
+Overlap box:     {140.043 827.578} {140.085 827.601}
+Net-shape:       box = {140.035 827.551} {140.085 827.601}
+                 net = VSS
+Net-shape #2:    box = {140.043 827.578} {140.143 827.678}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA4
+Minimal spacing: 0.07
+Actual  spacing: 0.001(north - south)
+Spacing box:     {140.043 867.678} {140.085 867.679}
+Via #1:          box = {140.035 867.679} {140.085 867.729}
+                 net = VSS
+Via #2:          box = {140.043 867.578} {140.143 867.678}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA4
+Minimal spacing: 0.07
+Actual  spacing: 0.035(south - north)
+Spacing box:     {140.043 867.729} {140.085 867.764}
+Via #1:          box = {140.035 867.679} {140.085 867.729}
+                 net = VSS
+Via #2:          box = {140.043 867.764} {140.143 867.864}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.965 907.807} {140.043 907.857}
+Via #1:          box = {139.915 907.807} {139.965 907.857}
+                 net = VSS
+Via #2:          box = {140.043 907.764} {140.143 907.864}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA4
+Overlap box:     {140.043 907.807} {140.085 907.857}
+Net-shape:       box = {140.035 907.807} {140.085 907.857}
+                 net = VSS
+Net-shape #2:    box = {140.043 907.764} {140.143 907.864}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.965 947.95} {140.043 947.985}
+Via #1:          box = {139.915 947.935} {139.965 947.985}
+                 net = VSS
+Via #2:          box = {140.043 947.95} {140.143 948.05}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA4
+Overlap box:     {140.043 947.95} {140.085 947.985}
+Net-shape:       box = {140.035 947.935} {140.085 947.985}
+                 net = VSS
+Net-shape #2:    box = {140.043 947.95} {140.143 948.05}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA4
+Minimal spacing: 0.07
+Actual  spacing: 0.013(north - south)
+Spacing box:     {140.043 988.05} {140.085 988.063}
+Via #1:          box = {140.035 988.063} {140.085 988.113}
+                 net = VSS
+Via #2:          box = {140.043 987.95} {140.143 988.05}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA4
+Minimal spacing: 0.07
+Actual  spacing: 0.023(south - north)
+Spacing box:     {140.043 988.113} {140.085 988.136}
+Via #1:          box = {140.035 988.063} {140.085 988.113}
+                 net = VSS
+Via #2:          box = {140.043 988.136} {140.143 988.236}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.965 1028.191} {140.043 1028.236}
+Via #1:          box = {139.915 1028.191} {139.965 1028.241}
+                 net = VSS
+Via #2:          box = {140.043 1028.136} {140.143 1028.236}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA4
+Overlap box:     {140.043 1028.191} {140.085 1028.236}
+Net-shape:       box = {140.035 1028.191} {140.085 1028.241}
+                 net = VSS
+Net-shape #2:    box = {140.043 1028.136} {140.143 1028.236}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA4
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.965 1068.322} {140.043 1068.369}
+Via #1:          box = {139.915 1068.319} {139.965 1068.369}
+                 net = VSS
+Via #2:          box = {140.043 1068.322} {140.143 1068.422}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA4
+Overlap box:     {140.043 1068.322} {140.085 1068.369}
+Net-shape:       box = {140.035 1068.319} {140.085 1068.369}
+                 net = VSS
+Net-shape #2:    box = {140.043 1068.322} {140.143 1068.422}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {140.143 827.578} {140.155 827.601}
+Via #1:          box = {140.043 827.578} {140.143 827.678}
+                 net = VSS
+Via #2:          box = {140.155 827.551} {140.205 827.601}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {140.143 907.807} {140.155 907.857}
+Via #1:          box = {140.043 907.764} {140.143 907.864}
+                 net = VSS
+Via #2:          box = {140.155 907.807} {140.205 907.857}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {140.143 947.95} {140.155 947.985}
+Via #1:          box = {140.043 947.95} {140.143 948.05}
+                 net = VSS
+Via #2:          box = {140.155 947.935} {140.205 947.985}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {140.143 1028.191} {140.155 1028.236}
+Via #1:          box = {140.043 1028.136} {140.143 1028.236}
+                 net = VSS
+Via #2:          box = {140.155 1028.191} {140.205 1028.241}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA4
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {140.143 1068.322} {140.155 1068.369}
+Via #1:          box = {140.043 1068.322} {140.143 1068.422}
+                 net = VSS
+Via #2:          box = {140.155 1068.319} {140.205 1068.369}
+                 net = VSS
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.795 827.551} {139.845 827.601}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {139.857 827.578} {139.957 827.678}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.845 827.578} {139.857 827.601}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.035 827.551} {140.085 827.601}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {139.857 827.578} {139.957 827.678}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.957 827.578} {140.035 827.601}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.915 827.551} {139.965 827.601}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {140.043 827.578} {140.143 827.678}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.965 827.578} {140.043 827.601}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.155 827.551} {140.205 827.601}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {140.043 827.578} {140.143 827.678}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {140.143 827.578} {140.155 827.601}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 827.578} {139.957 827.678}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {139.795 827.551} {139.845 827.601}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.845 827.578} {139.857 827.601}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 827.578} {139.957 827.678}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {140.035 827.551} {140.085 827.601}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.957 827.578} {140.035 827.601}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 827.578} {140.143 827.678}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {139.915 827.551} {139.965 827.601}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.965 827.578} {140.043 827.601}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 827.578} {140.143 827.678}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {140.155 827.551} {140.205 827.601}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {140.143 827.578} {140.155 827.601}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 907.764} {139.957 907.864}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {139.795 907.807} {139.845 907.857}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.845 907.807} {139.857 907.857}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 907.764} {140.143 907.864}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {139.915 907.807} {139.965 907.857}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.965 907.807} {140.043 907.857}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 907.764} {139.957 907.864}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {140.035 907.807} {140.085 907.857}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.957 907.807} {140.035 907.857}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 907.764} {140.143 907.864}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {140.155 907.807} {140.205 907.857}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {140.143 907.807} {140.155 907.857}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.795 907.807} {139.845 907.857}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {139.857 907.764} {139.957 907.864}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.845 907.807} {139.857 907.857}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.915 907.807} {139.965 907.857}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {140.043 907.764} {140.143 907.864}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.965 907.807} {140.043 907.857}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.035 907.807} {140.085 907.857}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {139.857 907.764} {139.957 907.864}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.957 907.807} {140.035 907.857}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.155 907.807} {140.205 907.857}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {140.043 907.764} {140.143 907.864}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {140.143 907.807} {140.155 907.857}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.795 947.935} {139.845 947.985}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {139.857 947.95} {139.957 948.05}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.845 947.95} {139.857 947.985}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.035 947.935} {140.085 947.985}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {139.857 947.95} {139.957 948.05}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.957 947.95} {140.035 947.985}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.915 947.935} {139.965 947.985}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {140.043 947.95} {140.143 948.05}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.965 947.95} {140.043 947.985}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.155 947.935} {140.205 947.985}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {140.043 947.95} {140.143 948.05}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {140.143 947.95} {140.155 947.985}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 947.95} {139.957 948.05}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {139.795 947.935} {139.845 947.985}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.845 947.95} {139.857 947.985}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 947.95} {139.957 948.05}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {140.035 947.935} {140.085 947.985}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.957 947.95} {140.035 947.985}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 947.95} {140.143 948.05}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {139.915 947.935} {139.965 947.985}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.965 947.95} {140.043 947.985}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 947.95} {140.143 948.05}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {140.155 947.935} {140.205 947.985}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {140.143 947.95} {140.155 947.985}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 1028.136} {139.957 1028.236}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {139.795 1028.191} {139.845 1028.241}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.845 1028.191} {139.857 1028.236}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 1028.136} {140.143 1028.236}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {139.915 1028.191} {139.965 1028.241}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.965 1028.191} {140.043 1028.236}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 1028.136} {139.957 1028.236}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {140.035 1028.191} {140.085 1028.241}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.957 1028.191} {140.035 1028.236}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 1028.136} {140.143 1028.236}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {140.155 1028.191} {140.205 1028.241}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {140.143 1028.191} {140.155 1028.236}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.795 1028.191} {139.845 1028.241}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {139.857 1028.136} {139.957 1028.236}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.845 1028.191} {139.857 1028.236}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.915 1028.191} {139.965 1028.241}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {140.043 1028.136} {140.143 1028.236}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.965 1028.191} {140.043 1028.236}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.035 1028.191} {140.085 1028.241}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {139.857 1028.136} {139.957 1028.236}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.957 1028.191} {140.035 1028.236}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.155 1028.191} {140.205 1028.241}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {140.043 1028.136} {140.143 1028.236}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {140.143 1028.191} {140.155 1028.236}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.795 1068.319} {139.845 1068.369}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {139.857 1068.322} {139.957 1068.422}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.845 1068.322} {139.857 1068.369}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.035 1068.319} {140.085 1068.369}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {139.857 1068.322} {139.957 1068.422}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.957 1068.322} {140.035 1068.369}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.915 1068.319} {139.965 1068.369}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {140.043 1068.322} {140.143 1068.422}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.965 1068.322} {140.043 1068.369}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.155 1068.319} {140.205 1068.369}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {140.043 1068.322} {140.143 1068.422}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {140.143 1068.322} {140.155 1068.369}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 1068.322} {139.957 1068.422}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {139.795 1068.319} {139.845 1068.369}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.845 1068.322} {139.857 1068.369}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 1068.322} {139.957 1068.422}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {140.035 1068.319} {140.085 1068.369}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.957 1068.322} {140.035 1068.369}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 1068.322} {140.143 1068.422}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {139.915 1068.319} {139.965 1068.369}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {139.965 1068.322} {140.043 1068.369}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 1068.322} {140.143 1068.422}
+                 Net:   VSS
+                 Layer: VIA3
+Lower cut:       Box:   {140.155 1068.319} {140.205 1068.369}
+                 Net:   VSS
+                 Layer: VIA2
+Spacing box:     {140.143 1068.322} {140.155 1068.369}on layer M3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {139.845 827.578} {139.857 827.601}
+Via #1:          box = {139.795 827.551} {139.845 827.601}
+                 net = VSS
+Via #2:          box = {139.857 827.578} {139.957 827.678}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA3
+Overlap box:     {139.915 827.578} {139.957 827.601}
+Net-shape:       box = {139.915 827.551} {139.965 827.601}
+                 net = VSS
+Net-shape #2:    box = {139.857 827.578} {139.957 827.678}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+Spacing box:     {139.957 827.578} {140.035 827.601}
+Via #1:          box = {140.035 827.551} {140.085 827.601}
+                 net = VSS
+Via #2:          box = {139.857 827.578} {139.957 827.678}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.965 827.578} {140.043 827.601}
+Via #1:          box = {139.915 827.551} {139.965 827.601}
+                 net = VSS
+Via #2:          box = {140.043 827.578} {140.143 827.678}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA3
+Overlap box:     {140.043 827.578} {140.085 827.601}
+Net-shape:       box = {140.035 827.551} {140.085 827.601}
+                 net = VSS
+Net-shape #2:    box = {140.043 827.578} {140.143 827.678}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+Spacing box:     {140.143 827.578} {140.155 827.601}
+Via #1:          box = {140.155 827.551} {140.205 827.601}
+                 net = VSS
+Via #2:          box = {140.043 827.578} {140.143 827.678}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA3
+Minimal spacing: 0.07
+Actual  spacing: 0.001(south - north)
+Spacing box:     {139.915 867.678} {139.957 867.679}
+Via #1:          box = {139.857 867.578} {139.957 867.678}
+                 net = VSS
+Via #2:          box = {139.915 867.679} {139.965 867.729}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA3
+Minimal spacing: 0.07
+Actual  spacing: 0.001(south - north)
+Spacing box:     {140.043 867.678} {140.085 867.679}
+Via #1:          box = {140.043 867.578} {140.143 867.678}
+                 net = VSS
+Via #2:          box = {140.035 867.679} {140.085 867.729}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA3
+Minimal spacing: 0.07
+Actual  spacing: 0.035(south - north)
+Spacing box:     {139.915 867.729} {139.957 867.764}
+Via #1:          box = {139.915 867.679} {139.965 867.729}
+                 net = VSS
+Via #2:          box = {139.857 867.764} {139.957 867.864}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA3
+Minimal spacing: 0.07
+Actual  spacing: 0.035(south - north)
+Spacing box:     {140.043 867.729} {140.085 867.764}
+Via #1:          box = {140.035 867.679} {140.085 867.729}
+                 net = VSS
+Via #2:          box = {140.043 867.764} {140.143 867.864}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+Spacing box:     {139.845 907.807} {139.857 907.857}
+Via #1:          box = {139.857 907.764} {139.957 907.864}
+                 net = VSS
+Via #2:          box = {139.795 907.807} {139.845 907.857}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA3
+Overlap box:     {139.915 907.807} {139.957 907.857}
+Net-shape:       box = {139.857 907.764} {139.957 907.864}
+                 net = VSS
+Net-shape #2:    box = {139.915 907.807} {139.965 907.857}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+Spacing box:     {139.965 907.807} {140.043 907.857}
+Via #1:          box = {140.043 907.764} {140.143 907.864}
+                 net = VSS
+Via #2:          box = {139.915 907.807} {139.965 907.857}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.957 907.807} {140.035 907.857}
+Via #1:          box = {139.857 907.764} {139.957 907.864}
+                 net = VSS
+Via #2:          box = {140.035 907.807} {140.085 907.857}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA3
+Overlap box:     {140.043 907.807} {140.085 907.857}
+Net-shape:       box = {140.043 907.764} {140.143 907.864}
+                 net = VSS
+Net-shape #2:    box = {140.035 907.807} {140.085 907.857}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {140.143 907.807} {140.155 907.857}
+Via #1:          box = {140.043 907.764} {140.143 907.864}
+                 net = VSS
+Via #2:          box = {140.155 907.807} {140.205 907.857}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA3
+Overlap box:     {139.915 947.95} {139.957 947.985}
+Net-shape:       box = {139.915 947.935} {139.965 947.985}
+                 net = VSS
+Net-shape #2:    box = {139.857 947.95} {139.957 948.05}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {139.845 947.95} {139.857 947.985}
+Via #1:          box = {139.795 947.935} {139.845 947.985}
+                 net = VSS
+Via #2:          box = {139.857 947.95} {139.957 948.05}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+Spacing box:     {139.957 947.95} {140.035 947.985}
+Via #1:          box = {140.035 947.935} {140.085 947.985}
+                 net = VSS
+Via #2:          box = {139.857 947.95} {139.957 948.05}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.965 947.95} {140.043 947.985}
+Via #1:          box = {139.915 947.935} {139.965 947.985}
+                 net = VSS
+Via #2:          box = {140.043 947.95} {140.143 948.05}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA3
+Overlap box:     {140.043 947.95} {140.085 947.985}
+Net-shape:       box = {140.035 947.935} {140.085 947.985}
+                 net = VSS
+Net-shape #2:    box = {140.043 947.95} {140.143 948.05}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+Spacing box:     {140.143 947.95} {140.155 947.985}
+Via #1:          box = {140.155 947.935} {140.205 947.985}
+                 net = VSS
+Via #2:          box = {140.043 947.95} {140.143 948.05}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA3
+Minimal spacing: 0.07
+Actual  spacing: 0.013(south - north)
+Spacing box:     {139.915 988.05} {139.957 988.063}
+Via #1:          box = {139.857 987.95} {139.957 988.05}
+                 net = VSS
+Via #2:          box = {139.915 988.063} {139.965 988.113}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA3
+Minimal spacing: 0.07
+Actual  spacing: 0.013(south - north)
+Spacing box:     {140.043 988.05} {140.085 988.063}
+Via #1:          box = {140.043 987.95} {140.143 988.05}
+                 net = VSS
+Via #2:          box = {140.035 988.063} {140.085 988.113}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA3
+Minimal spacing: 0.07
+Actual  spacing: 0.023(south - north)
+Spacing box:     {139.915 988.113} {139.957 988.136}
+Via #1:          box = {139.915 988.063} {139.965 988.113}
+                 net = VSS
+Via #2:          box = {139.857 988.136} {139.957 988.236}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA3
+Minimal spacing: 0.07
+Actual  spacing: 0.023(south - north)
+Spacing box:     {140.043 988.113} {140.085 988.136}
+Via #1:          box = {140.035 988.063} {140.085 988.113}
+                 net = VSS
+Via #2:          box = {140.043 988.136} {140.143 988.236}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+Spacing box:     {139.845 1028.191} {139.857 1028.236}
+Via #1:          box = {139.857 1028.136} {139.957 1028.236}
+                 net = VSS
+Via #2:          box = {139.795 1028.191} {139.845 1028.241}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA3
+Overlap box:     {139.915 1028.191} {139.957 1028.236}
+Net-shape:       box = {139.857 1028.136} {139.957 1028.236}
+                 net = VSS
+Net-shape #2:    box = {139.915 1028.191} {139.965 1028.241}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+Spacing box:     {139.965 1028.191} {140.043 1028.236}
+Via #1:          box = {140.043 1028.136} {140.143 1028.236}
+                 net = VSS
+Via #2:          box = {139.915 1028.191} {139.965 1028.241}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.957 1028.191} {140.035 1028.236}
+Via #1:          box = {139.857 1028.136} {139.957 1028.236}
+                 net = VSS
+Via #2:          box = {140.035 1028.191} {140.085 1028.241}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA3
+Overlap box:     {140.043 1028.191} {140.085 1028.236}
+Net-shape:       box = {140.043 1028.136} {140.143 1028.236}
+                 net = VSS
+Net-shape #2:    box = {140.035 1028.191} {140.085 1028.241}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {140.143 1028.191} {140.155 1028.236}
+Via #1:          box = {140.043 1028.136} {140.143 1028.236}
+                 net = VSS
+Via #2:          box = {140.155 1028.191} {140.205 1028.241}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA3
+Overlap box:     {139.915 1068.322} {139.957 1068.369}
+Net-shape:       box = {139.915 1068.319} {139.965 1068.369}
+                 net = VSS
+Net-shape #2:    box = {139.857 1068.322} {139.957 1068.422}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {139.845 1068.322} {139.857 1068.369}
+Via #1:          box = {139.795 1068.319} {139.845 1068.369}
+                 net = VSS
+Via #2:          box = {139.857 1068.322} {139.957 1068.422}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+Spacing box:     {139.957 1068.322} {140.035 1068.369}
+Via #1:          box = {140.035 1068.319} {140.085 1068.369}
+                 net = VSS
+Via #2:          box = {139.857 1068.322} {139.957 1068.422}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA3
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.965 1068.322} {140.043 1068.369}
+Via #1:          box = {139.915 1068.319} {139.965 1068.369}
+                 net = VSS
+Via #2:          box = {140.043 1068.322} {140.143 1068.422}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA3
+Overlap box:     {140.043 1068.322} {140.085 1068.369}
+Net-shape:       box = {140.035 1068.319} {140.085 1068.369}
+                 net = VSS
+Net-shape #2:    box = {140.043 1068.322} {140.143 1068.422}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA3
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+Spacing box:     {140.143 1068.322} {140.155 1068.369}
+Via #1:          box = {140.155 1068.319} {140.205 1068.369}
+                 net = VSS
+Via #2:          box = {140.043 1068.322} {140.143 1068.422}
+                 net = VSS
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 827.578} {139.957 827.678}
+                 Net:   VSS
+                 Layer: VIA2
+Lower cut:       Box:   {139.795 827.551} {139.845 827.601}
+                 Net:   VSS
+                 Layer: VIA1
+Spacing box:     {139.845 827.578} {139.857 827.601}on layer M2
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 907.764} {139.957 907.864}
+                 Net:   VSS
+                 Layer: VIA2
+Lower cut:       Box:   {139.795 907.807} {139.845 907.857}
+                 Net:   VSS
+                 Layer: VIA1
+Spacing box:     {139.845 907.807} {139.857 907.857}on layer M2
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 947.95} {139.957 948.05}
+                 Net:   VSS
+                 Layer: VIA2
+Lower cut:       Box:   {139.795 947.935} {139.845 947.985}
+                 Net:   VSS
+                 Layer: VIA1
+Spacing box:     {139.845 947.95} {139.857 947.985}on layer M2
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 1028.136} {139.957 1028.236}
+                 Net:   VSS
+                 Layer: VIA2
+Lower cut:       Box:   {139.795 1028.191} {139.845 1028.241}
+                 Net:   VSS
+                 Layer: VIA1
+Spacing box:     {139.845 1028.191} {139.857 1028.236}on layer M2
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 1068.322} {139.957 1068.422}
+                 Net:   VSS
+                 Layer: VIA2
+Lower cut:       Box:   {139.795 1068.319} {139.845 1068.369}
+                 Net:   VSS
+                 Layer: VIA1
+Spacing box:     {139.845 1068.322} {139.857 1068.369}on layer M2
+Minimal spacing: 0.08
+Actual  spacing: 0.012(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 827.578} {139.957 827.678}
+                 Net:   VSS
+                 Layer: VIA2
+Lower cut:       Box:   {140.035 827.551} {140.085 827.601}
+                 Net:   VSS
+                 Layer: VIA1
+Spacing box:     {139.957 827.578} {140.035 827.601}on layer M2
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 907.764} {139.957 907.864}
+                 Net:   VSS
+                 Layer: VIA2
+Lower cut:       Box:   {140.035 907.807} {140.085 907.857}
+                 Net:   VSS
+                 Layer: VIA1
+Spacing box:     {139.957 907.807} {140.035 907.857}on layer M2
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 947.95} {139.957 948.05}
+                 Net:   VSS
+                 Layer: VIA2
+Lower cut:       Box:   {140.035 947.935} {140.085 947.985}
+                 Net:   VSS
+                 Layer: VIA1
+Spacing box:     {139.957 947.95} {140.035 947.985}on layer M2
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 1028.136} {139.957 1028.236}
+                 Net:   VSS
+                 Layer: VIA2
+Lower cut:       Box:   {140.035 1028.191} {140.085 1028.241}
+                 Net:   VSS
+                 Layer: VIA1
+Spacing box:     {139.957 1028.191} {140.035 1028.236}on layer M2
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {139.857 1068.322} {139.957 1068.422}
+                 Net:   VSS
+                 Layer: VIA2
+Lower cut:       Box:   {140.035 1068.319} {140.085 1068.369}
+                 Net:   VSS
+                 Layer: VIA1
+Spacing box:     {139.957 1068.322} {140.035 1068.369}on layer M2
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 827.578} {140.143 827.678}
+                 Net:   VSS
+                 Layer: VIA2
+Lower cut:       Box:   {139.915 827.551} {139.965 827.601}
+                 Net:   VSS
+                 Layer: VIA1
+Spacing box:     {139.965 827.578} {140.043 827.601}on layer M2
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 907.764} {140.143 907.864}
+                 Net:   VSS
+                 Layer: VIA2
+Lower cut:       Box:   {139.915 907.807} {139.965 907.857}
+                 Net:   VSS
+                 Layer: VIA1
+Spacing box:     {139.965 907.807} {140.043 907.857}on layer M2
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 947.95} {140.143 948.05}
+                 Net:   VSS
+                 Layer: VIA2
+Lower cut:       Box:   {139.915 947.935} {139.965 947.985}
+                 Net:   VSS
+                 Layer: VIA1
+Spacing box:     {139.965 947.95} {140.043 947.985}on layer M2
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 1028.136} {140.143 1028.236}
+                 Net:   VSS
+                 Layer: VIA2
+Lower cut:       Box:   {139.915 1028.191} {139.965 1028.241}
+                 Net:   VSS
+                 Layer: VIA1
+Spacing box:     {139.965 1028.191} {140.043 1028.236}on layer M2
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 1068.322} {140.143 1068.422}
+                 Net:   VSS
+                 Layer: VIA2
+Lower cut:       Box:   {139.915 1068.319} {139.965 1068.369}
+                 Net:   VSS
+                 Layer: VIA1
+Spacing box:     {139.965 1068.322} {140.043 1068.369}on layer M2
+Minimal spacing: 0.08
+Actual  spacing: 0.078(east - west)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 827.578} {140.143 827.678}
+                 Net:   VSS
+                 Layer: VIA2
+Lower cut:       Box:   {140.155 827.551} {140.205 827.601}
+                 Net:   VSS
+                 Layer: VIA1
+Spacing box:     {140.143 827.578} {140.155 827.601}on layer M2
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 907.764} {140.143 907.864}
+                 Net:   VSS
+                 Layer: VIA2
+Lower cut:       Box:   {140.155 907.807} {140.205 907.857}
+                 Net:   VSS
+                 Layer: VIA1
+Spacing box:     {140.143 907.807} {140.155 907.857}on layer M2
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 947.95} {140.143 948.05}
+                 Net:   VSS
+                 Layer: VIA2
+Lower cut:       Box:   {140.155 947.935} {140.205 947.985}
+                 Net:   VSS
+                 Layer: VIA1
+Spacing box:     {140.143 947.95} {140.155 947.985}on layer M2
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 1028.136} {140.143 1028.236}
+                 Net:   VSS
+                 Layer: VIA2
+Lower cut:       Box:   {140.155 1028.191} {140.205 1028.241}
+                 Net:   VSS
+                 Layer: VIA1
+Spacing box:     {140.143 1028.191} {140.155 1028.236}on layer M2
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      Error between cuts on different layers
+Rule:            General cut min spacing::sameNetXMinSpacing
+Upper cut:       Box:   {140.043 1068.322} {140.143 1068.422}
+                 Net:   VSS
+                 Layer: VIA2
+Lower cut:       Box:   {140.155 1068.319} {140.205 1068.369}
+                 Net:   VSS
+                 Layer: VIA1
+Spacing box:     {140.143 1068.322} {140.155 1068.369}on layer M2
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA2
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {139.845 827.578} {139.857 827.601}
+Via #1:          box = {139.795 827.551} {139.845 827.601}
+                 net = VSS
+Via #2:          box = {139.857 827.578} {139.957 827.678}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA2
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {139.845 907.807} {139.857 907.857}
+Via #1:          box = {139.795 907.807} {139.845 907.857}
+                 net = VSS
+Via #2:          box = {139.857 907.764} {139.957 907.864}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA2
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {139.845 947.95} {139.857 947.985}
+Via #1:          box = {139.795 947.935} {139.845 947.985}
+                 net = VSS
+Via #2:          box = {139.857 947.95} {139.957 948.05}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA2
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {139.845 1028.191} {139.857 1028.236}
+Via #1:          box = {139.795 1028.191} {139.845 1028.241}
+                 net = VSS
+Via #2:          box = {139.857 1028.136} {139.957 1028.236}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA2
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {139.845 1068.322} {139.857 1068.369}
+Via #1:          box = {139.795 1068.319} {139.845 1068.369}
+                 net = VSS
+Via #2:          box = {139.857 1068.322} {139.957 1068.422}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA2
+Overlap box:     {139.915 827.578} {139.957 827.601}
+Net-shape:       box = {139.857 827.578} {139.957 827.678}
+                 net = VSS
+Net-shape #2:    box = {139.915 827.551} {139.965 827.601}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA2
+Minimal spacing: 0.07
+Actual  spacing: 0.001(south - north)
+Spacing box:     {139.915 867.678} {139.957 867.679}
+Via #1:          box = {139.857 867.578} {139.957 867.678}
+                 net = VSS
+Via #2:          box = {139.915 867.679} {139.965 867.729}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA2
+Minimal spacing: 0.07
+Actual  spacing: 0.035(north - south)
+Spacing box:     {139.915 867.729} {139.957 867.764}
+Via #1:          box = {139.857 867.764} {139.957 867.864}
+                 net = VSS
+Via #2:          box = {139.915 867.679} {139.965 867.729}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA2
+Overlap box:     {139.915 907.807} {139.957 907.857}
+Net-shape:       box = {139.857 907.764} {139.957 907.864}
+                 net = VSS
+Net-shape #2:    box = {139.915 907.807} {139.965 907.857}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA2
+Overlap box:     {139.915 947.95} {139.957 947.985}
+Net-shape:       box = {139.857 947.95} {139.957 948.05}
+                 net = VSS
+Net-shape #2:    box = {139.915 947.935} {139.965 947.985}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA2
+Minimal spacing: 0.07
+Actual  spacing: 0.023(north - south)
+Spacing box:     {139.915 988.113} {139.957 988.136}
+Via #1:          box = {139.857 988.136} {139.957 988.236}
+                 net = VSS
+Via #2:          box = {139.915 988.063} {139.965 988.113}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA2
+Minimal spacing: 0.07
+Actual  spacing: 0.013(south - north)
+Spacing box:     {139.915 988.05} {139.957 988.063}
+Via #1:          box = {139.857 987.95} {139.957 988.05}
+                 net = VSS
+Via #2:          box = {139.915 988.063} {139.965 988.113}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA2
+Overlap box:     {139.915 1028.191} {139.957 1028.236}
+Net-shape:       box = {139.857 1028.136} {139.957 1028.236}
+                 net = VSS
+Net-shape #2:    box = {139.915 1028.191} {139.965 1028.241}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA2
+Overlap box:     {139.915 1068.322} {139.957 1068.369}
+Net-shape:       box = {139.857 1068.322} {139.957 1068.422}
+                 net = VSS
+Net-shape #2:    box = {139.915 1068.319} {139.965 1068.369}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA2
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.957 827.578} {140.035 827.601}
+Via #1:          box = {139.857 827.578} {139.957 827.678}
+                 net = VSS
+Via #2:          box = {140.035 827.551} {140.085 827.601}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA2
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.957 907.807} {140.035 907.857}
+Via #1:          box = {139.857 907.764} {139.957 907.864}
+                 net = VSS
+Via #2:          box = {140.035 907.807} {140.085 907.857}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA2
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.957 947.95} {140.035 947.985}
+Via #1:          box = {139.857 947.95} {139.957 948.05}
+                 net = VSS
+Via #2:          box = {140.035 947.935} {140.085 947.985}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA2
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.957 1028.191} {140.035 1028.236}
+Via #1:          box = {139.857 1028.136} {139.957 1028.236}
+                 net = VSS
+Via #2:          box = {140.035 1028.191} {140.085 1028.241}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA2
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.957 1068.322} {140.035 1068.369}
+Via #1:          box = {139.857 1068.322} {139.957 1068.422}
+                 net = VSS
+Via #2:          box = {140.035 1068.319} {140.085 1068.369}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA2
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.965 827.578} {140.043 827.601}
+Via #1:          box = {139.915 827.551} {139.965 827.601}
+                 net = VSS
+Via #2:          box = {140.043 827.578} {140.143 827.678}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA2
+Overlap box:     {140.043 827.578} {140.085 827.601}
+Net-shape:       box = {140.035 827.551} {140.085 827.601}
+                 net = VSS
+Net-shape #2:    box = {140.043 827.578} {140.143 827.678}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA2
+Minimal spacing: 0.07
+Actual  spacing: 0.001(north - south)
+Spacing box:     {140.043 867.678} {140.085 867.679}
+Via #1:          box = {140.035 867.679} {140.085 867.729}
+                 net = VSS
+Via #2:          box = {140.043 867.578} {140.143 867.678}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA2
+Minimal spacing: 0.07
+Actual  spacing: 0.035(south - north)
+Spacing box:     {140.043 867.729} {140.085 867.764}
+Via #1:          box = {140.035 867.679} {140.085 867.729}
+                 net = VSS
+Via #2:          box = {140.043 867.764} {140.143 867.864}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA2
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.965 907.807} {140.043 907.857}
+Via #1:          box = {139.915 907.807} {139.965 907.857}
+                 net = VSS
+Via #2:          box = {140.043 907.764} {140.143 907.864}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA2
+Overlap box:     {140.043 907.807} {140.085 907.857}
+Net-shape:       box = {140.035 907.807} {140.085 907.857}
+                 net = VSS
+Net-shape #2:    box = {140.043 907.764} {140.143 907.864}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA2
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.965 947.95} {140.043 947.985}
+Via #1:          box = {139.915 947.935} {139.965 947.985}
+                 net = VSS
+Via #2:          box = {140.043 947.95} {140.143 948.05}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA2
+Overlap box:     {140.043 947.95} {140.085 947.985}
+Net-shape:       box = {140.035 947.935} {140.085 947.985}
+                 net = VSS
+Net-shape #2:    box = {140.043 947.95} {140.143 948.05}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA2
+Minimal spacing: 0.07
+Actual  spacing: 0.013(north - south)
+Spacing box:     {140.043 988.05} {140.085 988.063}
+Via #1:          box = {140.035 988.063} {140.085 988.113}
+                 net = VSS
+Via #2:          box = {140.043 987.95} {140.143 988.05}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   Cut-Min_Spacing-Rule
+Layer:           VIA2
+Minimal spacing: 0.07
+Actual  spacing: 0.023(south - north)
+Spacing box:     {140.043 988.113} {140.085 988.136}
+Via #1:          box = {140.035 988.063} {140.085 988.113}
+                 net = VSS
+Via #2:          box = {140.043 988.136} {140.143 988.236}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA2
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.965 1028.191} {140.043 1028.236}
+Via #1:          box = {139.915 1028.191} {139.965 1028.241}
+                 net = VSS
+Via #2:          box = {140.043 1028.136} {140.143 1028.236}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA2
+Overlap box:     {140.043 1028.191} {140.085 1028.236}
+Net-shape:       box = {140.035 1028.191} {140.085 1028.241}
+                 net = VSS
+Net-shape #2:    box = {140.043 1028.136} {140.143 1028.236}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA2
+Minimal spacing: 0.08
+Actual  spacing: 0.078(west - east)
+Spacing box:     {139.965 1068.322} {140.043 1068.369}
+Via #1:          box = {139.915 1068.319} {139.965 1068.369}
+                 net = VSS
+Via #2:          box = {140.043 1068.322} {140.143 1068.422}
+                 net = VSS
+=================
+Error type:      illegal overlap of net-shapes
+Violated rule:   No-Illegal-Overlaps-Rule
+Layer:           VIA2
+Overlap box:     {140.043 1068.322} {140.085 1068.369}
+Net-shape:       box = {140.035 1068.319} {140.085 1068.369}
+                 net = VSS
+Net-shape #2:    box = {140.043 1068.322} {140.143 1068.422}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA2
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {140.143 827.578} {140.155 827.601}
+Via #1:          box = {140.043 827.578} {140.143 827.678}
+                 net = VSS
+Via #2:          box = {140.155 827.551} {140.205 827.601}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA2
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {140.143 907.807} {140.155 907.857}
+Via #1:          box = {140.043 907.764} {140.143 907.864}
+                 net = VSS
+Via #2:          box = {140.155 907.807} {140.205 907.857}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA2
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {140.143 947.95} {140.155 947.985}
+Via #1:          box = {140.043 947.95} {140.143 948.05}
+                 net = VSS
+Via #2:          box = {140.155 947.935} {140.205 947.985}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA2
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {140.143 1028.191} {140.155 1028.236}
+Via #1:          box = {140.043 1028.136} {140.143 1028.236}
+                 net = VSS
+Via #2:          box = {140.155 1028.191} {140.205 1028.241}
+                 net = VSS
+=================
+Error type:      insufficient space between two same-net via-cuts
+Violated rule:   General cut min spacing::sameNetXMinSpacing
+Layer:           VIA2
+Minimal spacing: 0.08
+Actual  spacing: 0.012(west - east)
+Spacing box:     {140.143 1068.322} {140.155 1068.369}
+Via #1:          box = {140.043 1068.322} {140.143 1068.422}
+                 net = VSS
+Via #2:          box = {140.155 1068.319} {140.205 1068.369}
+                 net = VSS
+==============================================================

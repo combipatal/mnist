@@ -1,0 +1,20 @@
+****************************************
+Report : Report drc errors
+Design : route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_route_opt1
+Data   : zroute.err
+Type   : error_layer
+Version: W-2024.09-SP2
+Date   : Tue May 12 10:19:45 2026
+****************************************
+
+ErrorSet                                    Total   Visible     Fixed   Ignored
+--------------------------------------------------------------------------------
+Design : route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_route_opt1 19 19 0 0
+      Data : zroute.err                     19      19          0       0
+            M1 (11)                         17      17          0       0
+                Off-grid                    16      16          0       0
+                Short                       1       1           0       0
+            M2 (13)                         2       2           0       0
+                Off-grid                    1       1           0       0
+                Short                       1       1           0       0
+1

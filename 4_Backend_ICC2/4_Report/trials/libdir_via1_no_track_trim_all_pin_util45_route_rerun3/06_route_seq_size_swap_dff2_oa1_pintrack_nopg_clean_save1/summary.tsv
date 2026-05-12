@@ -1,0 +1,8 @@
+step	target_nets	save_status	total	open_nets	diff_net_spacing	less_than_min_area	needs_fat_contact	off_grid	same_net_spacing	short	connection_not_within_pin
+initial	none	no_save	14	4	0	3	0	5	1	5	0
+after_step1	ZBUF_714_1050	no_save	12	4	0	3	0	3	1	5	0
+after_step2	ZBUF_851_152	no_save	11	4	0	3	0	2	1	5	0
+after_step3	ZBUF_197_3009 ZBUF_228_1096 ZBUF_832_2538 ZCTSNET_995 act_ram[861][0] n134012 n143522 n17001 n78423	no_save	1	0	0	0	0	1	0	0	0
+after_step4	ZBUF_832_2538	no_save	1	0	0	0	0	1	0	0	0
+after_step5	n143522	no_save	1	0	0	0	0	1	0	0	0
+final	all	no_save_not_clean	1	0	0	0	0	1	0	0	0

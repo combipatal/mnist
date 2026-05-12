@@ -1,0 +1,7 @@
+cell	old_ref	new_ref	status	message
+u_input_fifo/fifo_buf_reg[947][10]	DFFARX1_RVT	DFFARX2_RVT	PASS	1
+
+swap_net_exclude_regex	^(VDD|VSS)$
+excluded_swap_pin_nets	VDD VSS
+swap_pin_nets	ZBUF_899_1724 ZCTSNET_433 eco_net_504_u_input_fifo/n3406 u_input_fifo/fifo_buf[947][10]
+legalize_placement	NA	NA	PASS	1

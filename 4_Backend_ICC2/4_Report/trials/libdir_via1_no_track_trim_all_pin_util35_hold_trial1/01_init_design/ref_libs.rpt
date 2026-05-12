@@ -1,0 +1,13 @@
+****************************************
+Report : Reference Library Report
+Library: mnist_npu_icc2_lib
+Version: W-2024.09-SP2
+Date   : Tue May 12 20:13:31 2026
+****************************************
+
+    Name         Path                                                                                                            Location
+    -------------------------------------------------------------------------------------------------------------------------------------
+*+  saed32rvt_tt /DATA/home/edu135/MNIST/4_Backend_ICC2/2_Output/00_setup/ndm_libdir_via1_no_track_trim_all_pin/saed32rvt_tt.ndm /DATA/home/edu135/MNIST/4_Backend_ICC2/2_Output/00_setup/ndm_libdir_via1_no_track_trim_all_pin/saed32rvt_tt.ndm
+    "*" = Library currently open
+    "+" = Library has technology information
+1

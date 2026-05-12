@@ -1,0 +1,16 @@
+****************************************
+Report : Report drc errors
+Design : route
+Data   : zroute.err
+Type   : error_type
+Version: W-2024.09-SP2
+Date   : Mon May 11 13:14:39 2026
+****************************************
+
+ErrorSet                                    Total   Visible     Fixed   Ignored
+--------------------------------------------------------------------------------
+Design : route                              6       6           0       0
+      Data : zroute.err                     6       6           0       0
+            Off-grid                        6       6           0       0
+                M1 (11)                     6       6           0       0
+1

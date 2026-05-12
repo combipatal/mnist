@@ -1,0 +1,77 @@
+****************************************
+Report : clock timing
+        -type skew
+        -nworst 20
+        -hold
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Sun May 10 21:32:57 2026
+****************************************
+
+  Mode: default
+  Clock: clk
+
+  Clock Pin                                          Latency      Skew             Corner
+---------------------------------------------------------------------------------------------------
+  u_input_fifo/dout_reg[14]/CLK                         0.18              rp-+    default
+  act_ram_reg[173][14]/CLK                              0.38      0.20    rp-+    default
+
+  u_input_fifo/dout_reg[15]/CLK                         0.18              rp-+    default
+  act_ram_reg[237][15]/CLK                              0.38      0.20    rp-+    default
+
+  u_input_fifo/dout_reg[15]/CLK                         0.18              rp-+    default
+  act_ram_reg[172][15]/CLK                              0.38      0.20    rp-+    default
+
+  u_input_fifo/dout_reg[2]/CLK                          0.18              rp-+    default
+  act_ram_reg[158][2]/CLK                               0.38      0.20    rp-+    default
+
+  u_input_fifo/dout_reg[8]/CLK                          0.18              rp-+    default
+  act_ram_reg[222][8]/CLK                               0.38      0.20    rp-+    default
+
+  u_input_fifo/dout_reg[2]/CLK                          0.18              rp-+    default
+  act_ram_reg[222][2]/CLK                               0.38      0.20    rp-+    default
+
+  u_input_fifo/dout_reg[4]/CLK                          0.18              rp-+    default
+  act_ram_reg[158][4]/CLK                               0.38      0.20    rp-+    default
+
+  u_input_fifo/dout_reg[5]/CLK                          0.18              rp-+    default
+  act_ram_reg[158][5]/CLK                               0.38      0.20    rp-+    default
+
+  u_input_fifo/dout_reg[5]/CLK                          0.18              rp-+    default
+  act_ram_reg[222][5]/CLK                               0.38      0.20    rp-+    default
+
+  u_input_fifo/dout_reg[9]/CLK                          0.18              rp-+    default
+  act_ram_reg[211][9]/CLK                               0.38      0.20    rp-+    default
+
+  u_input_fifo/dout_reg[9]/CLK                          0.18              rp-+    default
+  act_ram_reg[237][9]/CLK                               0.38      0.20    rp-+    default
+
+  u_input_fifo/dout_reg[5]/CLK                          0.18              rp-+    default
+  act_ram_reg[179][5]/CLK                               0.38      0.20    rp-+    default
+
+  u_input_fifo/dout_reg[14]/CLK                         0.18              rp-+    default
+  act_ram_reg[170][14]/CLK                              0.38      0.20    rp-+    default
+
+  u_input_fifo/dout_reg[4]/CLK                          0.18              rp-+    default
+  act_ram_reg[179][4]/CLK                               0.38      0.20    rp-+    default
+
+  u_input_fifo/dout_reg[2]/CLK                          0.18              rp-+    default
+  act_ram_reg[235][2]/CLK                               0.38      0.20    rp-+    default
+
+  u_input_fifo/dout_reg[8]/CLK                          0.18              rp-+    default
+  act_ram_reg[234][8]/CLK                               0.38      0.20    rp-+    default
+
+  u_input_fifo/dout_reg[9]/CLK                          0.18              rp-+    default
+  act_ram_reg[172][9]/CLK                               0.38      0.20    rp-+    default
+
+  u_input_fifo/dout_reg[5]/CLK                          0.18              rp-+    default
+  act_ram_reg[172][5]/CLK                               0.38      0.20    rp-+    default
+
+  u_input_fifo/dout_reg[15]/CLK                         0.18              rp-+    default
+  act_ram_reg[171][15]/CLK                              0.38      0.20    rp-+    default
+
+  u_input_fifo/dout_reg[14]/CLK                         0.18              rp-+    default
+  act_ram_reg[234][14]/CLK                              0.38      0.20    rp-+    default
+
+---------------------------------------------------------------------------------------------------
+1

@@ -1,0 +1,88 @@
+****************************************
+Report : clock timing
+        -type skew
+        -nworst 20
+        -setup
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Mon May 11 11:48:53 2026
+****************************************
+
+  Mode: default
+  Clock: clk
+
+  Clock Pin                                          Latency      Skew             Corner
+---------------------------------------------------------------------------------------------------
+  gen_mac_lanes[5].u_lane/u_mac/product_r_reg[9]/CLK
+                                                        0.24              rp-+    default
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[22]/CLK         0.12      0.12    rp-+    default
+
+  gen_mac_lanes[5].u_lane/u_mac/product_r_reg[9]/CLK
+                                                        0.24              rp-+    default
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[21]/CLK         0.12      0.12    rp-+    default
+
+  gen_mac_lanes[5].u_lane/u_mac/product_r_reg[11]/CLK
+                                                        0.24              rp-+    default
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[21]/CLK         0.12      0.12    rp-+    default
+
+  gen_mac_lanes[5].u_lane/u_mac/product_r_reg[11]/CLK
+                                                        0.24              rp-+    default
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[22]/CLK         0.12      0.12    rp-+    default
+
+  gen_mac_lanes[5].u_lane/u_mac/product_r_reg[12]/CLK
+                                                        0.24              rp-+    default
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[22]/CLK         0.12      0.12    rp-+    default
+
+  gen_mac_lanes[5].u_lane/u_mac/product_r_reg[12]/CLK
+                                                        0.24              rp-+    default
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[21]/CLK         0.12      0.12    rp-+    default
+
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[11]/CLK         0.24              rp-+    default
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[21]/CLK         0.12      0.12    rp-+    default
+
+  gen_mac_lanes[5].u_lane/u_mac/product_r_reg[13]/CLK
+                                                        0.24              rp-+    default
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[21]/CLK         0.12      0.12    rp-+    default
+
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[11]/CLK         0.24              rp-+    default
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[22]/CLK         0.12      0.12    rp-+    default
+
+  gen_mac_lanes[5].u_lane/u_mac/product_r_reg[13]/CLK
+                                                        0.24              rp-+    default
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[22]/CLK         0.12      0.12    rp-+    default
+
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[3]/CLK          0.24              rp-+    default
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[21]/CLK         0.12      0.12    rp-+    default
+
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[3]/CLK          0.24              rp-+    default
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[22]/CLK         0.12      0.12    rp-+    default
+
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[8]/CLK          0.24              rp-+    default
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[22]/CLK         0.12      0.12    rp-+    default
+
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[8]/CLK          0.24              rp-+    default
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[21]/CLK         0.12      0.12    rp-+    default
+
+  gen_mac_lanes[5].u_lane/u_mac/product_r_reg[10]/CLK
+                                                        0.24              rp-+    default
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[22]/CLK         0.12      0.12    rp-+    default
+
+  gen_mac_lanes[5].u_lane/u_mac/product_r_reg[10]/CLK
+                                                        0.24              rp-+    default
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[21]/CLK         0.12      0.12    rp-+    default
+
+  gen_mac_lanes[5].u_lane/u_mac/product_r_reg[14]/CLK
+                                                        0.24              rp-+    default
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[21]/CLK         0.12      0.12    rp-+    default
+
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[2]/CLK          0.24              rp-+    default
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[22]/CLK         0.12      0.12    rp-+    default
+
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[0]/CLK          0.24              rp-+    default
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[22]/CLK         0.12      0.12    rp-+    default
+
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[0]/CLK          0.24              rp-+    default
+  gen_mac_lanes[5].u_lane/u_mac/acc_reg[21]/CLK         0.12      0.12    rp-+    default
+
+---------------------------------------------------------------------------------------------------
+1

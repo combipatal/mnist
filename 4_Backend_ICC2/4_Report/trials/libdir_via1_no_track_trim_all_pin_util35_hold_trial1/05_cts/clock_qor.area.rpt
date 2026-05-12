@@ -1,0 +1,100 @@
+Information: The value of option cts.compile.enable_cell_relocation has been overridden to "leaf_only" to support latency-driven placement. (CTS-973)
+****************************************
+Report : report clock qor
+        -type area
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Tue May 12 20:44:23 2026
+****************************************
+
+
+==========================
+==== Area (per clock) ====
+==========================
+
+Clock                                 Sinks          Clock          Clock          Clock          Clock          Sinks           Sink
+                                 (balanced)     Cell Count        Stdcell       Repeater       Repeater     (physical)        Stdcell          Macro
+                                                (non sink)           Area          Count           Area                          Area           Area
+------------------------------------------------------------------------------------------------------------------------------------------------------
+clk                                   39659           1062        3819.53           1062        3819.53          39659      284539.11           0.00
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                 39659           1062        3819.53           1062        3819.53          39659      284539.11           0.00
+
+Type                               Instance           Unit          Total           Cell             Vt             Vt
+                                      Count           Area           Area           Type          Group           Type
+
+
+=================================
+==== Area (per library cell) ====
+=================================
+
+===== Summary =====
+Type                               Instance           Unit          Total           Cell             Vt             Vt
+                                      Count           Area           Area           Type          Group           Type
+------------------------------------------------------------------------------------------------------------------------
+Clock Repeaters                        1062              -        3819.53              -              -              -
+Other Network Cells                       0              -           0.00              -              -              -
+Standard Cell Sinks                   39659              -      284539.11              -              -              -
+Macro Cells                               0              -           0.00              -              -              -
+
+===== Clock Repeaters =====
+Type                               Instance           Unit          Total           Cell             Vt             Vt
+                                      Count           Area           Area           Type          Group           Type
+------------------------------------------------------------------------------------------------------------------------
+IBUFFX8_RVT                               4           4.32          17.28       Inverter saed32cell_svt              -
+IBUFFX16_RVT                              1           6.61           6.61       Inverter saed32cell_svt              -
+IBUFFX32_RVT                              2          11.69          23.38       Inverter saed32cell_svt              -
+INVX2_RVT                                12           1.52          18.30       Inverter saed32cell_svt              -
+INVX4_RVT                                20           2.03          40.66       Inverter saed32cell_svt              -
+INVX8_RVT                               764           3.05        2329.99       Inverter saed32cell_svt              -
+INVX16_RVT                               62           5.08         315.14       Inverter saed32cell_svt              -
+INVX32_RVT                               37           9.15         338.52       Inverter saed32cell_svt              -
+NBUFFX2_RVT                               3           2.03           6.10         Buffer saed32cell_svt              -
+NBUFFX4_RVT                              24           2.54          60.99         Buffer saed32cell_svt              -
+NBUFFX8_RVT                              95           3.81         362.16         Buffer saed32cell_svt              -
+NBUFFX16_RVT                             23           6.10         140.29         Buffer saed32cell_svt              -
+NBUFFX32_RVT                             15          10.67         160.11         Buffer saed32cell_svt              -
+------------------------------------------------------------------------------------------------------------------------
+Total                                  1062              -        3819.53              -              -              -
+
+===== Other Network Cells =====
+Type                               Instance           Unit          Total           Cell             Vt             Vt
+                                      Count           Area           Area           Type          Group           Type
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+Total                                     0              -           0.00              -              -              -
+
+===== Standard Cell Sinks =====
+Type                               Instance           Unit          Total           Cell             Vt             Vt
+                                      Count           Area           Area           Type          Group           Type
+------------------------------------------------------------------------------------------------------------------------
+DFFARX1_RVT                           32859           7.12      233825.70           Flop saed32cell_svt              -
+DFFARX2_RVT                            5439           7.62       41468.68           Flop saed32cell_svt              -
+DFFASX2_RVT                               1           7.62           7.62           Flop saed32cell_svt              -
+DFFX1_RVT                               867           6.61        5728.91           Flop saed32cell_svt              -
+DFFX2_RVT                               493           7.12        3508.20           Flop saed32cell_svt              -
+------------------------------------------------------------------------------------------------------------------------
+Total                                 39659              -      284539.11              -              -              -
+
+===== Macro Cells =====
+Type                               Instance           Unit          Total           Cell             Vt             Vt
+                                      Count           Area           Area           Type          Group           Type
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+Total                                     0              -           0.00              -              -              -
+
+
+
+==============================
+==== Area (per hierarchy) ====
+==============================
+
+Hierarchy                             Sinks          Clock          Clock          Clock          Clock          Sinks           Sink
+                                 (balanced)     Cell Count        Stdcell       Repeater       Repeater     (physical)        Stdcell          Macro
+                                                (non sink)           Area          Count           Area                          Area           Area
+------------------------------------------------------------------------------------------------------------------------------------------------------
+nn_top                                39659           1062        3819.53           1062        3819.53          39659      284539.11           0.00
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                 39659           1062        3819.53           1062        3819.53          39659      284539.11           0.00
+
+1

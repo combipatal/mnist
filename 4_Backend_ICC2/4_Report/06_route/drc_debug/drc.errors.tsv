@@ -1,0 +1,739 @@
+id	type_name	layers	bbox	objects	actual_spacing	required_spacing	required_width	brief_info	verbose_info	status
+0	Diff net spacing	M1	{1019.4470 31.7760} {1019.5210 31.9360}	n129732,VSS						error
+1	Diff net spacing	M2	{1019.4940 31.7450} {1019.6380 31.8150}	n129732,VSS						error
+2	Short	M1	{301.5050 51.8700} {301.6550 51.9950}	ZBUF_1014_125						error
+3	Diff net spacing	M1	{779.4390 51.5360} {779.5130 51.6960}	ZBUF_805_3006,VSS						error
+4	Diff net spacing	M2	{779.4940 51.6570} {779.6300 51.7270}	ZBUF_805_3006,VSS						error
+5	Short	M1	{541.5130 81.9660} {541.6630 82.0910}	ZBUF_619_2995						error
+6	Short	M1	{301.5050 91.9730} {301.6550 92.1230}	ZBUF_878_1618						error
+7	Short	M1	{300.2130 105.5090} {300.3630 105.6590}	ZBUF_928_3298,VSS						error
+8	Short	M1	{300.3650 111.8800} {300.5150 112.0400}	ZBUF_928_3298,VSS						error
+9	Short	M1	{541.5130 115.4060} {541.6630 115.5310}	ZBUF_528_3124						error
+10	Diff net spacing	M1	{259.4470 118.7200} {259.5210 118.8800}	ZBUF_977_2400,VSS						error
+11	Diff net spacing	M2	{259.4940 118.6890} {259.6380 118.7590}	ZBUF_977_2400,VSS						error
+12	Short	M1	{301.5050 125.1090} {301.6550 125.2340}	ZBUF_929_1986						error
+13	Short	M1	{781.5210 138.8140} {781.6710 138.9390}	ZBUF_800_3521						error
+14	Short	M1	{780.2290 148.9810} {780.3790 149.1310}	ZBUF_252_3520,VSS						error
+15	Diff net spacing	M1	{1019.4470 148.5120} {1019.5210 148.6720}	ZBUF_786_1064,VSS						error
+16	Diff net spacing	M2	{1019.4940 148.6330} {1019.6380 148.7030}	ZBUF_786_1064,VSS						error
+17	Diff net spacing	M1	{779.4390 178.6080} {779.5130 178.7680}	ZBUF_698_3203,VSS						error
+18	Diff net spacing	M2	{779.4940 178.7290} {779.6300 178.7990}	ZBUF_698_3203,VSS						error
+19	Short	M1	{1061.5050 192.3180} {1061.6550 192.4430}	ZBUF_1087_158						error
+20	Diff net spacing	M1	{499.4550 205.3600} {499.5290 205.5200}	n130143,VSS						error
+21	Diff net spacing	M2	{499.4940 205.4810} {499.6460 205.5510}	n130143,VSS						error
+22	Diff net spacing	M1	{779.4390 229.0720} {779.5130 229.2320}	ZBUF_834_3006,VSS						error
+23	Diff net spacing	M2	{779.4940 229.0410} {779.6300 229.1110}	ZBUF_834_3006,VSS						error
+24	Diff net spacing	M1	{499.4550 245.4880} {499.5290 245.6480}	ZBUF_612_2812,VSS						error
+25	Diff net spacing	M2	{499.4940 245.6090} {499.6460 245.6790}	ZBUF_612_2812,VSS						error
+26	Short	M1	{301.5050 255.5250} {301.6550 255.6500}	ZBUF_742_1043						error
+27	Diff net spacing	M1	{779.4390 252.4800} {779.5130 252.6400}	ZBUF_791_2401,VSS						error
+28	Diff net spacing	M2	{779.4940 252.4490} {779.6300 252.5190}	ZBUF_791_2401,VSS						error
+29	Short	M1	{301.5050 265.5570} {301.6550 265.6820}	ZBUF_699_127						error
+30	Diff net spacing	M1	{779.4390 265.5520} {779.5130 265.7120}	n130480,VSS						error
+31	Diff net spacing	M2	{779.4940 265.6730} {779.6300 265.7430}	n130480,VSS						error
+32	Short	M1	{1061.5050 272.5740} {1061.6550 272.6990}	ZBUF_622_3251						error
+33	Diff net spacing	M1	{499.4550 279.2320} {499.5290 279.3920}	ZBUF_587_3192,VSS						error
+34	Diff net spacing	M2	{499.4940 279.2010} {499.6460 279.2710}	ZBUF_587_3192,VSS						error
+35	Diff net spacing	M1	{259.4470 339.4240} {259.5210 339.5840}	ZBUF_890_2384,VSS						error
+36	Diff net spacing	M2	{259.4940 339.3930} {259.6380 339.4630}	ZBUF_890_2384,VSS						error
+37	Diff net spacing	M1	{259.4470 342.4640} {259.5210 342.6240}	ZBUF_611_3246,VSS						error
+38	Diff net spacing	M2	{259.4940 342.5850} {259.6380 342.6550}	ZBUF_611_3246,VSS						error
+39	Short	M1	{781.5210 372.8940} {781.6710 373.0190}	ZBUF_827_2401						error
+40	Diff net spacing	M1	{1019.4470 375.9040} {1019.5210 376.0640}	ZBUF_865_1713,VSS						error
+41	Diff net spacing	M2	{1019.4940 376.0250} {1019.6380 376.0950}	ZBUF_865_1713,VSS						error
+42	Diff net spacing	M1	{1019.4470 392.9280} {1019.5210 393.0880}	ZBUF_865_1713,VSS						error
+43	Diff net spacing	M2	{1019.4940 392.8970} {1019.6380 392.9670}	ZBUF_865_1713,VSS						error
+44	Short	M1	{781.5210 412.6930} {781.6710 412.8180}	ZBUF_755_1643						error
+45	Short	M1	{781.5210 439.4450} {781.6710 439.5700}	ZBUF_667_3521						error
+46	Short	M1	{781.5210 469.5410} {781.6710 469.6660}	ZBUF_772_286						error
+47	Diff net spacing	M1	{779.4390 469.8400} {779.5130 470.0000}	ZBUF_797_3017,VSS						error
+48	Diff net spacing	M2	{779.4940 469.8090} {779.6300 469.8790}	ZBUF_797_3017,VSS						error
+49	Off-grid	VIA1	{884.5240 470.2750} {884.5740 470.4770}	n93096						error
+50	Short	M1	{1061.5050 466.1970} {1061.6550 466.3220}	ZBUF_836_2150						error
+51	Short	M1	{541.5130 506.6540} {541.6630 506.7790}	ZBUF_498_1949						error
+52	Off-grid	M1	{549.0570 507.4340} {549.1670 507.4940}	n86807						error
+53	Off-grid	M1	{549.6650 507.2820} {549.7750 507.3420}	n131259						error
+54	Needs fat contact	M1,M2	{93.0820 515.7690} {93.1420 515.8790}	n76744						error
+55	Diff net spacing	M1	{560.5840 519.3420} {560.7440 519.4250}	n131576						error
+56	Diff net spacing	M1	{81.7840 527.1190} {81.9440 527.2020}	n76559						error
+57	Diff net spacing	M1	{80.5680 527.1190} {80.7280 527.2020}	n76581						error
+58	Short	M1	{541.5130 523.0450} {541.6630 523.1700}	ZBUF_498_1949						error
+59	Diff net spacing	M1	{43.0240 532.7180} {43.1840 532.8010}	n59463						error
+60	Needs fat contact	M1,M2	{137.6180 532.4890} {137.6780 532.5990}	n48638						error
+61	Off-grid	M2	{196.6940 539.2780} {196.8040 539.4900}	n82931						error
+62	Off-grid	VIA1	{196.7240 539.2830} {196.7740 539.4850}	n82931						error
+63	Diff net spacing	M1	{216.0000 532.7180} {216.1600 532.8010}	n83288						error
+64	Off-grid	M1	{498.7450 534.0340} {498.8550 534.0940}	n68514						error
+65	Needs fat contact	M1,M2	{93.9940 552.5530} {94.0540 552.6630}	n76162						error
+66	Needs fat contact	M1,M2	{132.6020 549.2090} {132.6620 549.3190}	n48887						error
+67	Needs fat contact	M1,M2	{133.0580 550.7290} {133.1180 550.8390}	n48975						error
+68	Diff net spacing	M1	{139.3670 553.1360} {139.4350 553.2960}	n48655,VSS						error
+69	Diff net spacing	M1	{223.7520 550.5270} {223.9120 550.6100}	n82932						error
+70	Needs fat contact	M1,M2	{87.6100 559.2410} {87.6700 559.3510}	n138000						error
+71	Needs fat contact	M1,M2	{114.9700 567.4490} {115.0300 567.5590}	n49119						error
+72	Off-grid	M1	{406.1770 564.1300} {406.2870 564.1900}	n84305						error
+73	Short	M1	{780.2290 556.3250} {780.3790 556.4750}	n130068,VSS						error
+74	Needs fat contact	M1,M2	{170.6020 575.9610} {170.6620 576.0710}	n82565						error
+75	Diff net spacing	M1	{190.0080 569.5020} {190.1680 569.5850}	ZBUF_1554_152						error
+76	Diff net spacing	M1	{199.2800 573.9350} {199.4400 574.0180}	n132783						error
+77	Diff net spacing	M1	{209.7680 573.9350} {209.9280 574.0180}	n83340						error
+78	Diff net spacing	M1	{212.3520 572.8460} {212.5120 572.9290}	n83340						error
+79	Diff net spacing	M1	{215.2400 573.9350} {215.4000 574.0180}	ZBUF_363_1973						error
+80	Diff net spacing	M1	{219.1920 576.1900} {219.3520 576.2730}	n83049						error
+81	Diff net spacing	M1	{216.3040 576.1900} {216.4640 576.2730}	n83340						error
+82	Diff net spacing	M1	{216.0000 577.2790} {216.1600 577.3620}	ZBUF_363_1973						error
+83	Diff net spacing	M1	{217.2160 577.2790} {217.3760 577.3620}	ZBUF_363_1973						error
+84	Off-grid	M2	{248.5760 573.9090} {248.6360 574.1710}	n82275						error
+85	Off-grid	VIA1	{248.5810 573.9390} {248.6310 574.1410}	n82275						error
+86	Needs fat contact	M1,M2	{258.9140 572.6170} {258.9740 572.7270}	n82234						error
+87	Off-grid	M2	{254.3020 573.9340} {254.4120 574.1460}	n83460						error
+88	Off-grid	VIA1	{254.3320 573.9390} {254.3820 574.1410}	n83460						error
+89	Diff net spacing	M1	{288.2000 572.8460} {288.3600 572.9290}	ZBUF_66_1597						error
+90	Diff net spacing	M1	{284.7040 576.1900} {284.8640 576.2730}	ZBUF_87_1967						error
+91	Off-grid	M2	{297.3680 580.5970} {297.4280 580.8590}	n45967						error
+92	Off-grid	VIA1	{297.3730 580.6270} {297.4230 580.8290}	n45967						error
+93	Diff net spacing	M1	{293.5200 576.1900} {293.6800 576.2730}	n131444						error
+94	Diff net spacing	M1	{309.1760 580.6230} {309.3360 580.7060}	n46329						error
+95	Off-grid	M1	{512.7290 570.8180} {512.8390 570.8780}	n68970						error
+96	Off-grid	M2	{83.7580 590.6540} {83.8680 590.8660}	n76170						error
+97	Off-grid	VIA1	{83.7880 590.6590} {83.8380 590.8610}	n76170						error
+98	Diff net spacing	M1	{113.0960 587.3110} {113.2560 587.3940}	ZBUF_2849_95						error
+99	Diff net spacing	M1	{127.8400 590.6550} {128.0000 590.7380}	ZBUF_124_1972						error
+100	Diff net spacing	M1	{121.0000 590.6550} {121.1600 590.7380}	ZBUF_487_2809						error
+101	Diff net spacing	M1	{214.9360 582.8780} {215.0960 582.9610}	n132623						error
+102	Diff net spacing	M1	{218.7360 586.2220} {218.8960 586.3050}	n83615						error
+103	Diff net spacing	M1	{219.1920 582.8780} {219.3520 582.9610}	n132722						error
+104	Diff net spacing	M1	{239.2560 582.8780} {239.4160 582.9610}	n87084						error
+105	Needs fat contact	M1,M2	{279.1300 580.8250} {279.1900 580.9350}	n54491						error
+106	Off-grid	M1	{560.6090 584.1940} {560.7190 584.2540}	n84371						error
+107	Diff net spacing	M1	{21.2880 604.0310} {21.4480 604.1140}	n24267						error
+108	Diff net spacing	M1	{27.0640 600.6870} {27.2240 600.7700}	n24192						error
+109	Off-grid	M2	{83.0480 602.7890} {83.1080 603.0510}	n76133						error
+110	Off-grid	VIA1	{83.0530 602.8190} {83.1030 603.0210}	n76133						error
+111	Diff net spacing	M1	{90.7520 592.9100} {90.9120 592.9930}	ZBUF_6090_3588						error
+112	Diff net spacing	M1	{104.2800 599.5980} {104.4400 599.6810}	n132716						error
+113	Diff net spacing	M1	{103.2160 592.9100} {103.3760 592.9930}	ZBUF_487_2809						error
+114	Diff net spacing	M1	{246.0960 596.2540} {246.2560 596.3370}	n87028						error
+115	Needs fat contact	M1,M2	{265.9060 604.2330} {265.9660 604.3430}	ZBUF_1664_2373						error
+116	Needs fat contact	M1,M2	{273.8100 604.2330} {273.8700 604.3430}	n60730						error
+117	Diff net spacing	M1	{297.1680 597.3430} {297.3280 597.4260}	n132909						error
+118	Diff net spacing	M1	{311.3040 596.2540} {311.4640 596.3370}	n45993						error
+119	Off-grid	M2	{304.0060 597.3420} {304.1160 597.5540}	n46122						error
+120	Off-grid	VIA1	{304.0360 597.3470} {304.0860 597.5490}	n46122						error
+121	Off-grid	M1	{481.2650 602.8900} {481.3750 602.9500}	n62517						error
+122	Off-grid	M1	{481.4170 602.7380} {481.5270 602.7980}	n62518						error
+123	Off-grid	M1	{482.1770 595.8980} {482.2870 595.9580}	n62522						error
+124	Off-grid	M2	{20.5260 616.1900} {20.6360 616.4020}	n24217						error
+125	Off-grid	VIA1	{20.5560 616.1950} {20.6060 616.3970}	n24217						error
+126	Off-grid	M2	{70.6860 612.8460} {70.7960 613.0580}	n52407						error
+127	Off-grid	VIA1	{70.7160 612.8510} {70.7660 613.0530}	n52407						error
+128	Diff net spacing	M1	{82.6960 609.6300} {82.8560 609.7130}	ZBUF_346_116						error
+129	Needs fat contact	M1,M2	{143.8500 607.5770} {143.9100 607.6870}	n40120						error
+130	Diff net spacing	M1	{167.6640 607.3750} {167.8240 607.4580}	n87411						error
+131	Needs fat contact	M1,M2	{263.0180 609.4010} {263.0780 609.5110}	ZBUF_114_2371						error
+132	Diff net spacing	M1	{303.0960 616.3180} {303.2560 616.4010}	n45991						error
+133	Diff net spacing	M1	{301.2720 614.0630} {301.4320 614.1460}	ZBUF_204_3536						error
+134	Diff net spacing	M1	{315.2560 606.2860} {315.4160 606.3690}	n46152						error
+135	Diff net spacing	M1	{363.8960 607.3750} {364.0560 607.4580}	n68018						error
+136	Off-grid	M1	{420.4650 606.2340} {420.5750 606.2940}	n60022						error
+137	Diff net spacing	M3	{479.7070 608.3960} {480.2930 608.5470}	n62493,VDD						error
+138	Off-grid	M1	{474.7590 605.7830} {474.9480 605.9160}	n62518						error
+139	Off-grid	M1	{513.7930 606.0820} {513.9030 606.1420}	n62044						error
+140	Needs fat contact	M1,M2	{541.0260 609.4010} {541.0860 609.5110}	n131574						error
+141	Off-grid	M1	{569.4250 612.6180} {569.5350 612.6780}	gen_mac_lanes[13].u_lane/u_mac/product_r[28]						error
+142	Off-grid	M1	{569.5770 612.7700} {569.6870 612.8300}	n60530						error
+143	Needs fat contact	M1,M2	{51.2820 626.1210} {51.3420 626.2310}	ZBUF_1297_1961						error
+144	Off-grid	M2	{73.8780 626.2220} {73.9880 626.4340}	n52337						error
+145	Off-grid	VIA1	{73.9080 626.2270} {73.9580 626.4290}	n52337						error
+146	Off-grid	M2	{81.3260 627.4380} {81.4360 627.6500}	n52344						error
+147	Off-grid	VIA1	{81.3560 627.4430} {81.4060 627.6450}	n52344						error
+148	Needs fat contact	M1,M2	{118.7700 622.7770} {118.8300 622.8870}	n39973						error
+149	Diff net spacing	M1	{221.7760 626.3500} {221.9360 626.4330}	n131478						error
+150	Diff net spacing	M1	{313.7360 623.0060} {313.8960 623.0890}	n55381						error
+151	Needs fat contact	M1,M2	{355.2820 620.9530} {355.3420 621.0630}	n132824						error
+152	Needs fat contact	M1,M2	{353.3060 626.1210} {353.3660 626.2310}	n132830						error
+153	Diff net spacing	M1	{370.1280 620.7510} {370.2880 620.8340}	n67928						error
+154	Short	M1	{1061.5050 623.3650} {1061.6550 623.4900}	ZBUF_690_3251						error
+155	Needs fat contact	M1,M2	{61.6180 629.4650} {61.6780 629.5750}	ZBUF_308_3290						error
+156	Needs fat contact	M1,M2	{75.4500 636.1530} {75.5100 636.2630}	ZBUF_864_2371						error
+157	Needs fat contact	M1,M2	{106.0020 630.9850} {106.0620 631.0950}	ZBUF_1169_1966						error
+158	Needs fat contact	M1,M2	{107.9780 632.8090} {108.0380 632.9190}	ZBUF_168_99						error
+159	Needs fat contact	M1,M2	{111.6260 634.3290} {111.6860 634.4390}	ZBUF_1468_1593						error
+160	Less than minimum area	M2	{111.6260 634.3290} {111.6860 634.4390}	ZBUF_1468_1593						error
+161	Diff net spacing	M1	{121.3040 637.4710} {121.4640 637.5540}	n40277						error
+162	Diff net spacing	M1	{122.8240 640.8150} {122.9840 640.8980}	n132668						error
+163	Off-grid	M2	{163.7100 637.4700} {163.8200 637.6820}	n85333						error
+164	Off-grid	VIA1	{163.7400 637.4750} {163.7900 637.6770}	n85333						error
+165	Diff net spacing	M1	{176.9360 637.4710} {177.0960 637.5540}	n85237						error
+166	Diff net spacing	M1	{172.8320 633.0380} {172.9920 633.1210}	ZBUF_867_1029						error
+167	Needs fat contact	M1,M2	{242.6500 629.4650} {242.7100 629.5750}	n87001						error
+168	Needs fat contact	M1,M2	{244.4740 630.9850} {244.5340 631.0950}	n132824						error
+169	Needs fat contact	M1,M2	{256.0260 629.4650} {256.0860 629.5750}	n132830						error
+170	Needs fat contact	M1,M2	{254.8100 632.8090} {254.8700 632.9190}	n132934						error
+171	Needs fat contact	M1,M2	{254.2020 630.9850} {254.2620 631.0950}	ZBUF_1664_2373						error
+172	Diff net spacing	M1	{280.7520 640.8150} {280.9120 640.8980}	n134008						error
+173	Needs fat contact	M1,M2	{299.3460 629.4650} {299.4060 629.5750}	n135555						error
+174	Diff net spacing	M1	{319.2080 636.3820} {319.3680 636.4650}	n61843						error
+175	Needs fat contact	M1,M2	{350.4180 629.4650} {350.4780 629.5750}	n132830						error
+176	Needs fat contact	M1,M2	{353.6100 634.3290} {353.6700 634.4390}	ZBUF_9192_102						error
+177	Needs fat contact	M1,M2	{359.2340 632.8090} {359.2940 632.9190}	ZBUF_167_1020						error
+178	Needs fat contact	M1,M2	{351.7860 632.8090} {351.8460 632.9190}	ZBUF_209_2800						error
+179	Diff net spacing	M1	{57.0080 643.0700} {57.1680 643.1530}	ZBUF_773_96						error
+180	Diff net spacing	M1	{62.6320 644.1590} {62.7920 644.2420}	n52317						error
+181	Needs fat contact	M1,M2	{99.3140 642.8410} {99.3740 642.9510}	ZBUF_6046_1593						error
+182	Needs fat contact	M1,M2	{112.0820 647.7050} {112.1420 647.8150}	ZBUF_562_1597						error
+183	Needs fat contact	M1,M2	{164.9780 649.5290} {165.0380 649.6390}	n85161						error
+184	Off-grid	VIA1	{204.0200 650.8510} {204.0700 651.0530}	n85143						error
+185	Off-grid	M2	{203.9900 650.8460} {204.1000 651.0580}	n85143						error
+186	Off-grid	VIA1	{269.5320 647.5070} {269.5820 647.7090}	n84988						error
+187	Off-grid	M2	{269.5020 647.5020} {269.6120 647.7140}	n84988						error
+188	Diff net spacing	M1	{269.6560 650.8470} {269.8160 650.9300}	n85698						error
+189	Needs fat contact	M1,M2	{287.7940 649.5290} {287.8540 649.6390}	n132749						error
+190	Needs fat contact	M1,M2	{286.5780 649.5290} {286.6380 649.6390}	ZBUF_5064_3189						error
+191	Needs fat contact	M1,M2	{289.1620 642.8410} {289.2220 642.9510}	ZBUF_63_2987						error
+192	Diff net spacing	M1	{309.1760 644.1590} {309.3360 644.2420}	n132716						error
+193	Diff net spacing	M1	{300.9680 650.8470} {301.1280 650.9300}	ZBUF_5320_3189						error
+194	Diff net spacing	M1	{356.1440 643.0700} {356.3040 643.1530}	n131416						error
+195	Diff net spacing	M1	{358.5760 653.1020} {358.7360 653.1850}	ZBUF_23_1615						error
+196	Off-grid	M1	{426.3930 647.7300} {426.5030 647.7900}	n76998						error
+197	Off-grid	M1	{501.9370 642.8660} {502.0470 642.9260}	n57905						error
+198	Diff net spacing	M1	{536.7200 650.8470} {536.8800 650.9300}	n125064						error
+199	Diff net spacing	M1	{550.8560 647.5030} {551.0160 647.5860}	n125147						error
+200	Needs fat contact	M1,M2	{172.1220 656.2170} {172.1820 656.3270}	n85108						error
+201	Needs fat contact	M1,M2	{198.5700 661.0810} {198.6300 661.1910}	n84750						error
+202	Diff net spacing	M1	{222.3840 664.2230} {222.5440 664.3060}	n135455						error
+203	Diff net spacing	M1	{219.1920 660.8790} {219.3520 660.9620}	n138309						error
+204	Diff net spacing	M1	{219.1920 664.2230} {219.3520 664.3060}	ZBUF_562_1597						error
+205	Diff net spacing	M1	{222.0800 660.8790} {222.2400 660.9620}	ZBUF_5_2802						error
+206	Diff net spacing	M1	{244.8800 654.1910} {245.0400 654.2740}	n85040						error
+207	Needs fat contact	M1,M2	{263.9300 664.4250} {263.9900 664.5350}	n85063						error
+208	Needs fat contact	M1,M2	{276.8500 661.0810} {276.9100 661.1910}	n131442						error
+209	Diff net spacing	M1	{298.5360 659.7900} {298.6960 659.8730}	n132696						error
+210	Diff net spacing	M1	{300.6640 659.7900} {300.8240 659.8730}	n132851						error
+211	Diff net spacing	M1	{296.8640 654.1910} {297.0240 654.2740}	ZBUF_1387_3288						error
+212	Diff net spacing	M1	{297.3200 659.7900} {297.4800 659.8730}	ZBUF_1387_3288						error
+213	Diff net spacing	M1	{297.7760 657.5350} {297.9360 657.6180}	ZBUF_701_3329						error
+214	Diff net spacing	M1	{301.7280 656.4460} {301.8880 656.5290}	n132851						error
+215	Diff net spacing	M1	{303.8560 660.8790} {304.0160 660.9620}	ZBUF_5320_3189						error
+216	Diff net spacing	M1	{354.1680 654.1910} {354.3280 654.2740}	ZBUF_201_1593						error
+217	Diff net spacing	M1	{367.6960 656.4460} {367.8560 656.5290}	n22795						error
+218	Diff net spacing	M1	{373.6240 660.8790} {373.7840 660.9620}	n22818						error
+219	Needs fat contact	M1,M2	{551.3620 664.4250} {551.4220 664.5350}	n125109						error
+220	Off-grid	M1	{584.3210 660.9540} {584.4310 661.0140}	n77737						error
+221	Off-grid	M1	{583.4090 661.2580} {583.5190 661.3180}	n77738						error
+222	Off-grid	M1	{583.4390 661.2680} {583.6150 661.3180}	n77738						error
+223	Off-grid	M1	{583.8650 661.1060} {583.9750 661.1660}	n131211						error
+224	Needs fat contact	M1,M2	{45.0500 667.7690} {45.1100 667.8790}	n56826						error
+225	Needs fat contact	M1,M2	{55.0820 677.8010} {55.1420 677.9110}	n132623						error
+226	Diff net spacing	M1	{65.5200 666.4780} {65.6800 666.5610}	n132922						error
+227	Diff net spacing	M1	{64.3040 666.4780} {64.4640 666.5610}	ZBUF_2903_3244						error
+228	Diff net spacing	M1	{66.8880 667.5670} {67.0480 667.6500}	n132862						error
+229	Diff net spacing	M1	{66.8880 676.5100} {67.0480 676.5930}	ZBUF_134_1588						error
+230	Diff net spacing	M1	{67.8000 674.2550} {67.9600 674.3380}	ZBUF_308_3290						error
+231	Diff net spacing	M1	{114.7680 667.5670} {114.9280 667.6500}	n131410						error
+232	Needs fat contact	M1,M2	{166.9540 674.4570} {167.0140 674.5670}	n85294						error
+233	Needs fat contact	M1,M2	{157.6820 677.8010} {157.7420 677.9110}	ZBUF_919_2987						error
+234	Diff net spacing	M1	{211.8960 673.1660} {212.0560 673.2490}	ZBUF_69_1023						error
+235	Diff net spacing	M1	{224.6640 674.2550} {224.8240 674.3380}	ZBUF_98_1602						error
+236	Diff net spacing	M1	{282.7280 673.1660} {282.8880 673.2490}	ZBUF_919_2987						error
+237	Diff net spacing	M1	{303.7040 667.5670} {303.8640 667.6500}	ZBUF_860_2987						error
+238	Needs fat contact	M1,M2	{341.1460 677.8010} {341.2060 677.9110}	n80409						error
+239	Off-grid	M2	{358.7760 673.0130} {358.8360 673.2750}	n23005						error
+240	Off-grid	VIA1	{358.7810 673.0430} {358.8310 673.2450}	n23005						error
+241	Needs fat contact	M1,M2	{352.0900 677.8010} {352.1500 677.9110}	n131469						error
+242	Diff net spacing	M1	{377.1200 674.2550} {377.2800 674.3380}	n22708						error
+243	Off-grid	M2	{32.0780 687.6300} {32.1880 687.8420}	n56873						error
+244	Off-grid	VIA1	{32.1080 687.6350} {32.1580 687.8370}	n56873						error
+245	Needs fat contact	M1,M2	{31.5220 681.1450} {31.5820 681.2550}	n56904						error
+246	Diff net spacing	M1	{53.3600 687.6310} {53.5200 687.7140}	n132922						error
+247	Diff net spacing	M1	{46.0640 680.9430} {46.2240 681.0260}	ZBUF_189_1022						error
+248	Needs fat contact	M1,M2	{60.7060 689.6570} {60.7660 689.7670}	n57366						error
+249	Diff net spacing	M1	{91.5120 686.5420} {91.6720 686.6250}	n142763						error
+250	Diff net spacing	M1	{109.2960 680.9430} {109.4560 681.0260}	n132733						error
+251	Needs fat contact	M1,M2	{163.1540 679.6250} {163.2140 679.7350}	ZBUF_919_2987						error
+252	Needs fat contact	M1,M2	{164.3700 684.4890} {164.4300 684.5990}	ZBUF_919_2987						error
+253	Needs fat contact	M1,M2	{209.8180 679.6250} {209.8780 679.7350}	n84678						error
+254	Needs fat contact	M1,M2	{209.9700 687.8330} {210.0300 687.9430}	n132838						error
+255	Needs fat contact	M1,M2	{221.9780 684.4890} {222.0380 684.5990}	n132764						error
+256	Needs fat contact	M1,M2	{218.1780 686.3130} {218.2380 686.4230}	ZBUF_550_1597						error
+257	Needs fat contact	M1,M2	{218.7860 687.8330} {218.8460 687.9430}	ZBUF_919_2987						error
+258	Less than minimum area	M2	{218.7860 687.8330} {218.8460 687.9430}	ZBUF_919_2987						error
+259	Needs fat contact	M1,M2	{221.0660 681.1450} {221.1260 681.2550}	ZBUF_17_3195						error
+260	Diff net spacing	M1	{259.3200 687.6310} {259.4800 687.7140}	n132895						error
+261	Diff net spacing	M1	{265.4000 683.1980} {265.5600 683.2810}	n132764						error
+262	Diff net spacing	M1	{301.5760 679.8540} {301.7360 679.9370}	n41545						error
+263	Needs fat contact	M1,M2	{319.2580 687.8330} {319.3180 687.9430}	n30781						error
+264	Needs fat contact	M1,M2	{336.1300 679.6250} {336.1900 679.7350}	n80542						error
+265	Diff net spacing	M1	{347.7840 687.6310} {347.9440 687.7140}	n67111						error
+266	Diff net spacing	M1	{344.5920 680.9430} {344.7520 681.0260}	n80417						error
+267	Needs fat contact	M1,M2	{79.2500 691.1770} {79.3100 691.2870}	n132857						error
+268	Diff net spacing	M1	{110.6640 699.9180} {110.8240 700.0010}	ZBUF_79_1593						error
+269	Diff net spacing	M1	{114.9200 696.5740} {115.0800 696.6570}	ZBUF_87_1605						error
+270	Needs fat contact	M1,M2	{166.3460 693.0010} {166.4060 693.1110}	ZBUF_787_3116						error
+271	Needs fat contact	M1,M2	{172.7300 696.3450} {172.7900 696.4550}	ZBUF_787_3116						error
+272	Diff net spacing	M1	{216.4560 697.6630} {216.6160 697.7460}	n84573						error
+273	Needs fat contact	M1,M2	{220.6100 691.1770} {220.6700 691.2870}	n132749						error
+274	Needs fat contact	M1,M2	{223.3460 691.1770} {223.4060 691.2870}	n132749						error
+275	Diff net spacing	M1	{219.1920 697.6630} {219.3520 697.7460}	n132764						error
+276	Needs fat contact	M1,M2	{239.3060 701.2090} {239.3660 701.3190}	ZBUF_168_3363						error
+277	Needs fat contact	M1,M2	{245.2340 701.2090} {245.2940 701.3190}	n26906						error
+278	Needs fat contact	M1,M2	{242.3460 694.5210} {242.4060 694.6310}	n27304						error
+279	Less than minimum area	M2	{242.3460 694.5210} {242.4060 694.6310}	n27304						error
+280	Needs fat contact	M1,M2	{263.6260 694.5210} {263.6860 694.6310}	n41723						error
+281	Needs fat contact	M1,M2	{266.5140 699.6890} {266.5740 699.7990}	n132696						error
+282	Needs fat contact	M1,M2	{264.8420 699.6890} {264.9020 699.7990}	n132866						error
+283	Needs fat contact	M1,M2	{266.3620 693.0010} {266.4220 693.1110}	ZBUF_3655_1593						error
+284	Needs fat contact	M1,M2	{292.8100 696.3450} {292.8700 696.4550}	n41710						error
+285	Needs fat contact	M1,M2	{302.2340 693.0010} {302.2940 693.1110}	n42858						error
+286	Needs fat contact	M1,M2	{323.0580 701.2090} {323.1180 701.3190}	n30761						error
+287	Diff net spacing	M1	{348.3920 690.9750} {348.5520 691.0580}	n67321						error
+288	Off-grid	M1	{556.5050 701.2340} {556.6150 701.2940}	n49472						error
+289	Off-grid	M1	{557.1130 699.7140} {557.2230 699.7740}	n49475						error
+290	Needs fat contact	M1,M2	{85.9380 703.0330} {85.9980 703.1430}	n37221						error
+291	Needs fat contact	M1,M2	{94.6020 709.7210} {94.6620 709.8310}	n38390						error
+292	Off-grid	M2	{123.2780 706.4780} {123.3880 706.6900}	n73686						error
+293	Off-grid	VIA1	{123.3080 706.4830} {123.3580 706.6850}	n73686						error
+294	Diff net spacing	M1	{209.7680 703.2620} {209.9280 703.3450}	n84605						error
+295	Diff net spacing	M1	{211.8960 703.2620} {212.0560 703.3450}	ZBUF_15_2800						error
+296	Off-grid	VIA1	{234.5720 714.3870} {234.6220 714.5890}	n27122						error
+297	Off-grid	M2	{234.5420 714.3820} {234.6520 714.5940}	n27122						error
+298	Needs fat contact	M1,M2	{304.3620 704.5530} {304.4220 704.6630}	n41579						error
+299	Needs fat contact	M1,M2	{321.8420 707.8970} {321.9020 708.0070}	n30808						error
+300	Needs fat contact	M1,M2	{320.6260 706.3770} {320.6860 706.4870}	n30809						error
+301	Needs fat contact	M1,M2	{325.0340 713.0650} {325.0940 713.1750}	n30823						error
+302	Off-grid	VIA1	{326.2530 713.1710} {326.3030 713.3730}	n30943						error
+303	Off-grid	M2	{326.2480 713.1410} {326.3080 713.4030}	n30943						error
+304	Off-grid	M2	{340.6880 703.1090} {340.7480 703.3710}	n30764						error
+305	Off-grid	VIA1	{340.6930 703.1390} {340.7430 703.3410}	n30764						error
+306	Diff net spacing	M1	{371.3440 703.2620} {371.5040 703.3450}	n67430						error
+307	Off-grid	M2	{380.3640 704.3500} {380.4740 704.5620}	n67201						error
+308	Off-grid	VIA1	{380.3940 704.3550} {380.4440 704.5570}	n67201						error
+309	Off-grid	M1	{571.7050 711.2660} {571.8150 711.3260}	n49611						error
+310	Needs fat contact	M1,M2	{45.6580 726.4410} {45.7180 726.5510}	n37435						error
+311	Needs fat contact	M1,M2	{68.0020 721.2730} {68.0620 721.3830}	n37555						error
+312	Needs fat contact	M1,M2	{70.7380 726.4410} {70.7980 726.5510}	ZBUF_1592_3591						error
+313	Diff net spacing	M1	{202.7760 716.6380} {202.9360 716.7210}	n137485						error
+314	Needs fat contact	M1,M2	{261.3460 721.2730} {261.4060 721.3830}	n70424						error
+315	Needs fat contact	M1,M2	{266.3620 714.5850} {266.4220 714.6950}	ZBUF_144_1588						error
+316	Needs fat contact	M1,M2	{271.5300 717.9290} {271.5900 718.0390}	ZBUF_83_3538						error
+317	Off-grid	M2	{279.2840 716.5100} {279.3940 716.7220}	n69294						error
+318	Off-grid	VIA1	{279.3140 716.5150} {279.3640 716.7170}	n69294						error
+319	Needs fat contact	M1,M2	{290.8340 721.2730} {290.8940 721.3830}	n69481						error
+320	Needs fat contact	M1,M2	{348.7460 723.0970} {348.8060 723.2070}	n134010						error
+321	Off-grid	M2	{379.6000 726.5170} {379.6600 726.7790}	n67282						error
+322	Off-grid	VIA1	{379.6050 726.5470} {379.6550 726.7490}	n67282						error
+323	Needs fat contact	M1,M2	{396.1700 723.0970} {396.2300 723.2070}	n125119						error
+324	Off-grid	VIA1	{398.8840 721.0750} {398.9340 721.2770}	ZBUF_366_1016						error
+325	Off-grid	M2	{398.8540 721.0700} {398.9640 721.2820}	ZBUF_366_1016						error
+326	Off-grid	M1	{412.2570 717.8020} {412.3670 717.8620}	n89045						error
+327	Off-grid	M1	{412.8650 717.9540} {412.9750 718.0140}	n131272						error
+328	Off-grid	M1	{470.9290 719.7780} {471.0390 719.8380}	n79361						error
+329	Off-grid	M1	{586.4490 716.4340} {586.5590 716.4940}	n49977						error
+330	Off-grid	M2	{21.4380 733.2300} {21.5480 733.4420}	n37543						error
+331	Off-grid	VIA1	{21.4680 733.2350} {21.5180 733.4370}	n37543						error
+332	Needs fat contact	M1,M2	{57.8180 727.9610} {57.8780 728.0710}	n37605						error
+333	Needs fat contact	M1,M2	{73.1700 737.9930} {73.2300 738.1030}	ZBUF_32_1593						error
+334	Needs fat contact	M1,M2	{71.3460 733.1290} {71.4060 733.2390}	n37548						error
+335	Needs fat contact	M1,M2	{70.5860 734.6490} {70.6460 734.7590}	ZBUF_57_1606						error
+336	Needs fat contact	M1,M2	{114.5140 736.4730} {114.5740 736.5830}	ZBUF_429_1018						error
+337	Needs fat contact	M1,M2	{120.5940 731.3050} {120.6540 731.4150}	n136463						error
+338	Diff net spacing	M1	{189.0960 736.7020} {189.2560 736.7850}	n44188						error
+339	Off-grid	M2	{236.3660 734.4460} {236.4760 734.6580}	n26909						error
+340	Off-grid	VIA1	{236.3960 734.4510} {236.4460 734.6530}	n26909						error
+341	Off-grid	M2	{244.1180 733.2300} {244.2280 733.4420}	n26940						error
+342	Off-grid	VIA1	{244.1480 733.2350} {244.1980 733.4370}	n26940						error
+343	Diff net spacing	M1	{258.1040 733.3580} {258.2640 733.4410}	n69363						error
+344	Diff net spacing	M1	{259.3200 733.3580} {259.4800 733.4410}	n69512						error
+345	Off-grid	M2	{348.0860 733.2300} {348.1960 733.4420}	n28571						error
+346	Off-grid	VIA1	{348.1160 733.2350} {348.1660 733.4370}	n28571						error
+347	Needs fat contact	M1,M2	{77.2740 744.6810} {77.3340 744.7910}	ZBUF_14_2378						error
+348	Needs fat contact	M1,M2	{121.3540 744.6810} {121.4140 744.7910}	ZBUF_868_1018						error
+349	Diff net spacing	M1	{147.1440 743.3900} {147.3040 743.4730}	n133957						error
+350	Off-grid	M2	{171.0560 747.7970} {171.1160 748.0590}	n44265						error
+351	Off-grid	VIA1	{171.0610 747.8270} {171.1110 748.0290}	n44265						error
+352	Diff net spacing	M1	{181.0400 750.0780} {181.2000 750.1610}	n44215						error
+353	Diff net spacing	M1	{203.0800 746.7340} {203.2400 746.8170}	n134012						error
+354	Diff net spacing	M1	{212.9600 741.1350} {213.1200 741.2180}	ZBUF_371_2371						error
+355	Diff net spacing	M1	{217.5200 746.7340} {217.6800 746.8170}	n26995						error
+356	Diff net spacing	M1	{236.8240 747.8230} {236.9840 747.9060}	n29667						error
+357	Diff net spacing	M1	{230.5920 750.0780} {230.7520 750.1610}	ZBUF_267_1596						error
+358	Diff net spacing	M1	{257.4960 740.0460} {257.6560 740.1290}	n134020						error
+359	Diff net spacing	M1	{302.4880 746.7340} {302.6480 746.8170}	n69334						error
+360	Diff net spacing	M1	{320.5760 750.0780} {320.7360 750.1610}	ZBUF_249_1589						error
+361	Off-grid	M1	{337.4500 750.0010} {337.5530 750.1130}	n28836						error
+362	Needs fat contact	M1,M2	{553.1860 741.3370} {553.2460 741.4470}	n132585						error
+363	Short	M1	{781.5210 747.0930} {781.6710 747.2180}	ZBUF_657_3006						error
+364	Needs fat contact	M1,M2	{82.5940 753.1930} {82.6540 753.3030}	n41891						error
+365	Diff net spacing	M1	{146.6880 754.5110} {146.8480 754.5940}	n132851						error
+366	Diff net spacing	M1	{151.5520 751.1670} {151.7120 751.2500}	ZBUF_2652_2365						error
+367	Off-grid	VIA1	{159.4840 754.5150} {159.5340 754.7170}	n134322						error
+368	Off-grid	M2	{159.4540 754.5100} {159.5640 754.7220}	n134322						error
+369	Diff net spacing	M1	{208.4000 754.5110} {208.5600 754.5940}	n132756						error
+370	Diff net spacing	M1	{227.0960 760.1100} {227.2560 760.1930}	n132716						error
+371	Diff net spacing	M1	{226.7920 751.1670} {226.9520 751.2500}	ZBUF_9192_102						error
+372	Diff net spacing	M1	{224.2080 751.1670} {224.3680 751.2500}	ZBUF_1324_3514						error
+373	Diff net spacing	M1	{235.9120 751.1670} {236.0720 751.2500}	n134020						error
+374	Diff net spacing	M1	{231.0480 751.1670} {231.2080 751.2500}	ZBUF_267_1596						error
+375	Needs fat contact	M1,M2	{245.9940 761.4010} {246.0540 761.5110}	n132605						error
+376	Needs fat contact	M1,M2	{258.0020 754.7130} {258.0620 754.8230}	n29694						error
+377	Needs fat contact	M1,M2	{260.5860 754.7130} {260.6460 754.8230}	n29694						error
+378	Needs fat contact	M1,M2	{266.2100 756.5370} {266.2700 756.6470}	ZBUF_314_1589						error
+379	Diff net spacing	M1	{317.2320 751.1670} {317.3920 751.2500}	ZBUF_231_1962						error
+380	Diff net spacing	M1	{323.0080 751.1670} {323.1680 751.2500}	ZBUF_513_3513						error
+381	Needs fat contact	M1,M2	{338.7140 754.7130} {338.7740 754.8230}	ZBUF_467_1588						error
+382	Diff net spacing	M1	{356.4480 761.1990} {356.6080 761.2820}	n132694						error
+383	Diff net spacing	M1	{430.2950 751.1920} {430.3530 751.3520}	n88442,n88443						error
+384	Off-grid	M1	{430.4350 751.2420} {430.5300 751.3080}	n88442						error
+385	Off-grid	M1	{431.4090 751.3940} {431.5190 751.4540}	n88443						error
+386	Off-grid	M1	{498.7450 754.7380} {498.8550 754.7980}	n64594						error
+387	Diff net spacing	M1	{574.4160 751.1670} {574.5760 751.2500}	n143872						error
+388	Off-grid	M1	{639.1930 756.7140} {639.3030 756.7740}	n41131						error
+389	Diff net spacing	M1	{72.5120 773.4860} {72.6720 773.5690}	ZBUF_11071_3567						error
+390	Diff net spacing	M1	{136.9600 771.2310} {137.1200 771.3140}	n131462						error
+391	Diff net spacing	M1	{145.9280 774.5750} {146.0880 774.6580}	n39715						error
+392	Diff net spacing	M1	{147.1440 774.5750} {147.3040 774.6580}	n132800						error
+393	Needs fat contact	M1,M2	{190.9700 764.7450} {191.0300 764.8550}	n131476						error
+394	Needs fat contact	M1,M2	{190.6660 769.9130} {190.7260 770.0230}	n134002						error
+395	Needs fat contact	M1,M2	{188.3860 763.2250} {188.4460 763.3350}	ZBUF_41_2365						error
+396	Needs fat contact	M1,M2	{214.6820 769.9130} {214.7420 770.0230}	n48252						error
+397	Needs fat contact	M1,M2	{224.2580 766.5690} {224.3180 766.6790}	n143206						error
+398	Diff net spacing	M1	{235.6080 774.5750} {235.7680 774.6580}	n134020						error
+399	Off-grid	VIA1	{294.0040 774.5790} {294.0540 774.7810}	n136459						error
+400	Off-grid	M2	{293.9740 774.5740} {294.0840 774.7860}	n136459						error
+401	Diff net spacing	M1	{302.1840 763.4540} {302.3440 763.5370}	ZBUF_46_1021						error
+402	Diff net spacing	M1	{321.7920 766.7980} {321.9520 766.8810}	n28539						error
+403	Diff net spacing	M1	{318.2960 770.1420} {318.4560 770.2250}	n141456						error
+404	Diff net spacing	M1	{354.9280 763.4540} {355.0880 763.5370}	n78075						error
+405	Diff net spacing	M1	{360.7040 771.2310} {360.8640 771.3140}	n79041						error
+406	Diff net spacing	M1	{359.1840 766.7980} {359.3440 766.8810}	n131500						error
+407	Diff net spacing	M1	{356.4480 766.7980} {356.6080 766.8810}	n132694						error
+408	Diff net spacing	M1	{351.8880 763.4540} {352.0480 763.5370}	ZBUF_1572_2368						error
+409	Off-grid	M1	{438.5530 766.5940} {438.6630 766.6540}	n88578						error
+410	Short	M1	{541.5130 770.5010} {541.6630 770.6260}	ZBUF_734_2983						error
+411	Needs fat contact	M1,M2	{550.2980 774.7770} {550.3580 774.8870}	n131578						error
+412	Diff net spacing	M1	{1019.4470 770.4960} {1019.5210 770.6560}	ZBUF_893_3132,VSS						error
+413	Diff net spacing	M2	{1019.4940 770.6170} {1019.6380 770.6870}	ZBUF_893_3132,VSS						error
+414	Diff net spacing	M1	{61.1120 780.1740} {61.2720 780.2570}	n62955						error
+415	Diff net spacing	M1	{66.8880 776.8300} {67.0480 776.9130}	n63047						error
+416	Diff net spacing	M1	{71.2960 776.8300} {71.4560 776.9130}	n63047						error
+417	Diff net spacing	M1	{70.8400 786.8620} {71.0000 786.9450}	n142156						error
+418	Diff net spacing	M1	{77.3760 780.1740} {77.5360 780.2570}	n142781						error
+419	Needs fat contact	M1,M2	{93.6900 778.1210} {93.7500 778.2310}	ZBUF_2538_99						error
+420	Diff net spacing	M1	{112.0320 783.5180} {112.1920 783.6010}	n39649						error
+421	Diff net spacing	M1	{119.3280 780.1740} {119.4880 780.2570}	n39842						error
+422	Off-grid	M2	{189.0940 776.7020} {189.2040 776.9140}	n48133						error
+423	Off-grid	VIA1	{189.1240 776.7070} {189.1740 776.9090}	n48133						error
+424	Diff net spacing	M1	{202.9280 776.8300} {203.0880 776.9130}	n48199						error
+425	Off-grid	VIA1	{234.8760 780.0510} {234.9260 780.2530}	n135549						error
+426	Off-grid	M2	{234.8460 780.0460} {234.9560 780.2580}	n135549						error
+427	Needs fat contact	M1,M2	{251.3140 779.9450} {251.3740 780.0550}	n135581						error
+428	Needs fat contact	M1,M2	{290.6820 784.8090} {290.7420 784.9190}	n78633						error
+429	Needs fat contact	M1,M2	{294.7860 781.4650} {294.8460 781.5750}	n131458						error
+430	Needs fat contact	M1,M2	{293.5700 781.4650} {293.6300 781.5750}	ZBUF_383_91						error
+431	Off-grid	M1	{680.3850 783.3140} {680.4950 783.3740}	n41315						error
+432	Needs fat contact	M1,M2	{50.3700 794.8410} {50.4300 794.9510}	n63272						error
+433	Needs fat contact	M1,M2	{58.2740 796.6650} {58.3340 796.7750}	ZBUF_47_2813						error
+434	Diff net spacing	M1	{62.4800 787.9510} {62.6400 788.0340}	ZBUF_138_2984						error
+435	Diff net spacing	M1	{68.8640 787.9510} {69.0240 788.0340}	n142156						error
+436	Off-grid	M2	{79.5520 796.7410} {79.6120 797.0030}	n31438						error
+437	Off-grid	VIA1	{79.5570 796.7710} {79.6070 796.9730}	n31438						error
+438	Diff net spacing	M1	{112.6400 791.2950} {112.8000 791.3780}	n39871						error
+439	Diff net spacing	M1	{270.2640 794.6390} {270.4240 794.7220}	n69857						error
+440	Diff net spacing	M1	{280.6000 787.9510} {280.7600 788.0340}	n55210						error
+441	Needs fat contact	M1,M2	{301.0180 788.1530} {301.0780 788.2630}	ZBUF_287_2802						error
+442	Diff net spacing	M1	{333.9520 793.5500} {334.1120 793.6330}	n78343						error
+443	Needs fat contact	M1,M2	{468.2180 796.6650} {468.2780 796.7750}	n131571						error
+444	Off-grid	VIA1	{565.3490 796.7710} {565.3990 796.9730}	n120197						error
+445	Off-grid	M2	{565.3440 796.7410} {565.4040 797.0030}	n120197						error
+446	Off-grid	M2	{45.1500 801.3260} {45.2600 801.5380}	n63089						error
+447	Off-grid	VIA1	{45.1800 801.3310} {45.2300 801.5330}	n63089						error
+448	Needs fat contact	M1,M2	{59.0340 803.3530} {59.0940 803.4630}	n63028						error
+449	Needs fat contact	M1,M2	{61.6180 803.3530} {61.6780 803.4630}	n136463						error
+450	Off-grid	M2	{69.1660 806.7980} {69.2760 807.0100}	n31475						error
+451	Off-grid	VIA1	{69.1960 806.8030} {69.2460 807.0050}	n31475						error
+452	Off-grid	VIA1	{82.4200 810.1470} {82.4700 810.3490}	n31420						error
+453	Off-grid	M2	{82.3900 810.1420} {82.5000 810.3540}	n31420						error
+454	Needs fat contact	M1,M2	{94.9060 804.8730} {94.9660 804.9830}	n136463						error
+455	Needs fat contact	M1,M2	{147.1940 806.6970} {147.2540 806.8070}	ZBUF_111_2985						error
+456	Diff net spacing	M1	{162.9520 806.9260} {163.1120 807.0090}	n132756						error
+457	Diff net spacing	M1	{165.2320 811.3590} {165.3920 811.4420}	ZBUF_477_1023						error
+458	Diff net spacing	M1	{174.2000 811.3590} {174.3600 811.4420}	HFSNET_1157						error
+459	Diff net spacing	M1	{172.5280 811.3590} {172.6880 811.4420}	ZBUF_201_2802						error
+460	Needs fat contact	M1,M2	{266.8180 804.8730} {266.8780 804.9830}	n69839						error
+461	Needs fat contact	M1,M2	{311.3540 804.8730} {311.4140 804.9830}	n78518						error
+462	Off-grid	M2	{310.2380 800.1100} {310.3480 800.3220}	n78411						error
+463	Off-grid	VIA1	{310.2680 800.1150} {310.3180 800.3170}	n78411						error
+464	Off-grid	M2	{318.0440 810.1170} {318.1040 810.3790}	n78353						error
+465	Off-grid	VIA1	{318.0490 810.1470} {318.0990 810.3490}	n78353						error
+466	Needs fat contact	M1,M2	{594.5300 804.8730} {594.5900 804.9830}	n120153						error
+467	Off-grid	M1	{688.7450 811.5860} {688.8550 811.6460}	ZBUF_2312_71						error
+468	Diff net spacing	M1	{81.3280 816.9580} {81.4880 817.0410}	n31431						error
+469	Off-grid	M2	{177.8460 813.4860} {177.9560 813.6980}	n87699						error
+470	Off-grid	VIA1	{177.8760 813.4910} {177.9260 813.6930}	n87699						error
+471	Off-grid	M2	{265.3980 821.3900} {265.5080 821.6020}	n70128						error
+472	Off-grid	VIA1	{265.4280 821.3950} {265.4780 821.5970}	n70128						error
+473	Diff net spacing	M1	{381.3760 814.7030} {381.5360 814.7860}	n29037						error
+474	Off-grid	M1	{498.5930 814.9300} {498.7030 814.9900}	ZBUF_1859_71						error
+475	Off-grid	M1	{736.3210 818.2740} {736.4310 818.3340}	n30511						error
+476	Diff net spacing	M1	{160.5200 824.7350} {160.6800 824.8180}	n132864						error
+477	Diff net spacing	M1	{158.3920 834.7670} {158.5520 834.8500}	n132891						error
+478	Diff net spacing	M1	{225.8800 826.9900} {226.0400 827.0730}	n69684						error
+479	Diff net spacing	M1	{222.9920 826.9900} {223.1520 827.0730}	ZBUF_533_1017						error
+480	Diff net spacing	M1	{230.1360 826.9900} {230.2960 827.0730}	n69653						error
+481	Diff net spacing	M1	{276.9520 831.4230} {277.1120 831.5060}	n132676						error
+482	Needs fat contact	M1,M2	{314.3940 831.6250} {314.4540 831.7350}	n54865						error
+483	Diff net spacing	M1	{779.4390 834.3360} {779.5130 834.4960}	n130469,VSS						error
+484	Diff net spacing	M2	{779.4940 834.3050} {779.6300 834.3750}	n130469,VSS						error
+485	Off-grid	M2	{87.4560 836.8690} {87.5160 837.1310}	n31794						error
+486	Off-grid	VIA1	{87.4610 836.8990} {87.5110 837.1010}	n31794						error
+487	Diff net spacing	M1	{89.3840 848.1430} {89.5440 848.2260}	ZBUF_2517_97						error
+488	Diff net spacing	M1	{149.4240 844.7990} {149.5840 844.8820}	n138379						error
+489	Needs fat contact	M1,M2	{236.8740 843.4810} {236.9340 843.5910}	n69717						error
+490	Needs fat contact	M1,M2	{322.6020 841.6570} {322.6620 841.7670}	n54894						error
+491	Off-grid	M1	{774.4730 838.3380} {774.5830 838.3980}	n30129						error
+492	Diff net spacing	M1	{45.3040 858.1750} {45.4640 858.2580}	n24865						error
+493	Diff net spacing	M1	{38.9200 850.3980} {39.0800 850.4810}	n75681						error
+494	Needs fat contact	M1,M2	{144.4580 856.8570} {144.5180 856.9670}	n136861						error
+495	Needs fat contact	M1,M2	{152.3620 858.3770} {152.4220 858.4870}	ZBUF_2_95						error
+496	Diff net spacing	M1	{209.3120 858.1750} {209.4720 858.2580}	ZBUF_13349_96						error
+497	Diff net spacing	M1	{206.4240 857.0860} {206.5840 857.1690}	ZBUF_141_100						error
+498	Needs fat contact	M1,M2	{229.2740 858.3770} {229.3340 858.4870}	n136867						error
+499	Diff net spacing	M1	{263.7280 850.3980} {263.8880 850.4810}	n69772						error
+500	Needs fat contact	M1,M2	{285.3620 860.2010} {285.4220 860.3110}	n68164						error
+501	Diff net spacing	M1	{307.6560 853.7420} {307.8160 853.8250}	n132684						error
+502	Needs fat contact	M1,M2	{320.6260 860.2010} {320.6860 860.3110}	n54884						error
+503	Diff net spacing	M1	{58.3760 867.1180} {58.5360 867.2010}	n24764						error
+504	Diff net spacing	M1	{81.6320 864.8630} {81.7920 864.9460}	n74457						error
+505	Diff net spacing	M1	{74.3360 863.7740} {74.4960 863.8570}	n74478						error
+506	Diff net spacing	M1	{99.2640 870.4620} {99.4240 870.5450}	ZBUF_376_2371						error
+507	Needs fat contact	M1,M2	{165.2820 863.5450} {165.3420 863.6550}	n138374						error
+508	Diff net spacing	M1	{187.8800 871.5510} {188.0400 871.6340}	ZBUF_53_2991						error
+509	Diff net spacing	M1	{201.1040 868.2070} {201.2640 868.2900}	HFSNET_1146						error
+510	Diff net spacing	M1	{212.8080 861.5190} {212.9680 861.6020}	n132834						error
+511	Needs fat contact	M1,M2	{257.5460 871.7530} {257.6060 871.8630}	n142789						error
+512	Needs fat contact	M1,M2	{267.1220 863.5450} {267.1820 863.6550}	n135491						error
+513	Needs fat contact	M1,M2	{269.5540 863.5450} {269.6140 863.6550}	ZBUF_1069_2803						error
+514	Diff net spacing	M1	{303.7040 864.8630} {303.8640 864.9460}	ZBUF_764_2987						error
+515	Off-grid	M1	{495.7050 863.5700} {495.8150 863.6300}	n23615						error
+516	Off-grid	M1	{498.4410 863.5700} {498.5510 863.6300}	n23651						error
+517	Off-grid	M1	{588.5770 861.7460} {588.6870 861.8060}	n23919						error
+518	Off-grid	M1	{641.3210 870.4100} {641.4310 870.4700}	n66633						error
+519	Off-grid	M1	{640.4090 870.2580} {640.5190 870.3180}	n66634						error
+520	Off-grid	M1	{640.5610 870.1060} {640.6710 870.1660}	n66635						error
+521	Off-grid	M1	{640.5910 870.1060} {640.7670 870.1560}	n66635						error
+522	Diff net spacing	M1	{74.7920 880.4940} {74.9520 880.5770}	n74568						error
+523	Diff net spacing	M1	{91.0560 874.8950} {91.2160 874.9780}	n74727						error
+524	Diff net spacing	M1	{98.5040 880.4940} {98.6640 880.5770}	ZBUF_156_1612						error
+525	Diff net spacing	M1	{122.6720 883.8380} {122.8320 883.9210}	n131492						error
+526	Needs fat contact	M1,M2	{135.7940 881.7850} {135.8540 881.8950}	n136463						error
+527	Diff net spacing	M1	{161.4320 878.2390} {161.5920 878.3220}	n132864						error
+528	Short	M2	{160.5160 876.5880} {160.6840 876.7560}	n137572,n142779						error
+529	Diff net spacing	M1	{171.3120 877.1500} {171.4720 877.2330}	n132920						error
+530	Diff net spacing	M1	{171.7680 878.2390} {171.9280 878.3220}	n132920						error
+531	Diff net spacing	M1	{177.2400 878.2390} {177.4000 878.3220}	ZBUF_77_3116						error
+532	Off-grid	M2	{239.6080 874.8690} {239.6680 875.1310}	n59001						error
+533	Off-grid	VIA1	{239.6130 874.8990} {239.6630 875.1010}	n59001						error
+534	Short	M2	{238.9480 879.9320} {239.1160 880.1000}	n59048,n59160						error
+535	Needs fat contact	M1,M2	{256.9380 876.9210} {256.9980 877.0310}	n22924						error
+536	Diff net spacing	M1	{347.4800 878.2390} {347.6400 878.3220}	n61271						error
+537	Off-grid	M1	{448.3060 876.7690} {448.3660 876.8790}	n75062						error
+538	Off-grid	M1	{451.7770 877.0980} {451.8870 877.1580}	n75062						error
+539	Off-grid	M1	{448.3160 876.6470} {448.3660 876.8490}	n75062						error
+540	Off-grid	M1	{452.2330 876.9460} {452.3430 877.0060}	n75063						error
+541	Needs fat contact	M1,M2	{54.0180 895.1610} {54.0780 895.2710}	n24462						error
+542	Needs fat contact	M1,M2	{78.7940 891.8170} {78.8540 891.9270}	n138249						error
+543	Diff net spacing	M1	{100.6320 887.1820} {100.7920 887.2650}	n74401						error
+544	Needs fat contact	M1,M2	{112.2340 893.6410} {112.2940 893.7510}	ZBUF_997_1018						error
+545	Needs fat contact	M1,M2	{146.4340 890.2970} {146.4940 890.4070}	n136591						error
+546	Needs fat contact	M1,M2	{145.2180 885.1290} {145.2780 885.2390}	ZBUF_997_1018						error
+547	Less than minimum area	M2	{145.2180 885.1290} {145.2780 885.2390}	ZBUF_997_1018						error
+548	Needs fat contact	M1,M2	{146.4340 885.1290} {146.4940 885.2390}	ZBUF_111_2985						error
+549	Diff net spacing	M1	{166.7520 884.9270} {166.9120 885.0100}	n136857						error
+550	Diff net spacing	M1	{250.3520 894.9590} {250.5120 895.0420}	n65361						error
+551	Needs fat contact	M1,M2	{287.1860 893.6410} {287.2460 893.7510}	n132780						error
+552	Needs fat contact	M1,M2	{279.2820 890.2970} {279.3420 890.4070}	ZBUF_163_115						error
+553	Needs fat contact	M1,M2	{296.7620 888.4730} {296.8220 888.5830}	n80716						error
+554	Off-grid	M1	{574.1370 885.1540} {574.2470 885.2140}	n23895						error
+555	Off-grid	M2	{60.9580 907.1180} {61.0680 907.3300}	n24459						error
+556	Off-grid	VIA1	{60.9880 907.1230} {61.0380 907.3250}	n24459						error
+557	Off-grid	M2	{76.0060 898.3020} {76.1160 898.5140}	n74438						error
+558	Off-grid	VIA1	{76.0360 898.3070} {76.0860 898.5090}	n74438						error
+559	Needs fat contact	M1,M2	{87.1540 907.0170} {87.2140 907.1270}	HFSNET_1147						error
+560	Diff net spacing	M1	{123.8880 901.6470} {124.0480 901.7300}	n44714						error
+561	Off-grid	M2	{157.4780 900.4300} {157.5880 900.6420}	n44025						error
+562	Off-grid	VIA1	{157.5080 900.4350} {157.5580 900.6370}	n44025						error
+563	Diff net spacing	M1	{162.0400 903.9020} {162.2000 903.9850}	n136709						error
+564	Diff net spacing	M1	{174.0480 903.9020} {174.2080 903.9850}	n43803						error
+565	Diff net spacing	M1	{207.0320 904.9910} {207.1920 905.0740}	ZBUF_187_1016						error
+566	Needs fat contact	M1,M2	{251.3140 908.5370} {251.3740 908.6470}	ZBUF_14405_2370						error
+567	Diff net spacing	M1	{262.9680 900.5580} {263.1280 900.6410}	n133764						error
+568	Needs fat contact	M1,M2	{259.2180 900.3290} {259.2780 900.4390}	ZBUF_532_3513						error
+569	Diff net spacing	M1	{306.8960 904.9910} {307.0560 905.0740}	n132684						error
+570	Diff net spacing	M1	{312.2160 908.3350} {312.3760 908.4180}	ZBUF_14725_1598						error
+571	Diff net spacing	M1	{329.5440 908.3350} {329.7040 908.4180}	n61655						error
+572	Off-grid	M1	{532.1850 903.6980} {532.2950 903.7580}	n75478						error
+573	Off-grid	M1	{535.0730 907.0420} {535.1830 907.1020}	n131186						error
+574	Off-grid	M1	{582.9530 905.2180} {583.0630 905.2780}	n73293						error
+575	Off-grid	M1	{661.2330 903.6980} {661.3430 903.7580}	n66407						error
+576	Needs fat contact	M1,M2	{21.4900 918.5690} {21.5500 918.6790}	n25119						error
+577	Diff net spacing	M1	{46.0640 910.5900} {46.2240 910.6730}	n24551						error
+578	Off-grid	M2	{50.1660 918.3660} {50.2760 918.5780}	n52800						error
+579	Off-grid	VIA1	{50.1960 918.3710} {50.2460 918.5730}	n52800						error
+580	Off-grid	M2	{109.9520 917.1250} {110.0120 917.3870}	n43996						error
+581	Off-grid	VIA1	{109.9570 917.1550} {110.0070 917.3570}	n43996						error
+582	Diff net spacing	M1	{158.5440 911.6790} {158.7040 911.7620}	n142779						error
+583	Diff net spacing	M1	{371.1920 911.6790} {371.3520 911.7620}	n46807						error
+584	Diff net spacing	M1	{378.0320 915.0230} {378.1920 915.1060}	n46946						error
+585	Off-grid	M1	{439.0090 920.4180} {439.1190 920.4780}	n25880						error
+586	Diff net spacing	M1	{597.2160 911.6790} {597.3760 911.7620}	n131582						error
+587	Needs fat contact	M1,M2	{20.5780 930.4250} {20.6380 930.5350}	n52265						error
+588	Needs fat contact	M1,M2	{22.4020 927.0810} {22.4620 927.1910}	n52262						error
+589	Diff net spacing	M1	{50.6240 923.9660} {50.7840 924.0490}	n52972						error
+590	Diff net spacing	M1	{76.1600 921.7110} {76.3200 921.7940}	n52997						error
+591	Needs fat contact	M1,M2	{193.4020 921.9130} {193.4620 922.0230}	n43794						error
+592	Needs fat contact	M1,M2	{232.0100 928.6010} {232.0700 928.7110}	n131490						error
+593	Off-grid	M2	{245.6380 921.7100} {245.7480 921.9220}	n22068						error
+594	Off-grid	VIA1	{245.6680 921.7150} {245.7180 921.9170}	n22068						error
+595	Diff net spacing	M1	{263.5760 927.3100} {263.7360 927.3930}	n21992						error
+596	Diff net spacing	M1	{254.4560 931.7430} {254.6160 931.8260}	ZBUF_596_2370						error
+597	Off-grid	M1	{424.7210 928.4740} {424.8310 928.5340}	n25711						error
+598	Off-grid	M1	{424.5690 928.6260} {424.6790 928.6860}	n25712						error
+599	Off-grid	M1	{424.7210 928.7780} {424.8310 928.8380}	n25713						error
+600	Off-grid	M1	{425.4810 925.2820} {425.5910 925.3420}	n25740						error
+601	Off-grid	M1	{453.2970 923.7620} {453.4070 923.8220}	n25923						error
+602	Diff net spacing	M1	{779.4390 927.6640} {779.5130 927.8240}	ZBUF_992_2792,VSS						error
+603	Diff net spacing	M2	{779.4940 927.7850} {779.6300 927.8550}	ZBUF_992_2792,VSS						error
+604	Needs fat contact	M1,M2	{32.7380 938.6330} {32.7980 938.7430}	n52867						error
+605	Diff net spacing	M1	{70.9920 933.9980} {71.1520 934.0810}	n53156						error
+606	Needs fat contact	M1,M2	{93.9940 933.7690} {94.0540 933.8790}	ZBUF_562_91						error
+607	Diff net spacing	M1	{156.7200 944.0300} {156.8800 944.1130}	ZBUF_638_1020						error
+608	Diff net spacing	M1	{163.7120 933.9980} {163.8720 934.0810}	HFSNET_1157						error
+609	Diff net spacing	M1	{169.1840 938.4310} {169.3440 938.5140}	n138374						error
+610	Diff net spacing	M1	{167.3600 940.6860} {167.5200 940.7690}	n138379						error
+611	Diff net spacing	M1	{184.5360 933.9980} {184.6960 934.0810}	n44908						error
+612	Diff net spacing	M1	{201.1040 937.3420} {201.2640 937.4250}	n138379						error
+613	Off-grid	M2	{206.0160 943.8770} {206.0760 944.1390}	n35357						error
+614	Off-grid	VIA1	{206.0210 943.9070} {206.0710 944.1090}	n35357						error
+615	Diff net spacing	M1	{209.3120 937.3420} {209.4720 937.4250}	n134324						error
+616	Diff net spacing	M1	{222.5360 935.0870} {222.6960 935.1700}	n35385						error
+617	Needs fat contact	M1,M2	{282.9300 940.4570} {282.9900 940.5670}	n22094						error
+618	Off-grid	VIA1	{333.2200 940.5630} {333.2700 940.7650}	n46540						error
+619	Off-grid	M2	{333.1900 940.5580} {333.3000 940.7700}	n46540						error
+620	Off-grid	M1	{453.4490 940.4820} {453.5590 940.5420}	n25665						error
+621	Off-grid	M1	{455.8810 942.1540} {455.9910 942.2140}	n25679						error
+622	Off-grid	M1	{498.5930 940.6340} {498.7030 940.6940}	n73015						error
+623	Off-grid	M1	{499.0490 940.4820} {499.1590 940.5420}	n73016						error
+624	Off-grid	M1	{498.7450 940.3300} {498.8550 940.3900}	n73017						error
+625	Off-grid	M1	{664.1510 937.4420} {664.3550 937.4970}	n73353						error
+626	Off-grid	M1	{664.2730 938.8100} {664.3830 938.8700}	n73353						error
+627	Off-grid	M1	{664.1210 938.6580} {664.2310 938.7180}	ZBUF_694_79						error
+628	Off-grid	M2	{64.8080 957.2530} {64.8680 957.5150}	n53004						error
+629	Off-grid	VIA1	{64.8130 957.2830} {64.8630 957.4850}	n53004						error
+630	Diff net spacing	M1	{86.6480 950.7180} {86.8080 950.8010}	ZBUF_248_3512						error
+631	Diff net spacing	M1	{139.2400 957.4060} {139.4000 957.4890}	n20182						error
+632	Needs fat contact	M1,M2	{252.0740 955.3530} {252.1340 955.4630}	n65231						error
+633	Needs fat contact	M1,M2	{252.5300 957.1770} {252.5900 957.2870}	n65257						error
+634	Off-grid	M1	{437.0330 952.0340} {437.1430 952.0940}	n25559						error
+635	Off-grid	M1	{533.5530 957.2020} {533.6630 957.2620}	n26078						error
+636	Needs fat contact	M1,M2	{58.8820 960.5210} {58.9420 960.6310}	n52971						error
+637	Needs fat contact	M1,M2	{242.9540 965.3850} {243.0140 965.4950}	n35318						error
+638	Off-grid	M2	{27.6700 978.5580} {27.7800 978.7700}	n63344						error
+639	Off-grid	VIA1	{27.7000 978.5630} {27.7500 978.7650}	n63344						error
+640	Off-grid	M2	{52.2940 977.3420} {52.4040 977.5540}	n63354						error
+641	Off-grid	VIA1	{52.3240 977.3470} {52.3740 977.5490}	n63354						error
+642	Needs fat contact	M1,M2	{64.2020 970.5530} {64.2620 970.6630}	n33608						error
+643	Needs fat contact	M1,M2	{90.6500 980.5850} {90.7100 980.6950}	n33530						error
+644	Diff net spacing	M1	{210.9840 974.1260} {211.1440 974.2090}	n35947						error
+645	Diff net spacing	M1	{332.2800 980.8140} {332.4400 980.8970}	n26274						error
+646	Needs fat contact	M1,M2	{351.9380 970.5530} {351.9980 970.6630}	n26453						error
+647	Off-grid	M2	{32.5340 984.0300} {32.6440 984.2420}	n63356						error
+648	Off-grid	VIA1	{32.5640 984.0350} {32.6140 984.2370}	n63356						error
+649	Off-grid	M2	{71.4460 991.9340} {71.5560 992.1460}	n33434						error
+650	Off-grid	VIA1	{71.4760 991.9390} {71.5260 992.1410}	n33434						error
+651	Off-grid	M2	{107.0140 984.0300} {107.1240 984.2420}	n33249						error
+652	Off-grid	VIA1	{107.0440 984.0350} {107.0940 984.2370}	n33249						error
+653	Off-grid	M2	{164.7740 985.2460} {164.8840 985.4580}	n20042						error
+654	Off-grid	VIA1	{164.8040 985.2510} {164.8540 985.4530}	n20042						error
+655	Needs fat contact	M1,M2	{185.0420 982.1050} {185.1020 982.2150}	n20709						error
+656	Off-grid	M1	{488.7130 983.9540} {488.8230 984.0140}	n51976						error
+657	Diff net spacing	M1	{499.4550 984.8160} {499.5290 984.9760}	ZBUF_748_1946,VSS						error
+658	Diff net spacing	M2	{499.4940 984.7850} {499.6460 984.8550}	ZBUF_748_1946,VSS						error
+659	Off-grid	M2	{24.9340 1004.0940} {25.0440 1004.3060}	n63514						error
+660	Off-grid	VIA1	{24.9640 1004.0990} {25.0140 1004.3010}	n63514						error
+661	Off-grid	M2	{52.8000 995.2530} {52.8600 995.5150}	n63415						error
+662	Off-grid	VIA1	{52.8050 995.2830} {52.8550 995.4850}	n63415						error
+663	Off-grid	M2	{77.1200 1005.2850} {77.1800 1005.5470}	n63810						error
+664	Off-grid	VIA1	{77.1250 1005.3150} {77.1750 1005.5170}	n63810						error
+665	Diff net spacing	M1	{100.6320 995.2790} {100.7920 995.3620}	n136404						error
+666	Diff net spacing	M1	{152.3120 995.2790} {152.4720 995.3620}	ZBUF_156_1045						error
+667	Diff net spacing	M1	{162.4960 1004.2220} {162.6560 1004.3050}	n20828						error
+668	Diff net spacing	M1	{258.7120 997.5340} {258.8720 997.6170}	n22357						error
+669	Off-grid	M1	{550.7290 1000.6740} {550.8390 1000.7340}	n130869						error
+670	Off-grid	M1	{548.2970 1002.1940} {548.4070 1002.2540}	n130869						error
+671	Off-grid	M1	{611.9850 1000.8260} {612.0950 1000.8860}	n45315						error
+672	Off-grid	M1	{611.6810 1000.6740} {611.7910 1000.7340}	n45316						error
+673	Off-grid	M1	{630.0730 1000.6740} {630.1830 1000.7340}	n45883						error
+674	Needs fat contact	M1,M2	{154.7940 1015.5450} {154.8540 1015.6550}	n19836						error
+675	Needs fat contact	M1,M2	{150.6900 1007.3370} {150.7500 1007.4470}	n20937						error
+676	Diff net spacing	M1	{261.2960 1008.6550} {261.4560 1008.7380}	n22436						error
+677	Diff net spacing	M1	{275.7360 1015.3430} {275.8960 1015.4260}	n22512						error
+678	Needs fat contact	M1,M2	{341.2980 1017.3690} {341.3580 1017.4790}	n81225						error
+679	Off-grid	M1	{794.2330 1014.0500} {794.3430 1014.1100}	n130924						error
+680	Diff net spacing	M1	{88.3200 1024.2860} {88.4800 1024.3690}	n50653						error
+681	Needs fat contact	M1,M2	{213.3140 1024.0570} {213.3740 1024.1670}	n35210						error
+682	Needs fat contact	M1,M2	{221.9780 1022.2330} {222.0380 1022.3430}	n35757						error
+683	Off-grid	M1	{413.9290 1022.2580} {414.0390 1022.3180}	n51944						error
+684	Diff net spacing	M1	{779.4390 1024.9440} {779.5130 1025.1040}	n130359,VSS						error
+685	Diff net spacing	M2	{779.4940 1024.9130} {779.6300 1024.9830}	n130359,VSS						error
+686	Off-grid	M2	{22.9580 1038.7500} {23.0680 1038.9620}	n63517						error
+687	Off-grid	VIA1	{22.9880 1038.7550} {23.0380 1038.9570}	n63517						error
+688	Diff net spacing	M1	{33.4480 1034.3180} {33.6080 1034.4010}	n63866						error
+689	Off-grid	M2	{72.9660 1035.4060} {73.0760 1035.6180}	n50437						error
+690	Off-grid	VIA1	{72.9960 1035.4110} {73.0460 1035.6130}	n50437						error
+691	Off-grid	M2	{107.7740 1035.4060} {107.8840 1035.6180}	n51100						error
+692	Off-grid	VIA1	{107.8040 1035.4110} {107.8540 1035.6130}	n51100						error
+693	Diff net spacing	M1	{120.5440 1038.7510} {120.7040 1038.8340}	n33945						error
+694	Diff net spacing	M1	{257.6480 1037.6620} {257.8080 1037.7450}	n65070						error
+695	Needs fat contact	M1,M2	{283.5380 1035.6090} {283.5980 1035.7190}	n71724						error
+696	Needs fat contact	M1,M2	{318.6500 1034.0890} {318.7100 1034.1990}	n71670						error
+697	Off-grid	M2	{333.3420 1030.8460} {333.4520 1031.0580}	n81009						error
+698	Off-grid	VIA1	{333.3720 1030.8510} {333.4220 1031.0530}	n81009						error
+699	Off-grid	M2	{339.3240 1035.4060} {339.4340 1035.6180}	n71512						error
+700	Off-grid	VIA1	{339.3540 1035.4110} {339.4040 1035.6130}	n71512						error
+701	Diff net spacing	M1	{340.9440 1041.0060} {341.1040 1041.0890}	n72356						error
+702	Off-grid	M2	{350.3660 1037.5340} {350.4760 1037.7460}	n72361						error
+703	Off-grid	VIA1	{350.3960 1037.5390} {350.4460 1037.7410}	n72361						error
+704	Off-grid	M1	{722.9450 1035.6340} {723.0550 1035.6940}	n34575						error
+705	Off-grid	M1	{723.4010 1035.7860} {723.5110 1035.8460}	n34576						error
+706	Off-grid	M1	{724.3430 1038.6740} {724.5320 1038.7900}	n34576						error
+707	Off-grid	M2	{136.0460 1054.2540} {136.1560 1054.4660}	n56507						error
+708	Off-grid	VIA1	{136.0760 1054.2590} {136.1260 1054.4610}	n56507						error
+709	Off-grid	M2	{280.9520 1052.1010} {281.0120 1052.3630}	n71631						error
+710	Off-grid	VIA1	{280.9570 1052.1310} {281.0070 1052.3330}	n71631						error
+711	Needs fat contact	M1,M2	{302.3860 1048.9850} {302.4460 1049.0950}	n71625						error
+712	Off-grid	M2	{331.6700 1044.2220} {331.7800 1044.4340}	n71509						error
+713	Off-grid	VIA1	{331.7000 1044.2270} {331.7500 1044.4290}	n71509						error
+714	Off-grid	M1	{461.2010 1049.0100} {461.3110 1049.0700}	n53630						error
+715	Off-grid	M1	{461.6570 1049.1620} {461.7670 1049.2220}	n53631						error
+716	Off-grid	M1	{499.0490 1052.5060} {499.1590 1052.5660}	n52035						error
+717	Off-grid	M1	{499.2010 1052.3540} {499.3110 1052.4140}	n131028						error
+718	Diff net spacing	M1	{74.0320 1057.7260} {74.1920 1057.8090}	n50545						error
+719	Diff net spacing	M1	{118.2640 1058.8150} {118.4240 1058.8980}	n50322						error
+720	Off-grid	M2	{132.7020 1057.5980} {132.8120 1057.8100}	n56617						error
+721	Off-grid	VIA1	{132.7320 1057.6030} {132.7820 1057.8050}	n56617						error
+722	Diff net spacing	M1	{324.6800 1055.4710} {324.8400 1055.5540}	n72147						error
+723	Off-grid	M2	{341.6000 1055.4450} {341.6600 1055.7070}	n71511						error
+724	Off-grid	VIA1	{341.6050 1055.4750} {341.6550 1055.6770}	n71511						error
+725	Off-grid	M1	{428.8250 1062.3860} {428.9350 1062.4460}	n51646						error
+726	Off-grid	M1	{672.9370 1064.2100} {673.0470 1064.2700}	n47466						error
+727	Off-grid	M1	{694.0650 1065.5780} {694.1750 1065.6380}	n47309						error
+728	Off-grid	M1	{693.9900 1065.5780} {694.1530 1065.6440}	n47309						error
+729	Off-grid	M1	{694.6730 1065.7300} {694.7830 1065.7900}	n47310						error
+730	Needs fat contact	M1,M2	{140.6580 1072.3930} {140.7180 1072.5030}	n57734						error
+731	Diff net spacing	M1	{173.2880 1075.5350} {173.4480 1075.6180}	n56728						error
+732	Needs fat contact	M1,M2	{189.1460 1067.5290} {189.2060 1067.6390}	n57623						error
+733	Off-grid	M2	{248.3740 1068.8460} {248.4840 1069.0580}	n65173						error
+734	Off-grid	VIA1	{248.4040 1068.8510} {248.4540 1069.0530}	n65173						error
+735	Needs fat contact	M1,M2	{257.0900 1070.8730} {257.1500 1070.9830}	n65748						error
+736	Diff net spacing	M1	{273.7600 1072.1910} {273.9200 1072.2740}	n65169						error
+737	Off-grid	M1	{498.8970 1075.7620} {499.0070 1075.8220}	n54025						error

@@ -1,0 +1,45 @@
+****************************************
+ Report : check_design
+ Options: { netlist design_mismatch timing }
+ Design : nn_top
+ Version: W-2024.09-SP2
+ Date   : Sun May 10 21:02:14 2026
+****************************************
+
+Running atomic-check 'netlist'
+****************************************
+Report : check_netlist
+        -cells
+        -nets
+        -ports
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Sun May 10 21:02:14 2026
+****************************************
+1
+Running atomic-check 'design_mismatch'
+****************************************
+Report : Data Mismatches
+Version: W-2024.09-SP2
+Date   : Sun May 10 21:02:15 2026
+****************************************
+No mismatches exist on the design.
+1
+Running atomic-check 'timing'
+1
+
+  *** EMS Message summary ***
+  ----------------------------------------------------------------------------------------------------
+  Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+  DCHK-010     Warn   16         In design '%design', '%object' net '%parentObject' has no drivers.
+  TCK-001      Warn   38299      The reported endpoint '%endpoint' is unconstrained. Reason: '%re...
+  TCK-012      Warn   1          The input port '%port' has no clock_relative delay specified. Mo...
+  ----------------------------------------------------------------------------------------------------
+  Total 38316 EMS messages : 0 errors, 38316 warnings, 0 info.
+  ----------------------------------------------------------------------------------------------------
+
+  *** Non-EMS message summary *** 
+  ----------------------------------------------------------------------------------------------------
+  Total 0 non-EMS messages : 0 errors, 0 warnings, 0 info.
+  ----------------------------------------------------------------------------------------------------

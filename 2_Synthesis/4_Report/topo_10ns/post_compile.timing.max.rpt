@@ -1,0 +1,871 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : nn_top
+Version: W-2024.09-SP5-5
+Date   : Sat May  9 20:36:34 2026
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: Inactive.
+
+  Startpoint: state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[937][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[0]/CLK (DFFARX1_RVT)           0.00 #     0.00 r
+  state_reg[0]/Q (DFFARX1_RVT)             0.12       0.12 f
+  U124552/Y (INVX1_RVT)                    0.04 *     0.15 r
+  U137976/Y (NAND3X0_RVT)                  0.36 *     0.51 f
+  U49818/Y (NBUFFX2_RVT)                   0.10 *     0.61 f
+  U124887/Y (INVX1_RVT)                    0.42 *     1.03 r
+  U138231/Y (OA221X2_RVT)                  0.11 *     1.14 r
+  U138232/Y (AO21X2_RVT)                   0.10 *     1.24 r
+  U124846/Y (NBUFFX4_RVT)                  0.15 *     1.39 r
+  U70898/Y (INVX1_RVT)                     1.10 *     2.48 f
+  U140060/Y (AND3X1_RVT)                   0.72 *     3.21 f
+  U140061/Y (AND2X1_RVT)                   0.88 *     4.09 f
+  U140514/Y (NAND2X0_RVT)                  0.59 *     4.67 r
+  U91461/Y (INVX1_RVT)                     0.19 *     4.86 f
+  U140531/Y (AO22X1_RVT)                   0.10 *     4.96 f
+  act_ram_reg[937][1]/D (DFFARX1_RVT)      0.00 *     4.96 f
+  data arrival time                                   4.96
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.10       9.90
+  act_ram_reg[937][1]/CLK (DFFARX1_RVT)
+                                           0.00       9.90 r
+  library setup time                      -0.05       9.85
+  data required time                                  9.85
+  -----------------------------------------------------------
+  data required time                                  9.85
+  data arrival time                                  -4.96
+  -----------------------------------------------------------
+  slack (MET)                                         4.89
+
+
+  Startpoint: state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[937][5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[0]/CLK (DFFARX1_RVT)           0.00 #     0.00 r
+  state_reg[0]/Q (DFFARX1_RVT)             0.12       0.12 f
+  U124552/Y (INVX1_RVT)                    0.04 *     0.15 r
+  U137976/Y (NAND3X0_RVT)                  0.36 *     0.51 f
+  U49818/Y (NBUFFX2_RVT)                   0.10 *     0.61 f
+  U124887/Y (INVX1_RVT)                    0.42 *     1.03 r
+  U138231/Y (OA221X2_RVT)                  0.11 *     1.14 r
+  U138232/Y (AO21X2_RVT)                   0.10 *     1.24 r
+  U124846/Y (NBUFFX4_RVT)                  0.15 *     1.39 r
+  U70898/Y (INVX1_RVT)                     1.10 *     2.48 f
+  U140060/Y (AND3X1_RVT)                   0.72 *     3.21 f
+  U140061/Y (AND2X1_RVT)                   0.88 *     4.09 f
+  U140514/Y (NAND2X0_RVT)                  0.59 *     4.67 r
+  U91461/Y (INVX1_RVT)                     0.19 *     4.86 f
+  U140527/Y (AO22X1_RVT)                   0.10 *     4.96 f
+  act_ram_reg[937][5]/D (DFFARX1_RVT)      0.00 *     4.96 f
+  data arrival time                                   4.96
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.10       9.90
+  act_ram_reg[937][5]/CLK (DFFARX1_RVT)
+                                           0.00       9.90 r
+  library setup time                      -0.05       9.85
+  data required time                                  9.85
+  -----------------------------------------------------------
+  data required time                                  9.85
+  data arrival time                                  -4.96
+  -----------------------------------------------------------
+  slack (MET)                                         4.89
+
+
+  Startpoint: state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[937][4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[0]/CLK (DFFARX1_RVT)           0.00 #     0.00 r
+  state_reg[0]/Q (DFFARX1_RVT)             0.12       0.12 f
+  U124552/Y (INVX1_RVT)                    0.04 *     0.15 r
+  U137976/Y (NAND3X0_RVT)                  0.36 *     0.51 f
+  U49818/Y (NBUFFX2_RVT)                   0.10 *     0.61 f
+  U124887/Y (INVX1_RVT)                    0.42 *     1.03 r
+  U138231/Y (OA221X2_RVT)                  0.11 *     1.14 r
+  U138232/Y (AO21X2_RVT)                   0.10 *     1.24 r
+  U124846/Y (NBUFFX4_RVT)                  0.15 *     1.39 r
+  U70898/Y (INVX1_RVT)                     1.10 *     2.48 f
+  U140060/Y (AND3X1_RVT)                   0.72 *     3.21 f
+  U140061/Y (AND2X1_RVT)                   0.88 *     4.09 f
+  U140514/Y (NAND2X0_RVT)                  0.59 *     4.67 r
+  U91461/Y (INVX1_RVT)                     0.19 *     4.86 f
+  U140528/Y (AO22X1_RVT)                   0.10 *     4.96 f
+  act_ram_reg[937][4]/D (DFFARX1_RVT)      0.00 *     4.96 f
+  data arrival time                                   4.96
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.10       9.90
+  act_ram_reg[937][4]/CLK (DFFARX1_RVT)
+                                           0.00       9.90 r
+  library setup time                      -0.05       9.85
+  data required time                                  9.85
+  -----------------------------------------------------------
+  data required time                                  9.85
+  data arrival time                                  -4.96
+  -----------------------------------------------------------
+  slack (MET)                                         4.89
+
+
+  Startpoint: state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[937][9]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[0]/CLK (DFFARX1_RVT)           0.00 #     0.00 r
+  state_reg[0]/Q (DFFARX1_RVT)             0.12       0.12 f
+  U124552/Y (INVX1_RVT)                    0.04 *     0.15 r
+  U137976/Y (NAND3X0_RVT)                  0.36 *     0.51 f
+  U49818/Y (NBUFFX2_RVT)                   0.10 *     0.61 f
+  U124887/Y (INVX1_RVT)                    0.42 *     1.03 r
+  U138231/Y (OA221X2_RVT)                  0.11 *     1.14 r
+  U138232/Y (AO21X2_RVT)                   0.10 *     1.24 r
+  U124846/Y (NBUFFX4_RVT)                  0.15 *     1.39 r
+  U70898/Y (INVX1_RVT)                     1.10 *     2.48 f
+  U140060/Y (AND3X1_RVT)                   0.72 *     3.21 f
+  U140061/Y (AND2X1_RVT)                   0.88 *     4.09 f
+  U140514/Y (NAND2X0_RVT)                  0.59 *     4.67 r
+  U91461/Y (INVX1_RVT)                     0.19 *     4.86 f
+  U140523/Y (AO22X1_RVT)                   0.10 *     4.96 f
+  act_ram_reg[937][9]/D (DFFARX1_RVT)      0.00 *     4.96 f
+  data arrival time                                   4.96
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.10       9.90
+  act_ram_reg[937][9]/CLK (DFFARX1_RVT)
+                                           0.00       9.90 r
+  library setup time                      -0.05       9.85
+  data required time                                  9.85
+  -----------------------------------------------------------
+  data required time                                  9.85
+  data arrival time                                  -4.96
+  -----------------------------------------------------------
+  slack (MET)                                         4.89
+
+
+  Startpoint: state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[937][12]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  state_reg[0]/CLK (DFFARX1_RVT)                          0.00 #     0.00 r
+  state_reg[0]/Q (DFFARX1_RVT)                            0.12       0.12 f
+  U124552/Y (INVX1_RVT)                                   0.04 *     0.15 r
+  U137976/Y (NAND3X0_RVT)                                 0.36 *     0.51 f
+  U49818/Y (NBUFFX2_RVT)                                  0.10 *     0.61 f
+  U124887/Y (INVX1_RVT)                                   0.42 *     1.03 r
+  U138231/Y (OA221X2_RVT)                                 0.11 *     1.14 r
+  U138232/Y (AO21X2_RVT)                                  0.10 *     1.24 r
+  U124846/Y (NBUFFX4_RVT)                                 0.15 *     1.39 r
+  U70898/Y (INVX1_RVT)                                    1.10 *     2.48 f
+  U140060/Y (AND3X1_RVT)                                  0.72 *     3.21 f
+  U140061/Y (AND2X1_RVT)                                  0.88 *     4.09 f
+  U140514/Y (NAND2X0_RVT)                                 0.59 *     4.67 r
+  U91461/Y (INVX1_RVT)                                    0.19 *     4.86 f
+  U140520/Y (AO22X1_RVT)                                  0.10 *     4.96 f
+  act_ram_reg[937][12]/D (DFFARX1_RVT)                    0.00 *     4.96 f
+  data arrival time                                                  4.96
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  act_ram_reg[937][12]/CLK (DFFARX1_RVT)                  0.00       9.90 r
+  library setup time                                     -0.05       9.85
+  data required time                                                 9.85
+  --------------------------------------------------------------------------
+  data required time                                                 9.85
+  data arrival time                                                 -4.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.90
+
+
+  Startpoint: state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[937][15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  state_reg[0]/CLK (DFFARX1_RVT)                          0.00 #     0.00 r
+  state_reg[0]/Q (DFFARX1_RVT)                            0.12       0.12 f
+  U124552/Y (INVX1_RVT)                                   0.04 *     0.15 r
+  U137976/Y (NAND3X0_RVT)                                 0.36 *     0.51 f
+  U49818/Y (NBUFFX2_RVT)                                  0.10 *     0.61 f
+  U124887/Y (INVX1_RVT)                                   0.42 *     1.03 r
+  U138231/Y (OA221X2_RVT)                                 0.11 *     1.14 r
+  U138232/Y (AO21X2_RVT)                                  0.10 *     1.24 r
+  U124846/Y (NBUFFX4_RVT)                                 0.15 *     1.39 r
+  U70898/Y (INVX1_RVT)                                    1.10 *     2.48 f
+  U140060/Y (AND3X1_RVT)                                  0.72 *     3.21 f
+  U140061/Y (AND2X1_RVT)                                  0.88 *     4.09 f
+  U140514/Y (NAND2X0_RVT)                                 0.59 *     4.67 r
+  U91461/Y (INVX1_RVT)                                    0.19 *     4.86 f
+  U140517/Y (AO22X1_RVT)                                  0.10 *     4.96 f
+  act_ram_reg[937][15]/D (DFFARX1_RVT)                    0.00 *     4.96 f
+  data arrival time                                                  4.96
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  act_ram_reg[937][15]/CLK (DFFARX1_RVT)                  0.00       9.90 r
+  library setup time                                     -0.05       9.85
+  data required time                                                 9.85
+  --------------------------------------------------------------------------
+  data required time                                                 9.85
+  data arrival time                                                 -4.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.90
+
+
+  Startpoint: state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[937][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[0]/CLK (DFFARX1_RVT)           0.00 #     0.00 r
+  state_reg[0]/Q (DFFARX1_RVT)             0.12       0.12 f
+  U124552/Y (INVX1_RVT)                    0.04 *     0.15 r
+  U137976/Y (NAND3X0_RVT)                  0.36 *     0.51 f
+  U49818/Y (NBUFFX2_RVT)                   0.10 *     0.61 f
+  U124887/Y (INVX1_RVT)                    0.42 *     1.03 r
+  U138231/Y (OA221X2_RVT)                  0.11 *     1.14 r
+  U138232/Y (AO21X2_RVT)                   0.10 *     1.24 r
+  U124846/Y (NBUFFX4_RVT)                  0.15 *     1.39 r
+  U70898/Y (INVX1_RVT)                     1.10 *     2.48 f
+  U140060/Y (AND3X1_RVT)                   0.72 *     3.21 f
+  U140061/Y (AND2X1_RVT)                   0.88 *     4.09 f
+  U140514/Y (NAND2X0_RVT)                  0.59 *     4.67 r
+  U91461/Y (INVX1_RVT)                     0.19 *     4.86 f
+  U140516/Y (AO22X1_RVT)                   0.10 *     4.96 f
+  act_ram_reg[937][0]/D (DFFARX1_RVT)      0.00 *     4.96 f
+  data arrival time                                   4.96
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.10       9.90
+  act_ram_reg[937][0]/CLK (DFFARX1_RVT)
+                                           0.00       9.90 r
+  library setup time                      -0.05       9.85
+  data required time                                  9.85
+  -----------------------------------------------------------
+  data required time                                  9.85
+  data arrival time                                  -4.96
+  -----------------------------------------------------------
+  slack (MET)                                         4.90
+
+
+  Startpoint: state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[937][8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[0]/CLK (DFFARX1_RVT)           0.00 #     0.00 r
+  state_reg[0]/Q (DFFARX1_RVT)             0.12       0.12 f
+  U124552/Y (INVX1_RVT)                    0.04 *     0.15 r
+  U137976/Y (NAND3X0_RVT)                  0.36 *     0.51 f
+  U49818/Y (NBUFFX2_RVT)                   0.10 *     0.61 f
+  U124887/Y (INVX1_RVT)                    0.42 *     1.03 r
+  U138231/Y (OA221X2_RVT)                  0.11 *     1.14 r
+  U138232/Y (AO21X2_RVT)                   0.10 *     1.24 r
+  U124846/Y (NBUFFX4_RVT)                  0.15 *     1.39 r
+  U70898/Y (INVX1_RVT)                     1.10 *     2.48 f
+  U140060/Y (AND3X1_RVT)                   0.72 *     3.21 f
+  U140061/Y (AND2X1_RVT)                   0.88 *     4.09 f
+  U140514/Y (NAND2X0_RVT)                  0.59 *     4.67 r
+  U91461/Y (INVX1_RVT)                     0.19 *     4.86 f
+  U140524/Y (AO22X1_RVT)                   0.10 *     4.96 f
+  act_ram_reg[937][8]/D (DFFARX1_RVT)      0.00 *     4.96 f
+  data arrival time                                   4.96
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.10       9.90
+  act_ram_reg[937][8]/CLK (DFFARX1_RVT)
+                                           0.00       9.90 r
+  library setup time                      -0.05       9.85
+  data required time                                  9.85
+  -----------------------------------------------------------
+  data required time                                  9.85
+  data arrival time                                  -4.96
+  -----------------------------------------------------------
+  slack (MET)                                         4.90
+
+
+  Startpoint: state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[937][2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[0]/CLK (DFFARX1_RVT)           0.00 #     0.00 r
+  state_reg[0]/Q (DFFARX1_RVT)             0.12       0.12 f
+  U124552/Y (INVX1_RVT)                    0.04 *     0.15 r
+  U137976/Y (NAND3X0_RVT)                  0.36 *     0.51 f
+  U49818/Y (NBUFFX2_RVT)                   0.10 *     0.61 f
+  U124887/Y (INVX1_RVT)                    0.42 *     1.03 r
+  U138231/Y (OA221X2_RVT)                  0.11 *     1.14 r
+  U138232/Y (AO21X2_RVT)                   0.10 *     1.24 r
+  U124846/Y (NBUFFX4_RVT)                  0.15 *     1.39 r
+  U70898/Y (INVX1_RVT)                     1.10 *     2.48 f
+  U140060/Y (AND3X1_RVT)                   0.72 *     3.21 f
+  U140061/Y (AND2X1_RVT)                   0.88 *     4.09 f
+  U140514/Y (NAND2X0_RVT)                  0.59 *     4.67 r
+  U91461/Y (INVX1_RVT)                     0.19 *     4.86 f
+  U140530/Y (AO22X1_RVT)                   0.10 *     4.96 f
+  act_ram_reg[937][2]/D (DFFARX1_RVT)      0.00 *     4.96 f
+  data arrival time                                   4.96
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.10       9.90
+  act_ram_reg[937][2]/CLK (DFFARX1_RVT)
+                                           0.00       9.90 r
+  library setup time                      -0.05       9.85
+  data required time                                  9.85
+  -----------------------------------------------------------
+  data required time                                  9.85
+  data arrival time                                  -4.96
+  -----------------------------------------------------------
+  slack (MET)                                         4.90
+
+
+  Startpoint: state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[937][10]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  state_reg[0]/CLK (DFFARX1_RVT)                          0.00 #     0.00 r
+  state_reg[0]/Q (DFFARX1_RVT)                            0.12       0.12 f
+  U124552/Y (INVX1_RVT)                                   0.04 *     0.15 r
+  U137976/Y (NAND3X0_RVT)                                 0.36 *     0.51 f
+  U49818/Y (NBUFFX2_RVT)                                  0.10 *     0.61 f
+  U124887/Y (INVX1_RVT)                                   0.42 *     1.03 r
+  U138231/Y (OA221X2_RVT)                                 0.11 *     1.14 r
+  U138232/Y (AO21X2_RVT)                                  0.10 *     1.24 r
+  U124846/Y (NBUFFX4_RVT)                                 0.15 *     1.39 r
+  U70898/Y (INVX1_RVT)                                    1.10 *     2.48 f
+  U140060/Y (AND3X1_RVT)                                  0.72 *     3.21 f
+  U140061/Y (AND2X1_RVT)                                  0.88 *     4.09 f
+  U140514/Y (NAND2X0_RVT)                                 0.59 *     4.67 r
+  U91461/Y (INVX1_RVT)                                    0.19 *     4.86 f
+  U140522/Y (AO22X1_RVT)                                  0.10 *     4.96 f
+  act_ram_reg[937][10]/D (DFFARX1_RVT)                    0.00 *     4.96 f
+  data arrival time                                                  4.96
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  act_ram_reg[937][10]/CLK (DFFARX1_RVT)                  0.00       9.90 r
+  library setup time                                     -0.05       9.85
+  data required time                                                 9.85
+  --------------------------------------------------------------------------
+  data required time                                                 9.85
+  data arrival time                                                 -4.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.90
+
+
+  Startpoint: state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[937][14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  state_reg[0]/CLK (DFFARX1_RVT)                          0.00 #     0.00 r
+  state_reg[0]/Q (DFFARX1_RVT)                            0.12       0.12 f
+  U124552/Y (INVX1_RVT)                                   0.04 *     0.15 r
+  U137976/Y (NAND3X0_RVT)                                 0.36 *     0.51 f
+  U49818/Y (NBUFFX2_RVT)                                  0.10 *     0.61 f
+  U124887/Y (INVX1_RVT)                                   0.42 *     1.03 r
+  U138231/Y (OA221X2_RVT)                                 0.11 *     1.14 r
+  U138232/Y (AO21X2_RVT)                                  0.10 *     1.24 r
+  U124846/Y (NBUFFX4_RVT)                                 0.15 *     1.39 r
+  U70898/Y (INVX1_RVT)                                    1.10 *     2.48 f
+  U140060/Y (AND3X1_RVT)                                  0.72 *     3.21 f
+  U140061/Y (AND2X1_RVT)                                  0.88 *     4.09 f
+  U140514/Y (NAND2X0_RVT)                                 0.59 *     4.67 r
+  U91461/Y (INVX1_RVT)                                    0.19 *     4.86 f
+  U140518/Y (AO22X1_RVT)                                  0.10 *     4.96 f
+  act_ram_reg[937][14]/D (DFFARX1_RVT)                    0.00 *     4.96 f
+  data arrival time                                                  4.96
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  act_ram_reg[937][14]/CLK (DFFARX1_RVT)                  0.00       9.90 r
+  library setup time                                     -0.05       9.85
+  data required time                                                 9.85
+  --------------------------------------------------------------------------
+  data required time                                                 9.85
+  data arrival time                                                 -4.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.90
+
+
+  Startpoint: state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[937][11]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  state_reg[0]/CLK (DFFARX1_RVT)                          0.00 #     0.00 r
+  state_reg[0]/Q (DFFARX1_RVT)                            0.12       0.12 f
+  U124552/Y (INVX1_RVT)                                   0.04 *     0.15 r
+  U137976/Y (NAND3X0_RVT)                                 0.36 *     0.51 f
+  U49818/Y (NBUFFX2_RVT)                                  0.10 *     0.61 f
+  U124887/Y (INVX1_RVT)                                   0.42 *     1.03 r
+  U138231/Y (OA221X2_RVT)                                 0.11 *     1.14 r
+  U138232/Y (AO21X2_RVT)                                  0.10 *     1.24 r
+  U124846/Y (NBUFFX4_RVT)                                 0.15 *     1.39 r
+  U70898/Y (INVX1_RVT)                                    1.10 *     2.48 f
+  U140060/Y (AND3X1_RVT)                                  0.72 *     3.21 f
+  U140061/Y (AND2X1_RVT)                                  0.88 *     4.09 f
+  U140514/Y (NAND2X0_RVT)                                 0.59 *     4.67 r
+  U91461/Y (INVX1_RVT)                                    0.19 *     4.86 f
+  U140521/Y (AO22X1_RVT)                                  0.10 *     4.96 f
+  act_ram_reg[937][11]/D (DFFARX1_RVT)                    0.00 *     4.96 f
+  data arrival time                                                  4.96
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  act_ram_reg[937][11]/CLK (DFFARX1_RVT)                  0.00       9.90 r
+  library setup time                                     -0.05       9.85
+  data required time                                                 9.85
+  --------------------------------------------------------------------------
+  data required time                                                 9.85
+  data arrival time                                                 -4.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.90
+
+
+  Startpoint: state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[937][7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[0]/CLK (DFFARX1_RVT)           0.00 #     0.00 r
+  state_reg[0]/Q (DFFARX1_RVT)             0.12       0.12 f
+  U124552/Y (INVX1_RVT)                    0.04 *     0.15 r
+  U137976/Y (NAND3X0_RVT)                  0.36 *     0.51 f
+  U49818/Y (NBUFFX2_RVT)                   0.10 *     0.61 f
+  U124887/Y (INVX1_RVT)                    0.42 *     1.03 r
+  U138231/Y (OA221X2_RVT)                  0.11 *     1.14 r
+  U138232/Y (AO21X2_RVT)                   0.10 *     1.24 r
+  U124846/Y (NBUFFX4_RVT)                  0.15 *     1.39 r
+  U70898/Y (INVX1_RVT)                     1.10 *     2.48 f
+  U140060/Y (AND3X1_RVT)                   0.72 *     3.21 f
+  U140061/Y (AND2X1_RVT)                   0.88 *     4.09 f
+  U140514/Y (NAND2X0_RVT)                  0.59 *     4.67 r
+  U91461/Y (INVX1_RVT)                     0.19 *     4.86 f
+  U140525/Y (AO22X1_RVT)                   0.10 *     4.96 f
+  act_ram_reg[937][7]/D (DFFARX1_RVT)      0.00 *     4.96 f
+  data arrival time                                   4.96
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.10       9.90
+  act_ram_reg[937][7]/CLK (DFFARX1_RVT)
+                                           0.00       9.90 r
+  library setup time                      -0.05       9.85
+  data required time                                  9.85
+  -----------------------------------------------------------
+  data required time                                  9.85
+  data arrival time                                  -4.96
+  -----------------------------------------------------------
+  slack (MET)                                         4.90
+
+
+  Startpoint: state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[937][13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  state_reg[0]/CLK (DFFARX1_RVT)                          0.00 #     0.00 r
+  state_reg[0]/Q (DFFARX1_RVT)                            0.12       0.12 f
+  U124552/Y (INVX1_RVT)                                   0.04 *     0.15 r
+  U137976/Y (NAND3X0_RVT)                                 0.36 *     0.51 f
+  U49818/Y (NBUFFX2_RVT)                                  0.10 *     0.61 f
+  U124887/Y (INVX1_RVT)                                   0.42 *     1.03 r
+  U138231/Y (OA221X2_RVT)                                 0.11 *     1.14 r
+  U138232/Y (AO21X2_RVT)                                  0.10 *     1.24 r
+  U124846/Y (NBUFFX4_RVT)                                 0.15 *     1.39 r
+  U70898/Y (INVX1_RVT)                                    1.10 *     2.48 f
+  U140060/Y (AND3X1_RVT)                                  0.72 *     3.21 f
+  U140061/Y (AND2X1_RVT)                                  0.88 *     4.09 f
+  U140514/Y (NAND2X0_RVT)                                 0.59 *     4.67 r
+  U91461/Y (INVX1_RVT)                                    0.19 *     4.86 f
+  U140519/Y (AO22X1_RVT)                                  0.10 *     4.96 f
+  act_ram_reg[937][13]/D (DFFARX1_RVT)                    0.00 *     4.96 f
+  data arrival time                                                  4.96
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  act_ram_reg[937][13]/CLK (DFFARX1_RVT)                  0.00       9.90 r
+  library setup time                                     -0.05       9.85
+  data required time                                                 9.85
+  --------------------------------------------------------------------------
+  data required time                                                 9.85
+  data arrival time                                                 -4.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.90
+
+
+  Startpoint: state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[937][3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[0]/CLK (DFFARX1_RVT)           0.00 #     0.00 r
+  state_reg[0]/Q (DFFARX1_RVT)             0.12       0.12 f
+  U124552/Y (INVX1_RVT)                    0.04 *     0.15 r
+  U137976/Y (NAND3X0_RVT)                  0.36 *     0.51 f
+  U49818/Y (NBUFFX2_RVT)                   0.10 *     0.61 f
+  U124887/Y (INVX1_RVT)                    0.42 *     1.03 r
+  U138231/Y (OA221X2_RVT)                  0.11 *     1.14 r
+  U138232/Y (AO21X2_RVT)                   0.10 *     1.24 r
+  U124846/Y (NBUFFX4_RVT)                  0.15 *     1.39 r
+  U70898/Y (INVX1_RVT)                     1.10 *     2.48 f
+  U140060/Y (AND3X1_RVT)                   0.72 *     3.21 f
+  U140061/Y (AND2X1_RVT)                   0.88 *     4.09 f
+  U140514/Y (NAND2X0_RVT)                  0.59 *     4.67 r
+  U91461/Y (INVX1_RVT)                     0.19 *     4.86 f
+  U140529/Y (AO22X1_RVT)                   0.10 *     4.96 f
+  act_ram_reg[937][3]/D (DFFARX1_RVT)      0.00 *     4.96 f
+  data arrival time                                   4.96
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.10       9.90
+  act_ram_reg[937][3]/CLK (DFFARX1_RVT)
+                                           0.00       9.90 r
+  library setup time                      -0.03       9.87
+  data required time                                  9.87
+  -----------------------------------------------------------
+  data required time                                  9.87
+  data arrival time                                  -4.96
+  -----------------------------------------------------------
+  slack (MET)                                         4.91
+
+
+  Startpoint: state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[937][6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[0]/CLK (DFFARX1_RVT)           0.00 #     0.00 r
+  state_reg[0]/Q (DFFARX1_RVT)             0.12       0.12 f
+  U124552/Y (INVX1_RVT)                    0.04 *     0.15 r
+  U137976/Y (NAND3X0_RVT)                  0.36 *     0.51 f
+  U49818/Y (NBUFFX2_RVT)                   0.10 *     0.61 f
+  U124887/Y (INVX1_RVT)                    0.42 *     1.03 r
+  U138231/Y (OA221X2_RVT)                  0.11 *     1.14 r
+  U138232/Y (AO21X2_RVT)                   0.10 *     1.24 r
+  U124846/Y (NBUFFX4_RVT)                  0.15 *     1.39 r
+  U70898/Y (INVX1_RVT)                     1.10 *     2.48 f
+  U140060/Y (AND3X1_RVT)                   0.72 *     3.21 f
+  U140061/Y (AND2X1_RVT)                   0.88 *     4.09 f
+  U140514/Y (NAND2X0_RVT)                  0.59 *     4.67 r
+  U91461/Y (INVX1_RVT)                     0.19 *     4.86 f
+  U140526/Y (AO22X1_RVT)                   0.10 *     4.96 f
+  act_ram_reg[937][6]/D (DFFARX1_RVT)      0.00 *     4.96 f
+  data arrival time                                   4.96
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.10       9.90
+  act_ram_reg[937][6]/CLK (DFFARX1_RVT)
+                                           0.00       9.90 r
+  library setup time                      -0.03       9.87
+  data required time                                  9.87
+  -----------------------------------------------------------
+  data required time                                  9.87
+  data arrival time                                  -4.96
+  -----------------------------------------------------------
+  slack (MET)                                         4.91
+
+
+  Startpoint: state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[930][15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  state_reg[0]/CLK (DFFARX1_RVT)                          0.00 #     0.00 r
+  state_reg[0]/Q (DFFARX1_RVT)                            0.12       0.12 f
+  U124552/Y (INVX1_RVT)                                   0.04 *     0.15 r
+  U137976/Y (NAND3X0_RVT)                                 0.36 *     0.51 f
+  U49818/Y (NBUFFX2_RVT)                                  0.10 *     0.61 f
+  U124887/Y (INVX1_RVT)                                   0.42 *     1.03 r
+  U138231/Y (OA221X2_RVT)                                 0.11 *     1.14 r
+  U138232/Y (AO21X2_RVT)                                  0.10 *     1.24 r
+  U124846/Y (NBUFFX4_RVT)                                 0.15 *     1.39 r
+  U70898/Y (INVX1_RVT)                                    1.10 *     2.48 f
+  U140060/Y (AND3X1_RVT)                                  0.72 *     3.21 f
+  U140061/Y (AND2X1_RVT)                                  0.88 *     4.09 f
+  U140647/Y (NAND2X0_RVT)                                 0.54 *     4.63 r
+  U91414/Y (INVX1_RVT)                                    0.15 *     4.78 f
+  U140650/Y (AO22X1_RVT)                                  0.10 *     4.88 f
+  act_ram_reg[930][15]/D (DFFARX1_RVT)                    0.00 *     4.88 f
+  data arrival time                                                  4.88
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  act_ram_reg[930][15]/CLK (DFFARX1_RVT)                  0.00       9.90 r
+  library setup time                                     -0.05       9.85
+  data required time                                                 9.85
+  --------------------------------------------------------------------------
+  data required time                                                 9.85
+  data arrival time                                                 -4.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.97
+
+
+  Startpoint: state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[930][11]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  state_reg[0]/CLK (DFFARX1_RVT)                          0.00 #     0.00 r
+  state_reg[0]/Q (DFFARX1_RVT)                            0.12       0.12 f
+  U124552/Y (INVX1_RVT)                                   0.04 *     0.15 r
+  U137976/Y (NAND3X0_RVT)                                 0.36 *     0.51 f
+  U49818/Y (NBUFFX2_RVT)                                  0.10 *     0.61 f
+  U124887/Y (INVX1_RVT)                                   0.42 *     1.03 r
+  U138231/Y (OA221X2_RVT)                                 0.11 *     1.14 r
+  U138232/Y (AO21X2_RVT)                                  0.10 *     1.24 r
+  U124846/Y (NBUFFX4_RVT)                                 0.15 *     1.39 r
+  U70898/Y (INVX1_RVT)                                    1.10 *     2.48 f
+  U140060/Y (AND3X1_RVT)                                  0.72 *     3.21 f
+  U140061/Y (AND2X1_RVT)                                  0.88 *     4.09 f
+  U140647/Y (NAND2X0_RVT)                                 0.54 *     4.63 r
+  U91414/Y (INVX1_RVT)                                    0.15 *     4.78 f
+  U140654/Y (AO22X1_RVT)                                  0.10 *     4.88 f
+  act_ram_reg[930][11]/D (DFFARX1_RVT)                    0.00 *     4.88 f
+  data arrival time                                                  4.88
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  act_ram_reg[930][11]/CLK (DFFARX1_RVT)                  0.00       9.90 r
+  library setup time                                     -0.05       9.85
+  data required time                                                 9.85
+  --------------------------------------------------------------------------
+  data required time                                                 9.85
+  data arrival time                                                 -4.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.97
+
+
+  Startpoint: state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[930][6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[0]/CLK (DFFARX1_RVT)           0.00 #     0.00 r
+  state_reg[0]/Q (DFFARX1_RVT)             0.12       0.12 f
+  U124552/Y (INVX1_RVT)                    0.04 *     0.15 r
+  U137976/Y (NAND3X0_RVT)                  0.36 *     0.51 f
+  U49818/Y (NBUFFX2_RVT)                   0.10 *     0.61 f
+  U124887/Y (INVX1_RVT)                    0.42 *     1.03 r
+  U138231/Y (OA221X2_RVT)                  0.11 *     1.14 r
+  U138232/Y (AO21X2_RVT)                   0.10 *     1.24 r
+  U124846/Y (NBUFFX4_RVT)                  0.15 *     1.39 r
+  U70898/Y (INVX1_RVT)                     1.10 *     2.48 f
+  U140060/Y (AND3X1_RVT)                   0.72 *     3.21 f
+  U140061/Y (AND2X1_RVT)                   0.88 *     4.09 f
+  U140647/Y (NAND2X0_RVT)                  0.54 *     4.63 r
+  U91414/Y (INVX1_RVT)                     0.15 *     4.78 f
+  U140659/Y (AO22X1_RVT)                   0.10 *     4.88 f
+  act_ram_reg[930][6]/D (DFFARX1_RVT)      0.00 *     4.88 f
+  data arrival time                                   4.88
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.10       9.90
+  act_ram_reg[930][6]/CLK (DFFARX1_RVT)
+                                           0.00       9.90 r
+  library setup time                      -0.05       9.85
+  data required time                                  9.85
+  -----------------------------------------------------------
+  data required time                                  9.85
+  data arrival time                                  -4.88
+  -----------------------------------------------------------
+  slack (MET)                                         4.98
+
+
+  Startpoint: state_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: act_ram_reg[930][2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_reg[0]/CLK (DFFARX1_RVT)           0.00 #     0.00 r
+  state_reg[0]/Q (DFFARX1_RVT)             0.12       0.12 f
+  U124552/Y (INVX1_RVT)                    0.04 *     0.15 r
+  U137976/Y (NAND3X0_RVT)                  0.36 *     0.51 f
+  U49818/Y (NBUFFX2_RVT)                   0.10 *     0.61 f
+  U124887/Y (INVX1_RVT)                    0.42 *     1.03 r
+  U138231/Y (OA221X2_RVT)                  0.11 *     1.14 r
+  U138232/Y (AO21X2_RVT)                   0.10 *     1.24 r
+  U124846/Y (NBUFFX4_RVT)                  0.15 *     1.39 r
+  U70898/Y (INVX1_RVT)                     1.10 *     2.48 f
+  U140060/Y (AND3X1_RVT)                   0.72 *     3.21 f
+  U140061/Y (AND2X1_RVT)                   0.88 *     4.09 f
+  U140647/Y (NAND2X0_RVT)                  0.54 *     4.63 r
+  U91414/Y (INVX1_RVT)                     0.15 *     4.78 f
+  U140663/Y (AO22X1_RVT)                   0.09 *     4.88 f
+  act_ram_reg[930][2]/D (DFFARX1_RVT)      0.00 *     4.88 f
+  data arrival time                                   4.88
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.10       9.90
+  act_ram_reg[930][2]/CLK (DFFARX1_RVT)
+                                           0.00       9.90 r
+  library setup time                      -0.05       9.85
+  data required time                                  9.85
+  -----------------------------------------------------------
+  data required time                                  9.85
+  data arrival time                                  -4.88
+  -----------------------------------------------------------
+  slack (MET)                                         4.98
+
+
+1

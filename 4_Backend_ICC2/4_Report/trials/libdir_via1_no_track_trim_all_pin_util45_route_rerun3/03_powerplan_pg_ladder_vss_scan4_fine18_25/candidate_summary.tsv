@@ -1,0 +1,16 @@
+x	shapes_checked	pg_shape_count	pg_shape_layers	pg_via_count	pg_via_defs	signal_shape_count	signal_shape_layers	signal_via_count	signal_via_defs	status
+18.0	7	7	M2=0,M3=0,M4=0,M5=0,M6=0,M7=7	0		0	M2=0,M3=0,M4=0,M5=0,M6=0,M7=0	0		no_non_pg_objects
+18.5	7	7	M2=0,M3=0,M4=0,M5=0,M6=0,M7=7	0		0	M2=0,M3=0,M4=0,M5=0,M6=0,M7=0	0		no_non_pg_objects
+19.0	7	7	M2=0,M3=0,M4=0,M5=0,M6=0,M7=7	0		2	M2=0,M3=0,M4=2,M5=0,M6=0,M7=0	0		candidate
+19.5	7	7	M2=0,M3=0,M4=0,M5=0,M6=0,M7=7	0		0	M2=0,M3=0,M4=0,M5=0,M6=0,M7=0	0		no_non_pg_objects
+20.0	7	7	M2=0,M3=0,M4=0,M5=0,M6=0,M7=7	0		2	M2=1,M3=1,M4=0,M5=0,M6=0,M7=0	0		candidate
+20.5	7	7	M2=0,M3=0,M4=0,M5=0,M6=0,M7=7	0		15	M2=11,M3=3,M4=1,M5=0,M6=0,M7=0	2	VIA23SQ_C 2	candidate
+21.0	7	7	M2=0,M3=0,M4=0,M5=0,M6=0,M7=7	0		17	M2=11,M3=3,M4=2,M5=1,M6=0,M7=0	6	VIA12SQ_C 1 VIA34SQ_C 1 VIA45SQ_C 1 VIA23SQ_C 3	candidate
+21.5	7	7	M2=0,M3=0,M4=0,M5=0,M6=0,M7=7	0		10	M2=6,M3=2,M4=1,M5=1,M6=0,M7=0	4	VIA12SQ_C 1 VIA34SQ_C 1 VIA23SQ_C 1 VIA45SQ_C 1	candidate
+22.0	7	7	M2=0,M3=0,M4=0,M5=0,M6=0,M7=7	0		12	M2=5,M3=3,M4=3,M5=1,M6=0,M7=0	2	VIA12SQ_C 1 VIA23SQ_C 1	candidate
+22.5	7	7	M2=0,M3=0,M4=0,M5=0,M6=0,M7=7	0		20	M2=8,M3=5,M4=5,M5=2,M6=0,M7=0	6	VIA12SQ_C 3 VIA45SQ_C 1 VIA23SQ_C 2	candidate
+23.0	7	7	M2=0,M3=0,M4=0,M5=0,M6=0,M7=7	0		18	M2=6,M3=4,M4=3,M5=2,M6=3,M7=0	3	VIA12SQ_C 1 VIA45SQ_C 1 VIA23SQ_C 1	candidate
+23.5	7	7	M2=0,M3=0,M4=0,M5=0,M6=0,M7=7	0		14	M2=7,M3=2,M4=3,M5=1,M6=1,M7=0	2	VIA12SQ_C 1 VIA23SQ_C 1	candidate
+24.0	7	7	M2=0,M3=0,M4=0,M5=0,M6=0,M7=7	0		13	M2=7,M3=2,M4=3,M5=1,M6=0,M7=0	3	VIA12SQ_C 1 VIA23SQ_C 2	candidate
+24.5	7	7	M2=0,M3=0,M4=0,M5=0,M6=0,M7=7	0		11	M2=5,M3=2,M4=3,M5=1,M6=0,M7=0	1	VIA23SQ_C 1	candidate
+25.0	7	7	M2=0,M3=0,M4=0,M5=0,M6=0,M7=7	0		11	M2=5,M3=2,M4=3,M5=1,M6=0,M7=0	0		candidate

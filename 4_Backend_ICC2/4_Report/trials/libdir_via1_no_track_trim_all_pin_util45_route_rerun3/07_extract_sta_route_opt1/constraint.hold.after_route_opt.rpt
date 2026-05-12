@@ -1,0 +1,603 @@
+****************************************
+Report : constraint
+        -all_violators
+        -min_delay
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Mon May 11 21:25:55 2026
+****************************************
+
+
+   early_timing
+   -----------
+
+Endpoint                         Path Delay     Path Required       CRP    Slack Group    Scenario
+----------------------------------------------------------------------------------------------------------
+u_input_fifo/fifo_buf_reg[953][6]/D (DFFARX1_RVT)
+                                   0.39 f         0.42           0.00    -0.02   clk      default
+u_input_fifo/fifo_buf_reg[933][12]/D (DFFARX1_RVT)
+                                   0.38 f         0.40           0.00    -0.02   clk      default
+u_input_fifo/fifo_buf_reg[966][14]/D (DFFARX1_RVT)
+                                   0.38 f         0.41           0.00    -0.02   clk      default
+u_input_fifo/fifo_buf_reg[1016][13]/D (DFFARX1_RVT)
+                                   0.39 f         0.42           0.00    -0.02   clk      default
+act_ram_reg[348][6]/D (DFFARX1_RVT)
+                                   0.36 f         0.38           0.00    -0.02   clk      default
+u_input_fifo/fifo_buf_reg[958][3]/D (DFFARX1_RVT)
+                                   0.37 f         0.39           0.00    -0.02   clk      default
+act_ram_reg[123][7]/D (DFFARX1_RVT)
+                                   0.38 f         0.39           0.00    -0.02   clk      default
+u_input_fifo/fifo_buf_reg[953][13]/D (DFFARX1_RVT)
+                                   0.40 f         0.42           0.00    -0.02   clk      default
+act_ram_reg[123][0]/D (DFFARX1_RVT)
+                                   0.38 f         0.40           0.00    -0.02   clk      default
+u_input_fifo/fifo_buf_reg[905][5]/D (DFFARX1_RVT)
+                                   0.40 f         0.42           0.00    -0.02   clk      default
+u_input_fifo/fifo_buf_reg[1016][5]/D (DFFARX1_RVT)
+                                   0.40 f         0.42           0.00    -0.02   clk      default
+u_input_fifo/fifo_buf_reg[1016][1]/D (DFFARX1_RVT)
+                                   0.40 f         0.42           0.00    -0.01   clk      default
+gen_mac_lanes[31].u_lane/u_mac/weight_r_reg[5]/D (DFFARX2_RVT)
+                                   0.36 f         0.37           0.00    -0.01   clk      default
+act_ram_reg[747][7]/D (DFFARX1_RVT)
+                                   0.34 f         0.34           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[231][3]/D (DFFARX1_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+act_ram_reg[538][11]/D (DFFARX1_RVT)
+                                   0.40 f         0.41           0.00    -0.00   clk      default
+gen_mac_lanes[31].u_lane/u_mac/weight_r_reg[11]/D (DFFARX2_RVT)
+                                   0.36 f         0.36           0.00    -0.00   clk      default
+act_ram_reg[998][12]/D (DFFARX2_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[600][5]/D (DFFARX1_RVT)
+                                   0.34 f         0.34           0.00    -0.00   clk      default
+act_ram_reg[222][12]/D (DFFARX1_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+gen_mac_lanes[31].u_lane/u_mac/weight_r_reg[6]/D (DFFARX2_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+act_ram_reg[491][2]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[407][14]/D (DFFARX1_RVT)
+                                   0.38 f         0.39           0.00    -0.00   clk      default
+act_ram_reg[998][6]/D (DFFARX2_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+gen_mac_lanes[3].u_lane/u_mac/bias_r_reg[0]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+act_ram_reg[961][8]/D (DFFARX1_RVT)
+                                   0.36 f         0.36           0.00    -0.00   clk      default
+act_ram_reg[867][6]/D (DFFARX1_RVT)
+                                   0.34 f         0.34           0.00    -0.00   clk      default
+act_ram_reg[4][8]/D (DFFARX1_RVT)
+                                   0.33 f         0.33           0.00    -0.00   clk      default
+act_ram_reg[50][0]/D (DFFARX1_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[858][12]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+act_ram_reg[88][8]/D (DFFARX2_RVT)
+                                   0.36 f         0.36           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[359][1]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+act_ram_reg[331][3]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[951][8]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[808][10]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+act_ram_reg[893][6]/D (DFFARX1_RVT)
+                                   0.36 f         0.36           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[209][10]/D (DFFARX1_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+act_ram_reg[137][9]/D (DFFARX2_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+act_ram_reg[763][13]/D (DFFARX1_RVT)
+                                   0.34 f         0.34           0.00    -0.00   clk      default
+act_ram_reg[514][2]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+act_ram_reg[785][14]/D (DFFARX1_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+act_ram_reg[674][15]/D (DFFARX2_RVT)
+                                   0.43 f         0.43           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[231][6]/D (DFFARX1_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[297][4]/D (DFFARX1_RVT)
+                                   0.45 f         0.45           0.00    -0.00   clk      default
+act_ram_reg[443][8]/D (DFFARX1_RVT)
+                                   0.32 f         0.32           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[162][5]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+act_ram_reg[585][8]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+act_ram_reg[651][2]/D (DFFARX1_RVT)
+                                   0.44 f         0.44           0.00    -0.00   clk      default
+act_ram_reg[295][10]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[699][10]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+act_ram_reg[797][12]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[677][7]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+act_ram_reg[359][3]/D (DFFARX1_RVT)
+                                   0.30 f         0.30           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[373][0]/D (DFFARX1_RVT)
+                                   0.47 f         0.47           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[403][11]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[370][1]/D (DFFARX1_RVT)
+                                   0.48 f         0.48           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[978][15]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+mac_outs_latched_reg[3][15]/D (DFFX2_RVT)
+                                   0.40 f         0.40           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[821][4]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+act_ram_reg[565][2]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+act_ram_reg[925][12]/D (DFFARX1_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[353][3]/D (DFFARX1_RVT)
+                                   0.48 f         0.48           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[619][4]/D (DFFARX1_RVT)
+                                   0.33 f         0.34           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[342][11]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+act_ram_reg[194][0]/D (DFFARX1_RVT)
+                                   0.32 f         0.32           0.00    -0.00   clk      default
+act_ram_reg[1001][10]/D (DFFARX1_RVT)
+                                   0.31 f         0.31           0.00    -0.00   clk      default
+act_ram_reg[330][14]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+act_ram_reg[989][6]/D (DFFARX2_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+act_ram_reg[350][8]/D (DFFARX1_RVT)
+                                   0.40 f         0.40           0.00    -0.00   clk      default
+act_ram_reg[31][7]/D (DFFARX1_RVT)
+                                   0.32 f         0.32           0.00    -0.00   clk      default
+act_ram_reg[961][11]/D (DFFARX1_RVT)
+                                   0.36 f         0.36           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[293][11]/D (DFFARX1_RVT)
+                                   0.47 f         0.48           0.00    -0.00   clk      default
+act_ram_reg[74][3]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+act_ram_reg[937][13]/D (DFFARX1_RVT)
+                                   0.31 f         0.31           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[986][2]/D (DFFARX1_RVT)
+                                   0.42 f         0.42           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[555][10]/D (DFFARX1_RVT)
+                                   0.34 f         0.34           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[465][11]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+act_ram_reg[265][4]/D (DFFARX2_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+act_ram_reg[570][4]/D (DFFARX1_RVT)
+                                   0.41 f         0.41           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[388][6]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[606][4]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+act_ram_reg[229][11]/D (DFFARX1_RVT)
+                                   0.34 f         0.34           0.00    -0.00   clk      default
+act_ram_reg[319][10]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+act_ram_reg[670][3]/D (DFFARX2_RVT)
+                                   0.34 f         0.34           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[144][14]/D (DFFARX1_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[338][7]/D (DFFARX1_RVT)
+                                   0.47 f         0.47           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[562][4]/D (DFFARX1_RVT)
+                                   0.34 f         0.34           0.00    -0.00   clk      default
+gen_mac_lanes[8].u_lane/u_mac/bias_r_reg[3]/D (DFFARX1_RVT)
+                                   0.36 f         0.36           0.00    -0.00   clk      default
+act_ram_reg[927][2]/D (DFFARX1_RVT)
+                                   0.36 f         0.36           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[844][3]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+act_ram_reg[137][6]/D (DFFARX2_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+act_ram_reg[31][13]/D (DFFARX1_RVT)
+                                   0.31 f         0.31           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[533][2]/D (DFFARX1_RVT)
+                                   0.34 f         0.34           0.00    -0.00   clk      default
+act_ram_reg[721][12]/D (DFFARX1_RVT)
+                                   0.40 f         0.40           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[1006][10]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+act_ram_reg[786][4]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+act_ram_reg[851][5]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[135][1]/D (DFFARX1_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[937][1]/D (DFFARX1_RVT)
+                                   0.47 f         0.47           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[407][5]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[482][11]/D (DFFARX1_RVT)
+                                   0.40 f         0.40           0.00    -0.00   clk      default
+act_ram_reg[113][15]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+act_ram_reg[779][14]/D (DFFARX1_RVT)
+                                   0.36 f         0.36           0.00    -0.00   clk      default
+act_ram_reg[144][12]/D (DFFARX2_RVT)
+                                   0.33 f         0.33           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[439][14]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[635][2]/D (DFFARX1_RVT)
+                                   0.40 f         0.40           0.00    -0.00   clk      default
+act_ram_reg[69][11]/D (DFFARX1_RVT)
+                                   0.33 f         0.33           0.00    -0.00   clk      default
+act_ram_reg[727][9]/D (DFFARX1_RVT)
+                                   0.44 f         0.44           0.00    -0.00   clk      default
+gen_mac_lanes[22].u_lane/u_mac/bias_r_reg[2]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+mac_outs_latched_reg[2][0]/D (DFFX2_RVT)
+                                   0.40 f         0.40           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[514][11]/D (DFFARX1_RVT)
+                                   0.34 f         0.34           0.00    -0.00   clk      default
+act_ram_reg[678][4]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[709][3]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+act_ram_reg[956][9]/D (DFFARX1_RVT)
+                                   0.36 f         0.36           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[599][6]/D (DFFARX1_RVT)
+                                   0.31 f         0.31           0.00    -0.00   clk      default
+act_ram_reg[256][15]/D (DFFARX2_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[274][10]/D (DFFARX1_RVT)
+                                   0.47 f         0.47           0.00    -0.00   clk      default
+act_ram_reg[716][11]/D (DFFARX1_RVT)
+                                   0.42 f         0.42           0.00    -0.00   clk      default
+mac_outs_latched_reg[2][2]/D (DFFX2_RVT)
+                                   0.40 f         0.40           0.00    -0.00   clk      default
+mac_outs_latched_reg[11][4]/D (DFFX1_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+act_ram_reg[525][4]/D (DFFARX2_RVT)
+                                   0.40 f         0.40           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[241][2]/D (DFFARX1_RVT)
+                                   0.37 f         0.38           0.00    -0.00   clk      default
+act_ram_reg[987][12]/D (DFFARX2_RVT)
+                                   0.34 f         0.34           0.00    -0.00   clk      default
+act_ram_reg[954][2]/D (DFFARX1_RVT)
+                                   0.34 f         0.34           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[956][10]/D (DFFARX1_RVT)
+                                   0.34 f         0.34           0.00    -0.00   clk      default
+act_ram_reg[845][14]/D (DFFARX1_RVT)
+                                   0.36 f         0.36           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[465][4]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[586][13]/D (DFFARX2_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+act_ram_reg[832][8]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[950][12]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[322][7]/D (DFFARX1_RVT)
+                                   0.47 f         0.47           0.00    -0.00   clk      default
+act_ram_reg[602][5]/D (DFFARX1_RVT)
+                                   0.40 f         0.40           0.00    -0.00   clk      default
+act_ram_reg[93][5]/D (DFFARX2_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+act_ram_reg[870][9]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[393][3]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[683][10]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[684][6]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[871][3]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[749][8]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+act_ram_reg[355][3]/D (DFFARX1_RVT)
+                                   0.30 f         0.31           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[220][9]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[421][2]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[515][9]/D (DFFARX1_RVT)
+                                   0.34 f         0.34           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[685][3]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[563][4]/D (DFFARX1_RVT)
+                                   0.34 f         0.34           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[491][11]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[394][11]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[973][14]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[993][4]/D (DFFARX1_RVT)
+                                   0.40 f         0.40           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[682][0]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+gen_mac_lanes[3].u_lane/u_mac/start_r1_reg/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[639][4]/D (DFFARX1_RVT)
+                                   0.40 f         0.40           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[635][9]/D (DFFARX1_RVT)
+                                   0.40 f         0.40           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[682][4]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+act_ram_reg[458][4]/D (DFFARX1_RVT)
+                                   0.36 f         0.36           0.00    -0.00   clk      default
+act_ram_reg[134][1]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[225][1]/D (DFFARX1_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[838][2]/D (DFFARX1_RVT)
+                                   0.34 f         0.34           0.00    -0.00   clk      default
+act_ram_reg[0][10]/D (DFFARX1_RVT)
+                                   0.33 f         0.33           0.00    -0.00   clk      default
+act_ram_reg[702][4]/D (DFFARX2_RVT)
+                                   0.34 f         0.34           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[957][10]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+act_ram_reg[512][0]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[190][1]/D (DFFARX1_RVT)
+                                   0.34 f         0.34           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[528][15]/D (DFFARX1_RVT)
+                                   0.34 f         0.34           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[147][1]/D (DFFARX1_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+act_ram_reg[707][0]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[440][10]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+act_ram_reg[768][0]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+gen_mac_lanes[22].u_lane/u_mac/bias_r_reg[5]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+act_ram_reg[848][14]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+act_ram_reg[612][12]/D (DFFARX2_RVT)
+                                   0.32 f         0.32           0.00    -0.00   clk      default
+act_ram_reg[534][7]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[275][8]/D (DFFARX1_RVT)
+                                   0.48 f         0.48           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[654][12]/D (DFFARX2_RVT)
+                                   0.46 f         0.46           0.00    -0.00   clk      default
+act_ram_reg[724][4]/D (DFFARX1_RVT)
+                                   0.36 f         0.36           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[178][0]/D (DFFARX2_RVT)
+                                   0.37 f         0.38           0.00    -0.00   clk      default
+act_ram_reg[89][11]/D (DFFARX2_RVT)
+                                   0.36 f         0.36           0.00    -0.00   clk      default
+act_ram_reg[821][5]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[414][11]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+act_ram_reg[518][14]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+act_ram_reg[980][6]/D (DFFARX2_RVT)
+                                   0.40 f         0.40           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[906][4]/D (DFFARX1_RVT)
+                                   0.41 f         0.41           0.00    -0.00   clk      default
+act_ram_reg[402][8]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+act_ram_reg[707][14]/D (DFFARX2_RVT)
+                                   0.41 f         0.41           0.00    -0.00   clk      default
+act_ram_reg[534][9]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[393][0]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+act_ram_reg[231][0]/D (DFFARX2_RVT)
+                                   0.34 f         0.34           0.00    -0.00   clk      default
+act_ram_reg[231][6]/D (DFFARX2_RVT)
+                                   0.34 f         0.34           0.00    -0.00   clk      default
+act_ram_reg[992][14]/D (DFFARX1_RVT)
+                                   0.36 f         0.36           0.00    -0.00   clk      default
+act_ram_reg[142][2]/D (DFFARX1_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+act_ram_reg[803][10]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+act_ram_reg[515][10]/D (DFFARX1_RVT)
+                                   0.40 f         0.40           0.00    -0.00   clk      default
+act_ram_reg[813][11]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[459][11]/D (DFFARX1_RVT)
+                                   0.34 f         0.35           0.00    -0.00   clk      default
+act_ram_reg[91][13]/D (DFFARX2_RVT)
+                                   0.32 f         0.32           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[194][6]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+act_ram_reg[1006][12]/D (DFFARX1_RVT)
+                                   0.36 f         0.36           0.00    -0.00   clk      default
+act_ram_reg[192][7]/D (DFFARX1_RVT)
+                                   0.32 f         0.32           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[753][12]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[602][6]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+mac_outs_latched_reg[23][13]/D (DFFX2_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[579][8]/D (DFFARX1_RVT)
+                                   0.34 f         0.34           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[11][2]/D (DFFARX1_RVT)
+                                   0.34 f         0.34           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[512][13]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+act_ram_reg[788][14]/D (DFFARX1_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+act_ram_reg[628][13]/D (DFFARX2_RVT)
+                                   0.32 f         0.32           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[371][10]/D (DFFARX1_RVT)
+                                   0.47 f         0.47           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[719][5]/D (DFFARX1_RVT)
+                                   0.44 f         0.44           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[859][13]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[132][10]/D (DFFARX1_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[1001][8]/D (DFFARX1_RVT)
+                                   0.47 f         0.47           0.00    -0.00   clk      default
+act_ram_reg[453][6]/D (DFFARX1_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[254][9]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[921][0]/D (DFFARX1_RVT)
+                                   0.41 f         0.41           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[517][1]/D (DFFARX1_RVT)
+                                   0.34 f         0.34           0.00    -0.00   clk      default
+gen_mac_lanes[5].u_lane/u_mac/bias_r_reg[4]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+act_ram_reg[107][0]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[1015][15]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[38][8]/D (DFFARX2_RVT)
+                                   0.40 f         0.40           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[559][4]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[139][7]/D (DFFARX1_RVT)
+                                   0.36 f         0.36           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[246][8]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+act_ram_reg[770][12]/D (DFFARX1_RVT)
+                                   0.34 f         0.34           0.00    -0.00   clk      default
+act_ram_reg[969][3]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[394][0]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+gen_mac_lanes[28].u_lane/u_mac/acc_reg[9]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+act_ram_reg[555][11]/D (DFFARX1_RVT)
+                                   0.33 f         0.33           0.00    -0.00   clk      default
+act_ram_reg[281][14]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+gen_mac_lanes[2].u_lane/u_mac/bias_r_reg[10]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+act_ram_reg[818][13]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+act_ram_reg[48][2]/D (DFFARX2_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[631][8]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[704][15]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[134][10]/D (DFFARX1_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[843][13]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+act_ram_reg[727][2]/D (DFFARX1_RVT)
+                                   0.44 f         0.44           0.00    -0.00   clk      default
+act_ram_reg[723][3]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+act_ram_reg[954][14]/D (DFFARX1_RVT)
+                                   0.34 f         0.34           0.00    -0.00   clk      default
+act_ram_reg[940][11]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+act_ram_reg[109][2]/D (DFFARX2_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+gen_mac_lanes[11].u_lane/u_mac/weight_r_reg[2]/D (DFFARX2_RVT)
+                                   0.39 r         0.39           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[393][13]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+act_ram_reg[52][15]/D (DFFARX1_RVT)
+                                   0.33 f         0.33           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[311][14]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[686][14]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+gen_mac_lanes[25].u_lane/u_mac/relu_en_r3_reg/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+act_ram_reg[820][11]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+act_ram_reg[786][10]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+gen_mac_lanes[10].u_lane/u_mac/bias_r_reg[13]/D (DFFARX1_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[591][6]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+act_ram_reg[305][3]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[165][14]/D (DFFARX1_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[117][6]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[527][5]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[843][0]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+act_ram_reg[89][7]/D (DFFARX2_RVT)
+                                   0.36 f         0.36           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[447][5]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+act_ram_reg[932][2]/D (DFFARX1_RVT)
+                                   0.31 f         0.31           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[498][2]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+act_ram_reg[173][12]/D (DFFARX1_RVT)
+                                   0.33 f         0.33           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[362][3]/D (DFFARX1_RVT)
+                                   0.41 f         0.41           0.00    -0.00   clk      default
+act_ram_reg[269][2]/D (DFFARX1_RVT)
+                                   0.40 f         0.40           0.00    -0.00   clk      default
+act_ram_reg[470][0]/D (DFFARX1_RVT)
+                                   0.36 f         0.36           0.00    -0.00   clk      default
+act_ram_reg[442][4]/D (DFFARX1_RVT)
+                                   0.32 f         0.32           0.00    -0.00   clk      default
+act_ram_reg[741][10]/D (DFFARX1_RVT)
+                                   0.41 f         0.41           0.00    -0.00   clk      default
+act_ram_reg[634][10]/D (DFFARX2_RVT)
+                                   0.41 f         0.41           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[441][15]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+act_ram_reg[960][3]/D (DFFARX1_RVT)
+                                   0.36 f         0.36           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[216][0]/D (DFFARX1_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[624][3]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+act_ram_reg[434][1]/D (DFFARX1_RVT)
+                                   0.36 f         0.36           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[414][3]/D (DFFARX1_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+act_ram_reg[636][8]/D (DFFARX2_RVT)
+                                   0.41 f         0.41           0.00    -0.00   clk      default
+act_ram_reg[389][15]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+gen_mac_lanes[0].u_lane/u_mac/bias_r_reg[3]/D (DFFARX1_RVT)
+                                   0.40 f         0.40           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[717][2]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+act_ram_reg[158][9]/D (DFFARX2_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+gen_mac_lanes[22].u_lane/u_mac/acc_reg[1]/D (DFFARX1_RVT)
+                                   0.40 f         0.40           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[246][3]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+gen_mac_lanes[27].u_lane/u_mac/relu_en_r3_reg/D (DFFARX1_RVT)
+                                   0.34 f         0.34           0.00    -0.00   clk      default
+act_ram_reg[95][11]/D (DFFARX2_RVT)
+                                   0.32 f         0.32           0.00    -0.00   clk      default
+act_ram_reg[344][4]/D (DFFARX1_RVT)
+                                   0.38 f         0.38           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[682][3]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+act_ram_reg[131][7]/D (DFFARX1_RVT)
+                                   0.32 f         0.32           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[493][13]/D (DFFARX1_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[887][10]/D (DFFARX1_RVT)
+                                   0.33 f         0.33           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[134][12]/D (DFFARX1_RVT)
+                                   0.37 f         0.37           0.00    -0.00   clk      default
+act_ram_reg[892][3]/D (DFFARX1_RVT)
+                                   0.36 f         0.36           0.00    -0.00   clk      default
+act_ram_reg[964][0]/D (DFFARX1_RVT)
+                                   0.36 f         0.36           0.00    -0.00   clk      default
+act_ram_reg[969][15]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+gen_mac_lanes[28].u_lane/u_mac/acc_reg[5]/D (DFFARX1_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+u_input_fifo/fifo_buf_reg[795][5]/D (DFFARX2_RVT)
+                                   0.39 f         0.39           0.00    -0.00   clk      default
+act_ram_reg[812][14]/D (DFFARX1_RVT)
+                                   0.35 f         0.35           0.00    -0.00   clk      default
+
+1

@@ -1,0 +1,11 @@
+****************************************
+Report : app_option
+Design : route_pg_ladder_hold_eco_open_site_m0
+Version: W-2024.09-SP2
+Date   : Mon May 11 22:04:52 2026
+****************************************
+Name                                            Type       Value      User-value   User-default System-default Scope      Status     Source
+----------------------------------------------- ---------- ---------- ------------ ------------ -------------- ---------- ---------- ----------------------------------------------------------------------------------------------------
+route.detail.generate_extra_off_grid_pin_tracks bool       true       true         --           false          block      normal     /DATA/home/edu135/MNIST/4_Backend_ICC2/0_Script/06_route/probe_sequential_local_offgrid_route.tcl:228
+----------------------------------------------- ---------- ---------- ------------ ------------ -------------- ---------- ---------- ----------------------------------------------------------------------------------------------------
+1

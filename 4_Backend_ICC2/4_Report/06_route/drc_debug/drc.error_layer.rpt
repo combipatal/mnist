@@ -1,0 +1,29 @@
+****************************************
+Report : Report drc errors
+Design : route
+Data   : zroute.err
+Type   : error_layer
+Version: W-2024.09-SP2
+Date   : Sun May 10 20:39:12 2026
+****************************************
+
+ErrorSet                                    Total   Visible     Fixed   Ignored
+--------------------------------------------------------------------------------
+Design : route                              738     738         0       0
+      Data : zroute.err                     738     738         0       0
+            M1 (11)                         378     378         0       0
+                Diff net spacing            263     263         0       0
+                Off-grid                    91      91          0       0
+                Short                       24      24          0       0
+            M1 (11)-M2 (13)                 183     183         0       0
+                Needs fat contact           183     183         0       0
+            M2 (13)                         101     101         0       0
+                Diff net spacing            21      21          0       0
+                Less than minimum area      4       4           0       0
+                Off-grid                    74      74          0       0
+                Short                       2       2           0       0
+            M3 (15)                         1       1           0       0
+                Diff net spacing            1       1           0       0
+            VIA1 (12)                       75      75          0       0
+                Off-grid                    75      75          0       0
+1

@@ -1,0 +1,4 @@
+target_nets	option_status	save_status	stage	total	open_nets	diff_net_spacing	less_than_min_area	needs_fat_contact	off_grid	same_net_spacing	short	connection_not_within_pin
+ZBUF_899_1724	extra_pin_tracks=true;connect_within_pins_error:Invalid value '{M1 M2}' specified for option 'route.common.connect_within_pins_by_layer_name'	no_save	before	1	0	0	0	0	1	0	0	0
+ZBUF_899_1724	extra_pin_tracks=true;connect_within_pins_error:Invalid value '{M1 M2}' specified for option 'route.common.connect_within_pins_by_layer_name'	no_save	after_remove	0	1	0	0	0	0	0	0	0
+ZBUF_899_1724	extra_pin_tracks=true;connect_within_pins_error:Invalid value '{M1 M2}' specified for option 'route.common.connect_within_pins_by_layer_name'	no_save	after	1	0	0	0	0	1	0	0	0

@@ -1,0 +1,448 @@
+ 
+****************************************
+check_design summary:
+Version:     W-2024.09-SP5-5
+Date:        Sat May  9 20:06:33 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                    128
+    Unconnected ports (LINT-28)                                   128
+
+Cells                                                             139
+    Cells do not drive (LINT-1)                                    11
+    Connected to power or ground (LINT-32)                         96
+    Nets connected to multiple pins on same cell (LINT-33)         32
+
+Nets                                                               31
+    Unloaded nets (LINT-2)                                         31
+--------------------------------------------------------------------------------
+
+Warning: In design 'nn_top', cell 'C69192' does not drive any nets. (LINT-1)
+Warning: In design 'nn_top', cell 'C69195' does not drive any nets. (LINT-1)
+Warning: In design 'nn_top', cell 'C69209' does not drive any nets. (LINT-1)
+Warning: In design 'nn_top', cell 'C69210' does not drive any nets. (LINT-1)
+Warning: In design 'fifo_FIFO_DATA_WIDTH16_FIFO_BUFFER_SIZE1024', cell 'B_13' does not drive any nets. (LINT-1)
+Warning: In design 'fifo_FIFO_DATA_WIDTH16_FIFO_BUFFER_SIZE1024', cell 'B_14' does not drive any nets. (LINT-1)
+Warning: In design 'fifo_FIFO_DATA_WIDTH16_FIFO_BUFFER_SIZE1024', cell 'B_15' does not drive any nets. (LINT-1)
+Warning: In design 'argmax_NUM_CLASSES10', cell 'C286' does not drive any nets. (LINT-1)
+Warning: In design 'mac_cell', cell 'C722' does not drive any nets. (LINT-1)
+Warning: In design 'mac_cell', cell 'C723' does not drive any nets. (LINT-1)
+Warning: In design 'mac_cell', cell 'C731' does not drive any nets. (LINT-1)
+Warning: In design 'nn_top', net 'mac_valid_out[31]' driven by pin 'gen_mac_lanes[31].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[30]' driven by pin 'gen_mac_lanes[30].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[29]' driven by pin 'gen_mac_lanes[29].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[28]' driven by pin 'gen_mac_lanes[28].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[27]' driven by pin 'gen_mac_lanes[27].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[26]' driven by pin 'gen_mac_lanes[26].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[25]' driven by pin 'gen_mac_lanes[25].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[24]' driven by pin 'gen_mac_lanes[24].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[23]' driven by pin 'gen_mac_lanes[23].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[22]' driven by pin 'gen_mac_lanes[22].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[21]' driven by pin 'gen_mac_lanes[21].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[20]' driven by pin 'gen_mac_lanes[20].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[19]' driven by pin 'gen_mac_lanes[19].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[18]' driven by pin 'gen_mac_lanes[18].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[17]' driven by pin 'gen_mac_lanes[17].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[16]' driven by pin 'gen_mac_lanes[16].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[15]' driven by pin 'gen_mac_lanes[15].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[14]' driven by pin 'gen_mac_lanes[14].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[13]' driven by pin 'gen_mac_lanes[13].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[12]' driven by pin 'gen_mac_lanes[12].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[11]' driven by pin 'gen_mac_lanes[11].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[10]' driven by pin 'gen_mac_lanes[10].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[9]' driven by pin 'gen_mac_lanes[9].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[8]' driven by pin 'gen_mac_lanes[8].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[7]' driven by pin 'gen_mac_lanes[7].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[6]' driven by pin 'gen_mac_lanes[6].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[5]' driven by pin 'gen_mac_lanes[5].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[4]' driven by pin 'gen_mac_lanes[4].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[3]' driven by pin 'gen_mac_lanes[3].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[2]' driven by pin 'gen_mac_lanes[2].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'nn_top', net 'mac_valid_out[1]' driven by pin 'gen_mac_lanes[1].u_lane/valid_out' has no loads. (LINT-2)
+Warning: In design 'mac_lane_LANE_ID0', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID0', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID0', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID0', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID1', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID1', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID1', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID1', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID2', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID2', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID2', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID2', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID3', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID3', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID3', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID3', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID4', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID4', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID4', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID4', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID5', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID5', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID5', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID5', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID6', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID6', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID6', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID6', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID7', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID7', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID7', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID7', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID8', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID8', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID8', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID8', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID9', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID9', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID9', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID9', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID10', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID10', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID10', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID10', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID11', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID11', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID11', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID11', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID12', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID12', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID12', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID12', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID13', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID13', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID13', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID13', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID14', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID14', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID14', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID14', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID15', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID15', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID15', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID15', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID16', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID16', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID16', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID16', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID17', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID17', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID17', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID17', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID18', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID18', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID18', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID18', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID19', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID19', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID19', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID19', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID20', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID20', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID20', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID20', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID21', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID21', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID21', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID21', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID22', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID22', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID22', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID22', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID23', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID23', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID23', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID23', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID24', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID24', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID24', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID24', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID25', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID25', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID25', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID25', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID26', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID26', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID26', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID26', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID27', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID27', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID27', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID27', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID28', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID28', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID28', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID28', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID29', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID29', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID29', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID29', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID30', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID30', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID30', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID30', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID31', port 'weight_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID31', port 'weight_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID31', port 'bias_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mac_lane_LANE_ID31', port 'bias_addr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[0].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[0].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[0].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[1].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[1].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[1].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[2].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[2].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[2].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[3].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[3].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[3].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[4].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[4].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[4].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[5].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[5].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[5].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[6].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[6].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[6].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[7].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[7].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[7].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[8].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[8].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[8].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[9].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[9].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[9].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[10].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[10].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[10].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[11].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[11].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[11].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[12].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[12].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[12].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[13].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[13].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[13].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[14].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[14].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[14].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[15].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[15].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[15].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[16].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[16].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[16].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[17].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[17].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[17].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[18].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[18].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[18].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[19].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[19].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[19].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[20].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[20].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[20].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[21].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[21].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[21].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[22].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[22].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[22].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[23].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[23].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[23].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[24].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[24].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[24].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[25].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[25].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[25].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[26].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[26].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[26].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[27].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[27].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[27].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[28].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[28].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[28].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[29].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[29].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[29].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[30].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[30].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[30].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[31].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'weight_addr[11]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[31].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[3]' is connected to logic 0. 
+Warning: In design 'nn_top', a pin on submodule 'gen_mac_lanes[31].u_lane' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bias_addr[2]' is connected to logic 0. 
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[0].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[1].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[2].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[3].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[4].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[5].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[6].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[7].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[8].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[9].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[10].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[11].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[12].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[13].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[14].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[15].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[16].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[17].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[18].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[19].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[20].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[21].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[22].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[23].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[24].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[25].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[26].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[27].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[28].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[29].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[30].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+Warning: In design 'nn_top', the same net is connected to more than one pin on submodule 'gen_mac_lanes[31].u_lane'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'weight_addr[11]', 'bias_addr[3]'', 'bias_addr[2]'.
+1

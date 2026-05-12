@@ -1,0 +1,20 @@
+****************************************
+Report : Report drc errors
+Design : route
+Data   : zroute.err
+Type   : matrix
+Version: W-2024.09-SP2
+Date   : Sun May 10 20:39:12 2026
+****************************************
+
+                       | M1    M1-M2   M2    M3  VIA1  | TOTALS BY TYPE
+--------------------------------------------------------------------------
+Diff net spacing       | 263   -       21    1   -     | 285
+Less than minimum area | -     -       4     -   -     | 4
+Needs fat contact      | -     183     -     -   -     | 183
+Off-grid               | 91    -       74    -   75    | 240
+Short                  | 24    -       2     -   -     | 26
+--------------------------------------------------------------------------
+                       | M1    M1-M2   M2    M3  VIA1  | 738
+TOTALS BY LAYER        | 378   183     101   1   75    |
+1

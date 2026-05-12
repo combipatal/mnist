@@ -1,0 +1,8 @@
+cell	old_ref	new_ref	status	message
+act_ram_reg[861][0]	DFFARX1_RVT	DFFARX2_RVT	PASS	1
+U77942	OA221X2_RVT	OA221X1_RVT	PASS	1
+
+swap_net_exclude_regex	^(VDD|VSS)$
+excluded_swap_pin_nets	VDD VSS
+swap_pin_nets	ZBUF_197_3009 ZBUF_228_1096 ZBUF_832_2538 ZCTSNET_995 act_ram[861][0] n134012 n143522 n17001 n78423
+legalize_placement	NA	NA	PASS	1

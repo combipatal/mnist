@@ -1,0 +1,12 @@
+x	shapes_checked	pg_shape_count	pg_shape_layers	pg_via_count	pg_via_defs	signal_shape_count	signal_shape_layers	signal_via_count	signal_via_defs	status
+54.5	1	1	M2=0,M3=0,M4=0,M5=0,M6=0,M7=1	0		3	M2=1,M3=0,M4=2,M5=0,M6=0,M7=0	0		candidate
+54.6	1	1	M2=0,M3=0,M4=0,M5=0,M6=0,M7=1	0		2	M2=1,M3=0,M4=1,M5=0,M6=0,M7=0	0		candidate
+54.7	1	1	M2=0,M3=0,M4=0,M5=0,M6=0,M7=1	0		1	M2=0,M3=0,M4=1,M5=0,M6=0,M7=0	0		candidate
+54.8	1	1	M2=0,M3=0,M4=0,M5=0,M6=0,M7=1	0		1	M2=0,M3=0,M4=1,M5=0,M6=0,M7=0	0		candidate
+54.9	1	1	M2=0,M3=0,M4=0,M5=0,M6=0,M7=1	0		0	M2=0,M3=0,M4=0,M5=0,M6=0,M7=0	0		no_non_pg_objects
+55.0	1	1	M2=0,M3=0,M4=0,M5=0,M6=0,M7=1	0		0	M2=0,M3=0,M4=0,M5=0,M6=0,M7=0	0		no_non_pg_objects
+55.1	1	1	M2=0,M3=0,M4=0,M5=0,M6=0,M7=1	0		1	M2=0,M3=0,M4=0,M5=0,M6=1,M7=0	0		candidate
+55.2	1	1	M2=0,M3=0,M4=0,M5=0,M6=0,M7=1	0		1	M2=0,M3=0,M4=0,M5=0,M6=1,M7=0	0		candidate
+55.3	1	1	M2=0,M3=0,M4=0,M5=0,M6=0,M7=1	0		2	M2=0,M3=1,M4=0,M5=0,M6=1,M7=0	0		candidate
+55.4	1	1	M2=0,M3=0,M4=0,M5=0,M6=0,M7=1	0		6	M2=2,M3=1,M4=1,M5=1,M6=1,M7=0	3	VIA34SQ_C 1 VIA45SQ_C 1 VIA23SQ_C 1	candidate
+55.5	1	1	M2=0,M3=0,M4=0,M5=0,M6=0,M7=1	0		5	M2=2,M3=1,M4=1,M5=1,M6=0,M7=0	3	VIA34SQ_C 1 VIA45SQ_C 1 VIA23SQ_C 1	candidate

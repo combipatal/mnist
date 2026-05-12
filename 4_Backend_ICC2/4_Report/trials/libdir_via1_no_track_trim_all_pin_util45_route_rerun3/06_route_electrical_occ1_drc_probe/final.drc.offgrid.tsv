@@ -1,0 +1,3 @@
+id	type_name	error_class	layers	bbox	center	objects	shape	brief_info	verbose_info	status
+0	Off-grid	basic	M1	{294.9430 646.3670} {295.0670 646.4490}	295.0050,646.4080	n68003	{ polygons {{294.9430 646.3670} {294.9430 646.4490} {295.0670 646.4490} {295.0670 646.3670}} } 			error
+3	Off-grid	basic	M1	{297.2230 957.2120} {297.3650 957.2620}	297.2940,957.2370	n87923	{ polygons {{297.2230 957.2120} {297.2230 957.2620} {297.3650 957.2620} {297.3650 957.2120}} } 			error

@@ -1,0 +1,4 @@
+id	type_name	error_class	layers	bbox	center	objects	brief_info	verbose_info	status
+0	Diff net spacing	basic	M2	{20.2200 867.6180} {20.2960 867.7900}	20.2580,867.7040	n76715,VSS			error
+1	Short	short	M2	{20.0680 867.5930} {20.2360 867.8150}	20.1520,867.7040	ZBUF_61_2921,VSS			error
+2	Diff net spacing	basic	M2	{20.0660 867.5930} {20.2380 867.6630}	20.1520,867.6280	ZBUF_61_2921,VSS			error

@@ -1,0 +1,39 @@
+Checking secondary net through power switch is enabled. 
+Secondary net will be checked together from primary net. They will be treated as the same net
+Primary Net : VDD    Secondary Net:
+Primary Net : VSS    Secondary Net:
+Loading cell instances...
+Number of Standard Cells: 206907
+Number of Macro Cells: 0
+Number of IO Pad Cells: 0
+Number of Blocks: 0
+Loading P/G wires and vias...
+Number of VDD Wires: 441
+Number of VDD Vias: 15403
+Number of VDD Terminals: 8
+**************Verify net VDD connectivity*****************
+  Number of floating wires: 7
+  Number of floating vias: 0
+  Number of floating std cells: 4447
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 0
+************************************************************
+Loading cell instances...
+Loading P/G wires and vias...
+Number of VSS Wires: 441
+Number of VSS Vias: 15403
+Number of VSS Terminals: 8
+**************Verify net VSS connectivity*****************
+  Number of floating wires: 7
+  Number of floating vias: 0
+  Number of floating std cells: 4002
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 0
+************************************************************
+Successfully written connectivity statistics to /DATA/home/edu135/MNIST/4_Backend_ICC2/4_Report/trials/libdir_via1_no_track_trim_all_pin_util45_route_rerun3/06_route/pg_connectivity_detail.rpt.
+Overall runtime: 4 seconds.
+{PATH_11_184 PATH_11_208 PATH_11_232 PATH_11_256 PATH_11_280 PATH_11_304 PATH_11_328 PATH_11_483 PATH_11_507 PATH_11_531 PATH_11_555 PATH_11_579 PATH_11_603 PATH_11_627}

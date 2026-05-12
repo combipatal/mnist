@@ -1,0 +1,4 @@
+step	target_nets	save_status	total	open_nets	diff_net_spacing	less_than_min_area	needs_fat_contact	off_grid	same_net_spacing	short	connection_not_within_pin
+initial	none	no_save	1085	415	172	336	0	10	119	446	0
+after_step1	@all_route_eco	no_save	0	0	0	0	0	0	0	0	0
+final	all	saved	0	0	0	0	0	0	0	0	0

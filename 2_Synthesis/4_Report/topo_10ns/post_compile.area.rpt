@@ -1,0 +1,43 @@
+ 
+****************************************
+Report : area
+Design : nn_top
+Version: W-2024.09-SP5-5
+Date   : Sat May  9 20:36:34 2026
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_tt1p05v25c (File: /DATA/home/edu135/lib/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_tt1p05v25c.db)
+
+Number of ports:                           41
+Number of nets:                        181898
+Number of cells:                       175574
+Number of combinational cells:         135915
+Number of sequential cells:             39659
+Number of macros/black boxes:               0
+Number of buf/inv:                      19336
+Number of references:                      71
+
+Combinational area:             330802.472405
+Buf/Inv area:                    30703.391473
+Noncombinational area:          284539.118586
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                615341.590990
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area              Local cell area
+                                  --------------------  -------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-    Black-
+                                  Total        Total    national     national     boxes   Design
+--------------------------------  -----------  -------  -----------  -----------  ------  ---------
+nn_top                            615341.5910    100.0  330802.4724  284539.1186  0.0000  nn_top
+--------------------------------  -----------  -------  -----------  -----------  ------  ---------
+Total                                                   330802.4724  284539.1186  0.0000
+
+1

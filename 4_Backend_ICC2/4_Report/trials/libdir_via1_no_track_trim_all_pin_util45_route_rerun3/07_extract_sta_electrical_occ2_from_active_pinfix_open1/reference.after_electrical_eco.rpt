@@ -1,0 +1,109 @@
+****************************************
+Report : reference
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Tue May 12 15:59:15 2026
+****************************************
+
+Attributes
+    b - black-box (unknown)
+    h - hierarchical
+    n - noncombinational
+    u - contains unmapped logic
+    E - extracted timing model
+    Q - Quick timing model (QTM)
+    s - synthetic operator
+
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+--------------------------------------------------------------------------------
+AND2X1_RVT         saed32rvt_tt       2.03    4877       9915.68   
+AND2X2_RVT         saed32rvt_tt       2.29     542       1239.71   
+AND2X4_RVT         saed32rvt_tt       2.80       5         13.98   
+AND3X1_RVT         saed32rvt_tt       2.29     801       1832.12   
+AND3X2_RVT         saed32rvt_tt       2.54     197        500.66   
+AND4X1_RVT         saed32rvt_tt       2.54    5289      13441.68   
+AND4X2_RVT         saed32rvt_tt       3.81     173        659.50   
+AND4X4_RVT         saed32rvt_tt       4.32       3         12.96   
+AO21X1_RVT         saed32rvt_tt       2.54    1082       2749.84   
+AO21X2_RVT         saed32rvt_tt       2.80      52        145.37   
+AO221X1_RVT        saed32rvt_tt       3.05    1963       5986.62   
+AO221X2_RVT        saed32rvt_tt       3.30      66        218.06   
+AO222X1_RVT        saed32rvt_tt       3.30     709       2342.45   
+AO222X2_RVT        saed32rvt_tt       3.56       3         10.67   
+AO22X1_RVT         saed32rvt_tt       2.54   52812     134218.53   
+AO22X2_RVT         saed32rvt_tt       2.80    2356       6586.40   
+AOI21X1_RVT        saed32rvt_tt       3.05      21         64.04   
+AOI21X2_RVT        saed32rvt_tt       3.30       5         16.52   
+AOI221X1_RVT       saed32rvt_tt       3.56       2          7.12   
+AOI222X1_RVT       saed32rvt_tt       3.81      38        144.86   
+AOI22X1_RVT        saed32rvt_tt       3.05     548       1671.25   
+AOI22X2_RVT        saed32rvt_tt       3.30       1          3.30   
+DELLN1X2_RVT       saed32rvt_tt       5.08   27861     141614.12   
+DELLN2X2_RVT       saed32rvt_tt       6.61       1          6.61   
+DELLN3X2_RVT       saed32rvt_tt       9.66       2         19.31   
+DFFARX1_RVT        saed32rvt_tt       7.12   32858     233818.58   n
+DFFARX2_RVT        saed32rvt_tt       7.62    5440      41476.30   n
+DFFASX2_RVT        saed32rvt_tt       7.62       1          7.62   n
+DFFX1_RVT          saed32rvt_tt       6.61     867       5728.91   n
+DFFX2_RVT          saed32rvt_tt       7.12     493       3508.20   n
+FADDX1_RVT         saed32rvt_tt       4.83    5699      27518.97   
+FADDX2_RVT         saed32rvt_tt       5.34      62        330.90   
+HADDX1_RVT         saed32rvt_tt       3.30      36        118.94   
+IBUFFX16_RVT       saed32rvt_tt       6.61       1          6.61   
+IBUFFX2_RVT        saed32rvt_tt       2.54      23         58.45   
+IBUFFX32_RVT       saed32rvt_tt      11.69       4         46.76   
+IBUFFX4_RVT        saed32rvt_tt       3.05    1683       5132.69   
+IBUFFX8_RVT        saed32rvt_tt       4.32       1          4.32   
+INVX0_RVT          saed32rvt_tt       1.27    1614       2050.94   
+INVX16_RVT         saed32rvt_tt       5.08     113        574.37   
+INVX1_RVT          saed32rvt_tt       1.27    7113       9038.63   
+INVX2_RVT          saed32rvt_tt       1.52    1002       1527.91   
+INVX32_RVT         saed32rvt_tt       9.15      29        265.33   
+INVX4_RVT          saed32rvt_tt       2.03     502       1020.64   
+INVX8_RVT          saed32rvt_tt       3.05    1051       3205.26   
+MUX21X1_RVT        saed32rvt_tt       3.30    2707       8943.58   
+MUX41X1_RVT        saed32rvt_tt       5.59      38        212.46   
+MUX41X2_RVT        saed32rvt_tt       6.10       1          6.10   
+NAND2X0_RVT        saed32rvt_tt       1.52    8667      13216.00   
+NAND2X1_RVT        saed32rvt_tt       2.54      91        231.27   
+NAND2X2_RVT        saed32rvt_tt       2.80       8         22.36   
+NAND2X4_RVT        saed32rvt_tt       3.30       1          3.30   
+NAND3X0_RVT        saed32rvt_tt       1.78    2952       5251.63   
+NAND3X1_RVT        saed32rvt_tt       2.80     141        394.18   
+NAND3X2_RVT        saed32rvt_tt       3.05       3          9.15   
+NAND4X0_RVT        saed32rvt_tt       2.03   10857      22073.93   
+NAND4X1_RVT        saed32rvt_tt       3.05     117        356.82   
+NBUFFX16_RVT       saed32rvt_tt       6.10     695       4239.12   
+NBUFFX2_RVT        saed32rvt_tt       2.03   23175      47118.30   
+NBUFFX32_RVT       saed32rvt_tt      10.67     102       1088.75   
+NBUFFX4_RVT        saed32rvt_tt       2.54    6785      17243.67   
+NBUFFX8_RVT        saed32rvt_tt       3.81    4801      18302.18   
+NOR2X0_RVT         saed32rvt_tt       2.54      72        182.98   
+NOR2X2_RVT         saed32rvt_tt       2.80       3          8.39   
+NOR3X0_RVT         saed32rvt_tt       2.80     241        673.74   
+NOR3X2_RVT         saed32rvt_tt       3.05       5         15.25   
+NOR4X0_RVT         saed32rvt_tt       3.05       2          6.10   
+NOR4X1_RVT         saed32rvt_tt       3.05    6453      19679.89   
+OA21X1_RVT         saed32rvt_tt       2.54     521       1324.09   
+OA21X2_RVT         saed32rvt_tt       2.80      74        206.87   
+OA221X1_RVT        saed32rvt_tt       3.05    3718      11338.89   
+OA221X2_RVT        saed32rvt_tt       3.30      60        198.23   
+OA222X1_RVT        saed32rvt_tt       3.30     259        855.70   
+OA222X2_RVT        saed32rvt_tt       3.56       1          3.56   
+OA22X1_RVT         saed32rvt_tt       2.54     757       1923.87   
+OA22X2_RVT         saed32rvt_tt       2.80     129        360.63   
+OAI21X1_RVT        saed32rvt_tt       3.05     230        701.44   
+OAI221X1_RVT       saed32rvt_tt       3.56      65        231.27   
+OAI222X1_RVT       saed32rvt_tt       3.81       1          3.81   
+OAI22X1_RVT        saed32rvt_tt       3.05      18         54.90   
+OR2X1_RVT          saed32rvt_tt       2.29     420        960.66   
+OR2X2_RVT          saed32rvt_tt       2.29      80        182.98   
+OR3X1_RVT          saed32rvt_tt       2.54     395       1003.87   
+OR3X2_RVT          saed32rvt_tt       2.54       7         17.79   
+OR4X1_RVT          saed32rvt_tt       3.56      43        152.99   
+OR4X2_RVT          saed32rvt_tt       3.81       1          3.81   
+XOR2X1_RVT         saed32rvt_tt       4.32      99        427.72   
+--------------------------------------------------------------------------------
+Total 87 references                                    838093.97
+1

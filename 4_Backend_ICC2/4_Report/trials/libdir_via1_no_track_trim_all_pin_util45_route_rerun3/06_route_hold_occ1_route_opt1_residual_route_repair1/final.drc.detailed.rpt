@@ -1,0 +1,26 @@
+****************************************
+Report : Report drc errors
+Design : route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_route_opt1
+Data   : zroute.err
+Type   : detailed
+Version: W-2024.09-SP2
+Date   : Tue May 12 10:32:32 2026
+****************************************
+
+Error ID          : 0
+Error Type        : Off-grid
+Error Layer       : M1 (11)
+Number of errors  : 2
+Description       :  -- 
+Status            : error
+Bbox              : {825.8490 272.2900} {825.9590 272.3500}
+
+Error ID          : 1
+Error Type        : Off-grid
+Error Layer       : M1 (11)
+Number of errors  : 2
+Description       :  -- 
+Status            : error
+Bbox              : {625.9690 1082.4500} {626.0790 1082.5100}
+
+1

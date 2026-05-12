@@ -1,0 +1,54 @@
+****************************************
+Report : List of Attribute Definitions
+Version: W-2024.09-SP2
+Date   : Sun May 10 20:39:12 2026
+****************************************
+
+Properties:
+    A - Application-defined
+    U - User-defined
+    I - Importable from design/library (for user-defined)
+    S - Settable
+    B - Subscripted
+
+Attribute Name            Object     Type       Properties  Constraints
+--------------------------------------------------------------------------------
+actual_spacing            drc_error  errdm_distance
+                                                A           
+bbox                      drc_error  errdm_rect A           
+bounding_box              drc_error  collection A           
+brief_info                drc_error  string     A           
+direction                 drc_error  string     A           horizontal, lower_left_to_upper_right, unknown, upper_left_to_lower_right, vertical
+endpoints                 drc_error  errdm_coord_list_list
+                                                A           
+error_class               drc_error  string     A           basic, open_locator, short, size, spacing
+error_data                drc_error  collection A           
+error_id                  drc_error  int        A           
+error_info                drc_error  string     A,S         
+error_type                drc_error  collection A           
+full_name                 drc_error  string     A           
+layers                    drc_error  collection A           
+must_fix                  drc_error  boolean    A,S         
+name                      drc_error  string     A           
+object_class              drc_error  string     A           
+objects                   drc_error  collection A           
+pin_edge                  drc_error  int        A           
+points                    drc_error  errdm_coord_list_list
+                                                A           
+polygons                  drc_error  errdm_coord_list_list
+                                                A           
+polylines                 drc_error  errdm_coord_list_list
+                                                A           
+required_height           drc_error  errdm_distance
+                                                A           
+required_spacing          drc_error  errdm_distance
+                                                A           
+required_width            drc_error  errdm_distance
+                                                A           
+shape                     drc_error  string     A           
+shape_uses                drc_error  route_type_list
+                                                A           
+status                    drc_error  string     A,S         error, fixed, ignored, waived
+type_name                 drc_error  string     A           
+verbose_info              drc_error  string     A           
+z_level                   drc_error  int        A           

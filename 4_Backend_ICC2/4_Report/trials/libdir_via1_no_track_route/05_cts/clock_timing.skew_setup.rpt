@@ -1,0 +1,77 @@
+****************************************
+Report : clock timing
+        -type skew
+        -nworst 20
+        -setup
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Sun May 10 21:32:56 2026
+****************************************
+
+  Mode: default
+  Clock: clk
+
+  Clock Pin                                          Latency      Skew             Corner
+---------------------------------------------------------------------------------------------------
+  img_cnt_reg[2]/CLK                                    0.33              rp-+    default
+  act_ram_reg[692][6]/CLK                               0.14      0.19    rp-+    default
+
+  img_cnt_reg[9]/CLK                                    0.33              rp-+    default
+  act_ram_reg[692][6]/CLK                               0.14      0.19    rp-+    default
+
+  img_cnt_reg[3]/CLK                                    0.33              rp-+    default
+  act_ram_reg[692][6]/CLK                               0.14      0.19    rp-+    default
+
+  img_cnt_reg[2]/CLK                                    0.33              rp-+    default
+  act_ram_reg[692][12]/CLK                              0.14      0.19    rp-+    default
+
+  img_cnt_reg[8]/CLK                                    0.33              rp-+    default
+  act_ram_reg[692][6]/CLK                               0.14      0.19    rp-+    default
+
+  img_cnt_reg[0]/CLK                                    0.33              rp-+    default
+  act_ram_reg[692][6]/CLK                               0.14      0.19    rp-+    default
+
+  img_cnt_reg[1]/CLK                                    0.33              rp-+    default
+  act_ram_reg[692][6]/CLK                               0.14      0.19    rp-+    default
+
+  img_cnt_reg[9]/CLK                                    0.33              rp-+    default
+  act_ram_reg[692][12]/CLK                              0.14      0.19    rp-+    default
+
+  img_cnt_reg[8]/CLK                                    0.33              rp-+    default
+  act_ram_reg[692][12]/CLK                              0.14      0.19    rp-+    default
+
+  img_cnt_reg[1]/CLK                                    0.33              rp-+    default
+  act_ram_reg[692][12]/CLK                              0.14      0.19    rp-+    default
+
+  img_cnt_reg[0]/CLK                                    0.33              rp-+    default
+  act_ram_reg[692][12]/CLK                              0.14      0.19    rp-+    default
+
+  img_cnt_reg[3]/CLK                                    0.33              rp-+    default
+  act_ram_reg[692][12]/CLK                              0.14      0.19    rp-+    default
+
+  img_cnt_reg[0]/CLK                                    0.33              rp-+    default
+  act_ram_reg[693][12]/CLK                              0.14      0.19    rp-+    default
+
+  img_cnt_reg[1]/CLK                                    0.33              rp-+    default
+  act_ram_reg[693][12]/CLK                              0.14      0.19    rp-+    default
+
+  img_cnt_reg[8]/CLK                                    0.33              rp-+    default
+  act_ram_reg[693][12]/CLK                              0.14      0.19    rp-+    default
+
+  img_cnt_reg[9]/CLK                                    0.33              rp-+    default
+  act_ram_reg[693][2]/CLK                               0.14      0.19    rp-+    default
+
+  img_cnt_reg[3]/CLK                                    0.33              rp-+    default
+  act_ram_reg[693][12]/CLK                              0.14      0.19    rp-+    default
+
+  img_cnt_reg[9]/CLK                                    0.33              rp-+    default
+  act_ram_reg[693][12]/CLK                              0.14      0.19    rp-+    default
+
+  img_cnt_reg[2]/CLK                                    0.33              rp-+    default
+  act_ram_reg[693][12]/CLK                              0.14      0.19    rp-+    default
+
+  img_cnt_reg[0]/CLK                                    0.33              rp-+    default
+  act_ram_reg[693][2]/CLK                               0.14      0.19    rp-+    default
+
+---------------------------------------------------------------------------------------------------
+1

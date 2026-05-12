@@ -1,0 +1,40 @@
+****************************************
+Report : clock timing
+        -type summary
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Mon May 11 11:40:41 2026
+****************************************
+
+  Mode: default
+  Clock: clk
+                                                                                 Corner
+---------------------------------------------------------------------------------------------------
+  Maximum setup launch latency:
+      u_input_fifo/fifo_buf_reg[354][11]/CLK                   0.38       rp-+    default
+
+  Minimum setup capture latency:
+      u_input_fifo/fifo_buf_reg[278][1]/CLK                    0.13       rp-+    default
+
+  Minimum hold launch latency:
+      u_input_fifo/fifo_buf_reg[278][1]/CLK                    0.13       rp-+    default
+
+  Maximum hold capture latency:
+      u_input_fifo/fifo_buf_reg[354][11]/CLK                   0.38       rp-+    default
+
+  Maximum active transition:
+      u_input_fifo/fifo_buf_reg[193][1]/CLK                    0.08       rp-+    default
+
+  Minimum active transition:
+      act_ram_reg[973][0]/CLK                                  0.02       rp-+    default
+
+  Maximum setup skew:
+      u_input_fifo/rd_addr_reg[9]/CLK                                     rp-+    default
+      u_input_fifo/fifo_buf_reg[278][1]/CLK                    0.23       rp-+    default
+
+  Maximum hold skew:
+      u_input_fifo/dout_reg[4]/CLK                                        rp-+    default
+      act_ram_reg[259][4]/CLK                                  0.21       rp-+    default
+
+
+1

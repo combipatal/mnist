@@ -1,0 +1,16 @@
+****************************************
+Report : Report drc errors
+Design : route_pg_ladder_hold_eco_repair1_hold2_clean_occ1_route_opt1
+Data   : zroute.err
+Type   : matrix
+Version: W-2024.09-SP2
+Date   : Tue May 12 10:45:07 2026
+****************************************
+
+                | M1  | TOTALS BY TYPE
+-----------------------------------------
+Off-grid        | 1   | 1
+-----------------------------------------
+                | M1  | 1
+TOTALS BY LAYER | 1   |
+1

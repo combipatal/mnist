@@ -1,0 +1,14 @@
+****************************************
+Report : Report drc errors
+Design : route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack
+Data   : zroute.err
+Type   : error_layer
+Version: W-2024.09-SP2
+Date   : Mon May 11 17:14:45 2026
+****************************************
+
+ErrorSet                                    Total   Visible     Fixed   Ignored
+--------------------------------------------------------------------------------
+Design : route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack 0 0 0  0
+      Data : zroute.err                     0       0           0       0
+1

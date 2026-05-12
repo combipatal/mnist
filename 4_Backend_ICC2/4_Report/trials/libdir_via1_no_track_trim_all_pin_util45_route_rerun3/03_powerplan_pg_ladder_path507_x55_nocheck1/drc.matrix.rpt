@@ -1,0 +1,16 @@
+****************************************
+Report : Report drc errors
+Design : route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack
+Data   : zroute.err
+Type   : matrix
+Version: W-2024.09-SP2
+Date   : Mon May 11 17:25:54 2026
+****************************************
+
+                 | M6  | TOTALS BY TYPE
+------------------------------------------
+Diff net spacing | 2   | 2
+------------------------------------------
+                 | M6  | 2
+TOTALS BY LAYER  | 2   |
+1

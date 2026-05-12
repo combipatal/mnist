@@ -1,0 +1,26 @@
+****************************************
+Report : Report drc errors
+Design : route_seq_size_swap_dff2_oa1_move_u77942_xp152_pintrack
+Data   : zroute.err
+Type   : detailed
+Version: W-2024.09-SP2
+Date   : Mon May 11 17:07:08 2026
+****************************************
+
+Error ID          : 0
+Error Type        : Diff net spacing
+Error Layer       : M2 (13)
+Number of errors  : 2
+Description       :  -- 
+Status            : error
+Bbox              : {20.0680 867.5930} {20.1360 867.8150}
+
+Error ID          : 1
+Error Type        : Diff net spacing
+Error Layer       : M2 (13)
+Number of errors  : 2
+Description       :  -- 
+Status            : error
+Bbox              : {20.0680 867.6180} {20.1610 867.7900}
+
+1

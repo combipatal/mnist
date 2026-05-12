@@ -1,0 +1,2 @@
+id	type_name	error_class	layers	bbox	center	objects	shape	brief_info	verbose_info	status
+1	Off-grid	basic	M1	{1060.2330 409.8500} {1060.3430 409.9100}	1060.2880,409.8800	u_input_fifo/fifo_buf[1015][7]	{ polygons {{1060.2330 409.8500} {1060.2330 409.9100} {1060.3430 409.9100} {1060.3430 409.8500}} } 			error

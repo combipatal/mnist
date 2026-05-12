@@ -1,0 +1,128 @@
+Information: Timer using 1 threads
+****************************************
+Report : qor
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Mon May 11 11:11:22 2026
+****************************************
+Information: Corner default: no PVT mismatches. (PVT-032)
+Information: The stitching and editing of coupling caps is turned OFF for design 'mnist_npu_icc2_lib:floorplan.design'. (TIM-125)
+Information: Design Average RC for design floorplan  (NEX-011)
+Information: r = 1.790173 ohm/um, via_r = 0.465555 ohm/cut, c = 0.058589 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 1.670389 ohm/um, via_r = 0.577985 ohm/cut, c = 0.066311 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: The RC mode used is VR for design 'nn_top'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 181898, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 0, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+************************************************************
+Timer Settings:
+Delay Calculation Style:                   auto
+Signal Integrity Analysis:                 disabled
+Timing Window Analysis:                    disabled
+Advanced Waveform Propagation:             disabled
+Variation Type:                            fixed_derate
+Clock Reconvergence Pessimism Removal:     disabled
+Advanced Receiver Model:                   disabled
+LLE:                                       disabled
+ML Acceleration:                           off
+Smart Arc Optimization:                    disabled
+************************************************************
+
+
+Scenario           'default'
+Timing Path Group  '**in2reg_default**'
+----------------------------------------
+Levels of Logic:                      4
+Critical Path Length:              1.93
+Critical Path Slack:               7.94
+Critical Path Clk Period:         10.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'default'
+Timing Path Group  '**reg2out_default**'
+----------------------------------------
+Levels of Logic:                      8
+Critical Path Length:              0.96
+Critical Path Slack:               7.94
+Critical Path Clk Period:         10.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'default'
+Timing Path Group  'clk'
+----------------------------------------
+Levels of Logic:                     68
+Critical Path Length:              3.90
+Critical Path Slack:               5.97
+Critical Path Clk Period:         10.00
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+Worst Hold Violation:             -0.01
+Total Hold Violation:             -4.32
+No. of Hold Violations:             593
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:              0
+Hierarchical Port Count:              0
+Leaf Cell Count:                 175574
+Buf/Inv Cell Count:               19336
+Buf Cell Count:                    7168
+Inv Cell Count:                   12168
+Combinational Cell Count:        135915
+   Single-bit Isolation Cell Count:                        0
+   Multi-bit Isolation Cell Count:                         0
+   Isolation Cell Banking Ratio:                           0.00%
+   Single-bit Level Shifter Cell Count:                    0
+   Multi-bit Level Shifter Cell Count:                     0
+   Level Shifter Cell Banking Ratio:                       0.00%
+   Single-bit ELS Cell Count:                              0
+   Multi-bit ELS Cell Count:                               0
+   ELS Cell Banking Ratio:                                 0.00%
+Sequential Cell Count:            39659
+   Integrated Clock-Gating Cell Count:                     0
+   Sequential Macro Cell Count:                            0
+   Single-bit Sequential Cell Count:                       39659
+   Multi-bit Sequential Cell Count:                        0
+   Sequential Cell Banking Ratio:                          0.00%
+   BitsPerflop:                                            1.00
+Macro Count:                          0
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:           330918.11
+Noncombinational Area:        284539.11
+Buf/Inv Area:                  30703.39
+Total Buffer Area:             14799.06
+Total Inverter Area:           15904.33
+Macro/Black Box Area:              0.00
+Net Area:                             0
+Net XLength:                  268697.61
+Net YLength:                   66352.22
+----------------------------------------
+Cell Area (netlist):                         615457.22
+Cell Area (netlist and physical only):       615457.22
+Net Length:                   335049.83
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:            181916
+Nets with Violations:              6338
+Max Trans Violations:                12
+Max Cap Violations:                6338
+----------------------------------------
+
+1

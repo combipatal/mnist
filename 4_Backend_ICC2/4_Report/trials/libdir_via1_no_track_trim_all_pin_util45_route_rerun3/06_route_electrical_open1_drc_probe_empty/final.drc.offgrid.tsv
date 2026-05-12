@@ -1,0 +1,2 @@
+id	type_name	error_class	layers	bbox	center	objects	shape	brief_info	verbose_info	status
+0	Off-grid	basic	M1	{639.4970 308.6180} {639.6070 308.6780}	639.5520,308.6480	n137157	{ polygons {{639.4970 308.6180} {639.4970 308.6780} {639.6070 308.6780} {639.6070 308.6180}} } 			error

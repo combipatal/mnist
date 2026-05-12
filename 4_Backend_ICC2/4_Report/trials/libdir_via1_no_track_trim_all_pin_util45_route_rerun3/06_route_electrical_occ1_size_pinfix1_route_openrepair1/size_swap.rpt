@@ -1,0 +1,8 @@
+cell	old_ref	new_ref	status	message
+U67529	AND4X1_RVT	AND4X2_RVT	PASS	1
+U87199	AO221X1_RVT	AO221X2_RVT	PASS	1
+
+swap_net_exclude_regex	^(VDD|VSS)$
+excluded_swap_pin_nets	VDD VSS
+swap_pin_nets	ZBUF_1096_2951 ZBUF_3191_3482 eco_net_642_n68350 n137916 n140856 n68003 n68031 n87923 n87924 n87934
+legalize_placement	NA	NA	PASS	1

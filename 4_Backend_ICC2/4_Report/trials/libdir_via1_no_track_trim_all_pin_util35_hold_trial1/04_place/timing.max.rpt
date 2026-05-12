@@ -1,0 +1,1116 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 20
+        -report_by design
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Tue May 12 20:24:22 2026
+****************************************
+
+  Startpoint: layer_idx_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[16].u_lane/weight_out_reg[5] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  layer_idx_reg[0]/CLK (DFFARX2_RVT)               0.00      0.00 r
+  layer_idx_reg[0]/Q (DFFARX2_RVT)                 0.12      0.12 r
+  U48703/Y (NBUFFX2_RVT)                           0.06      0.18 r
+  U48742/Y (INVX1_RVT)                             0.17      0.35 f
+  U19878/Y (NAND2X0_RVT)                           0.13      0.48 r
+  U60266/Y (NBUFFX2_RVT)                           0.09      0.57 r
+  U60267/Y (INVX2_RVT)                             0.07      0.63 f
+  U19881/Y (NAND2X0_RVT)                           0.07      0.70 r
+  U19882/Y (NAND2X0_RVT)                           0.06      0.75 f
+  U19883/Y (XOR2X2_RVT)                            0.12      0.87 f
+  U70908/Y (NBUFFX2_RVT)                           0.17      1.05 f
+  U71085/Y (NBUFFX4_RVT)                           0.12      1.17 f
+  U26264/Y (NAND2X0_RVT)                           0.38      1.55 r
+  U124373/Y (NBUFFX4_RVT)                          0.09      1.63 r
+  U89022/Y (INVX1_RVT)                             0.06      1.69 f
+  U26266/Y (AND2X1_RVT)                            0.19      1.88 f
+  U26315/Y (NAND2X0_RVT)                           0.28      2.16 r
+  U105757/Y (NBUFFX2_RVT)                          0.09      2.25 r
+  U105906/Y (NBUFFX2_RVT)                          0.13      2.38 r
+  U51858/Y (NAND2X0_RVT)                           0.52      2.90 f
+  U118756/Y (INVX1_RVT)                            0.59      3.48 r
+  U51901/Y (NAND3X0_RVT)                           0.09      3.57 f
+  U51907/Y (INVX1_RVT)                             0.06      3.64 r
+  U52550/Y (NAND4X0_RVT)                           0.06      3.70 f
+  U52551/Y (NOR4X1_RVT)                            0.07      3.76 r
+  U52552/Y (NAND4X0_RVT)                           0.04      3.80 f
+  U52553/Y (AO22X1_RVT)                            0.05      3.86 f
+  U52554/Y (AO221X1_RVT)                           0.05      3.90 f
+  U52555/Y (INVX1_RVT)                             0.02      3.93 r
+  U52568/Y (NAND3X0_RVT)                           0.63      4.56 f
+  gen_mac_lanes[16].u_lane/weight_out_reg[5]/D (DFFX2_RVT)
+                                                   0.02      4.58 f
+  data arrival time                                          4.58
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  gen_mac_lanes[16].u_lane/weight_out_reg[5]/CLK (DFFX2_RVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.10      9.90
+  library setup time                              -0.22      9.68
+  data required time                                         9.68
+  ------------------------------------------------------------------------
+  data required time                                         9.68
+  data arrival time                                         -4.58
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.10
+
+
+
+  Startpoint: in_cnt_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[10].u_lane/weight_out_reg[4] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  in_cnt_reg[3]/CLK (DFFARX2_RVT)                  0.00      0.00 r
+  in_cnt_reg[3]/Q (DFFARX2_RVT)                    0.13      0.13 f
+  U47744/Y (NBUFFX2_RVT)                           0.13      0.27 f
+  U47763/Y (NBUFFX4_RVT)                           0.09      0.35 f
+  U32828/Y (NAND2X0_RVT)                           0.34      0.69 r
+  U60191/Y (INVX1_RVT)                             0.42      1.11 f
+  U32831/Y (NAND2X0_RVT)                           0.72      1.83 r
+  U95659/Y (INVX1_RVT)                             0.27      2.09 f
+  U32835/Y (NAND2X0_RVT)                           0.28      2.37 r
+  U104247/Y (NBUFFX2_RVT)                          0.14      2.51 r
+  U104337/Y (NBUFFX2_RVT)                          0.12      2.63 r
+  U26340/Y (NAND2X0_RVT)                           0.31      2.94 f
+  U113968/Y (INVX1_RVT)                            0.75      3.69 r
+  U65150/Y (NAND4X0_RVT)                           0.06      3.75 f
+  U65153/Y (NOR4X1_RVT)                            0.11      3.86 r
+  U65159/Y (OA22X1_RVT)                            0.05      3.91 r
+  U65187/Y (NAND4X0_RVT)                           0.05      3.96 f
+  U65188/Y (INVX1_RVT)                             0.03      3.98 r
+  U65220/Y (NAND3X0_RVT)                           0.58      4.56 f
+  gen_mac_lanes[10].u_lane/weight_out_reg[4]/D (DFFX2_RVT)
+                                                   0.02      4.58 f
+  data arrival time                                          4.58
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  gen_mac_lanes[10].u_lane/weight_out_reg[4]/CLK (DFFX2_RVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.10      9.90
+  library setup time                              -0.21      9.69
+  data required time                                         9.69
+  ------------------------------------------------------------------------
+  data required time                                         9.69
+  data arrival time                                         -4.58
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.11
+
+
+
+  Startpoint: layer_idx_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[16].u_lane/weight_out_reg[4] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  layer_idx_reg[0]/CLK (DFFARX2_RVT)               0.00      0.00 r
+  layer_idx_reg[0]/Q (DFFARX2_RVT)                 0.12      0.12 r
+  U48703/Y (NBUFFX2_RVT)                           0.06      0.18 r
+  U48742/Y (INVX1_RVT)                             0.17      0.35 f
+  U19878/Y (NAND2X0_RVT)                           0.13      0.48 r
+  U60266/Y (NBUFFX2_RVT)                           0.09      0.57 r
+  U60267/Y (INVX2_RVT)                             0.07      0.63 f
+  U19881/Y (NAND2X0_RVT)                           0.07      0.70 r
+  U19882/Y (NAND2X0_RVT)                           0.06      0.75 f
+  U19883/Y (XOR2X2_RVT)                            0.12      0.87 f
+  U70908/Y (NBUFFX2_RVT)                           0.17      1.05 f
+  U71085/Y (NBUFFX4_RVT)                           0.12      1.17 f
+  U26264/Y (NAND2X0_RVT)                           0.38      1.55 r
+  U124373/Y (NBUFFX4_RVT)                          0.09      1.63 r
+  U89022/Y (INVX1_RVT)                             0.06      1.69 f
+  U26266/Y (AND2X1_RVT)                            0.19      1.88 f
+  U26315/Y (NAND2X0_RVT)                           0.28      2.16 r
+  U105757/Y (NBUFFX2_RVT)                          0.09      2.25 r
+  U105906/Y (NBUFFX2_RVT)                          0.13      2.38 r
+  U51858/Y (NAND2X0_RVT)                           0.52      2.90 f
+  U118756/Y (INVX1_RVT)                            0.59      3.48 r
+  U51860/Y (AND4X1_RVT)                            0.04      3.52 r
+  U51861/Y (AND4X1_RVT)                            0.08      3.60 r
+  U51862/Y (AND4X1_RVT)                            0.06      3.66 r
+  U52422/Y (NAND4X0_RVT)                           0.04      3.70 f
+  U52433/Y (AO22X1_RVT)                            0.07      3.77 f
+  U52434/Y (INVX1_RVT)                             0.02      3.78 r
+  U52449/Y (NAND3X0_RVT)                           0.03      3.82 f
+  U52468/Y (AO22X1_RVT)                            0.06      3.87 f
+  U52469/Y (INVX1_RVT)                             0.02      3.90 r
+  U52499/Y (NAND3X0_RVT)                           0.64      4.54 f
+  gen_mac_lanes[16].u_lane/weight_out_reg[4]/D (DFFX2_RVT)
+                                                   0.02      4.56 f
+  data arrival time                                          4.56
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  gen_mac_lanes[16].u_lane/weight_out_reg[4]/CLK (DFFX2_RVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.10      9.90
+  library setup time                              -0.23      9.67
+  data required time                                         9.67
+  ------------------------------------------------------------------------
+  data required time                                         9.67
+  data arrival time                                         -4.56
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.12
+
+
+
+  Startpoint: layer_idx_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[16].u_lane/weight_out_reg[7] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  layer_idx_reg[0]/CLK (DFFARX2_RVT)               0.00      0.00 r
+  layer_idx_reg[0]/Q (DFFARX2_RVT)                 0.12      0.12 r
+  U48703/Y (NBUFFX2_RVT)                           0.06      0.18 r
+  U48742/Y (INVX1_RVT)                             0.17      0.35 f
+  U19878/Y (NAND2X0_RVT)                           0.13      0.48 r
+  U60266/Y (NBUFFX2_RVT)                           0.09      0.57 r
+  U60267/Y (INVX2_RVT)                             0.07      0.63 f
+  U19881/Y (NAND2X0_RVT)                           0.07      0.70 r
+  U19882/Y (NAND2X0_RVT)                           0.06      0.75 f
+  U19883/Y (XOR2X2_RVT)                            0.12      0.87 f
+  U70908/Y (NBUFFX2_RVT)                           0.17      1.05 f
+  U71085/Y (NBUFFX4_RVT)                           0.12      1.17 f
+  U26264/Y (NAND2X0_RVT)                           0.38      1.55 r
+  U124373/Y (NBUFFX4_RVT)                          0.09      1.63 r
+  U89022/Y (INVX1_RVT)                             0.06      1.69 f
+  U26266/Y (AND2X1_RVT)                            0.19      1.88 f
+  U26315/Y (NAND2X0_RVT)                           0.28      2.16 r
+  U105757/Y (NBUFFX2_RVT)                          0.09      2.25 r
+  U105906/Y (NBUFFX2_RVT)                          0.13      2.38 r
+  U51858/Y (NAND2X0_RVT)                           0.52      2.90 f
+  U118756/Y (INVX1_RVT)                            0.59      3.48 r
+  U51901/Y (NAND3X0_RVT)                           0.09      3.57 f
+  U51907/Y (INVX1_RVT)                             0.06      3.64 r
+  U52576/Y (NAND4X0_RVT)                           0.07      3.71 f
+  U52586/Y (AO221X1_RVT)                           0.09      3.80 f
+  U52587/Y (AO221X1_RVT)                           0.04      3.84 f
+  U52599/Y (AO22X1_RVT)                            0.05      3.88 f
+  U52600/Y (INVX1_RVT)                             0.02      3.90 r
+  U52627/Y (NAND3X0_RVT)                           0.63      4.53 f
+  gen_mac_lanes[16].u_lane/weight_out_reg[7]/D (DFFX2_RVT)
+                                                   0.02      4.55 f
+  data arrival time                                          4.55
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  gen_mac_lanes[16].u_lane/weight_out_reg[7]/CLK (DFFX2_RVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.10      9.90
+  library setup time                              -0.22      9.68
+  data required time                                         9.68
+  ------------------------------------------------------------------------
+  data required time                                         9.68
+  data arrival time                                         -4.55
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.13
+
+
+
+  Startpoint: layer_idx_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[16].u_lane/weight_out_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  layer_idx_reg[0]/CLK (DFFARX2_RVT)               0.00      0.00 r
+  layer_idx_reg[0]/Q (DFFARX2_RVT)                 0.12      0.12 r
+  U48703/Y (NBUFFX2_RVT)                           0.06      0.18 r
+  U48742/Y (INVX1_RVT)                             0.17      0.35 f
+  U19878/Y (NAND2X0_RVT)                           0.13      0.48 r
+  U60266/Y (NBUFFX2_RVT)                           0.09      0.57 r
+  U60267/Y (INVX2_RVT)                             0.07      0.63 f
+  U19881/Y (NAND2X0_RVT)                           0.07      0.70 r
+  U19882/Y (NAND2X0_RVT)                           0.06      0.75 f
+  U19883/Y (XOR2X2_RVT)                            0.12      0.87 f
+  U70908/Y (NBUFFX2_RVT)                           0.17      1.05 f
+  U71085/Y (NBUFFX4_RVT)                           0.12      1.17 f
+  U26264/Y (NAND2X0_RVT)                           0.38      1.55 r
+  U124373/Y (NBUFFX4_RVT)                          0.09      1.63 r
+  U89022/Y (INVX1_RVT)                             0.06      1.69 f
+  U26266/Y (AND2X1_RVT)                            0.19      1.88 f
+  U26315/Y (NAND2X0_RVT)                           0.28      2.16 r
+  U105757/Y (NBUFFX2_RVT)                          0.09      2.25 r
+  U105906/Y (NBUFFX2_RVT)                          0.13      2.38 r
+  U51858/Y (NAND2X0_RVT)                           0.52      2.90 f
+  U118756/Y (INVX1_RVT)                            0.59      3.48 r
+  U52481/Y (NAND4X0_RVT)                           0.10      3.58 f
+  U52752/Y (NOR4X1_RVT)                            0.10      3.68 r
+  U52753/Y (NAND4X0_RVT)                           0.04      3.73 f
+  U52758/Y (AO22X1_RVT)                            0.07      3.80 f
+  U52759/Y (AO221X1_RVT)                           0.04      3.83 f
+  U52760/Y (AO221X1_RVT)                           0.04      3.88 f
+  U52773/Y (AO22X1_RVT)                            0.05      3.93 f
+  U52774/Y (INVX1_RVT)                             0.02      3.95 r
+  U52807/Y (NAND3X0_RVT)                           0.58      4.54 f
+  gen_mac_lanes[16].u_lane/weight_out_reg[1]/D (DFFX2_RVT)
+                                                   0.02      4.55 f
+  data arrival time                                          4.55
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  gen_mac_lanes[16].u_lane/weight_out_reg[1]/CLK (DFFX2_RVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.10      9.90
+  library setup time                              -0.21      9.69
+  data required time                                         9.69
+  ------------------------------------------------------------------------
+  data required time                                         9.69
+  data arrival time                                         -4.55
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.14
+
+
+
+  Startpoint: in_cnt_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[10].u_lane/weight_out_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  in_cnt_reg[3]/CLK (DFFARX2_RVT)                  0.00      0.00 r
+  in_cnt_reg[3]/Q (DFFARX2_RVT)                    0.13      0.13 f
+  U47744/Y (NBUFFX2_RVT)                           0.13      0.27 f
+  U47763/Y (NBUFFX4_RVT)                           0.09      0.35 f
+  U32828/Y (NAND2X0_RVT)                           0.34      0.69 r
+  U60191/Y (INVX1_RVT)                             0.42      1.11 f
+  U32831/Y (NAND2X0_RVT)                           0.72      1.83 r
+  U95659/Y (INVX1_RVT)                             0.27      2.09 f
+  U32835/Y (NAND2X0_RVT)                           0.28      2.37 r
+  U104247/Y (NBUFFX2_RVT)                          0.14      2.51 r
+  U104337/Y (NBUFFX2_RVT)                          0.12      2.63 r
+  U26340/Y (NAND2X0_RVT)                           0.31      2.94 f
+  U113968/Y (INVX1_RVT)                            0.75      3.69 r
+  U65453/Y (NAND3X0_RVT)                           0.09      3.78 f
+  U65463/Y (AO221X1_RVT)                           0.12      3.90 f
+  U65464/Y (INVX1_RVT)                             0.02      3.91 r
+  U65469/Y (NAND3X0_RVT)                           0.04      3.95 f
+  U65470/Y (INVX1_RVT)                             0.02      3.98 r
+  U65492/Y (NAND3X0_RVT)                           0.55      4.53 f
+  gen_mac_lanes[10].u_lane/weight_out_reg[2]/D (DFFX2_RVT)
+                                                   0.02      4.55 f
+  data arrival time                                          4.55
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  gen_mac_lanes[10].u_lane/weight_out_reg[2]/CLK (DFFX2_RVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.10      9.90
+  library setup time                              -0.20      9.70
+  data required time                                         9.70
+  ------------------------------------------------------------------------
+  data required time                                         9.70
+  data arrival time                                         -4.55
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.15
+
+
+
+  Startpoint: in_cnt_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[10].u_lane/weight_out_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  in_cnt_reg[3]/CLK (DFFARX2_RVT)                  0.00      0.00 r
+  in_cnt_reg[3]/Q (DFFARX2_RVT)                    0.13      0.13 f
+  U47744/Y (NBUFFX2_RVT)                           0.13      0.27 f
+  U47763/Y (NBUFFX4_RVT)                           0.09      0.35 f
+  U32828/Y (NAND2X0_RVT)                           0.34      0.69 r
+  U60191/Y (INVX1_RVT)                             0.42      1.11 f
+  U32831/Y (NAND2X0_RVT)                           0.72      1.83 r
+  U95659/Y (INVX1_RVT)                             0.27      2.09 f
+  U32835/Y (NAND2X0_RVT)                           0.28      2.37 r
+  U104247/Y (NBUFFX2_RVT)                          0.14      2.51 r
+  U104337/Y (NBUFFX2_RVT)                          0.12      2.63 r
+  U26340/Y (NAND2X0_RVT)                           0.31      2.94 f
+  U113968/Y (INVX1_RVT)                            0.75      3.69 r
+  U65453/Y (NAND3X0_RVT)                           0.09      3.78 f
+  U65532/Y (INVX1_RVT)                             0.05      3.83 r
+  U65535/Y (NAND4X0_RVT)                           0.05      3.87 f
+  U65536/Y (AO22X1_RVT)                            0.05      3.92 f
+  U65537/Y (AO221X1_RVT)                           0.05      3.97 f
+  U65538/Y (INVX1_RVT)                             0.02      3.99 r
+  U65548/Y (NAND3X0_RVT)                           0.55      4.53 f
+  gen_mac_lanes[10].u_lane/weight_out_reg[3]/D (DFFX2_RVT)
+                                                   0.02      4.55 f
+  data arrival time                                          4.55
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  gen_mac_lanes[10].u_lane/weight_out_reg[3]/CLK (DFFX2_RVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.10      9.90
+  library setup time                              -0.20      9.70
+  data required time                                         9.70
+  ------------------------------------------------------------------------
+  data required time                                         9.70
+  data arrival time                                         -4.55
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.15
+
+
+
+  Startpoint: in_cnt_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[14].u_lane/weight_out_reg[14] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  in_cnt_reg[3]/CLK (DFFARX2_RVT)                  0.00      0.00 r
+  in_cnt_reg[3]/Q (DFFARX2_RVT)                    0.13      0.13 f
+  U47744/Y (NBUFFX2_RVT)                           0.13      0.27 f
+  U47763/Y (NBUFFX4_RVT)                           0.09      0.35 f
+  U32828/Y (NAND2X0_RVT)                           0.34      0.69 r
+  U60191/Y (INVX1_RVT)                             0.42      1.11 f
+  U32831/Y (NAND2X0_RVT)                           0.72      1.83 r
+  U95659/Y (INVX1_RVT)                             0.27      2.09 f
+  U32835/Y (NAND2X0_RVT)                           0.28      2.37 r
+  U104247/Y (NBUFFX2_RVT)                          0.14      2.51 r
+  U104337/Y (NBUFFX2_RVT)                          0.12      2.63 r
+  U26340/Y (NAND2X0_RVT)                           0.31      2.94 f
+  U113968/Y (INVX1_RVT)                            0.75      3.69 r
+  U56900/Y (AND4X1_RVT)                            0.03      3.73 r
+  U56901/Y (NAND4X0_RVT)                           0.08      3.80 f
+  U56908/Y (AO221X1_RVT)                           0.08      3.88 f
+  U56909/Y (AO221X1_RVT)                           0.04      3.92 f
+  U56910/Y (NAND2X0_RVT)                           0.05      3.98 r
+  U56911/Y (NAND3X0_RVT)                           0.53      4.51 f
+  gen_mac_lanes[14].u_lane/weight_out_reg[14]/D (DFFX1_RVT)
+                                                   0.02      4.52 f
+  data arrival time                                          4.52
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  gen_mac_lanes[14].u_lane/weight_out_reg[14]/CLK (DFFX1_RVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.10      9.90
+  library setup time                              -0.18      9.72
+  data required time                                         9.72
+  ------------------------------------------------------------------------
+  data required time                                         9.72
+  data arrival time                                         -4.52
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.19
+
+
+
+  Startpoint: in_cnt_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[14].u_lane/weight_out_reg[13] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  in_cnt_reg[3]/CLK (DFFARX2_RVT)                  0.00      0.00 r
+  in_cnt_reg[3]/Q (DFFARX2_RVT)                    0.13      0.13 f
+  U47744/Y (NBUFFX2_RVT)                           0.13      0.27 f
+  U47763/Y (NBUFFX4_RVT)                           0.09      0.35 f
+  U32828/Y (NAND2X0_RVT)                           0.34      0.69 r
+  U60191/Y (INVX1_RVT)                             0.42      1.11 f
+  U32831/Y (NAND2X0_RVT)                           0.72      1.83 r
+  U95659/Y (INVX1_RVT)                             0.27      2.09 f
+  U32835/Y (NAND2X0_RVT)                           0.28      2.37 r
+  U104247/Y (NBUFFX2_RVT)                          0.14      2.51 r
+  U104337/Y (NBUFFX2_RVT)                          0.12      2.63 r
+  U26340/Y (NAND2X0_RVT)                           0.31      2.94 f
+  U113968/Y (INVX1_RVT)                            0.75      3.69 r
+  U56900/Y (AND4X1_RVT)                            0.03      3.73 r
+  U56901/Y (NAND4X0_RVT)                           0.08      3.80 f
+  U56908/Y (AO221X1_RVT)                           0.08      3.88 f
+  U56909/Y (AO221X1_RVT)                           0.04      3.92 f
+  U56910/Y (NAND2X0_RVT)                           0.05      3.98 r
+  U56911/Y (NAND3X0_RVT)                           0.53      4.51 f
+  gen_mac_lanes[14].u_lane/weight_out_reg[13]/D (DFFX1_RVT)
+                                                   0.02      4.52 f
+  data arrival time                                          4.52
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  gen_mac_lanes[14].u_lane/weight_out_reg[13]/CLK (DFFX1_RVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.10      9.90
+  library setup time                              -0.18      9.72
+  data required time                                         9.72
+  ------------------------------------------------------------------------
+  data required time                                         9.72
+  data arrival time                                         -4.52
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.19
+
+
+
+  Startpoint: in_cnt_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[14].u_lane/weight_out_reg[15] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  in_cnt_reg[3]/CLK (DFFARX2_RVT)                  0.00      0.00 r
+  in_cnt_reg[3]/Q (DFFARX2_RVT)                    0.13      0.13 f
+  U47744/Y (NBUFFX2_RVT)                           0.13      0.27 f
+  U47763/Y (NBUFFX4_RVT)                           0.09      0.35 f
+  U32828/Y (NAND2X0_RVT)                           0.34      0.69 r
+  U60191/Y (INVX1_RVT)                             0.42      1.11 f
+  U32831/Y (NAND2X0_RVT)                           0.72      1.83 r
+  U95659/Y (INVX1_RVT)                             0.27      2.09 f
+  U32835/Y (NAND2X0_RVT)                           0.28      2.37 r
+  U104247/Y (NBUFFX2_RVT)                          0.14      2.51 r
+  U104337/Y (NBUFFX2_RVT)                          0.12      2.63 r
+  U26340/Y (NAND2X0_RVT)                           0.31      2.94 f
+  U113968/Y (INVX1_RVT)                            0.75      3.69 r
+  U56900/Y (AND4X1_RVT)                            0.03      3.73 r
+  U56901/Y (NAND4X0_RVT)                           0.08      3.80 f
+  U56908/Y (AO221X1_RVT)                           0.08      3.88 f
+  U56909/Y (AO221X1_RVT)                           0.04      3.92 f
+  U56910/Y (NAND2X0_RVT)                           0.05      3.98 r
+  U56911/Y (NAND3X0_RVT)                           0.53      4.51 f
+  gen_mac_lanes[14].u_lane/weight_out_reg[15]/D (DFFX1_RVT)
+                                                   0.02      4.52 f
+  data arrival time                                          4.52
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  gen_mac_lanes[14].u_lane/weight_out_reg[15]/CLK (DFFX1_RVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.10      9.90
+  library setup time                              -0.18      9.72
+  data required time                                         9.72
+  ------------------------------------------------------------------------
+  data required time                                         9.72
+  data arrival time                                         -4.52
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.19
+
+
+
+  Startpoint: in_cnt_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[14].u_lane/weight_out_reg[12] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  in_cnt_reg[3]/CLK (DFFARX2_RVT)                  0.00      0.00 r
+  in_cnt_reg[3]/Q (DFFARX2_RVT)                    0.13      0.13 f
+  U47744/Y (NBUFFX2_RVT)                           0.13      0.27 f
+  U47763/Y (NBUFFX4_RVT)                           0.09      0.35 f
+  U32828/Y (NAND2X0_RVT)                           0.34      0.69 r
+  U60191/Y (INVX1_RVT)                             0.42      1.11 f
+  U32831/Y (NAND2X0_RVT)                           0.72      1.83 r
+  U95659/Y (INVX1_RVT)                             0.27      2.09 f
+  U32835/Y (NAND2X0_RVT)                           0.28      2.37 r
+  U104247/Y (NBUFFX2_RVT)                          0.14      2.51 r
+  U104337/Y (NBUFFX2_RVT)                          0.12      2.63 r
+  U26340/Y (NAND2X0_RVT)                           0.31      2.94 f
+  U113968/Y (INVX1_RVT)                            0.75      3.69 r
+  U56900/Y (AND4X1_RVT)                            0.03      3.73 r
+  U56901/Y (NAND4X0_RVT)                           0.08      3.80 f
+  U56908/Y (AO221X1_RVT)                           0.08      3.88 f
+  U56909/Y (AO221X1_RVT)                           0.04      3.92 f
+  U56910/Y (NAND2X0_RVT)                           0.05      3.98 r
+  U56911/Y (NAND3X0_RVT)                           0.53      4.51 f
+  gen_mac_lanes[14].u_lane/weight_out_reg[12]/D (DFFX1_RVT)
+                                                   0.02      4.52 f
+  data arrival time                                          4.52
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  gen_mac_lanes[14].u_lane/weight_out_reg[12]/CLK (DFFX1_RVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.10      9.90
+  library setup time                              -0.18      9.72
+  data required time                                         9.72
+  ------------------------------------------------------------------------
+  data required time                                         9.72
+  data arrival time                                         -4.52
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.19
+
+
+
+  Startpoint: in_cnt_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[10].u_lane/weight_out_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  in_cnt_reg[3]/CLK (DFFARX2_RVT)                  0.00      0.00 r
+  in_cnt_reg[3]/Q (DFFARX2_RVT)                    0.13      0.13 f
+  U47744/Y (NBUFFX2_RVT)                           0.13      0.27 f
+  U47763/Y (NBUFFX4_RVT)                           0.09      0.35 f
+  U32828/Y (NAND2X0_RVT)                           0.34      0.69 r
+  U60191/Y (INVX1_RVT)                             0.42      1.11 f
+  U32831/Y (NAND2X0_RVT)                           0.72      1.83 r
+  U95659/Y (INVX1_RVT)                             0.27      2.09 f
+  U32835/Y (NAND2X0_RVT)                           0.28      2.37 r
+  U104247/Y (NBUFFX2_RVT)                          0.14      2.51 r
+  U104337/Y (NBUFFX2_RVT)                          0.12      2.63 r
+  U26340/Y (NAND2X0_RVT)                           0.31      2.94 f
+  U113968/Y (INVX1_RVT)                            0.75      3.69 r
+  U65404/Y (AND4X1_RVT)                            0.03      3.72 r
+  U65405/Y (NAND4X0_RVT)                           0.07      3.79 f
+  U65421/Y (AO221X1_RVT)                           0.09      3.88 f
+  U65422/Y (INVX1_RVT)                             0.02      3.90 r
+  U65433/Y (NAND3X0_RVT)                           0.54      4.44 f
+  gen_mac_lanes[10].u_lane/weight_out_reg[1]/D (DFFX2_RVT)
+                                                   0.02      4.46 f
+  data arrival time                                          4.46
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  gen_mac_lanes[10].u_lane/weight_out_reg[1]/CLK (DFFX2_RVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.10      9.90
+  library setup time                              -0.20      9.70
+  data required time                                         9.70
+  ------------------------------------------------------------------------
+  data required time                                         9.70
+  data arrival time                                         -4.46
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.24
+
+
+
+  Startpoint: in_cnt_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[6].u_lane/weight_out_reg[12] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  in_cnt_reg[3]/CLK (DFFARX2_RVT)                  0.00      0.00 r
+  in_cnt_reg[3]/Q (DFFARX2_RVT)                    0.13      0.13 f
+  U47744/Y (NBUFFX2_RVT)                           0.13      0.27 f
+  U47763/Y (NBUFFX4_RVT)                           0.09      0.35 f
+  U32828/Y (NAND2X0_RVT)                           0.34      0.69 r
+  U60191/Y (INVX1_RVT)                             0.42      1.11 f
+  U32831/Y (NAND2X0_RVT)                           0.72      1.83 r
+  U95659/Y (INVX1_RVT)                             0.27      2.09 f
+  U32835/Y (NAND2X0_RVT)                           0.28      2.37 r
+  U104247/Y (NBUFFX2_RVT)                          0.14      2.51 r
+  U104337/Y (NBUFFX2_RVT)                          0.12      2.63 r
+  U123595/Y (NAND2X0_RVT)                          0.47      3.10 f
+  U73868/Y (NOR4X1_RVT)                            0.14      3.24 r
+  U73870/Y (AND4X1_RVT)                            0.07      3.31 r
+  U73871/Y (AND2X1_RVT)                            0.04      3.35 r
+  U73872/Y (MUX41X1_RVT)                           0.10      3.45 r
+  U74005/Y (OA22X1_RVT)                            0.05      3.50 r
+  U22799/Y (NAND4X0_RVT)                           0.60      4.10 f
+  U74009/Y (AO21X1_RVT)                            0.39      4.49 f
+  gen_mac_lanes[6].u_lane/weight_out_reg[12]/D (DFFX1_RVT)
+                                                   0.01      4.50 f
+  data arrival time                                          4.50
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  gen_mac_lanes[6].u_lane/weight_out_reg[12]/CLK (DFFX1_RVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.10      9.90
+  library setup time                              -0.11      9.79
+  data required time                                         9.79
+  ------------------------------------------------------------------------
+  data required time                                         9.79
+  data arrival time                                         -4.50
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.29
+
+
+
+  Startpoint: layer_idx_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[14].u_lane/weight_out_reg[4] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  layer_idx_reg[0]/CLK (DFFARX2_RVT)               0.00      0.00 r
+  layer_idx_reg[0]/Q (DFFARX2_RVT)                 0.12      0.12 r
+  U48703/Y (NBUFFX2_RVT)                           0.06      0.18 r
+  U48742/Y (INVX1_RVT)                             0.17      0.35 f
+  U19878/Y (NAND2X0_RVT)                           0.13      0.48 r
+  U60266/Y (NBUFFX2_RVT)                           0.09      0.57 r
+  U60267/Y (INVX2_RVT)                             0.07      0.63 f
+  U19881/Y (NAND2X0_RVT)                           0.07      0.70 r
+  U19882/Y (NAND2X0_RVT)                           0.06      0.75 f
+  U19883/Y (XOR2X2_RVT)                            0.12      0.87 r
+  U70908/Y (NBUFFX2_RVT)                           0.15      1.02 r
+  U70963/Y (NBUFFX2_RVT)                           0.09      1.12 r
+  U70978/Y (INVX1_RVT)                             0.12      1.24 f
+  U19933/Y (NAND2X0_RVT)                           0.24      1.47 r
+  U96156/Y (NBUFFX2_RVT)                           0.16      1.63 r
+  U96157/Y (INVX1_RVT)                             0.19      1.82 f
+  U24563/Y (AND2X1_RVT)                            0.22      2.05 f
+  U24564/Y (NAND2X0_RVT)                           0.13      2.17 r
+  U115123/Y (NBUFFX2_RVT)                          0.13      2.30 r
+  U115144/Y (NBUFFX2_RVT)                          0.12      2.42 r
+  U39617/Y (NAND2X0_RVT)                           0.45      2.87 f
+  U118812/Y (INVX1_RVT)                            0.46      3.33 r
+  U56442/Y (NAND4X0_RVT)                           0.14      3.47 f
+  U57115/Y (AO222X1_RVT)                           0.10      3.58 f
+  U57116/Y (AO221X1_RVT)                           0.04      3.62 f
+  U57117/Y (AO221X1_RVT)                           0.04      3.66 f
+  U57122/Y (OA221X1_RVT)                           0.07      3.73 f
+  U57123/Y (INVX1_RVT)                             0.02      3.75 r
+  U57144/Y (NAND3X0_RVT)                           0.61      4.36 f
+  gen_mac_lanes[14].u_lane/weight_out_reg[4]/D (DFFX2_RVT)
+                                                   0.02      4.39 f
+  data arrival time                                          4.39
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  gen_mac_lanes[14].u_lane/weight_out_reg[4]/CLK (DFFX2_RVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.10      9.90
+  library setup time                              -0.22      9.68
+  data required time                                         9.68
+  ------------------------------------------------------------------------
+  data required time                                         9.68
+  data arrival time                                         -4.39
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.29
+
+
+
+  Startpoint: in_cnt_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[6].u_lane/weight_out_reg[9] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  in_cnt_reg[3]/CLK (DFFARX2_RVT)                  0.00      0.00 r
+  in_cnt_reg[3]/Q (DFFARX2_RVT)                    0.13      0.13 f
+  U47744/Y (NBUFFX2_RVT)                           0.13      0.27 f
+  U47763/Y (NBUFFX4_RVT)                           0.09      0.35 f
+  U32828/Y (NAND2X0_RVT)                           0.34      0.69 r
+  U60191/Y (INVX1_RVT)                             0.42      1.11 f
+  U32831/Y (NAND2X0_RVT)                           0.72      1.83 r
+  U95659/Y (INVX1_RVT)                             0.27      2.09 f
+  U32835/Y (NAND2X0_RVT)                           0.28      2.37 r
+  U104247/Y (NBUFFX2_RVT)                          0.14      2.51 r
+  U104337/Y (NBUFFX2_RVT)                          0.12      2.63 r
+  U26340/Y (NAND2X0_RVT)                           0.31      2.94 f
+  U113968/Y (INVX1_RVT)                            0.75      3.69 r
+  U73962/Y (AND4X1_RVT)                            0.04      3.73 r
+  U73963/Y (NAND4X0_RVT)                           0.07      3.80 f
+  U74042/Y (AO222X1_RVT)                           0.08      3.88 f
+  U74050/Y (AO222X1_RVT)                           0.07      3.96 f
+  U74051/Y (INVX1_RVT)                             0.02      3.98 r
+  U74063/Y (NAND3X0_RVT)                           0.44      4.42 f
+  gen_mac_lanes[6].u_lane/weight_out_reg[9]/D (DFFX2_RVT)
+                                                   0.01      4.43 f
+  data arrival time                                          4.43
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  gen_mac_lanes[6].u_lane/weight_out_reg[9]/CLK (DFFX2_RVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.10      9.90
+  library setup time                              -0.17      9.73
+  data required time                                         9.73
+  ------------------------------------------------------------------------
+  data required time                                         9.73
+  data arrival time                                         -4.43
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.30
+
+
+
+  Startpoint: layer_idx_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[5].u_lane/weight_out_reg[15] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  layer_idx_reg[0]/CLK (DFFARX2_RVT)               0.00      0.00 r
+  layer_idx_reg[0]/Q (DFFARX2_RVT)                 0.12      0.12 r
+  U48703/Y (NBUFFX2_RVT)                           0.06      0.18 r
+  U48742/Y (INVX1_RVT)                             0.17      0.35 f
+  U19878/Y (NAND2X0_RVT)                           0.13      0.48 r
+  U60266/Y (NBUFFX2_RVT)                           0.09      0.57 r
+  U60267/Y (INVX2_RVT)                             0.07      0.63 f
+  U19881/Y (NAND2X0_RVT)                           0.07      0.70 r
+  U19882/Y (NAND2X0_RVT)                           0.06      0.75 f
+  U19883/Y (XOR2X2_RVT)                            0.12      0.87 f
+  U70908/Y (NBUFFX2_RVT)                           0.17      1.05 f
+  U71085/Y (NBUFFX4_RVT)                           0.12      1.17 f
+  U43490/Y (NAND3X0_RVT)                           0.32      1.49 r
+  U77092/Y (INVX1_RVT)                             0.39      1.88 f
+  U26317/Y (NAND2X0_RVT)                           0.23      2.11 r
+  U97871/Y (NBUFFX2_RVT)                           0.12      2.23 r
+  U97905/Y (NBUFFX2_RVT)                           0.13      2.36 r
+  U26678/Y (NAND2X0_RVT)                           0.39      2.75 f
+  U105326/Y (INVX1_RVT)                            0.53      3.29 r
+  U75085/Y (NAND4X0_RVT)                           0.07      3.35 f
+  U75088/Y (NOR4X1_RVT)                            0.09      3.44 r
+  U75089/Y (NAND4X0_RVT)                           0.06      3.50 f
+  U75306/Y (AO22X1_RVT)                            0.05      3.55 f
+  U75307/Y (AO22X1_RVT)                            0.04      3.58 f
+  U75308/Y (INVX1_RVT)                             0.02      3.60 r
+  U75335/Y (NAND3X0_RVT)                           0.72      4.33 f
+  gen_mac_lanes[5].u_lane/weight_out_reg[15]/D (DFFX1_RVT)
+                                                   0.03      4.36 f
+  data arrival time                                          4.36
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  gen_mac_lanes[5].u_lane/weight_out_reg[15]/CLK (DFFX1_RVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.10      9.90
+  library setup time                              -0.24      9.66
+  data required time                                         9.66
+  ------------------------------------------------------------------------
+  data required time                                         9.66
+  data arrival time                                         -4.36
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.30
+
+
+
+  Startpoint: layer_idx_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[5].u_lane/weight_out_reg[14] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  layer_idx_reg[0]/CLK (DFFARX2_RVT)               0.00      0.00 r
+  layer_idx_reg[0]/Q (DFFARX2_RVT)                 0.12      0.12 r
+  U48703/Y (NBUFFX2_RVT)                           0.06      0.18 r
+  U48742/Y (INVX1_RVT)                             0.17      0.35 f
+  U19878/Y (NAND2X0_RVT)                           0.13      0.48 r
+  U60266/Y (NBUFFX2_RVT)                           0.09      0.57 r
+  U60267/Y (INVX2_RVT)                             0.07      0.63 f
+  U19881/Y (NAND2X0_RVT)                           0.07      0.70 r
+  U19882/Y (NAND2X0_RVT)                           0.06      0.75 f
+  U19883/Y (XOR2X2_RVT)                            0.12      0.87 f
+  U70908/Y (NBUFFX2_RVT)                           0.17      1.05 f
+  U71085/Y (NBUFFX4_RVT)                           0.12      1.17 f
+  U43490/Y (NAND3X0_RVT)                           0.32      1.49 r
+  U77092/Y (INVX1_RVT)                             0.39      1.88 f
+  U26317/Y (NAND2X0_RVT)                           0.23      2.11 r
+  U97871/Y (NBUFFX2_RVT)                           0.12      2.23 r
+  U97905/Y (NBUFFX2_RVT)                           0.13      2.36 r
+  U26678/Y (NAND2X0_RVT)                           0.39      2.75 f
+  U105326/Y (INVX1_RVT)                            0.53      3.29 r
+  U75085/Y (NAND4X0_RVT)                           0.07      3.35 f
+  U75088/Y (NOR4X1_RVT)                            0.09      3.44 r
+  U75089/Y (NAND4X0_RVT)                           0.06      3.50 f
+  U75306/Y (AO22X1_RVT)                            0.05      3.55 f
+  U75307/Y (AO22X1_RVT)                            0.04      3.58 f
+  U75308/Y (INVX1_RVT)                             0.02      3.60 r
+  U75335/Y (NAND3X0_RVT)                           0.72      4.33 f
+  gen_mac_lanes[5].u_lane/weight_out_reg[14]/D (DFFX1_RVT)
+                                                   0.03      4.36 f
+  data arrival time                                          4.36
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  gen_mac_lanes[5].u_lane/weight_out_reg[14]/CLK (DFFX1_RVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.10      9.90
+  library setup time                              -0.24      9.66
+  data required time                                         9.66
+  ------------------------------------------------------------------------
+  data required time                                         9.66
+  data arrival time                                         -4.36
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.30
+
+
+
+  Startpoint: layer_idx_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[5].u_lane/weight_out_reg[13] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  layer_idx_reg[0]/CLK (DFFARX2_RVT)               0.00      0.00 r
+  layer_idx_reg[0]/Q (DFFARX2_RVT)                 0.12      0.12 r
+  U48703/Y (NBUFFX2_RVT)                           0.06      0.18 r
+  U48742/Y (INVX1_RVT)                             0.17      0.35 f
+  U19878/Y (NAND2X0_RVT)                           0.13      0.48 r
+  U60266/Y (NBUFFX2_RVT)                           0.09      0.57 r
+  U60267/Y (INVX2_RVT)                             0.07      0.63 f
+  U19881/Y (NAND2X0_RVT)                           0.07      0.70 r
+  U19882/Y (NAND2X0_RVT)                           0.06      0.75 f
+  U19883/Y (XOR2X2_RVT)                            0.12      0.87 f
+  U70908/Y (NBUFFX2_RVT)                           0.17      1.05 f
+  U71085/Y (NBUFFX4_RVT)                           0.12      1.17 f
+  U43490/Y (NAND3X0_RVT)                           0.32      1.49 r
+  U77092/Y (INVX1_RVT)                             0.39      1.88 f
+  U26317/Y (NAND2X0_RVT)                           0.23      2.11 r
+  U97871/Y (NBUFFX2_RVT)                           0.12      2.23 r
+  U97905/Y (NBUFFX2_RVT)                           0.13      2.36 r
+  U26678/Y (NAND2X0_RVT)                           0.39      2.75 f
+  U105326/Y (INVX1_RVT)                            0.53      3.29 r
+  U75085/Y (NAND4X0_RVT)                           0.07      3.35 f
+  U75088/Y (NOR4X1_RVT)                            0.09      3.44 r
+  U75089/Y (NAND4X0_RVT)                           0.06      3.50 f
+  U75306/Y (AO22X1_RVT)                            0.05      3.55 f
+  U75307/Y (AO22X1_RVT)                            0.04      3.58 f
+  U75308/Y (INVX1_RVT)                             0.02      3.60 r
+  U75335/Y (NAND3X0_RVT)                           0.72      4.33 f
+  gen_mac_lanes[5].u_lane/weight_out_reg[13]/D (DFFX1_RVT)
+                                                   0.03      4.36 f
+  data arrival time                                          4.36
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  gen_mac_lanes[5].u_lane/weight_out_reg[13]/CLK (DFFX1_RVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.10      9.90
+  library setup time                              -0.24      9.66
+  data required time                                         9.66
+  ------------------------------------------------------------------------
+  data required time                                         9.66
+  data arrival time                                         -4.36
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.30
+
+
+
+  Startpoint: layer_idx_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[5].u_lane/weight_out_reg[12] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  layer_idx_reg[0]/CLK (DFFARX2_RVT)               0.00      0.00 r
+  layer_idx_reg[0]/Q (DFFARX2_RVT)                 0.12      0.12 r
+  U48703/Y (NBUFFX2_RVT)                           0.06      0.18 r
+  U48742/Y (INVX1_RVT)                             0.17      0.35 f
+  U19878/Y (NAND2X0_RVT)                           0.13      0.48 r
+  U60266/Y (NBUFFX2_RVT)                           0.09      0.57 r
+  U60267/Y (INVX2_RVT)                             0.07      0.63 f
+  U19881/Y (NAND2X0_RVT)                           0.07      0.70 r
+  U19882/Y (NAND2X0_RVT)                           0.06      0.75 f
+  U19883/Y (XOR2X2_RVT)                            0.12      0.87 f
+  U70908/Y (NBUFFX2_RVT)                           0.17      1.05 f
+  U71085/Y (NBUFFX4_RVT)                           0.12      1.17 f
+  U43490/Y (NAND3X0_RVT)                           0.32      1.49 r
+  U77092/Y (INVX1_RVT)                             0.39      1.88 f
+  U26317/Y (NAND2X0_RVT)                           0.23      2.11 r
+  U97871/Y (NBUFFX2_RVT)                           0.12      2.23 r
+  U97905/Y (NBUFFX2_RVT)                           0.13      2.36 r
+  U26678/Y (NAND2X0_RVT)                           0.39      2.75 f
+  U105326/Y (INVX1_RVT)                            0.53      3.29 r
+  U75085/Y (NAND4X0_RVT)                           0.07      3.35 f
+  U75088/Y (NOR4X1_RVT)                            0.09      3.44 r
+  U75089/Y (NAND4X0_RVT)                           0.06      3.50 f
+  U75306/Y (AO22X1_RVT)                            0.05      3.55 f
+  U75307/Y (AO22X1_RVT)                            0.04      3.58 f
+  U75308/Y (INVX1_RVT)                             0.02      3.60 r
+  U75335/Y (NAND3X0_RVT)                           0.72      4.33 f
+  gen_mac_lanes[5].u_lane/weight_out_reg[12]/D (DFFX1_RVT)
+                                                   0.03      4.36 f
+  data arrival time                                          4.36
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  gen_mac_lanes[5].u_lane/weight_out_reg[12]/CLK (DFFX1_RVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.10      9.90
+  library setup time                              -0.24      9.66
+  data required time                                         9.66
+  ------------------------------------------------------------------------
+  data required time                                         9.66
+  data arrival time                                         -4.36
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.30
+
+
+
+  Startpoint: in_cnt_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_mac_lanes[28].u_lane/weight_out_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  in_cnt_reg[3]/CLK (DFFARX2_RVT)                  0.00      0.00 r
+  in_cnt_reg[3]/Q (DFFARX2_RVT)                    0.13      0.13 r
+  U47744/Y (NBUFFX2_RVT)                           0.12      0.26 r
+  U47763/Y (NBUFFX4_RVT)                           0.07      0.33 r
+  U32828/Y (NAND2X0_RVT)                           0.35      0.68 f
+  U60191/Y (INVX1_RVT)                             0.48      1.16 r
+  U32831/Y (NAND2X0_RVT)                           0.66      1.82 f
+  U95659/Y (INVX1_RVT)                             0.37      2.19 r
+  U32835/Y (NAND2X0_RVT)                           0.20      2.38 f
+  U104247/Y (NBUFFX2_RVT)                          0.18      2.57 f
+  U104337/Y (NBUFFX2_RVT)                          0.15      2.72 f
+  U26340/Y (NAND2X0_RVT)                           0.32      3.03 r
+  U113968/Y (INVX1_RVT)                            0.72      3.76 f
+  U26511/Y (NAND3X0_RVT)                           0.18      3.93 r
+  U26644/Y (NOR4X1_RVT)                            0.11      4.05 f
+  U26645/Y (NAND4X0_RVT)                           0.04      4.08 r
+  U26649/Y (AO22X1_RVT)                            0.06      4.14 r
+  U26650/Y (AO221X1_RVT)                           0.05      4.20 r
+  U26651/Y (AO221X1_RVT)                           0.05      4.25 r
+  U26654/Y (AO22X1_RVT)                            0.05      4.30 r
+  U26655/Y (AO221X1_RVT)                           0.05      4.36 r
+  U26656/Y (AO221X1_RVT)                           0.18      4.54 r
+  gen_mac_lanes[28].u_lane/weight_out_reg[0]/D (DFFX2_RVT)
+                                                   0.01      4.55 r
+  data arrival time                                          4.55
+
+  clock clk (rise edge)                           10.00     10.00
+  clock network delay (ideal)                      0.00     10.00
+  gen_mac_lanes[28].u_lane/weight_out_reg[0]/CLK (DFFX2_RVT)
+                                                   0.00     10.00 r
+  clock uncertainty                               -0.10      9.90
+  library setup time                              -0.05      9.85
+  data required time                                         9.85
+  ------------------------------------------------------------------------
+  data required time                                         9.85
+  data arrival time                                         -4.55
+  ------------------------------------------------------------------------
+  slack (MET)                                                5.30
+
+
+1

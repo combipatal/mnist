@@ -1,0 +1,15 @@
+****************************************
+Report : global timing
+        -format { narrow }
+Design : nn_top
+Version: W-2024.09-SP2
+Date   : Tue May 12 21:47:47 2026
+****************************************
+
+No setup violations found.
+
+
+No hold violations found.
+
+
+1
